@@ -1,0 +1,77 @@
+baseurl = "http://developers.designmynight.com/"
+languageCode = "en-gb"
+title = "DMN developer documentation"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = "UA-12385609-13"
+
+[params]
+	# General information
+	author = "DesignMyNight Tech Team"
+	description = "Developer documentation for DesignMyNight"
+	copyright = "DesignMyNight"
+
+	# Repository
+	provider = ""
+	repo_url = ""
+
+	version = "1.0.0"
+	logo = "images/logo.png"
+	favicon = ""
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "teal"
+    	accent  = "deep purple"
+
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
+[social]
+	twitter = ""
+	github  = ""
+
+
+[[menu.main]]
+	name   = "Introduction"
+	url    = "/"
+	weight = 0
+
+[[menu.main]]
+	name   = "Booking widget"
+	url    = "booking-widget/"
+	weight = 10
+
+[[menu.main]]
+	name   = "Ticket widget"
+	url    = "ticket-widget/"
+	weight = 20
+
+[[menu.main]]
+	name   = "API Basics"
+	url    = "api-basics/"
+	weight = 30
+
+[[menu.main]]
+	name   = "Booking API"
+	url    = "booking-api/"
+	weight = 40
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
