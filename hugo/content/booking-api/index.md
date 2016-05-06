@@ -26,7 +26,7 @@ The `venues` API endpoint provides you with all that you need to present valid b
 Start by sending a POST request using the ID of the venue you wish to book:
 
 ```bash
-$ curl -X POST https://dev.designmynight.com/api/v4/venues/552435790df6902b7256f237/booking-availability
+$ curl -X POST https://api.designmynight.com/v4/venues/552435790df6902b7256f237/booking-availability
 ```
 
 You'll get a response like this:
