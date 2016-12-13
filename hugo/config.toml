@@ -17,7 +17,7 @@ googleAnalytics = "UA-12385609-13"
 	provider = ""
 	repo_url = ""
 
-	version = "1.0.0"
+	version = "1.1.0"
 	logo = "images/logo.png"
 	favicon = "images/favicon.png"
 
@@ -68,6 +68,11 @@ googleAnalytics = "UA-12385609-13"
 	name   = "Booking API"
 	url    = "booking-api/"
 	weight = 40
+
+[[menu.main]]
+	name   = "Bookings search"
+	url    = "bookings-search/"
+	weight = 50
 
 
 [blackfriday]
