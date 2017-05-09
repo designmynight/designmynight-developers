@@ -3,12 +3,11 @@ date: 2016-12-13T10:11:48+01:00
 title: Bookings Search API
 ---
 
-The DesignMyNight Booking search can be used to list and search through a venue's bookings.
-
-## Before you begin
-
+{{<note title="Before you begin">}}
 Refer to the [API Basics](/api-basics) section to ensure you are familiar with the essentials of how to interact with the API.
+{{</note>}}
 
+The DesignMyNight Booking search can be used to list and search through a venue's bookings.
 
 ## Overview
 

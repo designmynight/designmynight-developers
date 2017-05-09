@@ -3,16 +3,15 @@ date: 2017-05-09T20:18:48+01:00
 title: Users API
 ---
 
-{{}} PLEASE NOTE: The users API is only available to specific partners. Please contact your Account Manager for details.{{}}
+{{<note title="Before you begin">}}
+Refer to the [API Basics](/api-basics) section to ensure you are familiar with the essentials of how to interact with the API.
+{{</note>}}
+
+## Overview
 
 The DesignMyNight Users API can be used to retrieve user information and create users, and is suitable for clients who require user information.
 
 You will only be able to retrieve user information based on your permissions.
-
-## Before you begin
-
-Refer to the [API Basics](/api-basics) section to ensure you are familiar with the essentials of how to interact with the API.
-
 
 ## User format
 
@@ -94,3 +93,4 @@ You'll get a response like this:
     "search": "test-user@designmynight.com"
   }
 }
+```

@@ -47,32 +47,45 @@ googleAnalytics = "UA-12385609-13"
 [[menu.main]]
 	name   = "Introduction"
 	url    = "/"
-	weight = 0
+	weight = 10
+
+
+[[menu.main]]
+    weight = 20
+    name = "   "
 
 [[menu.main]]
 	name   = "Booking widget"
 	url    = "booking-widget/"
-	weight = 10
+	weight = 30
 
 [[menu.main]]
 	name   = "Ticket widget"
 	url    = "ticket-widget/"
-	weight = 20
+	weight = 40
+
+[[menu.main]]
+    weight = 50
 
 [[menu.main]]
 	name   = "API Basics"
 	url    = "api-basics/"
-	weight = 30
+	weight = 70
 
 [[menu.main]]
 	name   = "Booking API"
 	url    = "booking-api/"
-	weight = 40
+	weight = 80
 
 [[menu.main]]
 	name   = "Bookings search"
 	url    = "bookings-search/"
-	weight = 50
+	weight = 90
+
+[[menu.main]]
+    name   = "Users API"
+    url    = "users-api/"
+    weight = 100
 
 
 [blackfriday]
