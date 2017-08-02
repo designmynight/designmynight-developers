@@ -78,9 +78,9 @@ Submit button | `.dmn-form button.submit`
 ## Form API
 After the form has been written to the web page, you can interact with it using JavaScript. 
 
-- Use `dmn.val()` to set the value of one of the fields on the form
-- Use `dmn.hideInput()` to hide a field on the form
-- Use `dmn.showInput()` to show a field on the form
+- Use `DMN.val()` to set the value of one of the fields on the form
+- Use `DMN.hideInput()` to hide a field on the form
+- Use `DMN.showInput()` to show a field on the form
 
 Field | Description
 ----- | -----
