@@ -54,13 +54,13 @@ Key | Type | Description
 `title` | `string` | The title of the offer
 `type_of_offer` | `array` | Currently unused, but may be used in the future
 `type_of_venue` | `array` | An array of objects describing the type of venue
-`availability` | `string` | The source where bookings will be eligible to use this offer. Possible values are {{<br>}}&bullet; `""` - All bookings{{<br>}}&bullet; `partner` - Only bookings from your website{{<br>}}&bullet; `designmynight` - Only bookings from DesignMyNight{{<br>}}
+`availability` | `string` | The source where bookings will be eligible to use this offer. Possible values are <br>&bullet; `""` - All bookings<br>&bullet; `partner` - Only bookings from your website<br>&bullet; `designmynight` - Only bookings from DesignMyNight
 `description` | `string` | A description of the offer
 `start_date` | `string` | When this offer is valid from, in ISO 8601 format
 `expiry_date` | `string` | When this offer will expire, in ISO 8601 format
 `visible_from` | `string` | When this offer will be visible from, in ISO 8601 format
 `visible_to` | `string` | When this offer will be visible until, in ISO 8601 format
-`rules` | `object` | An object containing rules for this offer. See [#offer-rules]()
+`rules` | `object` | An object containing rules for this offer. See [Offer Rules](#offer-rules)
 `restrict_offer_to_types` | `boolean` | Whether this offer only applies to specific booking types
 `booking_types` | `array` (only present if `restrict_offer_to_types` is true) | An array of booking types which this offer is eligible for
 
@@ -125,13 +125,13 @@ Key | Type | Description
 --- | --- | ---
 `min_people` | `integer` | The minimum number of people required in a booking for this offer. `null` if the rule has not been set.
 `max_people` | `integer` | The maximum number of people allowed in a booking for this offer. `null` if the rule has not been set.
-`monday` | See [#day-rules]() | Rules specific to bookings on a Monday
-`tuesday` | See [#day-rules]() | Rules specific to bookings on a Tuesday
-`wednesday` | See [#day-rules]() | Rules specific to bookings on a Wednesday
-`thursday` | See [#day-rules]() | Rules specific to bookings on a Thursday
-`friday` | See [#day-rules]() | Rules specific to bookings on a Friday
-`saturday` | See [#day-rules]() | Rules specific to bookings on a Saturday
-`sunday` | See [#day-rules]() | Rules specific to bookings on a Sunday
+`monday` | See [Day Rules](#day-rules) | Rules specific to bookings on a Monday
+`tuesday` | See [Day Rules](#day-rules) | Rules specific to bookings on a Tuesday
+`wednesday` | See [Day Rules](#day-rules) | Rules specific to bookings on a Wednesday
+`thursday` | See [Day Rules](#day-rules) | Rules specific to bookings on a Thursday
+`friday` | See [Day Rules](#day-rules) | Rules specific to bookings on a Friday
+`saturday` | See [Day Rules](#day-rules) | Rules specific to bookings on a Saturday
+`sunday` | See [Day Rules](#day-rules) | Rules specific to bookings on a Sunday
 
 ### Day Rules
 
