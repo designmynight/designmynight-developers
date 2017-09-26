@@ -22,7 +22,7 @@ Offers can optionally be defined to be `visible_from` and `visible_to` a specifi
 * The `visible_from` is in the past*, and the `visible_to` is not set
 * The `visible_from` is not set, and the `visible_to` is in the future*
 
-*{{<small>}}Using the time the request was made, in London time{{</small>}}
+*<small>Using the time the request was made, in London time</small>
 
 ## Request Parameters
 
@@ -143,7 +143,7 @@ Key | Type | Description
 `from` | `string` | The time this offer is valid from on this day of the week, in `HH:MM` format
 `to` | `string` | The time this offer is valid until on this day of the week, in `HH:MM` format*
 
-* {{<small>}}If the duration of the booking exceeds the `to` time, the offer will still be returned. The `to` time is for bookings that *start after* this time.
+*<small>If the duration of the booking exceeds the `to` time, the offer will still be returned. The `to` time is for bookings that *start after* this time.</small>
 
 ## Offers in booking-availability
 
@@ -174,5 +174,5 @@ The response will contain an array of eligible *Offer IDs* in the `suggestedValu
 }
 ```
 
-{{<small>}}Some keys omitted for brevity{{</small>}}
+<small>Some keys omitted for brevity</small>
 
