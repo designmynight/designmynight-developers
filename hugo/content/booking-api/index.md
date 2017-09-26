@@ -98,6 +98,7 @@ Key | Description
 `valid` |`boolean` describing whether this value would be valid given the current booking details
 `message` | `string` providing further information on the field's restrictions
 `action` | `string` (only for `time`) describing the how the booking would be handled after submission - see [Submitting the booking](#submitting-the-booking)
+`offers` | `array` (only with `getOffers=true`) See [Offers in Booking Availability](/offers-api/#offers-in-booking-availability)
 
 
 ### Validation rules
