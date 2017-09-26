@@ -22,7 +22,7 @@ Offers can optionally be defined to be `visible_from` and `visible_to` a specifi
 * The `visible_from` is in the past*, and the `visible_to` is not set
 * The `visible_from` is not set, and the `visible_to` is in the future*
 
-*{{<small>}}Using London time{{</small>}}
+*{{<small>}}Using the time the request was made, in London time{{</small>}}
 
 ## Request Parameters
 
