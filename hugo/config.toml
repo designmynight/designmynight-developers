@@ -92,6 +92,11 @@ googleAnalytics = "UA-12385609-13"
 	url    = "offers-api/"
 	weight = 110
 
+[[menu.main]]
+	name   = "Venue Groups API"
+	url    = "venue-groups/"
+	weight = 120
+
 
 [blackfriday]
 	smartypants	= true
