@@ -1,0 +1,45 @@
+# Customising your email templates
+
+You can choose to have customised email templates. As part of customising your templates, you will be able to customise your header and footers. This is a great way to add your social media handles and icons, address, etc.
+
+It’s worth mentioning that the booking summary and any automated copy that you have set up in Collins, will automatically fill the middle section of the email. This is the 'non-customisable data' of the HTML template. Your web developer will, however, be able to add CSS rules to customise the styling of the non-customisable content.
+
+Here is a basic template that you can work from when customising email templates. There are comments in the code to guide developers. You'll need to provide us with these in full HTML for us to be able to upload them. 
+
+We would recommend creating one general email template which can be used for all your outgoing emails from Collins.
+
+## Examples of HTML templates
+
+
+
+# Customising Email Templates FAQs
+
+## What can/can’t I change on my email templates?
+
+**You can change the following things by overriding the CSS:**
+
+* Amend the colour of your background 
+* Add a background images
+* Add in hyperlinked images in your header and footer. This is particularly useful for adding in links to your social media accounts to the email footer. 
+
+**You are currently unable to change/add the following:**
+
+* Colour and font of the payment/card auth request buttons
+* Colour/visibility of the purple booking Confirmation tick icon
+* Colours/visibility of the location, cancellation, add to calendar, change your booking icons. 
+* You are unable to add an option for customers to unsubscribe from the emails as customers are unable to unsubscribe from transactional emails (so that we can ensure that they receive relevant updates about their bookings). 
+* You are unable to add the option to ‘view in a browser’ as we do not have that option with these transactional emails. 
+* Wording of the ‘Thanks for booking and have a great time at VENUE’
+* You are unable to amend the format of the date showing in the booking summary in the emails eg from 9 May 2017 to display as Tuesday 9 May 2017
+
+## Are there any required dimensions for the email templates?
+There isn't a fixed width for our email templates. The main content of the majority of templates is 600px wide. The majority of email clients do not support CSS media queries. We recommend sticking to a 600px width for content in order for the emails to look good across all devices. Sticking to 600px will prevent any clipping on emails containing a lot of content.
+
+The height of the email varies depending on the content. If using a custom background, please bare this in mind. We recommend using repeatable and symmetrical background images to ensure the background is covered.
+
+## Can we customise the fonts used in the emails?
+Unfortunately, the majority of web email clients don't support rendering custom fonts. If you want to support the ones that do, you will need to ensure that you provide web safe fonts. 
+
+Here's a guide to help you know the CSS support across different web email clients: [https://www.campaignmonitor.com/css/](https://www.campaignmonitor.com/css/text-fonts/font/)
+
+
