@@ -1,4 +1,4 @@
-# Customising your 2nd iFrame
+# Customising your 2nd iFrame of the Collins booking widget
 You are able to customise the 2nd iframe on your Collins booking widget to better suit the feel of your website. 
 
 ## To do this, you would need to:
