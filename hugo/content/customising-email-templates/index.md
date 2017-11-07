@@ -9,8 +9,17 @@ Here is a basic template that you can work from when customising email templates
 We would recommend creating one general email template which can be used for all your outgoing emails from Collins.
 
 ## Examples of HTML templates
+For the best results, we would recommend that you do the following: 
 
+1. Add a background image. As this will repeat as you scroll down the email (depending on the length of the email content), we would recommend that you use a repeatable and symmetrical background image to ensure that the background is fully covered. 
 
+2. Add your social media handle details and venue details (eg venue address) in the footer of the email.
+
+Here are some great examples of customised emails that our partners have created to get an idea:
+
+[Casita Andina]()
+
+[Alexander's]()
 
 # Customising Email Templates FAQs
 
