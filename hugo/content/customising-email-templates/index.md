@@ -42,7 +42,7 @@ Here are some great examples of customised emails that our partners have created
 * You are unable to amend the format of the date showing in the booking summary in the emails eg from 9 May 2017 to display as Tuesday 9 May 2017
 
 ## Are there any required dimensions for the email templates?
-There isn't a fixed width for our email templates. The main content of the majority of templates is 600px wide. The majority of email clients do not support CSS media queries. We recommend sticking to a 600px width for content in order for the emails to look good across all devices. Sticking to 600px will prevent any clipping on emails containing a lot of content.
+There isn't a fixed width for our email template but the main content of the majority of templates is 600px wide. The majority of email clients do not support CSS media queries, so we recommend sticking to a 600px width for content in order for the emails to look good across all devices. Sticking to 600px will also prevent any clipping on emails containing a lot of content.
 
 The height of the email varies depending on the content. If using a custom background, please bare this in mind. We recommend using repeatable and symmetrical background images to ensure the background is covered.
 
