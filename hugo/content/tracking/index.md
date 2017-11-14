@@ -25,6 +25,11 @@ Yes. Add the following code underneath your existing `return_url`:
 
 ```DMN.val('return_method', 'post');```
 
+## What information should we include in the custom return URL?
+
+All customers will automatically receive an Enquiry Received/Booking Confirmation email once they have completed their enquiry/booking (and reach your custom return URL page). As these emails will include a full summary of their enquiry/bookings (including their DMN Booking refence), it's not necessary to show these details on your return URL. We would recommend to have a generic 'Thanks for enquiry/booking' message. 
+
+
 ## How do we get the booking reference number on our custom return URL page?
 
 It will be fed back through the url. This script will parse the url and get the booking parameters out.
