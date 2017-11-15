@@ -24,9 +24,14 @@ This will ensure that these field details will pull through to the respective fi
 * `source=partner`
 * `venue_group= **you can get this from your Account Manager**`
 
+**_Note:_**  If the action of the form is a direct post to www.designmynight.com/book, then you will need to add these three fields will have to be added as hidden fields. 
+
+If you are posting the form independently, then you will need to make sure those fields are added to the final payload posted to www.designmynight.com/book.
+
 # General Enquiry Form FAQs
 
 ##  I'm trying to post to https://www.designmynight.com/book but am receiving the following error message: "No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'https://www.no4cliftonvillage.co.uk' is therefore not allowed access." 
 
 As well as all the booking data you send, you will need to send `source=partner`. This will store the booking as a partner booking and will allow those cross-origin requests through.
+
 
