@@ -2,7 +2,7 @@
 
 If you are unable to add the Collins booking widget, it's possible for you to include a booking URL to your website instead. 
 
-https://www.designmynight.com/book?venue_id=**VENUEID**&source=partner&format=modal
+https:\/\/www.designmynight.com\/book?venue_id=**VENUEID**&source=partner&format=modal
 
 Your Account Manager will have given you the venue ID in your booking widget when you first joined Collins. Alternatively, you will be able to access your venue ID by doing the following in Collins
 
