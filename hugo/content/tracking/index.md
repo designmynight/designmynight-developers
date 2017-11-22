@@ -29,6 +29,8 @@ Yes. Add the following code underneath your existing `return_url`:
 
 All customers will automatically receive an Enquiry Received/Booking Confirmation email once they have completed their enquiry/booking (and reach your custom return URL page). As these emails will include a full summary of their enquiry/bookings (including their DMN Booking refence), it's not necessary to show these details on your return URL. We would recommend to have a generic 'Thanks for enquiry/booking' message. 
 
+This table describes which [enquiry/booking details will be sent with the redirect to the return URL](http://developers.designmynight.com/booking-api/#submitting-through-the-web)
+ 
 
 ## How do we get the booking reference number on our custom return URL page?
 
