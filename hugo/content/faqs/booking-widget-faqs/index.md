@@ -46,3 +46,9 @@ If the widget is appearing and working correctly on Plunker, this means that the
 **3. The dates on my calendar are not showing correctly!**
 
 If you have tested the widget code on [Plunker](https://plnkr.co/edit/?p=catalogue) and the issue is isolated to your website, your web developer will have to look at the CSS styling on your page which is interfering with the code. 
+
+**4. The drop down options on my widget fields are only visible when you hover over them. How do I  get all available drop down options to be visible for the customer to select?**
+
+If the colour of the **Form Components** is too similar a colour to the **Input Labels**, it can make it difficult for customers to view and select options. 
+
+Your web developer should amend the CSS to tweak the colours used in your [Form Components and Input Labels](http://developers.designmynight.com/booking-widget/#styling-the-form). 
