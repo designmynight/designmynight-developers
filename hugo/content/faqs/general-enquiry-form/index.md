@@ -5,7 +5,7 @@ Here's an example of a partner with a customised enquiry form: [No. 4 Clifton Vi
 
 **To create your own personalised Enquiry form:**
 
-**1.** Create your own form display on your website. This way you and your web developer will be responsible for the look of your personalised form and which fields are included.
+**1.** Create your own form display on your website. You and your web developer will be responsible for the look of your personalised form and which fields are included.
 
 **2.** For any standard Collins booking fields used in your form (First Name, Last Name, Email, Phone, DOB, Newsletter Sign Up), please use these [Standard Collins booking field names](http://developers.designmynight.com/booking-api/#submitting-through-the-api).
 This will ensure that these field details will pull through to the respective fields in your Collins enquiry. 
