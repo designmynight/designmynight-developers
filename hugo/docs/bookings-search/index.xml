@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bookings-searches on DMN developer documentation</title>
+    <link>https://developers.designmynight.com/bookings-search/</link>
+    <description>Recent content in Bookings-searches on DMN developer documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>DesignMyNight</copyright>
+    <lastBuildDate>Tue, 13 Dec 2016 10:11:48 +0100</lastBuildDate>
+    
+	<atom:link href="https://developers.designmynight.com/bookings-search/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bookings Search API</title>
+      <link>https://developers.designmynight.com/bookings-search/</link>
+      <pubDate>Tue, 13 Dec 2016 10:11:48 +0100</pubDate>
+      
+      <guid>https://developers.designmynight.com/bookings-search/</guid>
+      <description>Before you begin
+Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
+ The DesignMyNight Booking search can be used to list and search through a venue&amp;rsquo;s bookings.
+Overview Queries are carried out as GET requests to the bookings API endpoint. To start with, you can try this with no parameters:
+$ curl -X GET https://api.designmynight.com/v4/bookings  You&amp;rsquo;ll get a response like this, containing a list of bookings.</description>
+    </item>
+    
+  </channel>
+</rss>

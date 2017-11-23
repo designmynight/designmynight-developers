@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-gb">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <title>Venue Groups API - DMN developer documentation</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Developer documentation for DesignMyNight">
+    
+    <link rel="canonical" href="https://developers.designmynight.com/venue-groups/">
+    
+    <meta name="author" content="DesignMyNight Tech Team">
+    
+
+    <meta property="og:url" content="https://developers.designmynight.com/venue-groups/">
+    <meta property="og:title" content="DMN developer documentation">
+    <meta property="og:image" content="https://developers.designmynight.com/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://developers.designmynight.com/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="https://developers.designmynight.com/images/favicon.png">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('https://developers.designmynight.com/fonts/icon.eot?52m981');
+        src: url('https://developers.designmynight.com/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('https://developers.designmynight.com/fonts/icon.woff?52m981')
+               format('woff'),
+             url('https://developers.designmynight.com/fonts/icon.ttf?52m981')
+               format('truetype'),
+             url('https://developers.designmynight.com/fonts/icon.svg?52m981#icon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://developers.designmynight.com/stylesheets/application.css">
+    <link rel="stylesheet" href="https://developers.designmynight.com/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://developers.designmynight.com/stylesheets/styles.css">
+    <link rel="stylesheet" href="https://developers.designmynight.com/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu%20Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+    
+    
+    <script src="https://developers.designmynight.com/javascripts/modernizr.js"></script>
+
+  </head>
+  <body class="palette-primary-teal palette-accent-deep purple">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Venue Groups API
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/designmynight/dmn-developers" title="@designmynight/dmn-developers on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://developers.designmynight.com/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="https://developers.designmynight.com/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>DMN developer documentation <span class="version">1.1.0</span></strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Introduction" href="https://developers.designmynight.com/">
+	
+	Introduction
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Booking widget" href="https://developers.designmynight.com/booking-widget/">
+	
+	Booking widget
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Ticket widget" href="https://developers.designmynight.com/ticket-widget/">
+	
+	Ticket widget
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="" href="https://developers.designmynight.com/">
+	
+	
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="API Basics" href="https://developers.designmynight.com/api-basics/">
+	
+	API Basics
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Booking API" href="https://developers.designmynight.com/booking-api/">
+	
+	Booking API
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Bookings search" href="https://developers.designmynight.com/bookings-search/">
+	
+	Bookings search
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Users API" href="https://developers.designmynight.com/users-api/">
+	
+	Users API
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Offers API" href="https://developers.designmynight.com/offers-api/">
+	
+	Offers API
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="Venue Groups API" href="https://developers.designmynight.com/venue-groups/">
+	
+	Venue Groups API
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="   " href="https://developers.designmynight.com/">
+	
+	   
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+  <li>
+    
+
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <span class="section">Faqs</span>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Booking widget faqs" href="https://developers.designmynight.com/faqs/booking-widget-faqs/">
+	
+	Booking widget faqs
+</a>
+
+  
+      
+        
+        
+
+
+
+<a  title="Customising 2nd iframe" href="https://developers.designmynight.com/faqs/customising-2nd-iframe/">
+	
+	Customising 2nd iframe
+</a>
+
+  
+      
+        
+        
+
+
+
+<a  title="Customising email templates" href="https://developers.designmynight.com/faqs/customising-email-templates/">
+	
+	Customising email templates
+</a>
+
+  
+      
+        
+        
+
+
+
+<a  title="General enquiry form" href="https://developers.designmynight.com/faqs/general-enquiry-form/">
+	
+	General enquiry form
+</a>
+
+  
+      
+        
+        
+
+
+
+<a  title="Tracking" href="https://developers.designmynight.com/faqs/tracking/">
+	
+	Tracking
+</a>
+
+  
+      
+    </ul>
+  </li>
+  
+</li>
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">&#9829; DesignMyNight Tech Team</span>        
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/designmynight/dmn-developers" target="_blank" title="@designmynight/dmn-developers on GitHub">
+              @designmynight/dmn-developers on GitHub
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Venue Groups API </h1>
+
+			
+
+<div class="admonition note">
+<p class="admonition-title">Before you begin</p>
+<p>Refer to the <a href="https://developers.designmynight.com/api-basics">API Basics</a> section to ensure you are familiar with the essentials of how to interact with the API.</p>
+</div>
+
+<h2 id="overview">Overview</h2>
+
+<p>The venue groups API endpoint provides Collins users with the ability to manage aspects of their account, including adding and removing users permissions.</p>
+
+<h2 id="user-management">User management</h2>
+
+<p>You can add, remove and edit users in your account using the users edge within the venue groups API endpoint.</p>
+
+<h3 id="adding-users">Adding users</h3>
+
+<p>To add a user, make a POST request to /venue-groups/YOUR_VENUE_GROUP_ID/users with a JSON body including the user&rsquo;s email address and the capabilities (permissions) that should be granted to that user. Email is the only required field to add a user to your account.</p>
+
+<pre><code>POST https://api.designmynight.com/v4/venue-groups/{venue_group_id}/users
+
+{
+  &quot;email&quot;: &quot;jane@example.com&quot;,
+  &quot;first_name&quot;: &quot;Jane&quot;,
+  &quot;last_name&quot;: &quot;Smith&quot;,
+  &quot;capabilities&quot;: [
+    &quot;manage_venue_bookings_{venue_id}&quot;
+  ]
+}
+</code></pre>
+
+<h3 id="editing-users">Editing users</h3>
+
+<p>As above, but POST to an endpoint with the ID of the user to be modified.</p>
+
+<pre><code>POST https://api.designmynight.com/v4/venue-groups/{venue_group_id}/users/{user_id}
+
+{
+  &quot;capabilities&quot;: [
+    &quot;manage_venue_group_bookings_{venue_group_id}&quot;
+  ]
+}
+</code></pre>
+
+<h3 id="removing-users">Removing users</h3>
+
+<p>Make a DELETE request to an endpoint with a specific user ID to remove them from your account.</p>
+
+<pre><code>DELETE https://api.designmynight.com/v4/venue-groups/{venue_group_id}/users/{user_id}
+</code></pre>
+
+<h3 id="capabilities">Capabilities</h3>
+
+<p>Capabilities are strings that provide a short-hand mapping into the Collins internal permissions management system. They consist of a descriptive string followed by the ID of a venue group or venue to which that string should apply. See the [Collins success portal]](<a href="https://collins.uservoice.com/knowledgebase/articles/942757-user-permissions-explained-and-how-to-change-them">https://collins.uservoice.com/knowledgebase/articles/942757-user-permissions-explained-and-how-to-change-them</a>) for more details on the different permissions levels. Potential values are:</p>
+
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>access_venue_bookings_{venue_id}</code></td>
+<td>Read only permission for a single venue</td>
+</tr>
+
+<tr>
+<td><code>access_venue_group_bookings_{venue_group_id}</code></td>
+<td>Read only permission for all venues in the group</td>
+</tr>
+
+<tr>
+<td><code>confirm_venue_bookings_{venue_id}</code></td>
+<td>Restricted user permission for a single venue</td>
+</tr>
+
+<tr>
+<td><code>confirm_venue_group_bookings_{venue_group_id}</code></td>
+<td>Restricted user permission for all venues in the group</td>
+</tr>
+
+<tr>
+<td><code>manage_no_venue_bookings_{venue_group_id}</code></td>
+<td>Manage bookings that have no venue against them</td>
+</tr>
+
+<tr>
+<td><code>manage_page_{venue_id}</code></td>
+<td>Manage the DesignMyNight venue page for a single venue</td>
+</tr>
+
+<tr>
+<td><code>manage_venue_booking_rules_{venue_id}</code></td>
+<td>Manage booking rules for a single venue</td>
+</tr>
+
+<tr>
+<td><code>manage_venue_bookings_{venue_id}</code></td>
+<td>Manage bookings for a single venue</td>
+</tr>
+
+<tr>
+<td><code>manage_venue_group_booking_rules_{venue_group_id}</code></td>
+<td>Manage booking rules for all venues in the group</td>
+</tr>
+
+<tr>
+<td><code>manage_venue_group_bookings_{venue_group_id}</code></td>
+<td>Manage bookings for all venues (includes those with no venue)</td>
+</tr>
+
+<tr>
+<td><code>manage_venue_group_permissions_{venue_group_id}</code></td>
+<td>Manage user permissions for all venues</td>
+</tr>
+
+<tr>
+<td><code>manage_venue_group_venues_{venue_group_id}</code></td>
+<td>Manage booking rules for all venues</td>
+</tr>
+
+<tr>
+<td><code>manage_venue_permissions_{venue_id}</code></td>
+<td>Manage user permissions for a single venue</td>
+</tr>
+
+<tr>
+<td><code>view_venue_group_reports_{venue_group_id}</code></td>
+<td>View reports for all venues</td>
+</tr>
+
+<tr>
+<td><code>view_venue_reports_{venue_id}</code></td>
+<td>View reports for a single venue</td>
+</tr>
+</tbody>
+</table>
+
+			
+			<aside class="copyright" role="note">
+				
+				&copy; 2017 DesignMyNight &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">
+					Material
+				</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="https://developers.designmynight.com/offers-api/" title="Offers API">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Offers API
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+  </div>
+</nav>
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="https://developers.designmynight.com/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(headers.length > 0) {
+        for(var i = 0; i < headers.length; i++) {
+          var li = document.createElement("li");
+          li.setAttribute("class", "anchor");
+
+          var a  = document.createElement("a");
+          a.setAttribute("href", "#" + headers[i].id);
+          a.setAttribute("title", headers[i].innerHTML);
+          a.innerHTML = headers[i].innerHTML;
+          
+          li.appendChild(a)
+          scrollspy.appendChild(li);
+        }
+      } else {
+        scrollspy.parentElement.removeChild(scrollspy)
+      }
+      
+
+      /* Add permanent link next to the headers */
+      var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+      for(var i = 0; i < headers.length; i++) {
+          var a = document.createElement("a");
+          a.setAttribute("class", "headerlink");
+          a.setAttribute("href", "#" + headers[i].id);
+          a.setAttribute("title", "Permanent link")
+          a.innerHTML = "#";
+          headers[i].appendChild(a);
+      }
+    </script>
+
+    
+      <script>
+        (function(i,s,o,g,r,a,m){
+          i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||
+          []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
+          m.parentNode.insertBefore(a,m)
+        })(window, document,
+          'script', '//www.google-analytics.com/analytics.js', 'ga');
+         
+        ga('create', 'UA-12385609-13', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+         
+        var buttons = document.querySelectorAll('a');
+        Array.prototype.map.call(buttons, function(item) {
+          if (item.host != document.location.host) {
+            item.addEventListener('click', function() {
+              var action = item.getAttribute('data-action') || 'follow';
+              ga('send', 'event', 'outbound', action, item.href);
+            });
+          }
+        });
+         
+        var query = document.querySelector('.query');
+        query.addEventListener('blur', function() {
+          if (this.value) {
+            var path = document.location.pathname;
+            ga('send', 'pageview', path + '?q=' + this.value);
+          }
+        });
+      </script>
+    
+
+    <script src="//gohugo.io/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
