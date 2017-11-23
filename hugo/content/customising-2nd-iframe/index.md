@@ -1,19 +1,19 @@
-# Customising your 2nd iFrame of the Collins booking widget
+# Customising the 2nd iFrame of your Collins booking widget
 You are able to customise the 2nd iframe on your Collins booking widget to better suit the feel of your website. 
 
-## To do this, you would need to:
+## To customise your 2nd iFrame, your web developer would need to:
 
 1. Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).
 
-2. We add this CSS URL to our system for your venue group, with a name eg app
+1. We add this CSS URL to our system for your venue group, with a name eg app
 
-3. When you add the form to your page, you add some code to tell our page which CSS to load, eg
+1. When you add the form to your page, you add some code to tell our page which CSS to load, eg
 
 `<script>
 DMN.val('stylesheet', 'app');  
 </script>`
-  
-4. When the booking form loads, it will also load your CSS so you can override whatever is on the book page.
+
+1. When the booking form loads, it will also load your CSS so you can override whatever is on the book page.
 
 # Customising 2nd iFrame FAQs
 
@@ -35,13 +35,13 @@ To be able to hide these in your custom iFrames, your web developer will have to
 
 ## We have multiple venues in our venue group. Are we able to load style sheets for each individual venue within the group?
 
-We can set up multiple style sheets. Your code will just specify the stylesheet you want at the time eg: 
+We can set up multiple style sheets eg we could name them 'app' and 'website'. Your code will just specify the stylesheet you want at the time eg: 
 
-`<script>  DMN.val('stylesheet', 'app');  </script>`
+```<script> DMN.val('stylesheet', 'app');</script>```
 
 and
 
-`<script>  DMN.val('stylesheet', 'website');  </script>`
+```<script> DMN.val('stylesheet', 'website');</script>```
 
 
 
