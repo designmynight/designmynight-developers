@@ -24,12 +24,14 @@ To add CSS code, you will have to surround your CSS code with ```<style></style>
 
 # Booking Widget FAQs
 
-## Is it possible to add Placeholder Text in the fields? 
+**1. Is it possible to add Placeholder Text in the fields?**
+
 You wouldn't be able to add placeholder text through our JS API. However, you could change it using a library like jquery or vanilla JS to add a placeholder to the element. 
 
 Alternatively, you could set the background image of an input with CSS - guide here to help you [style the booking widget](http://developers.designmynight.com/booking-widget/#styling-the-form). 
 
-## My booking widget looks weird and some of the fields are not showing correctly!
+**2. My booking widget looks weird and some of the fields are not showing correctly!**
+
 If your booking widget is not appearing as expected, we recommend that you test your widget codes on [Plunker](https://plnkr.co/edit/?p=catalogue) (this is a website to test codes). To test your widget code:
 
 1. Copy your widget code (this can be found in your [Collins admin settings](https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes))
@@ -41,5 +43,6 @@ You should then see the widget on the right side of the screen which you can mak
 
 If the widget is appearing and working correctly on Plunker, this means that the issue is isolated to your own website. This means that the issue will be caused by conflicting styles on your website and your web developer will need to take a closer look at your CSS.
 
-## The dates on my calendar are not showing correctly!
+**3. The dates on my calendar are not showing correctly!**
+
 If you have tested the widget code on [Plunker](https://plnkr.co/edit/?p=catalogue) and the issue is isolated to your website, your web developer will have to look at the CSS styling on your page which is interfering with the code. 
