@@ -2,21 +2,35 @@
 
 If you are unable to add the Collins booking widget, it's possible for you to include a booking URL to your website instead. 
 
-https:\/\/www.designmynight.com\/book?venue_id=**VENUEID**&source=partner&format=modal
+To create a booking URL for your venue, you will need to use a URL of the following form:
 
-Your Account Manager will have given you the venue ID in your booking widget when you first joined Collins. Alternatively, you will be able to access your venue ID by doing the following in Collins
+https://www.designmynight.com/book?venue_id=VENUEID&source=partner&format=modal
 
-Settings > Venues > Select your venue > in the URL, your venue ID will be included in the URL:
+Where you have to sub in the VENUEID with your Collins Venue ID. 
 
-https://admin.designmynight.com/collins/venue-rules/**552435790df6902b7256f237**
+Your Collins Account Manager will have given you the venue ID in your Booking Widget Doc when you first joined Collins. Alternatively, you will be able to access your Venue ID by doing the following in Collins
+
+Settings > Venues > Select your venue > in the URL, your venue ID will be included at the end in the URL:
+
+eg: https://admin.designmynight.com/collins/venue-rules/5787a87595838bed3a8b4569
+
+Therefore your booking URL would be: 
+
+https://www.designmynight.com/book?venue_id=5787a87595838bed3a8b4569&source=partner&format=modal
 
 # Booking URL for a specific booking type
 
-If you are looking to create a booking link for a specific booking type (for example if you want to send a link out in a targetted mail out), you can do so by doing the following:
+If you are looking to create a booking link for a specific booking type (for example if you want to send a link out in a targetted mail out), you can create a URL of the following format: 
 
-https://www.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUP&type=BOOKINGTYPEID&source=partner&fixed_type=1
+https://www.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUP&source=partner&fixed_type=1
 
-If you want to fix any other parameters (for example if this booking type runs only on a single time and date), you can by filling in the relevant details:
+If you want to fix any other parameters (for example if this booking type runs only on a single time and date), you can include the following in your URL:
+
+&date=DATE 
+&time=STARTTIME 
+&duration=DURATION 
+
+So you will have something that looks like:
 
 https://www.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUP&type=BOOKINGTYPEID&type_name=BOOKINGTYPEID&date=DATE&time=STARTTIME&duration=DURATION&source=partner
 
