@@ -9,11 +9,13 @@ You are able to customise the 2nd iframe on your Collins booking widget to bette
 
 1. When you add the form to your page, you add some code to tell our page which CSS to load, eg
 
-`<script>
-DMN.val('stylesheet', 'app');  
-</script>`
+```
+<script>
+  DMN.val('stylesheet', 'app');  
+</script>
+```
 
-1. When the booking form loads, it will also load your CSS so you can override whatever is on the book page.
+When the booking form loads, it will also load your CSS so you can override whatever is on the book page.
 
 # Customising 2nd iFrame FAQs
 
@@ -25,7 +27,7 @@ If your 2nd iFrame is not fully showing, it’s likely that you have a CSS style
 Your web developer will have to look at the CSS that has been added to the customised 2nd iFrame. 
 
 ## When customising our second iFrame, which fields are we able to hide?
-You are able to remove only the fields that are not required to complete the enquiry. 
+You are able to remove only the fields that are **not** required to complete the enquiry. 
 
 For example, you will be able to hide the birthday field as long as it has not been made a [mandatory field in your Collins settings](https://collins.uservoice.com/knowledgebase/articles/1112770-booking-types-making-the-birthday-field-mandator).
 
@@ -37,11 +39,19 @@ To be able to hide these in your custom iFrames, your web developer will have to
 
 We can set up multiple style sheets eg we could name them 'app' and 'website'. Your code will just specify the stylesheet you want at the time eg: 
 
-```<script> DMN.val('stylesheet', 'app');</script>```
+```
+<script>
+  DMN.val('stylesheet', 'app');
+  </script>
+  ```
 
 and
 
-```<script> DMN.val('stylesheet', 'website');</script>```
+```
+<script>
+  DMN.val('stylesheet', 'website');
+  </script>
+  ```
 
 
 
