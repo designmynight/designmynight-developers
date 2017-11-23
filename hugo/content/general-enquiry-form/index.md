@@ -24,7 +24,13 @@ This will ensure that these field details will pull through to the respective fi
 * `source=partner`
 * `venue_group= **you can get this from your Account Manager**`
 
-**_Please note:_**  If the action of the form is a direct post to www.designmynight.com/book, then you will need to add these three fields as hidden fields. 
+**_Please note:_**  If the action of the form is a direct post to www.designmynight.com/book, then you will need to add these three fields as hidden fields, for example: 
+
+```<input type="hidden" name="enquiry_type" value="enquiry">```
+
+```<input type="hidden" name="source" value="partner">```
+
+```<input type="hidden" name="venue_group" value="5909d4d70f6bd7489c13daa2">```
 
 If you are posting the form independently, then you will need to make sure these three fields are added to the final payload posted to www.designmynight.com/book.
 
