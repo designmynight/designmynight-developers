@@ -4,7 +4,7 @@ You can choose to have customised email templates. As part of customising your t
 
 It’s worth mentioning that the booking summary and any automated copy that you have set up in Collins, will automatically fill the middle section of the email. This is the 'non-customisable data' of the HTML template. Your web developer will, however, be able to add CSS rules to customise the styling of the non-customisable content.
 
-Here is a basic template that you can work from when customising email templates. There are comments in the code to guide developers. You'll need to provide us with these in full HTML for us to be able to upload them. 
+Here is a [basic HTML template](https://docs.google.com/document/d/1o5EMw0QcMXiaAvHjbTI11WAAwb1pydo0GbILGqbIpro/edit?usp=sharing) that you can work from when customising email templates. There are comments in the code to guide developers. You'll need to provide us with these in full HTML for us to be able to upload them. 
 
 We would recommend creating one general email template which can be used for all your outgoing emails from Collins.
 
@@ -49,6 +49,6 @@ The height of the email varies depending on the content. If using a custom backg
 ## Can we customise the fonts used in the emails?
 Unfortunately, the majority of web email clients don't support rendering custom fonts. If you want to support the ones that do, you will need to ensure that you provide web safe fonts. 
 
-Here's a guide to help you know the CSS support across different web email clients: [https://www.campaignmonitor.com/css/](https://www.campaignmonitor.com/css/text-fonts/font/)
+Here's a guide to help you know [the CSS support across different web email clients](https://www.campaignmonitor.com/css/text-fonts/font/)
 
 
