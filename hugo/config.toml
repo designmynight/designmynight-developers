@@ -97,6 +97,49 @@ googleAnalytics = "UA-12385609-13"
 	url    = "venue-groups/"
 	weight = 120
 
+[[menu.main]]
+    weight = 130
+    name = "   "
+
+
+
+[[menu.main]]
+	name   = "FAQS"
+	url    = "faqs/"
+	identifier = "faqs"
+
+[[menu.main]]
+	name   = "API Faqs"
+	url    = "faqs/api-faqs/"
+	parent = "faqs"
+
+[[menu.main]]
+	name   = "Booking widget faqs"
+	url    = "faqs/booking-widget-faqs/"
+	parent = "faqs"
+
+[[menu.main]]
+	name   = "Customising 2nd iframe"
+	url    = "faqs/customising-2nd-iframe/"
+	parent = "faqs"
+
+[[menu.main]]
+	name   = "Customising email templates"
+	url    = "faqs/customising-email-templates/"
+	parent = "faqs"
+
+[[menu.main]]
+	name   = "General enquiry form"
+	url    = "faqs/general-enquiry-form/"
+	parent = "faqs"
+
+[[menu.main]]
+	name   = "Zonal EPOS integration"
+	url    = "faqs/zonal-epos-integration/"
+	parent = "faqs"
+
+
+
 
 [blackfriday]
 	smartypants	= true
