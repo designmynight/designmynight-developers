@@ -6,15 +6,13 @@ To create a booking URL for your venue, you will need to use a URL of the follow
 
 https://www.designmynight.com/book?venue_id=VENUEID&source=partner&format=modal
 
-Where you have to sub in the VENUEID with your Collins Venue ID. 
-
-Your Collins Account Manager will have given you the venue ID in your Booking Widget Doc when you first joined Collins. Alternatively, you will be able to access your Venue ID by doing the following in Collins
+Where you have to replace 'VENUEID' with your unique Collins Venue ID. **To find your Collins Venue ID:**
 
 Settings > Venues > Select your venue > in the URL, your venue ID will be included at the end in the URL:
 
 eg: https://admin.designmynight.com/collins/venue-rules/5787a87595838bed3a8b4569
 
-Therefore your booking URL would be: 
+In this example, the booking URL for this venue would be: 
 
 https://www.designmynight.com/book?venue_id=5787a87595838bed3a8b4569&source=partner&format=modal
 
@@ -22,13 +20,22 @@ https://www.designmynight.com/book?venue_id=5787a87595838bed3a8b4569&source=part
 
 If you are looking to create a booking link for a specific booking type (for example if you want to send a link out in a targetted mail out), you can create a URL of the following format: 
 
-https://www.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUP&source=partner&fixed_type=1
+https://www.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUPID&type=BOOKINGTYPEID&source=partner&fixed_type=1
 
-If you want to fix any other parameters (for example if this booking type runs only on a single time and date), you can include the following in your URL:
+Where you have to replace 'VENUEID', VENUEGROUPID and BOOKINGTYPEID accordingly. **To find your Collins Venue Group ID:**
 
-&date=DATE 
-&time=STARTTIME 
-&duration=DURATION 
+Settings > Venue Group > in the URL, your venue ID will be included at the end in the URL:
+
+eg: https://admin.designmynight.com/collins/venue-groups/5524371d0df690ad7156f2ea
+
+**To find your unique Booking Type ID:**
+
+
+If you want to fix any other parameters (for example if this booking type runs only on a single time and date), you can include the following paraments in your URL:
+
+&date=DATE **note: to be given in the form YYYY-MM-DD eg 2016-03-12**
+&time=STARTTIME **note: to be given in the 24-hour form HH:MM eg 15:00**
+&duration=DURATION **note: to be given in terms of hours eg 2.5 (which would be 2 hours 30 mins) **
 
 So you will have something that looks like:
 
