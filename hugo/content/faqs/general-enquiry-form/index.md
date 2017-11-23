@@ -20,9 +20,9 @@ This will ensure that these field details will pull through to the respective fi
 4. In Enquiy Fields section, click to 'Add a Field' 
 5. You will then have to add the following details:
 
-**Field Label** - (once this has been added, the **Field Name** field will auto-populate. This is what your web developer will require).
+**Field Label** - _once this has been added, the **Field Name** field will auto-populate. This is what your web developer will require_
 
-**Field Type** - select from the drop down the type of field (eg Free Text, Yes/No, Pick One etc). 
+**Field Type** - _select from the drop down the type of field (eg Free Text, Yes/No, Pick One etc)_
 
 6. Click SAVE
 
