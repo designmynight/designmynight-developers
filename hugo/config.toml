@@ -108,10 +108,6 @@ googleAnalytics = "UA-12385609-13"
 	url    = "faqs/"
 	identifier = "faqs"
 
-[[menu.main]]
-	name   = "API Faqs"
-	url    = "faqs/api-faqs/"
-	parent = "faqs"
 
 [[menu.main]]
 	name   = "Booking widget faqs"
@@ -133,10 +129,6 @@ googleAnalytics = "UA-12385609-13"
 	url    = "faqs/general-enquiry-form/"
 	parent = "faqs"
 
-[[menu.main]]
-	name   = "Zonal EPOS integration"
-	url    = "faqs/zonal-epos-integration/"
-	parent = "faqs"
 
 
 
