@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Faqs on DMN developer documentation</title>
-    <link>https://developers.designmynight.com/faqs/</link>
+    <link>https://designmynight.github.io/designmynight-developers/faqs/</link>
     <description>Recent content in Faqs on DMN developer documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>DesignMyNight</copyright>
     
-	<atom:link href="https://developers.designmynight.com/faqs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://designmynight.github.io/designmynight-developers/faqs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/zonal-epos-integration/</link>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/zonal-epos-integration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/zonal-epos-integration/</guid>
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/zonal-epos-integration/</guid>
       <description>Overview of the Collins/Zonal EPOS Integration The purpose of the integration between Collins and Zonal is for Collins to be able to push the details of bookings and their associated deposits to the Zonal EPOS system.
 Connecting to Zonal
 Collins connects to Zonal through Zonal’s ZCF server. Requests are transmitted over HTTPS with an authorisation header with credentials that Zonal set up and provide.
@@ -26,10 +26,10 @@ Integration configuration</description>
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/api-faqs/</link>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/api-faqs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/api-faqs/</guid>
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/api-faqs/</guid>
       <description>API FAQs We are creating our own check out and would like to add customer fields eg &amp;lsquo;Comments&amp;rsquo;. How do we include this as part of our check out?
 You will just need to pass the value to the bookings API with the key custom_field_value
 We are creating our own check out using the Collins API. We know that we have to still take payment through the Collins iFrame. How do we customise the payment page?</description>
@@ -37,10 +37,10 @@ We are creating our own check out using the Collins API. We know that we have to
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/booking-url/</link>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/booking-url/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/booking-url/</guid>
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/booking-url/</guid>
       <description>Booking URL for a specific venue If you are unable to add the Collins booking widget, it&amp;rsquo;s possible for you to include a booking URL to your website instead.
 To create a booking URL for your venue, you will need to use a URL of the following form:
 https://www.designmynight.com/book?venue_id=VENUEID&amp;amp;source=partner&amp;amp;format=modal
@@ -50,10 +50,10 @@ Settings &amp;gt; Venues &amp;gt; Select your venue &amp;gt; in the URL, your ve
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/booking-widget-faqs/</link>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/booking-widget-faqs/</guid>
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/</guid>
       <description>Adding your Collins booking widget to your website How to add the widget to Wordpress? Here’s a guide to help you Add the booking widget to your Wordpress site
 Please note: you will need to upgrade to the Business Plan to be able to add the widget code to your site.
 How to add the widget to Squarespace? Here’s a guide to help you Add the booking widget to your Squarespace site</description>
@@ -61,10 +61,10 @@ How to add the widget to Squarespace? Here’s a guide to help you Add the booki
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/customising-2nd-iframe/</link>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/customising-2nd-iframe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/customising-2nd-iframe/</guid>
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/customising-2nd-iframe/</guid>
       <description>Customising the 2nd iFrame of your Collins booking widget You are able to customise the 2nd iframe on your Collins booking widget to better suit the feel of your website.
 To customise your 2nd iFrame, your web developer would need to:
  Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).</description>
@@ -72,20 +72,20 @@ To customise your 2nd iFrame, your web developer would need to:
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/customising-email-templates/</link>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/customising-email-templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/customising-email-templates/</guid>
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/customising-email-templates/</guid>
       <description>Customising your email templates You can choose to have customised email templates. As part of customising your templates, you will be able to customise your header and footers. This is a great way to add your social media handles and icons, address, etc.
 It’s worth mentioning that the booking summary and any automated copy that you have set up in Collins, will automatically fill the middle section of the email.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/general-enquiry-form/</link>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/general-enquiry-form/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/general-enquiry-form/</guid>
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/general-enquiry-form/</guid>
       <description>Contact Us/General Enquiry Form As well as a Collins booking widget, you can also personalise your own Contact Us/General Enquiry form which feeds into your Collins.
 Here&amp;rsquo;s an example of a partner with a customised enquiry form: No. 4 Clifton Village
 To create your own personalised Enquiry form:
@@ -94,10 +94,10 @@ To create your own personalised Enquiry form:
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/tracking/</link>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/tracking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/tracking/</guid>
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/tracking/</guid>
       <description>Tracking There are 3 ways you can look at tracking:
 1. Google/Facebook:
 Putting Google/Facebook code on the first enquire button in the CSS (this isn&amp;rsquo;t tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on Adding Google Analytics Tracking Code to the booking widget.</description>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Offers-apis on DMN developer documentation</title>
-    <link>https://developers.designmynight.com/offers-api/</link>
+    <link>https://designmynight.github.io/designmynight-developers/offers-api/</link>
     <description>Recent content in Offers-apis on DMN developer documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>DesignMyNight</copyright>
     <lastBuildDate>Tue, 26 Sep 2017 10:39:00 +0100</lastBuildDate>
     
-	<atom:link href="https://developers.designmynight.com/offers-api/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://designmynight.github.io/designmynight-developers/offers-api/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Offers API</title>
-      <link>https://developers.designmynight.com/offers-api/</link>
+      <link>https://designmynight.github.io/designmynight-developers/offers-api/</link>
       <pubDate>Tue, 26 Sep 2017 10:39:00 +0100</pubDate>
       
-      <guid>https://developers.designmynight.com/offers-api/</guid>
+      <guid>https://designmynight.github.io/designmynight-developers/offers-api/</guid>
       <description>The DesignMyNight Offers API can be used to check which offers are eligible for a given booking.
 Overview The Offers API can be accessed with a GET request to the /venues/VENUE_ID/offers endpoint. Replace with the venue ID you wish to check offers for.
 $ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/offers  Visibility Offers can optionally be defined to be visible_from and visible_to a specified date range. This endpoint will only return offers where any of the conditions below are met:</description>

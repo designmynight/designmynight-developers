@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Booking-widgets on DMN developer documentation</title>
-    <link>https://developers.designmynight.com/booking-widget/</link>
+    <link>https://designmynight.github.io/designmynight-developers/booking-widget/</link>
     <description>Recent content in Booking-widgets on DMN developer documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>DesignMyNight</copyright>
     <lastBuildDate>Fri, 29 Apr 2016 13:32:57 +0100</lastBuildDate>
     
-	<atom:link href="https://developers.designmynight.com/booking-widget/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://designmynight.github.io/designmynight-developers/booking-widget/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Booking widget</title>
-      <link>https://developers.designmynight.com/booking-widget/</link>
+      <link>https://designmynight.github.io/designmynight-developers/booking-widget/</link>
       <pubDate>Fri, 29 Apr 2016 13:32:57 +0100</pubDate>
       
-      <guid>https://developers.designmynight.com/booking-widget/</guid>
+      <guid>https://designmynight.github.io/designmynight-developers/booking-widget/</guid>
       <description>The booking widget is the easiest way to allow customers to book through your website. You simply add a small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.
 With the booking widget, the customer journey will take place in two parts:
  The customer selects the type of booking, date, number of guests, time and (optionally) a duration for the booking.</description>

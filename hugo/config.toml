@@ -1,9 +1,8 @@
-baseurl = "http://developers.designmynight.com/"
 languageCode = "en-gb"
 title = "DMN developer documentation"
 theme = "hugo-material-docs"
 publishDir = "../docs"
-baseURL = "https://developers.designmynight.com/"
+baseURL = "https://designmynight.github.io/designmynight-developers"
 metadataformat = "yaml"
 canonifyurls = true
 # Enable Google Analytics by entering your tracking id

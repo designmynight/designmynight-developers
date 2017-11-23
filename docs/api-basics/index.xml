@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Api-basics on DMN developer documentation</title>
-    <link>https://developers.designmynight.com/api-basics/</link>
+    <link>https://designmynight.github.io/designmynight-developers/api-basics/</link>
     <description>Recent content in Api-basics on DMN developer documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>DesignMyNight</copyright>
     <lastBuildDate>Sat, 30 Apr 2016 21:38:53 +0100</lastBuildDate>
     
-	<atom:link href="https://developers.designmynight.com/api-basics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://designmynight.github.io/designmynight-developers/api-basics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>API Basics</title>
-      <link>https://developers.designmynight.com/api-basics/</link>
+      <link>https://designmynight.github.io/designmynight-developers/api-basics/</link>
       <pubDate>Sat, 30 Apr 2016 21:38:53 +0100</pubDate>
       
-      <guid>https://developers.designmynight.com/api-basics/</guid>
+      <guid>https://designmynight.github.io/designmynight-developers/api-basics/</guid>
       <description>Before you begin
 Contact your account manager to request an API key. Your unique ID and key must be passed with every request.
  URL The API is accessible through the domain api.designmynight.com. All requests should be made over HTTPS.
