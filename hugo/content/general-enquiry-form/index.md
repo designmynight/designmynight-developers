@@ -30,7 +30,7 @@ If you are posting the form independently, then you will need to make sure these
 
 # General Enquiry Form FAQs
 
-##  I'm trying to post to https://www.designmynight.com/book but am receiving the following error message: "No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin is therefore not allowed access." 
+**1. I'm trying to post to https://www.designmynight.com/book but am receiving the following error message: "No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin is therefore not allowed access."**
 
 As well as sending all the booking data, you will also need to ensure you are sending `source=partner`.
 
