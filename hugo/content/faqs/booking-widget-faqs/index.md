@@ -11,7 +11,7 @@ Here’s a guide to help you [Add the booking widget to your Squarespace site](h
 
 **_Please note:_** you need to add a **Code Block**, not an Embed Block.
 
-# Customising your Collins booking widget
+## Customising your Collins booking widget
 
 Since the booking form is inserted into your own website, it will automatically pick up any applicable CSS, so it can completely match the look and feel of your website.
 
@@ -22,7 +22,7 @@ In the Code Block that you added to create your widget, you can add in specific 
 
 To add CSS code, you will have to surround your CSS code with ```<style></style>``` tags.
 
-# Booking Widget FAQs
+## Booking Widget FAQs
 
 **1. Is it possible to add Placeholder Text in the fields?**
 
