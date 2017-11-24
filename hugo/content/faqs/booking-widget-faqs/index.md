@@ -22,6 +22,34 @@ In the Code Block that you added to create your widget, you can add in specific 
 
 To add CSS code, you will have to surround your CSS code with ```<style></style>``` tags.
 
+## How to customise the wording of the "Make an Enquiry" header and "Enquire Now" button
+
+As standard, the widget comes with "Make an Enquiry" as the header and "Enquire Now" on the button. Your web developer will be able to amend the wording of these should you wish (for example, if all your booking types are set to auto-confirm, you may wish to have the button say "Book Now"). 
+
+Your web developer will need to create images that you would like the replace the Header/Button with. You web developer will then need to override the CSS of the specific [form element](http://developers.designmynight.com/booking-widget/#styling-the-form). 
+
+If you are replacing the image of the header:
+
+```
+.dmn-form h1 {
+  background-image: url('https://example.com/path/to/image.png');
+}
+```
+
+If you are replacing the image of the button:
+
+```
+.dmn-form button.submit {
+  background-image: url('https://example.com/path/to/image.png');
+}
+```
+
+Here are some great examples of customised headers/buttons that our partners have created:
+
+[Wahaca](http://www.wahaca.co.uk/locations/covent-garden/)
+
+[Buffalo & Rye](http://www.buffaloandrye.co.uk/)
+
 ## Booking Widget FAQs
 
 **1. Is it possible to add Placeholder Text in the fields?**
@@ -52,3 +80,5 @@ If you have tested the widget code on [Plunker](https://plnkr.co/edit/?p=catalog
 If the colour of the **Form Components** is too similar a colour to the **Input Labels**, it can make it difficult for customers to view and select options. 
 
 Your web developer should amend the CSS to tweak the colours used in your [Form Components and Input Labels](http://developers.designmynight.com/booking-widget/#styling-the-form). 
+
+
