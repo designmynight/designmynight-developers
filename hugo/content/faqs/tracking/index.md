@@ -2,11 +2,11 @@
 
 There are 3 ways you can look at tracking:
 
-**1. Google/Facebook:**
+## Google/Facebook Tracking
 
 Putting Google/Facebook code on the first enquire button in the CSS (this isn't tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on [Adding Google Analytics Tracking Code to the booking widget](https://collins.uservoice.com/knowledgebase/articles/863856-adding-google-analytics-tracking-code-to-the-booki). 
 
-**2. Custom return URL**
+## Custom return URL
 
 You can create a custom return URL for users to be directed to when they complete their booking. That way you'd be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have, but you would have control over your own analytics etc completely.
 
@@ -24,9 +24,11 @@ An example of a venue that has done this is Dirty Martini - [Dirty Martini Thank
 
 **_Please note:_** the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format. 
 
-**3. Using our API _(big tech build, we do not recommend)_** Use our API to build out your own checkout which you can track completely as you want then you can do whatever you want - big tech build - [developers.designmynight.com](developers.designmynight.com)
+## 3. Using our API _(big tech build, we do not recommend)_
 
-# Tracking FAQs
+Use our API to build out your own checkout which you can track completely as you want then you can do whatever you want - big tech build - [developers.designmynight.com](developers.designmynight.com)
+
+## Tracking FAQs
 
 **1. All the details captured from the user are returned in the query string within my return URL. Is is possible to stop this?**
 
