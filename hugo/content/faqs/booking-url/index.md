@@ -1,4 +1,4 @@
-# Booking URL for a specific venue
+## Booking URL for a specific venue
 
 If you are unable to add the Collins booking widget, it's possible for you to include a booking URL to your website instead. 
 
@@ -16,7 +16,7 @@ In this example, the booking URL for this venue would be:
 
 https://www.designmynight.com/book?venue_id=5787a87595838bed3a8b4569&source=partner&format=modal
 
-# Booking URL for a specific booking type
+## Booking URL for a specific booking type
 
 If you are looking to create a booking link for a specific booking type (for example if you want to send a link out in a targetted mail out), you can create a URL of the following format: 
 
