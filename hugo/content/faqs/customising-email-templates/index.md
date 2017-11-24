@@ -21,7 +21,7 @@ Here are some great examples of customised emails that our partners have created
 
 [Casita Andina](https://static.designmynight.com/uploads/2017/11/Andina-Example-optimised.png)
 
-# Customising Email Templates FAQs
+## Customising Email Templates FAQs
 
 **1. What can/can’t I change on my email templates?**
 
