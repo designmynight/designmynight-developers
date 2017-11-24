@@ -1,4 +1,4 @@
-# Overview of the Collins/Zonal EPOS Integration
+## Overview of the Collins/Zonal EPOS Integration
 
 The purpose of the integration between Collins and Zonal is for Collins to be able to push the details of bookings and their
 associated deposits to the Zonal EPOS system.
@@ -49,7 +49,7 @@ sent.
 **Note:** the Zonal API does not support editing or deleting deposits from the EPOS, so any refunds processed in Collins will
 need to be manually updated in the EPOS
 
-## Zonal Refunds 
+## Refunding on Collins and Zonal 
 
 If you need to refund a deposit or payment in Collins, this change will **not** automatically be pushed to your tills. 
 
@@ -68,5 +68,34 @@ Completing a refund is a **two-step** process:
 4. Select “Total redemption” 
 5. The order display will have a negative value 
 6. Pay out by selecting the ‘Collins’ payment button on the pay panel
+
+## Redeeming Deposits
+
+To redeem the deposit against customer spend on the day of the booking:
+
+1. Select the customer till account / bar tab 
+2. Select “deposit redeem” 
+3. Select the booking from the screen 
+4. Select “total redemption” 
+5. Print the customer bill
+6. Pay the balance with the payment method of the customer’s choice
+
+## Zonal Troubleshooting
+
+There are some rare are occasions when the link between Collins and Zonal does not work, mostly due to loss of connectivity. A member of the Collins team will contact you if we receive an error when trying to push a booking/payment to Zonal. You will then need to contact Zonal directly to resolve the issue. 
+
+There is an Aztek report named “Bookings Due Report” which is very useful to check that bookings have pushed successfully to Collins, and we recommend checking this against your payments made in Collins on a regular basis to avoid any issues.
+
+## Collins/Zonal Integration FAQs
+
+**1. Why aren't my payments showing on my tills?**
+
+There are a few different reasons why a payment may not be showing on your till:
+
+* **Minimum Deposit Date**: It’s worth checking the minimum deposit date that was set for your Zonal integration. Any bookings with deposits that are on the system, before your go-live, that get updated, won’t push to the till.
+
+**2. When I add a ‘Other’ payment on Collins, it looks like I have the option to push this to the tills. Will the payment show on the tills as the relevant payment type?**
+
+Any payment that Collins pushes to Zonal will appear as whichever payment type we set up the integration with. We don't currently have a way to push different payment types.
 
 
