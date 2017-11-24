@@ -80,5 +80,3 @@ If you have tested the widget code on [Plunker](https://plnkr.co/edit/?p=catalog
 If the colour of the **Form Components** is too similar a colour to the **Input Labels**, it can make it difficult for customers to view and select options. 
 
 Your web developer should amend the CSS to tweak the colours used in your [Form Components and Input Labels](http://developers.designmynight.com/booking-widget/#styling-the-form). 
-
-
