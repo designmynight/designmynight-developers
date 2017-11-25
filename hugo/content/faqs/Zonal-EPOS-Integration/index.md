@@ -54,6 +54,14 @@ You will also need to specify how you would like the integration to function (th
 
 * Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent on the morning of the booking date.
 
+## Checking that the Collins/Zonal Integration is set up correctly
+
+Once your Collins Account Manager has been in touch that the integration has been set up, it's always worth creating a test payment (to test the connection and ensure that you're confident with how it will show on your tills).
+
+Once the integration has been set up, all valid payments added to Collins will have an orange/green tick next to it in the Payments tab of the booking.
+
+The green tick means that the payment has already been pushed to your till. 
+
 ## Refunding on Collins and Zonal 
 
 If you need to refund a deposit or payment in Collins, this change will **not** automatically be pushed to your tills. 
