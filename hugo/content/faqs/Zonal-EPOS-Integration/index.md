@@ -10,24 +10,6 @@ with credentials that Zonal set up and provide.
 
 Example URL: https://api.zonalconnect.com/PubChain/send/1902/booking
 
-**Integration configuration**
-
-The following configuration options need to be provided for each site that wishes to have bookings added to the EPOS:
-* Estate name: the name of the group as set up in Zonal, eg ‘PubChain’ in the example URL above
-* Site ID: the ID of the site as set up in Zonal
-* Sales area ID: the ID of the sales area to send bookings to, eg 1902 in the example URL above
-* Booking type ID: the ID of the booking type that bookings should be added to Zonal as
-* Payment Method ID: the ID of the payment method that should be specified for deposits from Collins
-* Employee ID: the employee ID that bookings should be added under
-* Username: the authorization username to connect to Zonal
-* Password: the authorization password to connect to Zonal
-
-**Two additional options are available to specify how the integration should function:**
-
-* Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise,
-bookings will be sent on the morning of the booking date.
-* Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS
-
 **Details sent to Zonal**
 
 Bookings will be sent to the EPOS with the following details
@@ -48,6 +30,33 @@ sent.
 
 **Note:** the Zonal API does not support editing or deleting deposits from the EPOS, so any refunds processed in Collins will
 need to be manually updated in the EPOS
+
+## Setting up the Collins/Zonal EPOS Integration
+
+If you would like to set up the integration to push bookings/payments to your Zonal EPOS, you will need to contact your Collins Account Manager with the following details:
+
+**Integration configuration**
+
+The following configuration options need to be provided for **each site** that wishes to have bookings added to the EPOS (you will have to contact Zonal for these details):
+
+* Estate name: the name of the group as set up in Zonal, eg ‘PubChain’ in the example URL above
+* Site ID: the ID of the site as set up in Zonal
+* Sales area ID: the ID of the sales area to send bookings to, eg 1902 in the example URL above
+* Booking type ID: the ID of the booking type that bookings should be added to Zonal as
+* Payment Method ID: the ID of the payment method that should be specified for deposits from Collins
+* Employee ID: the employee ID that bookings should be added under
+* Username: the authorization username to connect to Zonal
+* Password: the authorization password to connect to Zonal
+
+**What type of bookings should push to the tills and when should they push?**
+
+You will also have to specify how you would like the integration to function (this will depend on how you manage your reporting on your side).
+
+Please specify the following:
+
+* **What type of bookings would you like to push to your tills?** Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills. 
+
+* **When would you like to these bookings to push to your tills?** Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent on the morning of the booking date.
 
 ## Refunding on Collins and Zonal 
 
@@ -88,11 +97,13 @@ There is an Aztek report named “Bookings Due Report” which is very useful to
 
 ## Collins/Zonal Integration FAQs
 
-**1. Why aren't my payments showing on my tills?**
+**1. I've just added a payment to Collins, why has it not pushed to my tills?**
 
 There are a few different reasons why a payment may not be showing on your till:
 
-* **Minimum Deposit Date**: It’s worth checking the minimum deposit date that was set for your Zonal integration. Any bookings with deposits that are on the system, before your go-live, that get updated, won’t push to the till.
+* **Minimum Deposit Date:** It’s worth checking the minimum deposit date that was set for your Zonal integration. Any bookings with deposits that are on the system, before your go-live, that get updated, won’t push to the till.
+
+* **The Booking Date has Passed:** It's important to note that this integration will not allow us to push payments to the till **after** the date of the booking has already passed. As such, if you are claiming a [Collins Card Authentication Payment](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) after the date of the booking, this will **not** push to the tills and you will have to be manually add the payment to your tills.
 
 **2. When I add a ‘Other’ payment on Collins, it looks like I have the option to push this to the tills. Will the payment show on the tills as the relevant payment type?**
 
