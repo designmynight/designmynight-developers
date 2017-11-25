@@ -48,15 +48,11 @@ The following configuration options need to be provided for **each site** that w
 * Username: the authorization username to connect to Zonal
 * Password: the authorization password to connect to Zonal
 
-**What type of bookings should push to the tills and when should they push?**
+You will also need to specify how you would like the integration to function (this will depend on how you manage your reporting on your side). For this, you will need to confirm what you would like Collins to push to your tills and when this should be pushed:
 
-You will also have to specify how you would like the integration to function (this will depend on how you manage your reporting on your side).
+* Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills. 
 
-Please specify the following:
-
-* **What type of bookings would you like to push to your tills?** Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills. 
-
-* **When would you like to these bookings to push to your tills?** Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent on the morning of the booking date.
+* Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent on the morning of the booking date.
 
 ## Refunding on Collins and Zonal 
 
