@@ -101,7 +101,7 @@ There are a few different reasons why a payment may not be showing on your till:
 
 * **The Booking Date has Passed:** It's important to note that this integration will not allow us to push payments to the till **after** the date of the booking has already passed. As such, if you are claiming a [Collins Card Authentication Payment](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) after the date of the booking, this will **not** push to the tills and you will have to be manually add the payment to your tills.
 
-**2. When I add a ‘Other’ payment on Collins, it looks like I have the option to push this to the tills. Will the payment show on the tills as the relevant payment type?**
+**2. When I add a ‘Other’ payment on Collins, I have the option to push this to the tills. Will the payment show on the tills as the relevant payment type?**
 
 Any payment that Collins pushes to Zonal will appear as whichever payment type we set up the integration with. We don't currently have a way to push different payment types.
 
