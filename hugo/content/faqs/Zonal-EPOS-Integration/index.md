@@ -103,7 +103,7 @@ To redeem the deposit against customer spend on the day of the booking:
 
 ## Zonal Error Emails
 
-Each time a booking/payment has failed to push to Zonal, a member of the Collins Team will email you with details of the error Collins received when trying to push the booking/payment. You will have to contact Zonal to look into resolving the issue. 
+If a booking/payment fails to push to Zonal, a member of the Collins Team will email you with details of the error Collins received when trying to push the booking/payment. You will have to contact Zonal to look into resolving the issue. 
 
 The error email will include three useful details:
 
