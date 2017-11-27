@@ -8,6 +8,8 @@ Here is a [basic HTML template](https://docs.google.com/document/d/1o5EMw0QcMXia
 
 We would recommend creating one general email template which can be used for all your outgoing emails from Collins.
 
+**_Please note:_** depending on our tech roadmap, it can take our tech team up to two weeks to upload your customised email templates.
+
 ## Examples of HTML templates
 For the best results, we would recommend that you do the following: 
 
