@@ -48,19 +48,27 @@ The following configuration options need to be provided for **each site** that w
 * Username: the authorization username to connect to Zonal
 * Password: the authorization password to connect to Zonal
 
-You will also need to specify how you would like the integration to function (this will depend on how you manage your reporting on your side). For this, you will need to confirm what you would like Collins to push to your tills and when this should be pushed:
+You will also need to specify how you would like the integration to function (this will depend on how you manage your reporting on your side). For this, you will need to confirm **which bookings** you would like Collins to push to your tills and **when** these bookings should be pushed:
 
 * Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills. 
 
 * Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent on the morning of the booking date.
 
+**_Please note:_** depending on our tech roadmap, it can take our tech team up to two weeks to set up this integration.
+
 ## Checking that the Collins/Zonal Integration is set up correctly
 
-Once your Collins Account Manager has been in touch that the integration has been set up, it's always worth creating a test payment (to test the connection and ensure that you're confident with how it will show on your tills).
+Once your Collins Account Manager has been in touch that the integration has been set up, it's always worth creating a test payment through Collins (to test the connection and ensure that you're confident with how it will show on your tills).
 
-Once the integration has been set up, all valid payments added to Collins will have an orange/green tick next to it in the Payments tab of the booking.
+Once the integration has been set up, all valid payments added to Collins will have a tick next to it in the Payments tab of the booking. The colour of the tick will determine the 'pushed to till' status:
 
-The green tick means that the payment has already been pushed to your till. 
+* The [green tick](https://static.designmynight.com/uploads/2017/11/pushed-to-till-optimised.png) means that the payment has already been pushed to your till. 
+
+* The [orange tick](https://static.designmynight.com/uploads/2017/11/not-pushed-to-till-optimised.png) will mean different things depending on how you've set the integration up:
+
+If you have set up to push bookings ASAP and the tick is orange, this means that the payment has not correctly pushed to your tills. Please see our troubleshooting steps below. 
+
+If you have set up to push bookings on the day of the booking, the orange tick means the payment is yet to push (and will push on the day of the booking). 
 
 ## Refunding on Collins and Zonal 
 
@@ -93,24 +101,69 @@ To redeem the deposit against customer spend on the day of the booking:
 5. Print the customer bill
 6. Pay the balance with the payment method of the customer’s choice
 
-## Zonal Troubleshooting
+## Zonal Error Emails
 
-There are some rare are occasions when the link between Collins and Zonal does not work, mostly due to loss of connectivity. A member of the Collins team will contact you if we receive an error when trying to push a booking/payment to Zonal. You will then need to contact Zonal directly to resolve the issue. 
+Each time a booking/payment has failed to push to Zonal, a member of the Collins Team will email you with details of the error Collins received when trying to push the booking/payment. You will have to contact Zonal to look into resolving the issue. 
 
-There is an Aztek report named “Bookings Due Report” which is very useful to check that bookings have pushed successfully to Collins, and we recommend checking this against your payments made in Collins on a regular basis to avoid any issues.
+The error email will include three useful details:
+
+* **Collins Link** which will direct you to the specific booking that was affected
+
+* **Zonal URL** which will describe what Collins was trying to push when the error was received (eg a payment)
+
+* **Zonal Message** which will give more details about why the push failed
+
+## Error Emails: Zonal URLs explained
+If the Zonal URL in your error emails ends in: 
+
+* **/edit** if the error occurred when editing booking details. You will only really require these updates if you wish for up-to-date booking details to show up on your tills. 
+
+We encourage all partners to use Collin during [live service](https://collins.uservoice.com/knowledgebase/articles/1183255-collins-webinars-prepping-for-and-using-collins) so you will always be able to get up to date booking details on Collins. 
+
+* **/deposit** if the error occurred when adding a deposit 
+
+* **/create** is the error occurred when creating the booking
+
+## Error Emails: Error Messages Explained
+
+* **'Unable to connect to the remote server'**
+
+This is a connection error on Zonal's side. You will need to contact Zonal to resolve the issue. 
+
+* **'Booking Not Found' Error** 
+
+These are errors from Zonal, which we are not given any further details about. You will need to contact Zonal.
+
+An example of when this error occurs is if the booking was created at one venue and the deposit was added to that venue's till, then it was later changed to a different venue so attempting to edit the booking on that till resulted in this error.
+
+Check the [Booking History](https://collins.uservoice.com/knowledgebase/articles/1111738-within-a-booking-enquiry-booking-history) to see if the venue has been updated (after the payment was taken). 
+
+The Zonal API doesn't support removing deposits once they've been added so this will need to be moved manually.
+
+## Re-pushing '/create' error bookings
+
+If you have contacted Zonal and they have fixed the original issue (eg connection error), you _may_ be able to re-push the booking/payment through Collins. To try and re-push the booking/payment:
+
+1. Go to the booking in Collins
+2. Change the First Name to/from lowercase/uppercase
+3. Click SAVE
 
 ## Collins/Zonal Integration FAQs
 
 **1. I've just added a payment to Collins, why has it not pushed to my tills?**
 
-There are a few different reasons why a payment may not be showing on your till:
+There are a few different reasons why a payment may not be showing on your till. Please work through these points before contacting your Collins Account Manager: 
 
-* **Minimum Deposit Date:** It’s worth checking the minimum deposit date that was set for your Zonal integration. Any bookings with deposits that are on the system, before your go-live, that get updated, won’t push to the till.
+* **Minimum Deposit Date:** It’s worth checking whether the booking had been added to the system before the Collins/Zonal integration went live. Any bookings with deposits that were already on Collins (before the integration went live) that get updated, will not get pushed to the till (to avoid duplicates on your tills).
 
 * **The Booking Date has Passed:** It's important to note that this integration will not allow us to push payments to the till **after** the date of the booking has already passed. As such, if you are claiming a [Collins Card Authentication Payment](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) after the date of the booking, this will **not** push to the tills and you will have to be manually add the payment to your tills.
+
+Similarly, if you add a payment to a booking (when the booking date has already passed) and try to change the date of the booking to a future date, the payment will not be pushed to the till. 
+
 
 **2. When I add a ‘Other’ payment on Collins, I have the option to push this to the tills. Will the payment show on the tills as the relevant payment type?**
 
 Any payment that Collins pushes to Zonal will appear as whichever payment type we set up the integration with. We don't currently have a way to push different payment types.
+
 
 
