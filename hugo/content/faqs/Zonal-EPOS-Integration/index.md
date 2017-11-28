@@ -20,10 +20,6 @@ Bookings will be sent to the EPOS with the following details
 * Reference: the Collins booking reference
 * Deposit amount: the total of all paid deposits
 
-All paid deposits are considered valid for storing in Zonal. Any [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) will automatically push to your tills. 
-
-Payments claimed by [Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) will **not** push to the till. This is because card auth payments should only be taken **after** the booking date has passed (if the customer was a no-show or failed to meet your booking policies). The Collins/Zonal integration will not allow for payments that have been added after the booking date has passed. 
-
 **Handling changes in Collins**
 
 Whenever a booking is changed in Collins, the integration will check if that deposit should be updated in Zonal. If the
@@ -32,6 +28,30 @@ sent.
 
 **Note:** the Zonal API does not support editing or deleting deposits from the EPOS, so any refunds processed in Collins will
 need to be manually updated in the EPOS
+
+## Payments Valid to Push to Zonal EPOS
+
+* **Paid Deposits** 
+
+All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) are considered valid to push to your Zonal EPOS. 
+
+* **Payments claimed by Card Authentication** 
+ 
+ The Collins/Zonal integration will **not** allow for Collins to push payments that have been added **after** the booking date has passed. 
+ 
+Payments claimed from [Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) should only be taken **after** the booking date has passed (in the case that the customer was a no-show or failed to meet your booking policies).
+
+As such payments claimed by Card Authentication will **not** push to the till.
+
+* **Pushing 'Other' Payments**
+
+If you add an ['Other'](https://collins.uservoice.com/knowledgebase/articles/478056-within-a-booking-enquiry-recording-payments-made) Payment to your Collins booking, you will see an option to 'Push to Till'. By default, this field will stay blank. 
+
+Depending on whether you would like to push the 'Other' payment to your tills, you will have to manually select Yes/No from the drop-down accordingly. 
+
+You will not be able to proceed with adding the payment without selecting an option on the 'Push to Till' drop down.
+
+This way your team has full control as to which payments get pushed to your tills.
 
 ## Setting up the Collins/Zonal EPOS Integration
 
@@ -71,16 +91,6 @@ Once the integration has been set up, all valid payments added to Collins will h
 If you have set up to push bookings ASAP and the tick is orange, this means that the payment has not correctly pushed to your tills. Please see our troubleshooting steps below. 
 
 If you have set up to push bookings on the day of the booking, the orange tick means the payment is yet to push (and will push on the day of the booking). 
-
-## Pushing 'Other' Payments
-
-If you add an ['Other'](https://collins.uservoice.com/knowledgebase/articles/478056-within-a-booking-enquiry-recording-payments-made) Payment to your Collins booking, you will see an option to 'Push to Till'. By default, this field will stay blank. 
-
-Depending on whether you would like to push the 'Other' payment to your tills, you will have to manually select Yes/No from the drop-down accordingly. 
-
-You will not be able to proceed with adding the payment without selecting an option on the 'Push to Till' drop down.
-
-This way your team has full control as to which payments get pushed to your tills.
 
 ## Refunding on Collins and Zonal 
 
