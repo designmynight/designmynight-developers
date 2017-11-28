@@ -39,9 +39,9 @@ All [manual/request payments](https://collins.uservoice.com/knowledgebase/articl
  
  The Collins/Zonal integration will **not** allow for Collins to push payments that have been added **after** the booking date has passed. 
  
-Payments claimed from [Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) should only be taken **after** the booking date has passed (in the case that the customer was a no-show or failed to meet your booking policies).
+Payments claimed from [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) should only be taken **after** the booking date has passed (in the case that the customer was a no-show or failed to meet your booking policies).
 
-As such payments claimed by Card Authentication will **not** push to the till.
+As such payments claimed by Card Authentication will **not** push to the till and will need to be manually added to your tills. 
 
 * **Pushing 'Other' Payments**
 
@@ -91,6 +91,18 @@ Once the integration has been set up, all valid payments added to Collins will h
 If you have set up to push bookings ASAP and the tick is orange, this means that the payment has not correctly pushed to your tills. Please see our troubleshooting steps below. 
 
 If you have set up to push bookings on the day of the booking, the orange tick means the payment is yet to push (and will push on the day of the booking). 
+
+## Best Practice for Pushing all bookings
+
+If your integration is set up to push all bookings (not just bookings with deposits), it's important that you ensure that all of the following booking details are added to the booking in Collins:
+
+* First Name
+* Last Name 
+* Booking Date
+* Venue
+* Email Address
+
+Without all these details, we will be unable to push the booking to your tills. 
 
 ## Refunding on Collins and Zonal 
 
@@ -188,7 +200,9 @@ There are a few different reasons why a payment may not be showing on your till.
 
 * **Minimum Deposit Date:** It’s worth checking whether the booking had been added to the system before the Collins/Zonal integration went live. Any bookings with deposits that were already on Collins (before the integration went live) that get updated, will not get pushed to the till (to avoid duplicates on your tills).
 
-* **The Booking Date has Passed:** It's important to note that this integration will not allow us to push payments to the till **after** the date of the booking has already passed. As such, if you are claiming a [Collins Card Authentication Payment](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) after the date of the booking, this will **not** push to the tills and you will have to be manually add the payment to your tills.
+* **The Booking Date has Passed:** It's important to note that this integration will not allow us to push payments to the till **after** the date of the booking has already passed. 
+
+So if you are claiming a [Collins Card Authentication Payment](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) after the date of the booking, this will **not** push to the tills and you will have to be manually add the payment to your tills.
 
 Similarly, if you add a payment to a booking (when the booking date has already passed) and try to change the date of the booking to a future date, the payment will not be pushed to the till. 
 
