@@ -26,7 +26,7 @@ Whenever a booking is changed in Collins, the integration will check if that dep
 booking has already been added to Zonal, any updates to the core booking details will be sent, and new deposits will be
 sent.
 
-**Note:** the Zonal API does not support editing or deleting deposits from the EPOS, so any refunds processed in Collins will
+**_Please note:_** the Zonal API does not support editing or deleting deposits from the EPOS, so any refunds processed in Collins will
 need to be manually updated in the EPOS
 
 ## Payments Valid to Push to Zonal EPOS
