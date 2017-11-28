@@ -20,7 +20,9 @@ Bookings will be sent to the EPOS with the following details
 * Reference: the Collins booking reference
 * Deposit amount: the total of all paid deposits
 
-All paid deposits are considered valid for storing in Zonal, with the exception of those added in Collins as a Cash payment.
+All paid deposits are considered valid for storing in Zonal. Any [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) will automatically push to your tills. 
+
+Payments claimed by [Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) will **not** push to the till. This is because card auth payments should only be taken **after** the booking date has passed (if the customer was a no-show or failed to meet your booking policies). The Collins/Zonal integration will not allow for payments that have been added after the booking date has passed. 
 
 **Handling changes in Collins**
 
@@ -69,6 +71,16 @@ Once the integration has been set up, all valid payments added to Collins will h
 If you have set up to push bookings ASAP and the tick is orange, this means that the payment has not correctly pushed to your tills. Please see our troubleshooting steps below. 
 
 If you have set up to push bookings on the day of the booking, the orange tick means the payment is yet to push (and will push on the day of the booking). 
+
+## Pushing 'Other' Payments
+
+If you add an ['Other'](https://collins.uservoice.com/knowledgebase/articles/478056-within-a-booking-enquiry-recording-payments-made) Payment to your Collins booking, you will see an option to 'Push to Till'. By default, this field will stay blank. 
+
+Depending on whether you would like to push the 'Other' payment to your tills, you will have to manually select Yes/No from the drop-down accordingly. 
+
+You will not be able to proceed with adding the payment without selecting an option on the 'Push to Till' drop down.
+
+This way your team has full control as to which payments get pushed to your tills.
 
 ## Refunding on Collins and Zonal 
 
@@ -139,6 +151,16 @@ An example of when this error occurs is if the booking was created at one venue 
 Check the [Booking History](https://collins.uservoice.com/knowledgebase/articles/1111738-within-a-booking-enquiry-booking-history) to see if the venue has been updated (after the payment was taken). 
 
 The Zonal API doesn't support removing deposits once they've been added so this will need to be moved manually.
+
+* **'Invalid date 'False'; expected YYYY-mm-dd' Error**
+
+This error occurs if the booking has been added **without** a booking date. To fix this, you will need to enter the date of the booking. If you add a **future** date for the Booking Date, the booking will automatically push to your tills (so there is no need to contact Zonal). 
+
+* **'Invalid date Invalid booking field: ContactName' Error**
+
+This error occurs when there is a space in the 'Name' field of your booking. For example, if someone has a double barrelled surname, the name must be entered with a hyphen not a space e.g. John-Edwards **NOT** John Edwards. 
+
+Once the name has been been hyphenated and saved, the booking will automatically push to your tills (as long as the booking date has not already passed).  
 
 ## Re-pushing '/create' error bookings
 
