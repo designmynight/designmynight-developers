@@ -50,7 +50,7 @@ Where you will have to replace the VENUEGROUPID given from your Account Manager.
 
 If you are posting the form independently, then you will need to make sure these three fields are added to the final payload posted to www.designmynight.com/book.
 
-# General Enquiry Form FAQs
+## General Enquiry Form FAQs
 
 **1. I'm trying to post to https://www.designmynight.com/book but am receiving the following error message: "No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin is therefore not allowed access."**
 
