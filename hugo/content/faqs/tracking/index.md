@@ -24,7 +24,7 @@ An example of a venue that has done this is Dirty Martini - [Dirty Martini Thank
 
 **_Please note:_** the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format. 
 
-## 3. Using our API _(big tech build, we do not recommend)_
+##  Using our API _(big tech build, we do not recommend)_
 
 Use our API to build out your own checkout which you can track completely as you want then you can do whatever you want - big tech build - [developers.designmynight.com](developers.designmynight.com)
 
