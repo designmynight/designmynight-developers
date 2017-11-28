@@ -5,7 +5,6 @@ Here’s a guide to help you [Add the booking widget to your Wordpress site](htt
 
 **_Please note:_** you will need to upgrade to the Business Plan to be able to add the widget code to your site. 
 
-
 ## How to add the widget to Squarespace?
 Here’s a guide to help you [Add the booking widget to your Squarespace site](https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-HTML-CSS-and-JavaScript)
 
