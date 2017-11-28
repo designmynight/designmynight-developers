@@ -100,9 +100,14 @@ If your integration is set up to push all bookings (not just bookings with depos
 * Last Name 
 * Booking Date
 * Venue
+* Time
 * Email Address
 
 Without all these details, we will be unable to push the booking to your tills. 
+
+**_Please note:_** if you are manually adding the First and Last Names into the booking (eg if you are taking the booking over the phone or in person), please separate multiple barrel names with a hyphen instead of a space. 
+
+e.g. John-Edwards **NOT** John Edwards
 
 ## Refunding on Collins and Zonal 
 
@@ -180,7 +185,7 @@ This error occurs if the booking has been added **without** a booking date. To f
 
 * **'Invalid date Invalid booking field: ContactName' Error**
 
-This error occurs when there is a space in the 'Name' field of your booking. For example, if someone has a double barrelled surname, the name must be entered with a hyphen not a space e.g. John-Edwards **NOT** John Edwards. 
+This error occurs when there is a space in the 'Name' field of your booking. For example, if someone has a double barrel surname, the name must be entered with a hyphen not a space e.g. John-Edwards **NOT** John Edwards. 
 
 Once the name has been been hyphenated and saved, the booking will automatically push to your tills (as long as the booking date has not already passed).  
 
@@ -205,7 +210,6 @@ There are a few different reasons why a payment may not be showing on your till.
 So if you are claiming a [Collins Card Authentication Payment](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) after the date of the booking, this will **not** push to the tills and you will have to be manually add the payment to your tills.
 
 Similarly, if you add a payment to a booking (when the booking date has already passed) and try to change the date of the booking to a future date, the payment will not be pushed to the till. 
-
 
 **2. When I add a ‘Other’ payment on Collins, I have the option to push this to the tills. Will the payment show on the tills as the relevant payment type?**
 
