@@ -1,17 +1,20 @@
 # Adding your Collins booking widget to your website
 
-## How to add the widget to Wordpress?
+## How to add the widget to Wordpress
 Here’s a guide to help you [Add the booking widget to your Wordpress site](https://en.support.wordpress.com/widgets/custom-html-widget/)
 
 **_Please note:_** you will need to upgrade to the Business Plan to be able to add the widget code to your site. 
 
-## How to add the widget to Squarespace?
+## How to add the widget to Squarespace
 Here’s a guide to help you [Add the booking widget to your Squarespace site](https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-HTML-CSS-and-JavaScript)
 
 **_Please note:_** you need to add a **Code Block**, not an Embed Block.
 
-## How to add the widget to Wix?
+## How to add the widget to Wix
 Here's a guide to help you [Add the booking widget to your Wix site](https://support.wix.com/en/article/adding-html-code)
+
+## How to add the widget to Facebook
+Here's a guide to help you [Add the booking widget to your Facebook page](https://collins.uservoice.com/knowledgebase/articles/478066-facebook-widget-set-up)
 
 ## Customising your Collins booking widget
 
@@ -51,6 +54,45 @@ Here are some great examples of customised headers/buttons that our partners hav
 [Wahaca](http://www.wahaca.co.uk/locations/covent-garden/)
 
 [Buffalo & Rye](http://www.buffaloandrye.co.uk/)
+
+## Setting up Multilingual Widgets
+
+Collins gives you the option to display your booking widget in the following additional languages:
+
+* Dutch
+* French
+* German
+* Spanish
+
+If you would like your booking widget to display in multiple languages , you are able to set this by doing the following:
+
+1. Log onto your [Collins admin](https://admin.designmynight.com/collins)
+2. Go to Settings > Venues > Select your venue > Translation
+3. Tick the additional language(s) that you would like your widget to display in
+4. When you tick an additional language, you will have the option to type your own translations for each section (eg Booking Type Names, Automated Emails, Offers etc.)
+5. Click SAVE
+
+Once your Translation has been set up in Collins, your web developer will have to add an extra piece of code to your widget script.
+
+After your Venue ID, please add `&locales=` followed by the code for the language that you wish to add to your widget. Add multiple languages separated by a comma.  
+
+English `en-GB`
+
+Dutch `nl-NL`
+
+French `fr-FR`
+
+German `de-DE`
+
+Example: this widget will display both English and German options:
+
+```
+<script
+ src="//partners.designmynight.com/pf/js?venue_id=59d759f1cf53f24ceb4fbff0&locales=en-GB,de-DE" id="dmn-js">
+</script>
+```
+
+**_Please note:_** Your web devolper may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/booking-widget/#styling-the-form).    
 
 ## Booking Widget FAQs
 
