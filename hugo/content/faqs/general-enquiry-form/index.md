@@ -14,7 +14,7 @@ This will ensure that these field details will pull through to the respective fi
 
 **To add a new enquiry field:**
 
-1. Log onto your [Collins admin](www.admin.designmynight.com)
+1. Log onto your [Collins admin](https://admin.designmynight.com/collins)
 2. Go to Settings > Venue Group > Enquiries
 3. Tick the box 'Enable Enquiries'
 4. In Enquiy Fields section, click to 'Add a Field' 
