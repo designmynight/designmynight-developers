@@ -10,6 +10,9 @@ Here’s a guide to help you [Add the booking widget to your Squarespace site](h
 
 **_Please note:_** you need to add a **Code Block**, not an Embed Block.
 
+## How to add the widget to Wix?
+Here's a guide to help you [Add the booking widget to your Wix site](https://support.wix.com/en/article/adding-html-code)
+
 ## Customising your Collins booking widget
 
 Since the booking form is inserted into your own website, it will automatically pick up any applicable CSS, so it can completely match the look and feel of your website.
