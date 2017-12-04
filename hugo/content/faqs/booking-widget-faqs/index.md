@@ -29,9 +29,9 @@ To add CSS code, you will have to surround your CSS code with ```<style></style>
 
 ## How to customise the wording of the "Make an Enquiry" header and "Enquire Now" button
 
-As standard, the widget comes with "Make an Enquiry" as the header and "Enquire Now" on the button. Your web developer will be able to amend the wording of these should you wish (for example, if all your booking types are set to auto-confirm, you may wish to have the button say "Book Now"). 
+As standard, the widget comes with "Make an Enquiry" as the header and "Enquire Now" on the button. Your web developer will be able to amend the wording of these should you wish (for example, if all your booking types are set to [auto-confirm only](https://collins.uservoice.com/knowledgebase/articles/973384-booking-types-setting-up-an-auto-confirm-only-bo), you may wish to have the button say "Book Now"). 
 
-Your web developer will need to create images that you would like the replace the Header/Button with. You web developer will then need to override the CSS of the specific [form element](http://developers.designmynight.com/booking-widget/#styling-the-form). 
+Your web developer will need to create images that you would like to replace the Header/Button with. Your web developer will then need to override the CSS of the specific [form element](http://developers.designmynight.com/booking-widget/#styling-the-form). 
 
 If you are replacing the image of the header:
 
@@ -92,7 +92,22 @@ Example: this widget will display both English and German options:
 </script>
 ```
 
-**_Please note:_** Your web devolper may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/booking-widget/#styling-the-form).    
+**_Please note:_** Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/booking-widget/#styling-the-form).    
+
+## Multiple Booking Widgets
+If you have added multiple Collins booking widgets to your website but are looking to target each specific form (for example so that you can use Google Analytics for both widgets).  
+
+Forms are accessed by their ID, but there's currently no way to set the ID for a particular form. Instead, you'd need to retrieve the numerical ID from the form's ID attribute once it's been written to the page, using something like this, changing the `getElementById` part to something that identifies a container of the form you want to target:
+
+```
+var formId = document.getElementById('form-container').getElementsByClassName('dmn-form')[0].getAttribute('id').substr('dmn-form-'.length);
+```
+
+Once you have the ID you can then set values on that particular form by passing an object to `DMN.val()` like this:
+
+```
+DMN.val({field: 'time', value: '22:00', formId: formId})
+```
 
 ## Booking Widget FAQs
 
