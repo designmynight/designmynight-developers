@@ -190,12 +190,25 @@ This error occurs when there is a space in the 'Name' field of your booking. For
 Once the name has been been hyphenated and saved, the booking will automatically push to your tills (as long as the booking date has not already passed).  
 
 ## Re-pushing '/create' error bookings
+If the integration is set up to push bookings ASAP, Collins will attempt to push bookings to your tills every time a user saves a booking if one of the following booking fields has been changed in Collins: 
 
-If you have contacted Zonal and they have fixed the original issue (eg connection error), you _may_ be able to re-push the booking/payment through Collins. To try and re-push the booking/payment:
+* Venue
+* First Name
+* Last Name
+* Deposits
+* Time
+* Number of People 
+* Status
+
+As such, if you have contacted Zonal and they have fixed the original issue (eg connection error), you can try to re-push the booking/payment to your tills by changing one of the above booking fields in Collins. 
+
+For example, you can make the following changes:
 
 1. Go to the booking in Collins
-2. Change the First Name to/from lowercase/uppercase
+2. Change the First Name from lowercase to UPPERCASE
 3. Click SAVE
+
+After you have saved this booking change, Collins will attempt to push the booking to your tills. 
 
 ## Collins/Zonal Integration FAQs
 
