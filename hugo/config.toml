@@ -102,6 +102,25 @@ googleAnalytics = "UA-12385609-13"
     weight = 130
     name = "   "
 
+[[menu.main]]
+    name   = "EPOS/CRM Integrations"
+    url    = "epos-crm-integrations/"
+    identifier = "epos-crm-integrations"
+
+[[menu.main]]
+    name   = "Zonal EPOS Integration"
+    url    = "epos-crm-integrations/Zonal-EPOS-Integration/"
+    parent = "epos-crm-integrations"
+
+[[menu.main]]
+    name   = "IBS EPOS Integration"
+    url    = "epos-crm-integrations/IBS-EPOS-Integration/"
+    parent = "epos-crm-integrations"
+    
+[[menu.main]]
+    name   = "CRM Integration"
+    url    = "epos-crm-integrations/CRM-Integration"
+    parent = "epos-crm-integrations"
 
 
 [[menu.main]]
