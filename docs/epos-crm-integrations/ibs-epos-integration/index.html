@@ -14,12 +14,12 @@
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/">
+    <link rel="canonical" href="https://designmynight.github.io/designmynight-developers/epos-crm-integrations/ibs-epos-integration/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/">
+    <meta property="og:url" content="https://designmynight.github.io/designmynight-developers/epos-crm-integrations/ibs-epos-integration/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="https://designmynight.github.io/designmynight-developers/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -545,14 +545,11 @@
 
 
 
-<a class="current" title="Booking widget faqs" href="https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/">
+<a  title="Booking widget faqs" href="https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/">
 	
 	Booking widget faqs
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
       
         
@@ -640,154 +637,64 @@
 
 			
 
-<h1 id="adding-your-collins-booking-widget-to-your-website">Adding your Collins booking widget to your website</h1>
+<h1 id="overview-of-the-collins-ibs-epos-integration">Overview of the Collins/IBS EPOS Integration</h1>
 
-<h2 id="how-to-add-the-widget-to-wordpress">How to add the widget to Wordpress</h2>
+<p>The purpose of the integration between Collins and IBS is to be able to push the details of bookings and their associated deposits to the IBS Epos system.</p>
 
-<p>Here’s a guide to help you <a href="https://en.support.wordpress.com/widgets/custom-html-widget/">Add the booking widget to your Wordpress site</a></p>
-
-<p><strong><em>Please note:</em></strong> you will need to upgrade to the Business Plan to be able to add the widget code to your site.</p>
-
-<h2 id="how-to-add-the-widget-to-squarespace">How to add the widget to Squarespace</h2>
-
-<p>Here’s a guide to help you <a href="https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-HTML-CSS-and-JavaScript">Add the booking widget to your Squarespace site</a></p>
-
-<p><strong><em>Please note:</em></strong> you need to add a <strong>Code Block</strong>, not an Embed Block.</p>
-
-<h2 id="how-to-add-the-widget-to-wix">How to add the widget to Wix</h2>
-
-<p>Here&rsquo;s a guide to help you <a href="https://support.wix.com/en/article/adding-html-code">Add the booking widget to your Wix site</a></p>
-
-<h2 id="how-to-add-the-widget-to-facebook">How to add the widget to Facebook</h2>
-
-<p>Here&rsquo;s a guide to help you <a href="https://collins.uservoice.com/knowledgebase/articles/478066-facebook-widget-set-up">Add the booking widget to your Facebook page</a></p>
-
-<h2 id="customising-your-collins-booking-widget">Customising your Collins booking widget</h2>
-
-<p>Since the booking form is inserted into your own website, it will automatically pick up any applicable CSS, so it can completely match the look and feel of your website.</p>
-
-<p>You can customise the look of your widget. To help you with customising your widget, here&rsquo;s a useful guide to help you <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">override the CSS</a>. You can also have a look through these <a href="https://docs.google.com/document/d/1VJ4sdW05MMdq1vGnEkFq2A2HQ2LjKzl3315Pu1hLBmI/edit">examples</a> of what other venues have done (to get an idea of what can be done).</p>
-
-<h2 id="how-to-customise-your-widget-on-squarespace">How to customise your widget on Squarespace</h2>
-
-<p>In the Code Block that you added to create your widget, you can add in specific rules to the CSS that applies to the booking form.</p>
-
-<p>To add CSS code, you will have to surround your CSS code with <code>&lt;style&gt;&lt;/style&gt;</code> tags.</p>
-
-<h2 id="how-to-customise-the-wording-of-the-make-an-enquiry-header-and-enquire-now-button">How to customise the wording of the &ldquo;Make an Enquiry&rdquo; header and &ldquo;Enquire Now&rdquo; button</h2>
-
-<p>As standard, the widget comes with &ldquo;Make an Enquiry&rdquo; as the header and &ldquo;Enquire Now&rdquo; on the button. Your web developer will be able to amend the wording of these should you wish (for example, if all your booking types are set to <a href="https://collins.uservoice.com/knowledgebase/articles/973384-booking-types-setting-up-an-auto-confirm-only-bo">auto-confirm only</a>, you may wish to have the button say &ldquo;Book Now&rdquo;).</p>
-
-<p>Your web developer will need to create images that you would like to replace the Header/Button with. Your web developer will then need to override the CSS of the specific <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">form element</a>.</p>
-
-<p>If you are replacing the image of the header:</p>
-
-<pre><code>.dmn-form h1 {
-  background-image: url('https://example.com/path/to/image.png');
-}
-</code></pre>
-
-<p>If you are replacing the image of the button:</p>
-
-<pre><code>.dmn-form button.submit {
-  background-image: url('https://example.com/path/to/image.png');
-}
-</code></pre>
-
-<p>Here are some great examples of customised headers/buttons that our partners have created:</p>
-
-<p><a href="http://www.wahaca.co.uk/locations/covent-garden/">Wahaca</a></p>
-
-<p><a href="http://www.buffaloandrye.co.uk/">Buffalo &amp; Rye</a></p>
-
-<h2 id="setting-up-multilingual-widgets">Setting up Multilingual Widgets</h2>
-
-<p>Collins gives you the option to display your booking widget in the following additional languages:</p>
+<p><strong>Details can be set to:</strong></p>
 
 <ul>
-<li>Dutch</li>
-<li>French</li>
-<li>German</li>
-<li>Spanish</li>
+<li>Push ASAP <strong>or</strong> push on the day of the booking</li>
+<li>Push all bookings <strong>or</strong> only push bookings with deposits</li>
 </ul>
 
-<p>If you would like your booking widget to display in multiple languages , you are able to set this by doing the following:</p>
+<p><strong>Bookings will be sent to the EPOS with the following details:</strong></p>
 
-<ol>
-<li>Log onto your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
-<li>Go to Settings &gt; Venues &gt; Select your venue &gt; Translation</li>
-<li>Tick the additional language(s) that you would like your widget to display in</li>
-<li>When you tick an additional language, you will have the option to type your own translations for each section (eg Booking Type Names, Automated Emails, Offers etc.)</li>
-<li>Click SAVE</li>
-</ol>
+<p>Name: The Customer&rsquo;s full name
+Date: The date of the booking
+Time: The time of the booking
+Cover Count: The number of guests in the booking
+Reference: The Collins booking reference
+Deposit amount: The total of all paid deposit</p>
 
-<p>Once your Translation has been set up in Collins, your web developer will have to add an extra piece of code to your widget script.</p>
+<h2 id="how-to-set-up-the-collins-ibs-integration">How to set up the Collins/IBS Integration:</h2>
 
-<p>After your Venue ID, please add <code>&amp;locales=</code> followed by the code for the language that you wish to add to your widget. Add multiple languages separated by a comma.</p>
+<p>If you are looking to set up a IBS integration, please contact your Collins Account Manager with the following details (you will be able to get these from IBS):</p>
 
-<p>English <code>en-GB</code></p>
+<ul>
+<li>Logon URL</li>
+<li>WSDL</li>
+<li>CompanyCode</li>
+<li>Username</li>
+<li>Password</li>
+<li>AppGUID</li>
+<li>LocationCode</li>
+</ul>
 
-<p>Dutch <code>nl-NL</code></p>
+<p>Please also confirm which bookings you would like Collins to push to your tills and when these should be pushed:</p>
 
-<p>French <code>fr-FR</code></p>
+<ul>
+<li>Push ASAP <strong>or</strong> push on the day of the booking</li>
+<li>Push all bookings <strong>or</strong> only push bookings with deposits</li>
+</ul>
 
-<p>German <code>de-DE</code></p>
+<p><strong><em>Please note:</em></strong> any bookings/deposits that are already on Collins (before the Collins/IBS integration is set up) will <strong>not</strong> push to the till unless a deposit is added/changed/deleted for the booking on Collins.</p>
 
-<p>Example: this widget will display both English and German options:</p>
+<h2 id="checking-that-the-collins-ibs-integration-is-set-up-correctly">Checking that the Collins/IBS Integration is set up correctly</h2>
 
-<pre><code>&lt;script
- src=&quot;//partners.designmynight.com/pf/js?venue_id=59d759f1cf53f24ceb4fbff0&amp;locales=en-GB,de-DE&quot; id=&quot;dmn-js&quot;&gt;
-&lt;/script&gt;
-</code></pre>
+<p>Once your Collins Account Manager has been in touch that the integration has been set up, it&rsquo;s always worth creating a test payment through Collins (to test the connection and ensure that you&rsquo;re confident with how it will show on your tills).</p>
 
-<p><strong><em>Please note:</em></strong> Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">customise the size of the widget</a>.</p>
+<p>Once the integration has been set up, all valid payments added to Collins will have a tick next to it in the Payments tab of the booking. The colour of the tick will determine the &lsquo;pushed to till&rsquo; status:</p>
 
-<h2 id="multiple-booking-widgets">Multiple Booking Widgets</h2>
+<ul>
+<li><p>The <a href="https://static.designmynight.com/uploads/2017/11/pushed-to-till-optimised.png">green tick</a> means that the payment has already been pushed to your till.</p></li>
 
-<p>If you have added multiple Collins booking widgets to your website but are looking to target each specific form (for example so that you can use Google Analytics for both widgets).</p>
+<li><p>The <a href="https://static.designmynight.com/uploads/2017/11/not-pushed-to-till-optimised.png">orange tick</a> will mean different things depending on how you&rsquo;ve set the integration up:</p></li>
+</ul>
 
-<p>Forms are accessed by their ID, but there&rsquo;s currently no way to set the ID for a particular form. Instead, you&rsquo;d need to retrieve the numerical ID from the form&rsquo;s ID attribute once it&rsquo;s been written to the page, using something like this, changing the <code>getElementById</code> part to something that identifies a container of the form you want to target:</p>
+<p>If you have set up to push bookings ASAP and the tick is orange, this means that the payment has not correctly pushed to your tills. Please see our troubleshooting steps below.</p>
 
-<pre><code>var formId = document.getElementById('form-container').getElementsByClassName('dmn-form')[0].getAttribute('id').substr('dmn-form-'.length);
-</code></pre>
-
-<p>Once you have the ID you can then set values on that particular form by passing an object to <code>DMN.val()</code> like this:</p>
-
-<pre><code>DMN.val({field: 'time', value: '22:00', formId: formId})
-</code></pre>
-
-<h2 id="booking-widget-faqs">Booking Widget FAQs</h2>
-
-<p><strong>1. Is it possible to add Placeholder Text in the fields?</strong></p>
-
-<p>You wouldn&rsquo;t be able to add placeholder text through our JS API. However, you could change it using a library like jquery or vanilla JS to add a placeholder to the element.</p>
-
-<p>Alternatively, you could set the background image of an input with CSS - guide here to help you <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">style the booking widget</a>.</p>
-
-<p><strong>2. My booking widget looks weird and some of the fields are not showing correctly!</strong></p>
-
-<p>If your booking widget is not appearing as expected, we recommend that you test your widget codes on <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a> (this is a website to test codes). To test your widget code:</p>
-
-<ol>
-<li>Copy your widget code (this can be found in your <a href="https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes">Collins admin settings</a>)</li>
-<li>Go to <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a></li>
-<li>Paste your widget code</li>
-<li>Click Run</li>
-</ol>
-
-<p>You should then see the widget on the right side of the screen which you can make a test booking for/play around with.</p>
-
-<p>If the widget is appearing and working correctly on Plunker, this means that the issue is isolated to your own website. This means that the issue will be caused by conflicting styles on your website and your web developer will need to take a closer look at your CSS.</p>
-
-<p><strong>3. The dates on my calendar are not showing correctly!</strong></p>
-
-<p>If you have tested the widget code on <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a> and the issue is isolated to your website, your web developer will have to look at the CSS styling on your page which is interfering with the code.</p>
-
-<p><strong>4. The drop down options on my widget fields are only visible when you hover over them. How do I  get all available drop down options to be visible for the customer to select?</strong></p>
-
-<p>If the colour of the <strong>Form Components</strong> is too similar a colour to the <strong>Input Labels</strong>, it can make it difficult for customers to view and select options.</p>
-
-<p>Your web developer should amend the CSS to tweak the colours used in your <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">Form Components and Input Labels</a>.</p>
+<p>If you have set up to push bookings on the day of the booking, the orange tick means the payment is yet to push (and will push on the day of the booking).</p>
 
 			
 			<aside class="copyright" role="note">
@@ -808,7 +715,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://designmynight.github.io/designmynight-developers/faqs/customising-2nd-iframe/" title="">
+      <a href="https://designmynight.github.io/designmynight-developers/epos-crm-integrations/zonal-epos-integration/" title="">
         <span class="direction">
           Previous
         </span>
@@ -828,7 +735,7 @@
 
   <div class="next">
   
-      <a href="https://designmynight.github.io/designmynight-developers/faqs/booking-url/" title="">
+      <a href="https://designmynight.github.io/designmynight-developers/epos-crm-integrations/crm-integration/" title="">
         <span class="direction">
           Next
         </span>

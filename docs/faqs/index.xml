@@ -13,19 +13,6 @@
     
     <item>
       <title></title>
-      <link>https://designmynight.github.io/designmynight-developers/faqs/zonal-epos-integration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://designmynight.github.io/designmynight-developers/faqs/zonal-epos-integration/</guid>
-      <description>Overview of the Collins/Zonal EPOS Integration The purpose of the integration between Collins and Zonal is for Collins to be able to push the details of bookings and their associated deposits to the Zonal EPOS system.
-Connecting to Zonal
-Collins connects to Zonal through Zonal’s ZCF server. Requests are transmitted over HTTPS with an authorisation header with credentials that Zonal set up and provide.
-Example URL: https://api.zonalconnect.com/PubChain/send/1902/booking
-Integration configuration</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://designmynight.github.io/designmynight-developers/faqs/api-faqs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -42,10 +29,10 @@ We are creating our own check out using the Collins API. We know that we have to
       
       <guid>https://designmynight.github.io/designmynight-developers/faqs/booking-url/</guid>
       <description>Booking URL for a specific venue If you are unable to add the Collins booking widget, it&amp;rsquo;s possible for you to include a booking URL to your website instead.
+Here is an example of partners using a booking URL: The Park Tavern
 To create a booking URL for your venue, you will need to use a URL of the following form:
 https://www.designmynight.com/book?venue_id=VENUEID&amp;amp;source=partner&amp;amp;format=modal
-Where you have to replace &amp;lsquo;VENUEID&amp;rsquo; with your unique Collins Venue ID. To find your Collins Venue ID:
-Settings &amp;gt; Venues &amp;gt; Select your venue &amp;gt; in the URL, your venue ID will be included at the end in the URL:</description>
+Where you have to replace &amp;lsquo;VENUEID&amp;rsquo; with your unique Collins Venue ID.</description>
     </item>
     
     <item>
@@ -54,9 +41,9 @@ Settings &amp;gt; Venues &amp;gt; Select your venue &amp;gt; in the URL, your ve
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/</guid>
-      <description>Adding your Collins booking widget to your website How to add the widget to Wordpress? Here’s a guide to help you Add the booking widget to your Wordpress site
+      <description>Adding your Collins booking widget to your website How to add the widget to Wordpress Here’s a guide to help you Add the booking widget to your Wordpress site
 Please note: you will need to upgrade to the Business Plan to be able to add the widget code to your site.
-How to add the widget to Squarespace? Here’s a guide to help you Add the booking widget to your Squarespace site</description>
+How to add the widget to Squarespace Here’s a guide to help you Add the booking widget to your Squarespace site</description>
     </item>
     
     <item>
@@ -99,8 +86,7 @@ To create your own personalised Enquiry form:
       
       <guid>https://designmynight.github.io/designmynight-developers/faqs/tracking/</guid>
       <description>Tracking There are 3 ways you can look at tracking:
-1. Google/Facebook:
-Putting Google/Facebook code on the first enquire button in the CSS (this isn&amp;rsquo;t tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on Adding Google Analytics Tracking Code to the booking widget.</description>
+Google/Facebook Tracking Putting Google/Facebook code on the first enquire button in the CSS (this isn&amp;rsquo;t tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on Adding Google Analytics Tracking Code to the booking widget.</description>
     </item>
     
   </channel>

@@ -109,17 +109,17 @@ googleAnalytics = "UA-12385609-13"
 
 [[menu.main]]
     name   = "Zonal EPOS Integration"
-    url    = "epos-crm-integrations/Zonal-EPOS-Integration/"
+    url    = "epos-crm-integrations/zonal-epos-integration"
     parent = "epos-crm-integrations"
 
 [[menu.main]]
     name   = "IBS EPOS Integration"
-    url    = "epos-crm-integrations/IBS-EPOS-Integration/"
+    url    = "epos-crm-integrations/ibs-epos-integration"
     parent = "epos-crm-integrations"
     
 [[menu.main]]
     name   = "CRM Integration"
-    url    = "epos-crm-integrations/CRM-Integration"
+    url    = "epos-crm-integrations/crm-integration"
     parent = "epos-crm-integrations"
 
 
