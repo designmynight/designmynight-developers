@@ -8,7 +8,7 @@ Here is a [basic HTML template](https://docs.google.com/document/d/1o5EMw0QcMXia
 
 We would recommend creating one general email template which can be used for all your outgoing emails from Collins.
 
-It's worth noting that depending on your HTML code, the emails may look slightly different in different mail clients (Gmail, hotmail, etc). This is because there can be code in your HTML that is not supported by a specific client. It will be up to you to test the emails in different email clients to check that you are happy with each format.
+It's worth noting that depending on your HTML code, the emails may look slightly different in different mail clients (Gmail, hotmail, etc). This is because there can be code in your HTML that is not supported by a specific client. It is important that you do cross email client checks with your email templates before you send them to us to upload. 
 
 **_Please note:_** depending on our tech roadmap, it can take our tech team up to two weeks to upload your customised email templates.
 
