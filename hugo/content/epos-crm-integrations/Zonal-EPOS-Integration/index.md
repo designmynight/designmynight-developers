@@ -80,7 +80,9 @@ You will also need to specify how you would like the integration to function (th
 
 ## Checking that the Collins/Zonal Integration is set up correctly
 
-Once your Collins Account Manager has been in touch that the integration has been set up, it's always worth creating a test payment through Collins (to test the connection and ensure that you're confident with how it will show on your tills).
+Once your Collins Account Manager has been in touch that the integration has been set up, it will be your responsibility to check that the integration is working correctly (as Collins will not be able to access your till systems to test). 
+
+As such, we recommend that you create a test payment through Collins. This will both test the connection and ensure that you're confident with how it will show on your tills.
 
 Once the integration has been set up, all valid payments added to Collins will have a tick next to it in the Payments tab of the booking. The colour of the tick will determine the 'pushed to till' status:
 
