@@ -33,7 +33,7 @@ need to be manually updated in the EPOS
 
 * **Paid Deposits** 
 
-All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) are considered valid to push to your Zonal EPOS. 
+All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) taken using the payment link in Collins will automatically push to your Zonal EPOS. 
 
 * **Payments claimed by Card Authentication** 
  
