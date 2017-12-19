@@ -111,4 +111,10 @@ Without all these details, we will be unable to push the booking to your tills.
 
 e.g. John-Edwards **NOT** John Edwards
 
+## IBS EPOS Integration FAQS
+
+**1. If we set up the integration to push all bookings, will my in progress enquiries get pushed to tills?** 
+
+There is not currently a status check in place, so Collins would push all bookings regardless of booking status.
+
 
