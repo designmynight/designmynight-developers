@@ -76,6 +76,24 @@ If you have set up to push bookings ASAP and the tick is orange, this means that
 
 If you have set up to push bookings on the day of the booking, the orange tick means the payment is yet to push (and will push on the day of the booking). 
 
+## How to push bookings that were on Collins before the IBS integration
+
+If the integration is set up to push bookings ASAP, Collins will attempt to push bookings to your tills every time a user add/edits/deletes a Payment for the booking in Collins and saves. 
+
+As such, if you add a new payment to any bookings already on Collins before the integration was set up, the booking will be pushed to the tills. 
+
+If you wish to push a booking/deposit that was already set up on Collins before the integration (even if no new payments have been taken after the integration is set up):
+
+1. Go to the booking on Collins
+2. Add an ['Other'payment](https://collins.uservoice.com/knowledgebase/articles/478056-within-a-booking-enquiry-recording-payments-made). Select for the payment **not** to push to your tills.  
+3. Save the booking
+4. Delete the deposit
+5. Save the booking
+
+The booking should push to your tills. 
+
+**_Please note:_** this will only work for bookings that have a future booking date. This integration does not allow for Collins to push bookings if the date of the booking has already passed. 
+
 ## Best Practice for Pushing all bookings
 
 If your integration is set up to push all bookings (not just bookings with deposits), it's important that you ensure that all of the following booking details are added to the booking in Collins:
@@ -92,4 +110,5 @@ Without all these details, we will be unable to push the booking to your tills.
 **_Please note:_** if you are manually adding the First and Last Names into the booking (eg if you are taking the booking over the phone or in person), please separate multiple barrel names with a hyphen instead of a space. 
 
 e.g. John-Edwards **NOT** John Edwards
+
 
