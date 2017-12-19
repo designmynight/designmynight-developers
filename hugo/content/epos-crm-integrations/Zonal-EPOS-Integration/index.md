@@ -84,7 +84,9 @@ You will also need to specify how you would like the integration to function (th
 
 * Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent on the morning of the booking date.
 
-* Push all future bookings with payments **already** added on Collins (if you have set bookings to push ASAP). If set, will push all future bookings with deposits to your EPOS. Otherwise, we will only push bookings with new deposits which are added to Collins **after** the integration goes live (Minimum Deposit Date).
+If you have already started taking payments through Collins Pay, you can you will need to specify if you would like to push all future bookings with payments **already** added on Collins. If so, we will push all future bookings with deposits to your EPOS when setting up the intergration. Otherwise, we will only push bookings with new deposits which are added to Collins **after** the integration goes live (Minimum Deposit Date).
+
+If you are chosing to push payments on the day the booking takes place, we will push all future bookings with payments
 
 **_Please note:_** depending on our tech roadmap, it can take our tech team up to two weeks to set up this integration.
 
