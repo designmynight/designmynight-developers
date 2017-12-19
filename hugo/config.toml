@@ -154,7 +154,10 @@ googleAnalytics = "UA-12385609-13"
 	url    = "faqs/tracking/"
 	parent = "faqs"
 
-
+[[menu.main]]
+	name   = "API FAQs"
+	url    = "faqs/api-faqs/"
+	parent = "faqs"
 
 
 
