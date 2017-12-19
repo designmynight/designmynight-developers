@@ -84,6 +84,18 @@ You will also need to specify how you would like the integration to function (th
 
 * Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent on the morning of the booking date.
 
+* Push all future bookings with payments already on Collins. If your venue has already been using Collins Pay, you should let us know whether your team has been manually adding payments to your tills. If so, we can set a minimum deposit date for when the integration goes live (to avoid duplicates on your tills). 
+
+This would mean that any bookings with deposits already added (but not necessarily received yet) on Collins, before the integration goes live, that get updated, **will not** push to the till.
+
+For example: the integration goes live on 1st December (and the minimum deposit date is set to 1st December)
+
+If you already have a payment request for a booking on 30th November but the payment is not received until 2nd December. This deposit **will not** be pushed to your tills (as the payment was added before the minimum deposit date).
+
+Only any payments added after 1st December will ever be considered valid to be pushed to the till.
+
+If you have not been manually adding payments on your tills (eg if you are changing till systems), we can push **all** future bookings with deposits to your tills. 
+
 **_Please note:_** depending on our tech roadmap, it can take our tech team up to two weeks to set up this integration.
 
 ## Checking that the Collins/Zonal Integration is set up correctly
