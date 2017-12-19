@@ -1,5 +1,5 @@
 ## API Troubleshooting
-If you using our API and think that something is not working correctly, we will require both the full request and full response from your web developer before we can look into it for you:  
+If you are using our API and think that something is not working correctly, we will require both the full request and full response from your web developer before we can look into it for you:  
 
 * Full Request - example [here](https://drive.google.com/file/d/0B-baIeSCNY2BcmNFZGZVVWFpbmZDdEhBbUhqMF9MaHdYVl84/view?usp=sharing)
 * Full Response - example [here](https://drive.google.com/file/d/0B-baIeSCNY2BdjJ0WFpqaEJiRE8xVDN3VWEwaE1fTkNiTDZ3/view?usp=sharing)
