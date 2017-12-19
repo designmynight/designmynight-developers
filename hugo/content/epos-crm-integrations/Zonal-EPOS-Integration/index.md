@@ -256,5 +256,10 @@ Similarly, if you add a payment to a booking (when the booking date has already 
 
 Any payment that Collins pushes to Zonal will appear as whichever payment type we set up the integration with. We don't currently have a way to push different payment types.
 
+**3. If we set up the integration to push all bookings, will my in progress enquiries get pushed to tills?** 
+
+There is not currently a status check in place, so Collins would push all bookings regardless of booking status.
+
+
 
 
