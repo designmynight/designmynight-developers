@@ -17,7 +17,9 @@ We can give CRM systems access to the Collins API. This will enable them to pull
 * Bookings Reports - this will pull your booking reports with whichever parameters you wish
 * Venues - this will pull your DMN Venue reviews
 
-If you are looking to get API access for your CRM system, please contact your Collins Account Manager with full details of what you are looking to do and which specific API endpoints you are looking to use (for example, Users endpoint for Customer Data). 
+If you are looking to get API access for your CRM system, the first step is for the Account Manager at your CRM system to have a look through our [API Basics for Developers](http://developers.designmynight.com/api-basics/).
+
+If you would then like to proceed, please contact your Collins Account Manager with full details of what you are looking to do and which specific API endpoints you are looking to use (for example, Users endpoint for Customer Data). 
 
 You will then be given the following:
 
@@ -30,7 +32,7 @@ It will then be up to your CRM system to access our API and pull the relevant da
 
 ## Collins/Fishbowl Integration Overview
 
-The Collins/Fishbowl integration is set up so that when new customers/bookings are added to Collins, they will automatically push to Fishbowl (if the customer has opted in for  your marketing permission).
+The Collins/Fishbowl integration is set up differently as it is a fixed connection to their API, so that when new customers/bookings are added to Collins, they will automatically push to Fishbowl (if the customer has opted in for your marketing permission). The data possible to be pushed is decided by the paramaters available in your Fishbowl account.
 
 ## Setting up the Collins/Fishbowl Integration
 
