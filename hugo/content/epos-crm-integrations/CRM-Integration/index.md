@@ -1,3 +1,33 @@
+## CRM Systems using the Collins API  
+
+We can give CRM systems access to the Collins API. This will enable them to pull specific data from Collins for example, your Customer Data.
+
+**The following CRM systems currently access our API:**
+
+* Airship
+* Alchemetrics
+* Acteol
+
+## How to set up access to the Collins API
+
+**We are able to give access to the following API endpoints:**
+
+* [Bookings](http://developers.designmynight.com/booking-api/) - this will pull the booking data from your Collins Enquiries Page
+* [Users](http://developers.designmynight.com/users-api/) - this will pull your Collins Customers Data
+* Bookings Reports - this will pull your booking reports with whichever parameters you wish
+* Venues - this will pull your DMN Venue reviews
+
+If you are looking to get API access for your CRM system, please contact your Collins Account Manager with full details of what you are looking to do and which specific API endpoints you are looking to use (for example, Users endpoint for Customer Data). 
+
+You will then be given the following:
+
+* User ID
+* API Key
+* Base url: https://api.designmynight.com/v4/
+* Docs: developers.designmynight.com
+
+It will then be up to your CRM system to access our API and pull the relevant data. 
+
 ## Collins/Fishbowl Integration Overview
 
 The Collins/Fishbowl integration is set up so that when new customers/bookings are added to Collins, they will automatically push to Fishbowl (if the customer has opted in for  your marketing permission).
