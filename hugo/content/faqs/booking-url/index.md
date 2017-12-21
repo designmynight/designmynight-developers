@@ -30,23 +30,28 @@ Settings > Venue Group > in the URL, your venue ID will be included at the end i
 
 eg: https://admin.designmynight.com/collins/venue-groups/5524371d0df690ad7156f2ea
 
-**To find your unique Booking Type ID:**
+## Fixing parameters on your Booking URL
 
+If you want to fix any other parameters (for example if the booking type is for a one-off event and so you only wish to display the specific time and date), you can include the following parameters in your booking url, separated with `&`:
 
-If you want to fix any other parameters (for example if this booking type runs only on a single time and date), you can include the following paraments in your URL:
+| Parameter | Comments|
+|-----------|------|
+|date=DATE |to be given in the form YYYY-MM-DD eg 2016-03-12|
+|time=STARTTIME | to be given in the 24-hour form HH:MM eg 15:00|
+|duration=DURATION |to be given in terms of hours eg 2.5 (which would be 2 hours 30 mins)|
+|num_people=NUMBEROFPEOPLE| number of guests |
 
-&date=DATE **note: to be given in the form YYYY-MM-DD eg 2016-03-12**
-&time=STARTTIME **note: to be given in the 24-hour form HH:MM eg 15:00**
-&duration=DURATION **note: to be given in terms of hours eg 2.5 (which would be 2 hours 30 mins) **
+Example: 
 
+A Brunch booking type 
+
+https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&venue_group=5524371d0df690ad7156f2ea&type=58d122ba566b8a3c198b45aa&source=partner&fixed_type=1
 So you will have something that looks like:
 
-https://www.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUP&type=BOOKINGTYPEID&type_name=BOOKINGTYPEID&date=DATE&time=STARTTIME&duration=DURATION&source=partner
-
-# Customising the 2nd iFrame of the Collins booking URL
+## Customising the 2nd iFrame of the Collins booking URL
 You are able to customise the 2nd iframe on your Collins booking URL to better suit the feel of your website. 
 
-## To do this, you would need to:
+**To do this, you would need to:**
 
 1. Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).
 
