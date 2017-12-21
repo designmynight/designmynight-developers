@@ -17,9 +17,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://designmynight.github.io/designmynight-developers/faqs/api-faqs/</guid>
-      <description>API FAQs We are creating our own check out and would like to add customer fields eg &amp;lsquo;Comments&amp;rsquo;. How do we include this as part of our check out?
-You will just need to pass the value to the bookings API with the key custom_field_value
-We are creating our own check out using the Collins API. We know that we have to still take payment through the Collins iFrame. How do we customise the payment page?</description>
+      <description>API Troubleshooting If you are using our API and think that something is not working correctly, we will require both the full request and full response from your web developer before we can look into it for you:
+ Full Request - example here Full Response - example here  This is so that our tech team can effectively look into the issue for you. Without the above, we will not be able to assist.</description>
     </item>
     
     <item>

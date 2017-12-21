@@ -545,6 +545,18 @@
 
 
 
+<a  title="API FAQs" href="https://designmynight.github.io/designmynight-developers/faqs/api-faqs/">
+	
+	API FAQs
+</a>
+
+  
+      
+        
+        
+
+
+
 <a  title="Booking widget faqs" href="https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/">
 	
 	Booking widget faqs
@@ -663,7 +675,17 @@ with credentials that Zonal set up and provide.</p>
 
 <p>Whenever a booking is changed in Collins, the integration will check if that deposit should be updated in Zonal. If the
 booking has already been added to Zonal, any updates to the core booking details will be sent, and new deposits will be
-sent.</p>
+sent. These core booking details are:</p>
+
+<ul>
+<li>Venue</li>
+<li>First Name</li>
+<li>Last Name</li>
+<li>Deposits</li>
+<li>Time</li>
+<li>Number of People</li>
+<li>Status</li>
+</ul>
 
 <p><strong><em>Please note:</em></strong> the Zonal API does not support editing or deleting deposits from the EPOS, so any refunds processed in Collins will
 need to be manually updated in the EPOS</p>
@@ -674,7 +696,7 @@ need to be manually updated in the EPOS</p>
 <li><strong>Paid Deposits</strong></li>
 </ul>
 
-<p>All <a href="https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to">manual/request payments</a> are considered valid to push to your Zonal EPOS.</p>
+<p>All <a href="https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to">manual/request payments</a> taken using the payment link in Collins will automatically push to your Zonal EPOS.</p>
 
 <ul>
 <li><strong>Payments claimed by Card Authentication</strong></li>
@@ -725,11 +747,31 @@ need to be manually updated in the EPOS</p>
 <li><p>Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent on the morning of the booking date.</p></li>
 </ul>
 
+<p>If you have already started taking payments through Collins Pay, you will need to specify if you would like to push all future bookings with payments <strong>already</strong> added on Collins. If so, we will push all future bookings with deposits to your EPOS when setting up the intergration. Otherwise, only bookings with new deposits which are added to Collins <strong>after</strong> the integration goes live will be pushed (Minumum Deposit Date).</p>
+
+<p>If you are chosing to push payments on the day the booking takes place, we will push all future bookings with payments</p>
+
 <p><strong><em>Please note:</em></strong> depending on our tech roadmap, it can take our tech team up to two weeks to set up this integration.</p>
+
+<h2 id="minimum-deposit-date">Minimum Deposit Date</h2>
+
+<p>If your venue has already been using Collins Pay, you should let us know whether your team has been manually adding payments to your tills. If so, we can set a <strong>Minimum Deposit Date</strong> for when the integration goes live (to avoid duplicates on your tills).</p>
+
+<p>This would mean that any bookings with deposits already added (but not necessarily received yet) on Collins, before the integration goes live, that get updated, <strong>will not</strong> push to the till.</p>
+
+<p>For example: the integration goes live on 1st December (and the minimum deposit date is set to 1st December)</p>
+
+<p>If you already have a payment request for a booking on 30th November but the payment is not received until 2nd December. This deposit <strong>will not</strong> be pushed to your tills (as the payment was added before the minimum deposit date).</p>
+
+<p>Only any payments added after 1st December will ever be considered valid to be pushed to the till.</p>
+
+<p>If you have not been manually adding payments on your tills (eg if you are changing till systems), we can push <strong>all</strong> future bookings with deposits to your tills.</p>
 
 <h2 id="checking-that-the-collins-zonal-integration-is-set-up-correctly">Checking that the Collins/Zonal Integration is set up correctly</h2>
 
-<p>Once your Collins Account Manager has been in touch that the integration has been set up, it&rsquo;s always worth creating a test payment through Collins (to test the connection and ensure that you&rsquo;re confident with how it will show on your tills).</p>
+<p>Once your Collins Account Manager has been in touch that the integration has been set up, it will be your responsibility to check that the integration is working correctly (as Collins will not be able to access your till systems to test).</p>
+
+<p>As such, we recommend that you create a test payment through Collins. This will both test the connection and ensure that you&rsquo;re confident with how it will show on your tills.</p>
 
 <p>Once the integration has been set up, all valid payments added to Collins will have a tick next to it in the Payments tab of the booking. The colour of the tick will determine the &lsquo;pushed to till&rsquo; status:</p>
 
@@ -908,6 +950,10 @@ need to be manually updated in the EPOS</p>
 <p><strong>2. When I add a ‘Other’ payment on Collins, I have the option to push this to the tills. Will the payment show on the tills as the relevant payment type?</strong></p>
 
 <p>Any payment that Collins pushes to Zonal will appear as whichever payment type we set up the integration with. We don&rsquo;t currently have a way to push different payment types.</p>
+
+<p><strong>3. If we set up the integration to push all bookings, will my in progress enquiries get pushed to tills?</strong></p>
+
+<p>There is not currently a status check in place, so Collins would push all bookings regardless of booking status.</p>
 
 			
 			<aside class="copyright" role="note">

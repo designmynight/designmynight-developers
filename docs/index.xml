@@ -123,9 +123,10 @@ With the booking widget, the customer journey will take place in two parts:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/crm-integration/</guid>
-      <description>Collins/Fishbowl Integration Overview The Collins/Fishbowl integration is set up so that when new customers/bookings are added to Collins, they will automatically push to Fishbowl (if the customer has opted in for your marketing permission).
-Setting up the Collins/Fishbowl Integration If you are looking to set up an integration with Fishbowl, please request your Quick Subscribe Documentation from Fishbowl and pass on to your Collins Account Manager.
-Please note: depending on our tech roadmap, it can take our tech team up to two weeks to set up this integration.</description>
+      <description>CRM Systems using the Collins API We can give CRM systems access to the Collins API. This will enable them to pull specific data from Collins for example, your Customer Data.
+The following CRM systems currently access our API:
+ Airship Alchemetrics Acteol  How to set up access to the Collins API We are able to give access to the following API endpoints:
+ Bookings - this will pull the booking data from your Collins Enquiries Page Users - this will pull your Collins Customers Data Bookings Reports - this will pull your booking reports with whichever parameters you wish Venues - this will pull your DMN Venue reviews  If you are looking to get API access for your CRM system, the first step is for the Account Manager at your CRM system to have a look through our API Basics for Developers.</description>
     </item>
     
     <item>
@@ -158,9 +159,8 @@ Details sent to Zonal</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://designmynight.github.io/designmynight-developers/faqs/api-faqs/</guid>
-      <description>API FAQs We are creating our own check out and would like to add customer fields eg &amp;lsquo;Comments&amp;rsquo;. How do we include this as part of our check out?
-You will just need to pass the value to the bookings API with the key custom_field_value
-We are creating our own check out using the Collins API. We know that we have to still take payment through the Collins iFrame. How do we customise the payment page?</description>
+      <description>API Troubleshooting If you are using our API and think that something is not working correctly, we will require both the full request and full response from your web developer before we can look into it for you:
+ Full Request - example here Full Response - example here  This is so that our tech team can effectively look into the issue for you. Without the above, we will not be able to assist.</description>
     </item>
     
     <item>
