@@ -12,7 +12,8 @@ Example URL: https://api.zonalconnect.com/PubChain/send/1902/booking
 
 **Details sent to Zonal**
 
-Bookings will be sent to the EPOS with the following details
+Bookings will be sent to the EPOS with the following details:
+
 * Name: the customer’s full name
 * Date: the date of the booking
 * Time: the time of the booking
