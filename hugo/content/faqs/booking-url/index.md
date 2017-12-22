@@ -8,15 +8,37 @@ To create a booking URL for your venue, you will need to use a URL of the follow
 
 https://www.designmynight.com/book?venue_id=VENUEID&source=partner&format=modal
 
-Where you have to replace 'VENUEID' with your unique Collins Venue ID. **To find your Collins Venue ID:**
+Where you have to replace 'VENUEID' with your unique Collins Venue ID. 
 
-Settings > Venues > Select your venue > in the URL, your venue ID will be included at the end in the URL:
+## How to find your Collins Venue ID 
 
-eg: https://admin.designmynight.com/collins/venue-rules/5787a87595838bed3a8b4569
+Your user account will require [Bookings Manager permissions](https://collins.uservoice.com/knowledgebase/articles/942757-user-permissions-explained-and-how-to-change-them). If you cannot see this option, please speak to your key user to review your user permissions.  
 
-In this example, the booking URL for this venue would be: 
+1. Log into your [Collins admin](https://admin.designmynight.com/collins)
+2. Settings
+3. Venues
+4. Select your venue
+5. Your Venue ID will be included at the [end in the URL](https://www.designmynight.com/uploads/2017/12/Collins-Venue-ID.png)
 
-https://www.designmynight.com/book?venue_id=5787a87595838bed3a8b4569&source=partner&format=modal
+## How to find your Collins Venue Group ID
+
+Your user account will require venue group level access. Please speak to your key user if you need updated user access. 
+
+1. Log into your [Collins admin](https://admin.designmynight.com/collins)
+2. Settings
+3. Venue Group
+4. Your Venue Group ID will be included at the [end in the URL](https://static.designmynight.com/uploads/2017/12/Venue-Group-ID-optimised.png)
+
+## How to find the Booking Type ID
+
+1. Log into your [Collins admin](https://admin.designmynight.com/collins)
+2. Settings
+3. Venues
+4. Select your venue
+5. Booking Widget
+6. Tick 'Limit to a single booking type'
+7. Tick the specific booking type that you are looking for
+8. The Booking ID will follow `type=` in your newly generated [widget code](https://static.designmynight.com/uploads/2017/12/Booking-Type-ID-optimised.png)
 
 ## Booking URL for a specific booking type
 
