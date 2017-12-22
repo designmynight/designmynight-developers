@@ -64,13 +64,7 @@ Collins gives you the option to display your booking widget in the following add
 * German
 * Spanish
 
-If you would like your booking widget to display in multiple languages , you are able to set this by doing the following:
-
-1. Log onto your [Collins admin](https://admin.designmynight.com/collins)
-2. Go to Settings > Venues > Select your venue > Translation
-3. Tick the additional language(s) that you would like your widget to display in
-4. When you tick an additional language, you will have the option to type your own translations for each section (eg Booking Type Names, Automated Emails, Offers etc.)
-5. Click SAVE
+If you would like your booking widget to display in multiple languages , you will have to first set up the [translations in your Collins settings](https://collins.uservoice.com/knowledgebase/articles/1829417-widget-setting-up-multi-lingual-widgets-transla)  
 
 Once your Translation has been set up in Collins, your web developer will have to add an extra piece of code to your widget script.
 
