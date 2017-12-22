@@ -108,3 +108,15 @@ You are able to customise the 2nd iframe on your Collins booking URL to better s
 3. Then you should add `stylesheet=app` to the end of the URL you are going to send the user to.
 
 4. When the URL loads, it will also load your CSS so you can override whatever is on the book page.
+
+## Custom return URL
+
+You can create a custom return URL for users to be directed to when they complete their booking. That way you'd be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have, but you would have control over your own analytics etc completely.
+
+To do this, you need to create the return URL on the venue site then set it by adding the `return_url` parameter in your booking url. 
+
+`return_url=https://www.your-return-url.com/booking-complete`
+
+The booking info will be passed back in the URL.
+
+**_Please note:_** the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format.
