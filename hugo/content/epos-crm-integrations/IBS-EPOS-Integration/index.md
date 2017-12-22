@@ -9,12 +9,12 @@ The purpose of the integration between Collins and IBS is to be able to push the
 
 **Bookings will be sent to the EPOS with the following details:**
 
-Name: The Customer's full name
-Date: The date of the booking
-Time: The time of the booking
-Cover Count: The number of guests in the booking
-Reference: The Collins booking reference
-Deposit amount: The total of all paid deposit
+* Name: The Customer's full name
+* Date: The date of the booking
+* Time: The time of the booking
+* Cover Count: The number of guests in the booking
+* Reference: The Collins booking reference
+* Deposit amount: The total of all paid deposit
 
 ## Payments Valid to Push to IBS EPOS
 
