@@ -86,6 +86,8 @@ Example: this widget will display both English and German options:
 </script>
 ```
 
+Example of a partner with a French booking widget: [Waikiki](http://www.waikiki-courchevel.com/bookings/?lang=fr)
+
 **_Please note:_** Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/booking-widget/#styling-the-form).    
 
 ## Multiple Booking Widgets
