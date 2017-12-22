@@ -8,7 +8,15 @@ To create a booking URL for your venue, you will need to use a URL of the follow
 
 https://www.designmynight.com/book?venue_id=VENUEID&source=partner&format=modal
 
-Where you have to replace 'VENUEID' with your unique Collins Venue ID. 
+Where you have to replace 'VENUEID' with your [unique Collins Venue ID](https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-your-collins-venue-id). 
+
+## Booking URL for a specific booking type
+
+If you are looking to create a booking link for a specific booking type (for example if you want to send a link out in a targetted mail out), you can create a URL of the following format: 
+
+https://www.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUPID&type=BOOKINGTYPEID&source=partner&fixed_type=1
+
+Where you have to replace [VENUEID](https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-your-collins-venue-id), VENUEGROUPID and BOOKINGTYPEID accordingly. 
 
 ## How to find your Collins Venue ID 
 
@@ -39,18 +47,6 @@ Your user account will require venue group level access. Please speak to your ke
 6. Tick 'Limit to a single booking type'
 7. Tick the specific booking type that you are looking for
 8. The Booking ID will follow `type=` in your newly generated [widget code](https://static.designmynight.com/uploads/2017/12/Booking-Type-ID-optimised.png)
-
-## Booking URL for a specific booking type
-
-If you are looking to create a booking link for a specific booking type (for example if you want to send a link out in a targetted mail out), you can create a URL of the following format: 
-
-https://www.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUPID&type=BOOKINGTYPEID&source=partner&fixed_type=1
-
-Where you have to replace 'VENUEID', VENUEGROUPID and BOOKINGTYPEID accordingly. **To find your Collins Venue Group ID:**
-
-Settings > Venue Group > in the URL, your venue ID will be included at the end in the URL:
-
-eg: https://admin.designmynight.com/collins/venue-groups/5524371d0df690ad7156f2ea
 
 ## Fixing parameters on your Booking URL
 
