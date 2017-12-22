@@ -16,7 +16,11 @@ If you are looking to create a booking link for a specific booking type (for exa
 
 https://www.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUPID&type=BOOKINGTYPEID&source=partner&fixed_type=1
 
-Where you have to replace [VENUEID](https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-your-collins-venue-id), VENUEGROUPID and BOOKINGTYPEID accordingly. 
+Where you have to replace [VENUEID](https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-your-collins-venue-id), [VENUEGROUPID](https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-your-collins-venue-group-id) and [BOOKINGTYPEID](https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-the-booking-type-id) accordingly. 
+
+**Example:**
+
+https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&venue_group=5524371d0df690ad7156f2ea&type=58be86d4c71620a90d97aba4&source=partner&fixed_type=1
 
 ## How to find your Collins Venue ID 
 
@@ -48,23 +52,47 @@ Your user account will require venue group level access. Please speak to your ke
 7. Tick the specific booking type that you are looking for
 8. The Booking ID will follow `type=` in your newly generated [widget code](https://static.designmynight.com/uploads/2017/12/Booking-Type-ID-optimised.png)
 
-## Fixing parameters on your Booking URL
+## Fixing additional parameters on your Booking URL
 
 If you want to fix any other parameters (for example if the booking type is for a one-off event and so you only wish to display the specific time and date), you can include the following parameters in your booking url, separated with `&`:
 
 | Parameter | Comments|
 |-----------|------|
-|date=DATE |to be given in the form YYYY-MM-DD eg 2016-03-12|
-|time=STARTTIME | to be given in the 24-hour form HH:MM eg 15:00|
-|duration=DURATION |to be given in terms of hours eg 2.5 (which would be 2 hours 30 mins)|
-|num_people=NUMBEROFPEOPLE| number of guests |
+|`date=`DATE | where DATE is to be given in the form YYYY-MM-DD eg 2016-03-12|
+|`time=`STARTTIME | where STARTTIME is to be given in the 24-hour form HH:MM eg 15:00|
+|`duration=`DURATION |where DURATION is to be given in terms of hours eg 2.5 (which would be 2 hours 30 mins)|
+|`num_people`=NUMBEROFPEOPLE| input your number of guests  |
 
-Example: 
+**Example:** A NYE Dinner booking type starting at 6pm:
 
-A Brunch booking type 
+https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&venue_group=5524371d0df690ad7156f2ea&type=5a3cd86849def9264240cd17&date=2017-12-31&time=18:00&source=partner&fixed_type=1
 
-https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&venue_group=5524371d0df690ad7156f2ea&type=58d122ba566b8a3c198b45aa&source=partner&fixed_type=1
-So you will have something that looks like:
+**Please note:** you will be unable to fix **all** the above parameters at the same time. Otherwise, you would be effectively filling all the required parameters which would proceed to the next step of the booking process. 
+
+## Displaying your Booking URL in a different language
+
+Collins gives you the option to display your booking widget in the following additional languages:
+
+* Dutch
+* French
+* German
+* Spanish
+
+If you would like your booking url to display in a different language, you will have to first set up the [translations in your Collins settings](https://collins.uservoice.com/knowledgebase/articles/1829417-widget-setting-up-multi-lingual-widgets-transla)  
+
+Once your Translation has been set up in Collins, you can also add an extra `locale` parameter to your booking url, setting the parameter to be the code for the language that you wish to add to your booking url. Add multiple languages separated by a comma.  
+
+English `en-GB`
+
+Dutch `nl-NL`
+
+French `fr-FR`
+
+German `de-DE`
+
+Example: this booking url will display in German:
+
+https://www.designmynight.com/book?venue_id=59d759f1cf53f24ceb4fbff0&venue_group=59ccf635f61ea13caf7de907&type=59d769e864511d794c3846d3&locale=de-DE&source=partner&fixed_type=1
 
 ## Customising the 2nd iFrame of the Collins booking URL
 You are able to customise the 2nd iframe on your Collins booking URL to better suit the feel of your website. 
