@@ -30,7 +30,7 @@ Your user account will require [Bookings Manager permissions](https://collins.us
 2. Settings
 3. Venues
 4. Select your venue
-5. Your Venue ID will be included at the [end in the URL](https://www.designmynight.com/uploads/2017/12/Collins-Venue-ID.png)
+5. Your Venue ID will be included at the [end in the URL](https://static.designmynight.com/uploads/2017/12/Collins-Venue-ID1-optimised.png)
 
 ## How to find your Collins Venue Group ID
 
