@@ -159,6 +159,10 @@ googleAnalytics = "UA-12385609-13"
 	url    = "faqs/api-faqs/"
 	parent = "faqs"
 
+[[menu.main]]
+	name   = "Booking URLs"
+	url    = "faqs/booking-url/"
+	parent = "faqs"
 
 
 
