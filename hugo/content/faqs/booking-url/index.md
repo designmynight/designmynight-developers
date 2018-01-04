@@ -8,7 +8,7 @@ To create a booking URL for your venue, you will need to use a URL of the follow
 
 https://www.designmynight.com/book?venue_id=VENUEID&source=partner&format=modal
 
-Where you have to replace 'VENUEID' with your [unique Collins Venue ID](https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-your-collins-venue-id). 
+Where you have to replace 'VENUEID' with your [unique Collins Venue ID](http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-id). 
 
 ## Booking URL for a specific booking type
 
@@ -16,7 +16,7 @@ If you are looking to create a booking link for a specific booking type (for exa
 
 https://www.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUPID&type=BOOKINGTYPEID&source=partner&fixed_type=1
 
-Where you have to replace [VENUEID](https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-your-collins-venue-id), [VENUEGROUPID](https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-your-collins-venue-group-id) and [BOOKINGTYPEID](https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-the-booking-type-id) accordingly. 
+Where you have to replace [VENUEID](http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-id), [VENUEGROUPID](http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-group-id) and [BOOKINGTYPEID](http://developers.designmynight.com/faqs/booking-url/#how-to-find-the-booking-type-id) accordingly. 
 
 **Example:**
 
