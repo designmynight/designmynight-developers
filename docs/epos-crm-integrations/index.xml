@@ -20,7 +20,7 @@
       <description>CRM Systems using the Collins API We can give CRM systems access to the Collins API. This will enable them to pull specific data from Collins for example, your Customer Data.
 The following CRM systems currently access our API:
  Airship Alchemetrics Acteol  How to set up access to the Collins API We are able to give access to the following API endpoints:
- Bookings - this will pull the booking data from your Collins Enquiries Page Users - this will pull your Collins Customers Data Bookings Reports - this will pull your booking reports with whichever parameters you wish Venues - this will pull your DMN Venue reviews  If you are looking to get API access for your CRM system, the first step is for the Account Manager at your CRM system to have a look through our API Basics for Developers.</description>
+ Bookings - this will pull the booking data from your Collins Enquiries Page Users - this will pull your Collins Customers Data Bookings Reports - this will pull your booking reports with whichever parameters you wish Venues - this will pull your DMN Venue reviews Offers - this will pull your Collins Offers (and can be used to check which offers are eligible for a given booking)  If you are looking to get API access for your CRM system, the first step is for the Account Manager at your CRM system to have a look through our API Basics for Developers.</description>
     </item>
     
     <item>

@@ -557,6 +557,21 @@
 
 
 
+<a class="current" title="Booking URLs" href="https://designmynight.github.io/designmynight-developers/faqs/booking-url/">
+	
+	Booking URLs
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+  
+      
+        
+        
+
+
+
 <a  title="Booking widget faqs" href="https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/">
 	
 	Booking widget faqs
@@ -659,15 +674,7 @@
 
 <p><a href="https://www.designmynight.com/book?venue_id=VENUEID&amp;source=partner&amp;format=modal">https://www.designmynight.com/book?venue_id=VENUEID&amp;source=partner&amp;format=modal</a></p>
 
-<p>Where you have to replace &lsquo;VENUEID&rsquo; with your unique Collins Venue ID. <strong>To find your Collins Venue ID:</strong></p>
-
-<p>Settings &gt; Venues &gt; Select your venue &gt; in the URL, your venue ID will be included at the end in the URL:</p>
-
-<p>eg: <a href="https://admin.designmynight.com/collins/venue-rules/5787a87595838bed3a8b4569">https://admin.designmynight.com/collins/venue-rules/5787a87595838bed3a8b4569</a></p>
-
-<p>In this example, the booking URL for this venue would be:</p>
-
-<p><a href="https://www.designmynight.com/book?venue_id=5787a87595838bed3a8b4569&amp;source=partner&amp;format=modal">https://www.designmynight.com/book?venue_id=5787a87595838bed3a8b4569&amp;source=partner&amp;format=modal</a></p>
+<p>Where you have to replace &lsquo;VENUEID&rsquo; with your <a href="https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-your-collins-venue-id">unique Collins Venue ID</a>.</p>
 
 <h2 id="booking-url-for-a-specific-booking-type">Booking URL for a specific booking type</h2>
 
@@ -675,29 +682,123 @@
 
 <p><a href="https://www.designmynight.com/book?venue_id=VENUEID&amp;venue_group=VENUEGROUPID&amp;type=BOOKINGTYPEID&amp;source=partner&amp;fixed_type=1">https://www.designmynight.com/book?venue_id=VENUEID&amp;venue_group=VENUEGROUPID&amp;type=BOOKINGTYPEID&amp;source=partner&amp;fixed_type=1</a></p>
 
-<p>Where you have to replace &lsquo;VENUEID&rsquo;, VENUEGROUPID and BOOKINGTYPEID accordingly. <strong>To find your Collins Venue Group ID:</strong></p>
+<p>Where you have to replace <a href="https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-your-collins-venue-id">VENUEID</a>, <a href="https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-your-collins-venue-group-id">VENUEGROUPID</a> and <a href="https://github.com/designmynight/designmynight-developers/blob/master/hugo/content/faqs/booking-url/index.md#how-to-find-the-booking-type-id">BOOKINGTYPEID</a> accordingly.</p>
 
-<p>Settings &gt; Venue Group &gt; in the URL, your venue ID will be included at the end in the URL:</p>
+<p><strong>Example:</strong></p>
 
-<p>eg: <a href="https://admin.designmynight.com/collins/venue-groups/5524371d0df690ad7156f2ea">https://admin.designmynight.com/collins/venue-groups/5524371d0df690ad7156f2ea</a></p>
+<p><a href="https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=58be86d4c71620a90d97aba4&amp;source=partner&amp;fixed_type=1">https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=58be86d4c71620a90d97aba4&amp;source=partner&amp;fixed_type=1</a></p>
 
-<p><strong>To find your unique Booking Type ID:</strong></p>
+<h2 id="how-to-find-your-collins-venue-id">How to find your Collins Venue ID</h2>
 
-<p>If you want to fix any other parameters (for example if this booking type runs only on a single time and date), you can include the following paraments in your URL:</p>
+<p>Your user account will require <a href="https://collins.uservoice.com/knowledgebase/articles/942757-user-permissions-explained-and-how-to-change-them">Bookings Manager permissions</a>. If you cannot see this option, please speak to your key user to review your user permissions.</p>
 
-<p>&amp;date=DATE <strong>note: to be given in the form YYYY-MM-DD eg 2016-03-12</strong>
-&amp;time=STARTTIME <strong>note: to be given in the 24-hour form HH:MM eg 15:00</strong>
-&amp;duration=DURATION **note: to be given in terms of hours eg 2.5 (which would be 2 hours 30 mins) **</p>
+<ol>
+<li>Log into your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
+<li>Settings</li>
+<li>Venues</li>
+<li>Select your venue</li>
+<li>Your Venue ID will be included at the <a href="https://static.designmynight.com/uploads/2017/12/Collins-Venue-ID1-optimised.png">end in the URL</a></li>
+</ol>
 
-<p>So you will have something that looks like:</p>
+<h2 id="how-to-find-your-collins-venue-group-id">How to find your Collins Venue Group ID</h2>
 
-<p><a href="https://www.designmynight.com/book?venue_id=VENUEID&amp;venue_group=VENUEGROUP&amp;type=BOOKINGTYPEID&amp;type_name=BOOKINGTYPEID&amp;date=DATE&amp;time=STARTTIME&amp;duration=DURATION&amp;source=partner">https://www.designmynight.com/book?venue_id=VENUEID&amp;venue_group=VENUEGROUP&amp;type=BOOKINGTYPEID&amp;type_name=BOOKINGTYPEID&amp;date=DATE&amp;time=STARTTIME&amp;duration=DURATION&amp;source=partner</a></p>
+<p>Your user account will require venue group level access. Please speak to your key user if you need updated user access.</p>
 
-<h1 id="customising-the-2nd-iframe-of-the-collins-booking-url">Customising the 2nd iFrame of the Collins booking URL</h1>
+<ol>
+<li>Log into your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
+<li>Settings</li>
+<li>Venue Group</li>
+<li>Your Venue Group ID will be included at the <a href="https://static.designmynight.com/uploads/2017/12/Venue-Group-ID-optimised.png">end in the URL</a></li>
+</ol>
+
+<h2 id="how-to-find-the-booking-type-id">How to find the Booking Type ID</h2>
+
+<ol>
+<li>Log into your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
+<li>Settings</li>
+<li>Venues</li>
+<li>Select your venue</li>
+<li>Booking Widget</li>
+<li>Tick &lsquo;Limit to a single booking type&rsquo;</li>
+<li>Tick the specific booking type that you are looking for</li>
+<li>The Booking ID will follow <code>type=</code> in your newly generated <a href="https://static.designmynight.com/uploads/2017/12/Booking-Type-ID-optimised.png">widget code</a></li>
+</ol>
+
+<h2 id="fixing-additional-parameters-on-your-booking-url">Fixing additional parameters on your Booking URL</h2>
+
+<p>If you want to fix any other parameters (for example if the booking type is for a one-off event and so you only wish to display the specific time and date), you can include the following parameters in your booking url, separated with <code>&amp;</code>:</p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Comments</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>date=</code>DATE</td>
+<td>where DATE is to be given in the form YYYY-MM-DD eg 2016-03-12</td>
+</tr>
+
+<tr>
+<td><code>time=</code>STARTTIME</td>
+<td>where STARTTIME is to be given in the 24-hour form HH:MM eg 15:00</td>
+</tr>
+
+<tr>
+<td><code>duration=</code>DURATION</td>
+<td>where DURATION is to be given in terms of hours eg 2.5 (which would be 2 hours 30 mins)</td>
+</tr>
+
+<tr>
+<td><code>num_people</code>=NUMBEROFPEOPLE</td>
+<td>input your number of guests</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example:</strong> A NYE Dinner booking type starting at 6pm:</p>
+
+<p><a href="https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=5a3cd86849def9264240cd17&amp;date=2017-12-31&amp;time=18:00&amp;source=partner&amp;fixed_type=1">https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=5a3cd86849def9264240cd17&amp;date=2017-12-31&amp;time=18:00&amp;source=partner&amp;fixed_type=1</a></p>
+
+<p><strong>Please note:</strong> you will be unable to fix <strong>all</strong> the above parameters at the same time. Otherwise, you would be effectively filling all the required parameters which would proceed to the next step of the booking process.</p>
+
+<h2 id="displaying-your-booking-url-in-a-different-language">Displaying your Booking URL in a different language</h2>
+
+<p>Collins gives you the option to display your booking widget in the following languages:</p>
+
+<ul>
+<li>Dutch</li>
+<li>French</li>
+<li>German</li>
+<li>Spanish</li>
+</ul>
+
+<p>If you would like your booking url to display in a different language, you will have to first set up the <a href="https://collins.uservoice.com/knowledgebase/articles/1829417-widget-setting-up-multi-lingual-widgets-transla">translations in your Collins settings</a></p>
+
+<p>Once your Translation has been set up in Collins, you can also add an extra <code>locale</code> parameter to your booking url, setting the parameter to be the code for the language that you wish to add to your booking url.</p>
+
+<p>English <code>en-GB</code></p>
+
+<p>Dutch <code>nl-NL</code></p>
+
+<p>French <code>fr-FR</code></p>
+
+<p>German <code>de-DE</code></p>
+
+<p>Example: this booking url will display in German:</p>
+
+<p><a href="https://www.designmynight.com/book?venue_id=59d759f1cf53f24ceb4fbff0&amp;venue_group=59ccf635f61ea13caf7de907&amp;type=59d769e864511d794c3846d3&amp;locale=de-DE&amp;source=partner&amp;fixed_type=1">https://www.designmynight.com/book?venue_id=59d759f1cf53f24ceb4fbff0&amp;venue_group=59ccf635f61ea13caf7de907&amp;type=59d769e864511d794c3846d3&amp;locale=de-DE&amp;source=partner&amp;fixed_type=1</a></p>
+
+<p><strong>Please note:</strong> you will only be able to display your booking url in <strong>one</strong> language.</p>
+
+<h2 id="customising-the-2nd-iframe-of-the-collins-booking-url">Customising the 2nd iFrame of the Collins booking URL</h2>
 
 <p>You are able to customise the 2nd iframe on your Collins booking URL to better suit the feel of your website.</p>
 
-<h2 id="to-do-this-you-would-need-to">To do this, you would need to:</h2>
+<p><strong>To do this, you would need to:</strong></p>
 
 <ol>
 <li><p>Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).</p></li>
@@ -709,10 +810,22 @@
 <li><p>When the URL loads, it will also load your CSS so you can override whatever is on the book page.</p></li>
 </ol>
 
+<h2 id="custom-return-url">Custom return URL</h2>
+
+<p>You can create a custom return URL for users to be directed to when they complete their booking. That way you&rsquo;d be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have, but you would have control over your own analytics etc completely.</p>
+
+<p>To do this, you need to create the return URL on the venue site then set it by adding the <code>return_url</code> parameter in your booking url.</p>
+
+<p><code>return_url=https://www.your-return-url.com/booking-complete</code></p>
+
+<p>The booking info will be passed back in the URL.</p>
+
+<p><strong><em>Please note:</em></strong> the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format.</p>
+
 			
 			<aside class="copyright" role="note">
 				
-				&copy; 2017 DesignMyNight &ndash;
+				&copy; 2018 DesignMyNight &ndash;
 				
 				Documentation built with
 				<a href="https://www.gohugo.io" target="_blank">Hugo</a>

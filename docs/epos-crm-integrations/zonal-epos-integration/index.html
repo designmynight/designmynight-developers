@@ -557,6 +557,18 @@
 
 
 
+<a  title="Booking URLs" href="https://designmynight.github.io/designmynight-developers/faqs/booking-url/">
+	
+	Booking URLs
+</a>
+
+  
+      
+        
+        
+
+
+
 <a  title="Booking widget faqs" href="https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/">
 	
 	Booking widget faqs
@@ -663,13 +675,16 @@ with credentials that Zonal set up and provide.</p>
 
 <p><strong>Details sent to Zonal</strong></p>
 
-<p>Bookings will be sent to the EPOS with the following details
-* Name: the customer’s full name
-* Date: the date of the booking
-* Time: the time of the booking
-* Cover count: the number of guests in the booking
-* Reference: the Collins booking reference
-* Deposit amount: the total of all paid deposits</p>
+<p>Bookings will be sent to the EPOS with the following details:</p>
+
+<ul>
+<li>Name: the customer’s full name</li>
+<li>Date: the date of the booking</li>
+<li>Time: the time of the booking</li>
+<li>Cover count: the number of guests in the booking</li>
+<li>Reference: the Collins booking reference</li>
+<li>Deposit amount: the total of all paid deposits</li>
+</ul>
 
 <p><strong>Handling changes in Collins</strong></p>
 
@@ -905,6 +920,12 @@ need to be manually updated in the EPOS</p>
 
 <p>Once the name has been been hyphenated and saved, the booking will automatically push to your tills (as long as the booking date has not already passed).</p>
 
+<ul>
+<li><strong>&lsquo;Invalid MAC&rsquo; error&rsquo;</strong></li>
+</ul>
+
+<p>If the integration has worked correctly and you start to receive &lsquo;Invalid Mac&rsquo; errors, it&rsquo;s likely that your system details have been updated (for example if the system is updated to have a new company name). This will invalidate the MAC calculations and is something for Zonal to look into.</p>
+
 <h2 id="re-pushing-create-error-bookings">Re-pushing &lsquo;/create&rsquo; error bookings</h2>
 
 <p>If the integration is set up to push bookings ASAP, Collins will attempt to push bookings to your tills every time a user saves a booking if one of the following booking fields has been changed in Collins:</p>
@@ -958,7 +979,7 @@ need to be manually updated in the EPOS</p>
 			
 			<aside class="copyright" role="note">
 				
-				&copy; 2017 DesignMyNight &ndash;
+				&copy; 2018 DesignMyNight &ndash;
 				
 				Documentation built with
 				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
