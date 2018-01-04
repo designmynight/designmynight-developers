@@ -218,6 +218,10 @@ This error occurs when there is a space in the 'Name' field of your booking. For
 
 Once the name has been been hyphenated and saved, the booking will automatically push to your tills (as long as the booking date has not already passed).  
 
+* **'Invalid MAC' error'**
+
+If the integration has worked correctly and you start to receive 'Invalid Mac' errors, it's likely that your system details have been updated (for example if the system is updated to have a new company name). This will invalidate the MAC calculations and is something for Zonal to look into. 
+
 ## Re-pushing '/create' error bookings
 If the integration is set up to push bookings ASAP, Collins will attempt to push bookings to your tills every time a user saves a booking if one of the following booking fields has been changed in Collins: 
 
