@@ -1,6 +1,6 @@
 ---
 date: 2016-04-29T13:32:57+01:00
-title: Booking widget
+title: Collins Booking Widget
 ---
 
 The booking widget is the easiest way to allow customers to book through your website. You simply add a small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.
@@ -13,15 +13,36 @@ With the booking widget, the customer journey will take place in two parts:
 <br>a) **For small screens** (e.g mobile phones) - in a new tab, or
 <br>b) **For regular screens** - inside a popup on your website. In this case the customer will not be aware that they are using a different website to complete their booking
 
+## Accessing your Collins booking widget code
 
-## Embedding the form
+You can access your booking widget code in the venue settings of your Collins admin: 
 
-You can add the form to your page with a simple script tag, which you can get from the venue rules section of Collins. The script tag will look like this:
+1. Log onto your [Collins admin](https://admin.designmynight.com/collins)
+2. Settings
+3. Venues
+4. Select your venue name
+5. Booking Widget
+6. Widget Code
+
+The script tag will look like this:
 
 ```html
 <script src="//partners.designmynight.com/pf/js?venue_id=YOUR_VENUE_ID"></script>
 ```
 
+By default, the script in the grey box will be the booking widget for the specific venue. You just need to copy and paste this code and send over to your web developer. 
+
+This section will also allow you go generate bookings widget codes for a specific booking type or to list multiple venues within your Venue group. 
+
+**Please note:** only add the booking widget to your website once your Collins settings have been checked and your team has completed their training with a member of our Collins Customer Success Team. Otherwise you may start getting bookings/enquiries in that your team are unable to manage!
+
+## Embedding the form
+
+Once your team has received training and your settings have had a final health-check, you are ready to go-live and add the widget to your own website. 
+
+You simply add the small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.
+
+* **Please note:** your Collins booking widget will only ever display booking types that have availability for the customer to book. If you currently have no booking types with availability to book, your Collins booking widget will **not** appear. 
 
 ## Multiple venues on a single form
 
