@@ -21,7 +21,7 @@ For the best results, we would recommend that you do the following:
 
 Here are some great examples of customised emails that our partners have created to get an idea:
 
-[Alexander's](https://www.designmynight.com/uploads/2017/11/Alexanders-Example.png)
+[Alexander's](https://static.designmynight.com/uploads/2017/11/Alexanders-Example-optimised.png)
 
 [Casita Andina](https://static.designmynight.com/uploads/2017/11/Andina-Example-optimised.png)
 
