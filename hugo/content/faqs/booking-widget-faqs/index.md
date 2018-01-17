@@ -135,3 +135,9 @@ If you have tested the widget code on [Plunker](https://plnkr.co/edit/?p=catalog
 If the colour of the **Form Components** is too similar a colour to the **Input Labels**, it can make it difficult for customers to view and select options. 
 
 Your web developer should amend the CSS to tweak the colours used in your [Form Components and Input Labels](http://developers.designmynight.com/booking-widget/#styling-the-form). 
+
+**5. By default, the second iFrame is a pop up. Is it possible to direct to a booking page (which is not a pop up)?**
+
+The modal styling can be customised with CSS. It will either open an iframe within a modal, or redirect to the booking page depending on available screen size. Your web developer will be able to customise the size to dictate what happens.
+
+Here's an example of what the second iFrame could look like: [Alexander's](https://www.designmynight.com/book?venue_id=59157f51ff52d61204696b4c&venue_group=59157fe4ff52d613565b24aa&type=591ec9ca05b6e0052806695e&num_people=4&date=2017-8-17&time=09:00&duration=120&notes=&locale=en-GB&source=partner&stylesheet=alexanders)
