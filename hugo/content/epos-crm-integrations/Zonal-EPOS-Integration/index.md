@@ -78,6 +78,7 @@ The following configuration options need to be provided for **each site** that w
 * Employee ID: the employee ID that bookings should be added under
 * Username: the authorization username to connect to Zonal
 * Password: the authorization password to connect to Zonal
+* Base/ZCF URL
 
 You will also need to specify how you would like the integration to function (this will depend on how you manage your reporting on your side). For this, you will need to confirm **which bookings** you would like Collins to push to your tills and **when** these bookings should be pushed:
 
