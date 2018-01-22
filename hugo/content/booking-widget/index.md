@@ -32,7 +32,7 @@ The script tag will look like this:
 
 By default, the script in the grey box will be the booking widget for the specific venue. You just need to copy and paste this code and send over to your web developer. 
 
-This section will also allow you go generate bookings widget codes for a specific booking type or to list multiple venues within your Venue group. 
+This section will also allow you to [generate booking widget codes for a specific booking type or to list multiple venues within your Venue group](https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes). 
 
 **Please note:** only add the booking widget to your website once your Collins settings have been checked and your team has completed their training with a member of our Collins Customer Success Team. Otherwise you may start getting bookings/enquiries in that your team are unable to manage!
 
