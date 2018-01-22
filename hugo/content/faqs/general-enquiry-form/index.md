@@ -5,7 +5,7 @@ Here's an example of a partner with a customised enquiry form: [No. 4 Clifton Vi
 
 **To create your own personalised Enquiry form:**
 
-**1.** Create your own form display on your website. You and your web developer will be responsible for the look of your personalised form and which fields are included.
+**1.** Create your own form display on your website. Here's a [Basic Enquiry Form Example](https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit) to use. You and your web developer will be responsible for the look of your personalised form and which fields are included.
 
 **2.** For any standard Collins booking fields used in your form (First Name, Last Name, Email, Phone, DOB, Newsletter Sign Up), please use these [Standard Collins booking field names](http://developers.designmynight.com/booking-api/#submitting-through-the-api).
 This will ensure that these field details will pull through to the respective fields in your Collins enquiry. 
@@ -52,10 +52,7 @@ If you are posting the form independently, then you will need to make sure these
 
 ## General Enquiry Form FAQs
 
-**1. I'm trying to post to https://www.designmynight.com/book but am receiving the following error message: "No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin is therefore not allowed access."**
+**1. Do you support XHR or cross origin requests?**
 
-As well as sending all the booking data, you will also need to ensure you are sending `source=partner`.
-
-This will store the booking as a partner booking and will allow those cross-origin requests through.
-
+We do not currently support submitting XHR requests for  bespoke enquiries. In order to customise the confirmation page, please add a `return_url` parameter. The response data will be forwarded onto your return url as url parameters.
 
