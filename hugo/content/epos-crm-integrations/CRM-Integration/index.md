@@ -51,3 +51,40 @@ So if you would like to test the integration, you can create a test booking in y
 If the marketing permission is changed on Collins so that marketing permission is ticked, the customer details will automatically pushed to Fishbowl. 
 
 If the marketing permission is changed in Collins so that marketing permission is **not** ticked, but the customer already exists as subscribed in Fishbowl, you will have to manually update your Fishbowl list.
+
+## Collins/Zonal CRM Integration Overview
+
+The Collins/Zonal CRM integration is set up to push bookings to the Zonal CRM when the booking has been confirmed in Collins, and again if any booking details are updated. 
+
+The following customer and booking details are sent:
+
+**Customer Details**
+
+* Full Name
+* Telephone
+* Email
+* Date of Birth
+* Marketing Permission
+
+**Booking Details:**
+
+* Booking Reference
+* Status
+* Location
+* Date
+* Time
+* Number of Guests
+* Deposits
+* Type
+
+## Setting up the Collins/Zonal CRM Integration
+
+To set this up, we require the following details from Zonal:
+
+* URL eg https://fullers.txdlimited.co.uk/api_v1/booking
+* Username
+* Password
+* Mapping of our venue IDs to Zonal IDs
+
+
+
