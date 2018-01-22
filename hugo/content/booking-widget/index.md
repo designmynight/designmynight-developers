@@ -34,7 +34,7 @@ By default, the script in the grey box will be the booking widget for the specif
 
 This section will also allow you to [generate booking widget codes for a specific booking type or to list multiple venues within your Venue group](https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes). 
 
-**Please note:** only add the booking widget to your website once your Collins settings have been checked and your team has completed their training with a member of our Collins Customer Success Team. Otherwise you may start getting bookings/enquiries in that your team are unable to manage!
+**Please note:** please only add the booking widget to your website once your Collins settings have been checked and your team has completed their training with a member of our Collins Customer Success Team. Otherwise you may start getting bookings/enquiries in that your team are unable to manage!
 
 ## Embedding the form
 
@@ -42,7 +42,7 @@ Once your team has received training and your settings have had a final health-c
 
 You simply add the small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.
 
-* **Please note:** your Collins booking widget will only ever display booking types that have availability for the customer to book. If you currently have no booking types with availability to book, your Collins booking widget will **not** appear. 
+* **Please note:** your Collins booking widget will only ever display booking types that have [availability](https://www.designmynight.com/uploads/2018/01/Availability-tick-can-book1.png) for the customer to book. If none of your booking types currently have availability to book, your Collins booking widget will **not** appear. 
 
 ## Multiple venues on a single form
 
