@@ -19,7 +19,7 @@ To add a Google Post to your Google My Business listing:
 1. Sign in to [Google My Business](https://www.google.co.uk/business/?gmbsrc=gb-en_GB-et-gs-z-gmb-l-z-h~my%7Credirect%7Cu&ppsrc=GMBLR&utm_campaign=gb-en_GB-et-gs-z-gmb-l-z-h~my%7Credirect%7Cu&utm_source=gmb&utm_medium=et)
 2. Choose the listing that you want to edit. (If you're using card view, you'll need to click **Manage Location**, then click **Info** from the menu.)
 3. Click on the **Create Post** or click **Post** 
-4. Download and use this image to put in the image box
+4. Download and use this [image](https://static.designmynight.com/uploads/2018/01/Collins.png) to put in the image box
 
 5. Fill in the following fields as follows:
 
