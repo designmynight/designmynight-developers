@@ -39,12 +39,10 @@ need to be manually updated in the EPOS
 
 ## Payments Valid to Push to Zonal EPOS
 
-Zonal does not support adding payments after the booking date has passed.
+Zonal does **not** support adding payments after the booking date has passed.
 
 * **Payments claimed by Card Authentication** 
- 
- The Collins/Zonal integration will **not** allow for Collins to push payments that have been added **after** the booking date has passed. 
- 
+
 Payments claimed from [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) should only be taken **after** the booking date has passed (in the case that the customer was a no-show or failed to meet your booking policies).
 
 As such payments claimed by Card Authentication will **not** push to the till and will need to be manually added to your tills. 
@@ -186,9 +184,7 @@ The error email will include three useful details:
 ## Error Emails: Zonal URLs explained
 If the Zonal URL in your error emails ends in: 
 
-* **/edit** if the error occurred when editing booking details. You will only really require these updates if you wish for up-to-date booking details to show up on your tills. 
-
-We encourage all partners to use Collins during [live service](https://collins.uservoice.com/knowledgebase/articles/1183255-collins-webinars-prepping-for-and-using-collins) so you will always be able to get up to date booking details on Collins. 
+* **/edit** if the error occurred when editing booking details. We encourage all partners to use Collins during [live service](https://collins.uservoice.com/knowledgebase/articles/1183255-collins-webinars-prepping-for-and-using-collins) so you will always be able to get up to date booking details on Collins. You will only really require these updates if you wish for up-to-date booking details to show up on your tills.
 
 * **/deposit** if the error occurred when adding a deposit 
 
@@ -214,7 +210,7 @@ The Zonal API doesn't support removing deposits once they've been added so this 
 
 This error occurs if the booking has been added **without** a booking date. To fix this, you will need to enter the date of the booking. If you add a **future** date for the Booking Date, the booking will automatically push to your tills (so there is no need to contact Zonal). 
 
-* **'Invalid date Invalid booking field: ContactName' Error**
+* **'Invalid booking field: ContactName' Error**
 
 This error occurs when there is a space in the 'Name' field of your booking. For example, if someone has a double barrel surname, the name must be entered with a hyphen not a space e.g. John-Edwards **NOT** John Edwards. 
 
