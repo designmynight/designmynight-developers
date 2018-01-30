@@ -23,9 +23,8 @@ Bookings will be sent to the EPOS with the following details:
 
 **Handling changes in Collins**
 
-Whenever a booking is changed in Collins, the integration will check if that deposit should be updated in Zonal. If the
-booking has already been added to Zonal, any updates to the core booking details will be sent, and new deposits will be
-sent. These core booking details are:
+Whenever a booking is changed in Collins, the integration will check if that booking should be updated in Zonal. If the
+booking has already been added to Zonal, any updates to the core booking details will result in the booking and any new deposits being re-sent to Zonal. These core booking details are:
 
 * Venue
 * First Name
@@ -40,9 +39,7 @@ need to be manually updated in the EPOS
 
 ## Payments Valid to Push to Zonal EPOS
 
-* **Paid Deposits** 
-
-All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) taken using the payment link in Collins will automatically push to your Zonal EPOS. 
+Zonal does not support adding payments after the booking date has passed.
 
 * **Payments claimed by Card Authentication** 
  
@@ -51,6 +48,10 @@ All [manual/request payments](https://collins.uservoice.com/knowledgebase/articl
 Payments claimed from [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) should only be taken **after** the booking date has passed (in the case that the customer was a no-show or failed to meet your booking policies).
 
 As such payments claimed by Card Authentication will **not** push to the till and will need to be manually added to your tills. 
+
+* **Paid Deposits** 
+
+All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) taken using the payment link in Collins will automatically push to your Zonal EPOS. 
 
 * **Pushing 'Other' Payments**
 
@@ -187,7 +188,7 @@ If the Zonal URL in your error emails ends in:
 
 * **/edit** if the error occurred when editing booking details. You will only really require these updates if you wish for up-to-date booking details to show up on your tills. 
 
-We encourage all partners to use Collin during [live service](https://collins.uservoice.com/knowledgebase/articles/1183255-collins-webinars-prepping-for-and-using-collins) so you will always be able to get up to date booking details on Collins. 
+We encourage all partners to use Collins during [live service](https://collins.uservoice.com/knowledgebase/articles/1183255-collins-webinars-prepping-for-and-using-collins) so you will always be able to get up to date booking details on Collins. 
 
 * **/deposit** if the error occurred when adding a deposit 
 
