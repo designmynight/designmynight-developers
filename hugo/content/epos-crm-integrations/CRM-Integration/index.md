@@ -27,7 +27,7 @@ You will then be given the following:
 * User ID
 * API Key
 * Base url: https://api.designmynight.com/v4/
-* Docs: developers.designmynight.com
+* Docs: [developers.designmynight.com](http://developers.designmynight.com/api-basics/)
 
 It will then be up to your CRM system to access our API and pull the relevant data. 
 
