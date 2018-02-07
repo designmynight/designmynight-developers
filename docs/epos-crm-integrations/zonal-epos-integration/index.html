@@ -396,6 +396,10 @@
       
     
       
+    
+      
+    
+      
       <span class="section">Epos-Crm-Integrations</span>
       
     
@@ -465,6 +469,10 @@
   <li>
     
 
+    
+      
+    
+      
     
       
     
@@ -688,9 +696,8 @@ with credentials that Zonal set up and provide.</p>
 
 <p><strong>Handling changes in Collins</strong></p>
 
-<p>Whenever a booking is changed in Collins, the integration will check if that deposit should be updated in Zonal. If the
-booking has already been added to Zonal, any updates to the core booking details will be sent, and new deposits will be
-sent. These core booking details are:</p>
+<p>Whenever a booking is changed in Collins, the integration will check if that booking should be updated in Zonal. If the
+booking has already been added to Zonal, any updates to the core booking details will result in the booking and any new deposits being re-sent to Zonal. These core booking details are:</p>
 
 <ul>
 <li>Venue</li>
@@ -707,21 +714,21 @@ need to be manually updated in the EPOS</p>
 
 <h2 id="payments-valid-to-push-to-zonal-epos">Payments Valid to Push to Zonal EPOS</h2>
 
-<ul>
-<li><strong>Paid Deposits</strong></li>
-</ul>
-
-<p>All <a href="https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to">manual/request payments</a> taken using the payment link in Collins will automatically push to your Zonal EPOS.</p>
+<p>Zonal does <strong>not</strong> support adding payments after the booking date has passed.</p>
 
 <ul>
 <li><strong>Payments claimed by Card Authentication</strong></li>
 </ul>
 
-<p>The Collins/Zonal integration will <strong>not</strong> allow for Collins to push payments that have been added <strong>after</strong> the booking date has passed.</p>
-
 <p>Payments claimed from <a href="https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to">Collins Card Authentication</a> should only be taken <strong>after</strong> the booking date has passed (in the case that the customer was a no-show or failed to meet your booking policies).</p>
 
 <p>As such payments claimed by Card Authentication will <strong>not</strong> push to the till and will need to be manually added to your tills.</p>
+
+<ul>
+<li><strong>Paid Deposits</strong></li>
+</ul>
+
+<p>All <a href="https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to">manual/request payments</a> taken using the payment link in Collins will automatically push to your Zonal EPOS.</p>
 
 <ul>
 <li><strong>Pushing &lsquo;Other&rsquo; Payments</strong></li>
@@ -752,6 +759,7 @@ need to be manually updated in the EPOS</p>
 <li>Employee ID: the employee ID that bookings should be added under</li>
 <li>Username: the authorization username to connect to Zonal</li>
 <li>Password: the authorization password to connect to Zonal</li>
+<li>Base/ZCF URL</li>
 </ul>
 
 <p>You will also need to specify how you would like the integration to function (this will depend on how you manage your reporting on your side). For this, you will need to confirm <strong>which bookings</strong> you would like Collins to push to your tills and <strong>when</strong> these bookings should be pushed:</p>
@@ -875,12 +883,8 @@ need to be manually updated in the EPOS</p>
 <p>If the Zonal URL in your error emails ends in:</p>
 
 <ul>
-<li><strong>/edit</strong> if the error occurred when editing booking details. You will only really require these updates if you wish for up-to-date booking details to show up on your tills.</li>
-</ul>
+<li><p><strong>/edit</strong> if the error occurred when editing booking details. We encourage all partners to use Collins during <a href="https://collins.uservoice.com/knowledgebase/articles/1183255-collins-webinars-prepping-for-and-using-collins">live service</a> so you will always be able to get up to date booking details on Collins. You will only really require these updates if you wish for up-to-date booking details to show up on your tills.</p></li>
 
-<p>We encourage all partners to use Collin during <a href="https://collins.uservoice.com/knowledgebase/articles/1183255-collins-webinars-prepping-for-and-using-collins">live service</a> so you will always be able to get up to date booking details on Collins.</p>
-
-<ul>
 <li><p><strong>/deposit</strong> if the error occurred when adding a deposit</p></li>
 
 <li><p><strong>/create</strong> is the error occurred when creating the booking</p></li>
@@ -913,7 +917,7 @@ need to be manually updated in the EPOS</p>
 <p>This error occurs if the booking has been added <strong>without</strong> a booking date. To fix this, you will need to enter the date of the booking. If you add a <strong>future</strong> date for the Booking Date, the booking will automatically push to your tills (so there is no need to contact Zonal).</p>
 
 <ul>
-<li><strong>&lsquo;Invalid date Invalid booking field: ContactName&rsquo; Error</strong></li>
+<li><strong>&lsquo;Invalid booking field: ContactName&rsquo; Error</strong></li>
 </ul>
 
 <p>This error occurs when there is a space in the &lsquo;Name&rsquo; field of your booking. For example, if someone has a double barrel surname, the name must be entered with a hyphen not a space e.g. John-Edwards <strong>NOT</strong> John Edwards.</p>

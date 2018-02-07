@@ -396,6 +396,10 @@
       
     
       
+    
+      
+    
+      
       <span class="section">Epos-Crm-Integrations</span>
       
     
@@ -465,6 +469,10 @@
   <li>
     
 
+    
+      
+    
+      
     
       
     
@@ -672,7 +680,7 @@
 
 <p><strong>To create your own personalised Enquiry form:</strong></p>
 
-<p><strong>1.</strong> Create your own form display on your website. You and your web developer will be responsible for the look of your personalised form and which fields are included.</p>
+<p><strong>1.</strong> Create your own form display on your website. Here&rsquo;s a <a href="https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit">Basic Enquiry Form Example</a> to use. You and your web developer will be responsible for the look of your personalised form and which fields are included.</p>
 
 <p><strong>2.</strong> For any standard Collins booking fields used in your form (First Name, Last Name, Email, Phone, DOB, Newsletter Sign Up), please use these <a href="http://developers.designmynight.com/booking-api/#submitting-through-the-api">Standard Collins booking field names</a>.
 This will ensure that these field details will pull through to the respective fields in your Collins enquiry.</p>
@@ -725,11 +733,9 @@ This will ensure that these field details will pull through to the respective fi
 
 <h2 id="general-enquiry-form-faqs">General Enquiry Form FAQs</h2>
 
-<p><strong>1. I&rsquo;m trying to post to <a href="https://www.designmynight.com/book">https://www.designmynight.com/book</a> but am receiving the following error message: &ldquo;No &lsquo;Access-Control-Allow-Origin&rsquo; header is present on the requested resource. Origin is therefore not allowed access.&rdquo;</strong></p>
+<p><strong>1. Do you support XHR or cross origin requests?</strong></p>
 
-<p>As well as sending all the booking data, you will also need to ensure you are sending <code>source=partner</code>.</p>
-
-<p>This will store the booking as a partner booking and will allow those cross-origin requests through.</p>
+<p>We do not currently support submitting XHR requests for  bespoke enquiries. In order to customise the confirmation page, please add a <code>return_url</code> parameter. The response data will be forwarded onto your return url as url parameters.</p>
 
 			
 			<aside class="copyright" role="note">
@@ -750,7 +756,7 @@ This will ensure that these field details will pull through to the respective fi
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://designmynight.github.io/designmynight-developers/faqs/tracking/" title="">
+      <a href="https://designmynight.github.io/designmynight-developers/faqs/taking-bookings-from-google/" title="">
         <span class="direction">
           Previous
         </span>

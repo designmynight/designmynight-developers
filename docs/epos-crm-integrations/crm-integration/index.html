@@ -396,6 +396,10 @@
       
     
       
+    
+      
+    
+      
       <span class="section">Epos-Crm-Integrations</span>
       
     
@@ -465,6 +469,10 @@
   <li>
     
 
+    
+      
+    
+      
     
       
     
@@ -678,7 +686,7 @@
 <p><strong>We are able to give access to the following API endpoints:</strong></p>
 
 <ul>
-<li><a href="http://developers.designmynight.com/booking-api/">Bookings</a> - this will pull the booking data from your Collins Enquiries Page</li>
+<li><a href="http://developers.designmynight.com/booking-api/">Bookings</a> - this will pull the booking data from your Collins Enquiries Page (ie every field you can see on your <a href="https://collins.uservoice.com/knowledgebase/articles/1829035-enquiries-page-csv-download">CSV download from enquiry page</a>)</li>
 <li><a href="http://developers.designmynight.com/users-api/">Users</a> - this will pull your Collins Customers Data</li>
 <li>Bookings Reports - this will pull your booking reports with whichever parameters you wish</li>
 <li>Venues - this will pull your DMN Venue reviews</li>
@@ -695,7 +703,7 @@
 <li>User ID</li>
 <li>API Key</li>
 <li>Base url: <a href="https://api.designmynight.com/v4/">https://api.designmynight.com/v4/</a></li>
-<li>Docs: developers.designmynight.com</li>
+<li>Docs: <a href="http://developers.designmynight.com/api-basics/">developers.designmynight.com</a></li>
 </ul>
 
 <p>It will then be up to your CRM system to access our API and pull the relevant data.</p>
@@ -720,6 +728,46 @@ So if you would like to test the integration, you can create a test booking in y
 <p>If the marketing permission is changed on Collins so that marketing permission is ticked, the customer details will automatically pushed to Fishbowl.</p>
 
 <p>If the marketing permission is changed in Collins so that marketing permission is <strong>not</strong> ticked, but the customer already exists as subscribed in Fishbowl, you will have to manually update your Fishbowl list.</p>
+
+<h2 id="collins-zonal-crm-integration-overview">Collins/Zonal CRM Integration Overview</h2>
+
+<p>The Collins/Zonal CRM integration is set up to push bookings to the Zonal CRM when the booking has been confirmed in Collins, and again if any booking details are updated.</p>
+
+<p>The following customer and booking details are sent:</p>
+
+<p><strong>Customer Details</strong></p>
+
+<ul>
+<li>Full Name</li>
+<li>Telephone</li>
+<li>Email</li>
+<li>Date of Birth</li>
+<li>Marketing Permission</li>
+</ul>
+
+<p><strong>Booking Details:</strong></p>
+
+<ul>
+<li>Booking Reference</li>
+<li>Status</li>
+<li>Location</li>
+<li>Date</li>
+<li>Time</li>
+<li>Number of Guests</li>
+<li>Deposits</li>
+<li>Type</li>
+</ul>
+
+<h2 id="setting-up-the-collins-zonal-crm-integration">Setting up the Collins/Zonal CRM Integration</h2>
+
+<p>To set this up, we require the following details from Zonal:</p>
+
+<ul>
+<li>URL eg <a href="https://fullers.txdlimited.co.uk/api_v1/booking">https://fullers.txdlimited.co.uk/api_v1/booking</a></li>
+<li>Username</li>
+<li>Password</li>
+<li>Mapping of our venue IDs to Zonal IDs</li>
+</ul>
 
 			
 			<aside class="copyright" role="note">
@@ -760,14 +808,14 @@ So if you would like to test the integration, you can create a test booking in y
 
   <div class="next">
   
-      <a href="https://designmynight.github.io/designmynight-developers/booking-widget/" title="Booking widget">
+      <a href="https://designmynight.github.io/designmynight-developers/booking-widget/" title="Collins Booking Widget">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Booking widget
+              Collins Booking Widget
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">

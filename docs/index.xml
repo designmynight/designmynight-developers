@@ -107,7 +107,7 @@ Customising the widget The widget is included using javascript. Below is a list 
     </item>
     
     <item>
-      <title>Booking widget</title>
+      <title>Collins Booking Widget</title>
       <link>https://designmynight.github.io/designmynight-developers/booking-widget/</link>
       <pubDate>Fri, 29 Apr 2016 13:32:57 +0100</pubDate>
       
@@ -126,7 +126,7 @@ With the booking widget, the customer journey will take place in two parts:
       <description>CRM Systems using the Collins API We can give CRM systems access to the Collins API. This will enable them to pull specific data from Collins for example, your Customer Data.
 The following CRM systems currently access our API:
  Airship Alchemetrics Acteol  How to set up access to the Collins API We are able to give access to the following API endpoints:
- Bookings - this will pull the booking data from your Collins Enquiries Page Users - this will pull your Collins Customers Data Bookings Reports - this will pull your booking reports with whichever parameters you wish Venues - this will pull your DMN Venue reviews Offers - this will pull your Collins Offers (and can be used to check which offers are eligible for a given booking)  If you are looking to get API access for your CRM system, the first step is for the Account Manager at your CRM system to have a look through our API Basics for Developers.</description>
+ Bookings - this will pull the booking data from your Collins Enquiries Page (ie every field you can see on your CSV download from enquiry page) Users - this will pull your Collins Customers Data Bookings Reports - this will pull your booking reports with whichever parameters you wish Venues - this will pull your DMN Venue reviews Offers - this will pull your Collins Offers (and can be used to check which offers are eligible for a given booking)  If you are looking to get API access for your CRM system, the first step is for the Account Manager at your CRM system to have a look through our API Basics for Developers.</description>
     </item>
     
     <item>
@@ -217,7 +217,18 @@ It’s worth mentioning that the booking summary and any automated copy that you
       <description>Contact Us/General Enquiry Form As well as a Collins booking widget, you can also personalise your own Contact Us/General Enquiry form which feeds into your Collins.
 Here&amp;rsquo;s an example of a partner with a customised enquiry form: No. 4 Clifton Village
 To create your own personalised Enquiry form:
-1. Create your own form display on your website. You and your web developer will be responsible for the look of your personalised form and which fields are included.</description>
+1. Create your own form display on your website. Here&amp;rsquo;s a Basic Enquiry Form Example to use. You and your web developer will be responsible for the look of your personalised form and which fields are included.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/taking-bookings-from-google/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/taking-bookings-from-google/</guid>
+      <description>Taking reservations from Google If you have access to your venue&amp;rsquo;s Google Business Account, you are able to add your Collins booking URL to your Google listing. This way customers will be able to directly make a booking from Google.
+How to set up a Reservations URL To add a reservations URL to your Google My Business listing:
+ Sign in to Google My Business Choose the listing that you want to edit.</description>
     </item>
     
     <item>
@@ -228,6 +239,18 @@ To create your own personalised Enquiry form:
       <guid>https://designmynight.github.io/designmynight-developers/faqs/tracking/</guid>
       <description>Tracking There are 3 ways you can look at tracking:
 Google/Facebook Tracking Putting Google/Facebook code on the first enquire button in the CSS (this isn&amp;rsquo;t tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on Adding Google Analytics Tracking Code to the booking widget.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/updating-your-email-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/updating-your-email-settings/</guid>
+      <description>Updating your Email Settings If you are using our Collins Mail bolt-on, you do not have to action the below.
+For all other clients, you need to explicitly say that Collins is allowed to send emails for your domain/on your behalf.
+This is the only way that we can guarantee that emails deliver correctly to you and customers.
+The most common way of doing this is to set up an &amp;lsquo;SPF record&amp;rsquo; and DKIM for your domain (@yourvenue.</description>
     </item>
     
     <item>

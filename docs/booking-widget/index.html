@@ -8,7 +8,7 @@
   <head lang="en-gb">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <title>Booking widget - DMN developer documentation</title>
+    <title>Collins Booking Widget - DMN developer documentation</title>
     <meta name="generator" content="Hugo 0.30.2" />
 
     
@@ -91,7 +91,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Booking widget
+        Collins Booking Widget
       </div>
     </div>
 
@@ -399,6 +399,10 @@
       
     
       
+    
+      
+    
+      
       <span class="section">Epos-Crm-Integrations</span>
       
     
@@ -468,6 +472,10 @@
   <li>
     
 
+    
+      
+    
+      
     
       
     
@@ -660,7 +668,7 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>Booking widget </h1>
+			<h1>Collins Booking Widget </h1>
 
 			
 
@@ -676,12 +684,39 @@
 <br>b) <strong>For regular screens</strong> - inside a popup on your website. In this case the customer will not be aware that they are using a different website to complete their booking</p></li>
 </ol>
 
-<h2 id="embedding-the-form">Embedding the form</h2>
+<h2 id="accessing-your-collins-booking-widget-code">Accessing your Collins booking widget code</h2>
 
-<p>You can add the form to your page with a simple script tag, which you can get from the venue rules section of Collins. The script tag will look like this:</p>
+<p>You can access your booking widget code in the venue settings of your Collins admin:</p>
+
+<ol>
+<li>Log onto your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
+<li>Settings</li>
+<li>Venues</li>
+<li>Select your venue name</li>
+<li>Booking Widget</li>
+<li>Widget Code</li>
+</ol>
+
+<p>The script tag will look like this:</p>
 
 <pre><code class="language-html">&lt;script src=&quot;//partners.designmynight.com/pf/js?venue_id=YOUR_VENUE_ID&quot;&gt;&lt;/script&gt;
 </code></pre>
+
+<p>By default, the script in the grey box will be the booking widget for the specific venue. You just need to copy and paste this code and send over to your web developer.</p>
+
+<p>This section will also allow you to <a href="https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes">generate booking widget codes for a specific booking type or to list multiple venues within your Venue group</a>.</p>
+
+<p><strong>Please note:</strong> please only add the booking widget to your website once your Collins settings have been checked and your team has completed their training with a member of our Collins Customer Success Team. Otherwise you may start getting bookings/enquiries in that your team are unable to manage!</p>
+
+<h2 id="embedding-the-form">Embedding the form</h2>
+
+<p>Once your team has received training and your settings have had a final health-check, you are ready to go-live and add the widget to your own website.</p>
+
+<p>You simply add the small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.</p>
+
+<ul>
+<li><strong>Please note:</strong> your Collins booking widget will only ever display booking types that have <a href="https://www.designmynight.com/uploads/2018/01/Availability-tick-can-book1.png">availability</a> for the customer to book. If none of your booking types currently have availability to book, your Collins booking widget will <strong>not</strong> appear.</li>
+</ul>
 
 <h2 id="multiple-venues-on-a-single-form">Multiple venues on a single form</h2>
 

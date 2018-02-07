@@ -8,18 +8,18 @@
   <head lang="en-gb">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <title>Bookings Search API - DMN developer documentation</title>
+    <title> - DMN developer documentation</title>
     <meta name="generator" content="Hugo 0.30.2" />
 
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="https://designmynight.github.io/designmynight-developers/bookings-search/">
+    <link rel="canonical" href="https://designmynight.github.io/designmynight-developers/faqs/taking-bookings-from-google/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="https://designmynight.github.io/designmynight-developers/bookings-search/">
+    <meta property="og:url" content="https://designmynight.github.io/designmynight-developers/faqs/taking-bookings-from-google/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="https://designmynight.github.io/designmynight-developers/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -91,7 +91,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Bookings Search API
+        
       </div>
     </div>
 
@@ -258,14 +258,11 @@
 
 
 
-<a class="current" title="Bookings search" href="https://designmynight.github.io/designmynight-developers/bookings-search/">
+<a  title="Bookings search" href="https://designmynight.github.io/designmynight-developers/bookings-search/">
 	
 	Bookings search
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
   
 </li>
@@ -668,563 +665,54 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>Bookings Search API </h1>
+			<h1> </h1>
 
 			
 
-<div class="admonition note">
-<p class="admonition-title">Before you begin</p>
-<p>Refer to the <a href="/api-basics">API Basics</a> section to ensure you are familiar with the essentials of how to interact with the API.</p>
-</div>
+<h2 id="taking-reservations-from-google">Taking reservations from Google</h2>
 
-<p>The DesignMyNight Booking search can be used to list and search through a venue&rsquo;s bookings.</p>
+<p>If you have access to your venue&rsquo;s Google Business Account, you are able to add your Collins booking URL to your Google listing. This way customers will be able to directly make a booking from Google.</p>
 
-<h2 id="overview">Overview</h2>
+<h2 id="how-to-set-up-a-reservations-url">How to set up a Reservations URL</h2>
 
-<p>Queries are carried out as GET requests to the bookings API endpoint. To start with, you can try this with no parameters:</p>
+<p>To add a reservations URL to your Google My Business listing:</p>
 
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/bookings
-</code></pre>
+<ol>
+<li>Sign in to <a href="https://www.google.co.uk/business/?gmbsrc=gb-en_GB-et-gs-z-gmb-l-z-h~my%7Credirect%7Cu&amp;ppsrc=GMBLR&amp;utm_campaign=gb-en_GB-et-gs-z-gmb-l-z-h~my%7Credirect%7Cu&amp;utm_source=gmb&amp;utm_medium=et">Google My Business</a></li>
+<li>Choose the listing that you want to edit. (If you&rsquo;re using card view, you&rsquo;ll need to click <strong>Manage Location</strong>, then click <strong>Info</strong> from the menu.)</li>
+<li>Click on the <strong>URLs</strong> section.</li>
+<li>For the <strong>Reservations URL</strong>, enter the <a href="http://developers.designmynight.com/faqs/booking-url/#booking-url-for-a-specific-venue">Collins Booking URL for your venue</a></li>
+<li>Click <strong>Apply</strong></li>
+</ol>
 
-<p>You&rsquo;ll get a response like this, containing a list of bookings.</p>
+<h2 id="how-to-set-up-a-google-post">How to set up a Google Post</h2>
 
-<pre><code class="language-json">{
-  &quot;payload&quot;: {
-    &quot;bookings&quot;: [
-      {
-        ...
-      },
-      {
-        ...
-      }
-    ],
-    &quot;start&quot;: 0,
-    &quot;numFound&quot;: 105320
-  },
-  &quot;status&quot;: 200,
-  &quot;requestTime&quot;: &quot;2016-04-29T10:06:01&quot;,
-  &quot;responseTime&quot;: &quot;2016-04-29T10:06:01&quot;,
-  &quot;statusText&quot;: &quot;OK&quot;,
-  &quot;url&quot;: &quot;/v4/bookings&quot;,
-  &quot;method&quot;: &quot;GET&quot;,
-  &quot;params&quot;: []
-}
-</code></pre>
+<p>To add a Google Post to your Google My Business listing:</p>
 
-<h2 id="booking-fields">Booking fields</h2>
+<ol>
+<li>Sign in to <a href="https://www.google.co.uk/business/?gmbsrc=gb-en_GB-et-gs-z-gmb-l-z-h~my%7Credirect%7Cu&amp;ppsrc=GMBLR&amp;utm_campaign=gb-en_GB-et-gs-z-gmb-l-z-h~my%7Credirect%7Cu&amp;utm_source=gmb&amp;utm_medium=et">Google My Business</a></li>
+<li>Choose the listing that you want to edit. (If you&rsquo;re using card view, you&rsquo;ll need to click <strong>Manage Location</strong>, then click <strong>Info</strong> from the menu.)</li>
+<li>Click on the <strong>Create Post</strong> or click <strong>Post</strong></li>
 
-<p>The following fields may be included in a booking:</p>
+<li><p>Download and use this <a href="https://static.designmynight.com/uploads/2018/01/Collins.png">image</a> to put in the image box</p></li>
 
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
+<li><p>Fill in the following fields as follows:</p></li>
+</ol>
 
-<tbody>
-<tr>
-<td>_id</td>
-<td>Hex ID</td>
-<td>An internal unique ID for the booking</td>
-<td>57cfefdbc71620410eeae96b</td>
-</tr>
+<ul>
+<li>Write your post: &ldquo;Click Below&rdquo;</li>
+<li>Make your post an event and turn on &ldquo;Add a button&rdquo;</li>
+<li>Event title - &ldquo;Reserve with Collins&rdquo;</li>
+<li>Make the event start now and end date a year from today</li>
+<li>Tick the <strong>Reserve</strong> button</li>
+<li>For the <strong>Reserve</strong> field, enter the <a href="http://developers.designmynight.com/faqs/booking-url/#booking-url-for-a-specific-venue">Collins Booking URL for your venue</a></li>
+<li>You should also add #booking to the end of the link to make it a better mobile experience</li>
+</ul>
 
-<tr>
-<td>admin_notes</td>
-<td>Array</td>
-<td>A list of internal (booking manager) notes added about the booking</td>
-<td><code>[{&quot;note&quot;: &quot;Need to contact&quot;}]</code></td>
-</tr>
-
-<tr>
-<td>assigned_to</td>
-<td>Hex ID</td>
-<td>The unique ID of the user who this booking is currently assigned to</td>
-<td>54b4e1060df690cd5f0b033f</td>
-</tr>
-
-<tr>
-<td>booking_id</td>
-<td>Integer</td>
-<td>A booking reference, which the customer sees as DMN-XXXXXXX</td>
-<td>11771898986</td>
-</tr>
-
-<tr>
-<td>comments</td>
-<td>Array</td>
-<td>A list of notes about the booking to be used by venue staff (AKA &lsquo;run sheet notes&rsquo;)</td>
-<td><code>[{&quot;comment&quot;: &quot;Returning visitor&quot;}]</code></td>
-</tr>
-
-<tr>
-<td>created_by</td>
-<td>Hex ID</td>
-<td>The unique ID of the user who created the booking</td>
-<td>54b4e1060df690cd5f0b033f</td>
-</tr>
-
-<tr>
-<td>created_date</td>
-<td>Date/Time (UTC)</td>
-<td>The time and date that the booking was created</td>
-<td>2016-09-07T11:45:47</td>
-</tr>
-
-<tr>
-<td>date</td>
-<td>Date/Time (UTC)</td>
-<td>The date (not time) that the booking is taking place</td>
-<td>2015-12-05T00:00:00</td>
-</tr>
-
-<tr>
-<td>deposits</td>
-<td>Array</td>
-<td>A list of deposits added to the booking, with amounts as a decimal</td>
-<td><code>[{&quot;amount&quot;: 10}</code></td>
-</tr>
-
-<tr>
-<td>duration</td>
-<td>Decimal</td>
-<td>The duration of the booking in minutes, or -1 for &lsquo;until close&rsquo;</td>
-<td>120</td>
-</tr>
-
-<tr>
-<td>email</td>
-<td>String</td>
-<td>The customer&rsquo;s email address</td>
-<td>jane@example.com</td>
-</tr>
-
-<tr>
-<td>first_name</td>
-<td>String</td>
-<td>The customer&rsquo;s first name</td>
-<td>Jane</td>
-</tr>
-
-<tr>
-<td>follow_up</td>
-<td>Date/Time (UTC)</td>
-<td>A date that has been set for the Collins user to follow up on this booking</td>
-<td>2016-09-19T00:00:00</td>
-</tr>
-
-<tr>
-<td>labels</td>
-<td>Array</td>
-<td>A list of labels that may have been added to the booking</td>
-<td>need_to_chase</td>
-</tr>
-
-<tr>
-<td>last_name</td>
-<td>String</td>
-<td>The customer&rsquo;s last name</td>
-<td>Bloggs</td>
-</tr>
-
-<tr>
-<td>last_updated</td>
-<td>Date/Time (UTC)</td>
-<td>The time and date that the booking was last updates</td>
-<td>2016-09-08T15:13:40</td>
-</tr>
-
-<tr>
-<td>managed_by_venue</td>
-<td>Boolean</td>
-<td>True if this booking is managed by the Collins venue (as opposed to DesignMyNight)</td>
-<td>true</td>
-</tr>
-
-<tr>
-<td>num_people</td>
-<td>Integer</td>
-<td>The number of guests in the booking</td>
-<td>4</td>
-</tr>
-
-<tr>
-<td>partner_source</td>
-<td>String</td>
-<td>A partner-defined string representing the source of the booking</td>
-<td>DesignMyNight</td>
-</tr>
-
-<tr>
-<td>phone</td>
-<td>String</td>
-<td>The customer&rsquo;s phone number</td>
-<td>07123 456789</td>
-</tr>
-
-<tr>
-<td>region</td>
-<td>Hex ID</td>
-<td>The ID of the DesignMyNight region this venue belongs to</td>
-<td>512b1ebad5d190d2978c277e</td>
-</tr>
-
-<tr>
-<td>source</td>
-<td>String</td>
-<td>Where the booking was created</td>
-<td>admin</td>
-</tr>
-
-<tr>
-<td>status</td>
-<td>String</td>
-<td>The current status of the booking - new, in_progress, complete</td>
-<td>in_progress</td>
-</tr>
-
-<tr>
-<td>time</td>
-<td>String</td>
-<td>The time in 24-hour format that the booking is taking place, in local time</td>
-<td>18:00</td>
-</tr>
-
-<tr>
-<td>type</td>
-<td>Map</td>
-<td>A map of details about the type of the booking, with a &lsquo;name&rsquo; key for the friendly name</td>
-<td><code>{&quot;name&quot;: &quot;Drinks Table&quot;}</code></td>
-</tr>
-
-<tr>
-<td>user_id</td>
-<td>Hex ID</td>
-<td>The ID of the customer</td>
-<td>57cfefdbc71620410eeae962</td>
-</tr>
-
-<tr>
-<td>venue_group</td>
-<td>Hex ID</td>
-<td>The ID of the venue group for this booking</td>
-<td>54b438182b588feb7337c5be</td>
-</tr>
-
-<tr>
-<td>venue_id</td>
-<td>Hex ID</td>
-<td>The ID of the venue for this booking</td>
-<td>5255230b0df690b914ca1ff5</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="pagination">Pagination</h2>
-
-<p>The response from each request includes a <code>numFound</code> property that tells you the total number of matching bookings for the given query. By default, the API will start at 0 (the first matching result) and will return 30 results per request. This can be changed using the following parameters:</p>
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>start</code></td>
-<td>The zero-based index of the first result to be included in the results. Default: 0</td>
-</tr>
-
-<tr>
-<td><code>limit</code></td>
-<td>The maximum number of results to be included in the results. Default: 30</td>
-</tr>
-</tbody>
-</table>
-
-<p>For example, to include the third &lsquo;page&rsquo; of results with 50 per &lsquo;page&rsquo;, you would use:</p>
-
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/bookings?start=100&amp;limit=50
-</code></pre>
-
-<h2 id="filtering-results">Filtering results</h2>
-
-<p>You can search and filter through the entire list of bookings by passing additional parameters. The following search parameters are currently available:</p>
-
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Filter parameter format</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>assigned_to</td>
-<td>Hex ID</td>
-</tr>
-
-<tr>
-<td>booking_id</td>
-<td>Number-only ID</td>
-</tr>
-
-<tr>
-<td>created_date</td>
-<td>Date range (<a href="#date-filter-format">see below</a>)</td>
-</tr>
-
-<tr>
-<td>date</td>
-<td>Date range (<a href="#date-filter-format">see below</a>)</td>
-</tr>
-
-<tr>
-<td>email</td>
-<td>A full email address</td>
-</tr>
-
-<tr>
-<td>follow_up</td>
-<td>Date range (<a href="#date-filter-format">see below</a>)</td>
-</tr>
-
-<tr>
-<td>has_preorders</td>
-<td>Boolean: true or false</td>
-</tr>
-
-<tr>
-<td>labels</td>
-<td>One or more comma-separated labels</td>
-</tr>
-
-<tr>
-<td>last_updated</td>
-<td>Date range (<a href="#date-filter-format">see below</a>)</td>
-</tr>
-
-<tr>
-<td>notifications</td>
-<td>A single user notification (<a href="#notification-filter-format">see below</a>)</td>
-</tr>
-
-<tr>
-<td>num_people</td>
-<td>A number range, eg &lsquo;1 TO 5&rsquo; or &lsquo;10 TO *&rsquo;</td>
-</tr>
-
-<tr>
-<td>phone</td>
-<td>A customer&rsquo;s phone number</td>
-</tr>
-
-<tr>
-<td>private_hire</td>
-<td>Boolean: true or false</td>
-</tr>
-
-<tr>
-<td>query</td>
-<td>Free text - will search customer name, email and company</td>
-</tr>
-
-<tr>
-<td>status</td>
-<td>One or more comma-separated values (<a href="#status-filter-format">see below</a>)</td>
-</tr>
-
-<tr>
-<td>time</td>
-<td>A time range in 24 hour format, eg &lsquo;12:00 TO 17:00&rsquo; or &lsquo;* TO 10:00&rsquo;</td>
-</tr>
-
-<tr>
-<td>type</td>
-<td>One or more comma-separated hex IDs</td>
-</tr>
-
-<tr>
-<td>venue_id</td>
-<td>One or more comma-separated hex IDs</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="date-filter-format">Date filter format</h3>
-
-<p>Dates may be filtered by providing a range, optionally using an asterisk to carry out an open-ended search. A number of date formats are supported, but to ensure accuracy the recommended date format is YYYY-MM-DDTHH:mm:ss, eg 2017-02-15T13:45:00. If the time is omitted, midnight (the start of the day) will be assumed.</p>
-
-<p>Examples:</p>
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>date=2017-02-15</td>
-<td>Match bookings with this exact date</td>
-</tr>
-
-<tr>
-<td>last_updated=2016-12-15T13:45:00 TO *</td>
-<td>Match bookings that have been updated since this time</td>
-</tr>
-
-<tr>
-<td>created_date=* TO 2016-12-31T23:59:59</td>
-<td>Match bookings that were created before this time</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="status-filter-format">Status filter format</h3>
-
-<p>The following values may be provided with the <code>status</code> parameter to filter on the status of the bookings that are returned.</p>
-
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>new</td>
-<td>New bookings (not yet assigned to a Collins user)</td>
-</tr>
-
-<tr>
-<td>in_progress</td>
-<td>Enquiries that have been received and assigned but are not yet confirmed</td>
-</tr>
-
-<tr>
-<td>complete</td>
-<td>A confirmed booking</td>
-</tr>
-
-<tr>
-<td>rejected</td>
-<td>A rejected or cancelled booking</td>
-</tr>
-
-<tr>
-<td>deleted</td>
-<td>A booking that has been deleted from Collins</td>
-</tr>
-
-<tr>
-<td>lost</td>
-<td>A booking that was lost: its date passed without it being completed</td>
-</tr>
-
-<tr>
-<td>all</td>
-<td>Include new, in progress and complete bookings</td>
-</tr>
-
-<tr>
-<td>include_rejected</td>
-<td>Include new, in progress, complete and rejected bookings</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="notifications-filter-format">Notifications filter format</h3>
-
-<p>The following values may be provided with the <code>notifications</code> parameter to filter on notifications against the booking:</p>
-
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>follow_up</td>
-<td>All bookings that have been marked for follow-up today or earlier</td>
-</tr>
-
-<tr>
-<td>for_today</td>
-<td>All bookings that are not yet confirmed but have a date of today</td>
-</tr>
-
-<tr>
-<td>untaken_two_hours</td>
-<td>All new (unassigned) bookings that were received over 2 hours ago</td>
-</tr>
-
-<tr>
-<td>messages</td>
-<td>All bookings with unread received messages from the customer</td>
-</tr>
-
-<tr>
-<td>customer_notes</td>
-<td>Bookings that were auto confirmed and have unread customer requests</td>
-</tr>
-
-<tr>
-<td>packages_requested</td>
-<td>Bookings where the customer requested (but did not pay for) packages when booking online</td>
-</tr>
-
-<tr>
-<td>deposit_authenticated</td>
-<td>Bookings where card details have been taken</td>
-</tr>
-
-<tr>
-<td>deposit_paid</td>
-<td>Bookings where a deposit has been paid</td>
-</tr>
-
-<tr>
-<td>customer_preorder_added</td>
-<td>Bookings where a customer has added a pre-order</td>
-</tr>
-
-<tr>
-<td>customer_preorder_complete</td>
-<td>Bookings where a customer has marked their pre-orders as complete</td>
-</tr>
-
-<tr>
-<td>email_delivery_failed</td>
-<td>Bookings where an email sent through Collins Mail was unable to be delivered</td>
-</tr>
-
-<tr>
-<td>customer_change</td>
-<td>Bookings where the customer has made changes online</td>
-</tr>
-
-<tr>
-<td>customer_cancelled</td>
-<td>Bookings where the customer has cancelled (also requires the status parameter to be set to &lsquo;rejected&rsquo;)</td>
-</tr>
-</tbody>
-</table>
+<ol>
+<li>Click <strong>Preview</strong> to test that your links are set up correctly</li>
+<li>Click <strong>Apply</strong></li>
+</ol>
 
 			
 			<aside class="copyright" role="note">
@@ -1245,7 +733,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://designmynight.github.io/designmynight-developers/api-basics/" title="API Basics">
+      <a href="https://designmynight.github.io/designmynight-developers/faqs/tracking/" title="">
         <span class="direction">
           Previous
         </span>
@@ -1255,7 +743,7 @@
           </div>
           <div class="stretch">
             <div class="title">
-              API Basics
+              
             </div>
           </div>
         </div>
@@ -1265,14 +753,14 @@
 
   <div class="next">
   
-      <a href="https://designmynight.github.io/designmynight-developers/users-api/" title="Users API">
+      <a href="https://designmynight.github.io/designmynight-developers/faqs/general-enquiry-form/" title="">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Users API
+              
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
