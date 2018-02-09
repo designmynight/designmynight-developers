@@ -17,7 +17,6 @@ The purpose of the integration between Collins and IBS is to be able to push the
 * Deposit amount: The total of all paid deposit
 
 ## Payments Valid to Push to IBS EPOS
-
 * **Paid Deposits** 
 
 All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) taken using the payment link in Collins will automatically push to your IBS EPOS. 
@@ -41,7 +40,6 @@ You will not be able to proceed with adding the payment without selecting an opt
 This way your team has full control as to which payments get pushed to your tills.
 
 ## Setting up the Collins/IBS Integration:
-
 If you would like to set up the integration to push bookings/payments to your IBS EPOS, you will need to contact your Collins Account Manager with the following details (you will be able to get these from IBS):
 
 * Logon URL
@@ -61,7 +59,6 @@ You will also need to specify how you would like the integration to function (th
 **_Please note:_** any bookings/deposits that are already on Collins (before the Collins/IBS integration is set up) will **not** push to the till unless a deposit is added/changed/deleted for the booking on Collins. 
 
 ## Checking that the Collins/IBS Integration is set up correctly
-
 Once your Collins Account Manager has been in touch that the integration has been set up, it will be your responsibility to check that the integration is working correctly (as Collins will not be able to access your till systems to test). 
 
 As such, we recommend that you create a test payment through Collins. This will both test the connection and ensure that you're confident with how it will show on your tills.
@@ -77,7 +74,6 @@ If you have set up to push bookings ASAP and the tick is orange, this means that
 If you have set up to push bookings on the day of the booking, the orange tick means the payment is yet to push (and will push on the day of the booking). 
 
 ## How to push bookings that were on Collins before the IBS integration
-
 If the integration is set up to push bookings ASAP, Collins will attempt to push bookings to your tills every time a user add/edits/deletes a Payment for the booking in Collins and saves. 
 
 As such, if you add a new payment to any bookings already on Collins before the integration was set up, the booking will be pushed to the tills. 
@@ -95,7 +91,6 @@ The booking should push to your tills.
 **_Please note:_** this will only work for bookings that have a future booking date. This integration does not allow for Collins to push bookings if the date of the booking has already passed. 
 
 ## Best Practice for Pushing all bookings
-
 If your integration is set up to push all bookings (not just bookings with deposits), it's important that you ensure that all of the following booking details are added to the booking in Collins:
 
 * First Name
@@ -112,7 +107,6 @@ Without all these details, we will be unable to push the booking to your tills.
 e.g. John-Edwards **NOT** John Edwards
 
 ## IBS EPOS Integration FAQS
-
 **1. If we set up the integration to push all bookings, will my in progress enquiries get pushed to tills?** 
 
 There is not currently a status check in place, so Collins would push all bookings regardless of booking status.
