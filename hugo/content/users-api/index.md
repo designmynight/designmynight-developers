@@ -15,41 +15,55 @@ You will only be able to retrieve user information based on your permissions.
 
 ## User format
 
-The `users` API endpoint 
+Each user object will contain the following keys:
 
-Field | Type| Description
------ | -----|-----|
-first_name|`string`| The first name|
-last_name |`string`| The last name|
-email |`string`| The email address|
-phone |`string`| The phone number|
-dob |`string`| The date of birth|
-associated_venues|`array`| A list of venue IDs that this user is associated with**|
-marketing_permission|`boolean`|Marketing permission for the venue group*
+Field | Type | Description
+--- | --- | ---
+_id | `string` | The ID of the user
+created_date | `string` | The date and time of when the user was created, in ISO 8601 format
+last_updated | `string` | The date and time of when the user was last updated, in ISO 8601 format
+first_name | `string` | The user's first name
+last_name | `string` | The user's last name
+username | `string` | The user's username*
+email | `string` | The user's email address
+phone | `string` | The user's phone number
+dob | `string` | The user's date of birth, in ISO 8601 format*
+gender | `string` | The user's gender*
+company | `string` | The company name*
+status | `string` | The user status
+wishlist | `object` | Object containing items added to the user's wishlist
+associated_venues | `array` | An array of venue IDs that this user is associated with*
+marketing_permission | `boolean` | Marketing permission for the venue group**
 
-*Only appears if marketting permission has been granted<br>
-**To get the venue IDs please speak to your Account Manager for details
+<small> \* These fields will only appear if we have data for them<br>
+** To get the venue IDs, please speak to your Account Manager for details</small>
+
+To only request specific fields back, you can use the `fields` url parameter. This parameter accepts a comma separated string of fields. For example, the following request will only retrieve the first name and email address.
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/users/<user_id>?fields=first_name,email
+```
 
 ## Getting a user
 
-**Getting a user by ID**
+### Getting a user by ID
 
-If the user ID is known the a user can be found using their ID.
-
-i.e
+If the user ID is known, the user can be found using their ID. For example:
 
 ```bash
 $ curl -X GET https://api.designmynight.com/v4/users/<user_id>
 ```
 
-**Getting a user by searching**
+This will return a `user` object containing one user if the request was successful, or a [404 status code](/api-basics/#status-codes) if the user was not found.
 
-A user can be found by sending a `search` query.  This can one one of the following
+### Getting a user by searching
 
-Field | Type| Description
------ | -----|-----|
-email|`string`| The email of the user|
-phone |`string`| The phone number used in the booking|
+A user can be found by sending a `search` query. Below are the fields which will be used for searching:
+
+Field | Type | Description
+--- | --- | ---
+email | `string` | The email of the user
+phone | `string` | The phone number used in the booking
 
 e.g
 
@@ -57,9 +71,15 @@ e.g
 $ curl -X GET https://api.designmynight.com/v4/users/?search=<search_string>
 ```
 
-**Response**
+This will return three keys in the `payload` object:
 
-You'll get a response like this:
+Field | Type | Description
+--- | --- | ---
+`users` | `array` | An array of users found. This array will be empty if none were found.
+`start` | `int` | The starting position for pagination of this request. [Learn more about pagination &raquo;](#pagination)
+`numFound` | `int` | The total number of users found matching this search query
+
+Here's an example response:
 
 ```json
 {
@@ -72,7 +92,7 @@ You'll get a response like this:
         "email": "test-user@designmynight.com",
         "status": "inactive",
         "first_name": "Test",
-        "last_name": "Yser",
+        "last_name": "User",
         "phone": "000000000",
         "marketing_permission": true,
         "associated_venues": [
@@ -94,3 +114,5 @@ You'll get a response like this:
   }
 }
 ```
+
+## Pagination
