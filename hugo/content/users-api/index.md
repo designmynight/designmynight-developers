@@ -64,11 +64,12 @@ Field | Type | Description
 --- | --- | ---
 email | `string` | The email of the user
 phone | `string` | The phone number used in the booking
+last_name | `string` | The user's last name
 
-e.g
+For example, the following request will find users with the last name 'Johnson':
 
 ```bash
-$ curl -X GET https://api.designmynight.com/v4/users/?search=<search_string>
+$ curl -X GET https://api.designmynight.com/v4/users/?search=johnson
 ```
 
 This will return three keys in the `payload` object:
@@ -116,3 +117,19 @@ Here's an example response:
 ```
 
 ## Pagination
+
+When searching for users, results are always limited to no more than 30 results per page. You'll know if your results have been trimmed when the `numFound` key is more than 30.
+
+To retrieve the next set of data, use the `start` url parameter. The `start` parameter is used to specify the offset of records, and the default value is 0.
+
+For example, let's say you've made the following search request:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/users/?search=johnson&start=0
+```
+
+and 90 users were found. The `users` array will only contain 30 users. To get the next 30 users, make another request but increment the `start` parameter to 30.
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/users/?search=johnson&start=30
+```
