@@ -1,7 +1,7 @@
 languageCode = "en-gb"
 title = "DMN developer documentation"
 theme = "hugo-material-docs"
-publishDir = "../docs"
+publishDir = "../blog-dist"
 baseURL = "https://designmynight.github.io/designmynight-developers/"
 metadataformat = "yaml"
 canonifyurls = false

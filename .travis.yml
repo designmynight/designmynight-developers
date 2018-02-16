@@ -14,8 +14,8 @@ deploy:
   skip_cleanup: true
   keep_history: true
   fqdn: developers.designmynight.com
-  # local_dir: /
+  local_dir: dist
   github_token: $GITHUB_TOKEN
-  target_branch: docker
+  target_branch: gh-pages
   on:
     branch: docker #TODO: Change to master
