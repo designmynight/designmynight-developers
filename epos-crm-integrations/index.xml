@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Epos-crm-integrations on DMN developer documentation</title>
+    <link>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/</link>
+    <description>Recent content in Epos-crm-integrations on DMN developer documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>DesignMyNight</copyright>
+    
+	<atom:link href="https://designmynight.github.io/designmynight-developers/epos-crm-integrations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/crm-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/crm-integration/</guid>
+      <description>CRM Systems using the Collins API We can give CRM systems access to the Collins API. This will enable them to pull specific data from Collins for example, your Customer Data.
+The following CRM systems currently access our API:
+ Airship Alchemetrics Acteol  How to set up access to the Collins API We are able to give access to the following API endpoints:
+ Bookings - this will pull the booking data from your Collins Enquiries Page (ie every field you can see on your CSV download from enquiry page) Users - this will pull your Collins Customers Data Bookings Reports - this will pull your booking reports with whichever parameters you wish Venues - this will pull your DMN Venue reviews Offers - this will pull your Collins Offers (and can be used to check which offers are eligible for a given booking)  If you are looking to get API access for your CRM system, the first step is for the Account Manager at your CRM system to have a look through our API Basics for Developers.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/ibs-epos-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/ibs-epos-integration/</guid>
+      <description>Overview of the Collins/IBS EPOS Integration The purpose of the integration between Collins and IBS is to be able to push the details of bookings and their associated deposits to the IBS Epos system.
+Details can be set to:
+ Push ASAP or push on the day of the booking Push all bookings or only push bookings with deposits  Bookings will be sent to the EPOS with the following details:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/zonal-epos-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/zonal-epos-integration/</guid>
+      <description>Overview of the Collins/Zonal EPOS Integration The purpose of the integration between Collins and Zonal is for Collins to be able to push the details of bookings and their associated deposits to the Zonal EPOS system.
+Connecting to Zonal
+Collins connects to Zonal through Zonal’s ZCF server. Requests are transmitted over HTTPS with an authorisation header with credentials that Zonal set up and provide.
+Example URL: https://api.zonalconnect.com/PubChain/send/1902/booking
+Details sent to Zonal</description>
+    </item>
+    
+  </channel>
+</rss>

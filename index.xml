@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DMN developer documentation</title>
+    <link>https://designmynight.github.io/designmynight-developers/</link>
+    <description>Recent content on DMN developer documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>DesignMyNight</copyright>
+    <lastBuildDate>Mon, 23 Oct 2017 16:41:48 +0100</lastBuildDate>
+    
+	<atom:link href="https://designmynight.github.io/designmynight-developers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Venue Groups API</title>
+      <link>https://designmynight.github.io/designmynight-developers/venue-groups/</link>
+      <pubDate>Mon, 23 Oct 2017 16:41:48 +0100</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/venue-groups/</guid>
+      <description>Before you begin
+Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
+ Overview The venue groups API endpoint provides Collins users with the ability to manage aspects of their account, including adding and removing users permissions.
+User management You can add, remove and edit users in your account using the users edge within the venue groups API endpoint.</description>
+    </item>
+    
+    <item>
+      <title>Offers API</title>
+      <link>https://designmynight.github.io/designmynight-developers/offers-api/</link>
+      <pubDate>Tue, 26 Sep 2017 10:39:00 +0100</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/offers-api/</guid>
+      <description>The DesignMyNight Offers API can be used to check which offers are eligible for a given booking.
+Overview The Offers API can be accessed with a GET request to the /venues/VENUE_ID/offers endpoint. Replace with the venue ID you wish to check offers for.
+$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/offers  Visibility Offers can optionally be defined to be visible_from and visible_to a specified date range. This endpoint will only return offers where any of the conditions below are met:</description>
+    </item>
+    
+    <item>
+      <title>Users API</title>
+      <link>https://designmynight.github.io/designmynight-developers/users-api/</link>
+      <pubDate>Tue, 09 May 2017 20:18:48 +0100</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/users-api/</guid>
+      <description>Before you begin
+Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
+ Overview The DesignMyNight Users API can be used to retrieve user information and create users, and is suitable for clients who require user information.
+You will only be able to retrieve user information based on your permissions.
+User format Each user object will contain the following keys:</description>
+    </item>
+    
+    <item>
+      <title>Bookings Search API</title>
+      <link>https://designmynight.github.io/designmynight-developers/bookings-search/</link>
+      <pubDate>Tue, 13 Dec 2016 10:11:48 +0100</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/bookings-search/</guid>
+      <description>Before you begin
+Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
+ The DesignMyNight Booking search can be used to list and search through a venue&amp;rsquo;s bookings.
+Overview Queries are carried out as GET requests to the bookings API endpoint. To start with, you can try this with no parameters:
+$ curl -X GET https://api.designmynight.com/v4/bookings  You&amp;rsquo;ll get a response like this, containing a list of bookings.</description>
+    </item>
+    
+    <item>
+      <title>API Basics</title>
+      <link>https://designmynight.github.io/designmynight-developers/api-basics/</link>
+      <pubDate>Sat, 30 Apr 2016 21:38:53 +0100</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/api-basics/</guid>
+      <description>Before you begin
+Contact your account manager to request an API key. Your unique ID and key must be passed with every request.
+ URL The API is accessible through the domain api.designmynight.com. All requests should be made over HTTPS.
+Version All API URLs start with the version of the API that you are using. The current version of the API is v4, so all API URLs work from the base URL https://api.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://designmynight.github.io/designmynight-developers/</link>
+      <pubDate>Fri, 29 Apr 2016 20:48:22 +0100</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/</guid>
+      <description>This site provides details on the various ways that you can integrate with DesignMyNight, including our Collins enquiry management system and Tonic ticketing system.
+Not sure you want to be here after all? Check out what&amp;rsquo;s new on the London Bar Scene instead.</description>
+    </item>
+    
+    <item>
+      <title>Booking API</title>
+      <link>https://designmynight.github.io/designmynight-developers/booking-api/</link>
+      <pubDate>Fri, 29 Apr 2016 20:18:48 +0100</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/booking-api/</guid>
+      <description>Before you begin
+Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
+ The DesignMyNight Booking API can be used to check venue availability and create a booking, and is suitable for clients who would prefer to implement their own booking process rather than using the Booking Widget.
+Overview Creating a booking through the API consists of two stages:</description>
+    </item>
+    
+    <item>
+      <title>Ticket widget</title>
+      <link>https://designmynight.github.io/designmynight-developers/ticket-widget/</link>
+      <pubDate>Fri, 29 Apr 2016 13:42:29 +0100</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/ticket-widget/</guid>
+      <description>The ticket widget lists events, dates and tickets. If a single event is listed with a single date it will only show the tickets. If an event with multiple dates is listed then it will show the calendar first. If multiple events/event brands (item-ids) are listed then the events list will be displayed first.
+Customising the widget The widget is included using javascript. Below is a list of valid attributes for the script tag in order to customise it.</description>
+    </item>
+    
+    <item>
+      <title>Collins Booking Widget</title>
+      <link>https://designmynight.github.io/designmynight-developers/booking-widget/</link>
+      <pubDate>Fri, 29 Apr 2016 13:32:57 +0100</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/booking-widget/</guid>
+      <description>The booking widget is the easiest way to allow customers to book through your website. You simply add a small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.
+With the booking widget, the customer journey will take place in two parts:
+ The customer selects the type of booking, date, number of guests, time and (optionally) a duration for the booking.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/crm-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/crm-integration/</guid>
+      <description>CRM Systems using the Collins API We can give CRM systems access to the Collins API. This will enable them to pull specific data from Collins for example, your Customer Data.
+The following CRM systems currently access our API:
+ Airship Alchemetrics Acteol  How to set up access to the Collins API We are able to give access to the following API endpoints:
+ Bookings - this will pull the booking data from your Collins Enquiries Page (ie every field you can see on your CSV download from enquiry page) Users - this will pull your Collins Customers Data Bookings Reports - this will pull your booking reports with whichever parameters you wish Venues - this will pull your DMN Venue reviews Offers - this will pull your Collins Offers (and can be used to check which offers are eligible for a given booking)  If you are looking to get API access for your CRM system, the first step is for the Account Manager at your CRM system to have a look through our API Basics for Developers.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/ibs-epos-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/ibs-epos-integration/</guid>
+      <description>Overview of the Collins/IBS EPOS Integration The purpose of the integration between Collins and IBS is to be able to push the details of bookings and their associated deposits to the IBS Epos system.
+Details can be set to:
+ Push ASAP or push on the day of the booking Push all bookings or only push bookings with deposits  Bookings will be sent to the EPOS with the following details:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/zonal-epos-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/epos-crm-integrations/zonal-epos-integration/</guid>
+      <description>Overview of the Collins/Zonal EPOS Integration The purpose of the integration between Collins and Zonal is for Collins to be able to push the details of bookings and their associated deposits to the Zonal EPOS system.
+Connecting to Zonal
+Collins connects to Zonal through Zonal’s ZCF server. Requests are transmitted over HTTPS with an authorisation header with credentials that Zonal set up and provide.
+Example URL: https://api.zonalconnect.com/PubChain/send/1902/booking
+Details sent to Zonal</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/api-faqs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/api-faqs/</guid>
+      <description>API Troubleshooting If you are using our API and think that something is not working correctly, we will require both the full request and full response from your web developer before we can look into it for you:
+ Full Request - example here Full Response - example here  This is so that our tech team can effectively look into the issue for you. Without the above, we will not be able to assist.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/booking-url/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/booking-url/</guid>
+      <description>Booking URL for a specific venue If you are unable to add the Collins booking widget, it&amp;rsquo;s possible for you to include a booking URL to your website instead.
+Here is an example of partners using a booking URL: The Park Tavern
+To create a booking URL for your venue, you will need to use a URL of the following form:
+https://www.designmynight.com/book?venue_id=VENUEID&amp;amp;source=partner&amp;amp;format=modal
+Where you have to replace &amp;lsquo;VENUEID&amp;rsquo; with your unique Collins Venue ID.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/booking-widget-faqs/</guid>
+      <description>Adding your Collins booking widget to your website How to add the widget to Wordpress Here’s a guide to help you Add the booking widget to your Wordpress site
+Please note: you will need to upgrade to the Business Plan to be able to add the widget code to your site.
+How to add the widget to Squarespace Here’s a guide to help you Add the booking widget to your Squarespace site</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/customising-2nd-iframe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/customising-2nd-iframe/</guid>
+      <description>Customising the 2nd iFrame of your Collins booking widget You are able to customise the 2nd iframe on your Collins booking widget to better suit the feel of your website.
+To customise your 2nd iFrame, your web developer would need to:
+ Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/customising-email-templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/customising-email-templates/</guid>
+      <description>Customising your email templates You can choose to have customised email templates. As part of customising your templates, you will be able to customise your header and footers. This is a great way to add your social media handles and icons, address, etc.
+It’s worth mentioning that the booking summary and any automated copy that you have set up in Collins, will automatically fill the middle section of the email.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/general-enquiry-form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/general-enquiry-form/</guid>
+      <description>Contact Us/General Enquiry Form As well as a Collins booking widget, you can also personalise your own Contact Us/General Enquiry form which feeds into your Collins.
+Here&amp;rsquo;s an example of a partner with a customised enquiry form: No. 4 Clifton Village
+To create your own personalised Enquiry form:
+1. Create your own form display on your website. Here&amp;rsquo;s a Basic Enquiry Form Example to use. You and your web developer will be responsible for the look of your personalised form and which fields are included.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/taking-bookings-from-google/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/taking-bookings-from-google/</guid>
+      <description>Taking reservations from Google If you have access to your venue&amp;rsquo;s Google Business Account, you are able to add your Collins booking URL to your Google listing. This way customers will be able to directly make a booking from Google.
+How to set up a Reservations URL To add a reservations URL to your Google My Business listing:
+ Sign in to Google My Business Choose the listing that you want to edit.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/tracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/tracking/</guid>
+      <description>Tracking There are 3 ways you can look at tracking:
+Google/Facebook Tracking Putting Google/Facebook code on the first enquire button in the CSS (this isn&amp;rsquo;t tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on Adding Google Analytics Tracking Code to the booking widget.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/faqs/updating-your-email-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/faqs/updating-your-email-settings/</guid>
+      <description>Updating your Email Settings If you are using our Collins Mail bolt-on, you do not have to action the below.
+For all other clients, you need to explicitly say that Collins is allowed to send emails for your domain/on your behalf.
+This is the only way that we can guarantee that emails deliver correctly to you and customers.
+The most common way of doing this is to set up an &amp;lsquo;SPF record&amp;rsquo; and DKIM for your domain (@yourvenue.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/testing/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/testing/testing/</guid>
+      <description>Testing
+In order to test the integration of the api, ticket widget or booking widget, you can use the DesignMyNight Quality Assurance (QA) environment.
+Note: you will not receive an email as only whitelisted email address will be sent on the DesignMyNight Test Environments. If you wish to be added to the whitelist please let us know.
+Public test API’s is available at the following locations - https://api-qa.designmynight.com/v4/venues - https://api-qa.designmynight.com/v4/bookings</description>
+    </item>
+    
+  </channel>
+</rss>

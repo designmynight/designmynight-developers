@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testings on DMN developer documentation</title>
+    <link>https://designmynight.github.io/designmynight-developers/testing/</link>
+    <description>Recent content in Testings on DMN developer documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>DesignMyNight</copyright>
+    
+	<atom:link href="https://designmynight.github.io/designmynight-developers/testing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://designmynight.github.io/designmynight-developers/testing/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://designmynight.github.io/designmynight-developers/testing/testing/</guid>
+      <description>Testing
+In order to test the integration of the api, ticket widget or booking widget, you can use the DesignMyNight Quality Assurance (QA) environment.
+Note: you will not receive an email as only whitelisted email address will be sent on the DesignMyNight Test Environments. If you wish to be added to the whitelist please let us know.
+Public test API’s is available at the following locations - https://api-qa.designmynight.com/v4/venues - https://api-qa.designmynight.com/v4/bookings</description>
+    </item>
+    
+  </channel>
+</rss>
