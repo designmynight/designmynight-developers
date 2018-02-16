@@ -6,3 +6,4 @@ services:
     - "1313:1313"
     volumes:
     - ./site:/usr/share/blog
+    - ./docs:/usr/share/docs

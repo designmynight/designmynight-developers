@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <title>Users API - DMN developer documentation</title>
-    <meta name="generator" content="Hugo 0.30.2" />
+    <meta name="generator" content="Hugo 0.22.1" />
 
     
     <meta name="description" content="Developer documentation for DesignMyNight">
@@ -685,7 +685,7 @@
 
 <h2 id="user-format">User format</h2>
 
-<p>The <code>users</code> API endpoint</p>
+<p>Each user object will contain the following keys:</p>
 
 <table>
 <thead>
@@ -698,66 +698,119 @@
 
 <tbody>
 <tr>
+<td>_id</td>
+<td><code>string</code></td>
+<td>The ID of the user</td>
+</tr>
+
+<tr>
+<td>created_date</td>
+<td><code>string</code></td>
+<td>The date and time of when the user was created, in ISO 8601 format</td>
+</tr>
+
+<tr>
+<td>last_updated</td>
+<td><code>string</code></td>
+<td>The date and time of when the user was last updated, in ISO 8601 format</td>
+</tr>
+
+<tr>
 <td>first_name</td>
 <td><code>string</code></td>
-<td>The first name</td>
+<td>The user&rsquo;s first name</td>
 </tr>
 
 <tr>
 <td>last_name</td>
 <td><code>string</code></td>
-<td>The last name</td>
+<td>The user&rsquo;s last name</td>
+</tr>
+
+<tr>
+<td>username</td>
+<td><code>string</code></td>
+<td>The user&rsquo;s username*</td>
 </tr>
 
 <tr>
 <td>email</td>
 <td><code>string</code></td>
-<td>The email address</td>
+<td>The user&rsquo;s email address</td>
 </tr>
 
 <tr>
 <td>phone</td>
 <td><code>string</code></td>
-<td>The phone number</td>
+<td>The user&rsquo;s phone number</td>
 </tr>
 
 <tr>
 <td>dob</td>
 <td><code>string</code></td>
-<td>The date of birth</td>
+<td>The user&rsquo;s date of birth, in ISO 8601 format*</td>
+</tr>
+
+<tr>
+<td>gender</td>
+<td><code>string</code></td>
+<td>The user&rsquo;s gender*</td>
+</tr>
+
+<tr>
+<td>company</td>
+<td><code>string</code></td>
+<td>The company name*</td>
+</tr>
+
+<tr>
+<td>status</td>
+<td><code>string</code></td>
+<td>The user status</td>
+</tr>
+
+<tr>
+<td>wishlist</td>
+<td><code>object</code></td>
+<td>Object containing items added to the user&rsquo;s wishlist</td>
 </tr>
 
 <tr>
 <td>associated_venues</td>
 <td><code>array</code></td>
-<td>A list of venue IDs that this user is associated with**</td>
+<td>An array of venue IDs that this user is associated with*</td>
 </tr>
 
 <tr>
 <td>marketing_permission</td>
 <td><code>boolean</code></td>
-<td>Marketing permission for the venue group*</td>
+<td>Marketing permission for the venue group**</td>
 </tr>
 </tbody>
 </table>
 
-<p>*Only appears if marketting permission has been granted<br>
-**To get the venue IDs please speak to your Account Manager for details</p>
+<p><small> * These fields will only appear if we have data for them<br>
+** To get the venue IDs, please speak to your Account Manager for details</small></p>
+
+<p>To only request specific fields back, you can use the <code>fields</code> url parameter. This parameter accepts a comma separated string of fields. For example, the following request will only retrieve the first name and email address.</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/&lt;user_id&gt;?fields=first_name,email
+</code></pre>
 
 <h2 id="getting-a-user">Getting a user</h2>
 
-<p><strong>Getting a user by ID</strong></p>
+<h3 id="getting-a-user-by-id">Getting a user by ID</h3>
 
-<p>If the user ID is known the a user can be found using their ID.</p>
-
-<p>i.e</p>
+<p>If the user ID is known, the user can be found using their ID. For example:</p>
 
 <pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/&lt;user_id&gt;
 </code></pre>
 
-<p><strong>Getting a user by searching</strong></p>
+<p>This will return a <code>user</code> object containing one user if the request was successful, or a <a href="/api-basics/#status-codes">404 status code</a> if the user was not found.</p>
 
-<p>A user can be found by sending a <code>search</code> query.  This can one one of the following</p>
+<h3 id="getting-a-user-by-searching">Getting a user by searching</h3>
+
+<p>A user can be found by sending a <code>search</code> query. Below are the fields which will be used for searching:</p>
 
 <table>
 <thead>
@@ -780,17 +833,53 @@
 <td><code>string</code></td>
 <td>The phone number used in the booking</td>
 </tr>
+
+<tr>
+<td>last_name</td>
+<td><code>string</code></td>
+<td>The user&rsquo;s last name</td>
+</tr>
 </tbody>
 </table>
 
-<p>e.g</p>
+<p>For example, the following request will find users with the last name &lsquo;Johnson&rsquo;:</p>
 
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/?search=&lt;search_string&gt;
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/?search=johnson
 </code></pre>
 
-<p><strong>Response</strong></p>
+<p>This will return three keys in the <code>payload</code> object:</p>
 
-<p>You&rsquo;ll get a response like this:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>users</code></td>
+<td><code>array</code></td>
+<td>An array of users found. This array will be empty if none were found.</td>
+</tr>
+
+<tr>
+<td><code>start</code></td>
+<td><code>int</code></td>
+<td>The starting position for pagination of this request. <a href="#pagination">Learn more about pagination &raquo;</a></td>
+</tr>
+
+<tr>
+<td><code>numFound</code></td>
+<td><code>int</code></td>
+<td>The total number of users found matching this search query</td>
+</tr>
+</tbody>
+</table>
+
+<p>Here&rsquo;s an example response:</p>
 
 <pre><code class="language-json">{
   &quot;payload&quot;: {
@@ -802,7 +891,7 @@
         &quot;email&quot;: &quot;test-user@designmynight.com&quot;,
         &quot;status&quot;: &quot;inactive&quot;,
         &quot;first_name&quot;: &quot;Test&quot;,
-        &quot;last_name&quot;: &quot;Yser&quot;,
+        &quot;last_name&quot;: &quot;User&quot;,
         &quot;phone&quot;: &quot;000000000&quot;,
         &quot;marketing_permission&quot;: true,
         &quot;associated_venues&quot;: [
@@ -824,6 +913,24 @@
   }
 }
 </code></pre>
+
+<h2 id="pagination">Pagination</h2>
+
+<p>When searching for users, results are always limited to no more than 30 results per page. You&rsquo;ll know if your results have been trimmed when the <code>numFound</code> key is more than 30.</p>
+
+<p>To retrieve the next set of data, use the <code>start</code> url parameter. The <code>start</code> parameter is used to specify the offset of records, and the default value is 0.</p>
+
+<p>For example, let&rsquo;s say you&rsquo;ve made the following search request:</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/?search=johnson&amp;start=0
+</code></pre>
+
+<p>and 90 users were found. The <code>users</code> array will only contain 30 users. To get the next 30 users, make another request but increment the <code>start</code> parameter to 30.</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/?search=johnson&amp;start=30
+</code></pre>
+
+<h2 id="sorting">Sorting</h2>
 
 			
 			<aside class="copyright" role="note">

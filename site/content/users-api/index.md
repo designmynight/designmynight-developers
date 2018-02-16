@@ -133,3 +133,5 @@ and 90 users were found. The `users` array will only contain 30 users. To get th
 ```bash
 $ curl -X GET https://api.designmynight.com/v4/users/?search=johnson&start=30
 ```
+
+## Sorting

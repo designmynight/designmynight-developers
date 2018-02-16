@@ -22,8 +22,7 @@
 Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
  Overview The DesignMyNight Users API can be used to retrieve user information and create users, and is suitable for clients who require user information.
 You will only be able to retrieve user information based on your permissions.
-User format The users API endpoint
-   Field Type Description     first_name string The first name   last_name string The last name   email string The email address   phone string The phone number   dob string The date of birth   associated_venues array A list of venue IDs that this user is associated with**   marketing_permission boolean Marketing permission for the venue group*    *Only appears if marketting permission has been granted</description>
+User format Each user object will contain the following keys:</description>
     </item>
     
   </channel>
