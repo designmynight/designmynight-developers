@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Booking-apis on DMN developer documentation</title>
-    <link>https://designmynight.github.io/designmynight-developers/booking-api/</link>
+    <link>https://developers.designmynight.com/booking-api/</link>
     <description>Recent content in Booking-apis on DMN developer documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>DesignMyNight</copyright>
     <lastBuildDate>Fri, 29 Apr 2016 20:18:48 +0100</lastBuildDate>
     
-	<atom:link href="https://designmynight.github.io/designmynight-developers/booking-api/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://developers.designmynight.com/booking-api/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Booking API</title>
-      <link>https://designmynight.github.io/designmynight-developers/booking-api/</link>
+      <link>https://developers.designmynight.com/booking-api/</link>
       <pubDate>Fri, 29 Apr 2016 20:18:48 +0100</pubDate>
       
-      <guid>https://designmynight.github.io/designmynight-developers/booking-api/</guid>
+      <guid>https://developers.designmynight.com/booking-api/</guid>
       <description>Before you begin
 Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
  The DesignMyNight Booking API can be used to check venue availability and create a booking, and is suitable for clients who would prefer to implement their own booking process rather than using the Booking Widget.
