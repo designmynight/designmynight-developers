@@ -28,3 +28,4 @@ gulp.task('css-watch', function() {
 });
 
 gulp.task('default', ['js', 'css'])
+gulp.task('develop', ['css-watch', 'js'])
