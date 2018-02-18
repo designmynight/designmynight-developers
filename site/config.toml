@@ -2,7 +2,7 @@ languageCode = "en-gb"
 title = "DMN developer documentation"
 theme = "hugo-material-docs"
 publishDir = "../blog-dist"
-baseURL = "https://designmynight.github.io/designmynight-developers/"
+baseURL = "https://developers.designmynight.com/"
 metadataformat = "yaml"
 canonifyurls = false
 # Enable Google Analytics by entering your tracking id
