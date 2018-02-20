@@ -9,16 +9,27 @@ Refer to the [API Basics](/api-basics) section to ensure you are familiar with t
 
 ## Overview
 
-The `guests` API endpoint provides you with all that you need to retrieve guest information for events
-
+The `guests` API endpoint provides you with all that you need to retrieve guest information for events.
 
 ## Listing guests
 
 Start by sending a GET request with the ID of the event you wish to get the information for:
 
 ```bash
-$ curl -X GET https://api.designmynight.com/v4/events/5a8c0ca4cb554029f55bbb9c/guests?occurrence=20200628
+$ curl -X GET https://api.designmynight.com/v4/events/<event_id>/guests?occurrence=<date>
+$ curl -X GET https://api.designmynight.com/v4/events/5a8c0ca4cb554029f55bbb9c/guests?occurrence=2020-06-28
 ```
+
+### URL format
+The URL contains the `<event_id>` which is tied to your event.  To get this do the following:
+
+1. Log onto your Event admin
+2. Go to the dashboard
+3. Look at the URL and copy the long id
+
+The URL also takes `occurrence` as a parameter.  This is the date the event takes place in the format YYYY-MM-DD.  For more information on obtaining event dates please contact your account manager.
+
+
 
 You'll get a response like this:
 

@@ -46,7 +46,7 @@ googleAnalytics = "UA-12385609-13"
 [[menu.main]]
 	name   = "Introduction"
 	url    = "/"
-	weight = 0
+	weight = 1
 
 [[menu.main]]
     weight = 99
