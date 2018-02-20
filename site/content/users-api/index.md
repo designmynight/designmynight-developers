@@ -143,3 +143,17 @@ For example, to sort by email address, the request would look like this:
 ```bash
 $ curl -X GET https://api.designmynight.com/v4/users/?sort=email
 ```
+
+## Output as CSV
+
+By default, the response will be formatted in JSON. However, by using the URL parameter `output=csv`, you will receive the response in a CSV format.
+
+The following example will return a CSV format of all users you have permission to view:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/users/?output=csv
+```
+
+Results for CSV output are always limited to a maximum of 25000 results per page.
+
+Sorting results is not currently supported when outputting as a CSV.
