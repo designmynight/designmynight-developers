@@ -21,4 +21,4 @@ deploy:
   github_token: $GITHUB_TOKEN
   target_branch: gh-pages
   on:
-    branch: docker #TODO: Change to master
+    branch: master
