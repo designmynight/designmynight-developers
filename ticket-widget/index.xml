@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ticket-widgets on DMN developer documentation</title>
-    <link>https://developers.designmynight.com/ticket-widget/</link>
+    <link>http://developers.designmynight.com/ticket-widget/</link>
     <description>Recent content in Ticket-widgets on DMN developer documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>DesignMyNight</copyright>
     <lastBuildDate>Fri, 29 Apr 2016 13:42:29 +0100</lastBuildDate>
     
-	<atom:link href="https://developers.designmynight.com/ticket-widget/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://developers.designmynight.com/ticket-widget/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ticket widget</title>
-      <link>https://developers.designmynight.com/ticket-widget/</link>
+      <link>http://developers.designmynight.com/ticket-widget/</link>
       <pubDate>Fri, 29 Apr 2016 13:42:29 +0100</pubDate>
       
-      <guid>https://developers.designmynight.com/ticket-widget/</guid>
+      <guid>http://developers.designmynight.com/ticket-widget/</guid>
       <description>The ticket widget lists events, dates and tickets. If a single event is listed with a single date it will only show the tickets. If an event with multiple dates is listed then it will show the calendar first. If multiple events/event brands (item-ids) are listed then the events list will be displayed first.
 Customising the widget The widget is included using javascript. Below is a list of valid attributes for the script tag in order to customise it.</description>
     </item>

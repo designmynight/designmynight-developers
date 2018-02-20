@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on DMN developer documentation</title>
-    <link>https://developers.designmynight.com/tags/</link>
+    <link>http://developers.designmynight.com/tags/</link>
     <description>Recent content in Tags on DMN developer documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>DesignMyNight</copyright>
     
-	<atom:link href="https://developers.designmynight.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://developers.designmynight.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

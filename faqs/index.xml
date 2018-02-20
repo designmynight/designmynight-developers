@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Faqs on DMN developer documentation</title>
-    <link>https://developers.designmynight.com/faqs/</link>
+    <link>http://developers.designmynight.com/faqs/</link>
     <description>Recent content in Faqs on DMN developer documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>DesignMyNight</copyright>
     
-	<atom:link href="https://developers.designmynight.com/faqs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://developers.designmynight.com/faqs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/api-faqs/</link>
+      <link>http://developers.designmynight.com/faqs/api-faqs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/api-faqs/</guid>
+      <guid>http://developers.designmynight.com/faqs/api-faqs/</guid>
       <description>API Troubleshooting If you are using our API and think that something is not working correctly, we will require both the full request and full response from your web developer before we can look into it for you:
  Full Request - example here Full Response - example here  This is so that our tech team can effectively look into the issue for you. Without the above, we will not be able to assist.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/booking-url/</link>
+      <link>http://developers.designmynight.com/faqs/booking-url/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/booking-url/</guid>
+      <guid>http://developers.designmynight.com/faqs/booking-url/</guid>
       <description>Booking URL for a specific venue If you are unable to add the Collins booking widget, it&amp;rsquo;s possible for you to include a booking URL to your website instead.
 Here is an example of partners using a booking URL: The Park Tavern
 To create a booking URL for your venue, you will need to use a URL of the following form:
@@ -36,10 +36,10 @@ Where you have to replace &amp;lsquo;VENUEID&amp;rsquo; with your unique Collins
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/booking-widget-faqs/</link>
+      <link>http://developers.designmynight.com/faqs/booking-widget-faqs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/booking-widget-faqs/</guid>
+      <guid>http://developers.designmynight.com/faqs/booking-widget-faqs/</guid>
       <description>Adding your Collins booking widget to your website How to add the widget to Wordpress Here’s a guide to help you Add the booking widget to your Wordpress site
 Please note: you will need to upgrade to the Business Plan to be able to add the widget code to your site.
 How to add the widget to Squarespace Here’s a guide to help you Add the booking widget to your Squarespace site</description>
@@ -47,10 +47,10 @@ How to add the widget to Squarespace Here’s a guide to help you Add the bookin
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/customising-2nd-iframe/</link>
+      <link>http://developers.designmynight.com/faqs/customising-2nd-iframe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/customising-2nd-iframe/</guid>
+      <guid>http://developers.designmynight.com/faqs/customising-2nd-iframe/</guid>
       <description>Customising the 2nd iFrame of your Collins booking widget You are able to customise the 2nd iframe on your Collins booking widget to better suit the feel of your website.
 To customise your 2nd iFrame, your web developer would need to:
  Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).</description>
@@ -58,20 +58,20 @@ To customise your 2nd iFrame, your web developer would need to:
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/customising-email-templates/</link>
+      <link>http://developers.designmynight.com/faqs/customising-email-templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/customising-email-templates/</guid>
+      <guid>http://developers.designmynight.com/faqs/customising-email-templates/</guid>
       <description>Customising your email templates You can choose to have customised email templates. As part of customising your templates, you will be able to customise your header and footers. This is a great way to add your social media handles and icons, address, etc.
 It’s worth mentioning that the booking summary and any automated copy that you have set up in Collins, will automatically fill the middle section of the email.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/general-enquiry-form/</link>
+      <link>http://developers.designmynight.com/faqs/general-enquiry-form/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/general-enquiry-form/</guid>
+      <guid>http://developers.designmynight.com/faqs/general-enquiry-form/</guid>
       <description>Contact Us/General Enquiry Form As well as a Collins booking widget, you can also personalise your own Contact Us/General Enquiry form which feeds into your Collins.
 Here&amp;rsquo;s an example of a partner with a customised enquiry form: No. 4 Clifton Village
 To create your own personalised Enquiry form:
@@ -80,10 +80,10 @@ To create your own personalised Enquiry form:
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/taking-bookings-from-google/</link>
+      <link>http://developers.designmynight.com/faqs/taking-bookings-from-google/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/taking-bookings-from-google/</guid>
+      <guid>http://developers.designmynight.com/faqs/taking-bookings-from-google/</guid>
       <description>Taking reservations from Google If you have access to your venue&amp;rsquo;s Google Business Account, you are able to add your Collins booking URL to your Google listing. This way customers will be able to directly make a booking from Google.
 How to set up a Reservations URL To add a reservations URL to your Google My Business listing:
  Sign in to Google My Business Choose the listing that you want to edit.</description>
@@ -91,20 +91,20 @@ How to set up a Reservations URL To add a reservations URL to your Google My Bus
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/tracking/</link>
+      <link>http://developers.designmynight.com/faqs/tracking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/tracking/</guid>
+      <guid>http://developers.designmynight.com/faqs/tracking/</guid>
       <description>Tracking There are 3 ways you can look at tracking:
 Google/Facebook Tracking Putting Google/Facebook code on the first enquire button in the CSS (this isn&amp;rsquo;t tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on Adding Google Analytics Tracking Code to the booking widget.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://developers.designmynight.com/faqs/updating-your-email-settings/</link>
+      <link>http://developers.designmynight.com/faqs/updating-your-email-settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developers.designmynight.com/faqs/updating-your-email-settings/</guid>
+      <guid>http://developers.designmynight.com/faqs/updating-your-email-settings/</guid>
       <description>Updating your Email Settings If you are using our Collins Mail bolt-on, you do not have to action the below.
 For all other clients, you need to explicitly say that Collins is allowed to send emails for your domain/on your behalf.
 This is the only way that we can guarantee that emails deliver correctly to you and customers.
