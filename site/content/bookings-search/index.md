@@ -94,6 +94,24 @@ For example, to include the third 'page' of results with 50 per 'page', you woul
 $ curl -X GET https://api.designmynight.com/v4/bookings?start=100&limit=50
 ```
 
+## Sorting
+
+The response can be sorted using the `sort` parameter, using one of the allowed sorting options:
+
+Option | Description | Direction
+--- | --- | ---
+`date_asc` | The date of the booking | Ascending
+`date_desc` | The date of the booking | Descending
+`created_date_asc` | The date the booking was made | Ascending
+`created_date_desc` | The date the booking was made | Descending
+`status_changed_date` | The date the status was last changed | Descending
+`date_desc,time_desc` | The date and time of the booking | Descending
+
+For example, the following request would sort bookings in order of the date their status was last changed, in descending order:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?sort=status_changed_date
+```
 
 ## Filtering results
 
