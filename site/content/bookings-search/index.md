@@ -78,6 +78,11 @@ user_id | Hex ID | The ID of the customer | 57cfefdbc71620410eeae962
 venue_group | Hex ID  |The ID of the venue group for this booking | 54b438182b588feb7337c5be
 venue_id | Hex ID | The ID of the venue for this booking | 5255230b0df690b914ca1ff5
 
+For example, the following request will only output the labels and status of bookings:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?fields=labels,status
+```
 
 ## Pagination
 
@@ -142,6 +147,12 @@ For example, to search for bookings that have a *VIP* and *Birthday* label:
 
 ```bash
 $ curl -X GET https://api.designmynight.com/v4/bookings?labels=vip,birthday
+```
+
+or to search for private hire bookings which that take place in February 2018:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?private_hire=true&date=2018-02-01%20TO%202018-02-28
 ```
 
 ### Date filter format
