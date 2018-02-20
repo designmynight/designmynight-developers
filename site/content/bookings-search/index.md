@@ -138,6 +138,11 @@ time | A time range in 24 hour format, eg '12:00 TO 17:00' or '* TO 10:00'
 type | One or more comma-separated hex IDs
 venue_id | One or more comma-separated hex IDs
 
+For example, to search for bookings that have a *VIP* and *Birthday* label:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?labels=vip,birthday
+```
 
 ### Date filter format
 Dates may be filtered by providing a range, optionally using an asterisk to carry out an open-ended search. A number of date formats are supported, but to ensure accuracy the recommended date format is YYYY-MM-DDTHH:mm:ss, eg 2017-02-15T13:45:00. If the time is omitted, midnight (the start of the day) will be assumed.
