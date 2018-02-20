@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://developers.designmynight.com/venue-groups/</loc>
+    <loc>http://developers.designmynight.com/api/venue-groups/</loc>
     <lastmod>2017-10-23T16:41:48+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/offers-api/</loc>
+    <loc>http://developers.designmynight.com/api/offers-api/</loc>
     <lastmod>2017-09-26T10:39:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/users-api/</loc>
+    <loc>http://developers.designmynight.com/api/users-api/</loc>
     <lastmod>2017-05-09T20:18:48+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/bookings-search/</loc>
+    <loc>http://developers.designmynight.com/api/bookings-search/</loc>
     <lastmod>2016-12-13T10:11:48+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/api-basics/</loc>
+    <loc>http://developers.designmynight.com/api/api-basics/</loc>
     <lastmod>2016-04-30T21:38:53+01:00</lastmod>
   </url>
   
@@ -33,17 +33,22 @@
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/booking-api/</loc>
+    <loc>http://developers.designmynight.com/api/booking-api/</loc>
     <lastmod>2016-04-29T20:18:48+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/ticket-widget/</loc>
+    <loc>http://developers.designmynight.com/api/event-guests-api/</loc>
+    <lastmod>2016-04-29T20:18:48+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://developers.designmynight.com/widgets/ticket-widget/</loc>
     <lastmod>2016-04-29T13:42:29+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/booking-widget/</loc>
+    <loc>http://developers.designmynight.com/widgets/booking-widget/</loc>
     <lastmod>2016-04-29T13:32:57+01:00</lastmod>
   </url>
   
@@ -100,26 +105,8 @@
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/api-basics/</loc>
-    <lastmod>2016-04-30T21:38:53+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://developers.designmynight.com/booking-api/</loc>
-    <lastmod>2016-04-29T20:18:48+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://developers.designmynight.com/booking-widget/</loc>
-    <lastmod>2016-04-29T13:32:57+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://developers.designmynight.com/bookings-search/</loc>
-    <lastmod>2016-12-13T10:11:48+01:00</lastmod>
+    <loc>http://developers.designmynight.com/api/</loc>
+    <lastmod>2017-10-23T16:41:48+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -145,12 +132,6 @@
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/offers-api/</loc>
-    <lastmod>2017-09-26T10:39:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://developers.designmynight.com/tags/</loc>
     <priority>0</priority>
   </url>
@@ -161,20 +142,8 @@
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/ticket-widget/</loc>
+    <loc>http://developers.designmynight.com/widgets/</loc>
     <lastmod>2016-04-29T13:42:29+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://developers.designmynight.com/users-api/</loc>
-    <lastmod>2017-05-09T20:18:48+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://developers.designmynight.com/venue-groups/</loc>
-    <lastmod>2017-10-23T16:41:48+01:00</lastmod>
     <priority>0</priority>
   </url>
   

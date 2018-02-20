@@ -14,10 +14,10 @@
     
     <item>
       <title>Venue Groups API</title>
-      <link>http://developers.designmynight.com/venue-groups/</link>
+      <link>http://developers.designmynight.com/api/venue-groups/</link>
       <pubDate>Mon, 23 Oct 2017 16:41:48 +0100</pubDate>
       
-      <guid>http://developers.designmynight.com/venue-groups/</guid>
+      <guid>http://developers.designmynight.com/api/venue-groups/</guid>
       <description>Before you begin
 Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
  Overview The venue groups API endpoint provides Collins users with the ability to manage aspects of their account, including adding and removing users permissions.
@@ -26,10 +26,10 @@ User management You can add, remove and edit users in your account using the use
     
     <item>
       <title>Offers API</title>
-      <link>http://developers.designmynight.com/offers-api/</link>
+      <link>http://developers.designmynight.com/api/offers-api/</link>
       <pubDate>Tue, 26 Sep 2017 10:39:00 +0100</pubDate>
       
-      <guid>http://developers.designmynight.com/offers-api/</guid>
+      <guid>http://developers.designmynight.com/api/offers-api/</guid>
       <description>The DesignMyNight Offers API can be used to check which offers are eligible for a given booking.
 Overview The Offers API can be accessed with a GET request to the /venues/VENUE_ID/offers endpoint. Replace with the venue ID you wish to check offers for.
 $ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/offers  Visibility Offers can optionally be defined to be visible_from and visible_to a specified date range. This endpoint will only return offers where any of the conditions below are met:</description>
@@ -37,10 +37,10 @@ $ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/o
     
     <item>
       <title>Users API</title>
-      <link>http://developers.designmynight.com/users-api/</link>
+      <link>http://developers.designmynight.com/api/users-api/</link>
       <pubDate>Tue, 09 May 2017 20:18:48 +0100</pubDate>
       
-      <guid>http://developers.designmynight.com/users-api/</guid>
+      <guid>http://developers.designmynight.com/api/users-api/</guid>
       <description>Before you begin
 Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
  Overview The DesignMyNight Users API can be used to retrieve user information and create users, and is suitable for clients who require user information.
@@ -50,10 +50,10 @@ User format Each user object will contain the following keys:</description>
     
     <item>
       <title>Bookings Search API</title>
-      <link>http://developers.designmynight.com/bookings-search/</link>
+      <link>http://developers.designmynight.com/api/bookings-search/</link>
       <pubDate>Tue, 13 Dec 2016 10:11:48 +0100</pubDate>
       
-      <guid>http://developers.designmynight.com/bookings-search/</guid>
+      <guid>http://developers.designmynight.com/api/bookings-search/</guid>
       <description>Before you begin
 Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
  The DesignMyNight Booking search can be used to list and search through a venue&amp;rsquo;s bookings.
@@ -63,10 +63,10 @@ $ curl -X GET https://api.designmynight.com/v4/bookings  You&amp;rsquo;ll get a 
     
     <item>
       <title>API Basics</title>
-      <link>http://developers.designmynight.com/api-basics/</link>
+      <link>http://developers.designmynight.com/api/api-basics/</link>
       <pubDate>Sat, 30 Apr 2016 21:38:53 +0100</pubDate>
       
-      <guid>http://developers.designmynight.com/api-basics/</guid>
+      <guid>http://developers.designmynight.com/api/api-basics/</guid>
       <description>Before you begin
 Contact your account manager to request an API key. Your unique ID and key must be passed with every request.
  URL The API is accessible through the domain api.designmynight.com. All requests should be made over HTTPS.
@@ -85,10 +85,10 @@ Not sure you want to be here after all? Check out what&amp;rsquo;s new on the Lo
     
     <item>
       <title>Booking API</title>
-      <link>http://developers.designmynight.com/booking-api/</link>
+      <link>http://developers.designmynight.com/api/booking-api/</link>
       <pubDate>Fri, 29 Apr 2016 20:18:48 +0100</pubDate>
       
-      <guid>http://developers.designmynight.com/booking-api/</guid>
+      <guid>http://developers.designmynight.com/api/booking-api/</guid>
       <description>Before you begin
 Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
  The DesignMyNight Booking API can be used to check venue availability and create a booking, and is suitable for clients who would prefer to implement their own booking process rather than using the Booking Widget.
@@ -96,21 +96,34 @@ Overview Creating a booking through the API consists of two stages:</description
     </item>
     
     <item>
+      <title>Event Guests API</title>
+      <link>http://developers.designmynight.com/api/event-guests-api/</link>
+      <pubDate>Fri, 29 Apr 2016 20:18:48 +0100</pubDate>
+      
+      <guid>http://developers.designmynight.com/api/event-guests-api/</guid>
+      <description>Before you begin
+Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
+ Overview The guests API endpoint provides you with all that you need to retrieve guest information for events.
+Listing guests Start by sending a GET request with the ID of the event you wish to get the information for:
+$ curl -X GET https://api.designmynight.com/v4/events/&amp;lt;event_id&amp;gt;/guests?occurrence=&amp;lt;date&amp;gt; $ curl -X GET https://api.</description>
+    </item>
+    
+    <item>
       <title>Ticket widget</title>
-      <link>http://developers.designmynight.com/ticket-widget/</link>
+      <link>http://developers.designmynight.com/widgets/ticket-widget/</link>
       <pubDate>Fri, 29 Apr 2016 13:42:29 +0100</pubDate>
       
-      <guid>http://developers.designmynight.com/ticket-widget/</guid>
+      <guid>http://developers.designmynight.com/widgets/ticket-widget/</guid>
       <description>The ticket widget lists events, dates and tickets. If a single event is listed with a single date it will only show the tickets. If an event with multiple dates is listed then it will show the calendar first. If multiple events/event brands (item-ids) are listed then the events list will be displayed first.
 Customising the widget The widget is included using javascript. Below is a list of valid attributes for the script tag in order to customise it.</description>
     </item>
     
     <item>
       <title>Collins Booking Widget</title>
-      <link>http://developers.designmynight.com/booking-widget/</link>
+      <link>http://developers.designmynight.com/widgets/booking-widget/</link>
       <pubDate>Fri, 29 Apr 2016 13:32:57 +0100</pubDate>
       
-      <guid>http://developers.designmynight.com/booking-widget/</guid>
+      <guid>http://developers.designmynight.com/widgets/booking-widget/</guid>
       <description>The booking widget is the easiest way to allow customers to book through your website. You simply add a small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.
 With the booking widget, the customer journey will take place in two parts:
  The customer selects the type of booking, date, number of guests, time and (optionally) a duration for the booking.</description>
