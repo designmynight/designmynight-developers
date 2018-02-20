@@ -78,6 +78,11 @@ user_id | Hex ID | The ID of the customer | 57cfefdbc71620410eeae962
 venue_group | Hex ID  |The ID of the venue group for this booking | 54b438182b588feb7337c5be
 venue_id | Hex ID | The ID of the venue for this booking | 5255230b0df690b914ca1ff5
 
+For example, the following request will only output the labels and status of bookings:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?fields=labels,status
+```
 
 ## Pagination
 
@@ -94,6 +99,24 @@ For example, to include the third 'page' of results with 50 per 'page', you woul
 $ curl -X GET https://api.designmynight.com/v4/bookings?start=100&limit=50
 ```
 
+## Sorting
+
+The response can be sorted using the `sort` parameter, using one of the allowed sorting options:
+
+Option | Description | Direction
+--- | --- | ---
+`date_asc` | The date of the booking | Ascending
+`date_desc` | The date of the booking | Descending
+`created_date_asc` | The date the booking was made | Ascending
+`created_date_desc` | The date the booking was made | Descending
+`status_changed_date` | The date the status was last changed | Descending
+`date_desc,time_desc` | The date and time of the booking | Descending
+
+For example, the following request would sort bookings in order of the date their status was last changed, in descending order:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?sort=status_changed_date
+```
 
 ## Filtering results
 
@@ -120,6 +143,17 @@ time | A time range in 24 hour format, eg '12:00 TO 17:00' or '* TO 10:00'
 type | One or more comma-separated hex IDs
 venue_id | One or more comma-separated hex IDs
 
+For example, to search for bookings that have a *VIP* and *Birthday* label:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?labels=vip,birthday
+```
+
+or to search for private hire bookings which that take place in February 2018:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?private_hire=true&date=2018-02-01%20TO%202018-02-28
+```
 
 ### Date filter format
 Dates may be filtered by providing a range, optionally using an asterisk to carry out an open-ended search. A number of date formats are supported, but to ensure accuracy the recommended date format is YYYY-MM-DDTHH:mm:ss, eg 2017-02-15T13:45:00. If the time is omitted, midnight (the start of the day) will be assumed.
@@ -166,3 +200,17 @@ customer_preorder_complete | Bookings where a customer has marked their pre-orde
 email_delivery_failed | Bookings where an email sent through Collins Mail was unable to be delivered
 customer_change | Bookings where the customer has made changes online
 customer_cancelled | Bookings where the customer has cancelled (also requires the status parameter to be set to 'rejected')
+
+## Output as CSV
+
+By default, the response will be formatted as JSON. However, by using the url parameter `output=csv`, you will receive the response in a CSV format.
+
+The following example will return a CSV format of all new bookings.
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?status=new&output=csv
+```
+
+Results for CSV output are always limited to a maximum of 25000 results per page. Unlike with JSON output, the `limit` parameter is not supported for CSV requests, so the limit cannot be changed.
+
+The `sort` parameter is also not supported for CSV requests. Results will be sorted by in ascending order of the date and time of the booking.

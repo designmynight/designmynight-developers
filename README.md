@@ -1,4 +1,6 @@
-# Contributing
+# DesignMyNight Developer Documentation
+
+## Contributing
 
 The documentation is compiled from Markdown to HTML using [Hugo](https://gohugo.io).
 
@@ -31,8 +33,28 @@ $ make
 
 The compiled documentations and assets will be outputted to the `/dist` directory.
 
-## Deploying
+`dist/` is .gitignore'd, so you won't be able to manually deploy by mistake.
+
+### What is `make` doing?
+
+*`docker-compose run hugo hugo`*
+Runs the hugo container, and specifies that the hugo command should be run (instead of hugo server). This builds the docs and outputs them to /dist.
+
+*`docker-compose run assets npm run build`*
+Runs the assets container which will install javascript dependencies and run gulp build task. Assets will be outputted inside the /dist directory.
+
+## Deployment
 
 To deploy your changes, open a PR on the master branch.
 
-Once merged, Travis will build the documentation and push to the `gh-pages` branch. From there, your changes will be live on [](https://developers.designmynight.com)
+When changes are merged to master, Travis will run the deploy part of the .travis.yml config file. This will:
+
+* Clone the repository and checkout the master branch
+* Run `make`
+* Remove the .gitignore from `/dist` (so that we can commit the contents)
+* Creates a CNAME file using the FQDN specified in the Travis config
+* Commits the contents of `/dist` into the gh-pages branch*
+
+\* Using the gh-pages branch means that Travis will never commit to master, so we don't have to worry about conflicts or overwritten data.
+
+Once built, your changes will be live at [](http://developers.designmynight.com)

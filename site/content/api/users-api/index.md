@@ -32,8 +32,8 @@ gender | `string` | The user's gender*
 company | `string` | The company name*
 status | `string` | The user status
 wishlist | `object` | Object containing items added to the user's wishlist
-associated_venues | `array` | An array of venue IDs that this user is associated with*
-marketing_permission | `boolean` | Marketing permission for the venue group**
+associated_venues | `array` | An array of venue IDs that this user is associated with**
+marketing_permission | `boolean` | Marketing permission for the venue group*
 
 <small> \* These fields will only appear if we have data for them<br>
 ** To get the venue IDs, please speak to your Account Manager for details</small>
@@ -135,3 +135,25 @@ $ curl -X GET https://api.designmynight.com/v4/users/?search=johnson&start=30
 ```
 
 ## Sorting
+
+By default, users will be sorted by their last name in ascending order. You may optionally specify a field to sort users by using the `sort` url parameter. The fields which can be sorted by are listed in the [User format table](#user-format).
+
+For example, to sort by email address, the request would look like this:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/users/?sort=email
+```
+
+## Output as CSV
+
+By default, the response will be formatted in JSON. However, by using the URL parameter `output=csv`, you will receive the response in a CSV format.
+
+The following example will return a CSV format of all users you have permission to view:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/users/?output=csv
+```
+
+Results for CSV output are always limited to a maximum of 25000 results per page.
+
+Sorting results is not currently supported when outputting as a CSV.
