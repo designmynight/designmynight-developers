@@ -14,7 +14,7 @@ The API is accessible through the domain `api.designmynight.com`. All requests s
 
 ## Version
 
-All API URLs start with the version of the API that you are using. The current version of the API is **v4**, so all API URLs work from the base URL `https://api.designmynight.com/v4/`. 
+All API URLs start with the version of the API that you are using. The current version of the API is **v4**, so all API URLs work from the base URL `https://api.designmynight.com/v4/`.
 
 
 ## Authorization
@@ -78,4 +78,4 @@ X-RateLimit-Limit | The maximum number of requests that the consumer is permitte
 X-RateLimit-Remaining | The number of requests remaining in the current rate limit window
 X-RateLimit-Reset | The time at which the current rate limit window resets, in ISO 8601 format
 
-If you go over the rate limit you will receive an error response with the status code `429: Too Many Requests`. 
+If you go over the rate limit you will receive an error response with the status code `429: Too Many Requests`.

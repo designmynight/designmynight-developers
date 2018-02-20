@@ -39,132 +39,172 @@ googleAnalytics = "UA-12385609-13"
     	text = "Ubuntu"
     	code = "Ubuntu Mono"
 
-
 [social]
 	twitter = ""
 	github  = "designmynight/dmn-developers"
 
-
 [[menu.main]]
 	name   = "Introduction"
 	url    = "/"
-	weight = 10
-
+	weight = 1
 
 [[menu.main]]
-    weight = 20
-    name = "   "
+    weight = 99
+    name = "    "
+
+[[menu.main]]
+    name   = "Widgets"
+    url    = "widgets/"
+    identifier = "widgets"
+	weight = 100
 
 [[menu.main]]
 	name   = "Booking widget"
-	url    = "booking-widget/"
-	weight = 30
+	url    = "widgets/booking-widget/"
+	parent = "widgets"
+	weight = 101
 
 [[menu.main]]
 	name   = "Ticket widget"
-	url    = "ticket-widget/"
-	weight = 40
+	url    = "widgets/ticket-widget/"
+	parent = "widgets"
+	weight = 102
 
 [[menu.main]]
-    weight = 50
+    weight = 199
+    name = " "
+
+[[menu.main]]
+    name   = "API"
+    url    = "api/"
+    identifier = "API"
+	weight = 200
 
 [[menu.main]]
 	name   = "API Basics"
-	url    = "api-basics/"
-	weight = 70
+	url    = "api/api-basics/"
+	weight = 201
+	parent = "API"
 
 [[menu.main]]
 	name   = "Booking API"
-	url    = "booking-api/"
-	weight = 80
+	url    = "api/booking-api/"
+	weight = 202
+	parent = "API"
 
 [[menu.main]]
 	name   = "Bookings search"
-	url    = "bookings-search/"
-	weight = 90
+	url    = "api/bookings-search/"
+	weight = 203
+	parent = "API"
 
 [[menu.main]]
     name   = "Users API"
-    url    = "users-api/"
-    weight = 100
+    url    = "api/users-api/"
+    weight = 204
+	parent = "API"
 
 [[menu.main]]
 	name   = "Offers API"
-	url    = "offers-api/"
-	weight = 110
+	url    = "api/offers-api/"
+	weight = 205
+	parent = "API"
 
 [[menu.main]]
 	name   = "Venue Groups API"
-	url    = "venue-groups/"
-	weight = 120
+	url    = "api/venue-groups/"
+	weight = 206
+	parent = "API"
 
 [[menu.main]]
-    weight = 130
-    name = "   "
+	name   = "Event Guests API"
+	url    = "api/event-guests-api/"
+	weight = 207
+	parent = "API"
+
+[[menu.main]]
+    weight = 299
+    name = "        "
 
 [[menu.main]]
     name   = "EPOS/CRM Integrations"
     url    = "epos-crm-integrations/"
     identifier = "epos-crm-integrations"
+	weight = 300
 
 [[menu.main]]
     name   = "Zonal EPOS Integration"
     url    = "epos-crm-integrations/zonal-epos-integration/"
     parent = "epos-crm-integrations"
+	weight = 301
 
 [[menu.main]]
     name   = "IBS EPOS Integration"
     url    = "epos-crm-integrations/ibs-epos-integration/"
     parent = "epos-crm-integrations"
-    
+	weight = 302
+
 [[menu.main]]
     name   = "CRM Integration"
     url    = "epos-crm-integrations/crm-integration/"
     parent = "epos-crm-integrations"
+	weight = 303
 
+[[menu.main]]
+    weight = 399
+    name = "          "
 
 [[menu.main]]
 	name   = "FAQS"
 	url    = "faqs/"
 	identifier = "faqs"
-
+	weight = 400
 
 [[menu.main]]
 	name   = "Booking widget faqs"
 	url    = "faqs/booking-widget-faqs/"
 	parent = "faqs"
+	weight = 401
 
 [[menu.main]]
 	name   = "Customising 2nd iframe"
 	url    = "faqs/customising-2nd-iframe/"
 	parent = "faqs"
+	weight = 402
 
 [[menu.main]]
 	name   = "Customising email templates"
 	url    = "faqs/customising-email-templates/"
 	parent = "faqs"
+	weight = 403
 
 [[menu.main]]
 	name   = "General enquiry form"
 	url    = "faqs/general-enquiry-form/"
 	parent = "faqs"
-	
+	weight = 404
+
 [[menu.main]]
 	name   = "Tracking"
 	url    = "faqs/tracking/"
 	parent = "faqs"
+	weight = 405
 
 [[menu.main]]
 	name   = "API FAQs"
 	url    = "faqs/api-faqs/"
 	parent = "faqs"
+	weight = 406
 
 [[menu.main]]
 	name   = "Booking URLs"
 	url    = "faqs/booking-url/"
 	parent = "faqs"
+	weight = 407
 
-
+[[menu.main]]
+    weight = 499
+    name = "            "
 
 [blackfriday]
 	smartypants	= true
