@@ -778,13 +778,13 @@
 <tr>
 <td>associated_venues</td>
 <td><code>array</code></td>
-<td>An array of venue IDs that this user is associated with*</td>
+<td>An array of venue IDs that this user is associated with**</td>
 </tr>
 
 <tr>
 <td>marketing_permission</td>
 <td><code>boolean</code></td>
-<td>Marketing permission for the venue group**</td>
+<td>Marketing permission for the venue group*</td>
 </tr>
 </tbody>
 </table>
@@ -931,6 +931,26 @@
 </code></pre>
 
 <h2 id="sorting">Sorting</h2>
+
+<p>By default, users will be sorted by their last name in ascending order. You may optionally specify a field to sort users by using the <code>sort</code> url parameter. The fields which can be sorted by are listed in the <a href="#user-format">User format table</a>.</p>
+
+<p>For example, to sort by email address, the request would look like this:</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/?sort=email
+</code></pre>
+
+<h2 id="output-as-csv">Output as CSV</h2>
+
+<p>By default, the response will be formatted in JSON. However, by using the URL parameter <code>output=csv</code>, you will receive the response in a CSV format.</p>
+
+<p>The following example will return a CSV format of all users you have permission to view:</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/?output=csv
+</code></pre>
+
+<p>Results for CSV output are always limited to a maximum of 25000 results per page.</p>
+
+<p>Sorting results is not currently supported when outputting as a CSV.</p>
 
 			
 			<aside class="copyright" role="note">

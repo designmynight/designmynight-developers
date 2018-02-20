@@ -924,6 +924,11 @@
 </tbody>
 </table>
 
+<p>For example, the following request will only output the labels and status of bookings:</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/bookings?fields=labels,status
+</code></pre>
+
 <h2 id="pagination">Pagination</h2>
 
 <p>The response from each request includes a <code>numFound</code> property that tells you the total number of matching bookings for the given query. By default, the API will start at 0 (the first matching result) and will return 30 results per request. This can be changed using the following parameters:</p>
@@ -952,6 +957,63 @@
 <p>For example, to include the third &lsquo;page&rsquo; of results with 50 per &lsquo;page&rsquo;, you would use:</p>
 
 <pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/bookings?start=100&amp;limit=50
+</code></pre>
+
+<h2 id="sorting">Sorting</h2>
+
+<p>The response can be sorted using the <code>sort</code> parameter, using one of the allowed sorting options:</p>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Direction</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>date_asc</code></td>
+<td>The date of the booking</td>
+<td>Ascending</td>
+</tr>
+
+<tr>
+<td><code>date_desc</code></td>
+<td>The date of the booking</td>
+<td>Descending</td>
+</tr>
+
+<tr>
+<td><code>created_date_asc</code></td>
+<td>The date the booking was made</td>
+<td>Ascending</td>
+</tr>
+
+<tr>
+<td><code>created_date_desc</code></td>
+<td>The date the booking was made</td>
+<td>Descending</td>
+</tr>
+
+<tr>
+<td><code>status_changed_date</code></td>
+<td>The date the status was last changed</td>
+<td>Descending</td>
+</tr>
+
+<tr>
+<td><code>date_desc,time_desc</code></td>
+<td>The date and time of the booking</td>
+<td>Descending</td>
+</tr>
+</tbody>
+</table>
+
+<p>For example, the following request would sort bookings in order of the date their status was last changed, in descending order:</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/bookings?sort=status_changed_date
 </code></pre>
 
 <h2 id="filtering-results">Filtering results</h2>
@@ -1058,6 +1120,16 @@
 </tr>
 </tbody>
 </table>
+
+<p>For example, to search for bookings that have a <em>VIP</em> and <em>Birthday</em> label:</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/bookings?labels=vip,birthday
+</code></pre>
+
+<p>or to search for private hire bookings which that take place in February 2018:</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/bookings?private_hire=true&amp;date=2018-02-01%20TO%202018-02-28
+</code></pre>
 
 <h3 id="date-filter-format">Date filter format</h3>
 
@@ -1225,6 +1297,19 @@
 </tr>
 </tbody>
 </table>
+
+<h2 id="output-as-csv">Output as CSV</h2>
+
+<p>By default, the response will be formatted as JSON. However, by using the url parameter <code>output=csv</code>, you will receive the response in a CSV format.</p>
+
+<p>The following example will return a CSV format of all new bookings.</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/bookings?status=new&amp;output=csv
+</code></pre>
+
+<p>Results for CSV output are always limited to a maximum of 25000 results per page. Unlike with JSON output, the <code>limit</code> parameter is not supported for CSV requests, so the limit cannot be changed.</p>
+
+<p>The <code>sort</code> parameter is also not supported for CSV requests. Results will be sorted by in ascending order of the date and time of the booking.</p>
 
 			
 			<aside class="copyright" role="note">
