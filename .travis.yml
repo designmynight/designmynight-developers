@@ -1,0 +1,24 @@
+sudo: required
+
+language: generic
+
+services: docker
+
+# Build the files
+install:
+  - make
+
+before_deploy:
+  - rm dist/.gitignore
+
+# Deploy to GitHub pages
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  fqdn: developers.designmynight.com
+  local_dir: dist
+  github_token: $GITHUB_TOKEN
+  target_branch: gh-pages
+  on:
+    branch: master

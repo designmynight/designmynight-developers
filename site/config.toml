@@ -1,0 +1,173 @@
+languageCode = "en-gb"
+title = "DMN developer documentation"
+theme = "hugo-material-docs"
+publishDir = "../blog-dist"
+baseURL = "http://developers.designmynight.com/"
+metadataformat = "yaml"
+canonifyurls = false
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = "UA-12385609-13"
+
+[params]
+	# General information
+	author = "DesignMyNight Tech Team"
+	description = "Developer documentation for DesignMyNight"
+	copyright = "DesignMyNight"
+
+	# Repository
+	provider = ""
+	repo_url = ""
+
+	version = "1.1.0"
+	logo = "images/logo.png"
+	favicon = "images/favicon.png"
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "teal"
+    	accent  = "deep purple"
+
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
+[social]
+	twitter = ""
+	github  = "designmynight/dmn-developers"
+
+
+[[menu.main]]
+	name   = "Introduction"
+	url    = "/"
+	weight = 10
+
+
+[[menu.main]]
+    weight = 20
+    name = "   "
+
+[[menu.main]]
+	name   = "Booking widget"
+	url    = "booking-widget/"
+	weight = 30
+
+[[menu.main]]
+	name   = "Ticket widget"
+	url    = "ticket-widget/"
+	weight = 40
+
+[[menu.main]]
+    weight = 50
+
+[[menu.main]]
+	name   = "API Basics"
+	url    = "api-basics/"
+	weight = 70
+
+[[menu.main]]
+	name   = "Booking API"
+	url    = "booking-api/"
+	weight = 80
+
+[[menu.main]]
+	name   = "Bookings search"
+	url    = "bookings-search/"
+	weight = 90
+
+[[menu.main]]
+    name   = "Users API"
+    url    = "users-api/"
+    weight = 100
+
+[[menu.main]]
+	name   = "Offers API"
+	url    = "offers-api/"
+	weight = 110
+
+[[menu.main]]
+	name   = "Venue Groups API"
+	url    = "venue-groups/"
+	weight = 120
+
+[[menu.main]]
+    weight = 130
+    name = "   "
+
+[[menu.main]]
+    name   = "EPOS/CRM Integrations"
+    url    = "epos-crm-integrations/"
+    identifier = "epos-crm-integrations"
+
+[[menu.main]]
+    name   = "Zonal EPOS Integration"
+    url    = "epos-crm-integrations/zonal-epos-integration/"
+    parent = "epos-crm-integrations"
+
+[[menu.main]]
+    name   = "IBS EPOS Integration"
+    url    = "epos-crm-integrations/ibs-epos-integration/"
+    parent = "epos-crm-integrations"
+    
+[[menu.main]]
+    name   = "CRM Integration"
+    url    = "epos-crm-integrations/crm-integration/"
+    parent = "epos-crm-integrations"
+
+
+[[menu.main]]
+	name   = "FAQS"
+	url    = "faqs/"
+	identifier = "faqs"
+
+
+[[menu.main]]
+	name   = "Booking widget faqs"
+	url    = "faqs/booking-widget-faqs/"
+	parent = "faqs"
+
+[[menu.main]]
+	name   = "Customising 2nd iframe"
+	url    = "faqs/customising-2nd-iframe/"
+	parent = "faqs"
+
+[[menu.main]]
+	name   = "Customising email templates"
+	url    = "faqs/customising-email-templates/"
+	parent = "faqs"
+
+[[menu.main]]
+	name   = "General enquiry form"
+	url    = "faqs/general-enquiry-form/"
+	parent = "faqs"
+	
+[[menu.main]]
+	name   = "Tracking"
+	url    = "faqs/tracking/"
+	parent = "faqs"
+
+[[menu.main]]
+	name   = "API FAQs"
+	url    = "faqs/api-faqs/"
+	parent = "faqs"
+
+[[menu.main]]
+	name   = "Booking URLs"
+	url    = "faqs/booking-url/"
+	parent = "faqs"
+
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true

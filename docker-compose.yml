@@ -1,0 +1,18 @@
+version: "2"
+services:
+  hugo:
+    build: 
+      context: ./
+      dockerfile: ./docker/hugo/Dockerfile
+    ports:
+    - "1313:1313"
+    volumes:
+    - ./site:/usr/share/blog
+    - ./dist:/usr/share/blog-dist
+  assets:
+    build: 
+      context: ./
+      dockerfile: ./docker/assets/Dockerfile
+    volumes:
+    - ./:/usr/share/app
+    - /usr/share/app/node_modules/
