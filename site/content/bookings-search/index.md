@@ -184,3 +184,17 @@ customer_preorder_complete | Bookings where a customer has marked their pre-orde
 email_delivery_failed | Bookings where an email sent through Collins Mail was unable to be delivered
 customer_change | Bookings where the customer has made changes online
 customer_cancelled | Bookings where the customer has cancelled (also requires the status parameter to be set to 'rejected')
+
+## Output as CSV
+
+By default, the response will be formatted as JSON. However, by using the url parameter `output=csv`, you will receive the response in a CSV format.
+
+The following example will return a CSV format of all new bookings.
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?status=new&output=csv
+```
+
+Results for CSV output are always limited to a maximum of 25000 results per page. Unlike with JSON output, the `limit` parameter is not supported for CSV requests, so the limit cannot be changed.
+
+The `sort` parameter is also not supported for CSV requests. Results will be sorted by in ascending order of the date and time of the booking.
