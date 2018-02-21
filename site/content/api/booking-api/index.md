@@ -4,7 +4,7 @@ title: Booking API
 ---
 
 {{<note title="Before you begin">}}
-Refer to the [API Basics](/api-basics) section to ensure you are familiar with the essentials of how to interact with the API.
+Refer to the [API Basics](/api/api-basics) section to ensure you are familiar with the essentials of how to interact with the API.
 {{</note>}}
 
 The DesignMyNight Booking API can be used to check venue availability and create a booking, and is suitable for clients who would prefer to implement their own booking process rather than using the [Booking Widget](/booking-widget).
@@ -78,7 +78,7 @@ Field | Description
 
 The `validation` key in the returned JSON contains validation details for each required field. For each field, you get an object that consists of the following keys:
 
-Key | Description 
+Key | Description
 --- | -----
 valid | `Boolean`: whether the field is valid for the given booking
 errors | `Error<>` If the field is not valid, contains an array of error details
@@ -92,7 +92,7 @@ With every request, the `suggestedValues` object within a field's validation det
 
 Suggested values contains an array of objects, each describing a potential value for the field. The object contains the following keys:
 
-Key | Description 
+Key | Description
 --- | -----
 `value` | `object` or `string` with the suggested value of the field
 `valid` |`boolean` describing whether this value would be valid given the current booking details
@@ -121,9 +121,9 @@ reject | The booking cannot be accommodated
 
 If a booking is valid to be submitted, the response from the `booking-availability` endpoint will contain a `next` key, with an object containing web and API URLs that may be used to submit the booking.
 
-**Note**: some bookings require additional details from the customer before they can be completed - for example, some bookings will require a payment to be made in order to secure the booking, and others provide the ability to choose and pay for pre-order items before submitting the booking. 
+**Note**: some bookings require additional details from the customer before they can be completed - for example, some bookings will require a payment to be made in order to secure the booking, and others provide the ability to choose and pay for pre-order items before submitting the booking.
 
-Where these additional details apply, you will not be able to submit the booking through the API, and will instead need to redirect the customer to the given URL in order to complete their booking. Where this applies you can supply a return URL for the customer to be redirected to after their booking has been submitted. 
+Where these additional details apply, you will not be able to submit the booking through the API, and will instead need to redirect the customer to the given URL in order to complete their booking. Where this applies you can supply a return URL for the customer to be redirected to after their booking has been submitted.
 
 ### Submitting through the API
 
@@ -143,7 +143,7 @@ Field | Description
 
 If you want or need to submit a booking through the web URL, you should direct the customer to the **web** part of the `next` object, optionally appending a `return_url` field containing a URL that the customer should be directed to once their booking has been submitted.
 
-If this is used, the following details of the submitted booking will be appended to the return URL, and you should handle displaying the confirmation to the customer. 
+If this is used, the following details of the submitted booking will be appended to the return URL, and you should handle displaying the confirmation to the customer.
 
 Field | Description
 ----- | -----
