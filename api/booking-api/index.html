@@ -21,35 +21,35 @@
 
     <meta property="og:url" content="http://developers.designmynight.com/api/booking-api/">
     <meta property="og:title" content="DMN developer documentation">
-    <meta property="og:image" content="http://developers.designmynight.com/images/logo.png">
+    <meta property="og:image" content="http://developers.designmynight.comimages/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link rel="shortcut icon" type="image/x-icon" href="http://developers.designmynight.com/images/favicon.png">
-    <link rel="icon" type="image/x-icon" href="http://developers.designmynight.com/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://developers.designmynight.comimages/favicon.png">
+    <link rel="icon" type="image/x-icon" href="http://developers.designmynight.comimages/favicon.png">
 
     <style>
       @font-face {
         font-family: 'Icon';
-        src: url('http://developers.designmynight.com/fonts/icon.eot?52m981');
-        src: url('http://developers.designmynight.com/fonts/icon.eot?#iefix52m981')
+        src: url('http://developers.designmynight.comfonts/icon.eot?52m981');
+        src: url('http://developers.designmynight.comfonts/icon.eot?#iefix52m981')
                format('embedded-opentype'),
-             url('http://developers.designmynight.com/fonts/icon.woff?52m981')
+             url('http://developers.designmynight.comfonts/icon.woff?52m981')
                format('woff'),
-             url('http://developers.designmynight.com/fonts/icon.ttf?52m981')
+             url('http://developers.designmynight.comfonts/icon.ttf?52m981')
                format('truetype'),
-             url('http://developers.designmynight.com/fonts/icon.svg?52m981#icon')
+             url('http://developers.designmynight.comfonts/icon.svg?52m981#icon')
                format('svg');
         font-weight: normal;
         font-style: normal;
       }
     </style>
 
-    <link rel="stylesheet" href="http://developers.designmynight.com/stylesheets/application.css">
-    <link rel="stylesheet" href="http://developers.designmynight.com/stylesheets/palettes.css">
-    <link rel="stylesheet" href="http://developers.designmynight.com/stylesheets/styles.css">
-    <link rel="stylesheet" href="http://developers.designmynight.com/stylesheets/highlight/highlight.css">
+    <link rel="stylesheet" href="http://developers.designmynight.comstylesheets/application.css">
+    <link rel="stylesheet" href="http://developers.designmynight.comstylesheets/palettes.css">
+    <link rel="stylesheet" href="http://developers.designmynight.comstylesheets/styles.css">
+    <link rel="stylesheet" href="http://developers.designmynight.comstylesheets/highlight/highlight.css">
 
     
     
@@ -65,7 +65,7 @@
     </style>
     
     
-    <script src="http://developers.designmynight.com/javascripts/modernizr.js"></script>
+    <script src="http://developers.designmynight.comjavascripts/modernizr.js"></script>
 
   </head>
   <body class="palette-primary-teal palette-accent-deep purple">
@@ -124,11 +124,11 @@
 <main class="main">
 	<div class="drawer">
 		<nav aria-label="Navigation">
-  <a href="http://developers.designmynight.com/" class="project">
+  <a href="http://developers.designmynight.com" class="project">
     <div class="banner">
       
         <div class="logo">
-          <img src="http://developers.designmynight.com/images/logo.png">
+          <img src="http://developers.designmynight.comimages/logo.png">
         </div>
       
       <div class="name">
@@ -173,7 +173,7 @@
 
 
 
-<a  title="    " href="http://developers.designmynight.com/">
+<a  title="    " href="http://developers.designmynight.com">
 	
 	    
 </a>
@@ -251,8 +251,6 @@
       
     
       
-      <span class="section">Widgets</span>
-      
     
     
 
@@ -295,7 +293,7 @@
 
 
 
-<a  title=" " href="http://developers.designmynight.com/">
+<a  title=" " href="http://developers.designmynight.com">
 	
 	 
 </a>
@@ -358,8 +356,6 @@
     
       
     
-      
-      <span class="section">Api</span>
       
     
       
@@ -480,7 +476,7 @@
 
 
 
-<a  title="        " href="http://developers.designmynight.com/">
+<a  title="        " href="http://developers.designmynight.com">
 	
 	        
 </a>
@@ -550,8 +546,6 @@
       
     
       
-      <span class="section">Epos-Crm-Integrations</span>
-      
     
       
     
@@ -614,7 +608,7 @@
 
 
 
-<a  title="          " href="http://developers.designmynight.com/">
+<a  title="          " href="http://developers.designmynight.com">
 	
 	          
 </a>
@@ -685,8 +679,6 @@
     
       
     
-      
-      <span class="section">Faqs</span>
       
     
       
@@ -796,7 +788,7 @@
 
 
 
-<a  title="            " href="http://developers.designmynight.com/">
+<a  title="            " href="http://developers.designmynight.com">
 	
 	            
 </a>
@@ -1151,6 +1143,118 @@
 </tbody>
 </table>
 
+<h2 id="checking-booking-rules">Checking Booking Rules</h2>
+
+<p>The <code>booking-rules</code> endpoint will provide the rules for a booking for a specified date and booking type.
+The following details must be passed in as a URL parameter:</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td><strong>Yes</strong></td>
+<td>The ID of the booking type as a string</td>
+</tr>
+
+<tr>
+<td><code>date</code></td>
+<td><strong>Yes</strong></td>
+<td>The date of the booking in YYYY-MM-DD format</td>
+</tr>
+</tbody>
+</table>
+
+<p>The following fields will be provided, based on the date and booking type passed in:</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>bookings_from</code></td>
+<td><code>string</code> the earliest time bookings are allowed, in 24 hour format eg <code>09:00</code></td>
+</tr>
+
+<tr>
+<td><code>bookings_to</code></td>
+<td><code>string</code> the latest time bookings are allowed, in 24 hour format eg <code>23:00</code></td>
+</tr>
+
+<tr>
+<td><code>booking_available</code></td>
+<td><code>boolean</code> Whether or not a booking would be allowed, based on the <code>Can Book</code> checkbox in Collins</td>
+</tr>
+
+<tr>
+<td><code>max_duration</code></td>
+<td><code>integer</code> The maximum duration for a booking in minutes *</td>
+</tr>
+
+<tr>
+<td><code>booking_notes</code></td>
+<td><code>string</code> The &lsquo;Bookings Policy&rsquo; message</td>
+</tr>
+
+<tr>
+<td><code>min_people</code></td>
+<td><code>number</code> The minumum number of guests allowed *</td>
+</tr>
+
+<tr>
+<td><code>max_people</code></td>
+<td><code>number</code> The maximum number of guests allowed *</td>
+</tr>
+
+<tr>
+<td><code>bookings_shut</code></td>
+<td><code>string</code> The time when same day bookings close *</td>
+</tr>
+</tbody>
+</table>
+
+<p><small> * These fieldswill only be present when they have been set in Collins</small></p>
+
+<p>For example, to check the rules for a Brunch booking type on the 8th March 2018, the request would look like this:</p>
+
+<pre><code class="language-bash">$ curl -X POST https://api.designmynight.com/v4/venues/552435790df6902b7256f237/booking-rules?type=58d122ba566b8a3c198b45aa&amp;date=2018-03-08
+</code></pre>
+
+<p>and the response would look like this</p>
+
+<pre><code class="language-json">{
+  &quot;payload&quot;: {
+    &quot;bookings_from&quot;: &quot;08:00&quot;,
+    &quot;bookings_to&quot;: &quot;21:00&quot;,
+    &quot;booking_available&quot;: true,
+    &quot;booking_notes&quot;: &quot;Please read the terms and conditions&quot;,
+    &quot;bookings_shut&quot;: &quot;09:00&quot;,
+    &quot;min_people&quot;: 2,
+    &quot;max_people&quot;: 6,
+    &quot;max_duration&quot;: 90
+  },
+  &quot;status&quot;: 200,
+  &quot;requestTime&quot;: &quot;2016-04-29T10:06:01&quot;,
+  &quot;responseTime&quot;: &quot;2016-04-29T10:06:01&quot;,
+  &quot;statusText&quot;: &quot;OK&quot;,
+  &quot;url&quot;: &quot;/v4/venues/552435790df6902b7256f237/booking-availability&quot;,
+  &quot;method&quot;: &quot;POST&quot;,
+  &quot;params&quot;: []
+}
+</code></pre>
+
 			
 			<aside class="copyright" role="note">
 				
@@ -1233,7 +1337,7 @@
     
     </script>
 
-    <script src="http://developers.designmynight.com/javascripts/application.js"></script>
+    <script src="http://developers.designmynight.comjavascripts/application.js"></script>
     
 
     <script>
@@ -1306,7 +1410,7 @@
       </script>
     
 
-    <script src="http://developers.designmynight.com/javascripts/highlight.js"></script>
+    <script src="http://developers.designmynight.comjavascripts/highlight.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
