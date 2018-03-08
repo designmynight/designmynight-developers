@@ -152,3 +152,58 @@ status | The status of the booking: 'complete' for confirmed bookings; otherwise
 `first_name` | `string` the customer's first name
 `last_name` | `string` the customer's last name
 `email` | `string` the customer's email address
+
+## Checking Booking Rules
+
+The `booking-rules` endpoint will provide the rules for a booking for a specified date and booking type.
+The following details must be passed in as a URL parameter:
+
+Field | Required | Description
+--- | --- | ---
+`type` | **Yes** | The ID of the booking type as a string
+`date` | **Yes** | The date of the booking in YYYY-MM-DD format
+
+The following fields will be provided, based on the date and booking type passed in:
+
+Field | Description
+--- | ---
+`bookings_from` | `string` the earliest time bookings are allowed, in 24 hour format eg `09:00`
+`bookings_to` | `string` the latest time bookings are allowed, in 24 hour format eg `23:00`
+`booking_available` | `boolean` Whether or not a booking would be allowed, based on the `Can Book` checkbox in Collins
+`max_duration` | `integer` The maximum duration for a booking in minutes *
+`booking_notes` | `string` The 'Bookings Policy' message
+`min_people` | `number` The minumum number of guests allowed *
+`max_people` | `number` The maximum number of guests allowed *
+`bookings_shut` | `string` The time when same day bookings close *
+
+<small> \* These fieldswill only be present when they have been set in Collins</small>
+
+For example, to check the rules for a Brunch booking type on the 8th March 2018, the request would look like this:
+
+```bash
+$ curl -X POST https://api.designmynight.com/v4/venues/552435790df6902b7256f237/booking-rules?type=58d122ba566b8a3c198b45aa&date=2018-03-08
+```
+
+and the response would look like this
+
+```json
+{
+  "payload": {
+    "bookings_from": "08:00",
+    "bookings_to": "21:00",
+    "booking_available": true,
+    "booking_notes": "Please read the terms and conditions",
+    "bookings_shut": "09:00",
+    "min_people": 2,
+    "max_people": 6,
+    "max_duration": 90
+  },
+  "status": 200,
+  "requestTime": "2016-04-29T10:06:01",
+  "responseTime": "2016-04-29T10:06:01",
+  "statusText": "OK",
+  "url": "/v4/venues/552435790df6902b7256f237/booking-availability",
+  "method": "POST",
+  "params": []
+}
+```
