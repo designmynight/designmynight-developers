@@ -149,7 +149,7 @@ Here's an example of what the second iFrame could look like: [Alexander's](https
 
 If this is isolated to your own website, your web developer will have to look at the CSS styling or Javascript on your page which is interfering with the code. 
 
-For example, yspecific elements of your website may have been set a very high `z-index` which is causing the elements to appear on top over everything else on the page (including the Collins second iFrame). 
+For example, specific elements of your website may have been set a very high `z-index` which is causing the elements to appear on top over everything else on the page (including the Collins second iFrame). 
 
 
 
