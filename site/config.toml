@@ -82,7 +82,7 @@ googleAnalytics = "UA-12385609-13"
 	
 [[menu.main]]
 	name   = "Updating Email Settings"
-	url    = "collins-onboarding/updating-email settings/"
+	url    = "collins-onboarding/updating-email-settings/"
 	parent = "collins-onboarding"
 	weight = 201
 
