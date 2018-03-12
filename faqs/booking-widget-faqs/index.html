@@ -251,6 +251,10 @@
       
     
       
+    
+      
+    
+      
       <span class="section">Widgets</span>
       
     
@@ -359,7 +363,11 @@
       
     
       
+    
+      
       <span class="section">Api</span>
+      
+    
       
     
       
@@ -547,6 +555,10 @@
       
     
       
+    
+      
+    
+      
       <span class="section">Epos-Crm-Integrations</span>
       
     
@@ -627,6 +639,10 @@
   <li>
     
 
+    
+      
+    
+      
     
       
     
@@ -945,17 +961,12 @@
 <p>Once you have the ID you can then set values on that particular form by passing an object to <code>DMN.val()</code> like this:</p>
 
 <pre><code>DMN.val({field: 'time', value: '22:00', formId: formId})
+
+
+
 </code></pre>
 
-<h2 id="booking-widget-faqs">Booking Widget FAQs</h2>
-
-<p><strong>1. Is it possible to add Placeholder Text in the fields?</strong></p>
-
-<p>You wouldn&rsquo;t be able to add placeholder text through our JS API. However, you could change it using a library like jquery or vanilla JS to add a placeholder to the element.</p>
-
-<p>Alternatively, you could set the background image of an input with CSS - guide here to help you <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">style the booking widget</a>.</p>
-
-<p><strong>2. My booking widget looks weird and some of the fields are not showing correctly!</strong></p>
+<h2 id="troubleshooting">Troubleshooting</h2>
 
 <p>If your booking widget is not appearing as expected, we recommend that you test your widget codes on <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a> (this is a website to test codes). To test your widget code:</p>
 
@@ -968,23 +979,37 @@
 
 <p>You should then see the widget on the right side of the screen which you can make a test booking for/play around with.</p>
 
-<p>If the widget is appearing and working correctly on Plunker, this means that the issue is isolated to your own website. This means that the issue will be caused by conflicting styles on your website and your web developer will need to take a closer look at your CSS.</p>
+<p>If the widget is appearing and working correctly on Plunker, this means that the issue is isolated to your own website. This means that the issue will be caused by conflicting styles on your website and your web developer will need to take a closer look at your CSS or Javascript.</p>
 
-<p><strong>3. The dates on my calendar are not showing correctly!</strong></p>
+<h2 id="booking-widget-faqs">Booking Widget FAQs</h2>
 
-<p>If you have tested the widget code on <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a> and the issue is isolated to your website, your web developer will have to look at the CSS styling on your page which is interfering with the code.</p>
+<p><strong>1. Is it possible to add Placeholder Text in the fields?</strong></p>
 
-<p><strong>4. The drop down options on my widget fields are only visible when you hover over them. How do I  get all available drop down options to be visible for the customer to select?</strong></p>
+<p>You wouldn&rsquo;t be able to add placeholder text through our JS API. However, you could change it using a library like jquery or vanilla JS to add a placeholder to the element.</p>
+
+<p>Alternatively, you could set the background image of an input with CSS - guide here to help you <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">style the booking widget</a>.</p>
+
+<p><strong>2. The dates on my calendar are not showing correctly!</strong></p>
+
+<p>If you have tested the widget code on <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a> and the issue is isolated to your website, your web developer will have to look at the CSS styling or Javascript on your page which is interfering with the code.</p>
+
+<p><strong>3. The drop down options on my widget fields are only visible when you hover over them. How do I  get all available drop down options to be visible for the customer to select?</strong></p>
 
 <p>If the colour of the <strong>Form Components</strong> is too similar a colour to the <strong>Input Labels</strong>, it can make it difficult for customers to view and select options.</p>
 
 <p>Your web developer should amend the CSS to tweak the colours used in your <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">Form Components and Input Labels</a>.</p>
 
-<p><strong>5. By default, the second iFrame is a pop up. Is it possible to direct to a booking page (which is not a pop up)?</strong></p>
+<p><strong>4. By default, the second iFrame is a pop up. Is it possible to direct to a booking page (which is not a pop up)?</strong></p>
 
 <p>The modal styling can be customised with CSS. It will either open an iframe within a modal, or redirect to the booking page depending on available screen size. Your web developer will be able to customise the size to dictate what happens.</p>
 
 <p>Here&rsquo;s an example of what the second iFrame could look like: <a href="https://www.designmynight.com/book?venue_id=59157f51ff52d61204696b4c&amp;venue_group=59157fe4ff52d613565b24aa&amp;type=591ec9ca05b6e0052806695e&amp;num_people=4&amp;date=2017-8-17&amp;time=09:00&amp;duration=120&amp;notes=&amp;locale=en-GB&amp;source=partner&amp;stylesheet=alexanders">Alexander&rsquo;s</a></p>
+
+<p><strong>5. I&rsquo;ve added the widget code to my site but when I click the &lsquo;Enquire Now&rsquo; button, the second iFrame is hidden behind elements of my website. This is affecting customers&rsquo; ability to complete their booking/enquiry. What could be causing this?</strong></p>
+
+<p>If this is isolated to your own website, your web developer will have to look at the CSS styling or Javascript on your page which is interfering with the code.</p>
+
+<p>For example, specific elements of your website may have been set a very high <code>z-index</code> which is causing the elements to appear on top over everything else on the page (including the Collins second iFrame).</p>
 
 			
 			<aside class="copyright" role="note">

@@ -53,6 +53,10 @@
   </url>
   
   <url>
+    <loc>http://developers.designmynight.com/collins-onboarding/updating-email-settings/</loc>
+  </url>
+  
+  <url>
     <loc>http://developers.designmynight.com/epos-crm-integrations/crm-integration/</loc>
   </url>
   
@@ -112,6 +116,11 @@
   
   <url>
     <loc>http://developers.designmynight.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://developers.designmynight.com/collins-onboarding/</loc>
     <priority>0</priority>
   </url>
   

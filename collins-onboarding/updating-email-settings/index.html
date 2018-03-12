@@ -14,12 +14,12 @@
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="http://developers.designmynight.com/faqs/general-enquiry-form/">
+    <link rel="canonical" href="http://developers.designmynight.com/collins-onboarding/updating-email-settings/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="http://developers.designmynight.com/faqs/general-enquiry-form/">
+    <meta property="og:url" content="http://developers.designmynight.com/collins-onboarding/updating-email-settings/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="http://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -753,14 +753,11 @@
 
 
 
-<a class="current" title="General enquiry form" href="http://developers.designmynight.com/faqs/general-enquiry-form/">
+<a  title="General enquiry form" href="http://developers.designmynight.com/faqs/general-enquiry-form/">
 	
 	General enquiry form
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
       
         
@@ -853,70 +850,78 @@
 
 			
 
-<h1 id="contact-us-general-enquiry-form">Contact Us/General Enquiry Form</h1>
+<h2 id="updating-your-email-settings">Updating your Email Settings</h2>
 
-<p>As well as a Collins booking widget, you can also personalise your own Contact Us/General Enquiry form which feeds into your Collins.</p>
+<p>If you are using our <a href="https://collins.uservoice.com/knowledgebase/articles/563052-extra-feature-collins-mail-how-to-video">Collins Mail</a> bolt-on, you do <strong><em>not</em></strong> have to action the below.</p>
 
-<p>Here&rsquo;s an example of a partner with a customised enquiry form: <a href="https://www.no4cliftonvillage.co.uk/contact-us/">No. 4 Clifton Village</a></p>
+<p>For all other clients, you need to explicitly say that Collins is allowed to send emails for your domain/on your behalf.</p>
 
-<p><strong>To create your own personalised Enquiry form:</strong></p>
+<p>This is the only way that we can guarantee that emails deliver correctly to you and customers.</p>
 
-<p><strong>1.</strong> Create your own form display on your website. Here&rsquo;s a <a href="https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit">Basic Enquiry Form Example</a> to use. You and your web developer will be responsible for the look of your personalised form and which fields are included.</p>
+<p>The most common way of doing this is to set up an &lsquo;SPF record&rsquo; and DKIM for your domain (@yourvenue.com).</p>
 
-<p><strong>2.</strong> For any standard Collins booking fields used in your form (First Name, Last Name, Email, Phone, DOB, Newsletter Sign Up), please use these <a href="http://developers.designmynight.com/booking-api/#submitting-through-the-api">Standard Collins booking field names</a>.
-This will ensure that these field details will pull through to the respective fields in your Collins enquiry.</p>
+<p>This is something your web agency or digital team should be able to do for you and should take no more than 10 minutes to change.</p>
 
-<p><strong>3.</strong> For any non-standard enquiry fields that you would like to use, you will have to add them to your Collins admin. This will create technical names that you can give to your web developer to map them in your web form.</p>
+<h2 id="how-to-update-your-email-settings">How to update your Email Settings</h2>
 
-<p><strong>To add a new enquiry field:</strong></p>
+<p>To update your email settings, you <strong>must</strong> complete all three steps:</p>
 
-<ol>
-<li>Log onto your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
-<li>Go to Settings &gt; Venue Group &gt; Enquiries</li>
-<li>Tick the box &lsquo;Enable Enquiries&rsquo;</li>
-<li>In Enquiy Fields section, click to &lsquo;Add a Field&rsquo;</li>
-<li>You will then have to add the following details:</li>
-</ol>
+<p><strong>1. Update your SPF Settings</strong></p>
 
-<p><strong>Field Label</strong> - <em>once this has been added, the Field Names will auto-populate. This is what your web developer will require</em></p>
+<p><code>Spf.mandrillapp.com</code></p>
 
-<p><strong>Field Type</strong> - <em>select from the drop down the type of field (eg Free Text, Yes/No, Pick One etc)</em></p>
+<p>If your current SPF setting is:
+<code>v=spf1 include:spf.protection.outlook.com -all</code></p>
 
-<ol>
-<li>Click SAVE</li>
-</ol>
+<p>You just need to add <code>include:spf.mandrillapp.com</code> so your TXT record should change to;</p>
 
-<p>Once the Enquiry Field has been added, please give your web developer the <strong>Field Names</strong>. They will use this to map these custom enquiry fields in your web form.</p>
+<p><code>v=spf1 include:spf.protection.outlook.com include:spf.mandrillapp.com -all</code></p>
 
-<p><strong>4.</strong> When posting custom enquiry fields to Collins, the name of the inputs needs to be <code>enquiry_details[&lt;key&gt;]</code> where <code>&lt;key&gt;</code> is the <strong>Field Name</strong> of the Enquiry Field that you have create and passed on to your developer.</p>
+<p>If you <strong>do not</strong> already have an SPF record setup then you should add something similar to the following;</p>
 
-<p><strong>5.</strong> Your web developer needs to post your form to <a href="https://www.designmynight.com/book">https://www.designmynight.com/book</a></p>
+<p><code>v=spf1 include:spf.mandrillapp.com ?all</code></p>
 
-<p><strong>6.</strong> Your web developer will also need to include the following fields to identify as being an enquiry for your venue group:</p>
+<p><strong>2. Update your DKIM Settings</strong></p>
 
-<ul>
-<li><code>enquiry_type=enquiry</code></li>
-<li><code>source=partner</code></li>
-<li><code>venue_group= **you can get this from your Account Manager**</code></li>
-</ul>
+<p>a. Add a new TXT record with the name <code>mandrill._domainkey.yourdomain.com</code> (just replace yourdomain.com with the domain you&rsquo;re setting up).</p>
 
-<p><strong><em>Please note:</em></strong>  If the action of the form is a direct post to www.designmynight.com/book, then you will need to add these three fields as hidden fields, for example:</p>
+<p>b. Set the value for the record to be one of the options listed below. There are two options because the record contains semicolons. Some DNS providers escape semicolons for you while others require you to do it when you set up the record.</p>
 
-<p><code>&lt;input type=&quot;hidden&quot; name=&quot;enquiry_type&quot; value=&quot;enquiry&quot;&gt;</code></p>
+<p><strong>With semicolons escaped:</strong></p>
 
-<p><code>&lt;input type=&quot;hidden&quot; name=&quot;source&quot; value=&quot;partner&quot;&gt;</code></p>
+<p><code>v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB\;</code></p>
 
-<p><code>&lt;input type=&quot;hidden&quot; name=&quot;venue_group&quot; value=&quot;VENUEGROUPID&quot;&gt;</code></p>
+<p><strong>With semicolons unescaped:</strong></p>
 
-<p>Where you will have to replace the VENUEGROUPID given from your Account Manager.</p>
+<p><code>v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB;</code></p>
 
-<p>If you are posting the form independently, then you will need to make sure these three fields are added to the final payload posted to www.designmynight.com/book.</p>
+<p><strong>3. Verify your settings</strong></p>
 
-<h2 id="general-enquiry-form-faqs">General Enquiry Form FAQs</h2>
+<p>Once the SPF and DKIM settings have been updated, please email your Collins Account Manager.</p>
 
-<p><strong>1. Do you support XHR or cross origin requests?</strong></p>
+<p>We will be able to check on our side whether these have been updated correctly (and will be able to give feedback if it has been set up incorrectly).</p>
 
-<p>We do not currently support submitting XHR requests for  bespoke enquiries. In order to customise the confirmation page, please add a <code>return_url</code> parameter. The response data will be forwarded onto your return url as url parameters.</p>
+<p>You will then receive an email from &lsquo;<strong>Mandrill Client Services</strong>&rsquo;. Please forward this to your Collins Account Manager.</p>
+
+<p>We will then be able to complete the final step of verifying your domain.</p>
+
+<p>Once your domain has been verified, let us know which email address (of your verified domain) you would like to use to communicate with customers. We will add this to your Collins admin settings for you.</p>
+
+<p><strong><em>Important to note</em>:</strong></p>
+
+<p>If this is not completed, Collins will not be able to send any outbound emails for you. They will get blocked.</p>
+
+<p>You cannot use public mail clients (hotmail, gmail etc..) to be your &ldquo;from email address&rdquo; in Collins. It should always be your domain [nick@collinsbar.com not collinsbar@gmail.com].</p>
+
+<h2 id="updating-email-settings-faqs">Updating Email Settings FAQs</h2>
+
+<p><strong>1. How to update the email settings for a Wix account</strong></p>
+
+<p>Here are guides to help you update your <a href="https://support.wix.com/en/article/adding-a-dkim-txt-record">DKIM Settings</a> and <a href="https://support.wix.com/en/article/adding-or-updating-spf-records-in-your-wix-account">SPF Settings</a> for a Wix account.</p>
+
+<p><strong>2. How to update the email settings for a Squarespace account</strong></p>
+
+<p>Here&rsquo;s a guide to help you update your <a href="http://help.jilt.com/send-jilt-emails-from-your-own-domain/update-your-domain-provider-s-dns-settings/add-spf-and-dkim-records-to-squarespace">DKIM and SPF Settings</a>.</p>
 
 			
 			<aside class="copyright" role="note">
@@ -937,7 +942,7 @@ This will ensure that these field details will pull through to the respective fi
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://developers.designmynight.com/faqs/taking-bookings-from-google/" title="">
+      <a href="http://developers.designmynight.com/epos-crm-integrations/crm-integration/" title="">
         <span class="direction">
           Previous
         </span>
@@ -957,14 +962,14 @@ This will ensure that these field details will pull through to the respective fi
 
   <div class="next">
   
-      <a href="http://developers.designmynight.com/faqs/customising-email-templates/" title="">
+      <a href="http://developers.designmynight.com/widgets/booking-widget/" title="Collins Booking Widget">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              
+              Collins Booking Widget
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
