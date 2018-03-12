@@ -75,135 +75,151 @@ googleAnalytics = "UA-12385609-13"
     name = " "
 
 [[menu.main]]
+    name   = "Collins Onboarding"
+    url    = "collins-onboarding/"
+    identifier = "collins-onboarding"
+	weight = 200
+	
+[[menu.main]]
+	name   = "Updating Email Settings"
+	url    = "collins-onboarding/updating-email settings/"
+	parent = "collins-onboarding"
+	weight = 201
+
+[[menu.main]]
+    weight = 299
+    name = " "
+
+[[menu.main]]
     name   = "API"
     url    = "api/"
     identifier = "API"
-	weight = 200
+	weight = 300
 
 [[menu.main]]
 	name   = "API Basics"
 	url    = "api/api-basics/"
-	weight = 201
+	weight = 301
 	parent = "API"
 
 [[menu.main]]
 	name   = "Booking API"
 	url    = "api/booking-api/"
-	weight = 202
+	weight = 302
 	parent = "API"
 
 [[menu.main]]
 	name   = "Bookings search"
 	url    = "api/bookings-search/"
-	weight = 203
+	weight = 303
 	parent = "API"
 
 [[menu.main]]
     name   = "Users API"
     url    = "api/users-api/"
-    weight = 204
+    weight = 304
 	parent = "API"
 
 [[menu.main]]
 	name   = "Offers API"
 	url    = "api/offers-api/"
-	weight = 205
+	weight = 305
 	parent = "API"
 
 [[menu.main]]
 	name   = "Venue Groups API"
 	url    = "api/venue-groups/"
-	weight = 206
+	weight = 306
 	parent = "API"
 
 [[menu.main]]
 	name   = "Event Guests API"
 	url    = "api/event-guests-api/"
-	weight = 207
+	weight = 307
 	parent = "API"
 
 [[menu.main]]
-    weight = 299
+    weight = 399
     name = "        "
 
 [[menu.main]]
     name   = "EPOS/CRM Integrations"
     url    = "epos-crm-integrations/"
     identifier = "epos-crm-integrations"
-	weight = 300
+	weight = 400
 
 [[menu.main]]
     name   = "Zonal EPOS Integration"
     url    = "epos-crm-integrations/zonal-epos-integration/"
     parent = "epos-crm-integrations"
-	weight = 301
+	weight = 401
 
 [[menu.main]]
     name   = "IBS EPOS Integration"
     url    = "epos-crm-integrations/ibs-epos-integration/"
     parent = "epos-crm-integrations"
-	weight = 302
+	weight = 402
 
 [[menu.main]]
     name   = "CRM Integration"
     url    = "epos-crm-integrations/crm-integration/"
     parent = "epos-crm-integrations"
-	weight = 303
+	weight = 403
 
 [[menu.main]]
-    weight = 399
+    weight = 499
     name = "          "
 
 [[menu.main]]
 	name   = "FAQS"
 	url    = "faqs/"
 	identifier = "faqs"
-	weight = 400
+	weight = 500
 
 [[menu.main]]
 	name   = "Booking widget faqs"
 	url    = "faqs/booking-widget-faqs/"
 	parent = "faqs"
-	weight = 401
+	weight = 501
 
 [[menu.main]]
 	name   = "Customising 2nd iframe"
 	url    = "faqs/customising-2nd-iframe/"
 	parent = "faqs"
-	weight = 402
+	weight = 502
 
 [[menu.main]]
 	name   = "Customising email templates"
 	url    = "faqs/customising-email-templates/"
 	parent = "faqs"
-	weight = 403
+	weight = 503
 
 [[menu.main]]
 	name   = "General enquiry form"
 	url    = "faqs/general-enquiry-form/"
 	parent = "faqs"
-	weight = 404
+	weight = 504
 
 [[menu.main]]
 	name   = "Tracking"
 	url    = "faqs/tracking/"
 	parent = "faqs"
-	weight = 405
+	weight = 505
 
 [[menu.main]]
 	name   = "API FAQs"
 	url    = "faqs/api-faqs/"
 	parent = "faqs"
-	weight = 406
+	weight = 506
 
 [[menu.main]]
 	name   = "Booking URLs"
 	url    = "faqs/booking-url/"
 	parent = "faqs"
-	weight = 407
+	weight = 507
 
 [[menu.main]]
-    weight = 499
+    weight = 599
     name = "            "
 
 [blackfriday]
