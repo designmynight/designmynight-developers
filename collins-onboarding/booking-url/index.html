@@ -8,18 +8,18 @@
   <head lang="en-gb">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <title>Event Guests API - DMN developer documentation</title>
+    <title> - DMN developer documentation</title>
     <meta name="generator" content="Hugo 0.22.1" />
 
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="http://developers.designmynight.com/api/event-guests-api/">
+    <link rel="canonical" href="http://developers.designmynight.com/collins-onboarding/booking-url/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="http://developers.designmynight.com/api/event-guests-api/">
+    <meta property="og:url" content="http://developers.designmynight.com/collins-onboarding/booking-url/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="http://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -91,7 +91,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Event Guests API
+        
       </div>
     </div>
 
@@ -592,14 +592,11 @@
 
 
 
-<a class="current" title="Event Guests API" href="http://developers.designmynight.com/api/event-guests-api/">
+<a  title="Event Guests API" href="http://developers.designmynight.com/api/event-guests-api/">
 	
 	Event Guests API
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
       
         
@@ -976,320 +973,167 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>Event Guests API </h1>
+			<h1> </h1>
 
 			
 
-<div class="admonition note">
-<p class="admonition-title">Before you begin</p>
-<p>Refer to the <a href="/api/api-basics">API Basics</a> section to ensure you are familiar with the essentials of how to interact with the API.</p>
-</div>
+<h2 id="booking-url-for-a-specific-venue">Booking URL for a specific venue</h2>
 
-<h2 id="overview">Overview</h2>
+<p>If you are unable to add the Collins booking widget, it&rsquo;s possible for you to include a booking URL to your website instead.</p>
 
-<p>The <code>guests</code> API endpoint provides you with all that you need to retrieve guest information for events.</p>
+<p>Here is an example of partners using a booking URL: <a href="https://www.parktavernsw18.com/book/">The Park Tavern</a></p>
 
-<h2 id="listing-guests">Listing guests</h2>
+<p>To create a booking URL for your venue, you will need to use a URL of the following form:</p>
 
-<p>Start by sending a GET request with the ID of the event you wish to get the information for:</p>
+<p><a href="https://www.designmynight.com/book?venue_id=VENUEID&amp;source=partner&amp;format=modal">https://www.designmynight.com/book?venue_id=VENUEID&amp;source=partner&amp;format=modal</a></p>
 
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/events/&lt;event_id&gt;/guests?occurrence=&lt;date&gt;
-$ curl -X GET https://api.designmynight.com/v4/events/5a8c0ca4cb554029f55bbb9c/guests?occurrence=2020-06-28
-</code></pre>
+<p>Where you have to replace &lsquo;VENUEID&rsquo; with your <a href="http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-id">unique Collins Venue ID</a>.</p>
 
-<h3 id="url-format">URL format</h3>
+<h2 id="booking-url-for-a-specific-booking-type">Booking URL for a specific booking type</h2>
 
-<p>The URL contains the <code>&lt;event_id&gt;</code> which is tied to your event.  To get this do the following:</p>
+<p>If you are looking to create a booking link for a specific booking type (for example if you want to send a link out in a targetted mail out), you can create a URL of the following format:</p>
+
+<p><a href="https://www.designmynight.com/book?venue_id=VENUEID&amp;venue_group=VENUEGROUPID&amp;type=BOOKINGTYPEID&amp;source=partner&amp;fixed_type=1">https://www.designmynight.com/book?venue_id=VENUEID&amp;venue_group=VENUEGROUPID&amp;type=BOOKINGTYPEID&amp;source=partner&amp;fixed_type=1</a></p>
+
+<p>Where you have to replace <a href="http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-id">VENUEID</a>, <a href="http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-group-id">VENUEGROUPID</a> and <a href="http://developers.designmynight.com/faqs/booking-url/#how-to-find-the-booking-type-id">BOOKINGTYPEID</a> accordingly.</p>
+
+<p><strong>Example:</strong></p>
+
+<p><a href="https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=58be86d4c71620a90d97aba4&amp;source=partner&amp;fixed_type=1">https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=58be86d4c71620a90d97aba4&amp;source=partner&amp;fixed_type=1</a></p>
+
+<h2 id="how-to-find-your-collins-venue-id">How to find your Collins Venue ID</h2>
+
+<p>Your user account will require <a href="https://collins.uservoice.com/knowledgebase/articles/942757-user-permissions-explained-and-how-to-change-them">Bookings Manager permissions</a>. If you cannot see this option, please speak to your key user to review your user permissions.</p>
 
 <ol>
-<li>Log onto your Event admin</li>
-<li>Go to the dashboard</li>
-<li>Look at the URL and copy the long id</li>
+<li>Log into your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
+<li>Settings</li>
+<li>Venues</li>
+<li>Select your venue</li>
+<li>Your Venue ID will be included at the <a href="https://static.designmynight.com/uploads/2017/12/Collins-Venue-ID1-optimised.png">end in the URL</a></li>
 </ol>
 
-<p>The URL also takes <code>occurrence</code> as a parameter.  This is the date the event takes place in the format YYYY-MM-DD.  For more information on obtaining event dates please contact your account manager.</p>
+<h2 id="how-to-find-your-collins-venue-group-id">How to find your Collins Venue Group ID</h2>
 
-<p>You&rsquo;ll get a response like this:</p>
+<p>Your user account will require venue group level access. Please speak to your key user if you need updated user access.</p>
 
-<pre><code class="language-javascript">{
-    &quot;payload&quot;: {
-        &quot;guests&quot;: [{
-            &quot;rep_commission&quot;: 0,
-            &quot;discount&quot;: 0,
-            &quot;unitPrice&quot;: 0,
-            &quot;repId&quot;: &quot;&quot;,
-            &quot;source&quot;: &quot;designmynight-admin&quot;,
-            &quot;comments&quot;: &quot;&quot;,
-            &quot;purchaseCheckoutQuestions&quot;: [],
-            &quot;productItems&quot;: [],
-            &quot;email&quot;: &quot;support@designmynight.com&quot;,
-            &quot;phone&quot;: &quot;&quot;,
-            &quot;checkedInGuests&quot;: 0,
-            &quot;checkedInTickets&quot;: [],
-            &quot;checkedIn&quot;: false,
-            &quot;purchaseId&quot;: &quot;5a8c0d1e3a28a23624250dea&quot;,
-            &quot;purchaseRef&quot;: &quot;EXT-3743990665&quot;,
-            &quot;subType&quot;: &quot;5a8c0c7dc13ec64ef040ef38&quot;,
-            &quot;subTypeName&quot;: &quot;Test Ticket&quot;,
-            &quot;firstName&quot;: &quot;Sterling&quot;,
-            &quot;lastName&quot;: &quot;Archer&quot;,
-            &quot;numPeople&quot;: 1,
-            &quot;ticketList&quot;: [{
-                &quot;_id&quot;: &quot;5a8c0d1e3a28a23624250de8&quot;,
-                &quot;ticket_ref&quot;: 1,
-                &quot;reference&quot;: 651,
-                &quot;checked_in&quot;: false,
-                &quot;checked_in_by&quot;: &quot;&quot;,
-                &quot;guest_name&quot;: &quot;&quot;,
-                &quot;guest_email&quot;: &quot;&quot;,
-                &quot;refunded&quot;: false,
-                &quot;item_id&quot;: &quot;5a8c0ca4cb554029f55bbb9c&quot;,
-                &quot;item_name&quot;: &quot;Tonic Party&quot;,
-                &quot;sub_type_id&quot;: &quot;5a8c0c7dc13ec64ef040ef38&quot;,
-                &quot;sub_type_name&quot;: &quot;Test Ticket&quot;
-                }
-            ]
-        }]
-    },
-    &quot;status&quot;: 200,
-    &quot;requestTime&quot;: &quot;2018-02-20T11:59:32&quot;,
-    &quot;responseTime&quot;: &quot;2018-02-20T11:59:32&quot;,
-    &quot;statusText&quot;: &quot;OK&quot;,
-    &quot;url&quot;: &quot;/v4/events/5a8c0ca4cb554029f55bbb9c/guests&quot;,
-    &quot;method&quot;: &quot;GET&quot;,
-    &quot;params&quot;: {
-    &quot;occurrence&quot;: &quot;20200628&quot;
-    }
-}
-</code></pre>
+<ol>
+<li>Log into your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
+<li>Settings</li>
+<li>Venue Group</li>
+<li>Your Venue Group ID will be included at the <a href="https://static.designmynight.com/uploads/2017/12/Venue-Group-ID-optimised.png">end in the URL</a></li>
+</ol>
 
-<h2 id="guests-format">Guests format</h2>
+<h2 id="how-to-find-the-booking-type-id">How to find the Booking Type ID</h2>
 
-<p>Each guest object will contain the following keys:</p>
+<ol>
+<li>Log into your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
+<li>Settings</li>
+<li>Venues</li>
+<li>Select your venue</li>
+<li>Booking Widget</li>
+<li>Tick &lsquo;Limit to a single booking type&rsquo;</li>
+<li>Tick the specific booking type that you are looking for</li>
+<li>The Booking ID will follow <code>type=</code> in your newly generated <a href="https://static.designmynight.com/uploads/2017/12/Booking-Type-ID-optimised.png">widget code</a></li>
+</ol>
+
+<h2 id="fixing-additional-parameters-on-your-booking-url">Fixing additional parameters on your Booking URL</h2>
+
+<p>If you want to fix any other parameters (for example if the booking type is for a one-off event and so you only wish to display the specific time and date), you can include the following parameters in your booking url, separated with <code>&amp;</code>:</p>
 
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Parameter</th>
+<th>Comments</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td>rep_commission</td>
-<td><code>integer</code></td>
-<td>the amount of commission the rep will receive (if any)</td>
+<td><code>date=</code>DATE</td>
+<td>where DATE is to be given in the form YYYY-MM-DD eg 2016-03-12</td>
 </tr>
 
 <tr>
-<td>discount</td>
-<td><code>integer</code></td>
-<td>the discount amount applied to the tickey via a discout code</td>
+<td><code>time=</code>STARTTIME</td>
+<td>where STARTTIME is to be given in the 24-hour form HH:MM eg 15:00</td>
 </tr>
 
 <tr>
-<td>unitPrice</td>
-<td><code>integer</code></td>
-<td>the unit price of a ticket</td>
+<td><code>duration=</code>DURATION</td>
+<td>where DURATION is to be given in terms of hours eg 2.5 (which would be 2 hours 30 mins)</td>
 </tr>
 
 <tr>
-<td>repId</td>
-<td><code>string</code></td>
-<td>the rep id (id any)</td>
-</tr>
-
-<tr>
-<td>source</td>
-<td><code>string</code></td>
-<td>string representing the source of the guest purchase</td>
-</tr>
-
-<tr>
-<td>comments</td>
-<td><code>string</code></td>
-<td>comments a guest has made during the checkout</td>
-</tr>
-
-<tr>
-<td>purchaseCheckoutQuestions</td>
-<td><code>array</code></td>
-<td>questions a guest has answered during the checkout</td>
-</tr>
-
-<tr>
-<td>productItems</td>
-<td><code>array</code></td>
-<td>Product Items</td>
-</tr>
-
-<tr>
-<td>email</td>
-<td><code>string</code></td>
-<td>customer email</td>
-</tr>
-
-<tr>
-<td>phone</td>
-<td><code>integer</code></td>
-<td>customer phone</td>
-</tr>
-
-<tr>
-<td>checkedInGuests</td>
-<td><code>integer</code></td>
-<td>number of checked in guests</td>
-</tr>
-
-<tr>
-<td>checkedInTickets</td>
-<td><code>array</code></td>
-<td>list of the checked in tickets</td>
-</tr>
-
-<tr>
-<td>checkedIn</td>
-<td><code>boolean</code></td>
-<td>if the guest is fully checekd in</td>
-</tr>
-
-<tr>
-<td>purchaseId</td>
-<td><code>string</code></td>
-<td>the purchase id (internal to DMN)</td>
-</tr>
-
-<tr>
-<td>purchaseRef</td>
-<td><code>string</code></td>
-<td>the purchase ref</td>
-</tr>
-
-<tr>
-<td>subType</td>
-<td><code>string</code></td>
-<td>ticket sub type id</td>
-</tr>
-
-<tr>
-<td>subTypeName</td>
-<td><code>string</code></td>
-<td>ticket sub type name</td>
-</tr>
-
-<tr>
-<td>firstName</td>
-<td><code>string</code></td>
-<td>first name of the customer</td>
-</tr>
-
-<tr>
-<td>lastName</td>
-<td><code>string</code></td>
-<td>last name of the customer</td>
-</tr>
-
-<tr>
-<td>numPeople</td>
-<td><code>integer</code></td>
-<td>the number of people</td>
-</tr>
-
-<tr>
-<td>ticketList</td>
-<td><code>array</code></td>
-<td>the tickets in the guest purchase</td>
+<td><code>num_people</code>=NUMBEROFPEOPLE</td>
+<td>input your number of guests</td>
 </tr>
 </tbody>
 </table>
 
-<p>Each ticket in the ticket list will contain the following keys</p>
+<p><strong>Example:</strong> A NYE Dinner booking type starting at 6pm:</p>
 
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
+<p><a href="https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=5a3cd86849def9264240cd17&amp;date=2017-12-31&amp;time=18:00&amp;source=partner&amp;fixed_type=1">https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=5a3cd86849def9264240cd17&amp;date=2017-12-31&amp;time=18:00&amp;source=partner&amp;fixed_type=1</a></p>
 
-<tbody>
-<tr>
-<td>_id</td>
-<td><code>string</code></td>
-<td>the id of the ticket (internal)</td>
-</tr>
+<p><strong>Please note:</strong> you will be unable to fix <strong>all</strong> the above parameters at the same time. Otherwise, you would be effectively filling all the required parameters which would proceed to the next step of the booking process.</p>
 
-<tr>
-<td>ticket_ref</td>
-<td><code>string</code></td>
-<td>the reference of the ticket (deprecated)</td>
-</tr>
+<h2 id="displaying-your-booking-url-in-a-different-language">Displaying your Booking URL in a different language</h2>
 
-<tr>
-<td>reference</td>
-<td><code>int</code></td>
-<td>the reference of the ticket</td>
-</tr>
+<p>Collins gives you the option to display your booking widget in the following languages:</p>
 
-<tr>
-<td>checked_in</td>
-<td><code>boolean</code></td>
-<td>if the ticket is checked in</td>
-</tr>
+<ul>
+<li>Dutch</li>
+<li>French</li>
+<li>German</li>
+<li>Spanish</li>
+</ul>
 
-<tr>
-<td>checked_in_by</td>
-<td><code>string</code></td>
-<td>who checked the ticketi n</td>
-</tr>
+<p>If you would like your booking url to display in a different language, you will have to first set up the <a href="https://collins.uservoice.com/knowledgebase/articles/1829417-widget-setting-up-multi-lingual-widgets-transla">translations in your Collins settings</a></p>
 
-<tr>
-<td>guest_name</td>
-<td><code>string</code></td>
-<td>the guest name</td>
-</tr>
+<p>Once your Translation has been set up in Collins, you can also add an extra <code>locale</code> parameter to your booking url, setting the parameter to be the code for the language that you wish to add to your booking url.</p>
 
-<tr>
-<td>guest_email</td>
-<td><code>string</code></td>
-<td>the guest email</td>
-</tr>
+<p>English <code>en-GB</code></p>
 
-<tr>
-<td>refunded</td>
-<td><code>boolean</code></td>
-<td>if the ticket has been refunded</td>
-</tr>
+<p>Dutch <code>nl-NL</code></p>
 
-<tr>
-<td>item_id</td>
-<td><code>string</code></td>
-<td>the event id</td>
-</tr>
+<p>French <code>fr-FR</code></p>
 
-<tr>
-<td>item_name</td>
-<td><code>string</code></td>
-<td>the event name</td>
-</tr>
+<p>German <code>de-DE</code></p>
 
-<tr>
-<td>sub_type_id</td>
-<td><code>string</code></td>
-<td>the ticket id</td>
-</tr>
+<p>Example: this booking url will display in German:</p>
 
-<tr>
-<td>sub_type_name</td>
-<td><code>string</code></td>
-<td>the ticket name</td>
-</tr>
-</tbody>
-</table>
+<p><a href="https://www.designmynight.com/book?venue_id=59d759f1cf53f24ceb4fbff0&amp;venue_group=59ccf635f61ea13caf7de907&amp;type=59d769e864511d794c3846d3&amp;locale=de-DE&amp;source=partner&amp;fixed_type=1">https://www.designmynight.com/book?venue_id=59d759f1cf53f24ceb4fbff0&amp;venue_group=59ccf635f61ea13caf7de907&amp;type=59d769e864511d794c3846d3&amp;locale=de-DE&amp;source=partner&amp;fixed_type=1</a></p>
+
+<p><strong>Please note:</strong> you will only be able to display your booking url in <strong>one</strong> language.</p>
+
+<h2 id="customising-the-2nd-iframe-of-the-collins-booking-url">Customising the 2nd iFrame of the Collins booking URL</h2>
+
+<p>You are able to customise the 2nd iframe on your Collins booking URL to better suit the feel of your website.</p>
+
+<p><strong>To do this, you would need to:</strong></p>
+
+<ol>
+<li><p>Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).</p></li>
+
+<li><p>We add this CSS URL to our system for your venue group, with a name eg app</p></li>
+
+<li><p>Then you should add <code>stylesheet=app</code> to the end of the URL you are going to send the user to.</p></li>
+
+<li><p>When the URL loads, it will also load your CSS so you can override whatever is on the book page.</p></li>
+</ol>
+
+<h2 id="custom-return-url">Custom return URL</h2>
+
+<p>You can create a custom return URL for users to be directed to when they complete their booking. That way you&rsquo;d be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have, but you would have control over your own analytics etc completely.</p>
+
+<p>To do this, you need to create the return URL on the venue site then set it by adding the <code>return_url</code> parameter in your booking url.</p>
+
+<p><code>return_url=https://www.your-return-url.com/booking-complete</code></p>
+
+<p>The booking info will be passed back in the URL.</p>
+
+<p><strong><em>Please note:</em></strong> the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format.</p>
 
 			
 			<aside class="copyright" role="note">
@@ -1310,7 +1154,7 @@ $ curl -X GET https://api.designmynight.com/v4/events/5a8c0ca4cb554029f55bbb9c/g
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://developers.designmynight.com/widgets/ticket-widget/" title="Ticket widget">
+      <a href="http://developers.designmynight.com/collins-onboarding/customising-2nd-iframe/" title="">
         <span class="direction">
           Previous
         </span>
@@ -1320,7 +1164,7 @@ $ curl -X GET https://api.designmynight.com/v4/events/5a8c0ca4cb554029f55bbb9c/g
           </div>
           <div class="stretch">
             <div class="title">
-              Ticket widget
+              
             </div>
           </div>
         </div>
@@ -1330,14 +1174,14 @@ $ curl -X GET https://api.designmynight.com/v4/events/5a8c0ca4cb554029f55bbb9c/g
 
   <div class="next">
   
-      <a href="http://developers.designmynight.com/api/booking-api/" title="Booking API">
+      <a href="http://developers.designmynight.com/api/api-faqs/" title="">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Booking API
+              
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
