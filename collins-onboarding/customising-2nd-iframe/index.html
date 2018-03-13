@@ -14,12 +14,12 @@
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="http://developers.designmynight.com/epos-crm-integrations/crm-integration/">
+    <link rel="canonical" href="http://developers.designmynight.com/collins-onboarding/customising-2nd-iframe/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="http://developers.designmynight.com/epos-crm-integrations/crm-integration/">
+    <meta property="og:url" content="http://developers.designmynight.com/collins-onboarding/customising-2nd-iframe/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="http://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -728,14 +728,11 @@
 
 
 
-<a class="current" title="CRM Integration" href="http://developers.designmynight.com/epos-crm-integrations/crm-integration/">
+<a  title="CRM Integration" href="http://developers.designmynight.com/epos-crm-integrations/crm-integration/">
 	
 	CRM Integration
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
       
     </ul>
@@ -970,123 +967,62 @@
 
 			
 
-<h2 id="crm-systems-using-the-collins-api">CRM Systems using the Collins API</h2>
+<h2 id="customising-the-2nd-iframe-of-your-collins-booking-widget">Customising the 2nd iFrame of your Collins booking widget</h2>
 
-<p>We can give CRM systems access to the Collins API. This will enable them to pull specific data from Collins for example, your Customer Data.</p>
+<p>You are able to customise the 2nd iframe on your Collins booking widget to better suit the feel of your website.</p>
 
-<p><strong>The following CRM systems currently access our API:</strong></p>
-
-<ul>
-<li>Airship</li>
-<li>Alchemetrics</li>
-<li>Acteol</li>
-</ul>
-
-<h2 id="how-to-set-up-access-to-the-collins-api">How to set up access to the Collins API</h2>
-
-<p><strong>We are able to give access to the following API endpoints:</strong></p>
-
-<ul>
-<li><a href="http://developers.designmynight.com/booking-api/">Bookings</a> - this will pull the booking data from your Collins Enquiries Page (ie every field you can see on your <a href="https://collins.uservoice.com/knowledgebase/articles/1829035-enquiries-page-csv-download">CSV download from enquiry page</a>)</li>
-<li><a href="http://developers.designmynight.com/users-api/">Users</a> - this will pull your Collins Customers Data</li>
-<li>Bookings Reports - this will pull your booking reports with whichever parameters you wish</li>
-<li>Venues - this will pull your DMN Venue reviews</li>
-<li><a href="http://developers.designmynight.com/offers-api/">Offers</a> - this will pull your Collins Offers (and can be used to check which offers are eligible for a given booking)</li>
-</ul>
-
-<p>If you are looking to get API access for your CRM system, the first step is for the Account Manager at your CRM system to have a look through our <a href="http://developers.designmynight.com/api-basics/">API Basics for Developers</a>.</p>
-
-<p>If you would then like to proceed, please contact your Collins Account Manager with full details of what you are looking to do and which specific API endpoints you are looking to use (for example, Users endpoint for Customer Data).</p>
-
-<p>You will then be given the following:</p>
-
-<ul>
-<li>User ID</li>
-<li>API Key</li>
-<li>Base url: <a href="https://api.designmynight.com/v4/">https://api.designmynight.com/v4/</a></li>
-<li>Docs: <a href="http://developers.designmynight.com/api-basics/">developers.designmynight.com</a></li>
-</ul>
-
-<p>It will then be up to your CRM system to access our API and pull the relevant data.</p>
-
-<h2 id="collins-fishbowl-integration-overview">Collins/Fishbowl Integration Overview</h2>
-
-<p>The Collins/Fishbowl integration is set up differently as it is a fixed connection to their API, so that when new customers/bookings are added to Collins, the customer details will automatically push to Fishbowl (if the customer has opted in for your marketing permission). The data possible to be pushed is decided by the paramaters available in your Fishbowl account.</p>
-
-<h2 id="setting-up-the-collins-fishbowl-integration">Setting up the Collins/Fishbowl Integration</h2>
-
-<p>If you are looking to set up an integration with Fishbowl, please request your <strong>Quick Subscribe Documentation</strong> from Fishbowl and pass on to your Collins Account Manager.</p>
-
-<p><strong><em>Please note:</em></strong> depending on our tech roadmap, it can take our tech team up to two weeks to set up this integration.</p>
-
-<p>Once set up, data should be pushed to Fishbowl whenever a user is created/changes (in most cases, this will be when the booking is added).
-So if you would like to test the integration, you can create a test booking in your Collins (and check that they are showing in Fishbowl).</p>
-
-<h2 id="collins-fishbowl-integration-faqs">Collins/Fishbowl Integration FAQs</h2>
-
-<p><strong>1. If we update marketing permissions within Collins, will these automatically push to Fishbowl?</strong></p>
-
-<p>If the marketing permission is changed on Collins so that marketing permission is ticked, the customer details will automatically pushed to Fishbowl.</p>
-
-<p>If the marketing permission is changed in Collins so that marketing permission is <strong>not</strong> ticked, but the customer already exists as subscribed in Fishbowl, you will have to manually update your Fishbowl list.</p>
-
-<p><strong>2. Is it possible for Collins to push booking details (in addition to customer details)?</strong></p>
-
-<p>By default, the integration is set up to only allow Collins to send customer details to Fishbowl.</p>
-
-<p>It is possible for Collins to push additional details. Depending on what data you are looking to collect, you will need to check that Fishbowl can handle different formats.</p>
-
-<p>For example, we need to pass labels as a comma-separated string. Fishbowl will need to split them up and be able to store them separately.</p>
-
-<p>You will be able to set up to receive additional data. To do this:</p>
+<p><strong>To customise your 2nd iFrame, your web developer would need to:</strong></p>
 
 <ol>
-<li>Set up another profile field in your Enterprise for the additional data you wish to collect</li>
-<li>Let your Collins Account Manager know the name of the field that you have set up</li>
-<li>Collins will then be able to pass the additional details as part of the QS send of new members</li>
+<li><p>Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).</p></li>
+
+<li><p>We add this CSS URL to our system for your venue group, with a name eg app</p></li>
+
+<li><p>When you add the form to your page, you add some code to tell our page which CSS to load, eg</p></li>
 </ol>
 
-<p><strong><em>Please note:</em></strong> depending on our tech roadmap, it can take our tech team up to two weeks to update/set up this integration.</p>
+<pre><code>&lt;script&gt;
+  DMN.val('stylesheet', 'app');  
+&lt;/script&gt;
+</code></pre>
 
-<h2 id="collins-zonal-crm-integration-overview">Collins/Zonal CRM Integration Overview</h2>
+<p>When the booking form loads, it will also load your CSS so you can override whatever is on the book page.</p>
 
-<p>The Collins/Zonal CRM integration is set up to push bookings to the Zonal CRM when the booking has been confirmed in Collins, and again if any booking details are updated.</p>
+<h2 id="customising-2nd-iframe-faqs">Customising 2nd iFrame FAQs</h2>
 
-<p>The following customer and booking details are sent:</p>
+<p><strong>1. When scrolling on a different device/screen size, the 2nd iFrame isn’t fully showing?</strong></p>
 
-<p><strong>Customer Details</strong></p>
+<p>The standard 2nd iFrame will fully show on all devices and screen sizes.</p>
 
-<ul>
-<li>Full Name</li>
-<li>Telephone</li>
-<li>Email</li>
-<li>Date of Birth</li>
-<li>Marketing Permission</li>
-</ul>
+<p>If your 2nd iFrame is not fully showing, it’s likely that you have a CSS style on your own website which is overwriting the height of the iFrame.</p>
 
-<p><strong>Booking Details:</strong></p>
+<p>Your web developer will have to look at the CSS that has been added to the customised 2nd iFrame.</p>
 
-<ul>
-<li>Booking Reference</li>
-<li>Status</li>
-<li>Location</li>
-<li>Date</li>
-<li>Time</li>
-<li>Number of Guests</li>
-<li>Deposits</li>
-<li>Type</li>
-</ul>
+<p><strong>2. When customising our second iFrame, which fields are we able to hide?</strong></p>
 
-<h2 id="setting-up-the-collins-zonal-crm-integration">Setting up the Collins/Zonal CRM Integration</h2>
+<p>You are able to remove only the fields that are <strong>not</strong> required to complete the enquiry.</p>
 
-<p>To set this up, we require the following details from Zonal:</p>
+<p>For example, you will be able to hide the birthday field as long as it has not been made a <a href="https://collins.uservoice.com/knowledgebase/articles/1112770-booking-types-making-the-birthday-field-mandator">mandatory field in your Collins settings</a>.</p>
 
-<ul>
-<li>URL eg <a href="https://fullers.txdlimited.co.uk/api_v1/booking">https://fullers.txdlimited.co.uk/api_v1/booking</a></li>
-<li>Username</li>
-<li>Password</li>
-<li>Mapping of our venue IDs to Zonal IDs</li>
-</ul>
+<p>You are also able to remove both marketing permission opt-ins (for your venue and DesignMyNight.com).</p>
+
+<p>To be able to hide these in your custom iFrames, your web developer will have to override the styling on the page.</p>
+
+<p><strong>3 We have multiple venues in our venue group. Are we able to load style sheets for each individual venue within the group?</strong></p>
+
+<p>We can set up multiple style sheets eg we could name them &lsquo;app&rsquo; and &lsquo;website&rsquo;. Your code will just specify the stylesheet you want at the time eg:</p>
+
+<pre><code>&lt;script&gt;
+  DMN.val('stylesheet', 'app');
+  &lt;/script&gt;
+</code></pre>
+
+<p>and</p>
+
+<pre><code>&lt;script&gt;
+  DMN.val('stylesheet', 'website');
+  &lt;/script&gt;
+</code></pre>
 
 			
 			<aside class="copyright" role="note">
@@ -1107,7 +1043,7 @@ So if you would like to test the integration, you can create a test booking in y
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://developers.designmynight.com/epos-crm-integrations/ibs-epos-integration/" title="">
+      <a href="http://developers.designmynight.com/collins-onboarding/updating-email-settings/" title="">
         <span class="direction">
           Previous
         </span>
@@ -1127,7 +1063,7 @@ So if you would like to test the integration, you can create a test booking in y
 
   <div class="next">
   
-      <a href="http://developers.designmynight.com/collins-onboarding/updating-email-settings/" title="">
+      <a href="http://developers.designmynight.com/api/api-faqs/" title="">
         <span class="direction">
           Next
         </span>
