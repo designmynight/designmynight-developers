@@ -109,6 +109,12 @@ googleAnalytics = "UA-12385609-13"
 	url    = "collins-onboarding/customising-email-templates/"
 	parent = "collins-onboarding"
 	weight = 204
+	
+[[menu.main]]
+	name   = "Taking Bookings from Google"
+	url    = "collins-onboarding/taking-bookings-from-google/"
+	parent = "collins-onboarding"
+	weight = 205
 
 [[menu.main]]
     weight = 299
