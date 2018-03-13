@@ -87,40 +87,46 @@ googleAnalytics = "UA-12385609-13"
 	weight = 201
 	
 [[menu.main]]
+	name   = "Collins Booking Widget"
+	url    = "collins-onboarding/booking-widget/"
+	parent = "collins-onboarding"
+	weight = 202
+	
+[[menu.main]]
 	name   = "Customising 2nd Iframe"
 	url    = "collins-onboarding/customising-2nd-iframe/"
 	parent = "collins-onboarding"
-	weight = 202
+	weight = 203
 
 [[menu.main]]
 	name   = "Booking URLs"
 	url    = "collins-onboarding/booking-url/"
 	parent = "collins-onboarding"
-	weight = 203
+	weight = 204
 	
 [[menu.main]]
 	name   = "General Enquiry Form"
 	url    = "collins-onboarding/general-enquiry-form/"
 	parent = "collins-onboarding"
-	weight = 204
+	weight = 205
 	
 [[menu.main]]
 	name   = "Customising Email Templates"
 	url    = "collins-onboarding/customising-email-templates/"
 	parent = "collins-onboarding"
-	weight = 204
+	weight = 206
 	
 [[menu.main]]
 	name   = "Taking Bookings from Google"
 	url    = "collins-onboarding/taking-bookings-from-google/"
 	parent = "collins-onboarding"
-	weight = 205
+	weight = 207
 
 [[menu.main]]
 	name   = "Tracking"
 	url    = "collins-onboarding/tracking/"
 	parent = "collins-onboarding"
-	weight = 206
+	weight = 208
 
 
 [[menu.main]]
@@ -212,20 +218,6 @@ googleAnalytics = "UA-12385609-13"
 [[menu.main]]
     weight = 499
     name = "          "
-
-[[menu.main]]
-	name   = "FAQS"
-	url    = "faqs/"
-	identifier = "faqs"
-	weight = 500
-
-[[menu.main]]
-	name   = "Booking widget faqs"
-	url    = "faqs/booking-widget-faqs/"
-	parent = "faqs"
-	weight = 501
-
-
 
 
 [[menu.main]]
