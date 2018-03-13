@@ -85,6 +85,12 @@ googleAnalytics = "UA-12385609-13"
 	url    = "collins-onboarding/updating-email-settings/"
 	parent = "collins-onboarding"
 	weight = 201
+	
+[[menu.main]]
+	name   = "Customising 2nd Iframe"
+	url    = "collins-onboarding/customising-2nd-iframe/"
+	parent = "collins-onboarding"
+	weight = 202
 
 [[menu.main]]
     weight = 299
@@ -195,28 +201,22 @@ googleAnalytics = "UA-12385609-13"
 	weight = 502
 
 [[menu.main]]
-	name   = "Customising email templates"
-	url    = "faqs/customising-email-templates/"
-	parent = "faqs"
-	weight = 503
-
-[[menu.main]]
 	name   = "General enquiry form"
 	url    = "faqs/general-enquiry-form/"
 	parent = "faqs"
-	weight = 504
+	weight = 503
 
 [[menu.main]]
 	name   = "Tracking"
 	url    = "faqs/tracking/"
 	parent = "faqs"
-	weight = 505
+	weight = 504
 
 [[menu.main]]
 	name   = "Booking URLs"
 	url    = "faqs/booking-url/"
 	parent = "faqs"
-	weight = 506
+	weight = 505
 
 [[menu.main]]
     weight = 599
