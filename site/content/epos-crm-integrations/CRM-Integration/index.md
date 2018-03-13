@@ -33,7 +33,7 @@ It will then be up to your CRM system to access our API and pull the relevant da
 
 ## Collins/Fishbowl Integration Overview
 
-The Collins/Fishbowl integration is set up differently as it is a fixed connection to their API, so that when new customers/bookings are added to Collins, they will automatically push to Fishbowl (if the customer has opted in for your marketing permission). The data possible to be pushed is decided by the paramaters available in your Fishbowl account.
+The Collins/Fishbowl integration is set up differently as it is a fixed connection to their API, so that when new customers/bookings are added to Collins, the customer details will automatically push to Fishbowl (if the customer has opted in for your marketing permission). The data possible to be pushed is decided by the paramaters available in your Fishbowl account.
 
 ## Setting up the Collins/Fishbowl Integration
 
@@ -51,6 +51,22 @@ So if you would like to test the integration, you can create a test booking in y
 If the marketing permission is changed on Collins so that marketing permission is ticked, the customer details will automatically pushed to Fishbowl. 
 
 If the marketing permission is changed in Collins so that marketing permission is **not** ticked, but the customer already exists as subscribed in Fishbowl, you will have to manually update your Fishbowl list.
+
+**2. Is it possible for Collins to push booking details (in addition to customer details)?**
+
+By default, the integration is set up to only allow Collins to send customer details to Fishbowl.
+
+It is possible for Collins to push additional details. Depending on what data you are looking to collect, you will need to check that Fishbowl can handle different formats.
+
+For example, we need to pass labels as a comma-separated string. Fishbowl will need to split them up and be able to store them separately. 
+
+You will be able to set up to receive additional data. To do this: 
+
+1. Set up another profile field in your Enterprise for the additional data you wish to collect 
+2. Let your Collins Account Manager know the name of the field that you have set up
+3. Collins will then be able to pass the additional details as part of the QS send of new members
+
+**_Please note:_** depending on our tech roadmap, it can take our tech team up to two weeks to update/set up this integration. 
 
 ## Collins/Zonal CRM Integration Overview
 
