@@ -14,12 +14,12 @@
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="http://developers.designmynight.com/faqs/tracking/">
+    <link rel="canonical" href="http://developers.designmynight.com/collins-onboarding/booking-widget/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="http://developers.designmynight.com/faqs/tracking/">
+    <meta property="og:url" content="http://developers.designmynight.com/collins-onboarding/booking-widget/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="http://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -1039,67 +1039,187 @@
 
 			
 
-<h1 id="tracking">Tracking</h1>
+<h1 id="adding-your-collins-booking-widget-to-your-website">Adding your Collins booking widget to your website</h1>
 
-<p>There are 3 ways you can look at tracking:</p>
+<h2 id="how-to-add-the-widget-to-wordpress">How to add the widget to Wordpress</h2>
 
-<h2 id="google-facebook-tracking">Google/Facebook Tracking</h2>
+<p>Here’s a guide to help you <a href="https://en.support.wordpress.com/widgets/custom-html-widget/">Add the booking widget to your Wordpress site</a></p>
 
-<p>Putting Google/Facebook code on the first enquire button in the CSS (this isn&rsquo;t tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on <a href="https://collins.uservoice.com/knowledgebase/articles/863856-adding-google-analytics-tracking-code-to-the-booki">Adding Google Analytics Tracking Code to the booking widget</a>.</p>
+<p><strong><em>Please note:</em></strong> you will need to upgrade to the Business Plan to be able to add the widget code to your site.</p>
 
-<h2 id="custom-return-url">Custom return URL</h2>
+<p>Examples of partners using a Wordpress site:</p>
 
-<p>You can create a custom return URL for users to be directed to when they complete their booking. That way you&rsquo;d be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have, but you would have control over your own analytics etc completely.</p>
+<p><a href="https://www.humblegrape.co.uk/wine-bar/islington/">Humble Grape Battersea</a></p>
 
-<p>To do this you need to create the return URL on the  venue site then set it using custom script after your partner form:</p>
+<p><a href="https://stablepizza.com/book-a-table/">The Stable</a></p>
 
-<pre><code>&lt;script&gt;
-  DMN.val('return_url', 'https://www.your-return-url.com/booking-complete');
-&lt;/script&gt; 
-</code></pre>
+<h2 id="how-to-add-the-widget-to-squarespace">How to add the widget to Squarespace</h2>
 
-<p>The booking info will be passed back in the URL.​</p>
+<p>Here’s a guide to help you <a href="https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-HTML-CSS-and-JavaScript">Add the booking widget to your Squarespace site</a></p>
 
-<p>An example of a venue that has done this is Dirty Martini - <a href="http://dirtymartini.uk.com/booking-thank-you/?dm_website_page=97&amp;_id=589deca000d1e96b4f8b462f&amp;auto_confirmed=false&amp;created_by=568e86b3d1dd9afd2e8b45f0&amp;created_date=2017-02-10T16%3A38%3A56&amp;date=2017-04-26T00%3A00%3A00&amp;email=chris%40designmynight.com&amp;first_name=Chris&amp;last_name=DMN%20TEST%20PLEASE%20DELETE&amp;last_updated=2017-02-10T16%3A38%3A56&amp;num_people=8&amp;reference=DMN-13023321229&amp;source=partner&amp;source_details=%7B%22user_agent%22%3A%22Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20WOW64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F56.0.2924.87%20Safari%2F537.36%22%2C%22session_id%22%3A%22ovi0lni5384q5hi61pn3tha8m4%22%2C%22remote_ip%22%3A%2292.233.138.238%22%2C%22referrer%22%3A%22https%3A%2F%2Fwww.designmynight.com%2Fbook%3Fvenue_id%3D51f0ee830df690f05000092b%26venue_group%3D514ada610df690b6770000e2%26type%3D521613050df690aa60000fe7%26num_people%3D8%26date%3D2017-4-26%26time%3D17%3A00%26duration%3D60%26notes%3D%26locale%3Den-GB%26format%3Dmodal%26source%3Dpartner%26return_url%3Dhttp%3A%2F%2Fdirtymartini.uk.com%2Fbooking-thank-you%2F%3Fdm_website_page%3D97%22%7D&amp;status=received&amp;time=17%3A00&amp;type=%7B%22guestlist%22%3Afalse%2C%22id%22%3A%22521613050df690aa60000fe7%22%2C%22name%22%3A%22Area%22%2C%22private_hire%22%3Afalse%7D&amp;venue_id=51f0ee830df690f05000092b">Dirty Martini Thank You</a></p>
+<p><strong><em>Please note:</em></strong> you need to add a <strong>Code Block</strong>, not an Embed Block.</p>
 
-<p><strong><em>Please note:</em></strong> the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format.</p>
+<p>Examples of partners using a Squarespace site:</p>
 
-<h2 id="using-our-api-big-tech-build-we-do-not-recommend">Using our API <em>(big tech build, we do not recommend)</em></h2>
+<p><a href="https://www.dokke.co.uk/private-bookings/">Dokke</a></p>
 
-<p>Use our API to build out your own checkout which you can track completely as you want then you can do whatever you want - big tech build - <a href="developers.designmynight.com">developers.designmynight.com</a></p>
+<p><a href="https://www.littlenans.co.uk/make-a-booking/">Little Nan&rsquo;s</a></p>
 
-<h2 id="tracking-faqs">Tracking FAQs</h2>
+<p><a href="http://novicambridge.co.uk/reservations/">Novi Cambridge</a></p>
 
-<p><strong>1. All the details captured from the user are returned in the query string within my return URL. Is is possible to stop this?</strong></p>
+<h2 id="how-to-add-the-widget-to-wix">How to add the widget to Wix</h2>
 
-<p>Yes. Add the following code underneath your existing <code>return_url</code>:</p>
+<p>Here&rsquo;s a guide to help you <a href="https://support.wix.com/en/article/adding-html-code">Add the booking widget to your Wix site</a></p>
 
-<pre><code>DMN.val('return_method', 'post');
-</code></pre>
+<p>Example of partners using a Wix site:</p>
 
-<p><strong>2. What information should we include in the custom return URL?</strong></p>
+<p><a href="https://www.duckduckgooselondon.com/">Duck Duck Goose</a></p>
 
-<p>All customers will automatically receive an Enquiry Received/Booking Confirmation email once they have completed their enquiry/booking (and reach your custom return URL page). As these emails will include a full summary of their enquiry/bookings (including their DMN Booking refence), it&rsquo;s not necessary to show these details on your return URL. We would recommend to have a generic &lsquo;Thanks for enquiry/booking&rsquo; message.</p>
+<h2 id="how-to-add-the-widget-to-facebook">How to add the widget to Facebook</h2>
 
-<p>This table describes which <a href="http://developers.designmynight.com/booking-api/#submitting-through-the-web">enquiry/booking details will be sent with the redirect to the return URL</a></p>
+<p>Here&rsquo;s a guide to help you <a href="https://collins.uservoice.com/knowledgebase/articles/478066-facebook-widget-set-up">Add the booking widget to your Facebook page</a></p>
 
-<p><strong>3. How do we get the booking reference number on our custom return URL page?</strong></p>
+<p>Examples of partners using the Facebook Widget:</p>
 
-<p>It will be fed back through the url. This script will parse the url and get the booking parameters out.</p>
+<p><a href="https://www.facebook.com/AndinaLondon/app/668769669862814/">Andina London</a></p>
 
-<pre><code>&lt;script&gt;
-  var queryParams = document.location.search.substr(1).split('&amp;');
-  var paramsEl = document.getElementById('all-params');
- 
-for ( var i = 0; i &lt; queryParams.length; i++ ){
-  var currentParam = queryParams[i];
-  var paramParts = currentParam.split('=');
- 
-  paramsEl.innerHTML += '&lt;li&gt;' + paramParts[0] + ': ' + paramParts[1];
+<p><a href="https://www.facebook.com/thegentlemenbaristas/app/668769669862814/">The Gentlemen Baristas</a></p>
+
+<h2 id="customising-your-collins-booking-widget">Customising your Collins booking widget</h2>
+
+<p>Since the booking form is inserted into your own website, it will automatically pick up any applicable CSS, so it can completely match the look and feel of your website.</p>
+
+<p>You can customise the look of your widget. To help you with customising your widget, here&rsquo;s a useful guide to help you <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">override the CSS</a>. You can also have a look through these <a href="https://docs.google.com/document/d/1VJ4sdW05MMdq1vGnEkFq2A2HQ2LjKzl3315Pu1hLBmI/edit">examples</a> of what other venues have done (to get an idea of what can be done).</p>
+
+<h2 id="how-to-customise-your-widget-on-squarespace">How to customise your widget on Squarespace</h2>
+
+<p>In the Code Block that you added to create your widget, you can add in specific rules to the CSS that applies to the booking form.</p>
+
+<p>To add CSS code, you will have to surround your CSS code with <code>&lt;style&gt;&lt;/style&gt;</code> tags.</p>
+
+<h2 id="how-to-customise-the-wording-of-the-make-an-enquiry-header-and-enquire-now-button">How to customise the wording of the &ldquo;Make an Enquiry&rdquo; header and &ldquo;Enquire Now&rdquo; button</h2>
+
+<p>As standard, the widget comes with &ldquo;Make an Enquiry&rdquo; as the header and &ldquo;Enquire Now&rdquo; on the button. Your web developer will be able to amend the wording of these should you wish (for example, if all your booking types are set to <a href="https://collins.uservoice.com/knowledgebase/articles/973384-booking-types-setting-up-an-auto-confirm-only-bo">auto-confirm only</a>, you may wish to have the button say &ldquo;Book Now&rdquo;).</p>
+
+<p>Your web developer will need to create images that you would like to replace the Header/Button with. Your web developer will then need to override the CSS of the specific <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">form element</a>.</p>
+
+<p>If you are replacing the image of the header:</p>
+
+<pre><code>.dmn-form h1 {
+  background-image: url('https://example.com/path/to/image.png');
 }
-&lt;/script&gt;
-  &lt;div id=&quot;all-params&quot;&gt;
 </code></pre>
+
+<p>If you are replacing the image of the button:</p>
+
+<pre><code>.dmn-form button.submit {
+  background-image: url('https://example.com/path/to/image.png');
+}
+</code></pre>
+
+<p>Here are some great examples of customised headers/buttons that our partners have created:</p>
+
+<p><a href="http://www.wahaca.co.uk/locations/covent-garden/">Wahaca</a></p>
+
+<p><a href="http://www.buffaloandrye.co.uk/">Buffalo &amp; Rye</a></p>
+
+<h2 id="setting-up-multilingual-widgets">Setting up Multilingual Widgets</h2>
+
+<p>Collins gives you the option to display your booking widget in the following additional languages:</p>
+
+<ul>
+<li>Dutch</li>
+<li>French</li>
+<li>German</li>
+<li>Spanish</li>
+</ul>
+
+<p>If you would like your booking widget to display in multiple languages , you will have to first set up the <a href="https://collins.uservoice.com/knowledgebase/articles/1829417-widget-setting-up-multi-lingual-widgets-transla">translations in your Collins settings</a></p>
+
+<p>Once your Translation has been set up in Collins, your web developer will have to add an extra piece of code to your widget script.</p>
+
+<p>After your Venue ID, please add <code>&amp;locales=</code> followed by the code for the language that you wish to add to your widget. Add multiple languages separated by a comma.</p>
+
+<p>English <code>en-GB</code></p>
+
+<p>Dutch <code>nl-NL</code></p>
+
+<p>French <code>fr-FR</code></p>
+
+<p>German <code>de-DE</code></p>
+
+<p>Example: this widget will display both English and German options:</p>
+
+<pre><code>&lt;script
+ src=&quot;//partners.designmynight.com/pf/js?venue_id=59d759f1cf53f24ceb4fbff0&amp;locales=en-GB,de-DE&quot; id=&quot;dmn-js&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+
+<p>Example of a partner with a French booking widget: <a href="http://www.waikiki-courchevel.com/bookings/?lang=fr">Waikiki</a></p>
+
+<p><strong><em>Please note:</em></strong> Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">customise the size of the widget</a>.</p>
+
+<h2 id="multiple-booking-widgets">Multiple Booking Widgets</h2>
+
+<p>If you have added multiple Collins booking widgets to your website but are looking to target each specific form (for example so that you can use Google Analytics for both widgets).</p>
+
+<p>Forms are accessed by their ID, but there&rsquo;s currently no way to set the ID for a particular form. Instead, you&rsquo;d need to retrieve the numerical ID from the form&rsquo;s ID attribute once it&rsquo;s been written to the page, using something like this, changing the <code>getElementById</code> part to something that identifies a container of the form you want to target:</p>
+
+<pre><code>var formId = document.getElementById('form-container').getElementsByClassName('dmn-form')[0].getAttribute('id').substr('dmn-form-'.length);
+</code></pre>
+
+<p>Once you have the ID you can then set values on that particular form by passing an object to <code>DMN.val()</code> like this:</p>
+
+<pre><code>DMN.val({field: 'time', value: '22:00', formId: formId})
+
+
+
+</code></pre>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>If your booking widget is not appearing as expected, we recommend that you test your widget codes on <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a> (this is a website to test codes). To test your widget code:</p>
+
+<ol>
+<li>Copy your widget code (this can be found in your <a href="https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes">Collins admin settings</a>)</li>
+<li>Go to <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a></li>
+<li>Paste your widget code</li>
+<li>Click Run</li>
+</ol>
+
+<p>You should then see the widget on the right side of the screen which you can make a test booking for/play around with.</p>
+
+<p>If the widget is appearing and working correctly on Plunker, this means that the issue is isolated to your own website. This means that the issue will be caused by conflicting styles on your website and your web developer will need to take a closer look at your CSS or Javascript.</p>
+
+<h2 id="booking-widget-faqs">Booking Widget FAQs</h2>
+
+<p><strong>1. Is it possible to add Placeholder Text in the fields?</strong></p>
+
+<p>You wouldn&rsquo;t be able to add placeholder text through our JS API. However, you could change it using a library like jquery or vanilla JS to add a placeholder to the element.</p>
+
+<p>Alternatively, you could set the background image of an input with CSS - guide here to help you <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">style the booking widget</a>.</p>
+
+<p><strong>2. The dates on my calendar are not showing correctly!</strong></p>
+
+<p>If you have tested the widget code on <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a> and the issue is isolated to your website, your web developer will have to look at the CSS styling or Javascript on your page which is interfering with the code.</p>
+
+<p><strong>3. The drop down options on my widget fields are only visible when you hover over them. How do I  get all available drop down options to be visible for the customer to select?</strong></p>
+
+<p>If the colour of the <strong>Form Components</strong> is too similar a colour to the <strong>Input Labels</strong>, it can make it difficult for customers to view and select options.</p>
+
+<p>Your web developer should amend the CSS to tweak the colours used in your <a href="http://developers.designmynight.com/booking-widget/#styling-the-form">Form Components and Input Labels</a>.</p>
+
+<p><strong>4. By default, the second iFrame is a pop up. Is it possible to direct to a booking page (which is not a pop up)?</strong></p>
+
+<p>The modal styling can be customised with CSS. It will either open an iframe within a modal, or redirect to the booking page depending on available screen size. Your web developer will be able to customise the size to dictate what happens.</p>
+
+<p>Here&rsquo;s an example of what the second iFrame could look like: <a href="https://www.designmynight.com/book?venue_id=59157f51ff52d61204696b4c&amp;venue_group=59157fe4ff52d613565b24aa&amp;type=591ec9ca05b6e0052806695e&amp;num_people=4&amp;date=2017-8-17&amp;time=09:00&amp;duration=120&amp;notes=&amp;locale=en-GB&amp;source=partner&amp;stylesheet=alexanders">Alexander&rsquo;s</a></p>
+
+<p><strong>5. I&rsquo;ve added the widget code to my site but when I click the &lsquo;Enquire Now&rsquo; button, the second iFrame is hidden behind elements of my website. This is affecting customers&rsquo; ability to complete their booking/enquiry. What could be causing this?</strong></p>
+
+<p>If this is isolated to your own website, your web developer will have to look at the CSS styling or Javascript on your page which is interfering with the code.</p>
+
+<p>For example, specific elements of your website may have been set a very high <code>z-index</code> which is causing the elements to appear on top over everything else on the page (including the Collins second iFrame).</p>
 
 			
 			<aside class="copyright" role="note">
@@ -1120,7 +1240,7 @@ for ( var i = 0; i &lt; queryParams.length; i++ ){
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://developers.designmynight.com/faqs/updating-your-email-settings/" title="">
+      <a href="http://developers.designmynight.com/collins-onboarding/customising-2nd-iframe/" title="">
         <span class="direction">
           Previous
         </span>
@@ -1140,7 +1260,7 @@ for ( var i = 0; i &lt; queryParams.length; i++ ){
 
   <div class="next">
   
-      <a href="http://developers.designmynight.com/faqs/taking-bookings-from-google/" title="">
+      <a href="http://developers.designmynight.com/collins-onboarding/booking-url/" title="">
         <span class="direction">
           Next
         </span>
