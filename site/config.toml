@@ -220,9 +220,6 @@ googleAnalytics = "UA-12385609-13"
     name = "          "
 
 
-[[menu.main]]
-    weight = 599
-    name = "            "
 
 [blackfriday]
 	smartypants	= true
