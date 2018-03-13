@@ -14,12 +14,12 @@
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="http://developers.designmynight.com/faqs/customising-2nd-iframe/">
+    <link rel="canonical" href="http://developers.designmynight.com/collins-onboarding/customising-email-templates/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="http://developers.designmynight.com/faqs/customising-2nd-iframe/">
+    <meta property="og:url" content="http://developers.designmynight.com/collins-onboarding/customising-email-templates/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="http://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -985,62 +985,76 @@
 
 			
 
-<h2 id="customising-the-2nd-iframe-of-your-collins-booking-widget">Customising the 2nd iFrame of your Collins booking widget</h2>
+<h1 id="customising-your-email-templates">Customising your email templates</h1>
 
-<p>You are able to customise the 2nd iframe on your Collins booking widget to better suit the feel of your website.</p>
+<p>You can choose to have customised email templates. As part of customising your templates, you will be able to customise your header and footers. This is a great way to add your social media handles and icons, address, etc.</p>
 
-<p><strong>To customise your 2nd iFrame, your web developer would need to:</strong></p>
+<p>It’s worth mentioning that the booking summary and any automated copy that you have set up in Collins, will automatically fill the middle section of the email. This is the &lsquo;non-customisable data&rsquo; of the HTML template. Your web developer will, however, be able to add CSS rules to customise the styling of the non-customisable content.</p>
+
+<p>Here is a <a href="https://docs.google.com/document/d/1o5EMw0QcMXiaAvHjbTI11WAAwb1pydo0GbILGqbIpro/edit?usp=sharing">basic HTML template</a> that you can work from when customising email templates. There are comments in the code to guide developers. You&rsquo;ll need to provide us with these in full HTML for us to be able to upload them.</p>
+
+<p>We would recommend creating one general email template which can be used for all your outgoing emails from Collins.</p>
+
+<p>It&rsquo;s worth noting that depending on your HTML code, the emails may look slightly different in different mail clients (Gmail, hotmail, etc). This is because there can be code in your HTML that is not supported by a specific client. It is important that you do cross email client checks with your email templates before you send them to us to upload.</p>
+
+<p><strong><em>Please note:</em></strong> depending on our tech roadmap, it can take our tech team up to two weeks to upload your customised email templates.</p>
+
+<h2 id="examples-of-html-templates">Examples of HTML templates</h2>
+
+<p>For the best results, we would recommend that you do the following:</p>
 
 <ol>
-<li><p>Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).</p></li>
+<li><p>Add a background image. As this will repeat as you scroll down the email (depending on the length of the email content), we would recommend that you use a repeatable and symmetrical background image to ensure that the background is fully covered.</p></li>
 
-<li><p>We add this CSS URL to our system for your venue group, with a name eg app</p></li>
-
-<li><p>When you add the form to your page, you add some code to tell our page which CSS to load, eg</p></li>
+<li><p>Add your social media handle details and venue details (eg venue address) in the footer of the email.</p></li>
 </ol>
 
-<pre><code>&lt;script&gt;
-  DMN.val('stylesheet', 'app');  
-&lt;/script&gt;
-</code></pre>
+<p>Here are some great examples of customised emails that our partners have created to get an idea:</p>
 
-<p>When the booking form loads, it will also load your CSS so you can override whatever is on the book page.</p>
+<p><a href="https://static.designmynight.com/uploads/2017/11/Alexanders-Example-optimised.png">Alexander&rsquo;s</a></p>
 
-<h2 id="customising-2nd-iframe-faqs">Customising 2nd iFrame FAQs</h2>
+<p><a href="https://static.designmynight.com/uploads/2017/11/Andina-Example-optimised.png">Casita Andina</a></p>
 
-<p><strong>1. When scrolling on a different device/screen size, the 2nd iFrame isn’t fully showing?</strong></p>
+<h2 id="customising-email-templates-faqs">Customising Email Templates FAQs</h2>
 
-<p>The standard 2nd iFrame will fully show on all devices and screen sizes.</p>
+<p><strong>1. What can/can’t I change on my email templates?</strong></p>
 
-<p>If your 2nd iFrame is not fully showing, it’s likely that you have a CSS style on your own website which is overwriting the height of the iFrame.</p>
+<p><strong>You can change the following things by overriding the CSS:</strong></p>
 
-<p>Your web developer will have to look at the CSS that has been added to the customised 2nd iFrame.</p>
+<ul>
+<li>Amend the colour of your background</li>
+<li>Add a background images</li>
+<li>Add in hyperlinked images in your header and footer. This is particularly useful for adding in links to your social media accounts to the email footer.</li>
+</ul>
 
-<p><strong>2. When customising our second iFrame, which fields are we able to hide?</strong></p>
+<p><strong>You are currently unable to change/add the following:</strong></p>
 
-<p>You are able to remove only the fields that are <strong>not</strong> required to complete the enquiry.</p>
+<ul>
+<li>Colour and font of the payment/card auth request buttons</li>
+<li>Colour/visibility of the purple booking Confirmation tick icon</li>
+<li>Colours/visibility of the location, cancellation, add to calendar, change your booking icons.</li>
+<li>You are unable to add an option for customers to unsubscribe from the emails as customers are unable to unsubscribe from transactional emails (so that we can ensure that they receive relevant updates about their bookings).</li>
+<li>You are unable to add the option to ‘view in a browser’ as we do not have that option with these transactional emails.</li>
+<li>Wording of the ‘Thanks for booking and have a great time at VENUE’</li>
+<li>You are unable to amend the format of the date showing in the booking summary in the emails eg from 9 May 2017 to display as Tuesday 9 May 2017</li>
+</ul>
 
-<p>For example, you will be able to hide the birthday field as long as it has not been made a <a href="https://collins.uservoice.com/knowledgebase/articles/1112770-booking-types-making-the-birthday-field-mandator">mandatory field in your Collins settings</a>.</p>
+<p><strong>2. Are there any required dimensions for the email templates?</strong></p>
 
-<p>You are also able to remove both marketing permission opt-ins (for your venue and DesignMyNight.com).</p>
+<p>There isn&rsquo;t a fixed width for our email template but the main content of the majority of templates is 600px wide. The majority of email clients do not support CSS media queries, so we recommend sticking to a 600px width for content in order for the emails to look good across all devices. Sticking to 600px will also prevent any clipping on emails containing a lot of content.</p>
 
-<p>To be able to hide these in your custom iFrames, your web developer will have to override the styling on the page.</p>
+<p>The height of the email varies depending on the content. If using a custom background, please bare this in mind. We recommend using repeatable and symmetrical background images to ensure the background is covered.</p>
 
-<p><strong>3 We have multiple venues in our venue group. Are we able to load style sheets for each individual venue within the group?</strong></p>
+<p><strong>3. Can we customise the fonts used in the emails?</strong></p>
 
-<p>We can set up multiple style sheets eg we could name them &lsquo;app&rsquo; and &lsquo;website&rsquo;. Your code will just specify the stylesheet you want at the time eg:</p>
+<p>Unfortunately, the majority of web email clients don&rsquo;t support rendering custom fonts. If you want to support the ones that do, you will need to ensure that you provide web safe fonts.</p>
 
-<pre><code>&lt;script&gt;
-  DMN.val('stylesheet', 'app');
-  &lt;/script&gt;
-</code></pre>
+<p>Here are a couple of guides to help:</p>
 
-<p>and</p>
-
-<pre><code>&lt;script&gt;
-  DMN.val('stylesheet', 'website');
-  &lt;/script&gt;
-</code></pre>
+<ul>
+<li><a href="https://www.campaignmonitor.com/css/text-fonts/font/">CSS support across different web email clients</a></li>
+<li><a href="https://websitesetup.org/web-safe-fonts-html-css/">Web Safe Fonts</a></li>
+</ul>
 
 			
 			<aside class="copyright" role="note">
@@ -1061,7 +1075,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://developers.designmynight.com/faqs/customising-email-templates/" title="">
+      <a href="http://developers.designmynight.com/collins-onboarding/general-enquiry-form/" title="">
         <span class="direction">
           Previous
         </span>
@@ -1081,7 +1095,7 @@
 
   <div class="next">
   
-      <a href="http://developers.designmynight.com/faqs/booking-widget-faqs/" title="">
+      <a href="http://developers.designmynight.com/collins-onboarding/customising-2nd-iframe/" title="">
         <span class="direction">
           Next
         </span>
