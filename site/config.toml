@@ -93,6 +93,12 @@ googleAnalytics = "UA-12385609-13"
 	weight = 202
 
 [[menu.main]]
+	name   = "Booking URLs"
+	url    = "collins-onboarding/booking-url/"
+	parent = "collins-onboarding"
+	weight = 203
+
+[[menu.main]]
     weight = 299
     name = " "
 
@@ -212,11 +218,7 @@ googleAnalytics = "UA-12385609-13"
 	parent = "faqs"
 	weight = 504
 
-[[menu.main]]
-	name   = "Booking URLs"
-	url    = "faqs/booking-url/"
-	parent = "faqs"
-	weight = 505
+
 
 [[menu.main]]
     weight = 599
