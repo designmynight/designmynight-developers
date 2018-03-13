@@ -117,6 +117,13 @@ googleAnalytics = "UA-12385609-13"
 	weight = 205
 
 [[menu.main]]
+	name   = "Tracking"
+	url    = "collins-onboarding/tracking/"
+	parent = "collins-onboarding"
+	weight = 206
+
+
+[[menu.main]]
     weight = 299
     name = " "
 
@@ -218,12 +225,6 @@ googleAnalytics = "UA-12385609-13"
 	parent = "faqs"
 	weight = 501
 
-
-[[menu.main]]
-	name   = "Tracking"
-	url    = "faqs/tracking/"
-	parent = "faqs"
-	weight = 504
 
 
 
