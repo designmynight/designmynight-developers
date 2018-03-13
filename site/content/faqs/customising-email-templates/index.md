@@ -55,6 +55,9 @@ The height of the email varies depending on the content. If using a custom backg
 
 Unfortunately, the majority of web email clients don't support rendering custom fonts. If you want to support the ones that do, you will need to ensure that you provide web safe fonts. 
 
-Here's a guide to help you know [the CSS support across different web email clients](https://www.campaignmonitor.com/css/text-fonts/font/)
+Here are a couple of guides to help:
+
+* [CSS support across different web email clients](https://www.campaignmonitor.com/css/text-fonts/font/)
+* [Web Safe Fonts](https://websitesetup.org/web-safe-fonts-html-css/)
 
 
