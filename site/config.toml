@@ -103,6 +103,12 @@ googleAnalytics = "UA-12385609-13"
 	url    = "collins-onboarding/general-enquiry-form/"
 	parent = "collins-onboarding"
 	weight = 204
+	
+[[menu.main]]
+	name   = "Customising Email Templates"
+	url    = "collins-onboarding/customising-email-templates/"
+	parent = "collins-onboarding"
+	weight = 204
 
 [[menu.main]]
     weight = 299
