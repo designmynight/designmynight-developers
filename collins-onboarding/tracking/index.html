@@ -14,12 +14,12 @@
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="http://developers.designmynight.com/faqs/general-enquiry-form/">
+    <link rel="canonical" href="http://developers.designmynight.com/collins-onboarding/tracking/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="http://developers.designmynight.com/faqs/general-enquiry-form/">
+    <meta property="og:url" content="http://developers.designmynight.com/collins-onboarding/tracking/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="http://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -1029,70 +1029,67 @@
 
 			
 
-<h1 id="contact-us-general-enquiry-form">Contact Us/General Enquiry Form</h1>
+<h1 id="tracking">Tracking</h1>
 
-<p>As well as a Collins booking widget, you can also personalise your own Contact Us/General Enquiry form which feeds into your Collins.</p>
+<p>There are 3 ways you can look at tracking:</p>
 
-<p>Here&rsquo;s an example of a partner with a customised enquiry form: <a href="https://www.no4cliftonvillage.co.uk/contact-us/">No. 4 Clifton Village</a></p>
+<h2 id="google-facebook-tracking">Google/Facebook Tracking</h2>
 
-<p><strong>To create your own personalised Enquiry form:</strong></p>
+<p>Putting Google/Facebook code on the first enquire button in the CSS (this isn&rsquo;t tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on <a href="https://collins.uservoice.com/knowledgebase/articles/863856-adding-google-analytics-tracking-code-to-the-booki">Adding Google Analytics Tracking Code to the booking widget</a>.</p>
 
-<p><strong>1.</strong> Create your own form display on your website. Here&rsquo;s a <a href="https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit">Basic Enquiry Form Example</a> to use. You and your web developer will be responsible for the look of your personalised form and which fields are included.</p>
+<h2 id="custom-return-url">Custom return URL</h2>
 
-<p><strong>2.</strong> For any standard Collins booking fields used in your form (First Name, Last Name, Email, Phone, DOB, Newsletter Sign Up), please use these <a href="http://developers.designmynight.com/booking-api/#submitting-through-the-api">Standard Collins booking field names</a>.
-This will ensure that these field details will pull through to the respective fields in your Collins enquiry.</p>
+<p>You can create a custom return URL for users to be directed to when they complete their booking. That way you&rsquo;d be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have, but you would have control over your own analytics etc completely.</p>
 
-<p><strong>3.</strong> For any non-standard enquiry fields that you would like to use, you will have to add them to your Collins admin. This will create technical names that you can give to your web developer to map them in your web form.</p>
+<p>To do this you need to create the return URL on the  venue site then set it using custom script after your partner form:</p>
 
-<p><strong>To add a new enquiry field:</strong></p>
+<pre><code>&lt;script&gt;
+  DMN.val('return_url', 'https://www.your-return-url.com/booking-complete');
+&lt;/script&gt; 
+</code></pre>
 
-<ol>
-<li>Log onto your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
-<li>Go to Settings &gt; Venue Group &gt; Enquiries</li>
-<li>Tick the box &lsquo;Enable Enquiries&rsquo;</li>
-<li>In Enquiy Fields section, click to &lsquo;Add a Field&rsquo;</li>
-<li>You will then have to add the following details:</li>
-</ol>
+<p>The booking info will be passed back in the URL.​</p>
 
-<p><strong>Field Label</strong> - <em>once this has been added, the Field Names will auto-populate. This is what your web developer will require</em></p>
+<p>An example of a venue that has done this is Dirty Martini - <a href="http://dirtymartini.uk.com/booking-thank-you/?dm_website_page=97&amp;_id=589deca000d1e96b4f8b462f&amp;auto_confirmed=false&amp;created_by=568e86b3d1dd9afd2e8b45f0&amp;created_date=2017-02-10T16%3A38%3A56&amp;date=2017-04-26T00%3A00%3A00&amp;email=chris%40designmynight.com&amp;first_name=Chris&amp;last_name=DMN%20TEST%20PLEASE%20DELETE&amp;last_updated=2017-02-10T16%3A38%3A56&amp;num_people=8&amp;reference=DMN-13023321229&amp;source=partner&amp;source_details=%7B%22user_agent%22%3A%22Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20WOW64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F56.0.2924.87%20Safari%2F537.36%22%2C%22session_id%22%3A%22ovi0lni5384q5hi61pn3tha8m4%22%2C%22remote_ip%22%3A%2292.233.138.238%22%2C%22referrer%22%3A%22https%3A%2F%2Fwww.designmynight.com%2Fbook%3Fvenue_id%3D51f0ee830df690f05000092b%26venue_group%3D514ada610df690b6770000e2%26type%3D521613050df690aa60000fe7%26num_people%3D8%26date%3D2017-4-26%26time%3D17%3A00%26duration%3D60%26notes%3D%26locale%3Den-GB%26format%3Dmodal%26source%3Dpartner%26return_url%3Dhttp%3A%2F%2Fdirtymartini.uk.com%2Fbooking-thank-you%2F%3Fdm_website_page%3D97%22%7D&amp;status=received&amp;time=17%3A00&amp;type=%7B%22guestlist%22%3Afalse%2C%22id%22%3A%22521613050df690aa60000fe7%22%2C%22name%22%3A%22Area%22%2C%22private_hire%22%3Afalse%7D&amp;venue_id=51f0ee830df690f05000092b">Dirty Martini Thank You</a></p>
 
-<p><strong>Field Type</strong> - <em>select from the drop down the type of field (eg Free Text, Yes/No, Pick One etc)</em></p>
+<p><strong><em>Please note:</em></strong> the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format.</p>
 
-<ol>
-<li>Click SAVE</li>
-</ol>
+<h2 id="using-our-api-big-tech-build-we-do-not-recommend">Using our API <em>(big tech build, we do not recommend)</em></h2>
 
-<p>Once the Enquiry Field has been added, please give your web developer the <strong>Field Names</strong>. They will use this to map these custom enquiry fields in your web form.</p>
+<p>Use our API to build out your own checkout which you can track completely as you want then you can do whatever you want - big tech build - <a href="developers.designmynight.com">developers.designmynight.com</a></p>
 
-<p><strong>4.</strong> When posting custom enquiry fields to Collins, the name of the inputs needs to be <code>enquiry_details[&lt;key&gt;]</code> where <code>&lt;key&gt;</code> is the <strong>Field Name</strong> of the Enquiry Field that you have create and passed on to your developer.</p>
+<h2 id="tracking-faqs">Tracking FAQs</h2>
 
-<p><strong>5.</strong> Your web developer needs to post your form to <a href="https://www.designmynight.com/book">https://www.designmynight.com/book</a></p>
+<p><strong>1. All the details captured from the user are returned in the query string within my return URL. Is is possible to stop this?</strong></p>
 
-<p><strong>6.</strong> Your web developer will also need to include the following fields to identify as being an enquiry for your venue group:</p>
+<p>Yes. Add the following code underneath your existing <code>return_url</code>:</p>
 
-<ul>
-<li><code>enquiry_type=enquiry</code></li>
-<li><code>source=partner</code></li>
-<li><code>venue_group= **you can get this from your Account Manager**</code></li>
-</ul>
+<pre><code>DMN.val('return_method', 'post');
+</code></pre>
 
-<p><strong><em>Please note:</em></strong>  If the action of the form is a direct post to www.designmynight.com/book, then you will need to add these three fields as hidden fields, for example:</p>
+<p><strong>2. What information should we include in the custom return URL?</strong></p>
 
-<p><code>&lt;input type=&quot;hidden&quot; name=&quot;enquiry_type&quot; value=&quot;enquiry&quot;&gt;</code></p>
+<p>All customers will automatically receive an Enquiry Received/Booking Confirmation email once they have completed their enquiry/booking (and reach your custom return URL page). As these emails will include a full summary of their enquiry/bookings (including their DMN Booking refence), it&rsquo;s not necessary to show these details on your return URL. We would recommend to have a generic &lsquo;Thanks for enquiry/booking&rsquo; message.</p>
 
-<p><code>&lt;input type=&quot;hidden&quot; name=&quot;source&quot; value=&quot;partner&quot;&gt;</code></p>
+<p>This table describes which <a href="http://developers.designmynight.com/booking-api/#submitting-through-the-web">enquiry/booking details will be sent with the redirect to the return URL</a></p>
 
-<p><code>&lt;input type=&quot;hidden&quot; name=&quot;venue_group&quot; value=&quot;VENUEGROUPID&quot;&gt;</code></p>
+<p><strong>3. How do we get the booking reference number on our custom return URL page?</strong></p>
 
-<p>Where you will have to replace the VENUEGROUPID given from your Account Manager.</p>
+<p>It will be fed back through the url. This script will parse the url and get the booking parameters out.</p>
 
-<p>If you are posting the form independently, then you will need to make sure these three fields are added to the final payload posted to www.designmynight.com/book.</p>
-
-<h2 id="general-enquiry-form-faqs">General Enquiry Form FAQs</h2>
-
-<p><strong>1. Do you support XHR or cross origin requests?</strong></p>
-
-<p>We do not currently support submitting XHR requests for  bespoke enquiries. In order to customise the confirmation page, please add a <code>return_url</code> parameter. The response data will be forwarded onto your return url as url parameters.</p>
+<pre><code>&lt;script&gt;
+  var queryParams = document.location.search.substr(1).split('&amp;');
+  var paramsEl = document.getElementById('all-params');
+ 
+for ( var i = 0; i &lt; queryParams.length; i++ ){
+  var currentParam = queryParams[i];
+  var paramParts = currentParam.split('=');
+ 
+  paramsEl.innerHTML += '&lt;li&gt;' + paramParts[0] + ': ' + paramParts[1];
+}
+&lt;/script&gt;
+  &lt;div id=&quot;all-params&quot;&gt;
+</code></pre>
 
 			
 			<aside class="copyright" role="note">
@@ -1113,7 +1110,7 @@ This will ensure that these field details will pull through to the respective fi
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://developers.designmynight.com/faqs/taking-bookings-from-google/" title="">
+      <a href="http://developers.designmynight.com/collins-onboarding/updating-email-settings/" title="">
         <span class="direction">
           Previous
         </span>
@@ -1133,7 +1130,7 @@ This will ensure that these field details will pull through to the respective fi
 
   <div class="next">
   
-      <a href="http://developers.designmynight.com/faqs/customising-email-templates/" title="">
+      <a href="http://developers.designmynight.com/collins-onboarding/taking-bookings-from-google/" title="">
         <span class="direction">
           Next
         </span>
