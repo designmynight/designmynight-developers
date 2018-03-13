@@ -7,7 +7,7 @@ Here’s a guide to help you [Add the booking widget to your Wordpress site](htt
 
 Examples of partners using a Wordpress site:
 
-[Humble Grape Battersea](https://www.humblegrape.co.uk/wine-bar/islington/)
+[Humble Grape Battersea](https://www.humblegrape.co.uk/wine-bar/battersea/)
 
 [The Stable](https://stablepizza.com/book-a-table/)
 
