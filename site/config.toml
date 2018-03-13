@@ -213,16 +213,10 @@ googleAnalytics = "UA-12385609-13"
 	weight = 505
 
 [[menu.main]]
-	name   = "API FAQs"
-	url    = "faqs/api-faqs/"
-	parent = "faqs"
-	weight = 506
-
-[[menu.main]]
 	name   = "Booking URLs"
 	url    = "faqs/booking-url/"
 	parent = "faqs"
-	weight = 507
+	weight = 506
 
 [[menu.main]]
     weight = 599
