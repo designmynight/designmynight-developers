@@ -139,6 +139,12 @@ googleAnalytics = "UA-12385609-13"
 	parent = "API"
 
 [[menu.main]]
+	name   = "API FAQs"
+	url    = "api/api-faqs/"
+	weight = 308
+	parent = "API"
+
+[[menu.main]]
     weight = 399
     name = "        "
 
