@@ -44,7 +44,7 @@ Examples of partners using the Facebook Widget:
 
 Since the booking form is inserted into your own website, it will automatically pick up any applicable CSS, so it can completely match the look and feel of your website.
 
-You can customise the look of your widget. To help you with customising your widget, here's a useful guide to help you [override the CSS](http://developers.designmynight.com/booking-widget/#styling-the-form). You can also have a look through these [examples](https://docs.google.com/document/d/1VJ4sdW05MMdq1vGnEkFq2A2HQ2LjKzl3315Pu1hLBmI/edit) of what other venues have done (to get an idea of what can be done). 
+You can customise the look of your widget. To help you with customising your widget, here's a useful guide to help you [override the CSS](http://developers.designmynight.com/widgets/booking-widget/#styling-the-form). You can also have a look through these [examples](https://docs.google.com/document/d/1VJ4sdW05MMdq1vGnEkFq2A2HQ2LjKzl3315Pu1hLBmI/edit) of what other venues have done (to get an idea of what can be done). 
 
 ## How to customise your widget on Squarespace
 In the Code Block that you added to create your widget, you can add in specific rules to the CSS that applies to the booking form. 
@@ -55,7 +55,8 @@ To add CSS code, you will have to surround your CSS code with ```<style></style>
 
 As standard, the widget comes with "Make an Enquiry" as the header and "Enquire Now" on the button. Your web developer will be able to amend the wording of these should you wish (for example, if all your booking types are set to [auto-confirm only](https://collins.uservoice.com/knowledgebase/articles/973384-booking-types-setting-up-an-auto-confirm-only-bo), you may wish to have the button say "Book Now"). 
 
-Your web developer will need to create images that you would like to replace the Header/Button with. Your web developer will then need to override the CSS of the specific [form element](http://developers.designmynight.com/booking-widget/#styling-the-form). 
+Your web developer will need to create images that you would like to replace the Header/Button with. Your web developer will then need to override the CSS of the specific [form element](http://developers.designmynight.com/widgets/booking-widget/#styling-the-form). 
+
 
 If you are replacing the image of the header:
 
@@ -112,7 +113,7 @@ Example: this widget will display both English and German options:
 
 Example of a partner with a French booking widget: [Waikiki](http://www.waikiki-courchevel.com/bookings/?lang=fr)
 
-**_Please note:_** Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/booking-widget/#styling-the-form).    
+**_Please note:_** Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/widgets/booking-widget/#styling-the-form).    
 
 ## Multiple Booking Widgets
 If you have added multiple Collins booking widgets to your website but are looking to target each specific form (for example so that you can use Google Analytics for both widgets).  
@@ -151,7 +152,7 @@ If the widget is appearing and working correctly on Plunker, this means that the
 
 You wouldn't be able to add placeholder text through our JS API. However, you could change it using a library like jquery or vanilla JS to add a placeholder to the element. 
 
-Alternatively, you could set the background image of an input with CSS - guide here to help you [style the booking widget](http://developers.designmynight.com/booking-widget/#styling-the-form). 
+Alternatively, you could set the background image of an input with CSS - guide here to help you [style the booking widget](http://developers.designmynight.com/widgets/booking-widget/#styling-the-form). 
 
 **2. The dates on my calendar are not showing correctly!**
 
@@ -161,7 +162,7 @@ If you have tested the widget code on [Plunker](https://plnkr.co/edit/?p=catalog
 
 If the colour of the **Form Components** is too similar a colour to the **Input Labels**, it can make it difficult for customers to view and select options. 
 
-Your web developer should amend the CSS to tweak the colours used in your [Form Components and Input Labels](http://developers.designmynight.com/booking-widget/#styling-the-form). 
+Your web developer should amend the CSS to tweak the colours used in your [Form Components and Input Labels](http://developers.designmynight.com/widgets/booking-widget/#styling-the-form). 
 
 **4. By default, the second iFrame is a pop up. Is it possible to direct to a booking page (which is not a pop up)?**
 
