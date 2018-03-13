@@ -1001,7 +1001,7 @@
 
 <h2 id="collins-fishbowl-integration-overview">Collins/Fishbowl Integration Overview</h2>
 
-<p>The Collins/Fishbowl integration is set up differently as it is a fixed connection to their API, so that when new customers/bookings are added to Collins, they will automatically push to Fishbowl (if the customer has opted in for your marketing permission). The data possible to be pushed is decided by the paramaters available in your Fishbowl account.</p>
+<p>The Collins/Fishbowl integration is set up differently as it is a fixed connection to their API, so that when new customers/bookings are added to Collins, the customer details will automatically push to Fishbowl (if the customer has opted in for your marketing permission). The data possible to be pushed is decided by the paramaters available in your Fishbowl account.</p>
 
 <h2 id="setting-up-the-collins-fishbowl-integration">Setting up the Collins/Fishbowl Integration</h2>
 
@@ -1019,6 +1019,24 @@ So if you would like to test the integration, you can create a test booking in y
 <p>If the marketing permission is changed on Collins so that marketing permission is ticked, the customer details will automatically pushed to Fishbowl.</p>
 
 <p>If the marketing permission is changed in Collins so that marketing permission is <strong>not</strong> ticked, but the customer already exists as subscribed in Fishbowl, you will have to manually update your Fishbowl list.</p>
+
+<p><strong>2. Is it possible for Collins to push booking details (in addition to customer details)?</strong></p>
+
+<p>By default, the integration is set up to only allow Collins to send customer details to Fishbowl.</p>
+
+<p>It is possible for Collins to push additional details. Depending on what data you are looking to collect, you will need to check that Fishbowl can handle different formats.</p>
+
+<p>For example, we need to pass labels as a comma-separated string. Fishbowl will need to split them up and be able to store them separately.</p>
+
+<p>You will be able to set up to receive additional data. To do this:</p>
+
+<ol>
+<li>Set up another profile field in your Enterprise for the additional data you wish to collect</li>
+<li>Let your Collins Account Manager know the name of the field that you have set up</li>
+<li>Collins will then be able to pass the additional details as part of the QS send of new members</li>
+</ol>
+
+<p><strong><em>Please note:</em></strong> depending on our tech roadmap, it can take our tech team up to two weeks to update/set up this integration.</p>
 
 <h2 id="collins-zonal-crm-integration-overview">Collins/Zonal CRM Integration Overview</h2>
 
