@@ -58,17 +58,12 @@ googleAnalytics = "UA-12385609-13"
     identifier = "widgets"
 	weight = 100
 
-[[menu.main]]
-	name   = "Booking widget"
-	url    = "widgets/booking-widget/"
-	parent = "widgets"
-	weight = 101
 
 [[menu.main]]
 	name   = "Ticket widget"
 	url    = "widgets/ticket-widget/"
 	parent = "widgets"
-	weight = 102
+	weight = 101
 
 [[menu.main]]
     weight = 199
