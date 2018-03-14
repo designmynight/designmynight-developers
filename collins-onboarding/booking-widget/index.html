@@ -924,7 +924,53 @@
 
 			
 
-<h1 id="adding-your-collins-booking-widget-to-your-website">Adding your Collins booking widget to your website</h1>
+<h1 id="collins-booking-widget">Collins Booking Widget</h1>
+
+<p>The booking widget is the easiest way to allow customers to book through your website. You simply add a small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.</p>
+
+<p>With the booking widget, the customer journey will take place in two parts:</p>
+
+<ol>
+<li><p>The customer selects the type of booking, date, number of guests, time and (optionally) a duration for the booking. This part of the process takes place within the form that is embedded in your site.</p></li>
+
+<li><p>The customer clicks to continue, and will be shown a form with the following stage(s) of the booking, including collecting their contact details and optionally taking payment or allowing pre-orders to be added to the booking. This part of the process takes place on the DesignMyNight website, either
+<br>a) <strong>For small screens</strong> (e.g mobile phones) - in a new tab, or
+<br>b) <strong>For regular screens</strong> - inside a popup on your website. In this case the customer will not be aware that they are using a different website to complete their booking</p></li>
+</ol>
+
+<h2 id="accessing-your-collins-booking-widget-code">Accessing your Collins booking widget code</h2>
+
+<p>You can access your booking widget code in the venue settings of your Collins admin:</p>
+
+<ol>
+<li>Log onto your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
+<li>Settings</li>
+<li>Venues</li>
+<li>Select your venue name</li>
+<li>Booking Widget</li>
+<li>Widget Code</li>
+</ol>
+
+<p>The script tag will look like this:</p>
+
+<pre><code class="language-html">&lt;script src=&quot;//partners.designmynight.com/pf/js?venue_id=YOUR_VENUE_ID&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>By default, the script in the grey box will be the booking widget for the specific venue. You just need to copy and paste this code and send over to your web developer.</p>
+
+<p>This section will also allow you to <a href="https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes">generate booking widget codes for a specific booking type or to list multiple venues within your Venue group</a>.</p>
+
+<p><strong>Please note:</strong> please only add the booking widget to your website once your Collins settings have been checked and your team has completed their training with a member of our Collins Customer Success Team. Otherwise you may start getting bookings/enquiries in that your team are unable to manage!</p>
+
+<h2 id="embedding-the-form">Embedding the form</h2>
+
+<p>Once your team has received training and your settings have had a final health-check, you are ready to go-live and add the widget to your own website.</p>
+
+<p>You simply add the small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.</p>
+
+<ul>
+<li><strong>Please note:</strong> your Collins booking widget will only ever display booking types that have <a href="https://www.designmynight.com/uploads/2018/01/Availability-tick-can-book1.png">availability</a> for the customer to book. If none of your booking types currently have availability to book, your Collins booking widget will <strong>not</strong> appear.</li>
+</ul>
 
 <h2 id="how-to-add-the-widget-to-wordpress">How to add the widget to Wordpress</h2>
 
@@ -970,11 +1016,115 @@
 
 <p><a href="https://www.facebook.com/thegentlemenbaristas/app/668769669862814/">The Gentlemen Baristas</a></p>
 
+<h2 id="multiple-venues-on-a-single-form">Multiple venues on a single form</h2>
+
+<p>You can take bookings for several venues on a single form by modifying the URL of the script tag above so that <code>venue_id</code> contains a comma-separated list of venue IDs. You can also choose this option when generating your form code in Collins.</p>
+
+<p>If you have multiple venues on a single form, you can also choose to allow customers to choose a &lsquo;not sure&rsquo; option by adding <code>&amp;allow_any=true</code> to the end of the script URL.</p>
+
+<h2 id="restricting-the-form-to-a-single-booking-type">Restricting the form to a single booking type</h2>
+
+<p>You can restrict the booking form to only display specified booking types by adding a <code>type</code> parameter to the script URL:</p>
+
+<ul>
+<li>Set to <strong>guestlist</strong> to only show booking types that you have specified as guest list types</li>
+<li>Set to <strong>private_hire</strong> to only show booking types you have set up as private hire types</li>
+<li>Set to a single booking type ID (available in Collins) to only show a single booking type</li>
+<li>Set to multiple booking type IDs separated with a comma to only show specified booking types</li>
+</ul>
+
 <h2 id="customising-your-collins-booking-widget">Customising your Collins booking widget</h2>
 
 <p>Since the booking form is inserted into your own website, it will automatically pick up any applicable CSS, so it can completely match the look and feel of your website.</p>
 
-<p>You can customise the look of your widget. To help you with customising your widget, here&rsquo;s a useful guide to help you <a href="http://developers.designmynight.com/widgets/booking-widget/#styling-the-form">override the CSS</a>. You can also have a look through these <a href="https://docs.google.com/document/d/1VJ4sdW05MMdq1vGnEkFq2A2HQ2LjKzl3315Pu1hLBmI/edit">examples</a> of what other venues have done (to get an idea of what can be done).</p>
+<p>If you want to further customise the appearance of the form, you can add specific CSS rules that apply to the booking form. The following table lists the main elements of the form and their CSS selectors:</p>
+
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>CSS Selector</th>
+<th>Notes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Whole form</td>
+<td><code>.dmn-form</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>&lsquo;Make an Enquiry&rsquo; header</td>
+<td><code>.dmn-form h1</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Input labels</td>
+<td><code>.dmn-form label</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Form components</td>
+<td><code>.dmn-form input, .dmn-form select</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Booking type section</td>
+<td><code>.dmn-form .dmn-type-container</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Number of people section</td>
+<td><code>.dmn-form .dmn-num-people-container</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Date section</td>
+<td><code>.dmn-form .dmn-date-container</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Time section</td>
+<td><code>.dmn-form .dmn-time-container</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Duration section</td>
+<td><code>.dmn-form .dmn-duration-container</code></td>
+<td>Class <code>disabled</code> is added if duration is not required</td>
+</tr>
+
+<tr>
+<td>Submit button</td>
+<td><code>.dmn-form button.submit</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="example">Example</h3>
+
+<pre><code class="language-css">.dmn-form {
+  background-color: #000;
+}
+
+.dmn-form input {
+  border: 1px solid #fff;
+}
+
+.dmn-form button.submit {
+  background-image: url('https://example.com/path/to/image.png');
+}
+</code></pre>
 
 <h2 id="how-to-customise-your-widget-on-squarespace">How to customise your widget on Squarespace</h2>
 
@@ -1007,6 +1157,67 @@
 <p><a href="http://www.wahaca.co.uk/locations/covent-garden/">Wahaca</a></p>
 
 <p><a href="http://www.buffaloandrye.co.uk/">Buffalo &amp; Rye</a></p>
+
+<h2 id="setting-and-hiding-fields-on-your-widget">Setting and Hiding Fields on your Widget</h2>
+
+<p>After the form has been written to the web page, you can interact with it using JavaScript. This can help you set, hide and show specific fields on the form</p>
+
+<ul>
+<li>Use <code>DMN.val()</code> to set the value of one of the fields on the form</li>
+<li>Use <code>DMN.hideInput()</code> to hide a field on the form</li>
+<li>Use <code>DMN.showInput()</code> to show a field on the form</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>venue_id</td>
+<td>The ID of the venue (only if multiple venues on the form)</td>
+</tr>
+
+<tr>
+<td>type</td>
+<td>The name of the booking type to be selected</td>
+</tr>
+
+<tr>
+<td>num_people</td>
+<td>The number of guests in the booking</td>
+</tr>
+
+<tr>
+<td>date</td>
+<td>The date of the booking, as a JavaScript date object</td>
+</tr>
+
+<tr>
+<td>time</td>
+<td>The time of the booking, in 24-hour format HH:MM</td>
+</tr>
+
+<tr>
+<td>duration</td>
+<td>The duration of the booking, as a decimal number of hours, eg 1.5</td>
+</tr>
+</tbody>
+</table>
+
+<p>Examples:</p>
+
+<pre><code class="language-javascript">DMN.val('venue_id', 'YOUR_VENUE');  // Set the currently selected venue
+DMN.val('type', 'Dinner').hideInput('type');  // Set the booking type to 'Dinner' and hide the booking type field
+</code></pre>
+
+<p><strong><em>Please note:</em></strong> You should only hide a field from your widget if it is not a <strong>required</strong> field needed for making an enquiry/booking. For example if you have removed the <a href="https://collins.uservoice.com/knowledgebase/articles/803139-booking-types-how-do-i-remove-the-duration-field">duration field</a> in your Collins Settings, you will be able to remove the duration field from your widget.</p>
+
+<p>Otherwise, the customer will still  be prompted to fill in the field on the second iFrame before they are able to proceed with making their enquiry/booking.</p>
 
 <h2 id="setting-up-multilingual-widgets">Setting up Multilingual Widgets</h2>
 
