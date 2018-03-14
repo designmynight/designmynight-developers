@@ -8,7 +8,7 @@
   <head lang="en-gb">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <title>Collins Booking Widget - DMN developer documentation</title>
+    <title> - DMN developer documentation</title>
     <meta name="generator" content="Hugo 0.22.1" />
 
     
@@ -91,7 +91,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Collins Booking Widget
+        
       </div>
     </div>
 
@@ -189,10 +189,6 @@
   <li>
     
 
-    
-      
-    
-      
     
       
     
@@ -389,11 +385,7 @@
       
     
       
-    
-      
       <span class="section">Collins</span>
-      
-    
       
     
       
@@ -604,11 +596,7 @@
       
     
       
-    
-      
       <span class="section">Api</span>
-      
-    
       
     
       
@@ -828,10 +816,6 @@
       
     
       
-    
-      
-    
-      
       <span class="section">Epos-Crm-Integrations</span>
       
     
@@ -933,9 +917,11 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>Collins Booking Widget </h1>
+			<h1> </h1>
 
 			
+
+<h1 id="collins-booking-widget">Collins Booking Widget</h1>
 
 <p>The booking widget is the easiest way to allow customers to book through your website. You simply add a small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.</p>
 
@@ -983,6 +969,50 @@
 <li><strong>Please note:</strong> your Collins booking widget will only ever display booking types that have <a href="https://www.designmynight.com/uploads/2018/01/Availability-tick-can-book1.png">availability</a> for the customer to book. If none of your booking types currently have availability to book, your Collins booking widget will <strong>not</strong> appear.</li>
 </ul>
 
+<h2 id="how-to-add-the-widget-to-wordpress">How to add the widget to Wordpress</h2>
+
+<p>Here’s a guide to help you <a href="https://en.support.wordpress.com/widgets/custom-html-widget/">Add the booking widget to your Wordpress site</a></p>
+
+<p><strong><em>Please note:</em></strong> you will need to upgrade to the Business Plan to be able to add the widget code to your site.</p>
+
+<p>Examples of partners using a Wordpress site:</p>
+
+<p><a href="https://www.humblegrape.co.uk/wine-bar/battersea/">Humble Grape Battersea</a></p>
+
+<p><a href="https://stablepizza.com/book-a-table/">The Stable</a></p>
+
+<h2 id="how-to-add-the-widget-to-squarespace">How to add the widget to Squarespace</h2>
+
+<p>Here’s a guide to help you <a href="https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-HTML-CSS-and-JavaScript">Add the booking widget to your Squarespace site</a></p>
+
+<p><strong><em>Please note:</em></strong> you need to add a <strong>Code Block</strong>, not an Embed Block.</p>
+
+<p>Examples of partners using a Squarespace site:</p>
+
+<p><a href="https://www.dokke.co.uk/private-bookings/">Dokke</a></p>
+
+<p><a href="https://www.littlenans.co.uk/make-a-booking/">Little Nan&rsquo;s</a></p>
+
+<p><a href="http://novicambridge.co.uk/reservations/">Novi Cambridge</a></p>
+
+<h2 id="how-to-add-the-widget-to-wix">How to add the widget to Wix</h2>
+
+<p>Here&rsquo;s a guide to help you <a href="https://support.wix.com/en/article/adding-html-code">Add the booking widget to your Wix site</a></p>
+
+<p>Example of partners using a Wix site:</p>
+
+<p><a href="https://www.duckduckgooselondon.com/">Duck Duck Goose</a></p>
+
+<h2 id="how-to-add-the-widget-to-facebook">How to add the widget to Facebook</h2>
+
+<p>Here&rsquo;s a guide to help you <a href="https://collins.uservoice.com/knowledgebase/articles/478066-facebook-widget-set-up">Add the booking widget to your Facebook page</a></p>
+
+<p>Examples of partners using the Facebook Widget:</p>
+
+<p><a href="https://www.facebook.com/AndinaLondon/app/668769669862814/">Andina London</a></p>
+
+<p><a href="https://www.facebook.com/thegentlemenbaristas/app/668769669862814/">The Gentlemen Baristas</a></p>
+
 <h2 id="multiple-venues-on-a-single-form">Multiple venues on a single form</h2>
 
 <p>You can take bookings for several venues on a single form by modifying the URL of the script tag above so that <code>venue_id</code> contains a comma-separated list of venue IDs. You can also choose this option when generating your form code in Collins.</p>
@@ -1000,7 +1030,7 @@
 <li>Set to multiple booking type IDs separated with a comma to only show specified booking types</li>
 </ul>
 
-<h2 id="styling-the-form">Styling the form</h2>
+<h2 id="customising-your-collins-booking-widget">Customising your Collins booking widget</h2>
 
 <p>Since the booking form is inserted into your own website, it will automatically pick up any applicable CSS, so it can completely match the look and feel of your website.</p>
 
@@ -1093,9 +1123,41 @@
 }
 </code></pre>
 
-<h2 id="form-api">Form API</h2>
+<h2 id="how-to-customise-your-widget-on-squarespace">How to customise your widget on Squarespace</h2>
 
-<p>After the form has been written to the web page, you can interact with it using JavaScript.</p>
+<p>In the Code Block that you added to create your widget, you can add in specific rules to the CSS that applies to the booking form.</p>
+
+<p>To add CSS code, you will have to surround your CSS code with <code>&lt;style&gt;&lt;/style&gt;</code> tags.</p>
+
+<h2 id="how-to-customise-the-wording-of-the-make-an-enquiry-header-and-enquire-now-button">How to customise the wording of the &ldquo;Make an Enquiry&rdquo; header and &ldquo;Enquire Now&rdquo; button</h2>
+
+<p>As standard, the widget comes with &ldquo;Make an Enquiry&rdquo; as the header and &ldquo;Enquire Now&rdquo; on the button. Your web developer will be able to amend the wording of these should you wish (for example, if all your booking types are set to <a href="https://collins.uservoice.com/knowledgebase/articles/973384-booking-types-setting-up-an-auto-confirm-only-bo">auto-confirm only</a>, you may wish to have the button say &ldquo;Book Now&rdquo;).</p>
+
+<p>Your web developer will need to create images that you would like to replace the Header/Button with. Your web developer will then need to override the CSS of the specific <a href="http://developers.designmynight.com/widgets/booking-widget/#styling-the-form">form element</a>.</p>
+
+<p>If you are replacing the image of the header:</p>
+
+<pre><code>.dmn-form h1 {
+  background-image: url('https://example.com/path/to/image.png');
+}
+</code></pre>
+
+<p>If you are replacing the image of the button:</p>
+
+<pre><code>.dmn-form button.submit {
+  background-image: url('https://example.com/path/to/image.png');
+}
+</code></pre>
+
+<p>Here are some great examples of customised headers/buttons that our partners have created:</p>
+
+<p><a href="http://www.wahaca.co.uk/locations/covent-garden/">Wahaca</a></p>
+
+<p><a href="http://www.buffaloandrye.co.uk/">Buffalo &amp; Rye</a></p>
+
+<h2 id="setting-and-hiding-fields-on-your-widget">Setting and Hiding Fields on your Widget</h2>
+
+<p>After the form has been written to the web page, you can interact with it using JavaScript. This can help you set, hide and show specific fields on the form</p>
 
 <ul>
 <li>Use <code>DMN.val()</code> to set the value of one of the fields on the form</li>
@@ -1150,6 +1212,108 @@
 DMN.val('type', 'Dinner').hideInput('type');  // Set the booking type to 'Dinner' and hide the booking type field
 </code></pre>
 
+<p><strong><em>Please note:</em></strong> You should only hide a field from your widget if it is not a <strong>required</strong> field needed for making an enquiry/booking. For example if you have removed the <a href="https://collins.uservoice.com/knowledgebase/articles/803139-booking-types-how-do-i-remove-the-duration-field">duration field</a> in your Collins Settings, you will be able to remove the duration field from your widget.</p>
+
+<p>Otherwise, the customer will still  be prompted to fill in the field on the second iFrame before they are able to proceed with making their enquiry/booking.</p>
+
+<h2 id="setting-up-multilingual-widgets">Setting up Multilingual Widgets</h2>
+
+<p>Collins gives you the option to display your booking widget in the following additional languages:</p>
+
+<ul>
+<li>Dutch</li>
+<li>French</li>
+<li>German</li>
+<li>Spanish</li>
+</ul>
+
+<p>If you would like your booking widget to display in multiple languages , you will have to first set up the <a href="https://collins.uservoice.com/knowledgebase/articles/1829417-widget-setting-up-multi-lingual-widgets-transla">translations in your Collins settings</a></p>
+
+<p>Once your Translation has been set up in Collins, your web developer will have to add an extra piece of code to your widget script.</p>
+
+<p>After your Venue ID, please add <code>&amp;locales=</code> followed by the code for the language that you wish to add to your widget. Add multiple languages separated by a comma.</p>
+
+<p>English <code>en-GB</code></p>
+
+<p>Dutch <code>nl-NL</code></p>
+
+<p>French <code>fr-FR</code></p>
+
+<p>German <code>de-DE</code></p>
+
+<p>Example: this widget will display both English and German options:</p>
+
+<pre><code>&lt;script
+ src=&quot;//partners.designmynight.com/pf/js?venue_id=59d759f1cf53f24ceb4fbff0&amp;locales=en-GB,de-DE&quot; id=&quot;dmn-js&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+
+<p>Example of a partner with a French booking widget: <a href="http://www.waikiki-courchevel.com/bookings/?lang=fr">Waikiki</a></p>
+
+<p><strong><em>Please note:</em></strong> Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them <a href="http://developers.designmynight.com/widgets/booking-widget/#styling-the-form">customise the size of the widget</a>.</p>
+
+<h2 id="multiple-booking-widgets">Multiple Booking Widgets</h2>
+
+<p>If you have added multiple Collins booking widgets to your website but are looking to target each specific form (for example so that you can use Google Analytics for both widgets).</p>
+
+<p>Forms are accessed by their ID, but there&rsquo;s currently no way to set the ID for a particular form. Instead, you&rsquo;d need to retrieve the numerical ID from the form&rsquo;s ID attribute once it&rsquo;s been written to the page, using something like this, changing the <code>getElementById</code> part to something that identifies a container of the form you want to target:</p>
+
+<pre><code>var formId = document.getElementById('form-container').getElementsByClassName('dmn-form')[0].getAttribute('id').substr('dmn-form-'.length);
+</code></pre>
+
+<p>Once you have the ID you can then set values on that particular form by passing an object to <code>DMN.val()</code> like this:</p>
+
+<pre><code>DMN.val({field: 'time', value: '22:00', formId: formId})
+
+
+
+</code></pre>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>If your booking widget is not appearing as expected, we recommend that you test your widget codes on <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a> (this is a website to test codes). To test your widget code:</p>
+
+<ol>
+<li>Copy your widget code (this can be found in your <a href="https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes">Collins admin settings</a>)</li>
+<li>Go to <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a></li>
+<li>Paste your widget code</li>
+<li>Click Run</li>
+</ol>
+
+<p>You should then see the widget on the right side of the screen which you can make a test booking for/play around with.</p>
+
+<p>If the widget is appearing and working correctly on Plunker, this means that the issue is isolated to your own website. This means that the issue will be caused by conflicting styles on your website and your web developer will need to take a closer look at your CSS or Javascript.</p>
+
+<h2 id="booking-widget-faqs">Booking Widget FAQs</h2>
+
+<p><strong>1. Is it possible to add Placeholder Text in the fields?</strong></p>
+
+<p>You wouldn&rsquo;t be able to add placeholder text through our JS API. However, you could change it using a library like jquery or vanilla JS to add a placeholder to the element.</p>
+
+<p>Alternatively, you could set the background image of an input with CSS - guide here to help you <a href="http://developers.designmynight.com/widgets/booking-widget/#styling-the-form">style the booking widget</a>.</p>
+
+<p><strong>2. The dates on my calendar are not showing correctly!</strong></p>
+
+<p>If you have tested the widget code on <a href="https://plnkr.co/edit/?p=catalogue">Plunker</a> and the issue is isolated to your website, your web developer will have to look at the CSS styling or Javascript on your page which is interfering with the code.</p>
+
+<p><strong>3. The drop down options on my widget fields are only visible when you hover over them. How do I  get all available drop down options to be visible for the customer to select?</strong></p>
+
+<p>If the colour of the <strong>Form Components</strong> is too similar a colour to the <strong>Input Labels</strong>, it can make it difficult for customers to view and select options.</p>
+
+<p>Your web developer should amend the CSS to tweak the colours used in your <a href="http://developers.designmynight.com/widgets/booking-widget/#styling-the-form">Form Components and Input Labels</a>.</p>
+
+<p><strong>4. By default, the second iFrame is a pop up. Is it possible to direct to a booking page (which is not a pop up)?</strong></p>
+
+<p>The modal styling can be customised with CSS. It will either open an iframe within a modal, or redirect to the booking page depending on available screen size. Your web developer will be able to customise the size to dictate what happens.</p>
+
+<p>Here&rsquo;s an example of what the second iFrame could look like: <a href="https://www.designmynight.com/book?venue_id=59157f51ff52d61204696b4c&amp;venue_group=59157fe4ff52d613565b24aa&amp;type=591ec9ca05b6e0052806695e&amp;num_people=4&amp;date=2017-8-17&amp;time=09:00&amp;duration=120&amp;notes=&amp;locale=en-GB&amp;source=partner&amp;stylesheet=alexanders">Alexander&rsquo;s</a></p>
+
+<p><strong>5. I&rsquo;ve added the widget code to my site but when I click the &lsquo;Enquire Now&rsquo; button, the second iFrame is hidden behind elements of my website. This is affecting customers&rsquo; ability to complete their booking/enquiry. What could be causing this?</strong></p>
+
+<p>If this is isolated to your own website, your web developer will have to look at the CSS styling or Javascript on your page which is interfering with the code.</p>
+
+<p>For example, specific elements of your website may have been set a very high <code>z-index</code> which is causing the elements to appear on top over everything else on the page (including the Collins second iFrame).</p>
+
 			
 			<aside class="copyright" role="note">
 				
@@ -1169,7 +1333,7 @@ DMN.val('type', 'Dinner').hideInput('type');  // Set the booking type to 'Dinner
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://developers.designmynight.com/api/api-faqs/" title="">
+      <a href="http://developers.designmynight.com/collins/customising-2nd-iframe/" title="">
         <span class="direction">
           Previous
         </span>
@@ -1189,14 +1353,14 @@ DMN.val('type', 'Dinner').hideInput('type');  // Set the booking type to 'Dinner
 
   <div class="next">
   
-      <a href="http://developers.designmynight.com/tonic/ticket-widget/" title="Ticket widget">
+      <a href="http://developers.designmynight.com/collins/booking-url/" title="">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Ticket widget
+              
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">

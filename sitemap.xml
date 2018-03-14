@@ -48,44 +48,39 @@
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/collins/booking-widget/</loc>
-    <lastmod>2016-04-29T13:32:57+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://developers.designmynight.com/api/api-faqs/</loc>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/collins-onboarding/booking-url/</loc>
+    <loc>http://developers.designmynight.com/collins/booking-url/</loc>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/collins-onboarding/booking-widget/</loc>
+    <loc>http://developers.designmynight.com/collins/booking-widget/</loc>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/collins-onboarding/customising-2nd-iframe/</loc>
+    <loc>http://developers.designmynight.com/collins/customising-2nd-iframe/</loc>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/collins-onboarding/customising-email-templates/</loc>
+    <loc>http://developers.designmynight.com/collins/customising-email-templates/</loc>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/collins-onboarding/general-enquiry-form/</loc>
+    <loc>http://developers.designmynight.com/collins/general-enquiry-form/</loc>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/collins-onboarding/taking-bookings-from-google/</loc>
+    <loc>http://developers.designmynight.com/collins/taking-bookings-from-google/</loc>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/collins-onboarding/tracking/</loc>
+    <loc>http://developers.designmynight.com/collins/tracking/</loc>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/collins-onboarding/updating-email-settings/</loc>
+    <loc>http://developers.designmynight.com/collins/updating-email-settings/</loc>
   </url>
   
   <url>
@@ -153,12 +148,6 @@
   
   <url>
     <loc>http://developers.designmynight.com/collins/</loc>
-    <lastmod>2016-04-29T13:32:57+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://developers.designmynight.com/collins-onboarding/</loc>
     <priority>0</priority>
   </url>
   
