@@ -8,18 +8,18 @@
   <head lang="en-gb">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <title>Ticket widget - DMN developer documentation</title>
+    <title>Collins Booking Widget - DMN developer documentation</title>
     <meta name="generator" content="Hugo 0.22.1" />
 
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="http://developers.designmynight.com/widgets/ticket-widget/">
+    <link rel="canonical" href="http://developers.designmynight.com/collins/booking-widget/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="http://developers.designmynight.com/widgets/ticket-widget/">
+    <meta property="og:url" content="http://developers.designmynight.com/collins/booking-widget/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="http://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -91,7 +91,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Ticket widget
+        Collins Booking Widget
       </div>
     </div>
 
@@ -271,7 +271,9 @@
       
     
       
-      <span class="section">Widgets</span>
+    
+      
+      <span class="section">Tonic</span>
       
     
     
@@ -283,18 +285,32 @@
 
 
 
-<a class="current" title="Ticket widget" href="http://developers.designmynight.com/widgets/ticket-widget/">
+<a  title="Ticket widget" href="http://developers.designmynight.com/tonic/ticket-widget/">
 	
 	Ticket widget
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
       
     </ul>
   </li>
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="     " href="http://developers.designmynight.com/">
+	
+	     
+</a>
+
+  
   
 </li>
 
@@ -375,7 +391,9 @@
       
     
       
-      <span class="section">Collins-Onboarding</span>
+      <span class="section">Collins</span>
+      
+    
       
     
       
@@ -399,7 +417,7 @@
 
 
 
-<a  title="Updating Email Settings" href="http://developers.designmynight.com/collins-onboarding/updating-email-settings/">
+<a  title="Updating Email Settings" href="http://developers.designmynight.com/collins/updating-email-settings/">
 	
 	Updating Email Settings
 </a>
@@ -411,11 +429,14 @@
 
 
 
-<a  title="Collins Booking Widget" href="http://developers.designmynight.com/collins-onboarding/booking-widget/">
+<a class="current" title="Collins Booking Widget" href="http://developers.designmynight.com/collins/booking-widget/">
 	
 	Collins Booking Widget
 </a>
 
+
+<ul id="scrollspy">
+</ul>
   
       
         
@@ -423,7 +444,7 @@
 
 
 
-<a  title="Customising 2nd Iframe" href="http://developers.designmynight.com/collins-onboarding/customising-2nd-iframe/">
+<a  title="Customising 2nd Iframe" href="http://developers.designmynight.com/collins/customising-2nd-iframe/">
 	
 	Customising 2nd Iframe
 </a>
@@ -435,7 +456,7 @@
 
 
 
-<a  title="Booking URLs" href="http://developers.designmynight.com/collins-onboarding/booking-url/">
+<a  title="Booking URLs" href="http://developers.designmynight.com/collins/booking-url/">
 	
 	Booking URLs
 </a>
@@ -447,7 +468,7 @@
 
 
 
-<a  title="General Enquiry Form" href="http://developers.designmynight.com/collins-onboarding/general-enquiry-form/">
+<a  title="General Enquiry Form" href="http://developers.designmynight.com/collins/general-enquiry-form/">
 	
 	General Enquiry Form
 </a>
@@ -459,7 +480,7 @@
 
 
 
-<a  title="Customising Email Templates" href="http://developers.designmynight.com/collins-onboarding/customising-email-templates/">
+<a  title="Customising Email Templates" href="http://developers.designmynight.com/collins/customising-email-templates/">
 	
 	Customising Email Templates
 </a>
@@ -471,7 +492,7 @@
 
 
 
-<a  title="Taking Bookings from Google" href="http://developers.designmynight.com/collins-onboarding/taking-bookings-from-google/">
+<a  title="Taking Bookings from Google" href="http://developers.designmynight.com/collins/taking-bookings-from-google/">
 	
 	Taking Bookings from Google
 </a>
@@ -483,7 +504,7 @@
 
 
 
-<a  title="Tracking" href="http://developers.designmynight.com/collins-onboarding/tracking/">
+<a  title="Tracking" href="http://developers.designmynight.com/collins/tracking/">
 	
 	Tracking
 </a>
@@ -586,6 +607,8 @@
     
       
       <span class="section">Api</span>
+      
+    
       
     
       
@@ -807,6 +830,8 @@
       
     
       
+    
+      
       <span class="section">Epos-Crm-Integrations</span>
       
     
@@ -908,180 +933,221 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>Ticket widget </h1>
+			<h1>Collins Booking Widget </h1>
 
 			
 
-<p>The ticket widget lists events, dates and tickets.  If a single event is listed with a single date it will only show the tickets. If an event with multiple dates is listed then it will show the calendar first.  If multiple events/event brands (item-ids) are listed then the events list will be displayed first.</p>
+<p>The booking widget is the easiest way to allow customers to book through your website. You simply add a small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.</p>
 
-<h2 id="customising-the-widget">Customising the widget</h2>
+<p>With the booking widget, the customer journey will take place in two parts:</p>
 
-<p>The widget is included using javascript.  Below is a list of valid attributes for the script tag in order to customise it.  You can also use self-hosted CSS to change the look and feel of the form.</p>
+<ol>
+<li><p>The customer selects the type of booking, date, number of guests, time and (optionally) a duration for the booking. This part of the process takes place within the form that is embedded in your site.</p></li>
+
+<li><p>The customer clicks to continue, and will be shown a form with the following stage(s) of the booking, including collecting their contact details and optionally taking payment or allowing pre-orders to be added to the booking. This part of the process takes place on the DesignMyNight website, either
+<br>a) <strong>For small screens</strong> (e.g mobile phones) - in a new tab, or
+<br>b) <strong>For regular screens</strong> - inside a popup on your website. In this case the customer will not be aware that they are using a different website to complete their booking</p></li>
+</ol>
+
+<h2 id="accessing-your-collins-booking-widget-code">Accessing your Collins booking widget code</h2>
+
+<p>You can access your booking widget code in the venue settings of your Collins admin:</p>
+
+<ol>
+<li>Log onto your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
+<li>Settings</li>
+<li>Venues</li>
+<li>Select your venue name</li>
+<li>Booking Widget</li>
+<li>Widget Code</li>
+</ol>
+
+<p>The script tag will look like this:</p>
+
+<pre><code class="language-html">&lt;script src=&quot;//partners.designmynight.com/pf/js?venue_id=YOUR_VENUE_ID&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>By default, the script in the grey box will be the booking widget for the specific venue. You just need to copy and paste this code and send over to your web developer.</p>
+
+<p>This section will also allow you to <a href="https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes">generate booking widget codes for a specific booking type or to list multiple venues within your Venue group</a>.</p>
+
+<p><strong>Please note:</strong> please only add the booking widget to your website once your Collins settings have been checked and your team has completed their training with a member of our Collins Customer Success Team. Otherwise you may start getting bookings/enquiries in that your team are unable to manage!</p>
+
+<h2 id="embedding-the-form">Embedding the form</h2>
+
+<p>Once your team has received training and your settings have had a final health-check, you are ready to go-live and add the widget to your own website.</p>
+
+<p>You simply add the small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.</p>
+
+<ul>
+<li><strong>Please note:</strong> your Collins booking widget will only ever display booking types that have <a href="https://www.designmynight.com/uploads/2018/01/Availability-tick-can-book1.png">availability</a> for the customer to book. If none of your booking types currently have availability to book, your Collins booking widget will <strong>not</strong> appear.</li>
+</ul>
+
+<h2 id="multiple-venues-on-a-single-form">Multiple venues on a single form</h2>
+
+<p>You can take bookings for several venues on a single form by modifying the URL of the script tag above so that <code>venue_id</code> contains a comma-separated list of venue IDs. You can also choose this option when generating your form code in Collins.</p>
+
+<p>If you have multiple venues on a single form, you can also choose to allow customers to choose a &lsquo;not sure&rsquo; option by adding <code>&amp;allow_any=true</code> to the end of the script URL.</p>
+
+<h2 id="restricting-the-form-to-a-single-booking-type">Restricting the form to a single booking type</h2>
+
+<p>You can restrict the booking form to only display specified booking types by adding a <code>type</code> parameter to the script URL:</p>
+
+<ul>
+<li>Set to <strong>guestlist</strong> to only show booking types that you have specified as guest list types</li>
+<li>Set to <strong>private_hire</strong> to only show booking types you have set up as private hire types</li>
+<li>Set to a single booking type ID (available in Collins) to only show a single booking type</li>
+<li>Set to multiple booking type IDs separated with a comma to only show specified booking types</li>
+</ul>
+
+<h2 id="styling-the-form">Styling the form</h2>
+
+<p>Since the booking form is inserted into your own website, it will automatically pick up any applicable CSS, so it can completely match the look and feel of your website.</p>
+
+<p>If you want to further customise the appearance of the form, you can add specific CSS rules that apply to the booking form. The following table lists the main elements of the form and their CSS selectors:</p>
 
 <table>
 <thead>
 <tr>
-<th>Attributes</th>
-<th>Possible values</th>
-<th>Default value</th>
+<th>Element</th>
+<th>CSS Selector</th>
+<th>Notes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Whole form</td>
+<td><code>.dmn-form</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>&lsquo;Make an Enquiry&rsquo; header</td>
+<td><code>.dmn-form h1</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Input labels</td>
+<td><code>.dmn-form label</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Form components</td>
+<td><code>.dmn-form input, .dmn-form select</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Booking type section</td>
+<td><code>.dmn-form .dmn-type-container</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Number of people section</td>
+<td><code>.dmn-form .dmn-num-people-container</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Date section</td>
+<td><code>.dmn-form .dmn-date-container</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Time section</td>
+<td><code>.dmn-form .dmn-time-container</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Duration section</td>
+<td><code>.dmn-form .dmn-duration-container</code></td>
+<td>Class <code>disabled</code> is added if duration is not required</td>
+</tr>
+
+<tr>
+<td>Submit button</td>
+<td><code>.dmn-form button.submit</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="example">Example</h3>
+
+<pre><code class="language-css">.dmn-form {
+  background-color: #000;
+}
+
+.dmn-form input {
+  border: 1px solid #fff;
+}
+
+.dmn-form button.submit {
+  background-image: url('https://example.com/path/to/image.png');
+}
+</code></pre>
+
+<h2 id="form-api">Form API</h2>
+
+<p>After the form has been written to the web page, you can interact with it using JavaScript.</p>
+
+<ul>
+<li>Use <code>DMN.val()</code> to set the value of one of the fields on the form</li>
+<li>Use <code>DMN.hideInput()</code> to hide a field on the form</li>
+<li>Use <code>DMN.showInput()</code> to show a field on the form</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
 <th>Description</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td>src</td>
-<td>//partners.designmynight.com/pw?v=2</td>
-<td>The source</td>
-<td></td>
+<td>venue_id</td>
+<td>The ID of the venue (only if multiple venues on the form)</td>
 </tr>
 
 <tr>
-<td>item-ids</td>
-<td>&lt;Event Id&gt; | &lt;Event Brand Id&gt;</td>
-<td>N/A</td>
-<td>The event or event brand (list of events) for the widget</td>
+<td>type</td>
+<td>The name of the booking type to be selected</td>
 </tr>
 
 <tr>
-<td>affiliate-id</td>
-<td>&lt;Affiliate Id&gt;</td>
-<td>N/A</td>
-<td>The affiliate id for tracking purposes</td>
+<td>num_people</td>
+<td>The number of guests in the booking</td>
 </tr>
 
 <tr>
-<td>enable-animations</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Enable or disable the fade in effect when a stage is loaded</td>
+<td>date</td>
+<td>The date of the booking, as a JavaScript date object</td>
 </tr>
 
 <tr>
-<td>show-content</td>
-<td>yes | no</td>
-<td>no</td>
-<td>Show or hide the event descriptions on the &lsquo;event-picker&rsquo; screen</td>
+<td>time</td>
+<td>The time of the booking, in 24-hour format HH:MM</td>
 </tr>
 
 <tr>
-<td>show-header</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Show or hide the header of the form</td>
-</tr>
-
-<tr>
-<td>border</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Show or hide the border of the form</td>
-</tr>
-
-<tr>
-<td>show-event-title</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Show or hide the event title</td>
-</tr>
-
-<tr>
-<td>background-colour</td>
-<td>&lt;HTML Colour&gt;</td>
-<td>transparent</td>
-<td>Any valid HTML colour</td>
-</tr>
-
-<tr>
-<td>theme</td>
-<td>theme-default | theme-light</td>
-<td>theme-default</td>
-<td>Use theme-default for light backgrounds and theme-dark for dark backgrounds (affects fonts colours)</td>
-</tr>
-
-<tr>
-<td>fixed-height</td>
-<td>yes | no</td>
-<td>no</td>
-<td>Setting this to a value e.g. 200px will set the widget to that height and it will become scrollable</td>
-</tr>
-
-<tr>
-<td>title</td>
-<td>&lt;String&gt;</td>
-<td>“Buy Tickets”</td>
-<td>Override the title of the form</td>
-</tr>
-
-<tr>
-<td>date-display</td>
-<td>calendar | list</td>
-<td>calendar</td>
-<td>Show a calendar or a list on the date page</td>
-</tr>
-
-<tr>
-<td>show-ticket-description</td>
-<td>yes | no</td>
-<td>toggle</td>
-<td>no</td>
-</tr>
-
-<tr>
-<td>show-not-on-sale</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Show not on sale tickets on the form</td>
-</tr>
-
-<tr>
-<td>show-sold-out</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Show sold out tickets on the form</td>
-</tr>
-
-<tr>
-<td>buy-now-action</td>
-<td>modal | current | blank</td>
-<td>modal</td>
-<td>When buy now is clicked either open in a modal, current window or a new window (most browsers use a new tab by default)</td>
-</tr>
-
-<tr>
-<td>mode</td>
-<td>form | button</td>
-<td>form</td>
-<td>Display either a form or a button. In order to use this you must add &amp;mode=button to the src attribute</td>
-</tr>
-
-<tr>
-<td>button-title</td>
-<td>&lt;String&gt;</td>
-<td>n/a</td>
-<td>If the mode is set to button you can change the title</td>
+<td>duration</td>
+<td>The duration of the booking, as a decimal number of hours, eg 1.5</td>
 </tr>
 </tbody>
 </table>
 
-<h2 id="purchase-process">Purchase process</h2>
+<p>Examples:</p>
 
-<p>When the form is submitted it will open up a modal by default. This behaviour can be customised with the buy-now-action attribute.</p>
-
-<h2 id="examples">Examples</h2>
-
-<p>The following example sample below will display a basic widget:</p>
-
-<pre><code class="language-html">&lt;!-- START DesignMyNight event widget --&gt;
-&lt;script src=&quot;//partners.designmynight.com/pw?v=2&quot; item-ids=&quot;546a14bc0df690b92489b1a7&quot; &gt;&lt;/script&gt;
-&lt;!-- END DesignMyNight event widget --&gt;
-</code></pre>
-
-<p>The following example sample below will display a buy now button:</p>
-
-<pre><code class="language-html">&lt;!-- START DesignMyNight event widget --&gt;
-&lt;script src=&quot;//partners.designmynight.com/pw?v=2&quot; item-ids=&quot;546a14bc0df690b92489b1a7&amp;mode=button&quot; mode=”button”&gt;&lt;/script&gt;
-&lt;!-- END DesignMyNight event widget --&gt;
+<pre><code class="language-javascript">DMN.val('venue_id', 'YOUR_VENUE');  // Set the currently selected venue
+DMN.val('type', 'Dinner').hideInput('type');  // Set the booking type to 'Dinner' and hide the booking type field
 </code></pre>
 
 			
@@ -1103,7 +1169,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://developers.designmynight.com/widgets/booking-widget/" title="Collins Booking Widget">
+      <a href="http://developers.designmynight.com/api/api-faqs/" title="">
         <span class="direction">
           Previous
         </span>
@@ -1113,7 +1179,7 @@
           </div>
           <div class="stretch">
             <div class="title">
-              Collins Booking Widget
+              
             </div>
           </div>
         </div>
@@ -1123,14 +1189,14 @@
 
   <div class="next">
   
-      <a href="http://developers.designmynight.com/api/event-guests-api/" title="Event Guests API">
+      <a href="http://developers.designmynight.com/tonic/ticket-widget/" title="Ticket widget">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Event Guests API
+              Ticket widget
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">

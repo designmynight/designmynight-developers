@@ -110,20 +110,20 @@ $ curl -X GET https://api.designmynight.com/v4/events/&amp;lt;event_id&amp;gt;/g
     
     <item>
       <title>Ticket widget</title>
-      <link>http://developers.designmynight.com/widgets/ticket-widget/</link>
+      <link>http://developers.designmynight.com/tonic/ticket-widget/</link>
       <pubDate>Fri, 29 Apr 2016 13:42:29 +0100</pubDate>
       
-      <guid>http://developers.designmynight.com/widgets/ticket-widget/</guid>
+      <guid>http://developers.designmynight.com/tonic/ticket-widget/</guid>
       <description>The ticket widget lists events, dates and tickets. If a single event is listed with a single date it will only show the tickets. If an event with multiple dates is listed then it will show the calendar first. If multiple events/event brands (item-ids) are listed then the events list will be displayed first.
 Customising the widget The widget is included using javascript. Below is a list of valid attributes for the script tag in order to customise it.</description>
     </item>
     
     <item>
       <title>Collins Booking Widget</title>
-      <link>http://developers.designmynight.com/widgets/booking-widget/</link>
+      <link>http://developers.designmynight.com/collins/booking-widget/</link>
       <pubDate>Fri, 29 Apr 2016 13:32:57 +0100</pubDate>
       
-      <guid>http://developers.designmynight.com/widgets/booking-widget/</guid>
+      <guid>http://developers.designmynight.com/collins/booking-widget/</guid>
       <description>The booking widget is the easiest way to allow customers to book through your website. You simply add a small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.
 With the booking widget, the customer journey will take place in two parts:
  The customer selects the type of booking, date, number of guests, time and (optionally) a duration for the booking.</description>

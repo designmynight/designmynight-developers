@@ -43,12 +43,12 @@
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/widgets/ticket-widget/</loc>
+    <loc>http://developers.designmynight.com/tonic/ticket-widget/</loc>
     <lastmod>2016-04-29T13:42:29+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/widgets/booking-widget/</loc>
+    <loc>http://developers.designmynight.com/collins/booking-widget/</loc>
     <lastmod>2016-04-29T13:32:57+01:00</lastmod>
   </url>
   
@@ -152,6 +152,12 @@
   </url>
   
   <url>
+    <loc>http://developers.designmynight.com/collins/</loc>
+    <lastmod>2016-04-29T13:32:57+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://developers.designmynight.com/collins-onboarding/</loc>
     <priority>0</priority>
   </url>
@@ -183,7 +189,7 @@
   </url>
   
   <url>
-    <loc>http://developers.designmynight.com/widgets/</loc>
+    <loc>http://developers.designmynight.com/tonic/</loc>
     <lastmod>2016-04-29T13:42:29+01:00</lastmod>
     <priority>0</priority>
   </url>
