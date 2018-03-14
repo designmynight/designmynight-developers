@@ -53,74 +53,74 @@ googleAnalytics = "UA-12385609-13"
     name = "    "
 
 [[menu.main]]
-    name   = "Widgets"
-    url    = "widgets/"
-    identifier = "widgets"
+    name   = "Tonic"
+    url    = "tonic/"
+    identifier = "tonic"
 	weight = 100
 
 
 [[menu.main]]
 	name   = "Ticket widget"
-	url    = "widgets/ticket-widget/"
-	parent = "widgets"
+	url    = "tonic/ticket-widget/"
+	parent = "tonic"
 	weight = 101
 
 [[menu.main]]
     weight = 199
-    name = " "
+    name = "     "
 
 [[menu.main]]
-    name   = "Collins Onboarding"
-    url    = "collins-onboarding/"
-    identifier = "collins-onboarding"
+    name   = "Collins"
+    url    = "collins/"
+    identifier = "collins"
 	weight = 200
-	
+
 [[menu.main]]
 	name   = "Updating Email Settings"
-	url    = "collins-onboarding/updating-email-settings/"
-	parent = "collins-onboarding"
+	url    = "collins/updating-email-settings/"
+	parent = "collins"
 	weight = 201
-	
+
 [[menu.main]]
 	name   = "Collins Booking Widget"
-	url    = "collins-onboarding/booking-widget/"
-	parent = "collins-onboarding"
+	url    = "collins/booking-widget/"
+	parent = "collins"
 	weight = 202
-	
+
 [[menu.main]]
 	name   = "Customising 2nd Iframe"
-	url    = "collins-onboarding/customising-2nd-iframe/"
-	parent = "collins-onboarding"
+	url    = "collins/customising-2nd-iframe/"
+	parent = "collins"
 	weight = 203
 
 [[menu.main]]
 	name   = "Booking URLs"
-	url    = "collins-onboarding/booking-url/"
-	parent = "collins-onboarding"
+	url    = "collins/booking-url/"
+	parent = "collins"
 	weight = 204
-	
+
 [[menu.main]]
 	name   = "General Enquiry Form"
-	url    = "collins-onboarding/general-enquiry-form/"
-	parent = "collins-onboarding"
+	url    = "collins/general-enquiry-form/"
+	parent = "collins"
 	weight = 205
-	
+
 [[menu.main]]
 	name   = "Customising Email Templates"
-	url    = "collins-onboarding/customising-email-templates/"
-	parent = "collins-onboarding"
+	url    = "collins/customising-email-templates/"
+	parent = "collins"
 	weight = 206
-	
+
 [[menu.main]]
 	name   = "Taking Bookings from Google"
-	url    = "collins-onboarding/taking-bookings-from-google/"
-	parent = "collins-onboarding"
+	url    = "collins/taking-bookings-from-google/"
+	parent = "collins"
 	weight = 207
 
 [[menu.main]]
 	name   = "Tracking"
-	url    = "collins-onboarding/tracking/"
-	parent = "collins-onboarding"
+	url    = "collins/tracking/"
+	parent = "collins"
 	weight = 208
 
 
