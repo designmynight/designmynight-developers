@@ -222,7 +222,7 @@ Example: this widget will display both English and German options:
 </script>
 ```
 
-Example of a partner with a French booking widget: [Waikiki](http://www.waikiki-courchevel.com/bookings/?lang=fr)
+Example of a partner with a German booking widget: [Petit Chef Berlin](https://bookings.designmynight.com/book?venue_id=59d759f1cf53f24ceb4fbff0&venue_group=5744696d426ba10256c7a50e&type=&num_people=&date=&time=&duration=&notes=&locale=de-DE&format=modal&source=partner)
 
 **_Please note:_** Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/widgets/booking-widget/#styling-the-form).    
 
