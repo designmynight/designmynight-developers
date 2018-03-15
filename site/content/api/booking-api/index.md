@@ -143,14 +143,78 @@ Field | Description
 
 Alternatively you can store bookings and enquiries by making a POST request to the `/bookings` endpoint. This method will bypass the availability check, allowing you to capture enquiries. This method can also be used for when additional details are required
 
+The following fields should be passed:
+
+Field | Required | Description
+--- | --- | ---
+`source` | Yes | `string` Where the booking is coming from. In most cases, this should be `partner`
+`first_name` | Yes | `string` The first name for the booking
+`last_name` | Yes | `string` The last name for the booking
+`num_people` | Yes | `integer` The number of people the booking is for
+`type` | Yes | `string` The ID of the booking type
+`venue_id` | Yes | `string` The ID of the venue
+`date` | Yes | `string` The date of the booking, in the format YYYY-MM-DD
+`time` | Yes | `string` The time of the booking, in the format HH:mm
+`duration` | No | `integer` The duration of the booking in minutes
+`email` | No | `string` The guest's email address
+`dob` | No | `string` The guest's date of birth, in the format YYYY-MM-DD
+`phone` | No | `string` The guest's phone number
+`notes` | No | `string` Any additional booking notes
+
 Here's an example request of storing an enquiry for 4 people on the 16th March 2018 at 16:00
 
 ```bash
 $ curl -X POST https://api.designmynight.com/v4/bookings
-
-    
+    -d "source=partner&first_name=Dan&last_name=Johnson&num_people=4&type=58c927215ee246985eb91b8e&date=2018-03-16&time=16:00"
 ```
 
+The response will look like this:
+
+```json
+{
+	"payload": {
+		"booking": {
+			"_id": "5aaaf965addee7655b15ace4",
+			"created_date": "2018-03-15T22:53:25",
+			"created_by": "58bd9a16dd7d97ef54cef63f",
+			"last_updated": "2018-03-15T22:53:25",
+			"reference": "DMN-9980140810",
+			"venue_id": "5853b29b12f78aa33f8b54b6",
+			"date": "2018-04-19T00:00:00",
+			"time": "13:00",
+			"type": {
+				"guestlist": false,
+				"id": "5922c9ee93f8d541531a49b3",
+				"name": "Lunch",
+				"private_hire": false
+			},
+			"num_people": 8,
+			"first_name": "Dan",
+			"last_name": "Johnson",
+			"email": null,
+			"notes": null,
+			"source": "partner",
+			"packages": null,
+			"offer": null,
+			"deposits": []
+		},
+		"bookingStatus": "received",
+		"venue": {
+			"type": "venue",
+			"title": "Test Venue",
+			"path": "\/london\/bars\/shoreditch\/test-venue",
+			"page_type": "venue"
+		}
+	},
+	"status": 200,
+	"requestTime": "2018-03-15T22:53:24",
+	"responseTime": "2018-03-15T22:53:40",
+	"statusText": "OK",
+	"url": "\/api\/v4\/bookings",
+	"method": "POST",
+	"params": []
+}
+```
 
 ### Submitting through the web
 
