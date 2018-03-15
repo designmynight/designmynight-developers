@@ -121,7 +121,7 @@ reject | The booking cannot be accommodated
 
 If a booking is valid to be submitted, the response from the `booking-availability` endpoint will contain a `next` key, with an object containing web and API URLs that may be used to submit the booking.
 
-**Note**: some bookings require additional details from the customer before they can be completed - for example, some bookings will require a payment to be made in order to secure the booking, and others provide the ability to choose and pay for pre-order items before submitting the booking. 
+**Note**: some bookings require additional details from the customer before they can be completed - for example, some bookings will require a payment to be made in order to secure the booking, and others provide the ability to choose and pay for pre-order items before submitting the booking. To store these bookings, you can make a `POST` request to the /bookings endpoint. [Read more](#submitting-to-the-bookings-endpoint)
 
 Where these additional details apply, you will not be able to submit the booking through the API, and will instead need to redirect the customer to the given URL in order to complete their booking. Where this applies you can supply a return URL for the customer to be redirected to after their booking has been submitted. 
 
@@ -138,6 +138,19 @@ Field | Description
 `phone` | `string` the customer's phone number
 `dob` | (optional) `string` the customer's date of birth, in the format YYYY-MM-DD
 `newsletter_signup` | (optional) `boolean` whether the customer opted in to marketing communications
+
+### Submitting to the /bookings endpoint
+
+Alternatively you can store bookings and enquiries by making a POST request to the `/bookings` endpoint. This method will bypass the availability check, allowing you to capture enquiries. This method can also be used for when additional details are required
+
+Here's an example request of storing an enquiry for 4 people on the 16th March 2018 at 16:00
+
+```bash
+$ curl -X POST https://api.designmynight.com/v4/bookings
+
+    
+```
+
 
 ### Submitting through the web
 
