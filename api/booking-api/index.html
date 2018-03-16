@@ -1139,7 +1139,7 @@
 
 <p>If a booking is valid to be submitted, the response from the <code>booking-availability</code> endpoint will contain a <code>next</code> key, with an object containing web and API URLs that may be used to submit the booking.</p>
 
-<p><strong>Note</strong>: some bookings require additional details from the customer before they can be completed - for example, some bookings will require a payment to be made in order to secure the booking, and others provide the ability to choose and pay for pre-order items before submitting the booking.</p>
+<p><strong>Note</strong>: some bookings require additional details from the customer before they can be completed - for example, some bookings will require a payment to be made in order to secure the booking, and others provide the ability to choose and pay for pre-order items before submitting the booking. To store these bookings, you can make a <code>POST</code> request to the /bookings endpoint. <a href="#submitting-to-the-bookings-endpoint">Read more</a></p>
 
 <p>Where these additional details apply, you will not be able to submit the booking through the API, and will instead need to redirect the customer to the given URL in order to complete their booking. Where this applies you can supply a return URL for the customer to be redirected to after their booking has been submitted.</p>
 
@@ -1192,6 +1192,155 @@
 </tr>
 </tbody>
 </table>
+
+<h3 id="submitting-to-the-bookings-endpoint">Submitting to the /bookings endpoint</h3>
+
+<p>Alternatively you can store bookings and enquiries by making a POST request to the <code>/bookings</code> endpoint. This method will bypass the availability check, allowing you to capture enquiries. This method can also be used for when additional details are required</p>
+
+<p>The following fields should be passed:</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>source</code></td>
+<td>Yes</td>
+<td><code>string</code> Where the booking is coming from. In most cases, this should be <code>partner</code></td>
+</tr>
+
+<tr>
+<td><code>first_name</code></td>
+<td>Yes</td>
+<td><code>string</code> The first name for the booking</td>
+</tr>
+
+<tr>
+<td><code>last_name</code></td>
+<td>Yes</td>
+<td><code>string</code> The last name for the booking</td>
+</tr>
+
+<tr>
+<td><code>num_people</code></td>
+<td>Yes</td>
+<td><code>integer</code> The number of people the booking is for</td>
+</tr>
+
+<tr>
+<td><code>type</code></td>
+<td>Yes</td>
+<td><code>string</code> The ID of the booking type</td>
+</tr>
+
+<tr>
+<td><code>venue_id</code></td>
+<td>Yes</td>
+<td><code>string</code> The ID of the venue</td>
+</tr>
+
+<tr>
+<td><code>date</code></td>
+<td>Yes</td>
+<td><code>string</code> The date of the booking, in the format YYYY-MM-DD</td>
+</tr>
+
+<tr>
+<td><code>time</code></td>
+<td>Yes</td>
+<td><code>string</code> The time of the booking, in the format HH:mm</td>
+</tr>
+
+<tr>
+<td><code>duration</code></td>
+<td>No</td>
+<td><code>integer</code> The duration of the booking in minutes</td>
+</tr>
+
+<tr>
+<td><code>email</code></td>
+<td>No</td>
+<td><code>string</code> The guest&rsquo;s email address</td>
+</tr>
+
+<tr>
+<td><code>dob</code></td>
+<td>No</td>
+<td><code>string</code> The guest&rsquo;s date of birth, in the format YYYY-MM-DD</td>
+</tr>
+
+<tr>
+<td><code>phone</code></td>
+<td>No</td>
+<td><code>string</code> The guest&rsquo;s phone number</td>
+</tr>
+
+<tr>
+<td><code>notes</code></td>
+<td>No</td>
+<td><code>string</code> Any additional booking notes</td>
+</tr>
+</tbody>
+</table>
+
+<p>Here&rsquo;s an example request of storing an enquiry for 4 people on the 16th March 2018 at 16:00</p>
+
+<pre><code class="language-bash">$ curl -X POST https://api.designmynight.com/v4/bookings
+    -d &quot;source=partner&amp;first_name=Dan&amp;last_name=Johnson&amp;num_people=4&amp;type=58c927215ee246985eb91b8e&amp;date=2018-03-16&amp;time=16:00&quot;
+</code></pre>
+
+<p>The response will look like this:</p>
+
+<pre><code class="language-json">{
+	&quot;payload&quot;: {
+		&quot;booking&quot;: {
+			&quot;_id&quot;: &quot;5aaaf965addee7655b15ace4&quot;,
+			&quot;created_date&quot;: &quot;2018-03-15T22:53:25&quot;,
+			&quot;created_by&quot;: &quot;58bd9a16dd7d97ef54cef63f&quot;,
+			&quot;last_updated&quot;: &quot;2018-03-15T22:53:25&quot;,
+			&quot;reference&quot;: &quot;DMN-9980140810&quot;,
+			&quot;venue_id&quot;: &quot;5853b29b12f78aa33f8b54b6&quot;,
+			&quot;date&quot;: &quot;2018-04-19T00:00:00&quot;,
+			&quot;time&quot;: &quot;13:00&quot;,
+			&quot;type&quot;: {
+				&quot;guestlist&quot;: false,
+				&quot;id&quot;: &quot;5922c9ee93f8d541531a49b3&quot;,
+				&quot;name&quot;: &quot;Lunch&quot;,
+				&quot;private_hire&quot;: false
+			},
+			&quot;num_people&quot;: 8,
+			&quot;first_name&quot;: &quot;Dan&quot;,
+			&quot;last_name&quot;: &quot;Johnson&quot;,
+			&quot;email&quot;: null,
+			&quot;notes&quot;: null,
+			&quot;source&quot;: &quot;partner&quot;,
+			&quot;packages&quot;: null,
+			&quot;offer&quot;: null,
+			&quot;deposits&quot;: []
+		},
+		&quot;bookingStatus&quot;: &quot;received&quot;,
+		&quot;venue&quot;: {
+			&quot;type&quot;: &quot;venue&quot;,
+			&quot;title&quot;: &quot;Test Venue&quot;,
+			&quot;path&quot;: &quot;\/london\/bars\/shoreditch\/test-venue&quot;,
+			&quot;page_type&quot;: &quot;venue&quot;
+		}
+	},
+	&quot;status&quot;: 200,
+	&quot;requestTime&quot;: &quot;2018-03-15T22:53:24&quot;,
+	&quot;responseTime&quot;: &quot;2018-03-15T22:53:40&quot;,
+	&quot;statusText&quot;: &quot;OK&quot;,
+	&quot;url&quot;: &quot;\/api\/v4\/bookings&quot;,
+	&quot;method&quot;: &quot;POST&quot;,
+	&quot;params&quot;: []
+}
+</code></pre>
 
 <h3 id="submitting-through-the-web">Submitting through the web</h3>
 
