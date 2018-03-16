@@ -165,7 +165,7 @@ Here's an example request of storing an enquiry for 4 people on the 16th March 2
 
 ```bash
 $ curl -X POST https://api.designmynight.com/v4/bookings
-    -d "source=partner&first_name=Dan&last_name=Johnson&num_people=4&type=58c927215ee246985eb91b8e&date=2018-03-16&time=16:00"
+    -d "source=partner&first_name=Dan&last_name=Johnson&num_people=4&venue_id=5853b29b12f78aa33f8b54b6&type=58c927215ee246985eb91b8e&date=2018-03-16&time=16:00"
 ```
 
 The response will look like this:
