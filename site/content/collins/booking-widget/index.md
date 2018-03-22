@@ -39,7 +39,7 @@ Once your team has received training and your settings have had a final health-c
 
 You simply add the small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.
 
-* **Please note:** your Collins booking widget will only ever display booking types that have [availability](https://www.designmynight.com/uploads/2018/01/Availability-tick-can-book1.png) for the customer to book. If none of your booking types currently have availability to book, your Collins booking widget will **not** appear. 
+* **Please note:** your Collins booking widget will only ever display booking types that have availability for the customer to book. If none of your booking types currently have availability to book, your Collins booking widget will **not** appear. 
 
 ## How to add the widget to Wordpress
 Here’s a guide to help you [Add the booking widget to your Wordpress site](https://en.support.wordpress.com/widgets/custom-html-widget/)
@@ -139,7 +139,7 @@ To add CSS code, you will have to surround your CSS code with ```<style></style>
 
 As standard, the widget comes with "Make an Enquiry" as the header and "Enquire Now" on the button. Your web developer will be able to amend the wording of these should you wish (for example, if all your booking types are set to [auto-confirm only](https://collins.uservoice.com/knowledgebase/articles/973384-booking-types-setting-up-an-auto-confirm-only-bo), you may wish to have the button say "Book Now"). 
 
-Your web developer will need to create images that you would like to replace the Header/Button with. Your web developer will then need to override the CSS of the specific [form element](http://developers.designmynight.com/widgets/booking-widget/#styling-the-form). 
+Your web developer will need to create images that you would like to replace the Header/Button with. Your web developer will then need to override the CSS of the specific [form element](http://developers.designmynight.com/collins/booking-widget/#customising-your-collins-booking-widget). 
 
 
 If you are replacing the image of the header:
@@ -224,7 +224,7 @@ Example: this widget will display both English and German options:
 
 Example of a partner with a German booking widget: [Petit Chef Berlin](https://bookings.designmynight.com/book?venue_id=59d759f1cf53f24ceb4fbff0&venue_group=5744696d426ba10256c7a50e&type=&num_people=&date=&time=&duration=&notes=&locale=de-DE&format=modal&source=partner)
 
-**_Please note:_** Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/widgets/booking-widget/#styling-the-form).    
+**_Please note:_** Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/collins/booking-widget/#customising-your-collins-booking-widget).    
 
 ## Multiple Booking Widgets
 If you have added multiple Collins booking widgets to your website but are looking to target each specific form (for example so that you can use Google Analytics for both widgets).  
@@ -263,7 +263,7 @@ If the widget is appearing and working correctly on Plunker, this means that the
 
 You wouldn't be able to add placeholder text through our JS API. However, you could change it using a library like jquery or vanilla JS to add a placeholder to the element. 
 
-Alternatively, you could set the background image of an input with CSS - guide here to help you [style the booking widget](http://developers.designmynight.com/widgets/booking-widget/#styling-the-form). 
+Alternatively, you could set the background image of an input with CSS - guide here to help you [style the booking widget](http://developers.designmynight.com/collins/booking-widget/#customising-your-collins-booking-widget). 
 
 **2. The dates on my calendar are not showing correctly!**
 
@@ -273,7 +273,7 @@ If you have tested the widget code on [Plunker](https://plnkr.co/edit/?p=catalog
 
 If the colour of the **Form Components** is too similar a colour to the **Input Labels**, it can make it difficult for customers to view and select options. 
 
-Your web developer should amend the CSS to tweak the colours used in your [Form Components and Input Labels](http://developers.designmynight.com/widgets/booking-widget/#styling-the-form). 
+Your web developer should amend the CSS to tweak the colours used in your [Form Components and Input Labels](http://developers.designmynight.com/collins/booking-widget/#customising-your-collins-booking-widget). 
 
 **4. By default, the second iFrame is a pop up. Is it possible to direct to a booking page (which is not a pop up)?**
 
