@@ -93,7 +93,7 @@ You can restrict the booking form to only display specified booking types by add
 
 - Set to **guestlist** to only show booking types that you have specified as guest list types
 - Set to **private_hire** to only show booking types you have set up as private hire types
-- Set to a single booking type ID (available in Collins) to only show a single booking type
+- Set to a single booking type ID ([available in Collins](https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes)) to only show a single booking type
 - Set to multiple booking type IDs separated with a comma to only show specified booking types
 
 ## Customising your Collins booking widget
