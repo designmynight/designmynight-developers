@@ -59,3 +59,15 @@ Here are a couple of guides to help:
 
 * [CSS support across different web email clients](https://www.campaignmonitor.com/css/text-fonts/font/)
 * [Web Safe Fonts](https://websitesetup.org/web-safe-fonts-html-css/)
+
+**4. We only want to customise our Booking Confirmation emails. Is it possible to upload a custom email template for one specific type of email and leave all other emails uncustomised?**
+
+Unfortunately, it is not possible for us to upload custom templates just for specific email types. 
+
+If you would like to customise your email templates, we will require templates for every type of email (Confirmation, Cancellation, Follow up, etc). 
+
+If you only wish to customise a specific type of email (eg Confirmation), we recommend that you provide us with two HTML templates:
+
+1. Template for Confirmation Email
+2. A general template that we can upload to be used for all other emails from Collins
+
