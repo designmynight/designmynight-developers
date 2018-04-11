@@ -284,3 +284,13 @@ If this is isolated to your own website, your web developer will have to look at
 
 For example, specific elements of your website may have been set a very high `z-index` which is causing the elements to appear on top over everything else on the page (including the Collins second iFrame). 
 
+**6. The page transitions of our website are done with ajax and we have noticed that the booking widget doesn't _always_ load. Is there any way we can make sure the widget consistently loads?**
+
+This is typically a problem experienced on websites such as Wix and arises when content is loaded dynamically, rather than on the first page load. 
+
+To overcome this, your web developer will need to pass in the url parameter `&elementId=booking-form`. 
+
+Our javascript will then append the booking form HTML inside the given element id and your widget should then display correctly. 
+
+
+
