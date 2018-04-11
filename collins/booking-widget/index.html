@@ -1312,6 +1312,14 @@ DMN.val('type', 'Dinner').hideInput('type');  // Set the booking type to 'Dinner
 
 <p>For example, specific elements of your website may have been set a very high <code>z-index</code> which is causing the elements to appear on top over everything else on the page (including the Collins second iFrame).</p>
 
+<p><strong>6. The page transitions of our website are done with ajax and we have noticed that the booking widget doesn&rsquo;t <em>always</em> load. Is there any way we can make sure the widget consistently loads?</strong></p>
+
+<p>This is typically a problem experienced on websites such as Wix and arises when content is loaded dynamically, rather than on the first page load.</p>
+
+<p>To overcome this, your web developer will need to pass in the url parameter <code>&amp;elementId=booking-form</code>.</p>
+
+<p>Our javascript will then append the booking form HTML inside the given element id and your widget should then display correctly.</p>
+
 			
 			<aside class="copyright" role="note">
 				
