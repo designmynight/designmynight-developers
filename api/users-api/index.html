@@ -1201,6 +1201,24 @@
 
 <p>Sorting results is not currently supported when outputting as a CSV.</p>
 
+<h2 id="updating-a-user">Updating a user</h2>
+
+<p>You can make a POST request to the <code>/users</code> endpoint along with the user ID to update the record, using the endpoint detailed below:</p>
+
+<h3 id="updating-subscription-status-for-a-user">Updating subscription status for a user</h3>
+
+<p>Subscriptions to marketing information is handled with the <code>/custom-details</code> endpoint. The full request URL would look like this:
+<code>https://api.designmynight.com/v4/users/1234/custom-details</code>, where <code>1234</code> is the ID of the user.</p>
+
+<p>The boolean <code>marketing_permission</code> field stores whether or not the user is subscribed.</p>
+
+<p>To update a user&rsquo;s marketing permission preferences, you can POST to the <code>/custom-details</code> endpoint and pass the <code>marketing_permission</code> field in the body of the request. Here&rsquo;s an example request of unsubscribing user ID <code>1234</code> from marketing information:</p>
+
+<p><code>bash
+$ curl -X POST https://api.designmynight.com/v4/users/1234/custom-details
+  -d &quot;marketing_permission=false&quot;
+</code>`</p>
+
 			
 			<aside class="copyright" role="note">
 				
