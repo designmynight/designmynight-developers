@@ -174,5 +174,26 @@ To update a user's marketing permission preferences, you can POST to the `/custo
 ```bash
 $ curl -X POST https://api.designmynight.com/v4/users/1234/custom-details
   -d "marketing_permission=false"
-````
+```
 
+The response will look like this, containing the newly updated user:
+
+```json
+{
+  "payload": {
+    "dob": "1995-01-13T00:00:00",
+    "email": "john@example.com",
+    "first_name": "John",
+    "last_name": "Smith",
+    "marketing_permission": false,
+    "phone": "07912345678",
+    "_id": "1234"
+  },
+  "status": 200,
+  "requestTime": "2018-04-12T17:10:04",
+  "responseTime": "2018-04-12T17:10:04",
+  "statusText": "OK",
+  "url": "\/v4\/users\/1234\/custom-details",
+  "method": "POST"
+}
+```
