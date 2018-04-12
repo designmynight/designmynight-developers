@@ -1214,10 +1214,30 @@
 
 <p>To update a user&rsquo;s marketing permission preferences, you can POST to the <code>/custom-details</code> endpoint and pass the <code>marketing_permission</code> field in the body of the request. Here&rsquo;s an example request of unsubscribing user ID <code>1234</code> from marketing information:</p>
 
-<p><code>bash
-$ curl -X POST https://api.designmynight.com/v4/users/1234/custom-details
+<pre><code class="language-bash">$ curl -X POST https://api.designmynight.com/v4/users/1234/custom-details
   -d &quot;marketing_permission=false&quot;
-</code>`</p>
+</code></pre>
+
+<p>The response will look like this, containing the newly updated user:</p>
+
+<pre><code class="language-json">{
+  &quot;payload&quot;: {
+    &quot;dob&quot;: &quot;1995-01-13T00:00:00&quot;,
+    &quot;email&quot;: &quot;john@example.com&quot;,
+    &quot;first_name&quot;: &quot;John&quot;,
+    &quot;last_name&quot;: &quot;Smith&quot;,
+    &quot;marketing_permission&quot;: false,
+    &quot;phone&quot;: &quot;07912345678&quot;,
+    &quot;_id&quot;: &quot;1234&quot;
+  },
+  &quot;status&quot;: 200,
+  &quot;requestTime&quot;: &quot;2018-04-12T17:10:04&quot;,
+  &quot;responseTime&quot;: &quot;2018-04-12T17:10:04&quot;,
+  &quot;statusText&quot;: &quot;OK&quot;,
+  &quot;url&quot;: &quot;\/v4\/users\/1234\/custom-details&quot;,
+  &quot;method&quot;: &quot;POST&quot;
+}
+</code></pre>
 
 			
 			<aside class="copyright" role="note">
