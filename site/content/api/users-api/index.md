@@ -157,3 +157,22 @@ $ curl -X GET https://api.designmynight.com/v4/users/?output=csv
 Results for CSV output are always limited to a maximum of 25000 results per page.
 
 Sorting results is not currently supported when outputting as a CSV.
+
+## Updating a user
+
+You can make a POST request to the `/users` endpoint along with the user ID to update the record, using the endpoint detailed below:
+
+### Updating subscription status for a user
+
+Subscriptions to marketing information is handled with the `/custom-details` endpoint. The full request URL would look like this:
+`https://api.designmynight.com/v4/users/1234/custom-details`, where `1234` is the ID of the user.
+
+The boolean `marketing_permission` field stores whether or not the user is subscribed.
+
+To update a user's marketing permission preferences, you can POST to the `/custom-details` endpoint and pass the `marketing_permission` field in the body of the request. Here's an example request of unsubscribing user ID `1234` from marketing information:
+
+```bash
+$ curl -X POST https://api.designmynight.com/v4/users/1234/custom-details
+  -d "marketing_permission=false"
+````
+
