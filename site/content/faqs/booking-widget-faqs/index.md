@@ -5,16 +5,40 @@ Here’s a guide to help you [Add the booking widget to your Wordpress site](htt
 
 **_Please note:_** you will need to upgrade to the Business Plan to be able to add the widget code to your site. 
 
+Examples of partners using a Wordpress site:
+
+[Humble Grape Battersea](https://www.humblegrape.co.uk/wine-bar/islington/)
+
+[The Stable](https://stablepizza.com/book-a-table/)
+
 ## How to add the widget to Squarespace
 Here’s a guide to help you [Add the booking widget to your Squarespace site](https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-HTML-CSS-and-JavaScript)
 
 **_Please note:_** you need to add a **Code Block**, not an Embed Block.
 
+Examples of partners using a Squarespace site:
+
+[Dokke](https://www.dokke.co.uk/private-bookings/)
+
+[Little Nan's](https://www.littlenans.co.uk/make-a-booking/)
+
+[Novi Cambridge](http://novicambridge.co.uk/reservations/)
+
 ## How to add the widget to Wix
 Here's a guide to help you [Add the booking widget to your Wix site](https://support.wix.com/en/article/adding-html-code)
 
+Example of partners using a Wix site:
+
+[Duck Duck Goose](https://www.duckduckgooselondon.com/)
+
 ## How to add the widget to Facebook
 Here's a guide to help you [Add the booking widget to your Facebook page](https://collins.uservoice.com/knowledgebase/articles/478066-facebook-widget-set-up)
+
+Examples of partners using the Facebook Widget:
+
+[Andina London](https://www.facebook.com/AndinaLondon/app/668769669862814/)
+
+[The Gentlemen Baristas](https://www.facebook.com/thegentlemenbaristas/app/668769669862814/)
 
 ## Customising your Collins booking widget
 

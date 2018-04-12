@@ -159,13 +159,16 @@ Field | Required | Description
 `email` | No | `string` The guest's email address
 `dob` | No | `string` The guest's date of birth, in the format YYYY-MM-DD
 `phone` | No | `string` The guest's phone number
-`notes` | No | `string` Any additional booking notes
+`notes` | No | `string` Any additional booking notes or special requests
+`newsletter_signup` | No | `boolean` If the customer has agreed to sign up to the DMN newsletter
+`partner_data_permission` | No | `boolean` If the customer has agreed to sign up to the partner's newsletter
+`custom_field_value` | No | `string` The value for the custom field
 
 Here's an example request of storing an enquiry for 4 people on the 16th March 2018 at 16:00
 
 ```bash
 $ curl -X POST https://api.designmynight.com/v4/bookings
-    -d "source=partner&first_name=Dan&last_name=Johnson&num_people=4&type=58c927215ee246985eb91b8e&date=2018-03-16&time=16:00"
+    -d "source=partner&first_name=Dan&last_name=Johnson&num_people=4&venue_id=5853b29b12f78aa33f8b54b6&type=58c927215ee246985eb91b8e&date=2018-03-16&time=16:00"
 ```
 
 The response will look like this:

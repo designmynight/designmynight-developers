@@ -33,7 +33,9 @@ It will then be up to your CRM system to access our API and pull the relevant da
 
 ## Collins/Fishbowl Integration Overview
 
-The Collins/Fishbowl integration is set up differently as it is a fixed connection to their API, so that when new customers/bookings are added to Collins, they will automatically push to Fishbowl (if the customer has opted in for your marketing permission). The data possible to be pushed is decided by the paramaters available in your Fishbowl account.
+The Collins/Fishbowl integration is set up differently as it is a fixed connection to their API, so that when new bookings are added to Collins, the customer details will automatically push to Fishbowl (if the customer has opted in for your marketing permission). The data possible to be pushed is decided by the paramaters available in your Fishbowl account.
+
+**_Please note:_** the customer details will only push to Fishbowl if they are associated to an enquiry/booking. Customers that are added as a new customer (without a booking associated) in your [Customer Section](https://collins.uservoice.com/knowledgebase/articles/1112764-customer-database-how-to-add-a-new-customer) will **not** push to Fishbowl.
 
 ## Setting up the Collins/Fishbowl Integration
 
@@ -41,7 +43,7 @@ If you are looking to set up an integration with Fishbowl, please request your *
 
 **_Please note:_** depending on our tech roadmap, it can take our tech team up to two weeks to set up this integration. 
 
-Once set up, data should be pushed to Fishbowl whenever a user is created/changes (in most cases, this will be when the booking is added).
+Once set up, data should be pushed to Fishbowl whenever a customer is created/changes (ie when the booking is added).
 So if you would like to test the integration, you can create a test booking in your Collins (and check that they are showing in Fishbowl). 
 
 ## Collins/Fishbowl Integration FAQs
@@ -51,6 +53,22 @@ So if you would like to test the integration, you can create a test booking in y
 If the marketing permission is changed on Collins so that marketing permission is ticked, the customer details will automatically pushed to Fishbowl. 
 
 If the marketing permission is changed in Collins so that marketing permission is **not** ticked, but the customer already exists as subscribed in Fishbowl, you will have to manually update your Fishbowl list.
+
+**2. Is it possible for Collins to push booking details (in addition to customer details)?**
+
+By default, the integration is set up to only allow Collins to send customer details to Fishbowl.
+
+It is possible for Collins to push additional details. Depending on what data you are looking to collect, you will need to check that Fishbowl can handle different formats.
+
+For example, we need to pass labels as a comma-separated string. Fishbowl will need to split them up and be able to store them separately. 
+
+You will be able to set up to receive additional data. To do this: 
+
+1. Set up another profile field in your Enterprise for the additional data you wish to collect 
+2. Let your Collins Account Manager know the name of the field that you have set up
+3. Collins will then be able to pass the additional details as part of the QS send of new members
+
+**_Please note:_** depending on our tech roadmap, it can take our tech team up to two weeks to update/set up this integration. 
 
 ## Collins/Zonal CRM Integration Overview
 
