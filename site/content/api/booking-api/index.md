@@ -159,7 +159,7 @@ Field | Required | Description
 `email` | No | `string` The guest's email address
 `dob` | No | `string` The guest's date of birth, in the format YYYY-MM-DD
 `phone` | No | `string` The guest's phone number
-`notes` | No | `string` Any additional booking notes
+`notes` | No | `string` Any additional booking notes or special requests
 `newsletter_signup` | No | `boolean` If the customer has agreed to sign up to the DMN newsletter
 `partner_data_permission` | No | `boolean` If the customer has agreed to sign up to the partner's newsletter
 `custom_field_value` | No | `string` The value for the custom field
