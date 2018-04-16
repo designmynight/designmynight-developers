@@ -20,7 +20,7 @@
       <description>Booking URL for a specific venue If you are unable to add the Collins booking widget, it&amp;rsquo;s possible for you to include a booking URL to your website instead.
 Here is an example of partners using a booking URL: The Park Tavern
 To create a booking URL for your venue, you will need to use a URL of the following form:
-https://www.designmynight.com/book?venue_id=VENUEID&amp;amp;source=partner&amp;amp;format=modal
+https://bookings.designmynight.com/book?venue_id=VENUEID&amp;amp;source=partner&amp;amp;format=modal
 Where you have to replace &amp;lsquo;VENUEID&amp;rsquo; with your unique Collins Venue ID.</description>
     </item>
     
