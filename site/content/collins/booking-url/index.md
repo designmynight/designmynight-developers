@@ -6,7 +6,7 @@ Here is an example of partners using a booking URL: [The Park Tavern](https://ww
 
 To create a booking URL for your venue, you will need to use a URL of the following form:
 
-https://www.designmynight.com/book?venue_id=VENUEID&source=partner&format=modal
+https://bookings.designmynight.com/book?venue_id=VENUEID&source=partner&format=modal
 
 Where you have to replace 'VENUEID' with your [unique Collins Venue ID](http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-id). 
 
@@ -14,13 +14,13 @@ Where you have to replace 'VENUEID' with your [unique Collins Venue ID](http://d
 
 If you are looking to create a booking link for a specific booking type (for example if you want to send a link out in a targetted mail out), you can create a URL of the following format: 
 
-https://www.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUPID&type=BOOKINGTYPEID&source=partner&fixed_type=1
+https://bookings.designmynight.com/book?venue_id=VENUEID&venue_group=VENUEGROUPID&type=BOOKINGTYPEID&source=partner&fixed_type=1
 
 Where you have to replace [VENUEID](http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-id), [VENUEGROUPID](http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-group-id) and [BOOKINGTYPEID](http://developers.designmynight.com/faqs/booking-url/#how-to-find-the-booking-type-id) accordingly. 
 
 **Example:**
 
-https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&venue_group=5524371d0df690ad7156f2ea&type=58be86d4c71620a90d97aba4&source=partner&fixed_type=1
+https://bookings.designmynight.com/book?venue_id=552435790df6902b7256f237&venue_group=5524371d0df690ad7156f2ea&type=58be86d4c71620a90d97aba4&source=partner&fixed_type=1
 
 ## How to find your Collins Venue ID 
 
@@ -65,7 +65,7 @@ If you want to fix any other parameters (for example if the booking type is for 
 
 **Example:** A NYE Dinner booking type starting at 6pm:
 
-https://www.designmynight.com/book?venue_id=552435790df6902b7256f237&venue_group=5524371d0df690ad7156f2ea&type=5a3cd86849def9264240cd17&date=2017-12-31&time=18:00&source=partner&fixed_type=1
+https://bookings.designmynight.com/book?venue_id=552435790df6902b7256f237&venue_group=5524371d0df690ad7156f2ea&type=5a3cd86849def9264240cd17&date=2017-12-31&time=18:00&source=partner&fixed_type=1
 
 **Please note:** you will be unable to fix **all** the above parameters at the same time. Otherwise, you would be effectively filling all the required parameters which would proceed to the next step of the booking process. 
 
@@ -92,7 +92,7 @@ German `de-DE`
 
 Example: this booking url will display in German:
 
-https://www.designmynight.com/book?venue_id=59d759f1cf53f24ceb4fbff0&venue_group=59ccf635f61ea13caf7de907&type=59d769e864511d794c3846d3&locale=de-DE&source=partner&fixed_type=1
+https://bookings.designmynight.com/book?venue_id=59d759f1cf53f24ceb4fbff0&venue_group=59ccf635f61ea13caf7de907&type=59d769e864511d794c3846d3&locale=de-DE&source=partner&fixed_type=1
 
 **Please note:** you will only be able to display your booking url in **one** language.
 
