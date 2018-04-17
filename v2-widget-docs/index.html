@@ -1000,6 +1000,10 @@ widget.setDateOfBirth(13, 4, 2000); // 13th April 2000
 
 <p>Sets the user&rsquo;s mobile number. The parameter is required and should be a string.</p>
 
+<h3 id="setnotes-notes"><code>setNotes (notes)</code></h3>
+
+<p>Sets the booking notes. The parameter is required and should be a string.</p>
+
 <h2 id="controlling-the-active-stage">Controlling the active stage</h2>
 
 <p>The following methods can be used to control which stage the widget is currently on. By default, the widget will launch:</p>
@@ -1046,7 +1050,7 @@ widget.setDateOfBirth(13, 4, 2000); // 13th April 2000
 
 <p>We&rsquo;ll use the Javascript API to preset this information, meaning all the user needs to specify is their desired booking type, preferred time and their contact details. When the page loads, the widget will be displaying the Booking Type selection stage.</p>
 
-<pre><code class="language-javascript">const helper = window.BookingFormHelper;
+<pre><code class="language-javascript">const helper = window.DMN.BookingFormHelper;
 const widgets = helper.widgets; // [Widget]
 
 // We'll assume there's only one widget on the page for this example.
@@ -1060,6 +1064,21 @@ widget.setVenueById(desiredVenueId)
     .setNumberOfGuests(desiredNumGuests)
     .setDate(desiredDate)
     .goToTypeSelectionStage();
+</code></pre>
+
+<h3 id="prefilling-notes">Prefilling Notes</h3>
+
+<p>In this example, we&rsquo;re going to be prefilling the Notes section to contain a custom string. Bear in mind that the notes can still be viewed and modified by the customer as they&rsquo;re placing their booking.</p>
+
+<pre><code class="language-javascript">const helper = window.DMN.BookingFormHelper;
+const widgets = helper.widgets; // [Widget]
+
+// We'll assume there's only one widget on the page for this example.
+const widget = widgets[0];
+
+const notes = &quot;Booking placed from my website&quot;;
+
+widget.setNotes(notes)
 </code></pre>
 
 			
