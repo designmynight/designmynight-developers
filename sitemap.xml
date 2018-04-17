@@ -136,6 +136,10 @@
   </url>
   
   <url>
+    <loc>http://developers.designmynight.com/v2-widget-docs/</loc>
+  </url>
+  
+  <url>
     <loc>http://developers.designmynight.com/api/</loc>
     <lastmod>2017-10-23T16:41:48+01:00</lastmod>
     <priority>0</priority>

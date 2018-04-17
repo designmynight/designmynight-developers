@@ -14,12 +14,12 @@
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="http://developers.designmynight.com/epos-crm-integrations/ibs-epos-integration/">
+    <link rel="canonical" href="http://developers.designmynight.com/v2-widget-docs/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="http://developers.designmynight.com/epos-crm-integrations/ibs-epos-integration/">
+    <meta property="og:url" content="http://developers.designmynight.com/v2-widget-docs/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="http://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -853,14 +853,11 @@
 
 
 
-<a class="current" title="IBS EPOS Integration" href="http://developers.designmynight.com/epos-crm-integrations/ibs-epos-integration/">
+<a  title="IBS EPOS Integration" href="http://developers.designmynight.com/epos-crm-integrations/ibs-epos-integration/">
 	
 	IBS EPOS Integration
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
       
         
@@ -929,144 +926,141 @@
 
 			
 
-<h1 id="overview-of-the-collins-ibs-epos-integration">Overview of the Collins/IBS EPOS Integration</h1>
+<h1 id="booking-widget-documentation">Booking Widget Documentation</h1>
 
-<p>The purpose of the integration between Collins and IBS is to be able to push the details of bookings and their associated deposits to the IBS Epos system.</p>
+<h1 id="introduction">Introduction</h1>
 
-<p><strong>Details can be set to:</strong></p>
+<p>The <code>BookingFormHelper</code> class is attached to <code>window.DMN</code>, and provides you with methods for interacting with any widgets on a page independently.</p>
 
-<ul>
-<li>Push ASAP <strong>or</strong> push on the day of the booking</li>
-<li>Push all bookings <strong>or</strong> only push bookings with deposits</li>
-</ul>
+<p><code>window.DMN.BookingFormHelper.widgets</code> will return an array of <code>Widget</code> objects - one for each widget placed on the page.</p>
 
-<p><strong>Bookings will be sent to the EPOS with the following details:</strong></p>
+<p>The <code>Widget</code> object contains the methods listed below which can be used for interacting with a single widget.</p>
 
-<ul>
-<li>Name: The Customer&rsquo;s full name</li>
-<li>Date: The date of the booking</li>
-<li>Time: The time of the booking</li>
-<li>Cover Count: The number of guests in the booking</li>
-<li>Reference: The Collins booking reference</li>
-<li>Deposit amount: The total of all paid deposit</li>
-</ul>
+<p>When only one widget is used on a page, you can easily get the <code>Widget</code> object with the following code:</p>
 
-<h2 id="payments-valid-to-push-to-ibs-epos">Payments Valid to Push to IBS EPOS</h2>
+<pre><code class="language-javascript">var widget = window.DMN.BookingFormHelper.widgets[0];
+</code></pre>
 
-<ul>
-<li><strong>Paid Deposits</strong></li>
-</ul>
+<h1 id="reference-docs">Reference Docs</h1>
 
-<p>All <a href="https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to">manual/request payments</a> taken using the payment link in Collins will automatically push to your IBS EPOS.</p>
+<h2 id="setting-and-getting-booking-details">Setting and Getting Booking Details</h2>
 
-<ul>
-<li><strong>Payments claimed by Card Authentication</strong></li>
-</ul>
+<p>The following methods can be used to set the booking details, or see what booking details have been selected by the user before they submit the booking. Setting booking details using these methods will <strong>not</strong> advance the widget to the next stage - see the <a href="#controlling-the-active-stage">Controlling the active stage</a> for instructions on how to advance to other stages.</p>
 
-<p>The Collins/Zonal integration will <strong>not</strong> allow for Collins to push payments that have been added <strong>after</strong> the booking date has passed.</p>
+<h3 id="getselectablevenueids-string"><code>getSelectableVenueIds(): string[]</code></h3>
 
-<p>Payments claimed from <a href="https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to">Collins Card Authentication</a> should only be taken <strong>after</strong> the booking date has passed (in the case that the customer was a no-show or failed to meet your booking policies).</p>
+<p>Returns an array of venue IDs which the user can choose from. These venues would have been specified when the widget was installed.</p>
 
-<p>As such payments claimed by Card Authentication will <strong>not</strong> push to the till and will need to be manually added to your tills.</p>
+<h3 id="getselectablebookingtypeids-string"><code>getSelectableBookingTypeIds(): string[]</code></h3>
 
-<ul>
-<li><strong>Pushing &lsquo;Other&rsquo; Payments</strong></li>
-</ul>
+<p>Returns an array of booking type IDs for the selected venue. A venue must be selected (<code>setVenueById()</code>) before running this.</p>
 
-<p>If you add an <a href="https://collins.uservoice.com/knowledgebase/articles/478056-within-a-booking-enquiry-recording-payments-made">&lsquo;Other&rsquo;</a> Payment to your Collins booking, you will see an option to &lsquo;Push to Till&rsquo;. By default, this field will stay blank.</p>
+<h3 id="setvenuebyid-venueid"><code>setVenueById(venueId)</code></h3>
 
-<p>Depending on whether you would like to push the &lsquo;Other&rsquo; payment to your tills, you will have to manually select Yes/No from the drop-down accordingly.</p>
+<p>Sets the venue which the booking will be made for. The venue ID is a required parameter, and must be one of the IDs specified when the widget was installed. You can use the <a href="#getSelectableVenueIds()"><code>getSelectableVenueIds()</code></a> method to get an array of venue IDs you can use.</p>
 
-<p>You will not be able to proceed with adding the payment without selecting an option on the &lsquo;Push to Till&rsquo; drop down.</p>
+<h3 id="setnumberofguests-number"><code>setNumberOfGuests(number)</code></h3>
 
-<p>This way your team has full control as to which payments get pushed to your tills.</p>
+<p>Sets the number of guests for the booking. The user will still have the ability to modify this. The parameter is required and should be an integer.</p>
 
-<h2 id="setting-up-the-collins-ibs-integration">Setting up the Collins/IBS Integration:</h2>
+<h3 id="setdate-date"><code>setDate(date)</code></h3>
 
-<p>If you would like to set up the integration to push bookings/payments to your IBS EPOS, you will need to contact your Collins Account Manager with the following details (you will be able to get these from IBS):</p>
+<p>Sets the date the booking will be made for. The user will still have the ability to modify this. The parameter is required, and should be a javascript <code>Date</code> object. Only the date segment is used - the time part will be disregarded.</p>
 
-<ul>
-<li>Logon URL</li>
-<li>WSDL</li>
-<li>CompanyCode</li>
-<li>Username</li>
-<li>Password</li>
-<li>AppGUID</li>
-<li>LocationCode</li>
-</ul>
+<h3 id="settypebyid-typeid"><code>setTypeById(typeId)</code></h3>
 
-<p>You will also need to specify how you would like the integration to function (this will depend on how you manage your reporting on your side). For this, you will need to confirm <strong>which bookings</strong> you would like Collins to push to your tills and <strong>when</strong> these bookings should be pushed:</p>
+<p>Sets the booking type. The user will still have the ability to modify this. The parameter is required, and must be one of the type IDs for the selected venue. An array of selectable type IDs can be found by using <code>getSelectableBookingTypeIds()</code></p>
 
-<ul>
-<li><p>Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.</p></li>
+<h2 id="setting-the-user-details">Setting the user details</h2>
 
-<li><p>Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent on the morning of the booking date.</p></li>
-</ul>
+<p>Setting the user details programatically means that their details will already be prefilled by the time they get to the final Details stage.</p>
 
-<p><strong><em>Please note:</em></strong> any bookings/deposits that are already on Collins (before the Collins/IBS integration is set up) will <strong>not</strong> push to the till unless a deposit is added/changed/deleted for the booking on Collins.</p>
+<h3 id="setemailaddress-emailaddress"><code>setEmailAddress (emailAddress)</code></h3>
 
-<h2 id="checking-that-the-collins-ibs-integration-is-set-up-correctly">Checking that the Collins/IBS Integration is set up correctly</h2>
+<p>Sets the email address of the user. The parameter is required and should be a string.</p>
 
-<p>Once your Collins Account Manager has been in touch that the integration has been set up, it will be your responsibility to check that the integration is working correctly (as Collins will not be able to access your till systems to test).</p>
+<h3 id="setfirstname-firstname"><code>setFirstName (firstName)</code></h3>
 
-<p>As such, we recommend that you create a test payment through Collins. This will both test the connection and ensure that you&rsquo;re confident with how it will show on your tills.</p>
+<p>Sets the first name of the user. The parameter is required and should be a string.</p>
 
-<p>Once the integration has been set up, all valid payments added to Collins will have a tick next to it in the Payments tab of the booking. The colour of the tick will determine the &lsquo;pushed to till&rsquo; status:</p>
+<h3 id="setlastname-lastname"><code>setLastName (lastName)</code></h3>
+
+<p>Sets the last name of the user. The parameter is required and should be a string.</p>
+
+<h3 id="setdateofbirth-date-month-year"><code>setDateOfBirth (date, month, year)</code></h3>
+
+<p>Sets the date of birth of the user. This information will only be sent to Collins if the <em>Birthday</em> field is not set as <em>hidden</em> in Collins. All three parameters are required, and they should all be integers. Here are some examples of the expected format:</p>
+
+<pre><code class="language-javascript">widget.setDateOfBirth(13, 1, 1995); // 13th January 1995
+widget.setDateOfBirth(1, 12, 1990); // 1st December 1990
+widget.setDateOfBirth(13, 4, 2000); // 13th April 2000
+</code></pre>
+
+<h3 id="setmobilenumber-mobilenumber"><code>setMobileNumber (mobileNumber)</code></h3>
+
+<p>Sets the user&rsquo;s mobile number. The parameter is required and should be a string.</p>
+
+<h2 id="controlling-the-active-stage">Controlling the active stage</h2>
+
+<p>The following methods can be used to control which stage the widget is currently on. By default, the widget will launch:</p>
 
 <ul>
-<li><p>The <a href="https://static.designmynight.com/uploads/2017/11/pushed-to-till-optimised.png">green tick</a> means that the payment has already been pushed to your till.</p></li>
-
-<li><p>The <a href="https://static.designmynight.com/uploads/2017/11/not-pushed-to-till-optimised.png">orange tick</a> will mean different things depending on how you&rsquo;ve set the integration up:</p></li>
+<li>The <em>Venue Selection</em> stage if there are more than 1 venue to select from</li>
+<li>&mdash; <strong>OR</strong> &mdash;</li>
+<li>The <em>Date/Number of Guests</em> stage if there is only 1 venue to select from</li>
 </ul>
 
-<p>If you have set up to push bookings ASAP and the tick is orange, this means that the payment has not correctly pushed to your tills. Please see our troubleshooting steps below.</p>
+<h3 id="gotovenuestage"><code>goToVenueStage()</code></h3>
 
-<p>If you have set up to push bookings on the day of the booking, the orange tick means the payment is yet to push (and will push on the day of the booking).</p>
+<p>Jumps to the Venue selection stage.</p>
 
-<h2 id="how-to-push-bookings-that-were-on-collins-before-the-ibs-integration">How to push bookings that were on Collins before the IBS integration</h2>
+<h3 id="gotodateandguestselectionstage"><code>goToDateAndGuestSelectionStage()</code></h3>
 
-<p>If the integration is set up to push bookings ASAP, Collins will attempt to push bookings to your tills every time a user add/edits/deletes a Payment for the booking in Collins and saves.</p>
+<p>Jumps to the Date/Number of Guests stage.</p>
 
-<p>As such, if you add a new payment to any bookings already on Collins before the integration was set up, the booking will be pushed to the tills.</p>
+<h3 id="gototypeselectionstage"><code>goToTypeSelectionStage()</code></h3>
 
-<p>If you wish to push a booking/deposit that was already set up on Collins before the integration (even if no new payments have been taken after the integration is set up):</p>
+<p>Jumps to the Booking Type selection stage.</p>
 
-<ol>
-<li>Go to the booking on Collins</li>
-<li>Add an <a href="https://collins.uservoice.com/knowledgebase/articles/478056-within-a-booking-enquiry-recording-payments-made">&lsquo;Other&rsquo;payment</a>. Select for the payment <strong>not</strong> to push to your tills.<br /></li>
-<li>Save the booking</li>
-<li>Delete the deposit</li>
-<li>Save the booking</li>
-</ol>
+<h3 id="gototimeselectionstage"><code>goToTimeSelectionStage()</code></h3>
 
-<p>The booking should push to your tills.</p>
+<p>Jumps to the Time selection stage.</p>
 
-<p><strong><em>Please note:</em></strong> this will only work for bookings that have a future booking date. This integration does not allow for Collins to push bookings if the date of the booking has already passed.</p>
+<h3 id="gotodetailsstage"><code>goToDetailsStage()</code></h3>
 
-<h2 id="best-practice-for-pushing-all-bookings">Best Practice for Pushing all bookings</h2>
+<p>Jumps to the Details stage, where a user enters their information.</p>
 
-<p>If your integration is set up to push all bookings (not just bookings with deposits), it&rsquo;s important that you ensure that all of the following booking details are added to the booking in Collins:</p>
+<h1 id="examples">Examples</h1>
+
+<h2 id="pre-selecting-booking-information">Pre-selecting booking information</h2>
+
+<h3 id="valentines-day-example">Valentines Day example</h3>
+
+<p>In this example, we&rsquo;re going to be placing the widget on a Valentines Day page. The widget will provide a convenient way for guests to make a booking for:</p>
 
 <ul>
-<li>First Name</li>
-<li>Last Name</li>
-<li>Booking Date</li>
-<li>Venue</li>
-<li>Time</li>
-<li>Email Address</li>
+<li><em>Cocktail Bar</em> venue (Venue ID: 123456)</li>
+<li>2 people</li>
+<li>14th February 2019</li>
 </ul>
 
-<p>Without all these details, we will be unable to push the booking to your tills.</p>
+<p>We&rsquo;ll use the Javascript API to preset this information, meaning all the user needs to specify is their desired booking type, preferred time and their contact details. When the page loads, the widget will be displaying the Booking Type selection stage.</p>
 
-<p><strong><em>Please note:</em></strong> if you are manually adding the First and Last Names into the booking (eg if you are taking the booking over the phone or in person), please separate multiple barrel names with a hyphen instead of a space.</p>
+<pre><code class="language-javascript">const helper = window.BookingFormHelper;
+const widgets = helper.widgets; // [Widget]
 
-<p>e.g. John-Edwards <strong>NOT</strong> John Edwards</p>
+// We'll assume there's only one widget on the page for this example.
+const widget = widgets[0];
 
-<h2 id="ibs-epos-integration-faqs">IBS EPOS Integration FAQS</h2>
+const desiredVenueId = '123456';
+const desiredNumGuests = 6;
+const desiredDate = new Date('2019-02-14T00:00:00');
 
-<p><strong>1. If we set up the integration to push all bookings, will my in progress enquiries get pushed to tills?</strong></p>
-
-<p>There is not currently a status check in place, so Collins would push all bookings regardless of booking status.</p>
+widget.setVenueById(desiredVenueId)
+    .setNumberOfGuests(desiredNumGuests)
+    .setDate(desiredDate)
+    .goToTypeSelectionStage();
+</code></pre>
 
 			
 			<aside class="copyright" role="note">
@@ -1087,27 +1081,11 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://developers.designmynight.com/epos-crm-integrations/zonal-epos-integration/" title="">
-        <span class="direction">
-          Previous
-        </span>
-        <div class="page">
-          <div class="button button-previous" role="button" aria-label="Previous">
-            <i class="icon icon-back"></i>
-          </div>
-          <div class="stretch">
-            <div class="title">
-              
-            </div>
-          </div>
-        </div>
-      </a>
-  
   </div>
 
   <div class="next">
   
-      <a href="http://developers.designmynight.com/epos-crm-integrations/crm-integration/" title="">
+      <a href="http://developers.designmynight.com/testing/testing/" title="">
         <span class="direction">
           Next
         </span>
