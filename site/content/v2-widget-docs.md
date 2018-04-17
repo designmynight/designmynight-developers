@@ -74,6 +74,10 @@ widget.setDateOfBirth(13, 4, 2000); // 13th April 2000
 
 Sets the user's mobile number. The parameter is required and should be a string.
 
+### `setNotes (notes)`
+
+Sets the booking notes. The parameter is required and should be a string.
+
 
 ## Controlling the active stage
 
@@ -118,7 +122,7 @@ In this example, we're going to be placing the widget on a Valentines Day page. 
 We'll use the Javascript API to preset this information, meaning all the user needs to specify is their desired booking type, preferred time and their contact details. When the page loads, the widget will be displaying the Booking Type selection stage.
 
 ```javascript
-const helper = window.BookingFormHelper;
+const helper = window.DMN.BookingFormHelper;
 const widgets = helper.widgets; // [Widget]
 
 // We'll assume there's only one widget on the page for this example.
@@ -133,3 +137,20 @@ widget.setVenueById(desiredVenueId)
     .setDate(desiredDate)
     .goToTypeSelectionStage();
 ```
+
+### Prefilling Notes
+
+In this example, we're going to be prefilling the Notes section to contain a custom string. Bear in mind that the notes can still be viewed and modified by the customer as they're placing their booking.
+
+```javascript
+const helper = window.DMN.BookingFormHelper;
+const widgets = helper.widgets; // [Widget]
+
+// We'll assume there's only one widget on the page for this example.
+const widget = widgets[0];
+
+const notes = "Booking placed from my website";
+
+widget.setNotes(notes)
+```
+
