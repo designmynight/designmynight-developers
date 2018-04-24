@@ -22,12 +22,12 @@ The purpose of the integration between Collins and IBS is to be able to push the
 All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) taken using the payment link in Collins will automatically push to your IBS EPOS. 
 
 * **Payments claimed by Card Authentication** 
- 
- The Collins/Zonal integration will **not** allow for Collins to push payments that have been added **after** the booking date has passed. 
- 
-Payments claimed from [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) should only be taken **after** the booking date has passed (in the case that the customer was a no-show or failed to meet your booking policies).
 
-As such payments claimed by Card Authentication will **not** push to the till and will need to be manually added to your tills. 
+If you claim a [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) payment **before** the booking date has passed (eg if the customer cancels their booking at last minute), Collins will push the payment to your tills.
+
+The Collins/IBS integration will **not** allow for Collins to push payments that have been added **after** the booking date has passed. 
+
+As such, if you claim a Collins Card Authentication **after** the booking date has passed (eg the customer was a no-show), Collins will **not** push the payment to your till and your team will need to be manually added to your tills. 
 
 * **Pushing 'Other' Payments**
 
