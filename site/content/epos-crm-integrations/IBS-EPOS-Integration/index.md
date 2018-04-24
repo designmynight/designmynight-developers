@@ -114,6 +114,10 @@ Without all these details, we will be unable to push the booking to your tills.
 
 e.g. John-Edwards **NOT** John Edwards
 
+## Refunding on Collins and IBS
+
+If you [refund a deposit](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer) or delete an 'Other' payment in Collins, this change will now be pushed to Stocklink so that Collins and your tills are synced. 
+
 ## IBS EPOS Integration FAQS
 **1. If we set up the integration to push all bookings, will my in progress enquiries get pushed to tills?** 
 
