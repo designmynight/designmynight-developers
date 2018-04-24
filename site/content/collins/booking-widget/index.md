@@ -292,5 +292,10 @@ To overcome this, your web developer will need to pass in the url parameter `&el
 
 Our javascript will then append the booking form HTML inside the given element id and your widget should then display correctly. 
 
+**7. I've added the booking widget to my Facebook page but the booking types are not displaying. The booking types have availability to book so not sure what to do?**
+
+It may be the case that the settings hadn't saved before the widget was added to your Facebook page. If you delete the booking widget from your Facebook and then try re-adding, your booking types should then hopefully display correctly.
+
+
 
 
