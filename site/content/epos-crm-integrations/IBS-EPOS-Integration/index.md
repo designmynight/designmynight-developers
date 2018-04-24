@@ -49,6 +49,14 @@ If you would like to set up the integration to push bookings/payments to your IB
 * Password 
 * AppGUID 
 * LocationCode
+* Media Mappings to be used for **each** of the following payment types:
+
+1. Collins Pay
+2. Other Payment BACS
+3. Other Payment Card
+4. Other Payment Cash
+5. Other Payment Cheque
+6. Other Payment PDQ
 
 You will also need to specify how you would like the integration to function (this will depend on how you manage your reporting on your side). For this, you will need to confirm **which bookings** you would like Collins to push to your tills and **when** these bookings should be pushed:
 
