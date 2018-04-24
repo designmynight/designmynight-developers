@@ -296,6 +296,20 @@ Our javascript will then append the booking form HTML inside the given element i
 
 It may be the case that the settings hadn't saved before the widget was added to your Facebook page. If you delete the booking widget from your Facebook and then try re-adding, your booking types should then display correctly.
 
+**8. I've added the widget to the 'Reservations' page of my Squarespace site. When I go directly to the URL, the widget displays correctly. However, when I go to the Reservations page indirectly (eg clicking from my Home Page), the widget doesn't appear unless I refresh the page. What can I do?**
+
+As this is something from the Squarespace side, it's always best to contact SquareSpace directly. 
+
+One potential cause is if you have "Enable Ajax Loading" checked, as this feature can sometimes interfere with custom code. 
+
+You can disable it following these steps:
+
+1. Go to your Squarespace Home Menu
+2. Click Design
+3. click Stlye Editor 
+4. Scroll down to the section SITE
+5. Untick "Enable Ajax Loading" 
+6. Click SAVE
 
 
 
