@@ -17,6 +17,8 @@ You are able to customise the 2nd iframe on your Collins booking widget to bette
 
 When the booking form loads, it will also load your CSS so you can override whatever is on the book page.
 
+Example of a partner with a customised second iframe: [Beech House Beaconsfield](https://www.beechhousebeaconsfield.co.uk/bookings)
+
 ## Customising 2nd iFrame FAQs
 
 **1. When scrolling on a different device/screen size, the 2nd iFrame isn’t fully showing?**
