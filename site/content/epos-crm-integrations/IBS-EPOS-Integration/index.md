@@ -64,7 +64,15 @@ You will also need to specify how you would like the integration to function (th
 
 * Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent on the morning of the booking date.
 
-**_Please note:_** any bookings/deposits that are already on Collins (before the Collins/IBS integration is set up) will **not** push to the till unless a deposit is added/changed/deleted for the booking on Collins. 
+## Pushing bookings/deposits already on Collins before the integration is set up
+
+* **Pushing bookings ASAP**
+
+If you have set up for bookings to push ASAP, any bookings that are already on Collins (before the Collins/IBS integration is set up) will **not** push to the till unless a deposit is added/changed/deleted for the booking on Collins. 
+
+* **Pushing bookings on the morning of the booking**
+
+If you have set up for bookings/deposits to push on the morning of the booking, any bookings/deposits that are already in Collins (before the Collins/IBS integration is set up) that have a **future booking date** will automatically push to the till on the morning of the booking. 
 
 ## Checking that the Collins/IBS Integration is set up correctly
 Once your Collins Account Manager has been in touch that the integration has been set up, it will be your responsibility to check that the integration is working correctly (as Collins will not be able to access your till systems to test). 
