@@ -28,7 +28,7 @@ To add a Google Post to your Google My Business listing:
 - Event title - "Reserve with Collins"
 - Make the event start now and end date a year from today 
 - Tick the **Reserve** button 
-- For the **Reserve** field, enter the [Collins Booking URL for your venue](http://developers.designmynight.com/faqs/booking-url/#booking-url-for-a-specific-venue)
+- For the **Reserve** field, enter the [Collins Booking URL for your venue](http://developers.designmynight.com/collins/booking-url/)
 - You should also add #booking to the end of the link to make it a better mobile experience
 
 6. Click **Preview** to test that your links are set up correctly
