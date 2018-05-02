@@ -119,4 +119,6 @@ To do this, you need to create the return URL on the venue site then set it by a
 
 The booking info will be passed back in the URL.
 
+When using the POST return method, you need to ensure that your webserver and application can accept POST requests from the designmynight.com domain, including any subdomain.
+
 **_Please note:_** the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format.
