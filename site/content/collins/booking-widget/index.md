@@ -311,5 +311,10 @@ You can disable it following these steps:
 5. Untick "Enable Ajax Loading" 
 6. Click SAVE
 
+**9. I'm trying to add the widget to my Facebook page but am getting a '_This page has not got permission to add a custom tab_' error meessage.**
+
+Due to changes brought in by Facebook, only pages with 2000 or more fans (or pages managed by whitelisted apps) will have the ability to add the Facebook Page Tabs feature. More information [here](https://developers.facebook.com/docs/pages/tabs). 
+
+
 
 
