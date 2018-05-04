@@ -32,7 +32,7 @@ Once the Enquiry Field has been added, please give your web developer the **Fiel
 
 **4.** When posting custom enquiry fields to Collins, the name of the inputs **_needs_** to be `enquiry_details[<key>]` where `<key>` is the **Field Name** of the Enquiry Field that you have create and passed on to your developer. 
 
-**5.** Your web developer needs to post your form to https://www.designmynight.com/book
+**5.** Your web developer needs to post your form to https://bookings.designmynight.com/book
 
 **6.** Your web developer will also need to include the following fields to identify as being an enquiry for your venue group:
 
@@ -40,7 +40,7 @@ Once the Enquiry Field has been added, please give your web developer the **Fiel
 * `source=partner`
 * `venue_group= **you can get this from your Account Manager**`
 
-**_Please note:_**  If the action of the form is a direct post to www.designmynight.com/book, then you will need to add these three fields as hidden fields, for example: 
+**_Please note:_**  If the action of the form is a direct post to https://bookings.designmynight.com/book, then you will need to add these three fields as hidden fields, for example: 
 
 ```<input type="hidden" name="enquiry_type" value="enquiry">```
 
@@ -50,7 +50,7 @@ Once the Enquiry Field has been added, please give your web developer the **Fiel
 
 Where you will have to replace the VENUEGROUPID given from your Account Manager. 
 
-If you are posting the form independently, then you will need to make sure these three fields are added to the final payload posted to www.designmynight.com/book.
+If you are posting the form independently, then you will need to make sure these three fields are added to the final payload posted to https://bookings.designmynight.com/book.
 
 ## General Enquiry Form FAQs
 
