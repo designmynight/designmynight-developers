@@ -315,6 +315,8 @@ You can disable it following these steps:
 
 Due to changes brought in by Facebook, only pages with 2000 or more fans (or pages managed by whitelisted apps) will have the ability to add the Facebook Page Tabs feature. More information [here](https://developers.facebook.com/docs/pages/tabs). 
 
+**10. Will the second iframe always appear as a pop up?**
 
+With the Collins widget, the second iframe (after you hit the initial 'Enquire Now' button on the widget) should always display as a pop up. However, if the user's screen is small, it may re-direct instead. 
 
 
