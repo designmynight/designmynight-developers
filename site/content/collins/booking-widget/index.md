@@ -313,7 +313,11 @@ You can disable it following these steps:
 
 **9. I'm trying to add the widget to my Facebook page but am getting a '_This page has not got permission to add a custom tab_' error meessage.**
 
-Due to changes brought in by Facebook, only pages with 2000 or more fans (or pages managed by whitelisted apps) will have the ability to add the Facebook Page Tabs feature. More information [here](https://developers.facebook.com/docs/pages/tabs). 
+Facebook only allows pages with 2000 or more fans (or pages managed by whitelisted apps) to have the ability to add the Facebook Page Tabs feature.
+
+As you would be adding the Collins widget to a Facebook Page Tab, your Facebook page will need at least 2000 followers to have the ability to add the widget. 
+
+More information [here](https://developers.facebook.com/docs/pages/tabs). 
 
 **10. Will the second iframe always appear as a pop up?**
 
