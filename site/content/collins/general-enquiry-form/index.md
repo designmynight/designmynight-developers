@@ -30,7 +30,7 @@ This will ensure that these field details will pull through to the respective fi
 
 Once the Enquiry Field has been added, please give your web developer the **Field Names**. They will use this to map these custom enquiry fields in your web form. 
 
-**4.** When posting custom enquiry fields to Collins, the name of the inputs needs to be `enquiry_details[<key>]` where `<key>` is the **Field Name** of the Enquiry Field that you have create and passed on to your developer. 
+**4.** When posting custom enquiry fields to Collins, the name of the inputs **_needs_** to be `enquiry_details[<key>]` where `<key>` is the **Field Name** of the Enquiry Field that you have create and passed on to your developer. 
 
 **5.** Your web developer needs to post your form to https://www.designmynight.com/book
 
