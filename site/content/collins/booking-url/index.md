@@ -10,6 +10,8 @@ https://bookings.designmynight.com/book?venue_id=VENUEID&source=partner&format=m
 
 Where you have to replace 'VENUEID' with your [unique Collins Venue ID](http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-id). 
 
+Please note that you will never be charged for covers booked through this URL (the source will count as your own website).
+
 ## Booking URL for a specific booking type
 
 If you are looking to create a booking link for a specific booking type (for example if you want to send a link out in a targetted mail out), you can create a URL of the following format: 
