@@ -81,6 +81,16 @@ Examples of partners using the Facebook Widget:
 
 [The Gentlemen Baristas](https://www.facebook.com/thegentlemenbaristas/app/668769669862814/)
 
+Please note that you will never be charged for covers booked this way (the source will count as your own website).
+
+## How to add a 'Book Now' button to Facebook
+
+Here's a guide to help you [add a 'Book Now' button to your Facebook page])https://www.facebook.com/help/977869848936797?helpref=related).
+
+For the URL, you can either direct customers to the Reservations page on your own website or to your [Collins Booking URL](http://developers.designmynight.com/collins/booking-url/#booking-url-for-a-specific-venue).
+
+Please note that you will never be charged for covers booked this way (the source will count as your own website).
+
 ## Multiple venues on a single form
 
 You can take bookings for several venues on a single form by modifying the URL of the script tag above so that `venue_id` contains a comma-separated list of venue IDs. You can also choose this option when generating your form code in Collins.
@@ -322,5 +332,15 @@ More information [here](https://developers.facebook.com/docs/pages/tabs).
 **10. Will the second iframe always appear as a pop up?**
 
 With the Collins widget, the second iframe (after you hit the initial 'Enquire Now' button on the widget) should always display as a pop up. However, if the user's screen is small, it may re-direct instead. 
+
+**9. I've added the widget to my Facebook page. It's displaying correctly on desktop but I can't find the tab on mobile.** 
+
+The Collins Facebook widget will be added to a Custom Tab on your Facebook page. The custom tabs are not currently supported on mobile. 
+
+More information [here](https://developers.facebook.com/support/bugs/435173473172584/).
+
+Alternatively you can add a 'Book Now' button to your Facebook page which will display on mobile. 
+
+
 
 
