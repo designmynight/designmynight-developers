@@ -66,9 +66,7 @@ You will also need to specify **which bookings** you would like Collins to push 
 
 ## Pushing bookings/deposits already on Collins before the integration is set up
 
-* **Pushing bookings ASAP**
-
-If you have set up for bookings to push ASAP, any bookings that are already on Collins (before the Collins/IBS integration is set up) will **not** push to the till unless a deposit is added/changed/deleted for the booking on Collins. 
+Any bookings that are already on Collins (before the Collins/IBS integration is set up) will **not** push to the till unless a deposit is added/changed/deleted for the booking on Collins. 
 
 ## Checking that the Collins/IBS Integration is set up correctly
 Once your Collins Account Manager has been in touch that the integration has been set up, it will be your responsibility to check that the integration is working correctly (as Collins will not be able to access your till systems to test). 
