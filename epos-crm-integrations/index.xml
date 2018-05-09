@@ -30,8 +30,9 @@ The following CRM systems currently access our API:
       
       <guid>http://developers.designmynight.com/epos-crm-integrations/ibs-epos-integration/</guid>
       <description>Overview of the Collins/IBS EPOS Integration The purpose of the integration between Collins and IBS is to be able to push the details of bookings and their associated deposits to the IBS Epos system.
+We will push valid bookings to the EPOS as soon as they are created in Collins.
 Details can be set to:
- Push ASAP or push on the day of the booking Push all bookings or only push bookings with deposits  Bookings will be sent to the EPOS with the following details:</description>
+ Push all bookings or only push bookings with deposits  Bookings will be sent to the EPOS with the following details:</description>
     </item>
     
     <item>
