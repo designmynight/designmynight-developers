@@ -85,7 +85,7 @@ Please note that you will never be charged for covers booked this way (the sourc
 
 ## How to add a 'Book Now' button to Facebook
 
-Here's a guide to help you [add a 'Book Now' button to your Facebook page])https://www.facebook.com/help/977869848936797?helpref=related).
+Here's a guide to help you [add a 'Book Now' button to your Facebook page](https://www.facebook.com/help/977869848936797?helpref=related).
 
 For the URL, you can either direct customers to the Reservations page on your own website or to your [Collins Booking URL](http://developers.designmynight.com/collins/booking-url/#booking-url-for-a-specific-venue).
 
