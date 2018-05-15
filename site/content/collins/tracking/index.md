@@ -19,7 +19,7 @@ To do this you need to create the return URL on the  venue site then set it usin
 </script> 
 ```
 
-**_Please note:_** the booking details will be posted back to the given return url. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format. Please ensure that your webserver and application can accept POST requests from the designmynight.com domain, including any subdomains.
+**_Please note:_** It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format. Please ensure that your webserver and application can accept POST requests from the designmynight.com domain, including any subdomains.
 
 ##  Using our API _(big tech build, we do not recommend)_
 
