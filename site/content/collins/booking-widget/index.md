@@ -226,6 +226,8 @@ French `fr-FR`
 
 German `de-DE`
 
+Spanish `es=ES`
+
 Example: this widget will display both English and German options:
 
 ```
