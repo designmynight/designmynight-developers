@@ -376,10 +376,9 @@ Public test API’s is available at the following locations - https://api-qa.des
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://developers.designmynight.com/v2-widget-docs/</guid>
-      <description>Booking Widget Documentation Introduction The BookingFormHelper class is attached to window.DMN, and provides you with methods for interacting with any widgets on a page independently.
-window.DMN.BookingFormHelper.widgets will return an array of Widget objects - one for each widget placed on the page.
-The Widget object contains the methods listed below which can be used for interacting with a single widget.
-When only one widget is used on a page, you can easily get the Widget object with the following code:</description>
+      <description>Booking Widget Documentation Introduction The widget is applied to a page by including the &amp;lt;script&amp;gt; tag. This can be generated using the Widget Wizard within Collins, or you can manually piece the tag together.
+Attributes on the &amp;lt;script&amp;gt; tag allow you to specify options at run time, but you can also use the Javascript API to set options and control state.
+The stylesheet must be included as well as the script tag to style the widget.</description>
     </item>
     
   </channel>
