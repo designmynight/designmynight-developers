@@ -1,156 +1,229 @@
 # Booking Widget Documentation
 
-# Introduction
+## Introduction
 
-The `BookingFormHelper` class is attached to `window.DMN`, and provides you with methods for interacting with any widgets on a page independently.
+The widget is applied to a page by including the `<script>` tag. This can be generated using the *Widget Wizard* within Collins, or you can manually piece the tag together.
 
-`window.DMN.BookingFormHelper.widgets` will return an array of `Widget` objects - one for each widget placed on the page.
+Attributes on the `<script>` tag allow you to specify options at run time, but you can also use the Javascript API to set options and control state.
 
-The `Widget` object contains the methods listed below which can be used for interacting with a single widget.
+The stylesheet must be included as well as the script tag to style the widget. We recommend using our hosted version of the CSS.
 
-When only one widget is used on a page, you can easily get the `Widget` object with the following code:
-
-```javascript
-var widget = window.DMN.BookingFormHelper.widgets[0];
+```html
+<link rel="stylesheet" href="//onsass.designmynight.com">
 ```
 
-# Reference Docs
+A widget will be rendered inside the parent element of where the `<script>` tag is located. The root element of the widget will have an ID of `dmn-partner-widget`.
 
-## Setting and Getting Booking Details
+You can insert as many widgets on one page as you need, and the `BookingFormHelper` class makes it easy to manage individual widgets.
 
-The following methods can be used to set the booking details, or see what booking details have been selected by the user before they submit the booking. Setting booking details using these methods will **not** advance the widget to the next stage - see the [Controlling the active stage](#controlling-the-active-stage) for instructions on how to advance to other stages.
+## Attributes
 
-### `getSelectableVenueIds(): string[]`
+The following attributes can be used to customise the functionality of the widget. When the value is omitted, it will be assumed `true`.
 
-Returns an array of venue IDs which the user can choose from. These venues would have been specified when the widget was installed.
+| Attribute Name     | Required | Description                                                  |
+| ------------------ | -------- | ------------------------------------------------------------ |
+| `src`              | Yes      | This must point to the JS source hosted on our CDN, `//widgets.designmynight.com/bookings-partner.min.js` |
+| `venue`            | No       | A string containing the venue ID this widget will be used for. If you require multiple venues, you can comma separate the IDs |
+| `affiliate-id`     | No       | The Affiliate ID which can be used to mark bookings in Collins as from the specified affiliate. |
+| `dmn-booking-form` | Yes      | This tells us that the script tag is intended for use as a Booking Widget. The widget will not render without this attribute present. |
+| `hide-offers`      | No       | Whether or not you would like to surface offers on this widget. Regardless of the state of this attribute, offers will always be selectable on the final stage. When present, the value must be `true` or `false` |
+| `search-venues`    | No       | Whether or not you would like a search bar at the top of the Venue Selection stage, to allow users to quickly find the venue by name or address. When present, the value must be `true` or `false` |
+| `ref`              | No       | This can be any string, and is used to identify the widget when retrieving it using the `getWidgetByRef()` method of the `BookingFormHelper` class. |
 
-### `getSelectableBookingTypeIds(): string[]`
+### Examples
 
-Returns an array of booking type IDs for the selected venue. A venue must be selected (`setVenueById()`) before running this.
+#### Hiding offers
 
-### `setVenueById(venueId)`
+```html
+<link rel="stylesheet" href="//onsass.designmynight.com">
+<script
+   src="//widgets.designmynight.com/bookings-partner.min.js"
+   dmn-booking-form
+   venue="1234567890"
+   hide-offers>
+</script>
+```
 
-Sets the venue which the booking will be made for. The venue ID is a required parameter, and must be one of the IDs specified when the widget was installed. You can use the [`getSelectableVenueIds()`](#getSelectableVenueIds()) method to get an array of venue IDs you can use.
+#### Using multiple venues
 
-### `setNumberOfGuests(number)`
+```html
+<link rel="stylesheet" href="//onsass.designmynight.com">
+<script
+    src="//widgets.designmynight.com/bookings-partner.min.js"
+    dmn-booking-form
+    venue="1234567890,55667722334,7593759211">
+</script>
+```
 
-Sets the number of guests for the booking. The user will still have the ability to modify this. The parameter is required and should be an integer.
+#### Referencing a widget
 
-### `setDate(date)`
+```html
+<link rel="stylesheet" href="//onsass.designmynight.com">
+<script
+    src="//widgets.designmynight.com/bookings-partner.min.js"
+    dmn-booking-form
+    ref="foo">
+</script>
+```
 
-Sets the date the booking will be made for. The user will still have the ability to modify this. The parameter is required, and should be a javascript `Date` object. Only the date segment is used - the time part will be disregarded.
+## Appearance Customisation
 
-### `setTypeById(typeId)`
+The stylesheet URL accepts parameters to customise the appearance of the widget.
 
-Sets the booking type. The user will still have the ability to modify this. The parameter is required, and must be one of the type IDs for the selected venue. An array of selectable type IDs can be found by using `getSelectableBookingTypeIds()`
+Parameter Name | Expected Value | Description
+--- | --- | ---
+`theme` | `default`, `dark` | When using a dark background colour, we recommend using the `dark` theme
+`primary-color` | A hexadecimal colour code | Usage of your primary colour depends on your theme.
+`background-color` | A hexadecimal colour code | The background colour of the widget
+`body-text-color` | A hexadecimal colour code | The text colour used on the widget
 
-## Setting the user details
+### Examples
 
-Setting the user details programatically means that their details will already be prefilled by the time they get to the final Details stage.
+#### Dark grey background with a red primary colour
 
-### `setEmailAddress (emailAddress)`
+```html
+<link rel="stylesheet" href="//onsass.designmynight.com?theme=dark&primary-color=#ff0000">
+<script
+   src="//widgets.designmynight.com/bookings-partner.min.js"
+   dmn-booking-form
+   venue="1234567890">
+</script>
+```
 
-Sets the email address of the user. The parameter is required and should be a string.
+#### Light green background with dark green text
 
-### `setFirstName (firstName)`
+```html
+<link rel="stylesheet" href="//onsass.designmynight.com?background-color=#c6fbcd&body-text-color=#316d35">
+<script
+   src="//widgets.designmynight.com/bookings-partner.min.js"
+   dmn-booking-form
+   venue="1234567890">
+</script>
+```
 
-Sets the first name of the user. The parameter is required and should be a string.
+## Javascript API
 
-### `setLastName (lastName)`
+This section details the public methods you can use to control widgets on a page. The reference documentation describes methods, their parameters and their return types in TypeScript syntax, however this is purely for descriptive purposes.
 
-Sets the last name of the user. The parameter is required and should be a string.
+### `BookingFormHelper`
 
-### `setDateOfBirth (date, month, year)`
+The `BookingFormHelper` is used to retrieve `Widget` objects from the page. It's stored on the `window`, in the `DMN` object. It can be accessed using `window.DMN.BookingFormHelper`.
 
-Sets the date of birth of the user. This information will only be sent to Collins if the *Birthday* field is not set as *hidden* in Collins. All three parameters are required, and they should all be integers. Here are some examples of the expected format:
+#### `findBookingFormScriptTags(): Widget[]`
+
+Traverses through the DOM to find `<script>` elements containing the `dmn-booking-form` attribute, and renders them using the options provided on the attribute. It then returns an array of `Widget`s that have been rendered. 
+
+This method is run automatically when the page is loaded with at least one `dmn-booking-form` `<script>` element on the page.
+
+#### `getWidgets(): Widget[]`
+
+Returns an array of `Widget`s that have been rendered on this page.
+
+#### `renderBookingWidget (tag: HTMLScriptElement): Widget | null`
+
+Takes a `HTMLScriptElement` as a parameter, and renders that particular script tag into a `Widget`. Returns the `Widget`, or `null` if the widget could not be rendered.
+
+> The `HTMLScriptElement` passed must contain the `dmn-booking-form` attribute to render.
+
+#### `getWidgetByRef (ref: string): Widget | null`
+
+Takes a `string` as a parameter. If a rendered `Widget` containing the corrosponding `ref` is found on the page, this will be returned. Otherwise, `null` is returned.
+
+#### `isValidTag (tag: HTMLScriptElement): boolean`
+
+Determines if the given `HTMLScriptElement` contains all the required attributes and is suitable for rendering.
+
+#### `isTagRendered (tag: HTMLScriptElement): boolean`
+
+Determines if the given `HTMLScriptElement` tag has been rendered into a widget or not.
+
+### `Widget`
+
+Each rendered widget is represented as a `Widget`, which contains methods for controlling its state and functionality. 
+
+#### `setSelectableVenuesById (venueIds: string[]): Widget`
+
+Sets the venues which a user can select from. An array of venue IDs strings must be passed in. This is an alternative to specifying the `venue` attribute on the `<script>` tag.
+
+#### `showOffers (): Widget`
+
+Shows available offers on the widget. This includes a summary of all available offers at the top, as well as an offer icon next to booking types and times where they are eligible. The default behaviour is for offers to be shown.
+
+#### `hideOffers (): Widget`
+
+Hides available offers on the widget. Eligible offers will still be selectable by the user from the final details stage. This is an alternative to setting the `hide-offers` attribute on the `<script>` tag.
+
+#### `showVenueSearch (): Widget`
+
+Shows the venue search bar on the Venue Selection stage, to allow users to filter selectable venues by name or address. This is an alternative to setting the `search-venues` attribute on the `<script>` tag.
+
+#### `hideVenueSearch (): Widget`
+
+Hides the venue search bar on the Venue Selection stage. This is the default behaviour.
+
+#### `getSelectableVenues (): Venue[]`
+
+Returns an array of `Venue`s which the user can select from. These venues would have been specified from the `venue` attribute on the script tag, or from `setSelectableVenuesById()`.
+
+#### `setVenue (venue: Venue): Widget`
+
+Sets the venue which this booking will be made for. The user will still have the ability to modify this. The parameter must be a `Venue` object which can be retrieved using the `getSelectableVenues()` method.
+
+#### `setVenueById (venueId: string): Widget`
+
+Similar to the `setVenue()` method, this sets the venue which this booking will be made for, however the parameter must be the ID of the desired venue. The user will still have the ability to modify this.
+
+#### `setNumberOfGuests (guests: Number): Widget`
+
+Sets the number of guests which this booking will be made for. The user will still have the ability to modify this. The parameter must be a `Number`.
+
+#### `setDate (date: Date): Widget`
+
+Sets the date the booking will be made for. The user will still have the ability to modify this. The parameter must be a Javascript `Date` object. Only the date segment is used - the time part will be disregarded.
+
+#### `getSelectableTypes (): BookingType[]`
+
+Returns an array of `BookingType`s which the user can select from. This method will only return `BookingType`s when a `Venue`, Date and number of guests have been set.
+
+#### `setType (type: BookingType): Widget`
+
+Sets the booking type which this booking will be made for. The user will still have the ability to modify this. The parameter must be a `BookingType` object which can be retrieved using the `getSelectableTypes()` method. This method will only set the type when a `Venue`, Date and number of guests have been set.
+
+#### `setTypeById (typeId: string): Widget`
+
+Similar to the `setType()` method, this sets the booking type which this booking will be made for, however the parameter must be the ID of the desired booking type. The user will still have the ability to modify this. This method will only set the type when a `Venue`, Date and number of guests have been set.
+
+#### `setEmailAddress (emailAddress: string): Widget`
+
+Sets the email address of the user, so it is prefilled when the user reaches the Details stage. The user will still have the ability to modify this. The parameter must be a string.
+
+#### `setFirstName (firstName)`
+
+Sets the first name of the user, so it is prefilled when the user reaches the Details stage. The user will still have the ability to modify this. The parameter must be a string.
+
+#### `setLastName (lastName)`
+
+Sets the last name of the user, so it is prefilled when the user reaches the Details stage. The user will still have the ability to modify this. The parameter must be a string.
+
+#### `setDateOfBirth (date: Number, month: Number, year: Number)`
+
+Sets the date of birth of the user. This information will only be sent to Collins if the *Birthday* field is not set as *hidden* in Collins. All parameter must be `Number`s. Here are some examples of the expected format:
 
 ```javascript
 widget.setDateOfBirth(13, 1, 1995); // 13th January 1995
 widget.setDateOfBirth(1, 12, 1990); // 1st December 1990
-widget.setDateOfBirth(13, 4, 2000); // 13th April 2000
+widget.setDateOfBirth(23, 4, 2000); // 23rd April 2000
 ```
 
-### `setMobileNumber (mobileNumber)`
+#### `setMobileNumber (mobileNumber: string)`
 
-Sets the user's mobile number. The parameter is required and should be a string.
+Sets the user’s mobile number. The user will still have the ability to modify this. The parameter must be a string.
 
-### `setNotes (notes)`
+#### `setNotes (notes: string)`
 
-Sets the booking notes. The parameter is required and should be a string.
+Sets the booking notes. The user will still have the ability to modify this. The parameter must be a string.
 
 
-## Controlling the active stage
 
-The following methods can be used to control which stage the widget is currently on. By default, the widget will launch:
 
-- The *Venue Selection* stage if there are more than 1 venue to select from
-- --- **OR** ---
-- The *Date/Number of Guests* stage if there is only 1 venue to select from
-
-### `goToVenueStage()`
-
-Jumps to the Venue selection stage.
-
-### `goToDateAndGuestSelectionStage()`
-
-Jumps to the Date/Number of Guests stage.
-
-### `goToTypeSelectionStage()`
-
-Jumps to the Booking Type selection stage.
-
-### `goToTimeSelectionStage()`
-
-Jumps to the Time selection stage.
-
-### `goToDetailsStage()`
-
-Jumps to the Details stage, where a user enters their information.
-
-# Examples
-
-## Pre-selecting booking information
-
-### Valentines Day example
-
-In this example, we're going to be placing the widget on a Valentines Day page. The widget will provide a convenient way for guests to make a booking for:
-
-* *Cocktail Bar* venue (Venue ID: 123456)
-* 2 people
-* 14th February 2019
-
-We'll use the Javascript API to preset this information, meaning all the user needs to specify is their desired booking type, preferred time and their contact details. When the page loads, the widget will be displaying the Booking Type selection stage.
-
-```javascript
-const helper = window.DMN.BookingFormHelper;
-const widgets = helper.widgets; // [Widget]
-
-// We'll assume there's only one widget on the page for this example.
-const widget = widgets[0];
-
-const desiredVenueId = '123456';
-const desiredNumGuests = 6;
-const desiredDate = new Date('2019-02-14T00:00:00');
-
-widget.setVenueById(desiredVenueId)
-    .setNumberOfGuests(desiredNumGuests)
-    .setDate(desiredDate)
-    .goToTypeSelectionStage();
-```
-
-### Prefilling Notes
-
-In this example, we're going to be prefilling the Notes section to contain a custom string. Bear in mind that the notes can still be viewed and modified by the customer as they're placing their booking.
-
-```javascript
-const helper = window.DMN.BookingFormHelper;
-const widgets = helper.widgets; // [Widget]
-
-// We'll assume there's only one widget on the page for this example.
-const widget = widgets[0];
-
-const notes = "Booking placed from my website";
-
-widget.setNotes(notes)
-```
 
