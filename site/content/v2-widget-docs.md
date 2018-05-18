@@ -6,7 +6,11 @@ The widget is applied to a page by including the `<script>` tag. This can be gen
 
 Attributes on the `<script>` tag allow you to specify options at run time, but you can also use the Javascript API to set options and control state.
 
-The stylesheet must be included as well as the script tag to style the widget. This can be self-hosted or you may use our CDN.
+The stylesheet must be included as well as the script tag to style the widget. We recommend using our hosted version of the CSS.
+
+```html
+<link rel="stylesheet" href="//onsass.designmynight.com">
+```
 
 A widget will be rendered inside the parent element of where the `<script>` tag is located.
 
@@ -18,7 +22,7 @@ The following attributes can be used to customise the functionality of the widge
 
 | Attribute Name     | Required | Description                                                  |
 | ------------------ | -------- | ------------------------------------------------------------ |
-| `src`              | Yes      | This must point to the JS source hosted on our CDN, `//widgets.designmynight.com/booking-form.min.js` |
+| `src`              | Yes      | This must point to the JS source hosted on our CDN, `//widgets.designmynight.com/bookings-partner.min.js` |
 | `venue`            | No       | A string containing the venue ID this widget will be used for. If you require multiple venues, you can comma separate the IDs |
 | `affiliate-id`     | No       | The Affiliate ID which can be used to mark bookings in Collins as from the specified affiliate. |
 | `dmn-booking-form` | Yes      | This tells us that the script tag is intended for use as a Booking Widget. The widget will not render without this attribute present. |
@@ -31,9 +35,10 @@ The following attributes can be used to customise the functionality of the widge
 #### Hiding offers
 
 ```html
+<link rel="stylesheet" href="//onsass.designmynight.com">
 <script
-   src="//widgets.designmynight.com/booking-form.min.js"
-   booking-form-helper
+   src="//widgets.designmynight.com/bookings-partner.min.js"
+   dmn-booking-form
    venue="1234567890"
    hide-offers>
 </script>
@@ -42,9 +47,10 @@ The following attributes can be used to customise the functionality of the widge
 #### Using multiple venues
 
 ```html
+<link rel="stylesheet" href="//onsass.designmynight.com">
 <script
-    src="//widgets.designmynight.com/booking-form.min.js"
-    booking-form-helper
+    src="//widgets.designmynight.com/bookings-partner.min.js"
+    dmn-booking-form
     venue="1234567890,55667722334,7593759211">
 </script>
 ```
@@ -52,9 +58,10 @@ The following attributes can be used to customise the functionality of the widge
 #### Referencing a widget
 
 ```html
+<link rel="stylesheet" href="//onsass.designmynight.com">
 <script
-    src="//widgets.designmynight.com/booking-form.min.js"
-    booking-form-helper
+    src="//widgets.designmynight.com/bookings-partner.min.js"
+    dmn-booking-form
     ref="foo">
 </script>
 ```
@@ -150,14 +157,6 @@ Sets the booking type which this booking will be made for. The user will still h
 #### `setTypeById (typeId: string): Widget`
 
 Similar to the `setType()` method, this sets the booking type which this booking will be made for, however the parameter must be the ID of the desired booking type. The user will still have the ability to modify this. This method will only set the type when a `Venue`, Date and number of guests have been set.
-
-#### `getSelectableFromTimes (): FromTime[]`
-
-Returns an array of `FromTime`s which the user can select from. This method will only return `Time`s when a `Venue`, Date, number of guests and `BookingType` has been set.
-
-#### `setFromTime (fromTime: FromTime): Widget`
-
-
 
 #### `setEmailAddress (emailAddress: string): Widget`
 
