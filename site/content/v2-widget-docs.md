@@ -12,7 +12,7 @@ The stylesheet must be included as well as the script tag to style the widget. W
 <link rel="stylesheet" href="//onsass.designmynight.com">
 ```
 
-A widget will be rendered inside the parent element of where the `<script>` tag is located.
+A widget will be rendered inside the parent element of where the `<script>` tag is located. The root element of the widget will have an ID of `dmn-partner-widget`.
 
 You can insert as many widgets on one page as you need, and the `BookingFormHelper` class makes it easy to manage individual widgets.
 
@@ -63,6 +63,41 @@ The following attributes can be used to customise the functionality of the widge
     src="//widgets.designmynight.com/bookings-partner.min.js"
     dmn-booking-form
     ref="foo">
+</script>
+```
+
+## Appearance Customisation
+
+The stylesheet URL accepts parameters to customise the appearance of the widget.
+
+Parameter Name | Expected Value | Description
+--- | --- | ---
+`theme` | `default`, `dark` | When using a dark background colour, we recommend using the `dark` theme
+`primary-color` | A hexadecimal colour code | Usage of your primary colour depends on your theme.
+`background-color` | A hexadecimal colour code | The background colour of the widget
+`body-text-color` | A hexadecimal colour code | The text colour used on the widget
+
+### Examples
+
+#### Dark grey background with a red primary colour
+
+```html
+<link rel="stylesheet" href="//onsass.designmynight.com?theme=dark&primary-color=#ff0000">
+<script
+   src="//widgets.designmynight.com/bookings-partner.min.js"
+   dmn-booking-form
+   venue="1234567890">
+</script>
+```
+
+#### Light green background with dark green text
+
+```html
+<link rel="stylesheet" href="//onsass.designmynight.com?background-color=#c6fbcd&body-text-color=#316d35">
+<script
+   src="//widgets.designmynight.com/bookings-partner.min.js"
+   dmn-booking-form
+   venue="1234567890">
 </script>
 ```
 
