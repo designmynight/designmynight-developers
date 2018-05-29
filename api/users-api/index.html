@@ -1213,17 +1213,23 @@
 
 <p>You can make a POST request to the <code>/users</code> endpoint along with the user ID to update the record, using the endpoint detailed below:</p>
 
-<h3 id="updating-subscription-status-for-a-user">Updating subscription status for a user</h3>
+<h3 id="updating-marketing-preferences-for-a-user">Updating marketing preferences for a user</h3>
 
-<p>Subscriptions to marketing information is handled with the <code>/custom-details</code> endpoint. The full request URL would look like this:
-<code>https://api.designmynight.com/v4/users/1234/custom-details</code>, where <code>1234</code> is the ID of the user.</p>
+<p>Marketing preferences are handled with the <code>/marketing-preferences</code> endpoint. The full request URL would look like this:
+<code>https://api.designmynight.com/v4/users/1234/marketing-preferences</code>, where <code>1234</code> is the ID of the user.</p>
 
-<p>The boolean <code>marketing_permission</code> field stores whether or not the user is subscribed.</p>
+<p>The array <code>marketing_preferences</code> stores whether or not the user is subscribed to each marketing preference defined on the venue/venue group.</p>
 
-<p>To update a user&rsquo;s marketing permission preferences, you can POST to the <code>/custom-details</code> endpoint and pass the <code>marketing_permission</code> field in the body of the request. Here&rsquo;s an example request of unsubscribing user ID <code>1234</code> from marketing information:</p>
+<p>To update a user&rsquo;s marketing preferences, you can POST to the <code>/marketing-preferences</code> endpoint and pass the <code>marketing_preferences</code> array in the body of the request.</p>
 
-<pre><code class="language-bash">$ curl -X POST https://api.designmynight.com/v4/users/1234/custom-details
-  -d &quot;marketing_permission=false&quot;
+<p>The <code>marketing_preferences</code> field should be an object containing the ID of the preference you wish to update, and a boolean <code>opt_in</code> field specifying the state of the preference.</p>
+
+<p>You can find instructions on getting marketing preference IDs in the the <a href="/api/booking-api/#getting-marketing-preferences">Marketing Preferences</a> section of the Booking API docs.</p>
+
+<p>Here&rsquo;s an example request of unsubscribing user ID <code>1234</code> from SMS marketing, which has the ID <code>864778487282768</code>:</p>
+
+<pre><code class="language-bash">$ curl -X POST https://api.designmynight.com/v4/users/1234/marketing-preferences \
+  -d '{&quot;marketing_preferences&quot;: [{&quot;id&quot;: &quot;864778487282768&quot;,&quot;opt_in&quot;: &quot;false&quot;}]}'
 </code></pre>
 
 <p>The response will look like this, containing the newly updated user:</p>
@@ -1234,15 +1240,21 @@
     &quot;email&quot;: &quot;john@example.com&quot;,
     &quot;first_name&quot;: &quot;John&quot;,
     &quot;last_name&quot;: &quot;Smith&quot;,
-    &quot;marketing_permission&quot;: false,
+    &quot;marketing_preferences&quot;: [
+      {
+        &quot;id&quot;: &quot;864778487282768&quot;,
+        &quot;opt_in_date&quot;: &quot;2018-05-27T11:30:00&quot;,
+        &quot;opt_out_date&quot;: &quot;2018-05-29T11:49:00&quot;
+      }
+    ],
     &quot;phone&quot;: &quot;07912345678&quot;,
     &quot;_id&quot;: &quot;1234&quot;
   },
   &quot;status&quot;: 200,
-  &quot;requestTime&quot;: &quot;2018-04-12T17:10:04&quot;,
-  &quot;responseTime&quot;: &quot;2018-04-12T17:10:04&quot;,
+  &quot;requestTime&quot;: &quot;2018-05-29T11:49:00&quot;,
+  &quot;responseTime&quot;: &quot;2018-05-29T11:49:00&quot;,
   &quot;statusText&quot;: &quot;OK&quot;,
-  &quot;url&quot;: &quot;\/v4\/users\/1234\/custom-details&quot;,
+  &quot;url&quot;: &quot;\/v4\/users\/1234\/marketing-preferences&quot;,
   &quot;method&quot;: &quot;POST&quot;
 }
 </code></pre>
