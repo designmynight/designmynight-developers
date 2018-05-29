@@ -138,6 +138,7 @@ Field | Description
 `phone` | `string` the customer's phone number
 `dob` | (optional) `string` the customer's date of birth, in the format YYYY-MM-DD
 `newsletter_signup` | (optional) `boolean` whether the customer opted in to marketing communications
+`marketing_preferences` | (optional) `array` An array of marketing preferences the user has agreed to. See [Marketing Preferences](#marketing-preferences) for further details
 
 ### Submitting to the /bookings endpoint
 
@@ -161,6 +162,7 @@ Field | Required | Description
 `phone` | No | `string` The guest's phone number
 `notes` | No | `string` Any additional booking notes or special requests
 `newsletter_signup` | No | `boolean` If the customer has agreed to sign up to the DMN newsletter
+`marketing_preferences` | No | `array` An array of marketing preferences the user has agreed to. See [Marketing Preferences](#marketing-preferences) for further details
 `custom_field_value` | No | `string` The value for the custom field
 
 Here's an example request of storing an enquiry for 4 people on the 16th March 2018 at 16:00
