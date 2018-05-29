@@ -178,7 +178,7 @@ You can find instructions on getting marketing preference IDs in the the [Market
 Here's an example request of unsubscribing user ID `1234` from SMS marketing, which has the ID `864778487282768`:
 
 ```bash
-$ curl -X POST https://api-dev.designmynight.com/v4/users/1234/marketing-preferences \
+$ curl -X POST https://api.designmynight.com/v4/users/1234/marketing-preferences \
   -d '{"marketing_preferences": [{"id": "864778487282768","opt_in": "false"}]}'
 ```
 
