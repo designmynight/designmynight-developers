@@ -162,18 +162,24 @@ Sorting results is not currently supported when outputting as a CSV.
 
 You can make a POST request to the `/users` endpoint along with the user ID to update the record, using the endpoint detailed below:
 
-### Updating subscription status for a user
+### Updating marketing preferences for a user
 
-Subscriptions to marketing information is handled with the `/custom-details` endpoint. The full request URL would look like this:
-`https://api.designmynight.com/v4/users/1234/custom-details`, where `1234` is the ID of the user.
+Marketing preferences are handled with the `/marketing-preferences` endpoint. The full request URL would look like this:
+`https://api.designmynight.com/v4/users/1234/marketing-preferences`, where `1234` is the ID of the user.
 
-The boolean `marketing_permission` field stores whether or not the user is subscribed.
+The array `marketing_preferences` stores whether or not the user is subscribed to each marketing preference defined on the venue/venue group.
 
-To update a user's marketing permission preferences, you can POST to the `/custom-details` endpoint and pass the `marketing_permission` field in the body of the request. Here's an example request of unsubscribing user ID `1234` from marketing information:
+To update a user's marketing preferences, you can POST to the `/marketing-preferences` endpoint and pass the `marketing_preferences` array in the body of the request.
+
+The `marketing_preferences` field should be an object containing the ID of the preference you wish to update, and a boolean `opt_in` field specifying the state of the preference. 
+
+You can find instructions on getting marketing preference IDs in the the [Marketing Preferences](/api/booking-api/#getting-marketing-preferences) section of the Booking API docs.
+
+Here's an example request of unsubscribing user ID `1234` from SMS marketing, which has the ID `864778487282768`:
 
 ```bash
-$ curl -X POST https://api.designmynight.com/v4/users/1234/custom-details
-  -d "marketing_permission=false"
+$ curl -X POST https://api.designmynight.com/v4/users/1234/marketing-preferences \
+  -d '{"marketing_preferences": [{"id": "864778487282768","opt_in": "false"}]}'
 ```
 
 The response will look like this, containing the newly updated user:
@@ -185,15 +191,21 @@ The response will look like this, containing the newly updated user:
     "email": "john@example.com",
     "first_name": "John",
     "last_name": "Smith",
-    "marketing_permission": false,
+    "marketing_preferences": [
+      {
+        "id": "864778487282768",
+        "opt_in_date": "2018-05-27T11:30:00",
+        "opt_out_date": "2018-05-29T11:49:00"
+      }
+    ],
     "phone": "07912345678",
     "_id": "1234"
   },
   "status": 200,
-  "requestTime": "2018-04-12T17:10:04",
-  "responseTime": "2018-04-12T17:10:04",
+  "requestTime": "2018-05-29T11:49:00",
+  "responseTime": "2018-05-29T11:49:00",
   "statusText": "OK",
-  "url": "\/v4\/users\/1234\/custom-details",
+  "url": "\/v4\/users\/1234\/marketing-preferences",
   "method": "POST"
 }
 ```

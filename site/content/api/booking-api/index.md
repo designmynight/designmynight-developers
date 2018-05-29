@@ -138,6 +138,7 @@ Field | Description
 `phone` | `string` the customer's phone number
 `dob` | (optional) `string` the customer's date of birth, in the format YYYY-MM-DD
 `newsletter_signup` | (optional) `boolean` whether the customer opted in to marketing communications
+`marketing_preferences` | (optional) `array` An array of marketing preference IDs the user has agreed to. See [Marketing Preferences](#marketing-preferences) for further details
 
 ### Submitting to the /bookings endpoint
 
@@ -161,6 +162,7 @@ Field | Required | Description
 `phone` | No | `string` The guest's phone number
 `notes` | No | `string` Any additional booking notes or special requests
 `newsletter_signup` | No | `boolean` If the customer has agreed to sign up to the DMN newsletter
+`marketing_preferences` | No | `array` An array of marketing preference IDs the user has agreed to. See [Marketing Preferences](#marketing-preferences) for further details
 `custom_field_value` | No | `string` The value for the custom field
 
 Here's an example request of storing an enquiry for 4 people on the 16th March 2018 at 16:00
@@ -231,6 +233,60 @@ status | The status of the booking: 'complete' for confirmed bookings; otherwise
 `first_name` | `string` the customer's first name
 `last_name` | `string` the customer's last name
 `email` | `string` the customer's email address
+
+## Marketing Preferences
+
+The marketing preferences defined for a venue/venue group can be retrieved using the venues endpoint. Each preference has a unique ID.
+
+### Getting marketing preferences
+
+The following `GET` request will return an array of marketing preferences that have been defined on the venue/venue group. 
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237?fields=marketing_preferences
+```
+
+If the venue/venue group has marketing preferences defined, you will receive a response similar to this:
+
+```json
+{
+  "payload": {
+    "venue": {
+      "marketing_preferences": [
+        {
+          "id": "486847581541665",
+          "created_date": "2018-05-29T10:57:00",
+          "name": "Email",
+          "description": "I am happy to be contacted by email for promotions"
+        },
+        {
+          "id": "864778487282768",
+          "created_date": "2018-05-29T10:57:00",
+          "name": "SMS",
+          "description": "I am happy receive special offers by SMS"
+        },
+        {
+          "id": "5878286768853523",
+          "created_date": "2018-05-29T10:57:00",
+          "name": "Post",
+          "description": "I am happy to be sent marketing information in the post"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Setting marketing preferences for a booking
+
+When sending a new booking to the API, you can pass in the ID of each marketing preference the user has consented to.
+
+For example, if a user has agreed to receive marketing via Email and Post:
+
+```bash
+$ curl -X POST https://api.designmynight.com/v4/bookings
+    -d "source=partner&first_name=Dan&last_name=Johnson&num_people=4&venue_id=552435790df6902b7256f237&type=58c927215ee246985eb91b8e&date=2018-05-30&time=16:00&marketing_preferences[]=486847581541665&marketing_preferences[]=5878286768853523"
+```
 
 ## Checking Booking Rules
 
