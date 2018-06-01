@@ -240,39 +240,37 @@ The marketing preferences defined for a venue/venue group can be retrieved using
 
 ### Getting marketing preferences
 
-The following `GET` request will return an array of marketing preferences that have been defined on the venue/venue group. 
+The following `GET` request will return an array of marketing preferences that have been defined on the venue/venue group. Replace the ID in the URL with your Venue ID.
 
 ```bash
-$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237?fields=marketing_preferences
+$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/marketing_preferences
 ```
 
-If the venue/venue group has marketing preferences defined, you will receive a response similar to this:
+If the venue has marketing preferences defined, you will receive a response similar to this:
 
 ```json
 {
   "payload": {
-    "venue": {
-      "marketing_preferences": [
-        {
-          "id": "486847581541665",
-          "created_date": "2018-05-29T10:57:00",
-          "name": "Email",
-          "description": "I am happy to be contacted by email for promotions"
-        },
-        {
-          "id": "864778487282768",
-          "created_date": "2018-05-29T10:57:00",
-          "name": "SMS",
-          "description": "I am happy receive special offers by SMS"
-        },
-        {
-          "id": "5878286768853523",
-          "created_date": "2018-05-29T10:57:00",
-          "name": "Post",
-          "description": "I am happy to be sent marketing information in the post"
-        }
-      ]
-    }
+    "marketing_preferences": [
+      {
+        "id": "486847581541665",
+        "created_date": "2018-05-29T10:57:00",
+        "name": "Email",
+        "description": "I am happy to be contacted by email for promotions"
+      },
+      {
+        "id": "864778487282768",
+        "created_date": "2018-05-29T10:57:00",
+        "name": "SMS",
+        "description": "I am happy receive special offers by SMS"
+      },
+      {
+        "id": "5878286768853523",
+        "created_date": "2018-05-29T10:57:00",
+        "name": "Post",
+        "description": "I am happy to be sent marketing information in the post"
+      }
+    ]
   }
 }
 ```
