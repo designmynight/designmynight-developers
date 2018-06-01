@@ -1421,37 +1421,35 @@
 
 <h3 id="getting-marketing-preferences">Getting marketing preferences</h3>
 
-<p>The following <code>GET</code> request will return an array of marketing preferences that have been defined on the venue/venue group.</p>
+<p>The following <code>GET</code> request will return an array of marketing preferences that have been defined on the venue/venue group. Replace the ID in the URL with your Venue ID.</p>
 
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237?fields=marketing_preferences
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/marketing_preferences
 </code></pre>
 
-<p>If the venue/venue group has marketing preferences defined, you will receive a response similar to this:</p>
+<p>If the venue has marketing preferences defined, you will receive a response similar to this:</p>
 
 <pre><code class="language-json">{
   &quot;payload&quot;: {
-    &quot;venue&quot;: {
-      &quot;marketing_preferences&quot;: [
-        {
-          &quot;id&quot;: &quot;486847581541665&quot;,
-          &quot;created_date&quot;: &quot;2018-05-29T10:57:00&quot;,
-          &quot;name&quot;: &quot;Email&quot;,
-          &quot;description&quot;: &quot;I am happy to be contacted by email for promotions&quot;
-        },
-        {
-          &quot;id&quot;: &quot;864778487282768&quot;,
-          &quot;created_date&quot;: &quot;2018-05-29T10:57:00&quot;,
-          &quot;name&quot;: &quot;SMS&quot;,
-          &quot;description&quot;: &quot;I am happy receive special offers by SMS&quot;
-        },
-        {
-          &quot;id&quot;: &quot;5878286768853523&quot;,
-          &quot;created_date&quot;: &quot;2018-05-29T10:57:00&quot;,
-          &quot;name&quot;: &quot;Post&quot;,
-          &quot;description&quot;: &quot;I am happy to be sent marketing information in the post&quot;
-        }
-      ]
-    }
+    &quot;marketing_preferences&quot;: [
+      {
+        &quot;id&quot;: &quot;486847581541665&quot;,
+        &quot;created_date&quot;: &quot;2018-05-29T10:57:00&quot;,
+        &quot;name&quot;: &quot;Email&quot;,
+        &quot;description&quot;: &quot;I am happy to be contacted by email for promotions&quot;
+      },
+      {
+        &quot;id&quot;: &quot;864778487282768&quot;,
+        &quot;created_date&quot;: &quot;2018-05-29T10:57:00&quot;,
+        &quot;name&quot;: &quot;SMS&quot;,
+        &quot;description&quot;: &quot;I am happy receive special offers by SMS&quot;
+      },
+      {
+        &quot;id&quot;: &quot;5878286768853523&quot;,
+        &quot;created_date&quot;: &quot;2018-05-29T10:57:00&quot;,
+        &quot;name&quot;: &quot;Post&quot;,
+        &quot;description&quot;: &quot;I am happy to be sent marketing information in the post&quot;
+      }
+    ]
   }
 }
 </code></pre>
