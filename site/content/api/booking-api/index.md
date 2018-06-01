@@ -243,7 +243,7 @@ The marketing preferences defined for a venue/venue group can be retrieved using
 The following `GET` request will return an array of marketing preferences that have been defined on the venue/venue group. Replace the ID in the URL with your Venue ID.
 
 ```bash
-$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/marketing_preferences
+$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/marketing-preferences
 ```
 
 If the venue has marketing preferences defined, you will receive a response similar to this:
