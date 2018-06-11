@@ -138,6 +138,7 @@ num_people | A number range, eg '1 TO 5' or '10 TO *'
 phone | A customer's phone number
 private_hire | Boolean: true or false
 query | Free text - will search customer name, email and company
+start_time | A time range in 24 hour format, eg '12:00 TO 17:00' or '* TO 10:00'
 status | One or more comma-separated values ([see below](#status-filter-format))
 time | A time range in 24 hour format, eg '12:00 TO 17:00' or '* TO 10:00'
 type | One or more comma-separated hex IDs
