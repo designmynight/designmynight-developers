@@ -992,6 +992,11 @@
 
 <tbody>
 <tr>
+<td>Bookings</td>
+<td></td>
+</tr>
+
+<tr>
 <td><code>access_venue_bookings_{venue_id}</code></td>
 <td>Read only permission for a single venue</td>
 </tr>
@@ -1012,13 +1017,83 @@
 </tr>
 
 <tr>
+<td><code>manage_venue_bookings_{venue_id}</code></td>
+<td>Manage bookings for a single venue</td>
+</tr>
+
+<tr>
+<td><code>manage_venue_group_bookings_{venue_group_id}</code></td>
+<td>Manage bookings for all venues in the group (includes those with no venue)</td>
+</tr>
+
+<tr>
 <td><code>manage_no_venue_bookings_{venue_group_id}</code></td>
 <td>Manage bookings that have no venue against them</td>
 </tr>
 
 <tr>
-<td><code>manage_page_{venue_id}</code></td>
-<td>Manage the DesignMyNight venue page for a single venue</td>
+<td><code>manage_venue_refunds_{venue_id}</code></td>
+<td>Manage refunds for a single venue</td>
+</tr>
+
+<tr>
+<td><code>manage_venue_group_refunds_{venue_group_id}</code></td>
+<td>Manage refunds for all venues in the group</td>
+</tr>
+
+<tr>
+<td>Customers</td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>view_venue_customers_{venue_id}</code></td>
+<td>View customer details for a single venue</td>
+</tr>
+
+<tr>
+<td><code>view_venue_group_customers_{venue_group_id}</code></td>
+<td>View customer details for all venues in the group</td>
+</tr>
+
+<tr>
+<td><code>download_venue_customers_{venue_id}</code></td>
+<td>Download customer details for a single venue</td>
+</tr>
+
+<tr>
+<td><code>download_venue_group_customers_{venue_group_id}</code></td>
+<td>Download customer details for all venues in the group</td>
+</tr>
+
+<tr>
+<td>Reports</td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>view_venue_reports_{venue_id}</code></td>
+<td>View reports for a single venue</td>
+</tr>
+
+<tr>
+<td><code>view_venue_group_reports_{venue_group_id}</code></td>
+<td>View reports for all venues in the group</td>
+</tr>
+
+<tr>
+<td><code>download_venue_reports_{venue_id}</code></td>
+<td>Download reports for a single venue</td>
+</tr>
+
+<tr>
+<td><code>download_venue_group_reports_{venue_group_id}</code></td>
+<td>Download reports for all venues in the group</td>
+</tr>
+
+<tr>
+<td>Venues</td>
+<td></td>
 </tr>
 
 <tr>
@@ -1027,28 +1102,23 @@
 </tr>
 
 <tr>
-<td><code>manage_venue_bookings_{venue_id}</code></td>
-<td>Manage bookings for a single venue</td>
-</tr>
-
-<tr>
 <td><code>manage_venue_group_booking_rules_{venue_group_id}</code></td>
 <td>Manage booking rules for all venues in the group</td>
 </tr>
 
 <tr>
-<td><code>manage_venue_group_bookings_{venue_group_id}</code></td>
-<td>Manage bookings for all venues (includes those with no venue)</td>
-</tr>
-
-<tr>
-<td><code>manage_venue_group_permissions_{venue_group_id}</code></td>
-<td>Manage user permissions for all venues</td>
+<td><code>manage_page_{venue_id}</code></td>
+<td>Manage the DesignMyNight venue page for a single venue</td>
 </tr>
 
 <tr>
 <td><code>manage_venue_group_venues_{venue_group_id}</code></td>
-<td>Manage booking rules for all venues</td>
+<td>Manage the DesignMyNight venue page for all venues in the group</td>
+</tr>
+
+<tr>
+<td>Users</td>
+<td></td>
 </tr>
 
 <tr>
@@ -1057,13 +1127,8 @@
 </tr>
 
 <tr>
-<td><code>view_venue_group_reports_{venue_group_id}</code></td>
-<td>View reports for all venues</td>
-</tr>
-
-<tr>
-<td><code>view_venue_reports_{venue_id}</code></td>
-<td>View reports for a single venue</td>
+<td><code>manage_venue_group_permissions_{venue_group_id}</code></td>
+<td>Manage user permissions for all venues in the group</td>
 </tr>
 </tbody>
 </table>
