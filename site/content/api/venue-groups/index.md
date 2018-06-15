@@ -69,23 +69,23 @@ Bookings |
 `manage_venue_bookings_{venue_id}` | Manage bookings for a single venue
 `manage_venue_group_bookings_{venue_group_id}` | Manage bookings for all venues in the group (includes those with no venue)
 `manage_no_venue_bookings_{venue_group_id}` | Manage bookings that have no venue against them
-`manage_venue_refunds_{{venue_id}}` | Manage refunds for a single venue
-`manage_venue_group_refunds_{{venue_group_id}}` | Manage refunds for all venues in the group
+`manage_venue_refunds_{venue_id}` | Manage refunds for a single venue
+`manage_venue_group_refunds_{venue_group_id}` | Manage refunds for all venues in the group
 Customers | 
-`view_venue_customers_{{venue_id}}` | View customer details for a single venue
-`view_venue_group_customers_{{venue_group_id}}` | View customer details for all venues in the group
+`view_venue_customers_{venue_id}` | View customer details for a single venue
+`view_venue_group_customers_{venue_group_id}` | View customer details for all venues in the group
 `download_venue_customers_{venue_id}` | Download customer details for a single venue
 `download_venue_group_customers_{venue_group_id}` | Download customer details for all venues in the group
 Reports | 
 `view_venue_reports_{venue_id}` | View reports for a single venue
 `view_venue_group_reports_{venue_group_id}` | View reports for all venues in the group
-`download_venue_reports_{{venue_id}}` | Download reports for a single venue
-`download_venue_group_reports_{{venue_group_id}}` | Download reports for all venues in the group
+`download_venue_reports_{venue_id}` | Download reports for a single venue
+`download_venue_group_reports_{venue_group_id}` | Download reports for all venues in the group
 Venues | 
 `manage_venue_booking_rules_{venue_id}` | Manage booking rules for a single venue
 `manage_venue_group_booking_rules_{venue_group_id}` | Manage booking rules for all venues in the group
 `manage_page_{venue_id}` | Manage the DesignMyNight venue page for a single venue
-`manage_venue_group_venues_{venue_group_id}` | Manage he DesignMyNight venue page for all venues in the group
+`manage_venue_group_venues_{venue_group_id}` | Manage the DesignMyNight venue page for all venues in the group
 Users |
 `manage_venue_permissions_{venue_id}` | Manage user permissions for a single venue
 `manage_venue_group_permissions_{venue_group_id}` | Manage user permissions for all venues in the group
