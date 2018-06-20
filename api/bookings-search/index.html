@@ -1560,19 +1560,6 @@
 </tbody>
 </table>
 
-<h2 id="output-as-csv">Output as CSV</h2>
-
-<p>By default, the response will be formatted as JSON. However, by using the url parameter <code>output=csv</code>, you will receive the response in a CSV format.</p>
-
-<p>The following example will return a CSV format of all new bookings.</p>
-
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/bookings?status=new&amp;output=csv
-</code></pre>
-
-<p>Results for CSV output are always limited to a maximum of 25000 results per page. Unlike with JSON output, the <code>limit</code> parameter is not supported for CSV requests, so the limit cannot be changed.</p>
-
-<p>The <code>sort</code> parameter is also not supported for CSV requests. Results will be sorted by in ascending order of the date and time of the booking.</p>
-
 			
 			<aside class="copyright" role="note">
 				
