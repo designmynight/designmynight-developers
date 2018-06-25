@@ -47,13 +47,13 @@ Once the Enquiry Field has been added, please give your web developer the **Fiel
 
 | Field Type in Collins | Field Input|
 |-----------|------|
-|Yes/No| `enquiry_details<key>`|
-|Free Text | `enquiry_details<key>`|
-|Long Text|`enquiry_details<key>`|
-|Pick One|`enquiry_details<key>`|
-|Pick Multiple| `enquiry_details<key>[]`|
+|Yes/No| `enquiry_details[key]`|
+|Free Text | `enquiry_details[key]`|
+|Long Text|`enquiry_details[key]`|
+|Pick One|`enquiry_details[key]`|
+|Pick Multiple| `enquiry_details[key][]`|
 
-where `<key>` is the **Field Name** of the Enquiry Field that you have create and passed on to your developer. 
+where `key` is the **Field Name** of the Enquiry Field that you have create and passed on to your developer. 
 
 So for example, if you have set up the following in Collins:
 
@@ -62,9 +62,9 @@ So for example, if you have set up the following in Collins:
 |Message| `message` | Free Text|
 |How did you hear about us| `how_ did_you_hear_about_us` | Pick Multiple|
 
-For the 'Message' field on your form, your web developer would have to use `enquiry_details<message>`
+For the 'Message' field on your form, your web developer would have to use `enquiry_details[message]`
 
-For the 'How did you hear about us' field on your form, your web developer would have to use `enquiry_details<how_ did_you_hear_about_us>[]`
+For the 'How did you hear about us' field on your form, your web developer would have to use `enquiry_details[how_ did_you_hear_about_us][]`
 
 **5.** Your web developer needs to post your form to https://bookings.designmynight.com/book
 
