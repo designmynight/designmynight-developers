@@ -11,17 +11,17 @@ Here's an [example of a Basic Enquiry Form](https://docs.google.com/document/d/1
 
 **2.** For any standard Collins booking fields used in your form, please use these field names:
 
-| Field Name | Field Name in Collins|
-|-----------|------|
-|`first_name`| First Name|
-|`last_name` | Last Name|
-|`email`| Email |
-|`phone`| Phone|
+| Field Name | Field Name in Collins|Comments|
+|-----------|------|------|
+|`first_name`| First Name||
+|`last_name` | Last Name||
+|`email`| Email ||
+|`phone`| Phone||
 |`num_people`| Guests|
-|`date`| Date|
-|`time`| Time|
-|`duration`| Duration of booking|
-|`dob`| Birthday|
+|`date`| Date| In the form YYYY-MM-DD|
+|`time`| Time| In the form HH:mm|
+|`duration`| Duration of booking||
+|`dob`| Birthday||
 
 This will ensure that these field details will pull through to the respective fields in your Collins enquiry. 
 
