@@ -948,6 +948,7 @@
 <tr>
 <th>Field Name</th>
 <th>Field Name in Collins</th>
+<th>Comments</th>
 </tr>
 </thead>
 
@@ -955,46 +956,55 @@
 <tr>
 <td><code>first_name</code></td>
 <td>First Name</td>
+<td></td>
 </tr>
 
 <tr>
 <td><code>last_name</code></td>
 <td>Last Name</td>
+<td></td>
 </tr>
 
 <tr>
 <td><code>email</code></td>
 <td>Email</td>
+<td></td>
 </tr>
 
 <tr>
 <td><code>phone</code></td>
 <td>Phone</td>
+<td></td>
 </tr>
 
 <tr>
 <td><code>num_people</code></td>
 <td>Guests</td>
+<td></td>
 </tr>
 
 <tr>
 <td><code>date</code></td>
 <td>Date</td>
+<td>In the form YYYY-MM-DD</td>
 </tr>
 
 <tr>
 <td><code>time</code></td>
 <td>Time</td>
+<td>In the form HH:mm</td>
 </tr>
 
 <tr>
 <td><code>duration</code></td>
 <td>Duration of booking</td>
+<td></td>
 </tr>
 
 <tr>
 <td><code>dob</code></td>
 <td>Birthday</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -1023,7 +1033,75 @@
 
 <p>Once the Enquiry Field has been added, please give your web developer the <strong>Field Names</strong>. They will use this to map these custom enquiry fields in your web form.</p>
 
-<p><strong>4.</strong> When posting custom enquiry fields to Collins, the name of the inputs <strong><em>needs</em></strong> to be <code>enquiry_details[&lt;key&gt;]</code> where <code>&lt;key&gt;</code> is the <strong>Field Name</strong> of the Enquiry Field that you have create and passed on to your developer.</p>
+<p><strong>4.</strong> When posting custom enquiry fields to Collins, the name of the inputs <strong><em>needs</em></strong> to be as follows:</p>
+
+<table>
+<thead>
+<tr>
+<th>Field Type in Collins</th>
+<th>Field Input</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Yes/No</td>
+<td><code>enquiry_details[key]</code></td>
+</tr>
+
+<tr>
+<td>Free Text</td>
+<td><code>enquiry_details[key]</code></td>
+</tr>
+
+<tr>
+<td>Long Text</td>
+<td><code>enquiry_details[key]</code></td>
+</tr>
+
+<tr>
+<td>Pick One</td>
+<td><code>enquiry_details[key]</code></td>
+</tr>
+
+<tr>
+<td>Pick Multiple</td>
+<td><code>enquiry_details[key][]</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>where <code>key</code> is the <strong>Field Name</strong> of the Enquiry Field that you have create and passed on to your developer.</p>
+
+<p>So for example, if you have set up the following in Collins:</p>
+
+<table>
+<thead>
+<tr>
+<th>Field Label</th>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Message</td>
+<td><code>message</code></td>
+<td>Free Text</td>
+</tr>
+
+<tr>
+<td>How did you hear about us</td>
+<td><code>how_ did_you_hear_about_us</code></td>
+<td>Pick Multiple</td>
+</tr>
+</tbody>
+</table>
+
+<p>For the &lsquo;Message&rsquo; field on your form, your web developer would have to use <code>enquiry_details[message]</code></p>
+
+<p>For the &lsquo;How did you hear about us&rsquo; field on your form, your web developer would have to use <code>enquiry_details[how_ did_you_hear_about_us][]</code></p>
 
 <p><strong>5.</strong> Your web developer needs to post your form to <a href="https://bookings.designmynight.com/book">https://bookings.designmynight.com/book</a></p>
 
