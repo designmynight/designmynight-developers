@@ -935,13 +935,15 @@
 
 <p>Here&rsquo;s an example of a partner with a customised enquiry form: <a href="https://www.no4cliftonvillage.co.uk/contact-us/">No. 4 Clifton Village</a></p>
 
+<p>Any customer responses to your custom enquiry fields will display in the <strong>Enquiry Details</strong> section of your Collins enquiry/booking.</p>
+
 <p><strong>To create your own personalised Enquiry form:</strong></p>
 
 <p><strong>1.</strong> Create your own form display on your website. You and your web developer will be responsible for the look of your personalised form and which fields are included.</p>
 
 <p>Here&rsquo;s an <a href="https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit">example of a Basic Enquiry Form</a> that we recommend that your web developers use.</p>
 
-<p><strong>2.</strong> For any standard Collins booking fields used in your form, please use these field names:</p>
+<p><strong>2.</strong> For any <em>standard</em> Collins booking fields used in your form, please ask your web developer to post to these field names:</p>
 
 <table>
 <thead>
@@ -1009,11 +1011,15 @@
 </tbody>
 </table>
 
-<p>This will ensure that these field details will pull through to the respective fields in your Collins enquiry.</p>
+<p><strong>Example for web developer:</strong> If you&rsquo;re adding a field on your form for customers to enter their first name, you can post to <code>name='first_name'</code>.</p>
+
+<p><strong>Note to Collins users:</strong> These standard booking fields should <strong>not</strong> be added as new enquiry fields (in Step 3).</p>
+
+<p>This will ensure that the customer response for these fields will populate the respective fields within the <strong>Booking Details</strong> section of your Collins enquiry.</p>
 
 <p><strong>3.</strong> For any non-standard enquiry fields that you would like to use, you will have to add them to your Collins admin. This will create technical names that you can give to your web developer to map them in your web form.</p>
 
-<p><strong>To add a new enquiry field:</strong></p>
+<p><strong>To add a new enquiry field within Collins:</strong></p>
 
 <ol>
 <li>Log onto your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
@@ -1023,23 +1029,26 @@
 <li>You will then have to add the following details:</li>
 </ol>
 
-<p><strong>Field Label</strong> - <em>once this has been added, the Field Names will auto-populate. This is what your web developer will require</em></p>
+<p><strong>Field Label</strong> - <em>once you have added the Field Label, the <strong>Field Name</strong> will auto-populate.</em></p>
 
-<p><strong>Field Type</strong> - <em>select from the drop down the type of field (eg Free Text, Yes/No, Pick One etc)</em></p>
+<p><strong>Field Type</strong> - <em>select from the drop down the type of field (eg Free Text, Yes/No, Pick One etc).</em></p>
 
 <ol>
-<li>Click SAVE</li>
+<li>Click <strong>SAVE</strong></li>
 </ol>
 
-<p>Once the Enquiry Field has been added, please give your web developer the <strong>Field Names</strong>. They will use this to map these custom enquiry fields in your web form.</p>
+<p>Once all the Enquiry Fields have been added, please give your web developer the <strong>Field Names</strong> and <strong>Field Types</strong> that you have set up. They will use this to map these custom enquiry fields in your web form.</p>
 
-<p><strong>4.</strong> When posting custom enquiry fields to Collins, the name of the inputs <strong><em>needs</em></strong> to be as follows:</p>
+<p>If your web developer does not have access to your Collins admin, it&rsquo;s worth sending them a screenshot of your enquiry form settings (so they can clearly see all the details).</p>
+
+<p><strong>4.</strong> When posting custom enquiry fields to Collins, the name of the field inputs <strong><em>needs</em></strong> to be as follows:</p>
 
 <table>
 <thead>
 <tr>
 <th>Field Type in Collins</th>
 <th>Field Input</th>
+<th>Comments</th>
 </tr>
 </thead>
 
@@ -1047,31 +1056,38 @@
 <tr>
 <td>Yes/No</td>
 <td><code>enquiry_details[key]</code></td>
+<td><code>value=true</code></td>
 </tr>
 
 <tr>
 <td>Free Text</td>
 <td><code>enquiry_details[key]</code></td>
+<td></td>
 </tr>
 
 <tr>
 <td>Long Text</td>
 <td><code>enquiry_details[key]</code></td>
+<td></td>
 </tr>
 
 <tr>
 <td>Pick One</td>
 <td><code>enquiry_details[key]</code></td>
+<td></td>
 </tr>
 
 <tr>
 <td>Pick Multiple</td>
 <td><code>enquiry_details[key][]</code></td>
+<td>Collins user will need to let you know the exact values they have set for the multiple options so you can map to the correct values. Please note that these are case-sensitive</td>
 </tr>
 </tbody>
 </table>
 
 <p>where <code>key</code> is the <strong>Field Name</strong> of the Enquiry Field that you have create and passed on to your developer.</p>
+
+<p><strong>Example for web developers:</strong></p>
 
 <p>So for example, if you have set up the following in Collins:</p>
 
@@ -1081,6 +1097,7 @@
 <th>Field Label</th>
 <th>Field Name</th>
 <th>Field Type</th>
+<th>Comments</th>
 </tr>
 </thead>
 
@@ -1089,19 +1106,21 @@
 <td>Message</td>
 <td><code>message</code></td>
 <td>Free Text</td>
+<td>&mdash;-</td>
 </tr>
 
 <tr>
 <td>How did you hear about us</td>
 <td><code>how_ did_you_hear_about_us</code></td>
 <td>Pick Multiple</td>
+<td>Option 1: Google, Option 2: Friend</td>
 </tr>
 </tbody>
 </table>
 
 <p>For the &lsquo;Message&rsquo; field on your form, your web developer would have to use <code>enquiry_details[message]</code></p>
 
-<p>For the &lsquo;How did you hear about us&rsquo; field on your form, your web developer would have to use <code>enquiry_details[how_ did_you_hear_about_us][]</code></p>
+<p>For the &lsquo;How did you hear about us&rsquo; field on your form, your web developer would have to use <code>enquiry_details[how_ did_you_hear_about_us][]</code> <code>value=Google</code> <code>value=Friend</code></p>
 
 <p><strong>5.</strong> Your web developer needs to post your form to <a href="https://bookings.designmynight.com/book">https://bookings.designmynight.com/book</a></p>
 
