@@ -65,16 +65,16 @@ where `key` is the **Field Name** of the Enquiry Field that you have create and 
 
 **Example for web developers:** 
 
-So for example, if you have set up the following in Collins:
+If you hadthe following set up the following in Collins:
 
-| Field Label | Field Name| Field Type|Comments|
-|-----------|------|------|----|
-|Message| `message` | Free Text|----|
-|How did you hear about us| `how_ did_you_hear_about_us` | Pick Multiple|Option 1: Google, Option 2: Friend| 
+| Field Label | Field Name| Field Type|Multiple Drop Down Options|
+|-----------|------|------||
+|Message| `message` | Free Text|N/A|
+|How did you hear about us| `how_ did_you_hear_about_us` | Google, Friend|
 
 For the 'Message' field on your form, your web developer would have to use `enquiry_details[message]`
 
-For the 'How did you hear about us' field on your form, your web developer would have to use `enquiry_details[how_ did_you_hear_about_us][]` `value=Google` `value=Friend`
+For the 'How did you hear about us' field on your form, your web developer would have to use `enquiry_details[how_ did_you_hear_about_us][]` `value=Google` `value=Friend`.
 
 **5.** Your web developer needs to post your form to https://bookings.designmynight.com/book
 
