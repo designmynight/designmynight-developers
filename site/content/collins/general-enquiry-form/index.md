@@ -68,7 +68,7 @@ where `key` is the **Field Name** of the Enquiry Field that you have create and 
 If you hadthe following set up the following in Collins:
 
 | Field Label | Field Name| Field Type|Multiple Drop Down Options|
-|-----------|------|------||
+|-----------|------|------|---|
 |Message| `message` | Free Text|N/A|
 |How did you hear about us| `how_ did_you_hear_about_us` | Google, Friend|
 
