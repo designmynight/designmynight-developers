@@ -22,8 +22,8 @@ Here's an [example of a Basic Enquiry Form](https://docs.google.com/document/d/1
 |`num_people`| Guests|
 |`date`| Date| In the form YYYY-MM-DD|
 |`time`| Time| In the form HH:mm|
-|`duration`| Duration of booking||
-|`dob`| Birthday||
+|`duration`| Duration of booking| Number of minutes |
+|`dob`| Birthday| In the form YYYY-MM-DD |
 
 **Example for web developer:** If you're adding a field on your form for customers to enter their first name, you can post to `name='first_name'`.
 
@@ -74,7 +74,14 @@ If you hadthe following set up the following in Collins:
 
 For the 'Message' field on your form, your web developer would have to use `enquiry_details[message]`
 
-For the 'How did you hear about us' field on your form, your web developer would have to use `enquiry_details[how_ did_you_hear_about_us][]` `value=Google` `value=Friend`.
+For the 'How did you hear about us' field on your form, your web developer would use an input similar to this:
+
+```html
+<select name="enquiry_details[how_did_you_hear_about_us][]">
+    <option value="Google">Google</option>
+    <option value="Friend">Friend</option>
+</select>
+```
 
 **5.** Your web developer needs to post your form to https://bookings.designmynight.com/book
 
