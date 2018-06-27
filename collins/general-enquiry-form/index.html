@@ -1000,13 +1000,13 @@
 <tr>
 <td><code>duration</code></td>
 <td>Duration of booking</td>
-<td></td>
+<td>Number of minutes</td>
 </tr>
 
 <tr>
 <td><code>dob</code></td>
 <td>Birthday</td>
-<td></td>
+<td>In the form YYYY-MM-DD</td>
 </tr>
 </tbody>
 </table>
@@ -1120,7 +1120,13 @@
 
 <p>For the &lsquo;Message&rsquo; field on your form, your web developer would have to use <code>enquiry_details[message]</code></p>
 
-<p>For the &lsquo;How did you hear about us&rsquo; field on your form, your web developer would have to use <code>enquiry_details[how_ did_you_hear_about_us][]</code> <code>value=Google</code> <code>value=Friend</code>.</p>
+<p>For the &lsquo;How did you hear about us&rsquo; field on your form, your web developer would use an input similar to this:</p>
+
+<pre><code class="language-html">&lt;select name=&quot;enquiry_details[how_did_you_hear_about_us][]&quot;&gt;
+    &lt;option value=&quot;Google&quot;&gt;Google&lt;/option&gt;
+    &lt;option value=&quot;Friend&quot;&gt;Friend&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
 
 <p><strong>5.</strong> Your web developer needs to post your form to <a href="https://bookings.designmynight.com/book">https://bookings.designmynight.com/book</a></p>
 
