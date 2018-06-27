@@ -1089,38 +1089,16 @@
 
 <p><strong>Example for web developers:</strong></p>
 
-<p>So for example, if you have set up the following in Collins:</p>
+<p>If you hadthe following set up the following in Collins:</p>
 
-<table>
-<thead>
-<tr>
-<th>Field Label</th>
-<th>Field Name</th>
-<th>Field Type</th>
-<th>Comments</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Message</td>
-<td><code>message</code></td>
-<td>Free Text</td>
-<td>&mdash;-</td>
-</tr>
-
-<tr>
-<td>How did you hear about us</td>
-<td><code>how_ did_you_hear_about_us</code></td>
-<td>Pick Multiple</td>
-<td>Option 1: Google, Option 2: Friend</td>
-</tr>
-</tbody>
-</table>
+<p>| Field Label | Field Name| Field Type|Multiple Drop Down Options|
+|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;|&mdash;&mdash;||
+|Message| <code>message</code> | Free Text|N/A|
+|How did you hear about us| <code>how_ did_you_hear_about_us</code> | Google, Friend|</p>
 
 <p>For the &lsquo;Message&rsquo; field on your form, your web developer would have to use <code>enquiry_details[message]</code></p>
 
-<p>For the &lsquo;How did you hear about us&rsquo; field on your form, your web developer would have to use <code>enquiry_details[how_ did_you_hear_about_us][]</code> <code>value=Google</code> <code>value=Friend</code></p>
+<p>For the &lsquo;How did you hear about us&rsquo; field on your form, your web developer would have to use <code>enquiry_details[how_ did_you_hear_about_us][]</code> <code>value=Google</code> <code>value=Friend</code>.</p>
 
 <p><strong>5.</strong> Your web developer needs to post your form to <a href="https://bookings.designmynight.com/book">https://bookings.designmynight.com/book</a></p>
 
