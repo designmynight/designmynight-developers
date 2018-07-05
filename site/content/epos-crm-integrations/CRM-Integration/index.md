@@ -13,7 +13,7 @@ We can give CRM systems access to the Collins API. This will enable them to pull
 **We are able to give access to the following API endpoints:**
 
 * [Bookings](http://developers.designmynight.com/booking-api/) - this will pull the booking data from your Collins Enquiries Page (ie every field you can see on your [CSV download from enquiry page](https://collins.uservoice.com/knowledgebase/articles/1829035-enquiries-page-csv-download))
-* [Users](http://developers.designmynight.com/users-api/) - this will pull your Collins Customers Data
+* [Users](http://developers.designmynight.com/api/users-api/) - this will pull your Collins Customers Data
 * Bookings Reports - this will pull your booking reports with whichever parameters you wish
 * Venues - this will pull your DMN Venue reviews
 * [Offers](http://developers.designmynight.com/offers-api/) - this will pull your Collins Offers (and can be used to check which offers are eligible for a given booking)
