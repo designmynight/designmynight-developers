@@ -113,9 +113,13 @@ As such, we recommend that you create a test payment through Collins. This will 
 
 Once the integration has been set up, all valid payments added to Collins will have a tick next to it in the Payments tab of the booking. The colour of the tick will determine the 'pushed to till' status:
 
-* The [green tick](https://static.designmynight.com/uploads/2017/11/pushed-to-till-optimised.png) means that the payment has already been pushed to your till. 
+* The green tick means that the payment has already been pushed to your till:
 
-* The [orange tick](https://static.designmynight.com/uploads/2017/11/not-pushed-to-till-optimised.png) will mean different things depending on how you've set the integration up:
+![screenshot of green tick](https://static.designmynight.com/uploads/2017/11/pushed-to-till-optimised.png) 
+
+* The orange tick will mean different things depending on how you've set the integration up:
+
+![screenshot of orange tick](https://static.designmynight.com/uploads/2017/11/not-pushed-to-till-optimised.png)
 
 If you have set up to push bookings ASAP and the tick is orange, this means that the payment has not correctly pushed to your tills. Please see our troubleshooting steps below. 
 
