@@ -18,7 +18,7 @@ We can give CRM systems access to the Collins API. This will enable them to pull
 * Venues - this will pull your DMN Venue reviews
 * [Offers](http://developers.designmynight.com/api/offers-api/) - this will pull your Collins Offers (and can be used to check which offers are eligible for a given booking)
 
-If you are looking to get API access for your CRM system, the first step is for the Account Manager at your CRM system to have a look through our [API Basics for Developers](http://developers.designmynight.com/api-basics/).
+If you are looking to get API access for your CRM system, the first step is for the Account Manager at your CRM system to have a look through our [API Basics for Developers](http://developers.designmynight.com/api/api-basics/).
 
 If you would then like to proceed, please contact your Collins Account Manager with full details of what you are looking to do and which specific API endpoints you are looking to use (for example, Users endpoint for Customer Data). 
 
