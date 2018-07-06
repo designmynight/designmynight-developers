@@ -1,15 +1,23 @@
 # Contact Us/General Enquiry Form
-As well as a Collins booking widget, you can also personalise your own Contact Us/General Enquiry form which feeds into your Collins. 
+As well as a [Collins booking widget](http://developers.designmynight.com/collins/booking-widget/), you can also create and personalise your own Contact Us/General Enquiry form which feeds into Collins as a new enquiry. 
 
-Here's an example of a partner with a customised enquiry form: [No. 4 Clifton Village](https://www.no4cliftonvillage.co.uk/contact-us/)
+Here's an example of a partner with a customised enquiry form: [No. 4 Clifton Village](https://www.no4cliftonvillage.co.uk/contact-us/).
 
-Any customer responses to your custom enquiry fields will display in the **Enquiry Details** section of your Collins enquiry/booking.
+Any customer responses to your Standard Collins booking fields will display in the respective fields in the **Booking Details** section of the Collins enquiry.
 
-**To create your own personalised Enquiry form:**
+![screenshot of booking details section](https://static.designmynight.com/uploads/2018/07/Capture-of-booking-details-tab-optimised.png)
+
+Any customer responses to your custom enquiry fields will display in a new **Enquiry Details** section of your Collins enquiry/booking.
+
+![screenshot of enquiry details section](https://static.designmynight.com/uploads/2018/07/Capture-of-enquiry-details-tab.png)
+
+## How to create your own personalised Enquiry Form
 
 **1.** Create your own form display on your website. You and your web developer will be responsible for the look of your personalised form and which fields are included.
 
-Here's an [example of a Basic Enquiry Form](https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit) that we recommend that your web developers use.
+We recommend that you keep the forms as short and simple as possible. 
+
+To help, here's an [example of a Basic Enquiry Form](https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit) that we recommend that your web developers use.
 
 **2.** For any _standard_ Collins booking fields used in your form, please ask your web developer to post to these field names:
 
