@@ -75,7 +75,7 @@ where `key` is the **Field Name** of the Enquiry Field that you have create and 
 
 If you had the following set up the following in Collins:
 
-![screenshot of enquiry fields](https://content.designmynight.com/uploads/2018/07/Capture-of-enquiry-fields.png)
+![screenshot of enquiry fields](https://static.designmynight.com/uploads/2018/07/Capture-of-enquiry-fields-optimised.png)
 
 For the 'Message' field on your form, your web developer would have to use `enquiry_details[message]`
 
