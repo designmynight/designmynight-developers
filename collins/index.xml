@@ -65,7 +65,7 @@ It’s worth mentioning that the booking summary and any automated copy that you
       <description>Contact Us/General Enquiry Form As well as a Collins booking widget, you can also create and personalise your own Contact Us/General Enquiry form which feeds into Collins as a new enquiry.
 Here&amp;rsquo;s an example of a partner with a customised enquiry form: No. 4 Clifton Village.
 IMPORTANT: Collins users MUST create all their custom enquiry fields within Collins before you can proceed with creating your enquiry form.
-Posting to Standard Booking Fields For any standard Collins booking fields used in your form, please ask your web developer to post to these field names:</description>
+Posting to Standard Booking Fields For any standard Collins booking fields used in your form, web developers should post to these field names:</description>
     </item>
     
     <item>
