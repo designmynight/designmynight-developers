@@ -33,7 +33,7 @@ For any _standard_ Collins booking fields used in your form, web developers shou
 <select name="venue">
     <option value="123456789"> Bar Collins</option>
     <option value="987654321">Bar DMN</option>
-    <option value=""> Not Sure </option>
+    <option value="">Not Sure</option>
 </select>
 ```
 where you swap the values to be the venue IDs sent from your Collins Account Manager. 
