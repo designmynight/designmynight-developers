@@ -20,6 +20,7 @@ For any _standard_ Collins booking fields used in your form, web developers shou
 |`time`| Time| In the form HH:mm|
 |`duration`| Duration of booking| Number of minutes |
 |`dob`| Birthday| In the form YYYY-MM-DD |
+|`company`| Company| |
 |`venue`| Venue| Use the Venue IDs provided by Collins Account Manager |
 |`type`| Booking Type|Use the Booking Type IDs provided by Collins Account Manager|
 
