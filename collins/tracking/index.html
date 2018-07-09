@@ -1003,6 +1003,18 @@ for ( var i = 0; i &lt; queryParams.length; i++ ){
   &lt;div id=&quot;all-params&quot;&gt;
 </code></pre>
 
+<p><strong>4. Would it be possible to direct customers to different URLs depending on whether their booking in confirmed or comes into Collins as an enquiry?</strong></p>
+
+<p>The booking info will be passed back in the URL.</p>
+
+<p>When using the POST return method, you need to ensure that your webserver and application can accept POST requests from the designmynight.com domain, including any subdomain.</p>
+
+<p>You will need to pick the <code>status</code> out of url if using a GET return method, or <code>status</code> out of the POST body.</p>
+
+<p>Enquiries will have a status of <code>in_progress</code> and a confirmed booking will have a status of <code>complete</code>.</p>
+
+<p>It will be up to your web developer to handle this logic on the return url to determine what information to display e.g &ldquo;Thank you for enquiry&rdquo; or &ldquo;Thank you for booking&rdquo;.</p>
+
 			
 			<aside class="copyright" role="note">
 				
