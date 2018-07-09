@@ -46,7 +46,7 @@ When posting custom enquiry fields to Collins, the name of the field inputs **_n
 |Free Text | `enquiry_details[key]`||
 |Long Text|`enquiry_details[key]`||
 |Pick One|`enquiry_details[key]`||
-|Pick Multiple| `enquiry_details[key][]`|Collins user will need to let you know the exact values they have set for the multiple options so you can map to the correct values. Please note that these are case-sensitive|
+|Pick Multiple| `enquiry_details[key][]`|Case sensitive to how the values are set up within Collins.|
 
 where `key` is the **Field Name** of the Enquiry Field that you have been sent from your Collins Account Manager.  
 
@@ -86,9 +86,9 @@ We recommend that you keep the forms as short and simple as possible.
 
 To help, here's an [example of a Basic Enquiry Form](https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit) that we recommend that your web developers use.
 
-**5.** Post any Standard Booking Fields as per this guide. 
+**5.** Post any Standard Booking Fields as per this [guide](http://developers.designmynight.com/collins/general-enquiry-form/#posting-to-standard-booking-fields). 
 
-**6.** Post any Custom Enquiry Fields as per this guide. 
+**6.** Post any Custom Enquiry Fields as per this [guide](http://developers.designmynight.com/collins/general-enquiry-form/#posting-to-custom-enquiry-fields). 
 
 **7.** Post your form to https://bookings.designmynight.com/book
 
@@ -96,7 +96,7 @@ To help, here's an [example of a Basic Enquiry Form](https://docs.google.com/doc
 
 * `enquiry_type=enquiry`
 * `source=partner`
-* `venue_group=` (**your Collins Account Manager will provide this**)
+* `venue_group=VENUEGROUPID` (**your Collins Account Manager will provide the Venue Group ID**)
 
 **_Please note:_**  If the action of the form is a direct post to https://bookings.designmynight.com/book, then you will need to add these three fields as hidden fields, for example: 
 
