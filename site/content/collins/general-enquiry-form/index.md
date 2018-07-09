@@ -31,11 +31,21 @@ For any _standard_ Collins booking fields used in your form, web developers shou
 
 ```
 <select name="venue">
-    <option value="552435790df6902b7256f237"> Bar Collins</option>
-    <option value="5787a87595838bed3a8b4569">Bar DMN</option>
+    <option value="123456789"> Bar Collins</option>
+    <option value="987654321">Bar DMN</option>
+    <option value=""> Not Sure </option>
 </select>
 ```
 where you swap the values to be the venue IDs sent from your Collins Account Manager. 
+
+*  If you are asking customers to select from multiple booking types: 
+
+```<select name="type">
+    <option value="12345">Dinner</option>
+    <option value="54321">Drinks</option>
+</select>```
+
+where you swap the values to be the booking type IDs sent from your Collins Account Manager. 
 
 ## Posting to Custom Enquiry Fields
 
