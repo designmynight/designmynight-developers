@@ -7,7 +7,7 @@ Here's an example of a partner with a customised enquiry form: [No. 4 Clifton Vi
 
 ## Posting to Standard Booking Fields
 
-For any _standard_ Collins booking fields used in your form, please ask your web developer to post to these field names:
+For any _standard_ Collins booking fields used in your form, web developers should post to these field names:
 
 | Field Name | Field Name in Collins|Comments|
 |-----------|------|------|
