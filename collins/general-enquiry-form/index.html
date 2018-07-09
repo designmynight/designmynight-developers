@@ -935,23 +935,11 @@
 
 <p>Here&rsquo;s an example of a partner with a customised enquiry form: <a href="https://www.no4cliftonvillage.co.uk/contact-us/">No. 4 Clifton Village</a>.</p>
 
-<p>Any customer responses to your Standard Collins booking fields will display in the respective fields in the <strong>Booking Details</strong> section of the Collins enquiry.</p>
+<p><strong>IMPORTANT:</strong> Collins users <strong>MUST</strong> <a href="https://collins.uservoice.com/knowledgebase/articles/1867342-venue-group-enquiries">create all their custom enquiry fields within Collins</a> before you can proceed with creating your enquiry form.</p>
 
-<p><img src="https://static.designmynight.com/uploads/2018/07/Capture-of-booking-details-tab-optimised.png" alt="screenshot of booking details section" /></p>
+<h2 id="posting-to-standard-booking-fields">Posting to Standard Booking Fields</h2>
 
-<p>Any customer responses to your custom enquiry fields will display in a new <strong>Enquiry Details</strong> section of your Collins enquiry/booking.</p>
-
-<p><img src="https://static.designmynight.com/uploads/2018/07/Capture-of-enquiry-details-tab.png" alt="screenshot of enquiry details section" /></p>
-
-<h2 id="how-to-create-your-own-personalised-enquiry-form">How to create your own personalised Enquiry Form</h2>
-
-<p><strong>1.</strong> Create your own form display on your website. You and your web developer will be responsible for the look of your personalised form and which fields are included.</p>
-
-<p>We recommend that you keep the forms as short and simple as possible.</p>
-
-<p>To help, here&rsquo;s an <a href="https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit">example of a Basic Enquiry Form</a> that we recommend that your web developers use.</p>
-
-<p><strong>2.</strong> For any <em>standard</em> Collins booking fields used in your form, please ask your web developer to post to these field names:</p>
+<p>For any <em>standard</em> Collins booking fields used in your form, please ask your web developer to post to these field names:</p>
 
 <table>
 <thead>
@@ -1016,40 +1004,39 @@
 <td>Birthday</td>
 <td>In the form YYYY-MM-DD</td>
 </tr>
+
+<tr>
+<td><code>venue</code></td>
+<td>Venue</td>
+<td>Use the Venue IDs provided by Collins Account Manager</td>
+</tr>
+
+<tr>
+<td><code>type</code></td>
+<td>Booking Type</td>
+<td>Use the Booking Type IDs provided by Collins Account Manager</td>
+</tr>
 </tbody>
 </table>
 
-<p><strong>Example for web developer:</strong> If you&rsquo;re adding a field on your form for customers to enter their first name, you can post to <code>name='first_name'</code>.</p>
+<p><strong>Examples of posting standard booking fields:</strong></p>
 
-<p><strong>Note to Collins users:</strong> These standard booking fields should <strong>not</strong> be added as new enquiry fields (in Step 3).</p>
+<ul>
+<li>If you&rsquo;re adding a field on your form for customers to enter their first name, you can post to <code>name='first_name'</code>.</li>
+<li>If you are asking customers to select from multiple venues:</li>
+</ul>
 
-<p>This will ensure that the customer response for these fields will populate the respective fields within the <strong>Booking Details</strong> section of your Collins enquiry.</p>
+<pre><code>&lt;select name=&quot;venue&quot;&gt;
+    &lt;option value=&quot;552435790df6902b7256f237&quot;&gt; Bar Collins&lt;/option&gt;
+    &lt;option value=&quot;5787a87595838bed3a8b4569&quot;&gt;Bar DMN&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
 
-<p><strong>3.</strong> For any non-standard enquiry fields that you would like to use, you will have to add them to your Collins admin. This will create technical names that you can give to your web developer to map them in your web form.</p>
+<p>where you swap the values to be the venue IDs sent from your Collins Account Manager.</p>
 
-<p><strong>To add a new enquiry field within Collins:</strong></p>
+<h2 id="posting-to-custom-enquiry-fields">Posting to Custom Enquiry Fields</h2>
 
-<ol>
-<li>Log onto your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
-<li>Go to Settings &gt; Venue Group &gt; Enquiries</li>
-<li>Tick the box &lsquo;Enable Enquiries&rsquo;</li>
-<li>In Enquiy Fields section, click to &lsquo;Add a Field&rsquo;</li>
-<li>You will then have to add the following details:</li>
-</ol>
-
-<p><strong>Field Label</strong> - <em>once you have added the Field Label, the <strong>Field Name</strong> will auto-populate.</em></p>
-
-<p><strong>Field Type</strong> - <em>select from the drop down the type of field (eg Free Text, Yes/No, Pick One etc).</em></p>
-
-<ol>
-<li>Click <strong>SAVE</strong></li>
-</ol>
-
-<p>Once all the Enquiry Fields have been added, please give your web developer the <strong>Field Names</strong> and <strong>Field Types</strong> that you have set up. They will use this to map these custom enquiry fields in your web form.</p>
-
-<p>If your web developer does not have access to your Collins admin, it&rsquo;s worth sending them a screenshot of your enquiry form settings (so they can clearly see all the details).</p>
-
-<p><strong>4.</strong> When posting custom enquiry fields to Collins, the name of the field inputs <strong><em>needs</em></strong> to be as follows:</p>
+<p>When posting custom enquiry fields to Collins, the name of the field inputs <strong><em>needs</em></strong> to be as follows:</p>
 
 <table>
 <thead>
@@ -1093,7 +1080,7 @@
 </tbody>
 </table>
 
-<p>where <code>key</code> is the <strong>Field Name</strong> of the Enquiry Field that you have create and passed on to your developer.</p>
+<p>where <code>key</code> is the <strong>Field Name</strong> of the Enquiry Field that you have been sent from your Collins Account Manager.</p>
 
 <p><strong>Example for web developers:</strong></p>
 
@@ -1111,14 +1098,39 @@
 &lt;/select&gt;
 </code></pre>
 
-<p><strong>5.</strong> Your web developer needs to post your form to <a href="https://bookings.designmynight.com/book">https://bookings.designmynight.com/book</a></p>
+<h2 id="how-to-create-your-own-personalised-enquiry-form">How to create your own personalised Enquiry Form</h2>
 
-<p><strong>6.</strong> Your web developer will also need to include the following fields to identify as being an enquiry for your venue group:</p>
+<p><strong>1.</strong> Collins users <a href="https://collins.uservoice.com/knowledgebase/articles/1867342-venue-group-enquiries">create all their custom enquiry fields within Collins</a></p>
+
+<p><strong>2.</strong> Once all the custom enquiry fields have been added to Collins, Collins user to let their Collins Account Manager know and introduce them to your web developer.</p>
+
+<p><strong>3.</strong> Collins Account Manager to provide the web developer with the following details:</p>
+
+<ul>
+<li>Venue IDs</li>
+<li>Venue Group ID</li>
+<li>Field Names</li>
+<li>Field Types</li>
+</ul>
+
+<p><strong>4.</strong> Web developer to create a form display on your website. Web developer will be responsible for the look of your personalised form and which fields are included.</p>
+
+<p>We recommend that you keep the forms as short and simple as possible.</p>
+
+<p>To help, here&rsquo;s an <a href="https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit">example of a Basic Enquiry Form</a> that we recommend that your web developers use.</p>
+
+<p><strong>5.</strong> Post any Standard Booking Fields as per this guide.</p>
+
+<p><strong>6.</strong> Post any Custom Enquiry Fields as per this guide.</p>
+
+<p><strong>7.</strong> Post your form to <a href="https://bookings.designmynight.com/book">https://bookings.designmynight.com/book</a></p>
+
+<p><strong>6.</strong> You will also need to include the following fields to identify as being an enquiry for your venue group:</p>
 
 <ul>
 <li><code>enquiry_type=enquiry</code></li>
 <li><code>source=partner</code></li>
-<li><code>venue_group= **you can get this from your Account Manager**</code></li>
+<li><code>venue_group=</code> (<strong>your Collins Account Manager will provide this</strong>)</li>
 </ul>
 
 <p><strong><em>Please note:</em></strong>  If the action of the form is a direct post to <a href="https://bookings.designmynight.com/book">https://bookings.designmynight.com/book</a>, then you will need to add these three fields as hidden fields, for example:</p>
