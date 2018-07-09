@@ -3,23 +3,11 @@ As well as a [Collins booking widget](http://developers.designmynight.com/collin
 
 Here's an example of a partner with a customised enquiry form: [No. 4 Clifton Village](https://www.no4cliftonvillage.co.uk/contact-us/).
 
-Any customer responses to your Standard Collins booking fields will display in the respective fields in the **Booking Details** section of the Collins enquiry.
+**IMPORTANT:** Collins users **MUST** [create all their custom enquiry fields within Collins](https://collins.uservoice.com/knowledgebase/articles/1867342-venue-group-enquiries) before you can proceed with creating your enquiry form. 
 
-![screenshot of booking details section](https://static.designmynight.com/uploads/2018/07/Capture-of-booking-details-tab-optimised.png)
+## Posting to Standard Booking Fields
 
-Any customer responses to your custom enquiry fields will display in a new **Enquiry Details** section of your Collins enquiry/booking.
-
-![screenshot of enquiry details section](https://static.designmynight.com/uploads/2018/07/Capture-of-enquiry-details-tab.png)
-
-## How to create your own personalised Enquiry Form
-
-**1.** Create your own form display on your website. You and your web developer will be responsible for the look of your personalised form and which fields are included.
-
-We recommend that you keep the forms as short and simple as possible. 
-
-To help, here's an [example of a Basic Enquiry Form](https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit) that we recommend that your web developers use.
-
-**2.** For any _standard_ Collins booking fields used in your form, please ask your web developer to post to these field names:
+For any _standard_ Collins booking fields used in your form, please ask your web developer to post to these field names:
 
 | Field Name | Field Name in Collins|Comments|
 |-----------|------|------|
@@ -32,34 +20,25 @@ To help, here's an [example of a Basic Enquiry Form](https://docs.google.com/doc
 |`time`| Time| In the form HH:mm|
 |`duration`| Duration of booking| Number of minutes |
 |`dob`| Birthday| In the form YYYY-MM-DD |
+|`venue`| Venue| Use the Venue IDs provided by Collins Account Manager |
+|`type`| Booking Type|Use the Booking Type IDs provided by Collins Account Manager|
 
-**Example for web developer:** If you're adding a field on your form for customers to enter their first name, you can post to `name='first_name'`.
+**Examples of posting standard booking fields:**
 
-**Note to Collins users:** These standard booking fields should **not** be added as new enquiry fields (in Step 3). 
+* If you're adding a field on your form for customers to enter their first name, you can post to `name='first_name'`.
+* If you are asking customers to select from multiple venues: 
 
-This will ensure that the customer response for these fields will populate the respective fields within the **Booking Details** section of your Collins enquiry.  
+```
+<select name="venue">
+    <option value="552435790df6902b7256f237"> Bar Collins</option>
+    <option value="5787a87595838bed3a8b4569">Bar DMN</option>
+</select>
+```
+where you swap the values to be the venue IDs sent from your Collins Account Manager. 
 
-**3.** For any non-standard enquiry fields that you would like to use, you will have to add them to your Collins admin. This will create technical names that you can give to your web developer to map them in your web form.
+## Posting to Custom Enquiry Fields
 
-**To add a new enquiry field within Collins:**
-
-1. Log onto your [Collins admin](https://admin.designmynight.com/collins)
-2. Go to Settings > Venue Group > Enquiries
-3. Tick the box 'Enable Enquiries'
-4. In Enquiy Fields section, click to 'Add a Field' 
-5. You will then have to add the following details:
-
-**Field Label** - _once you have added the Field Label, the **Field Name** will auto-populate._
-
-**Field Type** - _select from the drop down the type of field (eg Free Text, Yes/No, Pick One etc)._
-
- 6. Click **SAVE**
-
-Once all the Enquiry Fields have been added, please give your web developer the **Field Names** and **Field Types** that you have set up. They will use this to map these custom enquiry fields in your web form.
-
-If your web developer does not have access to your Collins admin, it's worth sending them a screenshot of your enquiry form settings (so they can clearly see all the details). 
-
-**4.** When posting custom enquiry fields to Collins, the name of the field inputs **_needs_** to be as follows:
+When posting custom enquiry fields to Collins, the name of the field inputs **_needs_** to be as follows:
 
 | Field Type in Collins | Field Input| Comments|
 |-----------|------|----|
@@ -69,7 +48,7 @@ If your web developer does not have access to your Collins admin, it's worth sen
 |Pick One|`enquiry_details[key]`||
 |Pick Multiple| `enquiry_details[key][]`|Collins user will need to let you know the exact values they have set for the multiple options so you can map to the correct values. Please note that these are case-sensitive|
 
-where `key` is the **Field Name** of the Enquiry Field that you have create and passed on to your developer. 
+where `key` is the **Field Name** of the Enquiry Field that you have been sent from your Collins Account Manager.  
 
 **Example for web developers:** 
 
@@ -88,13 +67,36 @@ For the 'How did you hear about us' field on your form, your web developer would
 </select>
 ```
 
-**5.** Your web developer needs to post your form to https://bookings.designmynight.com/book
+## How to create your own personalised Enquiry Form
 
-**6.** Your web developer will also need to include the following fields to identify as being an enquiry for your venue group:
+**1.** Collins users [create all their custom enquiry fields within Collins](https://collins.uservoice.com/knowledgebase/articles/1867342-venue-group-enquiries)
+
+**2.** Once all the custom enquiry fields have been added to Collins, Collins user to let their Collins Account Manager know and introduce them to your web developer. 
+
+**3.** Collins Account Manager to provide the web developer with the following details:
+
+* Venue IDs
+* Venue Group ID
+* Field Names
+* Field Types
+
+**4.** Web developer to create a form display on your website. Web developer will be responsible for the look of your personalised form and which fields are included.
+
+We recommend that you keep the forms as short and simple as possible. 
+
+To help, here's an [example of a Basic Enquiry Form](https://docs.google.com/document/d/1syIG0kFEEzoD9FfDQkNHAp6wD5ZrNZhP4IW56Zkfyys/edit) that we recommend that your web developers use.
+
+**5.** Post any Standard Booking Fields as per this guide. 
+
+**6.** Post any Custom Enquiry Fields as per this guide. 
+
+**7.** Post your form to https://bookings.designmynight.com/book
+
+**6.** You will also need to include the following fields to identify as being an enquiry for your venue group:
 
 * `enquiry_type=enquiry`
 * `source=partner`
-* `venue_group= **you can get this from your Account Manager**`
+* `venue_group=` (**your Collins Account Manager will provide this**)
 
 **_Please note:_**  If the action of the form is a direct post to https://bookings.designmynight.com/book, then you will need to add these three fields as hidden fields, for example: 
 
