@@ -23,6 +23,8 @@ For any _standard_ Collins booking fields used in your form, web developers shou
 |`company`| Company| |
 |`venue_id`| Venue| Use the Venue IDs provided by Collins Account Manager |
 |`type`| Booking Type|Use the Booking Type IDs provided by Collins Account Manager|
+|`budget`| Budget||
+|`approximate_guests`| Approximate Guests||
 
 **Examples of posting standard booking fields:**
 
