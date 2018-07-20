@@ -4,7 +4,11 @@ You can choose to have customised email templates. As part of customising your t
 
 It’s worth mentioning that the booking summary and any automated copy that you have set up in Collins, will automatically fill the middle section of the email. This is the 'non-customisable data' of the HTML template. Your web developer will, however, be able to add CSS rules to customise the styling of the non-customisable content.
 
-Here is a [basic HTML template](https://docs.google.com/document/d/1o5EMw0QcMXiaAvHjbTI11WAAwb1pydo0GbILGqbIpro/edit?usp=sharing) that you can work from when customising email templates. There are comments in the code to guide developers. You'll need to provide us with these in full HTML for us to be able to upload them. 
+Here is a [basic HTML template](https://docs.google.com/document/d/1o5EMw0QcMXiaAvHjbTI11WAAwb1pydo0GbILGqbIpro/edit?usp=sharing) that you can work from when customising email templates. There are comments in the code to guide developers.
+
+**For the best results, we would strongly recommend using the format provided in our template example.**
+
+You'll need to provide us with these in full HTML for us to be able to upload them. 
 
 We would recommend creating one general email template which can be used for all your outgoing emails from Collins.
 
