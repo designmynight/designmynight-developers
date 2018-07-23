@@ -931,7 +931,7 @@
 
 <p>The ticket widget lists events, dates and tickets.  If a single event is listed with a single date it will only show the tickets. If an event with multiple dates is listed then it will show the calendar first.  If multiple events/event brands (item-ids) are listed then the events list will be displayed first.</p>
 
-<h2 id="customising-the-widget">Customising the widget</h2>
+<h2 id="setting-up-the-ticket-widget">Setting up the ticket widget</h2>
 
 <p>The widget is included using javascript.  Below is a list of valid attributes for the script tag in order to customise it.  You can also use self-hosted CSS to change the look and feel of the form.</p>
 
@@ -948,18 +948,37 @@
 <tbody>
 <tr>
 <td>src</td>
-<td>//partners.designmynight.com/pw?v=2</td>
-<td>The source</td>
+<td>//partners.designmynight.com/pw?v=3&amp;r=10000</td>
+<td>The source, <code>r</code> should be unique to each ticket widget on the page</td>
 <td></td>
 </tr>
 
 <tr>
 <td>item-ids</td>
-<td>&lt;Event Id&gt; | &lt;Event Brand Id&gt;</td>
+<td>&lt;Event Id&gt; \ &lt;Event Brand Id&gt;</td>
 <td>N/A</td>
 <td>The event or event brand (list of events) for the widget</td>
 </tr>
+</tbody>
+</table>
 
+<h2 id="customising-the-ticket-widget">Customising the Ticket Widget</h2>
+
+<p>By adding a json source the ticket widget can be customised.  The id of the json source should match the <code>r</code> id on the ticket widget itself. See examples below.</p>
+
+<p>The following table shows options available to the ticket widget.</p>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Possible values</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td>affiliate-id</td>
 <td>&lt;Affiliate Id&gt;</td>
@@ -968,136 +987,42 @@
 </tr>
 
 <tr>
-<td>enable-animations</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Enable or disable the fade in effect when a stage is loaded</td>
-</tr>
-
-<tr>
-<td>show-content</td>
-<td>yes | no</td>
-<td>no</td>
-<td>Show or hide the event descriptions on the &lsquo;event-picker&rsquo; screen</td>
-</tr>
-
-<tr>
-<td>show-header</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Show or hide the header of the form</td>
-</tr>
-
-<tr>
-<td>border</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Show or hide the border of the form</td>
-</tr>
-
-<tr>
-<td>show-event-title</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Show or hide the event title</td>
-</tr>
-
-<tr>
-<td>background-colour</td>
-<td>&lt;HTML Colour&gt;</td>
-<td>transparent</td>
-<td>Any valid HTML colour</td>
-</tr>
-
-<tr>
 <td>theme</td>
-<td>theme-default | theme-light</td>
-<td>theme-default</td>
-<td>Use theme-default for light backgrounds and theme-dark for dark backgrounds (affects fonts colours)</td>
+<td>light/inverse</td>
+<td>light</td>
+<td>Use light for light backgrounds and inverse for dark backgrounds (affects fonts colours)</td>
 </tr>
 
 <tr>
-<td>fixed-height</td>
-<td>yes | no</td>
-<td>no</td>
-<td>Setting this to a value e.g. 200px will set the widget to that height and it will become scrollable</td>
+<td>hideTicketDesc</td>
+<td>true/false</td>
+<td>false</td>
+<td>Hide or show the description of the tickets</td>
 </tr>
 
 <tr>
-<td>title</td>
-<td>&lt;String&gt;</td>
-<td>“Buy Tickets”</td>
-<td>Override the title of the form</td>
-</tr>
-
-<tr>
-<td>date-display</td>
-<td>calendar | list</td>
-<td>calendar</td>
-<td>Show a calendar or a list on the date page</td>
-</tr>
-
-<tr>
-<td>show-ticket-description</td>
-<td>yes | no</td>
-<td>toggle</td>
-<td>no</td>
-</tr>
-
-<tr>
-<td>show-not-on-sale</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Show not on sale tickets on the form</td>
-</tr>
-
-<tr>
-<td>show-sold-out</td>
-<td>yes | no</td>
-<td>yes</td>
-<td>Show sold out tickets on the form</td>
-</tr>
-
-<tr>
-<td>buy-now-action</td>
-<td>modal | current | blank</td>
-<td>modal</td>
-<td>When buy now is clicked either open in a modal, current window or a new window (most browsers use a new tab by default)</td>
-</tr>
-
-<tr>
-<td>mode</td>
-<td>form | button</td>
-<td>form</td>
-<td>Display either a form or a button. In order to use this you must add &amp;mode=button to the src attribute</td>
-</tr>
-
-<tr>
-<td>button-title</td>
-<td>&lt;String&gt;</td>
-<td>n/a</td>
-<td>If the mode is set to button you can change the title</td>
+<td>isModalMode</td>
+<td>true/false</td>
+<td>false</td>
+<td>Show the widget as a &ldquo;Buy Now&rdquo; button which opens the widget in a popup</td>
 </tr>
 </tbody>
 </table>
-
-<h2 id="purchase-process">Purchase process</h2>
-
-<p>When the form is submitted it will open up a modal by default. This behaviour can be customised with the buy-now-action attribute.</p>
 
 <h2 id="examples">Examples</h2>
 
 <p>The following example sample below will display a basic widget:</p>
 
 <pre><code class="language-html">&lt;!-- START DesignMyNight event widget --&gt;
-&lt;script src=&quot;//partners.designmynight.com/pw?v=2&quot; item-ids=&quot;546a14bc0df690b92489b1a7&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;//partners.designmynight.com/pw?v=3&amp;r=10000&quot; item-ids=&quot;546a14bc0df690b92489b1a7&quot; &gt;&lt;/script&gt;
 &lt;!-- END DesignMyNight event widget --&gt;
 </code></pre>
 
 <p>The following example sample below will display a buy now button:</p>
 
 <pre><code class="language-html">&lt;!-- START DesignMyNight event widget --&gt;
-&lt;script src=&quot;//partners.designmynight.com/pw?v=2&quot; item-ids=&quot;546a14bc0df690b92489b1a7&amp;mode=button&quot; mode=”button”&gt;&lt;/script&gt;
+&lt;script src=&quot;//partners.designmynight.com/pw?v=3&amp;r=10000&quot; item-ids=&quot;546a14bc0df690b92489b1a7&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/json&quot; id=&quot;tonic-widget-config-10000&quot;&gt;{&quot;hideTicketDesc&quot;:true,&quot;theme&quot;:&quot;inverse&quot;,&quot;isModalMode&quot;:true}&lt;/script&gt;
 &lt;!-- END DesignMyNight event widget --&gt;
 </code></pre>
 
@@ -1120,7 +1045,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://developers.designmynight.com/api/api-faqs/" title="">
+      <a href="http://developers.designmynight.com/api/venue-groups/" title="Venue Groups API">
         <span class="direction">
           Previous
         </span>
@@ -1130,7 +1055,7 @@
           </div>
           <div class="stretch">
             <div class="title">
-              
+              Venue Groups API
             </div>
           </div>
         </div>
@@ -1139,22 +1064,6 @@
   </div>
 
   <div class="next">
-  
-      <a href="http://developers.designmynight.com/api/event-guests-api/" title="Event Guests API">
-        <span class="direction">
-          Next
-        </span>
-        <div class="page">
-          <div class="stretch">
-            <div class="title">
-              Event Guests API
-            </div>
-          </div>
-          <div class="button button-next" role="button" aria-label="Next">
-            <i class="icon icon-forward"></i>
-          </div>
-        </div>
-      </a>
   
   </div>
 </nav>

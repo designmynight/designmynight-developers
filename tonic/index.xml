@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>DesignMyNight</copyright>
-    <lastBuildDate>Fri, 29 Apr 2016 13:42:29 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jul 2018 13:13:29 +0100</lastBuildDate>
     
 	<atom:link href="http://developers.designmynight.com/tonic/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,11 +15,11 @@
     <item>
       <title>Ticket widget</title>
       <link>http://developers.designmynight.com/tonic/ticket-widget/</link>
-      <pubDate>Fri, 29 Apr 2016 13:42:29 +0100</pubDate>
+      <pubDate>Mon, 23 Jul 2018 13:13:29 +0100</pubDate>
       
       <guid>http://developers.designmynight.com/tonic/ticket-widget/</guid>
       <description>The ticket widget lists events, dates and tickets. If a single event is listed with a single date it will only show the tickets. If an event with multiple dates is listed then it will show the calendar first. If multiple events/event brands (item-ids) are listed then the events list will be displayed first.
-Customising the widget The widget is included using javascript. Below is a list of valid attributes for the script tag in order to customise it.</description>
+Setting up the ticket widget The widget is included using javascript. Below is a list of valid attributes for the script tag in order to customise it.</description>
     </item>
     
   </channel>

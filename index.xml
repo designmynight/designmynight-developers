@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>DesignMyNight</copyright>
-    <lastBuildDate>Mon, 23 Oct 2017 16:41:48 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jul 2018 13:13:29 +0100</lastBuildDate>
     
 	<atom:link href="http://developers.designmynight.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ticket widget</title>
+      <link>http://developers.designmynight.com/tonic/ticket-widget/</link>
+      <pubDate>Mon, 23 Jul 2018 13:13:29 +0100</pubDate>
+      
+      <guid>http://developers.designmynight.com/tonic/ticket-widget/</guid>
+      <description>The ticket widget lists events, dates and tickets. If a single event is listed with a single date it will only show the tickets. If an event with multiple dates is listed then it will show the calendar first. If multiple events/event brands (item-ids) are listed then the events list will be displayed first.
+Setting up the ticket widget The widget is included using javascript. Below is a list of valid attributes for the script tag in order to customise it.</description>
+    </item>
     
     <item>
       <title>Venue Groups API</title>
@@ -106,16 +116,6 @@ Refer to the API Basics section to ensure you are familiar with the essentials o
  Overview The guests API endpoint provides you with all that you need to retrieve guest information for events.
 Listing guests Start by sending a GET request with the ID of the event you wish to get the information for:
 $ curl -X GET https://api.designmynight.com/v4/events/&amp;lt;event_id&amp;gt;/guests?occurrence=&amp;lt;date&amp;gt; $ curl -X GET https://api.</description>
-    </item>
-    
-    <item>
-      <title>Ticket widget</title>
-      <link>http://developers.designmynight.com/tonic/ticket-widget/</link>
-      <pubDate>Fri, 29 Apr 2016 13:42:29 +0100</pubDate>
-      
-      <guid>http://developers.designmynight.com/tonic/ticket-widget/</guid>
-      <description>The ticket widget lists events, dates and tickets. If a single event is listed with a single date it will only show the tickets. If an event with multiple dates is listed then it will show the calendar first. If multiple events/event brands (item-ids) are listed then the events list will be displayed first.
-Customising the widget The widget is included using javascript. Below is a list of valid attributes for the script tag in order to customise it.</description>
     </item>
     
     <item>
