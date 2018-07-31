@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://developers.designmynight.com/soda/partner-widget/</loc>
+    <lastmod>2018-07-31T11:13:29+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://developers.designmynight.com/tonic/ticket-widget/</loc>
     <lastmod>2018-07-23T13:13:29+01:00</lastmod>
   </url>
@@ -157,7 +162,7 @@
   
   <url>
     <loc>http://developers.designmynight.com/</loc>
-    <lastmod>2018-07-23T13:13:29+01:00</lastmod>
+    <lastmod>2018-07-31T11:13:29+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -168,6 +173,12 @@
   
   <url>
     <loc>http://developers.designmynight.com/faqs/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://developers.designmynight.com/soda/</loc>
+    <lastmod>2018-07-31T11:13:29+01:00</lastmod>
     <priority>0</priority>
   </url>
   

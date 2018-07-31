@@ -8,18 +8,18 @@
   <head lang="en-gb">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <title> - DMN developer documentation</title>
+    <title>Soda Partner Widget - DMN developer documentation</title>
     <meta name="generator" content="Hugo 0.22.1" />
 
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="http://developers.designmynight.com/faqs/customising-2nd-iframe/">
+    <link rel="canonical" href="http://developers.designmynight.com/soda/partner-widget/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="http://developers.designmynight.com/faqs/customising-2nd-iframe/">
+    <meta property="og:url" content="http://developers.designmynight.com/soda/partner-widget/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="http://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -91,7 +91,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        
+        Soda Partner Widget
       </div>
     </div>
 
@@ -287,11 +287,14 @@
 
 
 
-<a  title="Voucher widget" href="http://developers.designmynight.com/soda/partner-widget/">
+<a class="current" title="Voucher widget" href="http://developers.designmynight.com/soda/partner-widget/">
 	
 	Voucher widget
 </a>
 
+
+<ul id="scrollspy">
+</ul>
   
       
     </ul>
@@ -1055,65 +1058,125 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1> </h1>
+			<h1>Soda Partner Widget </h1>
 
 			
 
-<h2 id="customising-the-2nd-iframe-of-your-collins-booking-widget">Customising the 2nd iFrame of your Collins booking widget</h2>
+<p>The Soda Widget can be used to list and sell your vouchers from your own website.</p>
 
-<p>You are able to customise the 2nd iframe on your Collins booking widget to better suit the feel of your website.</p>
+<p>The widget is fully responsive to the container in which it is placed. This means the widget works great on both desktop and mobile screens. It also means you can either use it cover the full width of your page, or restrict it to a side bar or smaller column.</p>
 
-<p><strong>To customise your 2nd iFrame, your web developer would need to:</strong></p>
+<h2 id="setting-up-the-widget">Setting up the widget</h2>
 
-<ol>
-<li><p>Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).</p></li>
+<p>The widget is included using javascript.  Configuration for the widget is included in the url of the JavaScript src.</p>
 
-<li><p>We add this CSS URL to our system for your venue group, with a name eg app</p></li>
+<p>You can choose which brands, product groups or individual vouchers to list on the widget with the following parameters.</p>
 
-<li><p>When you add the form to your page, you add some code to tell our page which CSS to load, eg</p></li>
-</ol>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Possible values</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+</thead>
 
-<pre><code>&lt;script&gt;
-  DMN.val('stylesheet', 'app');  
-&lt;/script&gt;
+<tbody>
+<tr>
+<td>brands</td>
+<td><Brand Id></td>
+<td>-</td>
+<td>The Id of your voucher brand you wish to list</td>
+</tr>
+
+<tr>
+<td>product-groups</td>
+<td><Product Group Id></td>
+<td>-</td>
+<td>The Id of your voucher product group you wish to list</td>
+</tr>
+
+<tr>
+<td>voucher-types</td>
+<td><Brand Id></td>
+<td>-</td>
+<td>The Id of your voucher type</td>
+</tr>
+</tbody>
+</table>
+
+<p>For example to show all vouchers from your brand your code might look like this.</p>
+
+<pre><code class="language-html">  &lt;script type=&quot;text/javascript&quot;
+          src=&quot;https://widgets.designmynight.com/soda/soda-widget.min.js?brands=5a55fa2299883b41d414b002&quot;
+          soda-partner-widget
+  &gt;&lt;/script&gt;
 </code></pre>
 
-<p>When the booking form loads, it will also load your CSS so you can override whatever is on the book page.</p>
+<p>Multiple ids of each type can be added by separating the ids with a comma.</p>
 
-<h2 id="customising-2nd-iframe-faqs">Customising 2nd iFrame FAQs</h2>
+<h2 id="customising-the-widget">Customising the Widget</h2>
 
-<p><strong>1. When scrolling on a different device/screen size, the 2nd iFrame isn’t fully showing?</strong></p>
+<p>Below is a list of url parameters that can be included to change the behaviour and appearance of the widget.</p>
 
-<p>The standard 2nd iFrame will fully show on all devices and screen sizes.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Possible values</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+</thead>
 
-<p>If your 2nd iFrame is not fully showing, it’s likely that you have a CSS style on your own website which is overwriting the height of the iFrame.</p>
+<tbody>
+<tr>
+<td>skip-list</td>
+<td>true/false</td>
+<td>false</td>
+<td>If set to true and only one voucher is listed on the widget, the list page will be skipped showing just the voucher&rsquo;s details page</td>
+</tr>
 
-<p>Your web developer will have to look at the CSS that has been added to the customised 2nd iFrame.</p>
+<tr>
+<td>hide-header</td>
+<td>true/false</td>
+<td>false</td>
+<td>Hides the header on the widget</td>
+</tr>
 
-<p><strong>2. When customising our second iFrame, which fields are we able to hide?</strong></p>
+<tr>
+<td>call-to-only</td>
+<td>true/false</td>
+<td>false</td>
+<td>Only works in conjunction with <code>skip-list</code>.  This option will hide all the voucher&rsquo;s details, showing only the &ldquo;Buy Now&rdquo; box</td>
+</tr>
 
-<p>You are able to remove only the fields that are <strong>not</strong> required to complete the enquiry.</p>
+<tr>
+<td>tag-filters</td>
+<td>true/false</td>
+<td>true</td>
+<td>If you have configured Tags for your vouchers this option will show filters your customers can use to search your list of vouchers.</td>
+</tr>
+</tbody>
+</table>
 
-<p>For example, you will be able to hide the birthday field as long as it has not been made a <a href="https://collins.uservoice.com/knowledgebase/articles/1112770-booking-types-making-the-birthday-field-mandator">mandatory field in your Collins settings</a>.</p>
+<h3 id="examples">Examples</h3>
 
-<p>You are also able to remove both marketing permission opt-ins (for your venue and DesignMyNight.com).</p>
+<p>This example will only show one voucher, skipping the &ldquo;list view&rdquo;.</p>
 
-<p>To be able to hide these in your custom iFrames, your web developer will have to override the styling on the page.</p>
-
-<p><strong>3 We have multiple venues in our venue group. Are we able to load style sheets for each individual venue within the group?</strong></p>
-
-<p>We can set up multiple style sheets eg we could name them &lsquo;app&rsquo; and &lsquo;website&rsquo;. Your code will just specify the stylesheet you want at the time eg:</p>
-
-<pre><code>&lt;script&gt;
-  DMN.val('stylesheet', 'app');
-  &lt;/script&gt;
+<pre><code class="language-html">  &lt;script type=&quot;text/javascript&quot;
+          src=&quot;https://widgets.designmynight.com/soda/soda-widget.min.js?voucher-type=5a55fa2299883b41d414b002&amp;skip-list=true&quot;
+          soda-partner-widget
+  &gt;&lt;/script&gt;
 </code></pre>
 
-<p>and</p>
+<p>This example will also only show one voucher, skipping the &ldquo;list view&rdquo;, but instead of showing all the details about a voucher, it will only show the &ldquo;Buy Now&rdquo; box.</p>
 
-<pre><code>&lt;script&gt;
-  DMN.val('stylesheet', 'website');
-  &lt;/script&gt;
+<pre><code class="language-html">  &lt;script type=&quot;text/javascript&quot;
+          src=&quot;https://widgets.designmynight.com/soda/soda-widget.min.js?voucher-type=5a55fa2299883b41d414b002&amp;skip-list=true&amp;call-to-only=true&quot;
+          soda-partner-widget
+  &gt;&lt;/script&gt;
 </code></pre>
 
 			
@@ -1135,7 +1198,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://developers.designmynight.com/faqs/customising-email-templates/" title="">
+      <a href="http://developers.designmynight.com/tonic/ticket-widget/" title="Ticket widget">
         <span class="direction">
           Previous
         </span>
@@ -1145,7 +1208,7 @@
           </div>
           <div class="stretch">
             <div class="title">
-              
+              Ticket widget
             </div>
           </div>
         </div>
@@ -1154,22 +1217,6 @@
   </div>
 
   <div class="next">
-  
-      <a href="http://developers.designmynight.com/faqs/booking-widget-faqs/" title="">
-        <span class="direction">
-          Next
-        </span>
-        <div class="page">
-          <div class="stretch">
-            <div class="title">
-              
-            </div>
-          </div>
-          <div class="button button-next" role="button" aria-label="Next">
-            <i class="icon icon-forward"></i>
-          </div>
-        </div>
-      </a>
   
   </div>
 </nav>
