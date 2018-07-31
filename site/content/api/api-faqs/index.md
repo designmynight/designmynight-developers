@@ -26,3 +26,23 @@ You will just need to pass the value to the bookings API with the key `custom_fi
 
 4. When the booking form loads, it will also load your CSS so you can override whatever is on the book page. You should add `stylesheet=app` to the end of the URL that you will be sending the user to (to take payment).
 
+**3. We are recording the stages of the booking during live service on our tills. Would it be possible to update the status of the booking in Collins through the API?**
+
+If you have access to our [Bookings Endpoint](http://developers.designmynight.com/api/booking-api/), you will be able to set the stage of a booking. 
+
+To do this, you would need to send a regular POST to update a booking, specifying the `current_stage` field like this:
+
+```
+{
+  current_stage: 'arrived'
+}
+```
+The possible standard stages that you can set have the following values: 
+
+* `arrived`
+* `seated`
+* `dessert`
+* `bill`
+* `left`
+
+ 
