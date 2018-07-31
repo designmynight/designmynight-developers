@@ -49,27 +49,6 @@ googleAnalytics = "UA-12385609-13"
 	weight = 1
 
 [[menu.main]]
-    weight = 99
-    name = "    "
-
-[[menu.main]]
-    name   = "Tonic"
-    url    = "tonic/"
-    identifier = "tonic"
-	weight = 100
-
-
-[[menu.main]]
-	name   = "Ticket widget"
-	url    = "tonic/ticket-widget/"
-	parent = "tonic"
-	weight = 101
-
-[[menu.main]]
-    weight = 199
-    name = "     "
-
-[[menu.main]]
     name   = "Collins"
     url    = "collins/"
     identifier = "collins"
@@ -127,6 +106,44 @@ googleAnalytics = "UA-12385609-13"
 [[menu.main]]
     weight = 299
     name = " "
+
+[[menu.main]]
+    weight = 99
+    name = "    "
+
+[[menu.main]]
+    name   = "Tonic"
+    url    = "tonic/"
+    identifier = "tonic"
+	weight = 100
+
+
+[[menu.main]]
+	name   = "Ticket widget"
+	url    = "tonic/ticket-widget/"
+	parent = "tonic"
+	weight = 101
+
+[[menu.main]]
+    weight = 199
+    name = "     "
+
+[[menu.main]]
+    name   = "Soda"
+    url    = "soda/"
+    identifier = "soda"
+  weight = 100
+
+
+[[menu.main]]
+  name   = "Voucher widget"
+  url    = "soda/partner-widget/"
+  parent = "soda"
+  weight = 101
+
+[[menu.main]]
+    weight = 199
+    name = "     "
 
 [[menu.main]]
     name   = "API"
