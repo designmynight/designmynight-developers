@@ -129,6 +129,23 @@ googleAnalytics = "UA-12385609-13"
     name = "     "
 
 [[menu.main]]
+    name   = "Soda"
+    url    = "soda/"
+    identifier = "soda"
+  weight = 100
+
+
+[[menu.main]]
+  name   = "Voucher widget"
+  url    = "soda/partner-widget/"
+  parent = "soda"
+  weight = 101
+
+[[menu.main]]
+    weight = 199
+    name = "     "
+
+[[menu.main]]
     name   = "API"
     url    = "api/"
     identifier = "API"
