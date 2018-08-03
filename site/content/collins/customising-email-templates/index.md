@@ -29,6 +29,27 @@ Here are some great examples of customised emails that our partners have created
 
 [Casita Andina](https://static.designmynight.com/uploads/2017/11/Andina-Example-optimised.png)
 
+## Non-customisable Content
+
+All outbound Collins emails will include non-customisable text which reflects the type of email and the relevant booking detail. This is to ensure that customers have all required details of their booking.
+
+For example, the **Enquiry Recieved** email will always include the following copy:
+
+![Enquiry Received](https://static.designmynight.com/uploads/2018/08/Non-customisable-text-optimised.png)
+
+Through the HTML templates, your web developers can style the text (eg font, colour) but cannot override the text itself. 
+
+If you would like to add any additional information to your outbound emails, we would recommend that you set this within Collins (as opposed to in the HTML email templates).  
+
+This way you will be able to easily amend the copy in your Collins admin at any time (as opposed to having to send over updated HTML for our tech team to update - which would have to be scheduled against our tech roadmap).
+
+Guides to help add personalised messages to your emails within Collins:
+                    
+[Automated Emails](https://collins.uservoice.com/knowledgebase/articles/1833961-emails-texts-automated-email-template-examples)
+
+[Setting Email Templates](https://collins.uservoice.com/knowledgebase/articles/478032-emails-texts-adding-a-new-email-template-messa)
+
+
 ## Customising Email Templates FAQs
 
 **1. What can/can’t I change on my email templates?**
