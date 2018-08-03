@@ -29,7 +29,7 @@ Here are some great examples of customised emails that our partners have created
 
 [Casita Andina](https://static.designmynight.com/uploads/2017/11/Andina-Example-optimised.png)
 
-## Non-customisable Content
+## Non-customisable Text
 
 All outbound Collins emails will include non-customisable text which reflects the type of email and the relevant booking detail. This is to ensure that customers have all required details of their booking.
 
