@@ -1085,7 +1085,7 @@
 <p>For the best results, we would recommend that you do the following:</p>
 
 <ol>
-<li><p>Add a background image. As this will repeat as you scroll down the email (depending on the length of the email content), we would recommend that you use a repeatable and symmetrical background image to ensure that the background is fully covered.</p></li>
+<li><p>Add a background image. As this will repeat as you scroll down the email (depending on the length of the email content), we would recommend that you use a repeatable and symmetrical background image to ensure that the background is fully covered. Alternatively, you can set a background colour.</p></li>
 
 <li><p>Add your social media handle details and venue details (eg venue address) in the footer of the email.</p></li>
 </ol>
@@ -1096,13 +1096,15 @@
 
 <p><a href="https://static.designmynight.com/uploads/2017/11/Andina-Example-optimised.png">Casita Andina</a></p>
 
-<h2 id="non-customisable-text">Non-customisable Text</h2>
+<h2 id="non-customisable-content">Non-customisable Content</h2>
+
+<h3 id="non-customisable-text">Non-customisable Text</h3>
 
 <p>All outbound Collins emails will include non-customisable text which reflects the type of email and the relevant booking detail. This is to ensure that customers have all required details of their booking.</p>
 
 <p>For example, the <strong>Enquiry Recieved</strong> email will always include the following copy:</p>
 
-<p><img src="https://static.designmynight.com/uploads/2018/08/Non-customisable-text-optimised.png" alt="Enquiry Received" /></p>
+<p><img src="https://static.designmynight.com/uploads/2018/08/Capture-2.png" alt="Enquiry Received" /></p>
 
 <p>Through the HTML templates, your web developers can style the text (eg font, colour) but cannot override the text itself.</p>
 
@@ -1110,43 +1112,59 @@
 
 <p>This way you will be able to easily amend the copy in your Collins admin at any time (as opposed to having to send over updated HTML for our tech team to update - which would have to be scheduled against our tech roadmap).</p>
 
-<p>Guides to help add personalised messages to your emails within Collins:</p>
+<p>Guides to help you add personalised messages to your emails within Collins:</p>
 
 <p><a href="https://collins.uservoice.com/knowledgebase/articles/1833961-emails-texts-automated-email-template-examples">Automated Emails</a></p>
 
 <p><a href="https://collins.uservoice.com/knowledgebase/articles/478032-emails-texts-adding-a-new-email-template-messa">Setting Email Templates</a></p>
 
+<h3 id="other-non-customisable-content">Other non-customisable Content</h3>
+
+<p>Currently it&rsquo;s not possible to amend the following:</p>
+
+<ul>
+<li>Colour and font of the payment/card auth/pre-orders request buttons</li>
+</ul>
+
+<p><img src="https://static.designmynight.com/uploads/2018/08/Pay-button.png" alt="Payment request button" /></p>
+
+<ul>
+<li>Colour and visibility of the purple booking Confirmation tick icon</li>
+</ul>
+
+<p><img src="https://static.designmynight.com/uploads/2018/08/tick.png" alt="Confirmation Tick" /></p>
+
+<ul>
+<li>Colour and visibility of the <strong>location</strong> and <strong>add to calendar</strong> icons.</li>
+</ul>
+
+<p><img src="https://static.designmynight.com/uploads/2018/08/icons.png" alt="Location and add to calendar icons" /></p>
+
+<ul>
+<li>Colour of the <strong>cancellation</strong> and <strong>change your booking</strong> icons.</li>
+</ul>
+
+<p><img src="https://static.designmynight.com/uploads/2018/08/change-booking.png" alt="Cancellation and change booking icons" /></p>
+
+<p><strong><em>Please note</em></strong> in your Collins settings, you have the option to <a href="https://collins.uservoice.com/knowledgebase/articles/1117015-emails-texts-disable-the-cancel-booking-butt">disable the &lsquo;cancel booking&rsquo; button</a> and <a href="https://collins.uservoice.com/knowledgebase/articles/886590-booking-types-how-to-limit-the-changes-customers">limit the changes the customer can make to their booking</a>.</p>
+
+<ul>
+<li><p>You are unable to add an option for customers to unsubscribe from the emails as customers are unable to unsubscribe from transactional emails (so that we can ensure that they receive relevant updates about their bookings).</p></li>
+
+<li><p>You are unable to add the option to ‘view in a browser’ as we do not have that option with these transactional emails.</p></li>
+
+<li><p>You are unable to amend the format of the date showing in the booking summary in the emails eg from 9 May 2017 to display as Tuesday 9 May 2017</p></li>
+</ul>
+
 <h2 id="customising-email-templates-faqs">Customising Email Templates FAQs</h2>
 
-<p><strong>1. What can/can’t I change on my email templates?</strong></p>
-
-<p><strong>You can change the following things by overriding the CSS:</strong></p>
-
-<ul>
-<li>Amend the colour of your background</li>
-<li>Add a background images</li>
-<li>Add in hyperlinked images in your header and footer. This is particularly useful for adding in links to your social media accounts to the email footer.</li>
-</ul>
-
-<p><strong>You are currently unable to change/add the following:</strong></p>
-
-<ul>
-<li>Colour and font of the payment/card auth request buttons</li>
-<li>Colour/visibility of the purple booking Confirmation tick icon</li>
-<li>Colours/visibility of the location, cancellation, add to calendar, change your booking icons.</li>
-<li>You are unable to add an option for customers to unsubscribe from the emails as customers are unable to unsubscribe from transactional emails (so that we can ensure that they receive relevant updates about their bookings).</li>
-<li>You are unable to add the option to ‘view in a browser’ as we do not have that option with these transactional emails.</li>
-<li>Wording of the ‘Thanks for booking and have a great time at VENUE’</li>
-<li>You are unable to amend the format of the date showing in the booking summary in the emails eg from 9 May 2017 to display as Tuesday 9 May 2017</li>
-</ul>
-
-<p><strong>2. Are there any required dimensions for the email templates?</strong></p>
+<p><strong>1. Are there any required dimensions for the email templates?</strong></p>
 
 <p>There isn&rsquo;t a fixed width for our email template but the main content of the majority of templates is 600px wide. The majority of email clients do not support CSS media queries, so we recommend sticking to a 600px width for content in order for the emails to look good across all devices. Sticking to 600px will also prevent any clipping on emails containing a lot of content.</p>
 
 <p>The height of the email varies depending on the content. If using a custom background, please bare this in mind. We recommend using repeatable and symmetrical background images to ensure the background is covered.</p>
 
-<p><strong>3. Can we customise the fonts used in the emails?</strong></p>
+<p><strong>2. Can we customise the fonts used in the emails?</strong></p>
 
 <p>Unfortunately, the majority of web email clients don&rsquo;t support rendering custom fonts. If you want to support the ones that do, you will need to ensure that you provide web safe fonts.</p>
 
@@ -1157,7 +1175,7 @@
 <li><a href="https://websitesetup.org/web-safe-fonts-html-css/">Web Safe Fonts</a></li>
 </ul>
 
-<p><strong>4. We only want to customise our Booking Confirmation emails. Is it possible to upload a custom email template for one specific type of email and leave all other emails uncustomised?</strong></p>
+<p><strong>3. We only want to customise our Booking Confirmation emails. Is it possible to upload a custom email template for one specific type of email and leave all other emails uncustomised?</strong></p>
 
 <p>Unfortunately, it is not possible for us to upload custom templates just for specific email types.</p>
 
