@@ -45,4 +45,54 @@ The possible standard stages that you can set have the following values:
 * `bill`
 * `left`
 
+
+**4. We are using the API to look into pre-ordered items. We have set for our pre-order items to have [item customisations](https://collins.uservoice.com/knowledgebase/articles/1806220-collins-pre-orders-adding-diet-types-allergies) within Collins. How do these customisations display in the API response?**
+
+Here is an example of a pre-order with a single item that has a single option added:
+
+```
+{
+  "id": "5b5de8873806c8176564bc82",
+  "created_date": "2018-07-29T17:17:11",
+  "name": "Joe McBurger",
+  "email": "joemcg@example.com",
+  "items": [
+    {
+      "id": "5b224eb9f366247fd128537c",
+      "menu_id": "5b224a75b22f5950761cd374",
+      "name": "Eggs Royale",
+      "quantity": 1,
+      "total": 12,
+      "type": "food",
+      "sub_type": "brunch",
+      "options": [
+        {
+          "label": "Large",
+          "values": [
+            {
+              "label": "Large",
+              "price_change": 5
+            }
+          ]
+        }
+      ],
+      "price": 12,
+      "base_price": 7,
+      "options_price": 5,
+      "options_string": "Large",
+      "for_name": "Joe",
+      "discount_value": 0
+    }
+  ],
+  "total_cost": 12,
+  "amount_paid": 0,
+  "source": "customer",
+  "status": "complete",
+  "service_charge_percentage": 0,
+  "service_charge_amount": 0,
+  "total_discount": 0
+}
+```
+
+The `label` and `options_string` refer to the customisation of the pre-order item.
  
