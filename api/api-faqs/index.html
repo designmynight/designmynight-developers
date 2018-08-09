@@ -1118,6 +1118,55 @@
 <li><code>left</code></li>
 </ul>
 
+<p><strong>4. We are using the API to look into pre-ordered items. We have set for our pre-order items to have <a href="https://collins.uservoice.com/knowledgebase/articles/1806220-collins-pre-orders-adding-diet-types-allergies">item customisations</a> within Collins. How do these customisations display in the API response?</strong></p>
+
+<p>Here is an example of a pre-order with a single item that has a single option added:</p>
+
+<pre><code>{
+  &quot;id&quot;: &quot;5b5de8873806c8176564bc82&quot;,
+  &quot;created_date&quot;: &quot;2018-07-29T17:17:11&quot;,
+  &quot;name&quot;: &quot;Joe McBurger&quot;,
+  &quot;email&quot;: &quot;joemcg@example.com&quot;,
+  &quot;items&quot;: [
+    {
+      &quot;id&quot;: &quot;5b224eb9f366247fd128537c&quot;,
+      &quot;menu_id&quot;: &quot;5b224a75b22f5950761cd374&quot;,
+      &quot;name&quot;: &quot;Eggs Royale&quot;,
+      &quot;quantity&quot;: 1,
+      &quot;total&quot;: 12,
+      &quot;type&quot;: &quot;food&quot;,
+      &quot;sub_type&quot;: &quot;brunch&quot;,
+      &quot;options&quot;: [
+        {
+          &quot;label&quot;: &quot;Large&quot;,
+          &quot;values&quot;: [
+            {
+              &quot;label&quot;: &quot;Large&quot;,
+              &quot;price_change&quot;: 5
+            }
+          ]
+        }
+      ],
+      &quot;price&quot;: 12,
+      &quot;base_price&quot;: 7,
+      &quot;options_price&quot;: 5,
+      &quot;options_string&quot;: &quot;Large&quot;,
+      &quot;for_name&quot;: &quot;Joe&quot;,
+      &quot;discount_value&quot;: 0
+    }
+  ],
+  &quot;total_cost&quot;: 12,
+  &quot;amount_paid&quot;: 0,
+  &quot;source&quot;: &quot;customer&quot;,
+  &quot;status&quot;: &quot;complete&quot;,
+  &quot;service_charge_percentage&quot;: 0,
+  &quot;service_charge_amount&quot;: 0,
+  &quot;total_discount&quot;: 0
+}
+</code></pre>
+
+<p>The <code>label</code> and <code>options_string</code> refer to the customisation of the pre-order item.</p>
+
 			
 			<aside class="copyright" role="note">
 				
