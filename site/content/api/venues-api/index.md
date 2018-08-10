@@ -34,7 +34,8 @@ You'll receive a response similar to this, containing an array of each venue in 
   "url": "/v4/venues",
   "method": "GET",
   "params": {
-  "venue_group": "5524371d0df690ad7156f2ea"
+    "venue_group": "5524371d0df690ad7156f2ea"
+  }
 }
 ```
 
