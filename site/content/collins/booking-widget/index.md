@@ -191,7 +191,7 @@ type | The name of the booking type to be selected
 num_people | The number of guests in the booking
 date | The date of the booking, as a JavaScript date object
 time | The time of the booking, in 24-hour format HH:MM
-duration | The duration of the booking, as a decimal number of hours, eg 1.5
+duration | The duration of the booking, in minutes, eg 120 (for 2 hours)
 
 Examples:
 ```javascript
