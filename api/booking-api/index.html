@@ -269,6 +269,8 @@
       
     
       
+    
+      
       <span class="section">Soda</span>
       
     
@@ -306,6 +308,8 @@
   <li>
     
 
+    
+      
     
       
     
@@ -440,6 +444,8 @@
   <li>
     
 
+    
+      
     
       
     
@@ -726,6 +732,8 @@
       
     
       
+    
+      
       <span class="section">Api</span>
       
     
@@ -819,6 +827,18 @@
 
 
 
+<a  title="Venues API" href="http://developers.designmynight.com/api/venues-api/">
+	
+	Venues API
+</a>
+
+  
+      
+        
+        
+
+
+
 <a  title="Venue Groups API" href="http://developers.designmynight.com/api/venue-groups/">
 	
 	Venue Groups API
@@ -879,6 +899,8 @@
   <li>
     
 
+    
+      
     
       
     
@@ -1595,62 +1617,6 @@
 
 <pre><code class="language-bash">$ curl -X POST https://api.designmynight.com/v4/bookings
     -d &quot;source=partner&amp;first_name=Dan&amp;last_name=Johnson&amp;num_people=4&amp;venue_id=552435790df6902b7256f237&amp;type=58c927215ee246985eb91b8e&amp;date=2018-05-30&amp;time=16:00&amp;marketing_preferences[]=486847581541665&amp;marketing_preferences[]=5878286768853523&quot;
-</code></pre>
-
-<h2 id="getting-packages">Getting Packages</h2>
-
-<p>The following <code>GET</code> request will return an array of packages that have been set up for a venue/venue group. Replace the ID in the URL with your Venue ID.</p>
-
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237?fields=packages
-</code></pre>
-
-<p>You&rsquo;ll receive a response similar to this:</p>
-
-<pre><code class="language-json">{
-  &quot;payload&quot;: {
-    &quot;venue&quot;: {
-      &quot;packages&quot;: [
-        {
-          &quot;id&quot;: &quot;5613f2a525020ec148a111a1&quot;,
-          &quot;name&quot;: &quot;Bottle of White Wine&quot;,
-          &quot;price&quot;: 0.3,
-          &quot;type&quot;: &quot;drink&quot;
-        },
-        {
-          &quot;id&quot;: &quot;5613f26472838b3f5323a5ca&quot;,
-          &quot;name&quot;: &quot;Bottle of Red Wine&quot;,
-          &quot;price&quot;: 12,
-          &quot;type&quot;: &quot;drink&quot;
-        },
-        {
-          &quot;id&quot;: &quot;5613f2b325020eee48a1124b&quot;,
-          &quot;name&quot;: &quot;Bottle of Sol&quot;,
-          &quot;price&quot;: 4.5,
-          &quot;type&quot;: &quot;drink&quot;
-        },
-        {
-          &quot;id&quot;: &quot;5613f27372838b2d5323a615&quot;,
-          &quot;name&quot;: &quot;Smoked Salmon&quot;,
-          &quot;price&quot;: 4.5,
-          &quot;description&quot;: &quot;Cream cheese, dill and spring onions on crisp bread&quot;,
-          &quot;type&quot;: &quot;food&quot;,
-          &quot;sub_type&quot;: &quot;starter&quot;
-        },
-        {
-          &quot;id&quot;: &quot;5613f27972838b1d5323a603&quot;,
-          &quot;name&quot;: &quot;Turkey&quot;,
-          &quot;price&quot;: 12.5,
-          &quot;description&quot;: &quot;Stuffing, Roast Potatoes, Steamed Carrots and green beans&quot;,
-          &quot;type&quot;: &quot;food&quot;,
-          &quot;sub_type&quot;: &quot;main&quot;,
-          &quot;diet_types&quot;: [
-            &quot;Halal&quot;
-          ]
-        }
-      ]
-    }
-  }
-}
 </code></pre>
 
 <h2 id="checking-booking-rules">Checking Booking Rules</h2>
