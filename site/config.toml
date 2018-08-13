@@ -182,21 +182,27 @@ googleAnalytics = "UA-12385609-13"
 	parent = "API"
 
 [[menu.main]]
+	name   = "Venues API"
+	url    = "api/venues-api/"
+	weight = 306
+	parent = "API"
+
+[[menu.main]]
 	name   = "Venue Groups API"
 	url    = "api/venue-groups/"
-	weight = 306
+	weight = 307
 	parent = "API"
 
 [[menu.main]]
 	name   = "Event Guests API"
 	url    = "api/event-guests-api/"
-	weight = 307
+	weight = 308
 	parent = "API"
 
 [[menu.main]]
 	name   = "API FAQs"
 	url    = "api/api-faqs/"
-	weight = 308
+	weight = 309
 	parent = "API"
 
 [[menu.main]]
