@@ -292,15 +292,7 @@ You will receive a response with the newly updated booking, similar to this:
 }
 ```
 
-The following statuses are supported:
-
-| Status | Description |
-| --- | --- |
-| `in_progress` | The booking is in progress |
-| `complete` | The booking is complete |
-| `rejected` | The booking has been rejected |
-| `new` | The booking is new |
-| `cancel_request` | The booking has been cancelled |
+The supported statuses are described [here](/api/bookings-search#status-filter-format)
 
 ## Marketing Preferences
 
