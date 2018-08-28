@@ -220,6 +220,7 @@ The response will look like this:
 }
 ```
 
+
 ### Submitting through the web
 
 If you want or need to submit a booking through the web URL, you should direct the customer to the **web** part of the `next` object, optionally appending a `return_url` field containing a URL that the customer should be directed to once their booking has been submitted.
@@ -233,6 +234,63 @@ status | The status of the booking: 'complete' for confirmed bookings; otherwise
 `first_name` | `string` the customer's first name
 `last_name` | `string` the customer's last name
 `email` | `string` the customer's email address
+
+## Updating an existing booking
+
+An existing booking can be updated by making a `POST` request to the bookings API, providing you have the ID of the booking you wish to update. The following example will update the status of a booking to `in_progress`.
+
+```bash
+$ curl -X POST https://api.designmynight.com/v4/bookings/5b7e8070addee7612f456972
+  -d "status=in_progress"
+```
+
+You will receive a response with the newly updated booking, similar to this:
+
+```json
+{
+  "payload": {
+    "booking": {
+      "_id": "5b7e8070addee7612f456972",
+      "created_date": "2018-08-23T10:37:52",
+      "last_updated": "2018-08-28T21:19:32",
+      "booking_id": 123456,
+      "source": "admin",
+      "created_by": "5b7c2ba5addee77dbd517012",
+      "assigned_to": "5b7c2ba5addee77dbd517012",
+      "completed_by": "5b7c2ba5addee77dbd517012",
+      "completed_date": "2018-08-23T10:37:52",
+      "status_changed_date": "2018-08-28T21:19:32",
+      "managed_by_venue": true,
+      "invoiced": false,
+      "reconciled": false,
+      "status": "in_progress",
+      "walk_in": true,
+      "venue_id": "5596b23a0c23efff286f2b29",
+      "venue_group": "55a810f1c087b36d316e7f4b",
+      "region": "512b1ebad5d190d2978c277e",
+      "date": "2018-08-23T00:00:00",
+      "time": "14:30",
+      "duration": 90,
+      "num_people": 3,
+      "type": {
+        "guestlist": false,
+        "id": "58c927215ee246985eb91b8e",
+        "name": "Drinks",
+        "value": 0,
+        "private_hire": false
+      },
+      "value": 0
+    }
+  },
+  "status": 200,
+  "requestTime": "2018-08-28T21:19:32",
+  "responseTime": "2018-08-28T21:19:32",
+  "statusText": "OK",
+  "url": "\/v4\/bookings\/5b7e8070addee7612f456972",
+  "method": "POST",
+  "params": []
+}
+```
 
 ## Marketing Preferences
 
@@ -336,63 +394,6 @@ and the response would look like this
   "responseTime": "2016-04-29T10:06:01",
   "statusText": "OK",
   "url": "/v4/venues/552435790df6902b7256f237/booking-availability",
-  "method": "POST",
-  "params": []
-}
-```
-
-## Updating an existing booking
-
-An existing booking can be updated by making a `POST` request to the bookings API, providing you have the ID of the booking you wish to update. The following example will update the status of a booking to `in_progress`.
-
-```bash
-$ curl -X POST https://api.designmynight.com/v4/bookings/5b7e8070addee7612f456972
-  -d "status=in_progress"
-```
-
-You will receive a response with the newly updated booking, similar to this:
-
-```json
-{
-  "payload": {
-    "booking": {
-      "_id": "5b7e8070addee7612f456972",
-      "created_date": "2018-08-23T10:37:52",
-      "last_updated": "2018-08-28T21:19:32",
-      "booking_id": 123456,
-      "source": "admin",
-      "created_by": "5b7c2ba5addee77dbd517012",
-      "assigned_to": "5b7c2ba5addee77dbd517012",
-      "completed_by": "5b7c2ba5addee77dbd517012",
-      "completed_date": "2018-08-23T10:37:52",
-      "status_changed_date": "2018-08-28T21:19:32",
-      "managed_by_venue": true,
-      "invoiced": false,
-      "reconciled": false,
-      "status": "in_progress",
-      "walk_in": true,
-      "venue_id": "5596b23a0c23efff286f2b29",
-      "venue_group": "55a810f1c087b36d316e7f4b",
-      "region": "512b1ebad5d190d2978c277e",
-      "date": "2018-08-23T00:00:00",
-      "time": "14:30",
-      "duration": 90,
-      "num_people": 3,
-      "type": {
-        "guestlist": false,
-        "id": "58c927215ee246985eb91b8e",
-        "name": "Drinks",
-        "value": 0,
-        "private_hire": false
-      },
-      "value": 0
-    }
-  },
-  "status": 200,
-  "requestTime": "2018-08-28T21:19:32",
-  "responseTime": "2018-08-28T21:19:32",
-  "statusText": "OK",
-  "url": "\/v4\/bookings\/5b7e8070addee7612f456972",
   "method": "POST",
   "params": []
 }
