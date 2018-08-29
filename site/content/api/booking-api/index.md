@@ -237,7 +237,7 @@ status | The status of the booking: 'complete' for confirmed bookings; otherwise
 
 ## Updating an existing booking
 
-An existing booking can be updated by making a `POST` request to the bookings API, providing you have the ID of the booking you wish to update. The following example will update the status of a booking to `in_progress`.
+An existing booking can be updated by making a `POST` request to the bookings API using the `/bookings/BOOKING_ID` endpoint, providing you have the ID of the booking you wish to update. The following example will update the status of a booking to `in_progress`.
 
 ```bash
 $ curl -X POST https://api.designmynight.com/v4/bookings/5b7e8070addee7612f456972
