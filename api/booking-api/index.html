@@ -1570,6 +1570,63 @@
 </tbody>
 </table>
 
+<h2 id="updating-an-existing-booking">Updating an existing booking</h2>
+
+<p>An existing booking can be updated by making a <code>POST</code> request to the bookings API using the <code>/bookings/BOOKING_ID</code> endpoint, providing you have the ID of the booking you wish to update. The following example will update the status of a booking to <code>in_progress</code>.</p>
+
+<pre><code class="language-bash">$ curl -X POST https://api.designmynight.com/v4/bookings/5b7e8070addee7612f456972
+  -d &quot;status=in_progress&quot;
+</code></pre>
+
+<p>You will receive a response with the newly updated booking, similar to this:</p>
+
+<pre><code class="language-json">{
+  &quot;payload&quot;: {
+    &quot;booking&quot;: {
+      &quot;_id&quot;: &quot;5b7e8070addee7612f456972&quot;,
+      &quot;created_date&quot;: &quot;2018-08-23T10:37:52&quot;,
+      &quot;last_updated&quot;: &quot;2018-08-28T21:19:32&quot;,
+      &quot;booking_id&quot;: 123456,
+      &quot;source&quot;: &quot;admin&quot;,
+      &quot;created_by&quot;: &quot;5b7c2ba5addee77dbd517012&quot;,
+      &quot;assigned_to&quot;: &quot;5b7c2ba5addee77dbd517012&quot;,
+      &quot;completed_by&quot;: &quot;5b7c2ba5addee77dbd517012&quot;,
+      &quot;completed_date&quot;: &quot;2018-08-23T10:37:52&quot;,
+      &quot;status_changed_date&quot;: &quot;2018-08-28T21:19:32&quot;,
+      &quot;managed_by_venue&quot;: true,
+      &quot;invoiced&quot;: false,
+      &quot;reconciled&quot;: false,
+      &quot;status&quot;: &quot;in_progress&quot;,
+      &quot;walk_in&quot;: true,
+      &quot;venue_id&quot;: &quot;5596b23a0c23efff286f2b29&quot;,
+      &quot;venue_group&quot;: &quot;55a810f1c087b36d316e7f4b&quot;,
+      &quot;region&quot;: &quot;512b1ebad5d190d2978c277e&quot;,
+      &quot;date&quot;: &quot;2018-08-23T00:00:00&quot;,
+      &quot;time&quot;: &quot;14:30&quot;,
+      &quot;duration&quot;: 90,
+      &quot;num_people&quot;: 3,
+      &quot;type&quot;: {
+        &quot;guestlist&quot;: false,
+        &quot;id&quot;: &quot;58c927215ee246985eb91b8e&quot;,
+        &quot;name&quot;: &quot;Drinks&quot;,
+        &quot;value&quot;: 0,
+        &quot;private_hire&quot;: false
+      },
+      &quot;value&quot;: 0
+    }
+  },
+  &quot;status&quot;: 200,
+  &quot;requestTime&quot;: &quot;2018-08-28T21:19:32&quot;,
+  &quot;responseTime&quot;: &quot;2018-08-28T21:19:32&quot;,
+  &quot;statusText&quot;: &quot;OK&quot;,
+  &quot;url&quot;: &quot;\/v4\/bookings\/5b7e8070addee7612f456972&quot;,
+  &quot;method&quot;: &quot;POST&quot;,
+  &quot;params&quot;: []
+}
+</code></pre>
+
+<p>The supported statuses are described <a href="/api/bookings-search#status-filter-format">here</a></p>
+
 <h2 id="marketing-preferences">Marketing Preferences</h2>
 
 <p>The marketing preferences defined for a venue/venue group can be retrieved using the venues endpoint. Each preference has a unique ID.</p>
