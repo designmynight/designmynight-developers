@@ -24,7 +24,7 @@ This is especially useful for Christmas pages or any major advert campaigns with
 
 ## Custom return URL
 
-You can create a custom return URL for users to be directed to when they complete their booking. That way you'd be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have, but you would have control over your own analytics etc completely.
+You can create a custom return URL for users to be directed to when they complete their booking. That way you'd be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have.
 
 To do this you need to create the return URL on the  venue site then set it using custom script after your partner form:
 
