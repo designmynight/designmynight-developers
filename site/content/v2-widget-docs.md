@@ -25,7 +25,6 @@ The following attributes can be used to customise the functionality of the widge
 | `src`              | Yes      | This must point to the JS source hosted on our CDN, `//widgets.designmynight.com/bookings-partner.min.js` |
 | `venue`            | No       | A string containing the venue ID this widget will be used for. If you require multiple venues, you can comma separate the IDs |
 | `affiliate-id`     | No       | The Affiliate ID which can be used to mark bookings in Collins as from the specified affiliate. |
-| `dmn-booking-form` | Yes      | This tells us that the script tag is intended for use as a Booking Widget. The widget will not render without this attribute present. |
 | `hide-offers`      | No       | Whether or not you would like to surface offers on this widget. Regardless of the state of this attribute, offers will always be selectable on the final stage. When present, the value must be `true` or `false` |
 | `search-venues`    | No       | Whether or not you would like a search bar at the top of the Venue Selection stage, to allow users to quickly find the venue by name or address. When present, the value must be `true` or `false` |
 | `ref`              | No       | This can be any string, and is used to identify the widget when retrieving it using the `getWidgetByRef()` method of the `BookingFormHelper` class. |
