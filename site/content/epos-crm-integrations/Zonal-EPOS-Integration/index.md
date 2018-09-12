@@ -245,7 +245,7 @@ For example, you can make the following changes:
 
 After you have saved this booking change, Collins will attempt to push the booking to your tills. 
 
-**Please note**: _this method will only work to re-push payments if no payments have successfully pushed to the tills for this booking. See here for more details on what to do if the booking and a previous payment have already pushed to the tills._
+**Please note**: _this method will only work to re-push payments if no payments have successfully pushed to the tills for this booking. See below for more details on [what to do if the booking and a previous payment have already pushed to the tills](http://developers.designmynight.com/epos-crm-integrations/zonal-epos-integration/#re-pushing-deposit-error-bookings)._
 
 ## Re-pushing '/deposit' error bookings  
 
