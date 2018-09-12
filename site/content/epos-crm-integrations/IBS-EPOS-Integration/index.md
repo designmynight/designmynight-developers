@@ -25,11 +25,7 @@ All [manual/request payments](https://collins.uservoice.com/knowledgebase/articl
 
 * **Payments claimed by Card Authentication** 
 
-If you claim a [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) payment **before** the booking date has passed (eg if the customer cancels their booking at last minute), Collins will push the payment to your tills.
-
-The Collins/IBS integration will **not** allow for Collins to push payments that have been added **after** the booking date has passed. 
-
-As such, if you claim a Collins Card Authentication **after** the booking date has passed (eg the customer was a no-show), Collins will **not** push the payment to your till and your team will need to be manually added to your tills. 
+If you claim a [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) payment, Collins will push the payment to your tills.
 
 * **Pushing 'Other' Payments**
 
@@ -64,9 +60,21 @@ You will also need to specify **which bookings** you would like Collins to push 
 
 * Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.
 
-## Pushing bookings/deposits already on Collins before the integration is set up
+## How to push bookings/deposits that were added to Collins before the IBS integration goes live
 
 Any bookings that are already on Collins (before the Collins/IBS integration is set up) will **not** push to the till unless a deposit is added/changed/deleted for the booking on Collins. 
+
+As such, if you add a new payment to any bookings already on Collins before the integration was set up, the booking will be pushed to the tills. 
+
+If you wish to push a booking/deposit that was already set up on Collins before the integration (even if no new payments have been taken after the integration is set up):
+
+1. Go to the booking on Collins
+2. Add an ['Other'payment](https://collins.uservoice.com/knowledgebase/articles/478056-within-a-booking-enquiry-recording-payments-made). Select for the payment **not** to push to your tills.  
+3. Save the booking
+4. Delete the deposit
+5. Save the booking
+
+The booking should push to your tills. 
 
 ## Checking that the Collins/IBS Integration is set up correctly
 Once your Collins Account Manager has been in touch that the integration has been set up, it will be your responsibility to check that the integration is working correctly (as Collins will not be able to access your till systems to test). 
@@ -82,23 +90,6 @@ Once the integration has been set up, all valid payments added to Collins will h
 * The orange tick will mean that the payment has not correctly pushed to your tills. Please see our troubleshooting steps below. 
 
 ![screenshot of orange tick](https://static.designmynight.com/uploads/2017/11/not-pushed-to-till-optimised.png) 
-
-## How to push bookings that were on Collins before the IBS integration
-If the integration is set up to push bookings ASAP, Collins will attempt to push bookings to your tills every time a user add/edits/deletes a Payment for the booking in Collins and saves. 
-
-As such, if you add a new payment to any bookings already on Collins before the integration was set up, the booking will be pushed to the tills. 
-
-If you wish to push a booking/deposit that was already set up on Collins before the integration (even if no new payments have been taken after the integration is set up):
-
-1. Go to the booking on Collins
-2. Add an ['Other'payment](https://collins.uservoice.com/knowledgebase/articles/478056-within-a-booking-enquiry-recording-payments-made). Select for the payment **not** to push to your tills.  
-3. Save the booking
-4. Delete the deposit
-5. Save the booking
-
-The booking should push to your tills. 
-
-**_Please note:_** this will only work for bookings that have a future booking date. This integration does not allow for Collins to push bookings if the date of the booking has already passed. 
 
 ## Best Practice for Pushing all bookings
 If your integration is set up to push all bookings (not just bookings with deposits), it's important that you ensure that all of the following booking details are added to the booking in Collins:
