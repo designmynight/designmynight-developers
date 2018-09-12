@@ -245,6 +245,25 @@ For example, you can make the following changes:
 
 After you have saved this booking change, Collins will attempt to push the booking to your tills. 
 
+**Please note**: _this method will only work to re-push payments if no payments have successfully pushed to the tills for this booking. See here for more details on what to do if the booking and a previous payment have already pushed to the tills._
+
+## Re-pushing '/deposit' error bookings  
+
+If a second payment fails to push (but the booking and the first payment have already successfully pushed to Zonal), there is currently no way of re-pushing this within Collins (unlike with [re-pushing /create error bookings](http://developers.designmynight.com/epos-crm-integrations/zonal-epos-integration/#re-pushing-create-error-bookings)).
+
+Example scenario:
+
+1. Integration is set to only push bookings with deposits, ASAP. 
+2. User takes Collins payment of £X
+3. Payment for £X pushes successfully to till
+4. Venue takes a second Collins payments for £Y
+5. Payment for £Y does not push successfully to tills due to connection errors.
+6. Zonal have resolved connection errors and new deposits/ payments are correctly pushing. 
+
+It's not currently possible to trigger a re-push for the second deposit within Collins.
+
+We recommend that users **manually** add the record of the second payment to the bookings on your tills. 
+
 ## Collins/Zonal Integration FAQs
 
 **1. I've just added a payment to Collins, why has it not pushed to my tills?**
