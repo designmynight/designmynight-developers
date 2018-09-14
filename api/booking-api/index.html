@@ -1484,47 +1484,47 @@
 <p>The response will look like this:</p>
 
 <pre><code class="language-json">{
-	&quot;payload&quot;: {
-		&quot;booking&quot;: {
-			&quot;_id&quot;: &quot;5aaaf965addee7655b15ace4&quot;,
-			&quot;created_date&quot;: &quot;2018-03-15T22:53:25&quot;,
-			&quot;created_by&quot;: &quot;58bd9a16dd7d97ef54cef63f&quot;,
-			&quot;last_updated&quot;: &quot;2018-03-15T22:53:25&quot;,
-			&quot;reference&quot;: &quot;DMN-9980140810&quot;,
-			&quot;venue_id&quot;: &quot;5853b29b12f78aa33f8b54b6&quot;,
-			&quot;date&quot;: &quot;2018-04-19T00:00:00&quot;,
-			&quot;time&quot;: &quot;13:00&quot;,
-			&quot;type&quot;: {
-				&quot;guestlist&quot;: false,
-				&quot;id&quot;: &quot;5922c9ee93f8d541531a49b3&quot;,
-				&quot;name&quot;: &quot;Lunch&quot;,
-				&quot;private_hire&quot;: false
-			},
-			&quot;num_people&quot;: 8,
-			&quot;first_name&quot;: &quot;Dan&quot;,
-			&quot;last_name&quot;: &quot;Johnson&quot;,
-			&quot;email&quot;: null,
-			&quot;notes&quot;: null,
-			&quot;source&quot;: &quot;partner&quot;,
-			&quot;packages&quot;: null,
-			&quot;offer&quot;: null,
-			&quot;deposits&quot;: []
-		},
-		&quot;bookingStatus&quot;: &quot;received&quot;,
-		&quot;venue&quot;: {
-			&quot;type&quot;: &quot;venue&quot;,
-			&quot;title&quot;: &quot;Test Venue&quot;,
-			&quot;path&quot;: &quot;\/london\/bars\/shoreditch\/test-venue&quot;,
-			&quot;page_type&quot;: &quot;venue&quot;
-		}
-	},
-	&quot;status&quot;: 200,
-	&quot;requestTime&quot;: &quot;2018-03-15T22:53:24&quot;,
-	&quot;responseTime&quot;: &quot;2018-03-15T22:53:40&quot;,
-	&quot;statusText&quot;: &quot;OK&quot;,
-	&quot;url&quot;: &quot;\/api\/v4\/bookings&quot;,
-	&quot;method&quot;: &quot;POST&quot;,
-	&quot;params&quot;: []
+  &quot;payload&quot;: {
+    &quot;booking&quot;: {
+      &quot;_id&quot;: &quot;5aaaf965addee7655b15ace4&quot;,
+      &quot;created_date&quot;: &quot;2018-03-15T22:53:25&quot;,
+      &quot;created_by&quot;: &quot;58bd9a16dd7d97ef54cef63f&quot;,
+      &quot;last_updated&quot;: &quot;2018-03-15T22:53:25&quot;,
+      &quot;reference&quot;: &quot;DMN-9980140810&quot;,
+      &quot;venue_id&quot;: &quot;5853b29b12f78aa33f8b54b6&quot;,
+      &quot;date&quot;: &quot;2018-04-19T00:00:00&quot;,
+      &quot;time&quot;: &quot;13:00&quot;,
+      &quot;type&quot;: {
+        &quot;guestlist&quot;: false,
+        &quot;id&quot;: &quot;5922c9ee93f8d541531a49b3&quot;,
+        &quot;name&quot;: &quot;Lunch&quot;,
+        &quot;private_hire&quot;: false
+      },
+      &quot;num_people&quot;: 8,
+      &quot;first_name&quot;: &quot;Dan&quot;,
+      &quot;last_name&quot;: &quot;Johnson&quot;,
+      &quot;email&quot;: null,
+      &quot;notes&quot;: null,
+      &quot;source&quot;: &quot;partner&quot;,
+      &quot;packages&quot;: null,
+      &quot;offer&quot;: null,
+      &quot;deposits&quot;: []
+    },
+    &quot;bookingStatus&quot;: &quot;received&quot;,
+    &quot;venue&quot;: {
+      &quot;type&quot;: &quot;venue&quot;,
+      &quot;title&quot;: &quot;Test Venue&quot;,
+      &quot;path&quot;: &quot;\/london\/bars\/shoreditch\/test-venue&quot;,
+      &quot;page_type&quot;: &quot;venue&quot;
+    }
+  },
+  &quot;status&quot;: 200,
+  &quot;requestTime&quot;: &quot;2018-03-15T22:53:24&quot;,
+  &quot;responseTime&quot;: &quot;2018-03-15T22:53:40&quot;,
+  &quot;statusText&quot;: &quot;OK&quot;,
+  &quot;url&quot;: &quot;\/api\/v4\/bookings&quot;,
+  &quot;method&quot;: &quot;POST&quot;,
+  &quot;params&quot;: []
 }
 </code></pre>
 
@@ -1674,6 +1674,37 @@
 
 <pre><code class="language-bash">$ curl -X POST https://api.designmynight.com/v4/bookings
     -d &quot;source=partner&amp;first_name=Dan&amp;last_name=Johnson&amp;num_people=4&amp;venue_id=552435790df6902b7256f237&amp;type=58c927215ee246985eb91b8e&amp;date=2018-05-30&amp;time=16:00&amp;marketing_preferences[]=486847581541665&amp;marketing_preferences[]=5878286768853523&quot;
+</code></pre>
+
+<h3 id="getting-assigned-area-details">Getting assigned area details</h3>
+
+<p>The following <code>GET</code> request will return an array of areas assigned to the booking. Replace the ID in the URL with your Booking ID.</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/bookings/5b7e8070addee7612f456972/areas
+</code></pre>
+
+<p>If the booking has assigned areas, you will recieve a response like this</p>
+
+<pre><code class="language-json">{
+  &quot;payload&quot;: {
+    &quot;areas&quot;: [
+      {
+        &quot;id&quot;: &quot;5b4766db8264ee22a13db576&quot;,
+        &quot;name&quot;: &quot;Table 4&quot;,
+        &quot;zone&quot;: &quot;5b4766e58264ee22a13db583&quot;
+      }
+    ]
+  }
+}
+</code></pre>
+
+<h3 id="setting-assigned-areas">Setting assigned areas</h3>
+
+<p>You can update the assigned areas of a booking by posting an array of area ids to assign the booking to. This will overwrite any previously assigned areas.</p>
+
+<pre><code class="language-bash">$ curl -X POST https://api.designmynight.com/v4/bookings/5b7e8070addee7612f456972/areas \
+  -H &quot;Content-Type: application/json&quot; \
+  -d '{&quot;areas&quot;: [&quot;5b4766db8264ee22a13db573&quot;, &quot;5b4766db8264ee22a13db574&quot;]}'
 </code></pre>
 
 <h2 id="checking-booking-rules">Checking Booking Rules</h2>
