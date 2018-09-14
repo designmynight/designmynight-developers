@@ -372,12 +372,12 @@ If the booking has assigned areas, you will recieve a response like this
 
 ### Setting assigned areas
 
-You can update the assigned areas of a booking by posting an array of area id's to assign the booking too. This will overwrite any previously assigned areas.
+You can update the assigned areas of a booking by posting an array of area ids to assign the booking to. This will overwrite any previously assigned areas.
 
 ```bash
 $ curl -X POST https://api.designmynight.com/v4/bookings/5b7e8070addee7612f456972/areas \
   -H "Content-Type: application/json" \
-  -d '{"areas": ["5b4766db8264ee22a13db573", "5b4766db8264ee22a13db574"}'
+  -d '{"areas": ["5b4766db8264ee22a13db573", "5b4766db8264ee22a13db574"]}'
 ```
 
 ## Checking Booking Rules
