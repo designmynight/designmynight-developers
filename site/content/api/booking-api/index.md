@@ -176,47 +176,47 @@ The response will look like this:
 
 ```json
 {
-	"payload": {
-		"booking": {
-			"_id": "5aaaf965addee7655b15ace4",
-			"created_date": "2018-03-15T22:53:25",
-			"created_by": "58bd9a16dd7d97ef54cef63f",
-			"last_updated": "2018-03-15T22:53:25",
-			"reference": "DMN-9980140810",
-			"venue_id": "5853b29b12f78aa33f8b54b6",
-			"date": "2018-04-19T00:00:00",
-			"time": "13:00",
-			"type": {
-				"guestlist": false,
-				"id": "5922c9ee93f8d541531a49b3",
-				"name": "Lunch",
-				"private_hire": false
-			},
-			"num_people": 8,
-			"first_name": "Dan",
-			"last_name": "Johnson",
-			"email": null,
-			"notes": null,
-			"source": "partner",
-			"packages": null,
-			"offer": null,
-			"deposits": []
-		},
-		"bookingStatus": "received",
-		"venue": {
-			"type": "venue",
-			"title": "Test Venue",
-			"path": "\/london\/bars\/shoreditch\/test-venue",
-			"page_type": "venue"
-		}
-	},
-	"status": 200,
-	"requestTime": "2018-03-15T22:53:24",
-	"responseTime": "2018-03-15T22:53:40",
-	"statusText": "OK",
-	"url": "\/api\/v4\/bookings",
-	"method": "POST",
-	"params": []
+  "payload": {
+    "booking": {
+      "_id": "5aaaf965addee7655b15ace4",
+      "created_date": "2018-03-15T22:53:25",
+      "created_by": "58bd9a16dd7d97ef54cef63f",
+      "last_updated": "2018-03-15T22:53:25",
+      "reference": "DMN-9980140810",
+      "venue_id": "5853b29b12f78aa33f8b54b6",
+      "date": "2018-04-19T00:00:00",
+      "time": "13:00",
+      "type": {
+        "guestlist": false,
+        "id": "5922c9ee93f8d541531a49b3",
+        "name": "Lunch",
+        "private_hire": false
+      },
+      "num_people": 8,
+      "first_name": "Dan",
+      "last_name": "Johnson",
+      "email": null,
+      "notes": null,
+      "source": "partner",
+      "packages": null,
+      "offer": null,
+      "deposits": []
+    },
+    "bookingStatus": "received",
+    "venue": {
+      "type": "venue",
+      "title": "Test Venue",
+      "path": "\/london\/bars\/shoreditch\/test-venue",
+      "page_type": "venue"
+    }
+  },
+  "status": 200,
+  "requestTime": "2018-03-15T22:53:24",
+  "responseTime": "2018-03-15T22:53:40",
+  "statusText": "OK",
+  "url": "\/api\/v4\/bookings",
+  "method": "POST",
+  "params": []
 }
 ```
 
@@ -358,15 +358,15 @@ If the booking has assigned areas, you will recieve a response like this
 
 ```json
 {
-	"payload": {
-		"areas": [
-			{
-				"id": "5b4766db8264ee22a13db576",
-				"name": "Table 4",
-				"zone": "5b4766e58264ee22a13db583"
-			}
-		]
-	}
+  "payload": {
+    "areas": [
+      {
+        "id": "5b4766db8264ee22a13db576",
+        "name": "Table 4",
+        "zone": "5b4766e58264ee22a13db583"
+      }
+    ]
+  }
 }
 ```
 
