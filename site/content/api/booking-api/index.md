@@ -346,6 +346,40 @@ $ curl -X POST https://api.designmynight.com/v4/bookings
     -d "source=partner&first_name=Dan&last_name=Johnson&num_people=4&venue_id=552435790df6902b7256f237&type=58c927215ee246985eb91b8e&date=2018-05-30&time=16:00&marketing_preferences[]=486847581541665&marketing_preferences[]=5878286768853523"
 ```
 
+### Getting assigned area details
+
+The following `GET` request will return an array of areas assigned to the booking. Replace the ID in the URL with your Booking ID.
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings/5b7e8070addee7612f456972/areas
+```
+
+If the booking has assigned areas, you will recieve a response like this
+
+```json
+{
+	"payload": {
+		"areas": [
+			{
+				"id": "5b4766db8264ee22a13db576",
+				"name": "Table 4",
+				"zone": "5b4766e58264ee22a13db583"
+			}
+		]
+	}
+}
+```
+
+### Setting assigned areas
+
+You can update the assigned areas of a booking by posting an array of area id's to assign the booking too. This will overwrite any previously assigned areas.
+
+```bash
+$ curl -X POST https://api.designmynight.com/v4/bookings/5b7e8070addee7612f456972/areas \
+  -H "Content-Type: application/json" \
+  -d '{"areas": ["5b4766db8264ee22a13db573", "5b4766db8264ee22a13db574"}'
+```
+
 ## Checking Booking Rules
 
 The `booking-rules` endpoint will provide the rules for a booking for a specified date and booking type.
