@@ -346,6 +346,8 @@ $ curl -X POST https://api.designmynight.com/v4/bookings
     -d "source=partner&first_name=Dan&last_name=Johnson&num_people=4&venue_id=552435790df6902b7256f237&type=58c927215ee246985eb91b8e&date=2018-05-30&time=16:00&marketing_preferences[]=486847581541665&marketing_preferences[]=5878286768853523"
 ```
 
+## Assigned area information
+
 ### Getting assigned area details
 
 The following `GET` request will return an array of areas assigned to the booking. Replace the ID in the URL with your Booking ID.
