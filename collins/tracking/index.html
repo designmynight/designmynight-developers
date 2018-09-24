@@ -1109,7 +1109,7 @@ DMN.addCustomData('source', 'XXXXX');
 
 <h2 id="custom-return-url">Custom return URL</h2>
 
-<p>You can create a custom return URL for users to be directed to when they complete their booking. That way you&rsquo;d be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have.</p>
+<p>You can create a custom return URL for users to be directed to when they complete their booking. That way you&rsquo;d be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have. You will then have control to add your own Google Analytics* to track bookings.</p>
 
 <p>To do this you need to create the return URL on the  venue site then set it using custom script after your partner form:</p>
 
@@ -1120,6 +1120,10 @@ DMN.addCustomData('source', 'XXXXX');
 </code></pre>
 
 <p><strong><em>Please note:</em></strong> It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format. Please ensure that your webserver and application can accept POST requests from the designmynight.com domain, including any subdomains.</p>
+
+<p>*<strong>Google Analytics Notes:</strong> You will need to have cross-domain tracking in place. This also includes making sure that the tags that are fired from your hostname also have cross-domain tracking in place. Part of setting up cross-domain tracking is to ensure that client&rsquo;s and your hostnames are added to the referral exclusion list.</p>
+
+<p>Ideally, you also need to ensure that your Google Analytics is in a good shape overall - e.g. only use universal analytics pixels, there is no double-tagging, etc.</p>
 
 <h2 id="using-our-api-big-tech-build-we-do-not-recommend">Using our API <em>(big tech build, we do not recommend)</em></h2>
 
