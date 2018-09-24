@@ -24,7 +24,7 @@ This is especially useful for Christmas pages or any major advert campaigns with
 
 ## Custom return URL
 
-You can create a custom return URL for users to be directed to when they complete their booking. That way you'd be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have.
+You can create a custom return URL for users to be directed to when they complete their booking. That way you'd be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have. You will then have control to add your own Google Analytics* to track bookings. 
 
 To do this you need to create the return URL on the  venue site then set it using custom script after your partner form:
 
@@ -36,6 +36,10 @@ To do this you need to create the return URL on the  venue site then set it usin
 ```
 
 **_Please note:_** It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format. Please ensure that your webserver and application can accept POST requests from the designmynight.com domain, including any subdomains.
+
+***Google Analytics Notes:** You will need to have cross-domain tracking in place. This also includes making sure that the tags that are fired from your hostname also have cross-domain tracking in place. Part of setting up cross-domain tracking is to ensure that client's and your hostnames are added to the referral exclusion list.
+
+Ideally, you also need to ensure that your Google Analytics is in a good shape overall - e.g. only use universal analytics pixels, there is no double-tagging, etc.
 
 ##  Using our API _(big tech build, we do not recommend)_
 
