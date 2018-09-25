@@ -55,6 +55,7 @@ If you would like to set up the integration to push bookings/payments to your IB
 4. Other Payment Cash
 5. Other Payment Cheque
 6. Other Payment PDQ
+7. Gift Voucher 
 
 You will also need to specify **which bookings** you would like Collins to push to your tills:
 
