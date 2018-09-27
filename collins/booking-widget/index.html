@@ -1431,7 +1431,7 @@ DMN.val('type', 'Dinner').hideInput('type');  // Set the booking type to 'Dinner
 
 <h2 id="multiple-booking-widgets">Multiple Booking Widgets</h2>
 
-<p>If you have added multiple Collins booking widgets to your website but are looking to target each specific form (for example so that you can use Google Analytics for both widgets).</p>
+<p>If you have added multiple Collins booking widgets to the same page on your website and are doing a <code>DMN.val</code> (for example to add a custom return URL and track each widget on Google Analytics), you will need to do the following to set which specific widget should be targetted.</p>
 
 <p>Forms are accessed by their ID, but there&rsquo;s currently no way to set the ID for a particular form. Instead, you&rsquo;d need to retrieve the numerical ID from the form&rsquo;s ID attribute once it&rsquo;s been written to the page, using something like this, changing the <code>getElementById</code> part to something that identifies a container of the form you want to target:</p>
 
@@ -1440,6 +1440,9 @@ DMN.val('type', 'Dinner').hideInput('type');  // Set the booking type to 'Dinner
 <p>Once you have the ID you can then set values on that particular form by passing an object to <code>DMN.val()</code> like this:</p>
 
 <pre><code>DMN.val({field: 'time', value: '22:00', formId: formId})
+</code></pre>
+
+<pre><code>DMN.val({field: 'return_url', value: 'https://your-return-url.com', formId: formId})
 </code></pre>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
