@@ -241,7 +241,7 @@ Example of a partner with a German booking widget: [Petit Chef Berlin](https://b
 **_Please note:_** Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/collins/booking-widget/#customising-your-collins-booking-widget).    
 
 ## Multiple Booking Widgets
-If you have added multiple Collins booking widgets to your website but are looking to target each specific form (for example so that you can use Google Analytics for both widgets).  
+If you have added multiple Collins booking widgets to the same page on your website and are doing a `DMN.val` (for example to add a custom return URL and track each widget on Google Analytics), you will need to do the following to set which specific widget should be targetted. 
 
 Forms are accessed by their ID, but there's currently no way to set the ID for a particular form. Instead, you'd need to retrieve the numerical ID from the form's ID attribute once it's been written to the page, using something like this, changing the `getElementById` part to something that identifies a container of the form you want to target:
 
@@ -251,6 +251,10 @@ Once you have the ID you can then set values on that particular form by passing 
 
 ```
 DMN.val({field: 'time', value: '22:00', formId: formId})
+```
+
+```
+DMN.val({field: 'return_url', value: 'https://your-return-url.com', formId: formId})
 ```
 
 ## Troubleshooting
