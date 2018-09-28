@@ -37,6 +37,17 @@ Details can be set to:
     
     <item>
       <title></title>
+      <link>http://developers.designmynight.com/epos-crm-integrations/tevalis-epos-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://developers.designmynight.com/epos-crm-integrations/tevalis-epos-integration/</guid>
+      <description>Overview of the Collins/Tevalis EPOS Integration The purpose of the integration between Collins and Tevalis is to be able to push the details of bookings, their associated deposits and pre-orders to the Tevalis Epos system. Any walk ins and changes to assigned tables made on your Tevalis POS will also update on your Collins Diary.
+The capabilities of the integration:
+ Push bookings to till Push payments to till Push pre-orders to the till Allocate to table on till Add walk ins on till using Collins availability and map to Collins diary Move table/join table on pos which will update Collins diary  Details sent from Collins to Tevalis:  Booking Name Booking Date Booking Time Table Covers Telephone Email Special Requirements Internal Notes Runsheet Notes Collins Pay payments Collins Pre-Orders  Updates sent from Tevalis to Collins:  Walk-ins Transferring the table on the EPOS with a booking assigned with also transfer the booking in Collins.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://developers.designmynight.com/epos-crm-integrations/zonal-epos-integration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
