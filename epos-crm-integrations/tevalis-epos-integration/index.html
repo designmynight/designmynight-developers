@@ -1101,7 +1101,7 @@
 
 <ul>
 <li>Push bookings to the till</li>
-<li>Push payments to the till</li>
+<li>Push payments to the till (only those taken <strong>before</strong> the booking date has passed)</li>
 <li>Push pre-orders to the till</li>
 <li>Allocate the booking to a table on the till</li>
 <li>Add walk ins to the till using Collins availability and map to Collins diary</li>
@@ -1109,7 +1109,7 @@
 <li>Updating the Collins floorplan with the relevant <a href="https://collins.uservoice.com/knowledgebase/articles/1867465-diary-floorplan-booking-stages">stages of the booking</a> during live service</li>
 </ul>
 
-<h1 id="details-sent-from-collins-to-tevalis">Details sent from Collins to Tevalis:</h1>
+<h1 id="booking-details-sent-from-collins-to-tevalis">Booking details sent from Collins to Tevalis:</h1>
 
 <ul>
 <li>Booking Name</li>
@@ -1137,6 +1137,42 @@
 
 <li><p>Stage of the booking</p></li>
 </ul>
+
+<h2 id="payments-valid-to-push-to-tevalis-epos">Payments Valid to Push to Tevalis EPOS</h2>
+
+<p>The Collins/Tevalis integration currently supports pushing payments to your tills if they have been added to Collins <strong>before</strong> the party has been seated on your tills.</p>
+
+<ul>
+<li><strong>Advance Paid Deposits</strong></li>
+</ul>
+
+<p>All <a href="https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to">manual/request payments</a> taken using the payment link in Collins prior to the booking date will automatically push to your Tevalis EPOS.</p>
+
+<ul>
+<li><strong>Advance &lsquo;Other&rsquo; Payments</strong></li>
+</ul>
+
+<p>If you add an <a href="https://collins.uservoice.com/knowledgebase/articles/478056-within-a-booking-enquiry-recording-payments-made">&lsquo;Other&rsquo;</a> Payment to your Collins booking prior to the booking date, this will push to your tills.</p>
+
+<ul>
+<li><strong>Claimed Card Auth Payments</strong></li>
+</ul>
+
+<p>If you <a href="https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to">claim a card auth payment</a> prior to the booking date, this will push to your tills.</p>
+
+<h2 id="payments-not-valid-to-push-to-tevalis-epos">Payments not valid to push to Tevalis EPOS</h2>
+
+<p>The Collins/Tevalis integration currently supports pushing payments to your tills if they have been added to Collins <strong>before</strong> the party has been seated on your tills. If you have added/refunded a payment within Collins after the booking has taken place, here is what you will need to do if you wish to update your tills.</p>
+
+<p><strong>1. Refunding in Collins after the booking</strong></p>
+
+<p>If you <a href="https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer">refund a payment in Collins</a><strong>after</strong> the booking date (eg if something went wrong on the night), the refund will <strong>not</strong> push to your tills.</p>
+
+<p>You have access to re-open historic transactions on the Tevalis POS and will be able to manually put through the refund on your tills.</p>
+
+<p><strong>2. Card Auth Claims</strong></p>
+
+<p>If you claim a <a href="https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to">Collins Card Authentication</a> payment after the event, Collins will <strong>not</strong> push the payment to your tills. You will have to manually process this payment through the Tevalis EPOS.</p>
 
 <h2 id="setting-up-the-collins-tevalis-integration">Setting up the Collins/Tevalis Integration:</h2>
 

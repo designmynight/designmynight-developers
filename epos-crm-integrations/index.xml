@@ -44,7 +44,7 @@ Details can be set to:
       <description>Overview of the Collins/Tevalis EPOS Integration The purpose of the integration between Collins and Tevalis is to be able to push the details of bookings, their associated deposits and pre-orders taken on Collins to the Tevalis Epos system.
 Any walk-ins and changes to assigned tables made on your Tevalis POS will also update on your Collins Diary.
 Overview of the capabilities of the integration:
- Push bookings to the till Push payments to the till Push pre-orders to the till Allocate the booking to a table on the till Add walk ins to the till using Collins availability and map to Collins diary Move table/join table on POS which will update Collins diary Updating the Collins floorplan with the relevant stages of the booking during live service  Details sent from Collins to Tevalis:  Booking Name Booking Date Booking Time Table Covers Telephone Email Special Requirements Internal Notes Runsheet Notes Collins Pay payments Collins Pre-Orders  Updates sent from Tevalis to Collins:  Walk-ins</description>
+ Push bookings to the till Push payments to the till (only those taken before the booking date has passed) Push pre-orders to the till Allocate the booking to a table on the till Add walk ins to the till using Collins availability and map to Collins diary Move table/join table on POS which will update Collins diary Updating the Collins floorplan with the relevant stages of the booking during live service  Booking details sent from Collins to Tevalis:  Booking Name Booking Date Booking Time Table Covers Telephone Email Special Requirements Internal Notes Runsheet Notes Collins Pay payments Collins Pre-Orders  Updates sent from Tevalis to Collins:  Walk-ins</description>
     </item>
     
     <item>
