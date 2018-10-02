@@ -12,7 +12,7 @@ Any walk-ins and changes to assigned tables made on your Tevalis POS will also u
 * Allocate the booking to a table on the till
 * Add walk ins to the till using Collins availability and map to Collins diary
 * Move table/join table on POS which will update Collins diary
-* Updating the Collins floorplan with the relevant [stages of the booking](https://collins.uservoice.com/knowledgebase/articles/1867465-diary-floorplan-booking-stages)during live service 
+* Updating the Collins floorplan with the relevant [stages of the booking](https://collins.uservoice.com/knowledgebase/articles/1867465-diary-floorplan-booking-stages) during live service 
 
 # Details sent from Collins to Tevalis:
 
