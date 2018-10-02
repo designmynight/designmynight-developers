@@ -1093,18 +1093,20 @@
 
 <h1 id="overview-of-the-collins-tevalis-epos-integration">Overview of the Collins/Tevalis EPOS Integration</h1>
 
-<p>The purpose of the integration between Collins and Tevalis is to be able to push the details of bookings, their associated deposits and pre-orders to the Tevalis Epos system.
-Any walk ins and changes to assigned tables made on your Tevalis POS will also update on your Collins Diary.</p>
+<p>The purpose of the integration between Collins and Tevalis is to be able to push the details of bookings, their associated deposits and pre-orders taken on Collins to the Tevalis Epos system.</p>
 
-<p><strong>The capabilities of the integration:</strong></p>
+<p>Any walk-ins and changes to assigned tables made on your Tevalis POS will also update on your <a href="https://collins.uservoice.com/knowledgebase/articles/1174339-collins-webinars-working-your-diary-page">Collins Diary</a>.</p>
+
+<p><strong>Overview of the capabilities of the integration:</strong></p>
 
 <ul>
-<li>Push bookings to till</li>
-<li>Push payments to till</li>
+<li>Push bookings to the till</li>
+<li>Push payments to the till</li>
 <li>Push pre-orders to the till</li>
-<li>Allocate to table on till</li>
-<li>Add walk ins on till using Collins availability and map to Collins diary</li>
-<li>Move table/join table on pos which will update Collins diary</li>
+<li>Allocate the booking to a table on the till</li>
+<li>Add walk ins to the till using Collins availability and map to Collins diary</li>
+<li>Move table/join table on POS which will update Collins diary</li>
+<li>Updating the Collins floorplan with the relevant <a href="https://collins.uservoice.com/knowledgebase/articles/1867465-diary-floorplan-booking-stages">stages of the booking</a> during live service</li>
 </ul>
 
 <h1 id="details-sent-from-collins-to-tevalis">Details sent from Collins to Tevalis:</h1>
@@ -1127,9 +1129,13 @@ Any walk ins and changes to assigned tables made on your Tevalis POS will also u
 <h1 id="updates-sent-from-tevalis-to-collins">Updates sent from Tevalis to Collins:</h1>
 
 <ul>
-<li>Walk-ins</li>
-<li>Transferring the table on the EPOS with a booking assigned with also transfer the booking in Collins. Validation occurs to ensure there is not another booking on the table before the transfer is complete.</li>
-<li>Merging tables onto a table with a booking open will extend the booking on Collins onto the same table range. Unmerge also contains the same functionality. When a booking is opened, if it is for multiple tables then the merging will be done automatically on the POS.</li>
+<li><p>Walk-ins</p></li>
+
+<li><p>Transferring the table on the EPOS with a booking assigned will also transfer the booking in Collins. Validation occurs to ensure there is not another booking on the table before the transfer is complete.</p></li>
+
+<li><p>Merging tables onto a table with a booking open will extend the booking on Collins onto the same table range. Unmerge also contains the same functionality. When a booking is opened, if it is for multiple tables then the merging will be done automatically on the POS.</p></li>
+
+<li><p>Stage of the booking</p></li>
 </ul>
 
 <h2 id="setting-up-the-collins-tevalis-integration">Setting up the Collins/Tevalis Integration:</h2>
