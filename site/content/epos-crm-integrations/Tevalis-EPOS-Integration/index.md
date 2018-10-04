@@ -61,7 +61,7 @@ The Collins/Tevalis integration currently supports pushing payments to your till
 
 **1. Refunding in Collins after the booking**
 
-If you [refund a payment in Collins](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer)**after** the booking date (eg if something went wrong on the night), the refund will **not** push to your tills.  
+If you [refund a payment in Collins](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer) **after** the booking date (eg if something went wrong on the night), the refund will **not** push to your tills.  
 
 You have access to re-open historic transactions on the Tevalis POS and will be able to manually put through the refund on your tills.
 
