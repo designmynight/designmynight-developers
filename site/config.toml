@@ -229,7 +229,7 @@ googleAnalytics = "UA-12385609-13"
 	
 [[menu.main]]
     name   = "Tevalis EPOS Integration"
-    url    = "epos-crm-integrations/Tevalis-EPOS-Integration/"
+    url    = "epos-crm-integrations/tevalis-epos-integration/"
     parent = "epos-crm-integrations"
 	weight = 403
 
