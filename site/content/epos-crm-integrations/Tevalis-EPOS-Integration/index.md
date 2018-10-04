@@ -14,7 +14,7 @@ Any walk-ins and changes to assigned tables made on your Tevalis POS will also u
 * Move table/join table on POS which will update Collins diary
 * Updating the Collins floorplan with the relevant [stages of the booking](https://collins.uservoice.com/knowledgebase/articles/1867465-diary-floorplan-booking-stages) during live service 
 
-# Booking details sent from Collins to Tevalis:
+## Booking details sent from Collins to Tevalis:
 
 * Booking Name
 * Booking Date
@@ -29,7 +29,7 @@ Any walk-ins and changes to assigned tables made on your Tevalis POS will also u
 * [Collins Pay payments](https://collins.uservoice.com/knowledgebase/articles/560766-extra-feature-collins-pay-how-to-video)
 * [Collins Pre-Orders](https://collins.uservoice.com/knowledgebase/articles/1805947-collins-pre-orders-video-how-to)
 
-# Updates sent from Tevalis to Collins:
+## Updates sent from Tevalis to Collins:
 
 * Walk-ins
 
@@ -68,6 +68,14 @@ You have access to re-open historic transactions on the Tevalis POS and will be 
 **2. Card Auth Claims**
 
 If you claim a [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) payment after the event, Collins will **not** push the payment to your tills. You will have to manually process this payment through the Tevalis EPOS. 
+
+## Setting up your mapping between tables on Tevalis POS and Collins
+
+You will have full control to add and manage the mapping between the tables on your Tevalis EPOS and [Tables/Areas on Collins](https://collins.uservoice.com/knowledgebase/articles/478009-tables-areas-adding-new-tables) in your EPOS. This is done through the **IBookings Table Management** function key on Tevalis. 
+
+If an online table is added it must be mapped through this screen before it is usable in the integration. If table mappings aren’t configured, you will be prompted to select the table each time you open a booking.
+
+![Example of IBookings Table Management](https://static.designmynight.com/uploads/2018/10/Tevalis-mapping.png)
 
 ## Setting up the Collins/Tevalis Integration:
 If you would like to set up the integration between Collins and Tevalis, you will need to contact your Collins Account Manager. 
