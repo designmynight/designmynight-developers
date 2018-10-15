@@ -69,5 +69,5 @@ Here are guides to help you update your [DKIM Settings](https://support.wix.com/
 
 **2. How to update the email settings for a Squarespace account**
 
-Here's a guide to help you update your [DKIM and SPF Settings](http://help.jilt.com/send-jilt-emails-from-your-own-domain/update-your-domain-provider-s-dns-settings/add-spf-and-dkim-records-to-squarespace).
+Here's a guide to help you update your [DKIM and SPF Settings](https://support.squarespace.com/hc/en-us/articles/205812348-Advanced-DNS-settings).
 
