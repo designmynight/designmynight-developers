@@ -25,12 +25,12 @@ If you want to further customise the appearance of the second iframe, you can ad
 
 Element | CSS Selector | Notes for Collins users
 --------|------|-----
-[Optional pre-orders message](https://static.designmynight.com/uploads/2018/10/preorder-payment-instruction-optimised.png) | `.preorder-payment-instructions`| If no [minimum preorders](https://collins.uservoice.com/knowledgebase/articles/1128079-booking-types-allowing-customers-to-pre-order-fr) are set but customers have the option to preorder. 
-[Pre-Order Required Message](https://static.designmynight.com/uploads/2018/10/alert-preorder-payment-optimised.png) |`.alert-preorder-payment`| If a [minimum order](https://collins.uservoice.com/knowledgebase/articles/1128079-booking-types-allowing-customers-to-pre-order-fr) has been set
-[Minimum Pre-Order Required Message](https://static.designmynight.com/uploads/2018/10/alert-preorder-requirements.png)|`.alert-preorder-requirements`| If the minimum order has not yet been met
+[Optional pre-orders message](https://static.designmynight.com/uploads/2018/10/preorder-payment-instruction-optimised.png) | `.preorder-payment-instructions`| No [minimum preorders](https://collins.uservoice.com/knowledgebase/articles/1128079-booking-types-allowing-customers-to-pre-order-fr) have been set 
+[Pre-Order Required Message](https://static.designmynight.com/uploads/2018/10/alert-preorder-payment-optimised.png) |`.alert-preorder-payment`| A [minimum order](https://collins.uservoice.com/knowledgebase/articles/1128079-booking-types-allowing-customers-to-pre-order-fr) has been set
+[Minimum Pre-Order Required Message](https://static.designmynight.com/uploads/2018/10/alert-preorder-requirements.png)|`.alert-preorder-requirements`| The minimum order has not yet been met
 [Next steps to your Pre-Order message](https://static.designmynight.com/uploads/2018/10/preorder-payment-advance-warning-optimised.png)|`.preorder-payment-advance-warning`| 
 [Next](https://static.designmynight.com/uploads/2018/10/btn-submit-booking-next.png) and [Book Now](https://static.designmynight.com/uploads/2018/10/btn-submit-booking.png) Buttons|`.btn-submit-booking`|
-[Cross sell message](https://static.designmynight.com/uploads/2018/10/alert-alternative-availability-optimised.png)|`.alert-alternative-availability`| If you have set up [cross sell](https://collins.uservoice.com/knowledgebase/articles/478043-booking-types-cross-sell-your-venues-to-the-cust)
+[Cross sell message](https://static.designmynight.com/uploads/2018/10/alert-alternative-availability-optimised.png)|`.alert-alternative-availability`| You have set up [cross sell](https://collins.uservoice.com/knowledgebase/articles/478043-booking-types-cross-sell-your-venues-to-the-cust) with your sister sites
 [Add Dietary Requirements button](https://static.designmynight.com/uploads/2018/10/btn-add-diatary-requirements.png) |`.btn-add-diatary-requirements`|
 [Order Summary](https://static.designmynight.com/uploads/2018/10/Order-Summary.png) |`.order-summary`|
 [Pre-Order Header](https://static.designmynight.com/uploads/2018/10/preorder-menus-h2-optimised.png)|`.preorder-menus h2`|
