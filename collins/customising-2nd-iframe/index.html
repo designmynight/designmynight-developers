@@ -1127,7 +1127,77 @@
 
 <p>When the booking form loads, it will also load your CSS so you can override whatever is on the book page.</p>
 
-<p>Example of a partner with a customised second iframe: <a href="https://www.beechhousebeaconsfield.co.uk/bookings">Beech House Beaconsfield</a></p>
+<p>Example of a partner with a customised second iframe: <a href="https://alexanders-skipton.com/">Alexanders Skipton</a></p>
+
+<h2 id="customising-your-collins-booking-widget">Customising your Collins booking widget</h2>
+
+<p>If you want to further customise the appearance of the second iframe, you can add specific CSS rules that apply. The following table lists the main elements of the  second iframe and their CSS selectors:</p>
+
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>CSS Selector</th>
+<th>Notes for Collins users</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://static.designmynight.com/uploads/2018/10/preorder-payment-instruction-optimised.png">Optional pre-orders message</a></td>
+<td><code>.preorder-payment-instructions</code></td>
+<td>If you have given customers the option to select a pre-order, but have not set any <a href="https://collins.uservoice.com/knowledgebase/articles/1128079-booking-types-allowing-customers-to-pre-order-fr">minimum orders</a> so it&rsquo;s not compulsory to select a pre-order to proceed with your booking/enquiry</td>
+</tr>
+
+<tr>
+<td><a href="https://static.designmynight.com/uploads/2018/10/alert-preorder-payment-optimised.png">Pre-Order Required Message</a></td>
+<td><code>.alert-preorder-payment</code></td>
+<td>If you have set a <a href="https://collins.uservoice.com/knowledgebase/articles/1128079-booking-types-allowing-customers-to-pre-order-fr">minimum order</a> at the point of booking. All messages prompting customers that they will <strong>need</strong> to make a pre-order will come under this CSS selector.</td>
+</tr>
+
+<tr>
+<td><a href="https://static.designmynight.com/uploads/2018/10/alert-preorder-requirements.png">Minimum Pre-Order Required Message</a></td>
+<td><code>.alert-preorder-requirements</code></td>
+<td>Alert message if the customer has not yet met your minimum order requirement</td>
+</tr>
+
+<tr>
+<td><a href="https://content.designmynight.com/uploads/2018/10/preorder-payment-advance-warning.png">Information alert about your Pre-Order</a></td>
+<td><code>.preorder-payment-advance-warning</code></td>
+<td>Once the customer has added their pre-orders, a message will show to indicate whether payment will be taken on the next screen</td>
+</tr>
+
+<tr>
+<td><a href="https://static.designmynight.com/uploads/2018/10/btn-submit-booking-next.png">Next</a> and <a href="https://static.designmynight.com/uploads/2018/10/btn-submit-booking.png">Book Now</a> Buttons</td>
+<td><code>.btn-submit-booking</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="https://static.designmynight.com/uploads/2018/10/alert-alternative-availability-optimised.png">Cross sell message</a></td>
+<td><code>.alert-alternative-availability</code></td>
+<td>If you have set up <a href="https://collins.uservoice.com/knowledgebase/articles/478043-booking-types-cross-sell-your-venues-to-the-cust">cross sell</a> and your venue is full at the requested time, customers will be suggested your sister sites.</td>
+</tr>
+
+<tr>
+<td><a href="https://static.designmynight.com/uploads/2018/10/btn-add-diatary-requirements.png">Add Dietary Requirements button</a></td>
+<td><code>.btn-add-diatary-requirements</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="https://static.designmynight.com/uploads/2018/10/Order-Summary.png">Order Summary</a></td>
+<td><code>.order-summary</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="https://static.designmynight.com/uploads/2018/10/preorder-menus-h2-optimised.png">Pre-Order Header</a></td>
+<td><code>.preorder-menus h2</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="customising-2nd-iframe-faqs">Customising 2nd iFrame FAQs</h2>
 
