@@ -17,7 +17,23 @@ You are able to customise the 2nd iframe on your Collins booking widget to bette
 
 When the booking form loads, it will also load your CSS so you can override whatever is on the book page.
 
-Example of a partner with a customised second iframe: [Beech House Beaconsfield](https://www.beechhousebeaconsfield.co.uk/bookings)
+Example of a partner with a customised second iframe: [Alexanders Skipton](https://alexanders-skipton.com/)
+
+## Customising your Collins booking widget
+
+If you want to further customise the appearance of the second iframe, you can add specific CSS rules that apply. The following table lists the main elements of the  second iframe and their CSS selectors:
+
+Element | CSS Selector | Notes for Collins users
+--------|------|-----
+[Optional pre-orders message](https://static.designmynight.com/uploads/2018/10/preorder-payment-instruction-optimised.png) | `.preorder-payment-instructions`| If you have given customers the option to select a pre-order, but have not set any [minimum orders](https://collins.uservoice.com/knowledgebase/articles/1128079-booking-types-allowing-customers-to-pre-order-fr) so it's not compulsory to select a pre-order to proceed with your booking/enquiry 
+[Pre-Order Required Message](https://static.designmynight.com/uploads/2018/10/alert-preorder-payment-optimised.png) |`.alert-preorder-payment`| If you have set a [minimum order](https://collins.uservoice.com/knowledgebase/articles/1128079-booking-types-allowing-customers-to-pre-order-fr) at the point of booking. All messages prompting customers that they will **need** to make a pre-order will come under this CSS selector.
+[Minimum Pre-Order Required Message](https://static.designmynight.com/uploads/2018/10/alert-preorder-requirements.png)|`.alert-preorder-requirements`| Alert message if the customer has not yet met your minimum order requirement 
+[Information alert about your Pre-Order](https://content.designmynight.com/uploads/2018/10/preorder-payment-advance-warning.png)|`.preorder-payment-advance-warning`| Once the customer has added their pre-orders, a message will show to indicate whether payment will be taken on the next screen
+[Next](https://static.designmynight.com/uploads/2018/10/btn-submit-booking-next.png) and [Book Now](https://static.designmynight.com/uploads/2018/10/btn-submit-booking.png) Buttons|`.btn-submit-booking`|
+[Cross sell message](https://static.designmynight.com/uploads/2018/10/alert-alternative-availability-optimised.png)|`.alert-alternative-availability`| If you have set up [cross sell](https://collins.uservoice.com/knowledgebase/articles/478043-booking-types-cross-sell-your-venues-to-the-cust) and your venue is full at the requested time, customers will be suggested your sister sites. 
+[Add Dietary Requirements button](https://static.designmynight.com/uploads/2018/10/btn-add-diatary-requirements.png) |`.btn-add-diatary-requirements`|
+[Order Summary](https://static.designmynight.com/uploads/2018/10/Order-Summary.png) |`.order-summary`|
+[Pre-Order Header](https://static.designmynight.com/uploads/2018/10/preorder-menus-h2-optimised.png)|`.preorder-menus h2`|
 
 ## Customising 2nd iFrame FAQs
 
