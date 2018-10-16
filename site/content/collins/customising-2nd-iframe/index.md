@@ -19,7 +19,7 @@ When the booking form loads, it will also load your CSS so you can override what
 
 Example of a partner with a customised second iframe: [Alexanders Skipton](https://alexanders-skipton.com/)
 
-## Customising your Collins booking widget
+## Customising the buttons and alert messages
 
 If you want to further customise the appearance of the second iframe, you can add specific CSS rules that apply. The following table lists the main elements of the  second iframe and their CSS selectors:
 
