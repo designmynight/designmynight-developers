@@ -161,6 +161,7 @@ Field | Required | Description
 `dob` | No | `string` The guest's date of birth, in the format YYYY-MM-DD
 `phone` | No | `string` The guest's phone number
 `notes` | No | `string` Any additional booking notes or special requests
+`package` | No | `string` The ID of the booking package this booking has
 `newsletter_signup` | No | `boolean` If the customer has agreed to sign up to the DMN newsletter
 `marketing_preferences` | No | `array` An array of marketing preference IDs the user has agreed to. See [Marketing Preferences](#marketing-preferences) for further details
 `custom_field_value` | No | `string` The value for the custom field
