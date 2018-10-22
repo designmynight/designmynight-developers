@@ -56,6 +56,7 @@ If you would like to set up the integration to push bookings/payments to your IB
 5. Other Payment Cheque
 6. Other Payment PDQ
 7. Gift Voucher 
+8. For any 'other' payments that have **not** been assigned a payment type within Collins (as a default setting)
 
 You will also need to specify **which bookings** you would like Collins to push to your tills:
 
