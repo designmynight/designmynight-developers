@@ -2,9 +2,9 @@
 
 There are 4 ways you can look at tracking:
 
-## Google/Facebook Tracking
+## Google Tracking
 
-Putting Google/Facebook code on the first enquire button in the CSS (this isn't tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on [Adding Google Analytics Tracking Code to the booking widget](https://collins.uservoice.com/knowledgebase/articles/863856-adding-google-analytics-tracking-code-to-the-booki). 
+Putting Google code on the first enquire button in the CSS (this isn't tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on [Adding Google Analytics Tracking Code to the booking widget](https://collins.uservoice.com/knowledgebase/articles/863856-adding-google-analytics-tracking-code-to-the-booki). 
 
 ## Custom Source for multiple booking widgets
 
