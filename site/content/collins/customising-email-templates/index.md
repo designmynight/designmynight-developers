@@ -109,3 +109,7 @@ If you only wish to customise a specific type of email (eg Confirmation), we rec
 1. Template for Confirmation Email
 2. A general template that we can upload to be used for all other emails from Collins
 
+**4. We've got a booking type for Halloween. Would it be possible to add an email template specifically for this booking type (so we can make it themed!)?**
+
+Unfortunately, we are currently only able to upload HTML templates **per email type** and not by booking type. 
+
