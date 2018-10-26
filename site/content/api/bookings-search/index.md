@@ -156,6 +156,22 @@ or to search for private hire bookings which that take place in February 2018:
 $ curl -X GET https://api.designmynight.com/v4/bookings?private_hire=true&date=2018-02-01%20TO%202018-02-28
 ```
 
+### Specifying return fields
+
+You can limit the fields that are returned in the response using the `fields` parameter, and specifying the name of the fields you would like to return as the value. To return multiple specific fields, the names can be comma separated.
+
+For example, to only bring back the `estimated_value` of a booking, you can use:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?fields=estimated_value
+```
+
+or to bring back the booking date and number of guests, you could use:
+
+```bash
+$ curl -X GET https://api.designmynight.com/v4/bookings?fields=date,num_people
+```
+
 ### Date filter format
 Dates may be filtered by providing a range, optionally using an asterisk to carry out an open-ended search. A number of date formats are supported, but to ensure accuracy the recommended date format is YYYY-MM-DDTHH:mm:ss, eg 2017-02-15T13:45:00. If the time is omitted, midnight (the start of the day) will be assumed.
 
