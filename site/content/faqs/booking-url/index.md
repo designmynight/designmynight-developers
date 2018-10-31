@@ -30,7 +30,7 @@ Your user account will require [Bookings Manager permissions](https://collins.us
 2. Settings
 3. Venues
 4. Select your venue
-5. Your Venue ID will be included at the [end in the URL](https://static.designmynight.com/uploads/2017/12/Collins-Venue-ID1-optimised.png)
+5. Your Venue ID will be included at the ![end in the URL](https://static.designmynight.com/uploads/2017/12/Collins-Venue-ID1-optimised.png)
 
 ## How to find your Collins Venue Group ID
 
@@ -39,7 +39,7 @@ Your user account will require venue group level access. Please speak to your ke
 1. Log into your [Collins admin](https://admin.designmynight.com/collins)
 2. Settings
 3. Venue Group
-4. Your Venue Group ID will be included at the [end in the URL](https://static.designmynight.com/uploads/2017/12/Venue-Group-ID-optimised.png)
+4. Your Venue Group ID will be included at the ![end in the URL](https://static.designmynight.com/uploads/2017/12/Venue-Group-ID-optimised.png)
 
 ## How to find the Booking Type ID
 
@@ -50,7 +50,7 @@ Your user account will require venue group level access. Please speak to your ke
 5. Booking Widget
 6. Tick 'Limit to a single booking type'
 7. Tick the specific booking type that you are looking for
-8. The Booking ID will follow `type=` in your newly generated [widget code](https://static.designmynight.com/uploads/2017/12/Booking-Type-ID-optimised.png)
+8. The Booking ID will follow `type=` in your newly generated ![widget code](https://static.designmynight.com/uploads/2017/12/Booking-Type-ID-optimised.png)
 
 ## Fixing additional parameters on your Booking URL
 
