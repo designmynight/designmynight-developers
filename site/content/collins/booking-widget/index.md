@@ -347,6 +347,19 @@ More information [here](https://developers.facebook.com/support/bugs/43517347317
 
 Alternatively you can add a 'Book Now' button to your Facebook page which will display on mobile. 
 
+**10. Is it possible to change the names of the fields. For example from 'Number of People' to 'Number of Guests'?**
+
+Yes. It will be up to your web developer to make this change. 
+
+Your web developer can override the CSS to change this - for example, [The Allegory](https://www.drakeandmorgan.co.uk/the-allegory/) has hidden the labels and applied custom styles. 
+
+Alternatively, you can look to add custom Javascript - for example, [Barrio Bars](http://www.barriobars.com/). 
+
+**11. Is it possible to change the text on the dropdown options. For example from '1 Guests' to '1 Diner'?**
+
+Yes. It will be up to your web developer to make this change. 
+
+Your web developer will be able to add custom Javascript - for example, [Caddyshackers](http://caddyshackers.co.uk/).
 
 
 
