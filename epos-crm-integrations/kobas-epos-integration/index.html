@@ -8,18 +8,18 @@
   <head lang="en-gb">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <title>DMN developer documentation</title>
+    <title> - DMN developer documentation</title>
     <meta name="generator" content="Hugo 0.22.1" />
 
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="https://developers.designmynight.com/">
+    <link rel="canonical" href="https://developers.designmynight.com/epos-crm-integrations/kobas-epos-integration/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="https://developers.designmynight.com/">
+    <meta property="og:url" content="https://developers.designmynight.com/epos-crm-integrations/kobas-epos-integration/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="https://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -91,7 +91,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        DMN developer documentation
+        
       </div>
     </div>
 
@@ -156,14 +156,11 @@
 
 
 
-<a class="current" title="Introduction" href="https://developers.designmynight.com/">
+<a  title="Introduction" href="https://developers.designmynight.com/">
 	
 	Introduction
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
   
 </li>
@@ -176,14 +173,11 @@
 
 
 
-<a class="current" title="    " href="https://developers.designmynight.com/">
+<a  title="    " href="https://developers.designmynight.com/">
 	
 	    
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
   
 </li>
@@ -442,14 +436,11 @@
 
 
 
-<a class="current" title="     " href="https://developers.designmynight.com/">
+<a  title="     " href="https://developers.designmynight.com/">
 	
 	     
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
   
 </li>
@@ -669,14 +660,11 @@
 
 
 
-<a class="current" title=" " href="https://developers.designmynight.com/">
+<a  title=" " href="https://developers.designmynight.com/">
 	
 	 
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
   
 </li>
@@ -908,14 +896,11 @@
 
 
 
-<a class="current" title="        " href="https://developers.designmynight.com/">
+<a  title="        " href="https://developers.designmynight.com/">
 	
 	        
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
   
 </li>
@@ -1087,14 +1072,11 @@
 
 
 
-<a class="current" title="          " href="https://developers.designmynight.com/">
+<a  title="          " href="https://developers.designmynight.com/">
 	
 	          
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
   
 </li>
@@ -1127,14 +1109,137 @@
 
 	<article class="article">
 		<div class="wrapper">
-			
-				<h1>Introduction </h1>
-
-				<p>This site provides details on the various ways that you can integrate with DesignMyNight, including our <a href="http://www.collinsbookings.com">Collins</a> enquiry management system and <a href="http://www.tonicticketing.com">Tonic</a> ticketing system.</p>
-
-<p>Not sure you want to be here after all? Check out what&rsquo;s new on the <a href="http://www.designmynight.com/london/new-bar-spy">London Bar Scene</a> instead.</p>
+			<h1> </h1>
 
 			
+
+<h1 id="overview-of-the-collins-kobas-epos-integration">Overview of the Collins/Kobas EPOS Integration</h1>
+
+<p>The purpose of the integration between Collins and EPOS is to be able to push the details of bookings and their associated deposits to the Kobas Epos system.</p>
+
+<p><strong>The integration can be set to:</strong></p>
+
+<ul>
+<li><p>Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.</p></li>
+
+<li><p>Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created in Collins. Otherwise, bookings will be sent at 7am (and every hour after) on the morning of the booking date.</p></li>
+</ul>
+
+<p><strong>Bookings will be sent to the Kobas Reservations with the following details:</strong></p>
+
+<ul>
+<li>Name: The Customer&rsquo;s full name</li>
+<li>Date: The date of the booking</li>
+<li>Time: The time of the booking</li>
+<li>Cover Count: The number of guests in the booking</li>
+<li>Deposit amount: The total of all paid deposits</li>
+<li>Reference: The Collins booking reference (this will show in the Kobas Customer Record as the External ID)</li>
+</ul>
+
+<p><img src="https://static.designmynight.com/uploads/2018/11/Kobas-reservation.png" alt="Example of the Reservation on Kobas" /></p>
+
+<p>With each booking, we will also push the associated customer details to the Kobas Customer Record. The following customer details will push:</p>
+
+<ul>
+<li>Full Name</li>
+<li>Email</li>
+<li>DOB</li>
+<li>Company</li>
+<li>Email address</li>
+</ul>
+
+<p><img src="https://static.designmynight.com/uploads/2018/11/Kobas-customer-2.png" alt="Example of the Customer Record on Kobas" /></p>
+
+<h2 id="payments-valid-to-push-to-kobas-epos">Payments Valid to Push to Kobas EPOS</h2>
+
+<ul>
+<li><strong>Paid Deposits</strong></li>
+</ul>
+
+<p>All <a href="https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to">manual/request payments</a> taken using the payment link in Collins will automatically push to your IBS EPOS.</p>
+
+<ul>
+<li><strong>Pushing &lsquo;Other&rsquo; Payments</strong></li>
+</ul>
+
+<p>If you add an <a href="https://collins.uservoice.com/knowledgebase/articles/478056-within-a-booking-enquiry-recording-payments-made">&lsquo;Other&rsquo;</a> Payment to your Collins booking, you will see an option to &lsquo;Push to Till&rsquo;. By default, this field will stay blank.</p>
+
+<p>Depending on whether you would like to push the &lsquo;Other&rsquo; payment to your tills, you will have to manually select Yes/No from the drop-down accordingly.</p>
+
+<p>You will not be able to proceed with adding the payment without selecting an option on the &lsquo;Push to Till&rsquo; drop down.</p>
+
+<p>This way your team has full control as to which payments get pushed to your tills.</p>
+
+<p><strong>Please Note</strong> - the integration does not currently support pushing claimed <a href="https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to">Collins Card Authentication payments</a>.</p>
+
+<h2 id="setting-up-the-collins-kobas-integration">Setting up the Collins/Kobas Integration:</h2>
+
+<p>If you would like to set up the integration to push bookings/payments to your Kobas EPOS, you will need to contact your Collins Account Manager with the following details (you will be able to get these from Kobas):</p>
+
+<ul>
+<li>Access Token URL</li>
+<li>POST Body</li>
+<li>Grant Type</li>
+<li>Client ID</li>
+<li>Client Secret</li>
+<li>Scope</li>
+<li>Source Key and ID</li>
+</ul>
+
+<p>You will also need to specify <strong>which bookings</strong> you would like Collins to push to your tills:</p>
+
+<ul>
+<li>Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.</li>
+<li>Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent at 7am (and every hour after) on the morning of the booking date.</li>
+</ul>
+
+<h2 id="how-to-push-bookings-deposits-that-were-added-to-collins-before-the-kobas-integration-goes-live">How to push bookings/deposits that were added to Collins before the Kobas integration goes live</h2>
+
+<p>?</p>
+
+<h2 id="checking-that-the-collins-kobas-integration-is-set-up-correctly">Checking that the Collins/Kobas Integration is set up correctly</h2>
+
+<p>Once your Collins Account Manager has been in touch that the integration has been set up, it will be your responsibility to check that the integration is working correctly (as Collins will not be able to access your till systems to test).</p>
+
+<p>As such, we recommend that you create a test payment through Collins. This will both test the connection and ensure that you&rsquo;re confident with how it will show on your tills.</p>
+
+<p>Once the integration has been set up, all valid payments added to Collins will have a tick next to it in the Payments tab of the booking. The colour of the tick will determine the &lsquo;pushed to till&rsquo; status:</p>
+
+<ul>
+<li>The green tick means that the payment has already been pushed to your till:</li>
+</ul>
+
+<p><img src="https://static.designmynight.com/uploads/2017/11/pushed-to-till-optimised.png" alt="screenshot of green tick" /></p>
+
+<ul>
+<li>The orange tick will mean that the payment has not correctly pushed to your tills.</li>
+</ul>
+
+<p><img src="https://static.designmynight.com/uploads/2017/11/not-pushed-to-till-optimised.png" alt="screenshot of orange tick" /></p>
+
+<h2 id="best-practice-for-pushing-all-bookings">Best Practice for Pushing all bookings</h2>
+
+<p>If your integration is set up to push all bookings (not just bookings with deposits), it&rsquo;s important that you ensure that all of the following booking details are added to the booking in Collins:</p>
+
+<ul>
+<li>First Name</li>
+<li>Last Name</li>
+<li>Booking Date</li>
+<li>Venue</li>
+<li>Number of Guests</li>
+<li>Start Time</li>
+<li>End Time</li>
+<li>Email Address or Phone Number</li>
+</ul>
+
+<p>Without all these details, we will be unable to push the booking to your tills.</p>
+
+<h2 id="refunding-on-collins-and-kobas">Refunding on Collins and Kobas</h2>
+
+<p>If you <strong>fully</strong> <a href="https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer">refund a deposit</a>, the refund will be pushed to Kobas.</p>
+
+<p>Currently, the integrations does <strong>not</strong> support pushing partial refunds to Kobas.</p>
+
 			
 			<aside class="copyright" role="note">
 				
@@ -1151,16 +1256,30 @@
 			<footer class="footer">
 				
 
-
-
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
+  
+      <a href="https://developers.designmynight.com/epos-crm-integrations/tevalis-epos-integration/" title="">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+        </div>
+      </a>
+  
   </div>
 
-  
-  
   <div class="next">
-      <a href="https://developers.designmynight.com/collins/booking-url/" title="">
+  
+      <a href="https://developers.designmynight.com/epos-crm-integrations/ibs-epos-integration/" title="">
         <span class="direction">
           Next
         </span>
@@ -1175,8 +1294,11 @@
           </div>
         </div>
       </a>
+  
   </div>
 </nav>
+
+
 
 
 			</footer>
