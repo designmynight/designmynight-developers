@@ -26,6 +26,7 @@ With each booking, we will also push the associated customer details to the Koba
 * DOB
 * Company
 * Email address
+* Phone
 
 ![Example of the Customer Record on Kobas](https://static.designmynight.com/uploads/2018/11/Kobas-customer-2.png)
 
@@ -62,10 +63,6 @@ You will also need to specify **which bookings** you would like Collins to push 
 
 * Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.
 * Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent at 7am (and every hour after) on the morning of the booking date.
-
-## How to push bookings/deposits that were added to Collins before the Kobas integration goes live
-
-?
 
 ## Checking that the Collins/Kobas Integration is set up correctly
 Once your Collins Account Manager has been in touch that the integration has been set up, it will be your responsibility to check that the integration is working correctly (as Collins will not be able to access your till systems to test). 
