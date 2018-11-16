@@ -34,7 +34,7 @@ With each booking, we will also push the associated customer details to the Koba
 
 * **Paid Deposits** 
 
-All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) taken using the payment link in Collins will automatically push to your IBS EPOS. 
+All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) taken using the payment link in Collins will automatically push to your Kobas EPOS. 
 
 * **Pushing 'Other' Payments**
 
