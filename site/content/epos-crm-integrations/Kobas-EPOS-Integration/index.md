@@ -58,6 +58,7 @@ If you would like to set up the integration to push bookings/payments to your Ko
 * Client Secret
 * Scope
 * Source Key and ID 
+* Reservations Source ID
 
 You will also need to specify **which bookings** you would like Collins to push to your tills:
 
