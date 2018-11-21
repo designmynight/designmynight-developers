@@ -82,22 +82,36 @@ Field | Type | Description
 
 Here's an example response:
 
-```json
+```
 {
   "payload": {
     "users": [
       {
-        "_id": "58ec803aeda4c345932a49f0",
-        "created_date": "2017-04-11T08:05:30",
-        "last_updated": "2017-05-05T12:00:11",
-        "email": "test-user@designmynight.com",
-        "status": "inactive",
+        "_id": "512b1ebad5d190d2978c293b",
+        "created_date": "2011-05-12T09:12:39",
+        "last_updated": "2018-11-21T15:12:47",
+        "email": "test@test.com",
         "first_name": "Test",
         "last_name": "User",
-        "phone": "000000000",
-        "marketing_permission": true,
+        "phone": "07777777777",
+        "company": "",
+        "dob": "1944-01-10T00:00:00",
         "associated_venues": [
-          "559fb07dc087b3be148b457b"
+          "552435790df6902b7256f237"
+        ],
+        "marketing_preferences": [
+          {
+            "id": "5b0743f00000000000000000",
+            "opt_in_date": "2018-11-21T15:12:42"
+          },
+          {
+            "id": "5b0e8f88303b2321ea337f83",
+            "opt_in_date": "2018-11-21T15:12:42"
+          },
+          {
+            "id": "5bb1ee308264ee5a4d665cb2",
+            "opt_in_date": "2018-11-21T15:12:42"
+          }
         ]
       }
     ],
@@ -105,13 +119,18 @@ Here's an example response:
     "numFound": 1
   },
   "status": 200,
-  "requestTime": "2017-05-09T14:17:34",
-  "responseTime": "2017-05-09T14:17:34",
+  "requestTime": "2018-11-21T15:12:59",
+  "responseTime": "2018-11-21T15:12:59",
+  "revision": {
+    "hostname": false,
+    "branch": "71d1ee4",
+    "testMode": true
+  },
   "statusText": "OK",
   "url": "\/v4\/users\/",
   "method": "GET",
   "params": {
-    "search": "test-user@designmynight.com"
+    "search": "test"
   }
 }
 ```
