@@ -1325,21 +1325,35 @@
 
 <p>Here&rsquo;s an example response:</p>
 
-<pre><code class="language-json">{
+<pre><code>{
   &quot;payload&quot;: {
     &quot;users&quot;: [
       {
-        &quot;_id&quot;: &quot;58ec803aeda4c345932a49f0&quot;,
-        &quot;created_date&quot;: &quot;2017-04-11T08:05:30&quot;,
-        &quot;last_updated&quot;: &quot;2017-05-05T12:00:11&quot;,
-        &quot;email&quot;: &quot;test-user@designmynight.com&quot;,
-        &quot;status&quot;: &quot;inactive&quot;,
+        &quot;_id&quot;: &quot;512b1ebad5d190d2978c293b&quot;,
+        &quot;created_date&quot;: &quot;2011-05-12T09:12:39&quot;,
+        &quot;last_updated&quot;: &quot;2018-11-21T15:12:47&quot;,
+        &quot;email&quot;: &quot;test@test.com&quot;,
         &quot;first_name&quot;: &quot;Test&quot;,
         &quot;last_name&quot;: &quot;User&quot;,
-        &quot;phone&quot;: &quot;000000000&quot;,
-        &quot;marketing_permission&quot;: true,
+        &quot;phone&quot;: &quot;07777777777&quot;,
+        &quot;company&quot;: &quot;&quot;,
+        &quot;dob&quot;: &quot;1944-01-10T00:00:00&quot;,
         &quot;associated_venues&quot;: [
-          &quot;559fb07dc087b3be148b457b&quot;
+          &quot;552435790df6902b7256f237&quot;
+        ],
+        &quot;marketing_preferences&quot;: [
+          {
+            &quot;id&quot;: &quot;5b0743f00000000000000000&quot;,
+            &quot;opt_in_date&quot;: &quot;2018-11-21T15:12:42&quot;
+          },
+          {
+            &quot;id&quot;: &quot;5b0e8f88303b2321ea337f83&quot;,
+            &quot;opt_in_date&quot;: &quot;2018-11-21T15:12:42&quot;
+          },
+          {
+            &quot;id&quot;: &quot;5bb1ee308264ee5a4d665cb2&quot;,
+            &quot;opt_in_date&quot;: &quot;2018-11-21T15:12:42&quot;
+          }
         ]
       }
     ],
@@ -1347,13 +1361,18 @@
     &quot;numFound&quot;: 1
   },
   &quot;status&quot;: 200,
-  &quot;requestTime&quot;: &quot;2017-05-09T14:17:34&quot;,
-  &quot;responseTime&quot;: &quot;2017-05-09T14:17:34&quot;,
+  &quot;requestTime&quot;: &quot;2018-11-21T15:12:59&quot;,
+  &quot;responseTime&quot;: &quot;2018-11-21T15:12:59&quot;,
+  &quot;revision&quot;: {
+    &quot;hostname&quot;: false,
+    &quot;branch&quot;: &quot;71d1ee4&quot;,
+    &quot;testMode&quot;: true
+  },
   &quot;statusText&quot;: &quot;OK&quot;,
   &quot;url&quot;: &quot;\/v4\/users\/&quot;,
   &quot;method&quot;: &quot;GET&quot;,
   &quot;params&quot;: {
-    &quot;search&quot;: &quot;test-user@designmynight.com&quot;
+    &quot;search&quot;: &quot;test&quot;
   }
 }
 </code></pre>
