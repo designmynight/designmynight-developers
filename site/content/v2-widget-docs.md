@@ -66,6 +66,17 @@ The following attributes can be used to customise the functionality of the widge
 </script>
 ```
 
+#### Using a custom source
+
+```html
+<link rel="stylesheet" href="//onsass.designmynight.com">
+<script
+   src="//widgets.designmynight.com/bookings-partner.min.js"
+   dmn-booking-form
+   custom-source="Xmas Bookings">
+</script>
+```
+
 ## Appearance Customisation
 
 The stylesheet URL accepts parameters to customise the appearance of the widget.
