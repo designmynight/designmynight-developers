@@ -73,7 +73,7 @@ The following attributes can be used to customise the functionality of the widge
 <script
    src="//widgets.designmynight.com/bookings-partner.min.js"
    dmn-booking-form
-   custom-source="Xmas Bookings">
+   custom-source="Xmas page">
 </script>
 ```
 
