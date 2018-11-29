@@ -1179,6 +1179,12 @@
 <td>No</td>
 <td>This can be any string, and is used to identify the widget when retrieving it using the <code>getWidgetByRef()</code> method of the <code>BookingFormHelper</code> class.</td>
 </tr>
+
+<tr>
+<td><code>custom-source</code></td>
+<td>No</td>
+<td>This can be any string, and is used to track where bookings placed on this widget have come from.</td>
+</tr>
 </tbody>
 </table>
 
@@ -1212,6 +1218,16 @@
     src=&quot;//widgets.designmynight.com/bookings-partner.min.js&quot;
     dmn-booking-form
     ref=&quot;foo&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+
+<h4 id="using-a-custom-source">Using a custom source</h4>
+
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//onsass.designmynight.com&quot;&gt;
+&lt;script
+   src=&quot;//widgets.designmynight.com/bookings-partner.min.js&quot;
+   dmn-booking-form
+   custom-source=&quot;Xmas page&quot;&gt;
 &lt;/script&gt;
 </code></pre>
 
