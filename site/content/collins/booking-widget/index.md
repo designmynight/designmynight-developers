@@ -189,7 +189,7 @@ Field | Description
 venue_id | The ID of the venue (only if multiple venues on the form)
 type | The name of the booking type to be selected
 num_people | The number of guests in the booking
-date | The date of the booking, as a JavaScript date object
+date | The date of the booking, YYYY-MM-DD
 time | The time of the booking, in 24-hour format HH:MM
 duration | The duration of the booking, in minutes, eg 120 (for 2 hours)
 
