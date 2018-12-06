@@ -2,7 +2,7 @@
 
 If you are unable to add the Collins booking widget, it's possible for you to include a booking URL to your website instead. 
 
-Here is an example of partners using a booking URL: [The Park Tavern](https://www.parktavernsw18.com/book/)
+Here is an example of partners using a booking URL: [The Park Tavern](https://www.parktavernsw18.com/#reservations-section)
 
 To create a booking URL for your venue, you will need to use a URL of the following form:
 
