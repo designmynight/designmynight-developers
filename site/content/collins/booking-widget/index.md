@@ -59,8 +59,6 @@ Here’s a guide to help you [Add the booking widget to your Squarespace site](h
 
 Examples of partners using a Squarespace site:
 
-[Dokke](https://www.dokke.co.uk/private-bookings/)
-
 [Little Nan's](https://www.littlenans.co.uk/make-a-booking/)
 
 [Novi Cambridge](http://novicambridge.co.uk/reservations/)
