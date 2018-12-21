@@ -96,3 +96,10 @@ Here is an example of a pre-order with a single item that has a single option ad
 
 The `label` and `options_string` refer to the customisation of the pre-order item.
  
+ **5. I'm querying the API and noticed that my response is missing cancelled bookings. Is there a way to include rejected bookings? **
+ 
+The API defaults to just including bookings that are new, in progress or confirmed. Any rejected bookings will not be included. 
+
+If you would like to include rejected bookings, you can change the query to include `&status=include_rejected`. 
+
+Alternatively, if you are looking to just return rejected bookings, you can query by `&status=rejected`.
