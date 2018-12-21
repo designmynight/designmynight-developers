@@ -48,7 +48,7 @@ Here’s a guide to help you [Add the booking widget to your Wordpress site](htt
 
 Examples of partners using a Wordpress site:
 
-[Humble Grape Battersea](https://www.humblegrape.co.uk/wine-bar/battersea/)
+[Hotel Bosco](https://hotelbosco.co.uk/boscolounge/cocktails/)
 
 [The Stable](https://stablepizza.com/book-a-table/)
 
@@ -68,7 +68,7 @@ Here's a guide to help you [Add the booking widget to your Wix site](https://sup
 
 Example of partners using a Wix site:
 
-[Duck Duck Goose](https://www.duckduckgooselondon.com/)
+[The Barrel Project](https://www.thebarrelproject.co.uk/)
 
 ## How to add the widget to Facebook
 Here's a guide to help you [Add the booking widget to your Facebook page](https://collins.uservoice.com/knowledgebase/articles/478066-facebook-widget-set-up)
