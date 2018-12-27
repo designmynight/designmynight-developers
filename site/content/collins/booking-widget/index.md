@@ -48,9 +48,9 @@ Here’s a guide to help you [Add the booking widget to your Wordpress site](htt
 
 Examples of partners using a Wordpress site:
 
-[Hotel Bosco](https://hotelbosco.co.uk/boscolounge/cocktails/)
-
 [The Stable](https://stablepizza.com/book-a-table/)
+
+[Hotel Bosco](https://hotelbosco.co.uk/boscolounge/cocktails/)
 
 ## How to add the widget to Squarespace
 Here’s a guide to help you [Add the booking widget to your Squarespace site](https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-HTML-CSS-and-JavaScript)
