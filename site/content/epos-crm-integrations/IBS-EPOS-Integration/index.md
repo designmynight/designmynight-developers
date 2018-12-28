@@ -37,6 +37,10 @@ You will not be able to proceed with adding the payment without selecting an opt
 
 This way your team has full control as to which payments get pushed to your tills.
 
+* **Refunds**
+
+We now have the option to set up the integration so that when you [refund a deposit](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer) or delete an 'Other' payment in Collins, this change will be pushed to Stocklink so that Collins and your tills are synced. To enable this function, please contact your Collins Account Manager.
+
 ## Setting up the Collins/IBS Integration:
 If you would like to set up the integration to push bookings/payments to your IBS EPOS, you will need to contact your Collins Account Manager with the following details (you will be able to get these from IBS):
 
