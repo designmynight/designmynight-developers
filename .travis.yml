@@ -13,8 +13,6 @@ before_deploy:
 
 # Deploy to GitHub pages
 deploy:
-  edge:
-    branch: v1.8.47
   provider: pages
   skip_cleanup: true
   keep_history: true
