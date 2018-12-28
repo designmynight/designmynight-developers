@@ -6,7 +6,7 @@ services: docker
 
 # Build the files
 install:
-  - make
+  - docker-compose run hugo hugo
 
 before_deploy:
   - rm dist/.gitignore
