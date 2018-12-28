@@ -1117,12 +1117,12 @@
 
 <p>The purpose of the integration between Collins and EPOS is to be able to push the details of bookings and their associated deposits to the Kobas Epos system.</p>
 
+<p>Collins will push valid bookings to the EPOS as soon as they are created in Collins.</p>
+
 <p><strong>The integration can be set to:</strong></p>
 
 <ul>
-<li><p>Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.</p></li>
-
-<li><p>Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created in Collins. Otherwise, bookings will be sent at 7am (and every hour after) on the morning of the booking date.</p></li>
+<li>Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.</li>
 </ul>
 
 <p><strong>Bookings will be sent to the Kobas Reservations with the following details:</strong></p>
@@ -1143,10 +1143,7 @@
 <ul>
 <li>Full Name</li>
 <li>Email</li>
-<li>DOB</li>
 <li>Company</li>
-<li>Email address</li>
-<li>Phone</li>
 </ul>
 
 <p><img src="https://static.designmynight.com/uploads/2018/11/Kobas-customer-2.png" alt="Example of the Customer Record on Kobas" /></p>
@@ -1192,7 +1189,6 @@
 
 <ul>
 <li>Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.</li>
-<li>Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created. Otherwise, bookings will be sent at 7am (and every hour after) on the morning of the booking date.</li>
 </ul>
 
 <h2 id="checking-that-the-collins-kobas-integration-is-set-up-correctly">Checking that the Collins/Kobas Integration is set up correctly</h2>
@@ -1227,16 +1223,14 @@
 <li>Number of Guests</li>
 <li>Start Time</li>
 <li>End Time</li>
-<li>Email Address or Phone Number</li>
+<li>Email Address</li>
 </ul>
 
 <p>Without all these details, we will be unable to push the booking to your tills.</p>
 
 <h2 id="refunding-on-collins-and-kobas">Refunding on Collins and Kobas</h2>
 
-<p>If you <strong>fully</strong> <a href="https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer">refund a deposit</a>, the refund will be pushed to Kobas.</p>
-
-<p>Currently, the integrations does <strong>not</strong> support pushing partial refunds to Kobas.</p>
+<p>Currently, the integration does <strong>not</strong> support pushing refunds to Kobas. As such, if you <a href="https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer">refund a payment within Collins</a>, you will also have to manually refund the payment within Kobas.</p>
 
 			
 			<aside class="copyright" role="note">

@@ -42,9 +42,9 @@ Details can be set to:
       
       <guid>https://developers.designmynight.com/epos-crm-integrations/kobas-epos-integration/</guid>
       <description>Overview of the Collins/Kobas EPOS Integration The purpose of the integration between Collins and EPOS is to be able to push the details of bookings and their associated deposits to the Kobas Epos system.
+Collins will push valid bookings to the EPOS as soon as they are created in Collins.
 The integration can be set to:
- Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.
- Push bookings ASAP: If set, will push valid bookings to the EPOS as soon as they are created in Collins.</description>
+ Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS.</description>
     </item>
     
     <item>
