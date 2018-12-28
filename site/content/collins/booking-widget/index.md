@@ -244,7 +244,8 @@ If you have added multiple Collins booking widgets to the same page on your webs
 
 Forms are accessed by their ID, but there's currently no way to set the ID for a particular form. Instead, you'd need to retrieve the numerical ID from the form's ID attribute once it's been written to the page, using something like this, changing the `getElementById` part to something that identifies a container of the form you want to target:
 
-```var formId = document.getElementById('form-container').getElementsByClassName('dmn-form')[0].getAttribute('id').substr('dmn-form-'.length);```
+```var formId = document.getElementById('form-container').getElementsByClassName('dmn-form')[0]
+.getAttribute('id').substr('dmn-form-'.length);```
 
 Once you have the ID you can then set values on that particular form by passing an object to `DMN.val()` like this:
 
