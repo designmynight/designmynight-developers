@@ -137,6 +137,7 @@ Submit button | `.dmn-form button.submit`
   background-image: url('https://example.com/path/to/image.png');
 }
 ```
+### Example of Customised Partner Widgets
 
 You can also have a look through these [examples](https://docs.google.com/document/d/1VJ4sdW05MMdq1vGnEkFq2A2HQ2LjKzl3315Pu1hLBmI/edit) of what other venues have done (to get an idea of what can be done). 
 
