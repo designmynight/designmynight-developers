@@ -1467,7 +1467,8 @@ DMN.val('type', 'Dinner').hideInput('type');  // Set the booking type to 'Dinner
 
 <p>Forms are accessed by their ID, but there&rsquo;s currently no way to set the ID for a particular form. Instead, you&rsquo;d need to retrieve the numerical ID from the form&rsquo;s ID attribute once it&rsquo;s been written to the page, using something like this, changing the <code>getElementById</code> part to something that identifies a container of the form you want to target:</p>
 
-<p><code>var formId = document.getElementById('form-container').getElementsByClassName('dmn-form')[0].getAttribute('id').substr('dmn-form-'.length);</code></p>
+<p><code>var formId = document.getElementById('form-container').getElementsByClassName('dmn-form')[0]
+.getAttribute('id').substr('dmn-form-'.length);</code></p>
 
 <p>Once you have the ID you can then set values on that particular form by passing an object to <code>DMN.val()</code> like this:</p>
 
