@@ -173,7 +173,7 @@ Here are some great examples of customised headers/buttons that our partners hav
 
 [Wahaca](http://www.wahaca.co.uk/locations/covent-garden/)
 
-[Buffalo & Rye](http://www.buffaloandrye.co.uk/)
+[Buffalo & Rye](https://www.buffaloandrye.co.uk/)
 
 ## Setting and Hiding Fields on your Widget
 
