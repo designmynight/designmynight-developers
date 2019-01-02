@@ -51,6 +51,7 @@ Field | Type | Description | Example
 ----- | ------ | ----- | -----
 _id | Hex ID | An internal unique ID for the booking | 57cfefdbc71620410eeae96b
 admin_notes | Array | A list of internal (booking manager) notes added about the booking | `[{"note": "Need to contact"}]`
+assigned_areas | Array | An array of areas which this booking has been assigned to | `[{"id": "123abc", "name": "Table 1", "zone": "234def"}]`
 assigned_to | Hex ID | The unique ID of the user who this booking is currently assigned to | 54b4e1060df690cd5f0b033f
 booking_id  | Integer | A booking reference, which the customer sees as DMN-XXXXXXX | 11771898986
 comments | Array | A list of notes about the booking to be used by venue staff (AKA 'run sheet notes') | `[{"comment": "Returning visitor"}]`
