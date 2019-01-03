@@ -22,6 +22,8 @@ You are able to fix as many of the following booking parameters on your booking 
 * Duration
 * Number of Guests
 
+Guide to help you [fix additional parameters on your booking URL](https://collins.uservoice.com/knowledgebase/articles/1893409-booking-url-generator)
+
 Note: it is **not** required to select any additional parameters. You can set multiple parameters at the same time. 
 
 If you fix **all** the above parameters at the same time, you would effectively be filling all the required parameters on the form. As such customers would be directed straight to the next step of the booking process (and will not be prompted to select any booking parameters). 
