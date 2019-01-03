@@ -1122,102 +1122,29 @@
 
 <p>Here is an example of partners using a booking URL: <a href="https://www.parktavernsw18.com/#reservations-section">The Park Tavern</a></p>
 
-<p>To create a booking URL for your venue, you will need to use a URL of the following form:</p>
+<p>You can access the booking link for your venue within your Collins settings. Here&rsquo;s a guide to help you <a href="https://collins.uservoice.com/knowledgebase/articles/1893409-booking-url-generator">access the booking link for a specific venue</a></p>
 
-<p><a href="https://bookings.designmynight.com/book?venue_id=VENUEID&amp;source=partner&amp;format=modal">https://bookings.designmynight.com/book?venue_id=VENUEID&amp;source=partner&amp;format=modal</a></p>
-
-<p>Where you have to replace &lsquo;VENUEID&rsquo; with your <a href="http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-id">unique Collins Venue ID</a>.</p>
-
-<p>Please note that you will never be charged for covers booked through this URL (the source will count as your own website).</p>
-
-<h2 id="booking-url-for-a-specific-booking-type">Booking URL for a specific booking type</h2>
-
-<p>If you are looking to create a booking link for a specific booking type (for example if you want to send a link out in a targetted mail out), you can create a URL of the following format:</p>
-
-<p><a href="https://bookings.designmynight.com/book?venue_id=VENUEID&amp;venue_group=VENUEGROUPID&amp;type=BOOKINGTYPEID&amp;source=partner&amp;fixed_type=1">https://bookings.designmynight.com/book?venue_id=VENUEID&amp;venue_group=VENUEGROUPID&amp;type=BOOKINGTYPEID&amp;source=partner&amp;fixed_type=1</a></p>
-
-<p>Where you have to replace <a href="http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-id">VENUEID</a>, <a href="http://developers.designmynight.com/faqs/booking-url/#how-to-find-your-collins-venue-group-id">VENUEGROUPID</a> and <a href="http://developers.designmynight.com/faqs/booking-url/#how-to-find-the-booking-type-id">BOOKINGTYPEID</a> accordingly.</p>
-
-<p><strong>Example:</strong></p>
-
-<p><a href="https://bookings.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=58be86d4c71620a90d97aba4&amp;source=partner&amp;fixed_type=1">https://bookings.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=58be86d4c71620a90d97aba4&amp;source=partner&amp;fixed_type=1</a></p>
-
-<h2 id="how-to-find-your-collins-venue-id">How to find your Collins Venue ID</h2>
-
-<p>Your user account will require <a href="https://collins.uservoice.com/knowledgebase/articles/942757-user-permissions-explained-and-how-to-change-them">Bookings Manager permissions</a>. If you cannot see this option, please speak to your key user to review your user permissions.</p>
-
-<ol>
-<li>Log into your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
-<li>Settings</li>
-<li>Venues</li>
-<li>Select your venue</li>
-<li>Your Venue ID will be included at the <a href="https://static.designmynight.com/uploads/2017/12/Collins-Venue-ID1-optimised.png">end in the URL</a></li>
-</ol>
-
-<h2 id="how-to-find-your-collins-venue-group-id">How to find your Collins Venue Group ID</h2>
-
-<p>Your user account will require venue group level access. Please speak to your key user if you need updated user access.</p>
-
-<ol>
-<li>Log into your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
-<li>Settings</li>
-<li>Venue Group</li>
-<li>Your Venue Group ID will be included at the <a href="https://static.designmynight.com/uploads/2017/12/Venue-Group-ID-optimised.png">end in the URL</a></li>
-</ol>
-
-<h2 id="how-to-find-the-booking-type-id">How to find the Booking Type ID</h2>
-
-<ol>
-<li>Log into your <a href="https://admin.designmynight.com/collins">Collins admin</a></li>
-<li>Settings</li>
-<li>Venues</li>
-<li>Select your venue</li>
-<li>Booking Widget</li>
-<li>Tick &lsquo;Limit to a single booking type&rsquo;</li>
-<li>Tick the specific booking type that you are looking for</li>
-<li>The Booking ID will follow <code>type=</code> in your newly generated <a href="https://static.designmynight.com/uploads/2017/12/Booking-Type-ID-optimised.png">widget code</a></li>
-</ol>
+<p>Please note that you will never be charged for covers booked through this link (the source will count as your own website).</p>
 
 <h2 id="fixing-additional-parameters-on-your-booking-url">Fixing additional parameters on your Booking URL</h2>
 
-<p>If you want to fix any other parameters (for example if the booking type is for a one-off event and so you only wish to display the specific time and date), you can include the following parameters in your booking url, separated with <code>&amp;</code>:</p>
+<p>Within Collins, you have the flexibility to fix specific parameters of your booking URL.</p>
 
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Comments</th>
-</tr>
-</thead>
+<p>This is particularly useful if you have lots of booking types set up and you want to direct your customers to book a specific booking type. For example, if you are sending out a newsletter for NYE and want to direct customers to a booking link that only displays your NYE booking type.</p>
 
-<tbody>
-<tr>
-<td><code>date=</code>DATE</td>
-<td>where DATE is to be given in the form YYYY-MM-DD eg 2016-03-12</td>
-</tr>
+<p>You are able to fix as many of the following booking parameters on your booking URL:</p>
 
-<tr>
-<td><code>time=</code>STARTTIME</td>
-<td>where STARTTIME is to be given in the 24-hour form HH:MM eg 15:00</td>
-</tr>
+<ul>
+<li>Booking Type</li>
+<li>Date</li>
+<li>Start Time</li>
+<li>Duration</li>
+<li>Number of Guests</li>
+</ul>
 
-<tr>
-<td><code>duration=</code>DURATION</td>
-<td>where DURATION is to be given in terms of hours eg 2.5 (which would be 2 hours 30 mins)</td>
-</tr>
+<p>Note: it is <strong>not</strong> required to select any additional parameters. You can set multiple parameters at the same time.</p>
 
-<tr>
-<td><code>num_people</code>=NUMBEROFPEOPLE</td>
-<td>input your number of guests</td>
-</tr>
-</tbody>
-</table>
-
-<p><strong>Example:</strong> A NYE Dinner booking type starting at 6pm:</p>
-
-<p><a href="https://bookings.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=5a3cd86849def9264240cd17&amp;date=2017-12-31&amp;time=18:00&amp;source=partner&amp;fixed_type=1">https://bookings.designmynight.com/book?venue_id=552435790df6902b7256f237&amp;venue_group=5524371d0df690ad7156f2ea&amp;type=5a3cd86849def9264240cd17&amp;date=2017-12-31&amp;time=18:00&amp;source=partner&amp;fixed_type=1</a></p>
-
-<p><strong>Please note:</strong> you will be unable to fix <strong>all</strong> the above parameters at the same time. Otherwise, you would be effectively filling all the required parameters which would proceed to the next step of the booking process.</p>
+<p>If you fix <strong>all</strong> the above parameters at the same time, you would effectively be filling all the required parameters on the form. As such customers would be directed straight to the next step of the booking process (and will not be prompted to select any booking parameters).</p>
 
 <h2 id="displaying-your-booking-url-in-a-different-language">Displaying your Booking URL in a different language</h2>
 
