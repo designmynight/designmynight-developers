@@ -362,5 +362,6 @@ Yes. It will be up to your web developer to make this change.
 
 Your web developer will be able to add custom Javascript - for example, [Caddyshackers](http://caddyshackers.co.uk/).
 
+**12. Does the widget offer a modal view?**
 
-
+Yes, the widget offers a modal view on desktops. On mobile devices, it will redirect the user.  
