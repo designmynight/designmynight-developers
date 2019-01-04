@@ -28,6 +28,8 @@ Note: it is **not** required to select any additional parameters. You can set mu
 
 If you fix **all** the above parameters at the same time, you would effectively be filling all the required parameters on the form. As such customers would be directed straight to the next step of the booking process (and will not be prompted to select any booking parameters). 
 
+Unlike with the [Collins booking widget](https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes), the booking link does not currently support displaying multiple venues or fixing specific booking types on a single link.  
+
 ## Displaying your Booking URL in a different language
 
 Collins gives you the option to display your booking widget in the following languages:
