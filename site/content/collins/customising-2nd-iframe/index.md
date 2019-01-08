@@ -34,6 +34,7 @@ Element | CSS Selector | Notes for Collins users
 [Add Dietary Requirements button](https://static.designmynight.com/uploads/2018/10/btn-add-diatary-requirements.png) |`.btn-add-diatary-requirements`|
 [Order Summary](https://static.designmynight.com/uploads/2018/10/Order-Summary.png) |`.order-summary`|
 [Pre-Order Header](https://static.designmynight.com/uploads/2018/10/preorder-menus-h2-optimised.png)|`.preorder-menus h2`|
+[Pre-Order Instructions](https://static.designmynight.com/uploads/2019/01/pre-order-summary-optimised.png)|`.instruction-summary`|
 
 ## Customising 2nd iFrame FAQs
 
