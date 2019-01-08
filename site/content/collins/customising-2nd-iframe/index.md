@@ -36,6 +36,23 @@ Element | CSS Selector | Notes for Collins users
 [Pre-Order Header](https://static.designmynight.com/uploads/2018/10/preorder-menus-h2-optimised.png)|`.preorder-menus h2`|
 [Pre-Order Instructions](https://static.designmynight.com/uploads/2019/01/pre-order-summary-optimised.png)|`.instruction-summary`|
 
+## Example
+
+```
+.instruction-summary {
+    display: none;
+}
+
+.btn-add-dietary-requirements {
+    background-color: red;
+}
+```
+
+The above CSS would result in the following:
+
+![Example of customised Pre-Order](https://static.designmynight.com/uploads/2019/01/pre-order-example.png)
+
+
 ## Customising 2nd iFrame FAQs
 
 **1. When scrolling on a different device/screen size, the 2nd iFrame isn’t fully showing?**
