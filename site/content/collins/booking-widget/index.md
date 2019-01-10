@@ -342,11 +342,11 @@ With the Collins widget, the second iframe (after you hit the initial 'Enquire N
 
 If your second iframe is not appearing as a pop-up, this may be because you have added the widget to a separate page (and then embedded that separate page onto your website).
 
-If the spaces you've embedded it is small, our form will think that the user's screen is small hence redirecting that embed. 
+If the space you've embedded it in is small, our form will think that the user's screen is small hence redirecting that embed. 
 
-A good way to check is to check your console and check whether your `iframe` tag has a `src` attribute.  
+A good way to troubleshoot is to check your console and see whether your `iframe` tag has a `src` attribute.  
 
-If so, you will need to  remove the widget and try and add the widget directly to your main reservation page. 
+If it does, you will need to  remove the widget and try and add the widget directly to your main reservation page. 
 
 **13. I've added the widget to my Facebook page. It's displaying correctly on desktop but I can't find the tab on mobile.** 
 
