@@ -328,7 +328,7 @@ You can disable it following these steps:
 5. Untick "Enable Ajax Loading" 
 6. Click SAVE
 
-**9. I'm trying to add the widget to my Facebook page but am getting a '_This page has not got permission to add a custom tab_' error meessage.**
+**11. I'm trying to add the widget to my Facebook page but am getting a '_This page has not got permission to add a custom tab_' error meessage.**
 
 Facebook only allows pages with 2000 or more fans (or pages managed by whitelisted apps) to have the ability to add the Facebook Page Tabs feature.
 
@@ -336,7 +336,7 @@ As you would be adding the Collins widget to a Facebook Page Tab, your Facebook 
 
 More information [here](https://developers.facebook.com/docs/pages/tabs). 
 
-**10. Will the second iframe always appear as a pop up?**
+**12. Will the second iframe always appear as a pop up?**
 
 With the Collins widget, the second iframe (after you hit the initial 'Enquire Now' button on the widget) should always display as a pop up. However, if the user's screen is small, it may re-direct instead. 
 
@@ -348,7 +348,7 @@ A good way to check is to check your console and check whether your `iframe` tag
 
 If so, you will need to  remove the widget and try and add the widget directly to your main reservation page. 
 
-**9. I've added the widget to my Facebook page. It's displaying correctly on desktop but I can't find the tab on mobile.** 
+**13. I've added the widget to my Facebook page. It's displaying correctly on desktop but I can't find the tab on mobile.** 
 
 The Collins Facebook widget will be added to a Custom Tab on your Facebook page. The custom tabs are not currently supported on mobile. 
 
@@ -356,7 +356,7 @@ More information [here](https://developers.facebook.com/support/bugs/43517347317
 
 Alternatively you can add a 'Book Now' button to your Facebook page which will display on mobile. 
 
-**10. Is it possible to change the names of the fields. For example from 'Number of People' to 'Number of Guests'?**
+**14. Is it possible to change the names of the fields. For example from 'Number of People' to 'Number of Guests'?**
 
 Yes. It will be up to your web developer to make this change. 
 
@@ -364,12 +364,12 @@ Your web developer can override the CSS to change this - for example, [The Alleg
 
 Alternatively, you can look to add custom Javascript - for example, [Barrio Bars](http://www.barriobars.com/). 
 
-**11. Is it possible to change the text on the dropdown options. For example from '1 Guests' to '1 Diner'?**
+**15. Is it possible to change the text on the dropdown options. For example from '1 Guests' to '1 Diner'?**
 
 Yes. It will be up to your web developer to make this change. 
 
 Your web developer will be able to add custom Javascript - for example, [Caddyshackers](http://caddyshackers.co.uk/).
 
-**12. Does the widget offer a modal view?**
+**16. Does the widget offer a modal view?**
 
 Yes, the widget offers a modal view on desktops. On mobile devices, it will redirect the user.  
