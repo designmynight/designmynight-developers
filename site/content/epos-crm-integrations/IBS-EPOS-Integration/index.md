@@ -25,7 +25,7 @@ All [manual/request payments](https://collins.uservoice.com/knowledgebase/articl
 
 * **Payments claimed by Card Authentication** 
 
-If you claim a [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) payment, Collins will push the payment to your tills.
+We now have the option to set up the integration so that when you claim a [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) payment, Collins will push the claimed payment to your tills. To enable this function, please contact your Collins Account Manager.
 
 * **Pushing 'Other' Payments**
 
@@ -39,7 +39,7 @@ This way your team has full control as to which payments get pushed to your till
 
 * **Refunds**
 
-We now have the option to set up the integration so that when you [refund a deposit](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer) or delete an 'Other' payment in Collins, this change will be pushed to Stocklink so that Collins and your tills are synced. To enable this function, please contact your Collins Account Manager.
+When you [refund a deposit](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer) or delete an 'Other' payment in Collins, this change will be pushed to Stocklink so that Collins and your tills are synced. 
 
 ## Setting up the Collins/IBS Integration:
 If you would like to set up the integration to push bookings/payments to your IBS EPOS, you will need to contact your Collins Account Manager with the following details (you will be able to get these from IBS):
