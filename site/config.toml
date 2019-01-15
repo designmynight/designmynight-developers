@@ -101,6 +101,12 @@ googleAnalytics = "UA-12385609-13"
 	url    = "collins/tracking/"
 	parent = "collins"
 	weight = 208
+	
+[[menu.main]]
+	name   = "Customer Widget"
+	url    = "collins/customer-widget/"
+	parent = "collins"
+	weight = 209	
 
 
 [[menu.main]]
