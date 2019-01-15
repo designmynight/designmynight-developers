@@ -28,6 +28,7 @@ The following attributes can be used to customise the functionality of the widge
 | `hide-offers`      | No       | Whether or not you would like to surface offers on this widget. Regardless of the state of this attribute, offers will always be selectable on the final stage. When present, the value must be `true` or `false` |
 | `search-venues`    | No       | Whether or not you would like a search bar at the top of the Venue Selection stage, to allow users to quickly find the venue by name or address. When present, the value must be `true` or `false` |
 | `ref`              | No       | This can be any string, and is used to identify the widget when retrieving it using the `getWidgetByRef()` method of the `BookingFormHelper` class. |
+| `custom-source`    | No       | This can be any string, and is used to track where bookings placed on this widget have come from.
 
 ### Examples
 
@@ -62,6 +63,17 @@ The following attributes can be used to customise the functionality of the widge
     src="//widgets.designmynight.com/bookings-partner.min.js"
     dmn-booking-form
     ref="foo">
+</script>
+```
+
+#### Using a custom source
+
+```html
+<link rel="stylesheet" href="//onsass.designmynight.com">
+<script
+   src="//widgets.designmynight.com/bookings-partner.min.js"
+   dmn-booking-form
+   custom-source="Xmas page">
 </script>
 ```
 

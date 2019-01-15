@@ -25,7 +25,7 @@ All [manual/request payments](https://collins.uservoice.com/knowledgebase/articl
 
 * **Payments claimed by Card Authentication** 
 
-If you claim a [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) payment, Collins will push the payment to your tills.
+We now have the option to set up the integration so that when you claim a [Collins Card Authentication](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to) payment, Collins will push the claimed payment to your tills. To enable this function, please contact your Collins Account Manager.
 
 * **Pushing 'Other' Payments**
 
@@ -36,6 +36,10 @@ Depending on whether you would like to push the 'Other' payment to your tills, y
 You will not be able to proceed with adding the payment without selecting an option on the 'Push to Till' drop down.
 
 This way your team has full control as to which payments get pushed to your tills.
+
+* **Refunds**
+
+When you [refund a deposit](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer) or delete an 'Other' payment in Collins, this change will be pushed to Stocklink so that Collins and your tills are synced. 
 
 ## Setting up the Collins/IBS Integration:
 If you would like to set up the integration to push bookings/payments to your IBS EPOS, you will need to contact your Collins Account Manager with the following details (you will be able to get these from IBS):
@@ -61,6 +65,7 @@ If you would like to set up the integration to push bookings/payments to your IB
 You will also need to specify **which bookings** you would like Collins to push to your tills:
 
 * Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.
+* [Refunds](https://developers.designmynight.com/epos-crm-integrations/ibs-epos-integration/#refunding-on-collins-and-ibs): if set, refunds issued within Collins will update on Stocklink. Otherwise, refunds will not push and you will have to manually update your tills after refunding the payment within Collins. 
 
 ## How to push bookings/deposits that were added to Collins before the IBS integration goes live
 
@@ -111,7 +116,7 @@ e.g. John-Edwards **NOT** John Edwards
 
 ## Refunding on Collins and IBS
 
-If you [refund a deposit](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer) or delete an 'Other' payment in Collins, this change will now be pushed to Stocklink so that Collins and your tills are synced. 
+We now have the option to set up the integration so that when you [refund a deposit](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer) or delete an 'Other' payment in Collins, this change will be pushed to Stocklink so that Collins and your tills are synced. To enable this function, please let your Collins Account Manager know. 
 
 ## IBS EPOS Integration FAQS
 **1. If we set up the integration to push all bookings, will my in progress enquiries get pushed to tills?** 

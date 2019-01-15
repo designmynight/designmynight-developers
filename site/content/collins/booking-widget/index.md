@@ -48,9 +48,9 @@ Here’s a guide to help you [Add the booking widget to your Wordpress site](htt
 
 Examples of partners using a Wordpress site:
 
-[Humble Grape Battersea](https://www.humblegrape.co.uk/wine-bar/battersea/)
-
 [The Stable](https://stablepizza.com/book-a-table/)
+
+[Hotel Bosco](https://hotelbosco.co.uk/boscolounge/cocktails/)
 
 ## How to add the widget to Squarespace
 Here’s a guide to help you [Add the booking widget to your Squarespace site](https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-HTML-CSS-and-JavaScript)
@@ -58,8 +58,6 @@ Here’s a guide to help you [Add the booking widget to your Squarespace site](h
 **_Please note:_** you need to add a **Code Block**, not an Embed Block.
 
 Examples of partners using a Squarespace site:
-
-[Dokke](https://www.dokke.co.uk/private-bookings/)
 
 [Little Nan's](https://www.littlenans.co.uk/make-a-booking/)
 
@@ -70,7 +68,7 @@ Here's a guide to help you [Add the booking widget to your Wix site](https://sup
 
 Example of partners using a Wix site:
 
-[Duck Duck Goose](https://www.duckduckgooselondon.com/)
+[The Barrel Project](https://www.thebarrelproject.co.uk/)
 
 ## How to add the widget to Facebook
 Here's a guide to help you [Add the booking widget to your Facebook page](https://collins.uservoice.com/knowledgebase/articles/478066-facebook-widget-set-up)
@@ -87,7 +85,7 @@ Please note that you will never be charged for covers booked this way (the sourc
 
 Here's a guide to help you [add a 'Book Now' button to your Facebook page](https://www.facebook.com/help/977869848936797?helpref=related).
 
-For the URL, you can either direct customers to the Reservations page on your own website or to your [Collins Booking URL](http://developers.designmynight.com/collins/booking-url/#booking-url-for-a-specific-venue).
+For the URL, you can either direct customers to the Reservations page on your own website or to your [Collins Booking Link](https://collins.uservoice.com/knowledgebase/articles/1893409-booking-url-generator).
 
 Please note that you will never be charged for covers booked this way (the source will count as your own website).
 
@@ -139,6 +137,7 @@ Submit button | `.dmn-form button.submit`
   background-image: url('https://example.com/path/to/image.png');
 }
 ```
+### Example of Customised Partner Widgets
 
 You can also have a look through these [examples](https://docs.google.com/document/d/1VJ4sdW05MMdq1vGnEkFq2A2HQ2LjKzl3315Pu1hLBmI/edit) of what other venues have done (to get an idea of what can be done). 
 
@@ -174,7 +173,7 @@ Here are some great examples of customised headers/buttons that our partners hav
 
 [Wahaca](http://www.wahaca.co.uk/locations/covent-garden/)
 
-[Buffalo & Rye](http://www.buffaloandrye.co.uk/)
+[Buffalo & Rye](https://www.buffaloandrye.co.uk/)
 
 ## Setting and Hiding Fields on your Widget
 
@@ -189,7 +188,7 @@ Field | Description
 venue_id | The ID of the venue (only if multiple venues on the form)
 type | The name of the booking type to be selected
 num_people | The number of guests in the booking
-date | The date of the booking, as a JavaScript date object
+date | The date of the booking, YYYY-MM-DD
 time | The time of the booking, in 24-hour format HH:MM
 duration | The duration of the booking, in minutes, eg 120 (for 2 hours)
 
@@ -241,11 +240,13 @@ Example of a partner with a German booking widget: [Petit Chef Berlin](https://b
 **_Please note:_** Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/collins/booking-widget/#customising-your-collins-booking-widget).    
 
 ## Multiple Booking Widgets
-If you have added multiple Collins booking widgets to the same page on your website and are doing a `DMN.val` (for example to add a custom return URL and track each widget on Google Analytics), you will need to do the following to set which specific widget should be targetted. 
+If you have added multiple Collins booking widgets to the same page on your website and are doing a `DMN.val` (for example to [add a custom return URL and track each widget on Google Analytics](https://developers.designmynight.com/collins/tracking/#custom-return-url)), you will need to do the following to set which specific widget should be targetted. 
 
 Forms are accessed by their ID, but there's currently no way to set the ID for a particular form. Instead, you'd need to retrieve the numerical ID from the form's ID attribute once it's been written to the page, using something like this, changing the `getElementById` part to something that identifies a container of the form you want to target:
 
-```var formId = document.getElementById('form-container').getElementsByClassName('dmn-form')[0].getAttribute('id').substr('dmn-form-'.length);```
+```
+var formId = document.getElementById('form-container').getElementsByClassName('dmn-form')[0].getAttribute('id').substr('dmn-form-'.length);
+```
 
 Once you have the ID you can then set values on that particular form by passing an object to `DMN.val()` like this:
 
@@ -327,7 +328,7 @@ You can disable it following these steps:
 5. Untick "Enable Ajax Loading" 
 6. Click SAVE
 
-**9. I'm trying to add the widget to my Facebook page but am getting a '_This page has not got permission to add a custom tab_' error meessage.**
+**11. I'm trying to add the widget to my Facebook page but am getting a '_This page has not got permission to add a custom tab_' error meessage.**
 
 Facebook only allows pages with 2000 or more fans (or pages managed by whitelisted apps) to have the ability to add the Facebook Page Tabs feature.
 
@@ -335,11 +336,19 @@ As you would be adding the Collins widget to a Facebook Page Tab, your Facebook 
 
 More information [here](https://developers.facebook.com/docs/pages/tabs). 
 
-**10. Will the second iframe always appear as a pop up?**
+**12. Will the second iframe always appear as a pop up?**
 
 With the Collins widget, the second iframe (after you hit the initial 'Enquire Now' button on the widget) should always display as a pop up. However, if the user's screen is small, it may re-direct instead. 
 
-**9. I've added the widget to my Facebook page. It's displaying correctly on desktop but I can't find the tab on mobile.** 
+If your second iframe is not appearing as a pop-up, this may be because you have added the widget to a separate page (and then embedded that separate page onto your website).
+
+If the space you've embedded it in is small, our form will think that the user's screen is small hence redirecting that embed. 
+
+A good way to troubleshoot is to check your console and see whether your `iframe` tag has a `src` attribute.  
+
+If it does, you will need to  remove the widget and try and add the widget directly to your main reservation page. 
+
+**13. I've added the widget to my Facebook page. It's displaying correctly on desktop but I can't find the tab on mobile.** 
 
 The Collins Facebook widget will be added to a Custom Tab on your Facebook page. The custom tabs are not currently supported on mobile. 
 
@@ -347,6 +356,20 @@ More information [here](https://developers.facebook.com/support/bugs/43517347317
 
 Alternatively you can add a 'Book Now' button to your Facebook page which will display on mobile. 
 
+**14. Is it possible to change the names of the fields. For example from 'Number of People' to 'Number of Guests'?**
 
+Yes. It will be up to your web developer to make this change. 
 
+Your web developer can override the CSS to change this - for example, [The Allegory](https://www.drakeandmorgan.co.uk/the-allegory/) has hidden the labels and applied custom styles. 
 
+Alternatively, you can look to add custom Javascript - for example, [Barrio Bars](http://www.barriobars.com/). 
+
+**15. Is it possible to change the text on the dropdown options. For example from '1 Guests' to '1 Diner'?**
+
+Yes. It will be up to your web developer to make this change. 
+
+Your web developer will be able to add custom Javascript - for example, [Caddyshackers](http://caddyshackers.co.uk/).
+
+**16. Does the widget offer a modal view?**
+
+Yes, the widget offers a modal view on desktops. On mobile devices, it will redirect the user.  

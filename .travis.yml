@@ -6,15 +6,13 @@ services: docker
 
 # Build the files
 install:
-  - make
+  - docker-compose run hugo hugo
 
 before_deploy:
   - rm dist/.gitignore
 
 # Deploy to GitHub pages
 deploy:
-  edge:
-    branch: v1.8.47
   provider: pages
   skip_cleanup: true
   keep_history: true

@@ -9,7 +9,7 @@ To add a reservations URL to your Google My Business listing:
 1. Sign in to [Google My Business](https://www.google.co.uk/business/?gmbsrc=gb-en_GB-et-gs-z-gmb-l-z-h~my%7Credirect%7Cu&ppsrc=GMBLR&utm_campaign=gb-en_GB-et-gs-z-gmb-l-z-h~my%7Credirect%7Cu&utm_source=gmb&utm_medium=et)
 2. Choose the listing that you want to edit. (If you're using card view, you'll need to click **Manage Location**, then click **Info** from the menu.)
 3. Click on the **URLs** section. 
-4. For the **Reservations URL**, enter the [Collins Booking URL for your venue](http://developers.designmynight.com/collins/booking-url/#booking-url-for-a-specific-venue)
+4. For the **Reservations URL**, enter the URL to the reservations page on your website or the [Collins Booking URL for your venue](http://developers.designmynight.com/collins/booking-url/#booking-url-for-a-specific-venue). This way you will **not** be charged for any bookings. 
 5. Click **Apply**
 
 ## How to set up a Google Post

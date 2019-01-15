@@ -128,3 +128,7 @@ If you are posting the form independently, then you will need to make sure these
 **1. Do you support XHR or cross origin requests?**
 
 We do not currently support submitting XHR requests for  bespoke enquiries. In order to customise the confirmation page, please add a `return_url` parameter. The response data will be forwarded onto your return url as url parameters.
+
+**2. We have added a free text field type but are unable to fully read the response left by the customer within Collins (the response box is not large enough to display the full response. What's the best way to see the full response?**
+
+If you are capturing large text responses from customers, we would recommend that you use the long text field type instead of the free text. This will make long text responses easier to read within the enquiry in Collins. 

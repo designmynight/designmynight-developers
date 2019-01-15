@@ -107,7 +107,7 @@ googleAnalytics = "UA-12385609-13"
 	url    = "collins/tracking/"
 	parent = "collins"
 	weight = 245
-
+	weight = 208
 
 [[menu.main]]
     weight = 299
