@@ -196,6 +196,16 @@ If the Zonal URL in your error emails ends in:
 
 ## Error Emails: Error Messages Explained
 
+Each time Collins receives an error from the Zonal API (i.e. a payment/booking has failed to push to your tills), a member of the Collins team will contact you letting you know which booking has been affected and the error that we received from Zonal. It will be your responsibility to contact Zonal and ask that they look into the issue. 
+
+If you receive any of the following errors, you should check the booking and if the payment has not pushed through, then follow the below and go to Zonal with the following details:
+
+* Customer name
+* Date
+* Guests
+* Time
+* [Date that the payment was made](https://collins.uservoice.com/knowledgebase/articles/1121737-reports-collins-pay-payments) 
+
 * **'Unable to connect to the remote server'**
 
 This is a connection error on Zonal's side. You will need to contact Zonal to resolve the issue. 
@@ -227,14 +237,6 @@ If the integration has worked correctly and you start to receive 'Invalid Mac' e
 * **The remote name could not be resolved: 'nei-XXX.rtpsolutions.net** (where XXX replaced with your group name). 
 
 Zonal is trying to forward the API request to that URL but it can't be found. Please check that the payment has not pushed through (the [orange box](https://developers.designmynight.com/epos-crm-integrations/zonal-epos-integration/#checking-that-the-collins-zonal-integration-is-set-up-correctly) will appear next to the payment if it has not pushed correctly). 
-
-If the payment has not pushed through, please provide the following booking details to Zonal along with the Zonal error:
-
-* Customer name
-* Date
-* Guests
-* Time
-* [Date that the payment was made](https://collins.uservoice.com/knowledgebase/articles/1121737-reports-collins-pay-payments) 
 
 ## Re-pushing '/create' error bookings
 If the integration is set up to push bookings ASAP, Collins will attempt to push bookings to your tills every time a user saves a booking if one of the following booking fields has been changed in Collins: 
