@@ -1383,6 +1383,22 @@ need to be manually updated in the EPOS</p>
 
 <p>If the integration has worked correctly and you start to receive &lsquo;Invalid Mac&rsquo; errors, it&rsquo;s likely that your system details have been updated (for example if the system is updated to have a new company name). This will invalidate the MAC calculations and is something for Zonal to look into.</p>
 
+<ul>
+<li><strong>The remote name could not be resolved: &lsquo;nei-XXX.rtpsolutions.net</strong> (where XXX replaced with your group name).</li>
+</ul>
+
+<p>Zonal is trying to forward the API request to that URL but it can&rsquo;t be found. Please check that the payment has not pushed through (the <a href="https://developers.designmynight.com/epos-crm-integrations/zonal-epos-integration/#checking-that-the-collins-zonal-integration-is-set-up-correctly">orange box</a> will appear next to the payment if it has not pushed correctly).</p>
+
+<p>If the payment has not pushed through, please provide the following booking details to Zonal along with the Zonal error:</p>
+
+<ul>
+<li>Customer name</li>
+<li>Date</li>
+<li>Guests</li>
+<li>Time</li>
+<li><a href="https://collins.uservoice.com/knowledgebase/articles/1121737-reports-collins-pay-payments">Date that the payment was made</a></li>
+</ul>
+
 <h2 id="re-pushing-create-error-bookings">Re-pushing &lsquo;/create&rsquo; error bookings</h2>
 
 <p>If the integration is set up to push bookings ASAP, Collins will attempt to push bookings to your tills every time a user saves a booking if one of the following booking fields has been changed in Collins:</p>
