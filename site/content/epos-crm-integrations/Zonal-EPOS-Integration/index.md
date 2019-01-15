@@ -224,6 +224,18 @@ Once the name has been been hyphenated and saved, the booking will automatically
 
 If the integration has worked correctly and you start to receive 'Invalid Mac' errors, it's likely that your system details have been updated (for example if the system is updated to have a new company name). This will invalidate the MAC calculations and is something for Zonal to look into. 
 
+* **The remote name could not be resolved: 'nei-XXX.rtpsolutions.net** (where XXX replaced with your group name). 
+
+Zonal is trying to forward the API request to that URL but it can't be found. Please check that the payment has not pushed through (the [orange box](https://developers.designmynight.com/epos-crm-integrations/zonal-epos-integration/#checking-that-the-collins-zonal-integration-is-set-up-correctly) will appear next to the payment if it has not pushed correctly). 
+
+If the payment has not pushed through, please provide the following booking details to Zonal along with the Zonal error:
+
+* Customer name
+* Date
+* Guests
+* Time
+* [Date that the payment was made](https://collins.uservoice.com/knowledgebase/articles/1121737-reports-collins-pay-payments) 
+
 ## Re-pushing '/create' error bookings
 If the integration is set up to push bookings ASAP, Collins will attempt to push bookings to your tills every time a user saves a booking if one of the following booking fields has been changed in Collins: 
 
