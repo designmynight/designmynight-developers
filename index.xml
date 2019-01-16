@@ -174,6 +174,16 @@ With the booking widget, the customer journey will take place in two parts:
     
     <item>
       <title></title>
+      <link>https://developers.designmynight.com/collins/customer-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developers.designmynight.com/collins/customer-widget/</guid>
+      <description>Customer widget The Collins customer widget provides an easy way for customers to add themselves to your database. The widget is easy to add to your website, and can be styled to match your site&amp;rsquo;s design.
+The flow for the customer is: 1. Customer visits your website and sees the signup form you have added 2. Customer fills in their details 3. We send the customer an email to confirm their details 4.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://developers.designmynight.com/collins/customising-2nd-iframe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

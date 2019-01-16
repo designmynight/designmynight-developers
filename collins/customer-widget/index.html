@@ -8,18 +8,18 @@
   <head lang="en-gb">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <title>Users API - DMN developer documentation</title>
+    <title> - DMN developer documentation</title>
     <meta name="generator" content="Hugo 0.22.1" />
 
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="https://developers.designmynight.com/api/users-api/">
+    <link rel="canonical" href="https://developers.designmynight.com/collins/customer-widget/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="https://developers.designmynight.com/api/users-api/">
+    <meta property="og:url" content="https://developers.designmynight.com/collins/customer-widget/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="https://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -91,7 +91,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Users API
+        
       </div>
     </div>
 
@@ -586,11 +586,14 @@
 
 
 
-<a  title="Customer Signup Widget" href="https://developers.designmynight.com/collins/customer-widget/">
+<a class="current" title="Customer Signup Widget" href="https://developers.designmynight.com/collins/customer-widget/">
 	
 	Customer Signup Widget
 </a>
 
+
+<ul id="scrollspy">
+</ul>
   
       
         
@@ -836,14 +839,11 @@
 
 
 
-<a class="current" title="Users API" href="https://developers.designmynight.com/api/users-api/">
+<a  title="Users API" href="https://developers.designmynight.com/api/users-api/">
 	
 	Users API
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
       
         
@@ -1134,358 +1134,140 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>Users API </h1>
+			<h1> </h1>
 
 			
 
-<div class="admonition note">
-<p class="admonition-title">Before you begin</p>
-<p>Refer to the <a href="/api-basics">API Basics</a> section to ensure you are familiar with the essentials of how to interact with the API.</p>
-</div>
+<h1 id="customer-widget">Customer widget</h1>
 
-<h2 id="overview">Overview</h2>
+<p>The Collins customer widget provides an easy way for customers to add themselves to your database. The widget is easy to add to your website, and can be styled to match your site&rsquo;s design.</p>
 
-<p>The DesignMyNight Users API can be used to retrieve user information and create users, and is suitable for clients who require user information.</p>
+<p>The flow for the customer is:
+1. Customer visits your website and sees the signup form you have added
+2. Customer fills in their details
+3. We send the customer an email to confirm their details
+4. Customer clicks a link in the email to confirm
+5. Customer is taken back to your website where they are shown a message confirming their signup</p>
 
-<p>You will only be able to retrieve user information based on your permissions.</p>
+<h2 id="embedding-the-widget">Embedding the widget</h2>
 
-<h2 id="user-format">User format</h2>
+<p>To add the widget to your site, insert the following code where you would like the form to appear.</p>
 
-<p>Each user object will contain the following keys:</p>
+<pre><code>&lt;script
+  type=&quot;text/javascript&quot;
+  src=&quot;https://widgets.designmynight.com/customer-signup/widget.min.js&quot;
+  venue=&quot;YOUR_VENUE_ID&quot;
+  venue-group=&quot;YOUR_VENUE_GROUP_ID&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+
+<h2 id="widget-options">Widget options</h2>
+
+<p>The following values can be included as part of the script tag to change how the widget works. Speak to your account manager if you&rsquo;re unsure of the IDs to use for venue or venue group.</p>
 
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Option</th>
+<th>Explanation</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td>_id</td>
-<td><code>string</code></td>
-<td>The ID of the user</td>
+<td><code>venue-group</code></td>
+<td>(Required) Your venue group&rsquo;s ID</td>
 </tr>
 
 <tr>
-<td>created_date</td>
-<td><code>string</code></td>
-<td>The date and time of when the user was created, in ISO 8601 format</td>
+<td><code>venue</code></td>
+<td>If included, this venue will be added as an &lsquo;associated venue&rsquo; for the customer</td>
 </tr>
 
 <tr>
-<td>last_updated</td>
-<td><code>string</code></td>
-<td>The date and time of when the user was last updated, in ISO 8601 format</td>
+<td><code>hide-phone</code></td>
+<td>Include and set to <code>true</code> to hide the &lsquo;phone&rsquo; option from the form</td>
 </tr>
 
 <tr>
-<td>first_name</td>
-<td><code>string</code></td>
-<td>The user&rsquo;s first name</td>
+<td><code>return-url</code></td>
+<td>Specify a custom URL to return the customer to when they click in the email to confirm sign up. <br> See <a href="#customising-the-confirmation-flow">Customising the confirmation flow</a> below for more details.</td>
 </tr>
 
 <tr>
-<td>last_name</td>
-<td><code>string</code></td>
-<td>The user&rsquo;s last name</td>
-</tr>
-
-<tr>
-<td>username</td>
-<td><code>string</code></td>
-<td>The user&rsquo;s username*</td>
-</tr>
-
-<tr>
-<td>email</td>
-<td><code>string</code></td>
-<td>The user&rsquo;s email address</td>
-</tr>
-
-<tr>
-<td>phone</td>
-<td><code>string</code></td>
-<td>The user&rsquo;s phone number</td>
-</tr>
-
-<tr>
-<td>dob</td>
-<td><code>string</code></td>
-<td>The user&rsquo;s date of birth, in ISO 8601 format*</td>
-</tr>
-
-<tr>
-<td>gender</td>
-<td><code>string</code></td>
-<td>The user&rsquo;s gender*</td>
-</tr>
-
-<tr>
-<td>company</td>
-<td><code>string</code></td>
-<td>The company name*</td>
-</tr>
-
-<tr>
-<td>status</td>
-<td><code>string</code></td>
-<td>The user status</td>
-</tr>
-
-<tr>
-<td>wishlist</td>
-<td><code>object</code></td>
-<td>Object containing items added to the user&rsquo;s wishlist</td>
-</tr>
-
-<tr>
-<td>associated_venues</td>
-<td><code>array</code></td>
-<td>An array of venue IDs that this user is associated with**</td>
-</tr>
-
-<tr>
-<td>marketing_permission</td>
-<td><code>boolean</code></td>
-<td>Marketing permission for the venue group*</td>
+<td><code>on-confirm</code></td>
+<td>Provide an optional Javascript callback to be run when a customer&rsquo;s sign up is confirmed <br> See <a href="#customising-the-confirmation-flow">Customising the confirmation flow</a> below for more details.</td>
 </tr>
 </tbody>
 </table>
 
-<p><small> * These fields will only appear if we have data for them<br>
-** To get the venue IDs, please speak to your Account Manager for details</small></p>
+<h2 id="customising-the-appearance-of-the-form">Customising the appearance of the form</h2>
 
-<p>To only request specific fields back, you can use the <code>fields</code> url parameter. This parameter accepts a comma separated string of fields. For example, the following request will only retrieve the first name and email address.</p>
-
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/&lt;user_id&gt;?fields=first_name,email
-</code></pre>
-
-<h2 id="getting-a-user">Getting a user</h2>
-
-<h3 id="getting-a-user-by-id">Getting a user by ID</h3>
-
-<p>If the user ID is known, the user can be found using their ID. For example:</p>
-
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/&lt;user_id&gt;
-</code></pre>
-
-<p>This will return a <code>user</code> object containing one user if the request was successful, or a <a href="/api-basics/#status-codes">404 status code</a> if the user was not found.</p>
-
-<h3 id="getting-a-user-by-searching">Getting a user by searching</h3>
-
-<p>A user can be found by sending a <code>search</code> query. Below are the fields which will be used for searching:</p>
+<p>The customer signup widget comes with some basic styling but will also pick up styles from your website. To customise the appearance of the widget further you can target the following CSS selectors.</p>
 
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Selector</th>
+<th>Explanation</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td>email</td>
-<td><code>string</code></td>
-<td>The email of the user</td>
+<td><code>.dmn-customer-widget</code></td>
+<td>The outer container for the widget</td>
 </tr>
 
 <tr>
-<td>phone</td>
-<td><code>string</code></td>
-<td>The phone number used in the booking</td>
+<td><code>.dmn-customer-widget .form-group</code></td>
+<td>Each group of inputs including a label and one or more inputs</td>
 </tr>
 
 <tr>
-<td>last_name</td>
-<td><code>string</code></td>
-<td>The user&rsquo;s last name</td>
+<td><code>.dmn-customer-widget label</code></td>
+<td>Labels used for all inputs</td>
+</tr>
+
+<tr>
+<td><code>.dmn-customer-widget input[type=text]</code></td>
+<td>Text inputs for first and last name</td>
+</tr>
+
+<tr>
+<td><code>.dmn-customer-widget input[type=email]</code></td>
+<td>Email input</td>
+</tr>
+
+<tr>
+<td><code>.dmn-customer-widget input[type=phone]</code></td>
+<td>Phone input</td>
+</tr>
+
+<tr>
+<td><code>.dmn-customer-widget .dmn-customer-widget-submit button</code></td>
+<td>&lsquo;Sign up&rsquo; submit button</td>
+</tr>
+
+<tr>
+<td><code>.dmn-customer-widget .dmn-form-overlay</code></td>
+<td>The overlay used to show loading and submitted messages</td>
+</tr>
+
+<tr>
+<td><code>.dmn-customer-widget .dmn-confirmation-overlay</code></td>
+<td>The overlay used to show the &lsquo;signup confirmed&rsquo; message</td>
 </tr>
 </tbody>
 </table>
 
-<p>For example, the following request will find users with the last name &lsquo;Johnson&rsquo;:</p>
+<h2 id="customising-the-confirmation-flow">Customising the confirmation flow</h2>
 
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/?search=johnson
-</code></pre>
+<p>By default, when a customer clicks the email link to confirm their details, they will be taken back to the page on your website where they first signed up. When the widget loads it will recognise that the customer has come from the confirmation link and will complete the sign up. The widget will display a full-screen confirmation on top of your website content (customisable with CSS as above) for a few seconds before the customer is returned to your website as normal.</p>
 
-<p>This will return three keys in the <code>payload</code> object:</p>
+<p>You can customise this flow in two ways: firstly you can provide a custom return URL that the customer should be taken to when confirming their details, rather than returning to the page where they originally signed up. You can do this by providing the <code>return-url</code> value as part of the widget <code>&lt;script&gt;</code> tag.</p>
 
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>users</code></td>
-<td><code>array</code></td>
-<td>An array of users found. This array will be empty if none were found.</td>
-</tr>
-
-<tr>
-<td><code>start</code></td>
-<td><code>int</code></td>
-<td>The starting position for pagination of this request. <a href="#pagination">Learn more about pagination &raquo;</a></td>
-</tr>
-
-<tr>
-<td><code>numFound</code></td>
-<td><code>int</code></td>
-<td>The total number of users found matching this search query</td>
-</tr>
-</tbody>
-</table>
-
-<p>Here&rsquo;s an example response:</p>
-
-<pre><code>{
-  &quot;payload&quot;: {
-    &quot;users&quot;: [
-      {
-        &quot;_id&quot;: &quot;512b1ebad5d190d2978c293b&quot;,
-        &quot;created_date&quot;: &quot;2011-05-12T09:12:39&quot;,
-        &quot;last_updated&quot;: &quot;2018-11-21T15:12:47&quot;,
-        &quot;email&quot;: &quot;test@test.com&quot;,
-        &quot;first_name&quot;: &quot;Test&quot;,
-        &quot;last_name&quot;: &quot;User&quot;,
-        &quot;phone&quot;: &quot;07777777777&quot;,
-        &quot;company&quot;: &quot;&quot;,
-        &quot;dob&quot;: &quot;1944-01-10T00:00:00&quot;,
-        &quot;associated_venues&quot;: [
-          &quot;552435790df6902b7256f237&quot;
-        ],
-        &quot;marketing_preferences&quot;: [
-          {
-            &quot;id&quot;: &quot;5b0743f00000000000000000&quot;,
-            &quot;opt_in_date&quot;: &quot;2018-11-21T15:12:42&quot;
-          },
-          {
-            &quot;id&quot;: &quot;5b0e8f88303b2321ea337f83&quot;,
-            &quot;opt_in_date&quot;: &quot;2018-11-21T15:12:42&quot;
-          },
-          {
-            &quot;id&quot;: &quot;5bb1ee308264ee5a4d665cb2&quot;,
-            &quot;opt_in_date&quot;: &quot;2018-11-21T15:12:42&quot;
-          }
-        ]
-      }
-    ],
-    &quot;start&quot;: 0,
-    &quot;numFound&quot;: 1
-  },
-  &quot;status&quot;: 200,
-  &quot;requestTime&quot;: &quot;2018-11-21T15:12:59&quot;,
-  &quot;responseTime&quot;: &quot;2018-11-21T15:12:59&quot;,
-  &quot;revision&quot;: {
-    &quot;hostname&quot;: false,
-    &quot;branch&quot;: &quot;71d1ee4&quot;,
-    &quot;testMode&quot;: true
-  },
-  &quot;statusText&quot;: &quot;OK&quot;,
-  &quot;url&quot;: &quot;\/v4\/users\/&quot;,
-  &quot;method&quot;: &quot;GET&quot;,
-  &quot;params&quot;: {
-    &quot;search&quot;: &quot;test&quot;
-  }
-}
-</code></pre>
-
-<h2 id="pagination">Pagination</h2>
-
-<p>When searching for users, results are always limited to no more than 30 results per page. You&rsquo;ll know if your results have been trimmed when the <code>numFound</code> key is more than 30.</p>
-
-<p>To retrieve the next set of data, use the <code>start</code> url parameter. The <code>start</code> parameter is used to specify the offset of records, and the default value is 0.</p>
-
-<p>For example, let&rsquo;s say you&rsquo;ve made the following search request:</p>
-
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/?search=johnson&amp;start=0
-</code></pre>
-
-<p>and 90 users were found. The <code>users</code> array will only contain 30 users. To get the next 30 users, make another request but increment the <code>start</code> parameter to 30.</p>
-
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/?search=johnson&amp;start=30
-</code></pre>
-
-<h2 id="sorting">Sorting</h2>
-
-<p>By default, users will be sorted by their last name in ascending order. You may optionally specify a field to sort users by using the <code>sort</code> url parameter. The fields which can be sorted by are listed in the <a href="#user-format">User format table</a>.</p>
-
-<p>For example, to sort by email address, the request would look like this:</p>
-
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/?sort=email
-</code></pre>
-
-<h2 id="output-as-csv">Output as CSV</h2>
-
-<p>By default, the response will be formatted in JSON. However, by using the URL parameter <code>output=csv</code>, you will receive the response in a CSV format.</p>
-
-<p>The following example will return a CSV format of all users you have permission to view:</p>
-
-<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/users/?output=csv
-</code></pre>
-
-<p>Results for CSV output are always limited to a maximum of 25000 results per page.</p>
-
-<p>Sorting results is not currently supported when outputting as a CSV.</p>
-
-<h2 id="updating-a-user">Updating a user</h2>
-
-<p>You can make a POST request to the <code>/users</code> endpoint along with the user ID to update the record, using the endpoint detailed below:</p>
-
-<h3 id="updating-marketing-preferences-for-a-user">Updating marketing preferences for a user</h3>
-
-<p>Marketing preferences are handled with the <code>/marketing-preferences</code> endpoint. The full request URL would look like this:
-<code>https://api.designmynight.com/v4/users/1234/marketing-preferences</code>, where <code>1234</code> is the ID of the user.</p>
-
-<p>The array <code>marketing_preferences</code> stores whether or not the user is subscribed to each marketing preference defined on the venue/venue group.</p>
-
-<p>To update a user&rsquo;s marketing preferences, you can POST to the <code>/marketing-preferences</code> endpoint and pass the <code>marketing_preferences</code> array in the body of the request.</p>
-
-<p>The <code>marketing_preferences</code> field should be an object containing the ID of the preference you wish to update, and a boolean <code>opt_in</code> field specifying the state of the preference.</p>
-
-<p>You can find instructions on getting marketing preference IDs in the the <a href="/api/booking-api/#getting-marketing-preferences">Marketing Preferences</a> section of the Booking API docs.</p>
-
-<p>Here&rsquo;s an example request of unsubscribing user ID <code>1234</code> from SMS marketing, which has the ID <code>864778487282768</code>:</p>
-
-<pre><code class="language-bash">$ curl -X POST https://api.designmynight.com/v4/users/1234/marketing-preferences \
-  -d '{&quot;marketing_preferences&quot;: [{&quot;id&quot;: &quot;864778487282768&quot;,&quot;opt_in&quot;: &quot;false&quot;}]}'
-</code></pre>
-
-<p>The response will look like this, containing the newly updated user:</p>
-
-<pre><code class="language-json">{
-  &quot;payload&quot;: {
-    &quot;dob&quot;: &quot;1995-01-13T00:00:00&quot;,
-    &quot;email&quot;: &quot;john@example.com&quot;,
-    &quot;first_name&quot;: &quot;John&quot;,
-    &quot;last_name&quot;: &quot;Smith&quot;,
-    &quot;marketing_preferences&quot;: [
-      {
-        &quot;id&quot;: &quot;864778487282768&quot;,
-        &quot;opt_in_date&quot;: &quot;2018-05-27T11:30:00&quot;,
-        &quot;opt_out_date&quot;: &quot;2018-05-29T11:49:00&quot;
-      }
-    ],
-    &quot;phone&quot;: &quot;07912345678&quot;,
-    &quot;_id&quot;: &quot;1234&quot;
-  },
-  &quot;status&quot;: 200,
-  &quot;requestTime&quot;: &quot;2018-05-29T11:49:00&quot;,
-  &quot;responseTime&quot;: &quot;2018-05-29T11:49:00&quot;,
-  &quot;statusText&quot;: &quot;OK&quot;,
-  &quot;url&quot;: &quot;\/v4\/users\/1234\/marketing-preferences&quot;,
-  &quot;method&quot;: &quot;POST&quot;
-}
-</code></pre>
+<p>Secondly, you can register a Javascript function that should be called when the customer confirmation has completed. You can do this by providing the name of the function as the <code>on-confirm</code> value in the widget <code>&lt;script&gt;</code> tag. The function you provide will be passed one argument, which is an object containing the customer&rsquo;s details. Your function can return <code>false</code> to prevent the default confirmation overlay from appearing.</p>
 
 			
 			<aside class="copyright" role="note">
@@ -1506,7 +1288,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://developers.designmynight.com/api/bookings-search/" title="Bookings Search API">
+      <a href="https://developers.designmynight.com/collins/customising-2nd-iframe/" title="">
         <span class="direction">
           Previous
         </span>
@@ -1516,7 +1298,7 @@
           </div>
           <div class="stretch">
             <div class="title">
-              Bookings Search API
+              
             </div>
           </div>
         </div>
@@ -1526,14 +1308,14 @@
 
   <div class="next">
   
-      <a href="https://developers.designmynight.com/api/offers-api/" title="Offers API">
+      <a href="https://developers.designmynight.com/collins/booking-widget/" title="">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Offers API
+              
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
