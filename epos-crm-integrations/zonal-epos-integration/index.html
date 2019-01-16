@@ -1354,17 +1354,18 @@ need to be manually updated in the EPOS</p>
 <li>Date</li>
 <li>Guests</li>
 <li>Time</li>
-
-<li><p><a href="https://collins.uservoice.com/knowledgebase/articles/1121737-reports-collins-pay-payments">Date that the payment was made</a></p></li>
-
-<li><p><strong>&lsquo;Unable to connect to the remote server&rsquo;</strong></p></li>
+<li><a href="https://collins.uservoice.com/knowledgebase/articles/1121737-reports-collins-pay-payments">Date that the payment was made</a></li>
 </ul>
+
+<ol>
+<li><strong>&lsquo;Unable to connect to the remote server&rsquo;</strong></li>
+</ol>
 
 <p>This is a connection error on Zonal&rsquo;s side. You will need to contact Zonal to resolve the issue.</p>
 
-<ul>
+<ol>
 <li><strong>&lsquo;Booking Not Found&rsquo; Error</strong></li>
-</ul>
+</ol>
 
 <p>These are errors from Zonal, which we are not given any further details about. You will need to contact Zonal.</p>
 
@@ -1374,29 +1375,29 @@ need to be manually updated in the EPOS</p>
 
 <p>The Zonal API doesn&rsquo;t support removing deposits once they&rsquo;ve been added so this will need to be moved manually.</p>
 
-<ul>
+<ol>
 <li><strong>&lsquo;Invalid date &lsquo;False&rsquo;; expected YYYY-mm-dd&rsquo; Error</strong></li>
-</ul>
+</ol>
 
 <p>This error occurs if the booking has been added <strong>without</strong> a booking date. To fix this, you will need to enter the date of the booking. If you add a <strong>future</strong> date for the Booking Date, the booking will automatically push to your tills (so there is no need to contact Zonal).</p>
 
-<ul>
+<ol>
 <li><strong>&lsquo;Invalid booking field: ContactName&rsquo; Error</strong></li>
-</ul>
+</ol>
 
 <p>This error occurs when there is a space in the &lsquo;Name&rsquo; field of your booking. For example, if someone has a double barrel surname, the name must be entered with a hyphen not a space e.g. John-Edwards <strong>NOT</strong> John Edwards.</p>
 
 <p>Once the name has been been hyphenated and saved, the booking will automatically push to your tills (as long as the booking date has not already passed).</p>
 
-<ul>
+<ol>
 <li><strong>&lsquo;Invalid MAC&rsquo; error&rsquo;</strong></li>
-</ul>
+</ol>
 
 <p>If the integration has worked correctly and you start to receive &lsquo;Invalid Mac&rsquo; errors, it&rsquo;s likely that your system details have been updated (for example if the system is updated to have a new company name). This will invalidate the MAC calculations and is something for Zonal to look into.</p>
 
-<ul>
+<ol>
 <li><strong>The remote name could not be resolved: &lsquo;nei-XXX.rtpsolutions.net</strong> (where XXX replaced with your group name).</li>
-</ul>
+</ol>
 
 <p>Zonal is trying to forward the API request to that URL but it can&rsquo;t be found. You will need to contact Zonal to resolve the issue.</p>
 
