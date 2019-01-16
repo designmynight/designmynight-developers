@@ -206,11 +206,11 @@ If you receive any of the following errors, you should check the booking and if 
 * Time
 * [Date that the payment was made](https://collins.uservoice.com/knowledgebase/articles/1121737-reports-collins-pay-payments) 
 
-* **'Unable to connect to the remote server'**
+1. **'Unable to connect to the remote server'**
 
 This is a connection error on Zonal's side. You will need to contact Zonal to resolve the issue. 
 
-* **'Booking Not Found' Error** 
+2. **'Booking Not Found' Error** 
 
 These are errors from Zonal, which we are not given any further details about. You will need to contact Zonal.
 
@@ -220,21 +220,21 @@ Check the [Booking History](https://collins.uservoice.com/knowledgebase/articles
 
 The Zonal API doesn't support removing deposits once they've been added so this will need to be moved manually.
 
-* **'Invalid date 'False'; expected YYYY-mm-dd' Error**
+3. **'Invalid date 'False'; expected YYYY-mm-dd' Error**
 
 This error occurs if the booking has been added **without** a booking date. To fix this, you will need to enter the date of the booking. If you add a **future** date for the Booking Date, the booking will automatically push to your tills (so there is no need to contact Zonal). 
 
-* **'Invalid booking field: ContactName' Error**
+4. **'Invalid booking field: ContactName' Error**
 
 This error occurs when there is a space in the 'Name' field of your booking. For example, if someone has a double barrel surname, the name must be entered with a hyphen not a space e.g. John-Edwards **NOT** John Edwards. 
 
 Once the name has been been hyphenated and saved, the booking will automatically push to your tills (as long as the booking date has not already passed).  
 
-* **'Invalid MAC' error'**
+5. **'Invalid MAC' error'**
 
 If the integration has worked correctly and you start to receive 'Invalid Mac' errors, it's likely that your system details have been updated (for example if the system is updated to have a new company name). This will invalidate the MAC calculations and is something for Zonal to look into. 
 
-* **The remote name could not be resolved: 'nei-XXX.rtpsolutions.net** (where XXX replaced with your group name). 
+6. **The remote name could not be resolved: 'nei-XXX.rtpsolutions.net** (where XXX replaced with your group name). 
 
 Zonal is trying to forward the API request to that URL but it can't be found. You will need to contact Zonal to resolve the issue.
 
