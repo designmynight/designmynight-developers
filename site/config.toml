@@ -67,12 +67,6 @@ googleAnalytics = "UA-12385609-13"
 	weight = 210
 
 [[menu.main]]
-	name   = "Customer Signup Widget"
-	url    = "collins/customer-widget/"
-	parent = "collins"
-	weight = 215
-
-[[menu.main]]
 	name   = "Customising 2nd Iframe"
 	url    = "collins/customising-2nd-iframe/"
 	parent = "collins"
