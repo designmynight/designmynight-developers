@@ -70,6 +70,8 @@ Example of partners using a Wix site:
 
 [The Barrel Project](https://www.thebarrelproject.co.uk/)
 
+**Please note** Wix only supports widgets to be added within an iframe. The second iframe of the Collins widget will not be able to appear as a pop-up within an iframe. If you would rather a popup, we would recommend that you use the [booking link](https://collins.uservoice.com/knowledgebase/articles/1893409-booking-url-generator)(insteaad of the booking widget). 
+
 ## How to add the widget to Facebook
 Here's a guide to help you [Add the booking widget to your Facebook page](https://collins.uservoice.com/knowledgebase/articles/478066-facebook-widget-set-up)
 
@@ -343,10 +345,6 @@ With the Collins widget, the second iframe (after you hit the initial 'Enquire N
 If your second iframe is not appearing as a pop-up, this may be because you have added the widget to a separate page (and then embedded that separate page onto your website).
 
 If the space you've embedded it in is small, our form will think that the user's screen is small hence redirecting that embed. 
-
-A good way to troubleshoot is to check your console and see whether your `iframe` tag has a `src` attribute.  
-
-If it does, you will need to  remove the widget and try and add the widget directly to your main reservation page. 
 
 **13. I've added the widget to my Facebook page. It's displaying correctly on desktop but I can't find the tab on mobile.** 
 
