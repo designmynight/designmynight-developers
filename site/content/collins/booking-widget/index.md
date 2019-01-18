@@ -70,7 +70,7 @@ Example of partners using a Wix site:
 
 [The Barrel Project](https://www.thebarrelproject.co.uk/)
 
-**Please note** Wix only supports widgets to be added within an iframe. The second iframe of the Collins widget will not be able to appear as a pop-up within an iframe. If you would rather a popup, we would recommend that you use the [booking link](https://collins.uservoice.com/knowledgebase/articles/1893409-booking-url-generator)(insteaad of the booking widget). 
+**Please note:** Wix only supports widgets to be added within an iframe. The second iframe of the Collins widget will not be able to appear as a pop-up within an iframe. If you would rather a popup, we would recommend that you use the [booking link](https://collins.uservoice.com/knowledgebase/articles/1893409-booking-url-generator)(instead of the booking widget). 
 
 ## How to add the widget to Facebook
 Here's a guide to help you [Add the booking widget to your Facebook page](https://collins.uservoice.com/knowledgebase/articles/478066-facebook-widget-set-up)
