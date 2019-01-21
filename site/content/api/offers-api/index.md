@@ -147,7 +147,7 @@ Key | Type | Description
 
 ## Offers in booking-availability
 
-The [Booking API](/booking-api/#checking-availability) has the functionality to get offers which are valid for the specified offer. To enable this, append the `getOffers=true` parameter to your booking availability request.
+The [Booking API](https://developers.designmynight.com/api/booking-api/#checking-availability) has the functionality to get offers which are valid for the specified booking type. To enable this, append the `getOffers=true` parameter to your booking availability request.
 
 ```shell
 $ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/booking-availability?num_people=2&date=2017-09-26&getOffers=true
