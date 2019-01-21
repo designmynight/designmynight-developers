@@ -94,5 +94,12 @@ Without all these details, we will be unable to push the booking to your tills.
 
 Currently, the integration does **not** support pushing refunds to Kobas. As such, if you [refund a payment within Collins](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer), you will also have to manually refund the payment within Kobas. 
 
+## Kobas EPOS Integration FAQS
+
+**1. How do I reconcile which payments have pushed to my tills?**
+
+You will be able to filter and download your [Payments Report](https://collins.uservoice.com/knowledgebase/articles/1874923-reports-payments) by 'pushed to till' status. 
+
+This will allow you to check which payments have/haven't successfully pushed to your tills. For any further questions, please contact your Collins Account Manager. 
 
 
