@@ -300,6 +300,11 @@ Any payment that Collins pushes to Zonal will appear as whichever payment type w
 
 There is not currently a status check in place, so Collins would push all bookings regardless of booking status.
 
+**4. How do I reconcile which payments have pushed to my tills?**
+
+You will be able to filter and download your [Payments Report](https://collins.uservoice.com/knowledgebase/articles/1874923-reports-payments) by 'pushed to till' status. 
+
+This will allow you to check which payments have/haven't successfully pushed to your tills. For any further questions, please contact your Collins Account Manager. 
 
 
 
