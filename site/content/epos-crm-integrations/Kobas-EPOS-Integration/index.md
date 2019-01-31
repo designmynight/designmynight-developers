@@ -24,8 +24,10 @@ With each booking, we will also push the associated customer details to the Koba
 * Full Name
 * Email
 * Company
+* Date of Birth
+* Phone Number
 
-![Example of the Customer Record on Kobas](https://static.designmynight.com/uploads/2018/11/Kobas-customer-2.png)
+![Example of the Customer Record on Kobas](https://static.designmynight.com/uploads/2019/01/Capture-customer-Kobas-optimised.png)
 
 ## Payments Valid to Push to Kobas EPOS
 
