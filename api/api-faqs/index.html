@@ -1251,6 +1251,32 @@
 
 <p>Alternatively, if you are looking to just return rejected bookings, you can query by <code>&amp;status=rejected</code>.</p>
 
+<p><strong>6. How do I know if the customer is currently opted in for any marketing preferences?</strong></p>
+
+<p>The opt-in and opt-out date in the API will always record the most recent time the customer has opted in/out for that marketing preference.</p>
+
+<p><strong>Scenarios:</strong></p>
+
+<ul>
+<li><p>If the customer has not opted in for marketing preferences, you will not see the <code>marketing_preferences</code> within their user response.</p></li>
+
+<li><p>If the customer has opted in for the marketing preference, the most recent date that they have opted in for that preference will be recorded as <code>opt_in_date</code>.</p></li>
+
+<li><p>If the customer has since opted out of the marketing preference, the most recent data that they opted out will be recorded as the <code>opt_out_date</code>.</p></li>
+
+<li><p>If the customer has opted in, opted out and then opted in again - the opt-in date will be the most recent time that they opted in. The opt-out date will still keep the value of the opt-out date.</p></li>
+</ul>
+
+<p>As such, if you are looking for customers that are currently opted in for marketing, you would want to use the following logic:</p>
+
+<p>1) There is an opt-in date but no opt-out date.</p>
+
+<p>or</p>
+
+<p>2) If there is a value for both opt-in and opt-out date - check that the opt-in date is more recent than the opt-out date.</p>
+
+<p><strong>Please note:</strong> for any customers that opted in before GDPR changes, their opt-in date will display as 25th May 2018 as a default.</p>
+
 			
 			<aside class="copyright" role="note">
 				
