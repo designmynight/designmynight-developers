@@ -103,3 +103,27 @@ The API defaults to just including bookings that are new, in progress or confirm
 If you would like to include rejected bookings, you can change the query to include `&status=include_rejected`. 
 
 Alternatively, if you are looking to just return rejected bookings, you can query by `&status=rejected`.
+
+ **6. How do I know if the customer is currently opted in for any marketing preferences?** 
+ 
+The opt-in and opt-out date in the API will always record the most recent time the customer has opted in/out for that marketing preference.
+
+**Scenarios:**
+
+* If the customer has not opted in for marketing preferences, you will not see the `marketing_preferences` within their user response.
+
+* If the customer has opted in for the marketing preference, the most recent date that they have opted in for that preference will be recorded as `opt_in_date`.
+
+* If the customer has since opted out of the marketing preference, the most recent data that they opted out will be recorded as the `opt_out_date`.
+
+* If the customer has opted in, opted out and then opted in again - the opt-in date will be the most recent time that they opted in. The opt-out date will still keep the value of the opt-out date.
+
+As such, if you are looking for customers that are currently opted in for marketing, you would want to use the following logic:
+
+1) There is an opt-in date but no opt-out date.
+
+or
+
+2) If there is a value for both opt-in and opt-out date - check that the opt-in date is more recent than the opt-out date.
+
+**Please note:** for any customers that opted in before GDPR changes, their opt-in date will display as 25th May 2018 as a default.
