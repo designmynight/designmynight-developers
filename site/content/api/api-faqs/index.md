@@ -127,3 +127,14 @@ or
 2) If there is a value for both opt-in and opt-out date - check that the opt-in date is more recent than the opt-out date.
 
 **Please note:** for any customers that opted in before GDPR changes, their opt-in date will display as 25th May 2018 as a default.
+
+ **7. Does the API have information about where a booking/enquiry has come from (for example, phone, website, DesignMyNight.com)?**
+ 
+ Yes. Within the [Bookings API](https://developers.designmynight.com/api/bookings-search/#booking-fields), you will be able to see the source of the booking. 
+ 
+Source|`source` value in the API|`partner_source` value|
+---|-----|---
+Own Website|`partner`|N/A
+DesignMyNight.com|`designmynight`|N/A
+[Manually added into Collins by the team](https://collins.uservoice.com/knowledgebase/articles/478053-within-a-booking-enquiry-tag-a-booking-with-a-so)|`admin`|This will take the name of the relevant source as [set up within Collins](https://collins.uservoice.com/knowledgebase/articles/478035-venue-group-adding-editing-sources).  Please note: it's not compulsory for the team to add the source for enquiries that they manually add. As such, if no specific source has been added, `partner_source` will not appear. 
+ 
