@@ -58,6 +58,7 @@ If you would like to set up the integration to push bookings/payments to your Ko
 * Scope
 * Source Key and ID 
 * Reservations Source ID
+* Venue ID
 
 You will be able to retrieve these details from the Kobas Cloud: 
 
