@@ -48,7 +48,7 @@ This way your team has full control as to which payments get pushed to your till
 **Please Note** - the integration does not currently support pushing claimed [Collins Card Authentication payments](https://collins.uservoice.com/knowledgebase/articles/478064-card-authentication-how-to). 
 
 ## Setting up the Collins/Kobas Integration:
-If you would like to set up the integration to push bookings/payments to your Kobas EPOS, you will need to contact your Collins Account Manager with the following details (you will be able to get these from Kobas):
+If you would like to set up the integration to push bookings/payments to your Kobas EPOS, you will need to contact your Collins Account Manager with the following details:
 
 * Access Token URL 
 * POST Body
@@ -58,6 +58,15 @@ If you would like to set up the integration to push bookings/payments to your Ko
 * Scope
 * Source Key and ID 
 * Reservations Source ID
+
+You will be able to retrieve these details from the Kobas Cloud: 
+
+1. Go to Administration
+2. Go Integration Settings
+3. Go to Reservations
+4. Tick the checkbox and your API Credentials will be revealed
+5. Click the icon next to API Credentials to copy.
+6. Paste and forward to your Collins Account Manager 
 
 You will also need to specify **which bookings** you would like Collins to push to your tills:
 
