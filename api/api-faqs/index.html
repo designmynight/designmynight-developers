@@ -1277,6 +1277,40 @@
 
 <p><strong>Please note:</strong> for any customers that opted in before GDPR changes, their opt-in date will display as 25th May 2018 as a default.</p>
 
+<p><strong>7. Does the API have information about where a booking/enquiry has come from (for example, phone, website, DesignMyNight.com)?</strong></p>
+
+<p>Yes. Within the <a href="https://developers.designmynight.com/api/bookings-search/#booking-fields">Bookings API</a>, you will be able to see the source of the booking.</p>
+
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th><code>source</code> value in the API</th>
+<th><code>partner_source</code> value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Own Website</td>
+<td><code>partner</code></td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>DesignMyNight.com</td>
+<td><code>designmynight</code></td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td><a href="https://collins.uservoice.com/knowledgebase/articles/478053-within-a-booking-enquiry-tag-a-booking-with-a-so">Manually added into Collins by the team</a></td>
+<td><code>admin</code></td>
+<td>This will take the name of the relevant source as <a href="https://collins.uservoice.com/knowledgebase/articles/478035-venue-group-adding-editing-sources">set up within Collins</a>.  Please note: it&rsquo;s not compulsory for the team to add the source for enquiries that they manually add. As such, if no specific source has been added, <code>partner_source</code> will not appear.</td>
+</tr>
+</tbody>
+</table>
+
 			
 			<aside class="copyright" role="note">
 				
