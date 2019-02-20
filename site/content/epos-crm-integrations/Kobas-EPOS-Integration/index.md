@@ -73,6 +73,22 @@ You will also need to specify **which bookings** you would like Collins to push 
 
 * Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.
 
+## Minimum Deposit Date
+
+If your venue has already been using Collins Pay, you should let us know whether your team has been manually adding payments to your tills. If so, we can set a **Minimum Deposit Date** for when the integration goes live (to avoid duplicates on your tills). 
+
+This would mean that any bookings with deposits already added (but not necessarily received yet) on Collins, before the integration goes live, that get updated, **will not** push to the till.
+
+**For example:** the integration goes live on 1st December (and the minimum deposit date is set to 1st December)
+
+If you already have a payment request for a booking on 30th November but the payment is not received until 2nd December. This deposit **will not** be pushed to your tills (as the payment was added before the minimum deposit date).
+
+Only any payments added after 1st December will ever be considered valid to be pushed to the till.
+
+**_Please note:_** if you have not got a Minimum Deposit Date set up, payments that have been added to Collins before the integration has been set up are valid to push. You will be able to manually push these to the tills by going into the booking in Collins and click the SAVE button. 
+
+If you have not been manually adding payments on your tills (eg if you are changing till systems), we can push **all** future bookings with deposits to your tills. Please speak to your Collins Account Manager to discuss. 
+
 ## Checking that the Collins/Kobas Integration is set up correctly
 Once your Collins Account Manager has been in touch that the integration has been set up, it will be your responsibility to check that the integration is working correctly (as Collins will not be able to access your till systems to test). 
 
@@ -113,5 +129,6 @@ Currently, the integration does **not** support pushing refunds to Kobas. As suc
 You will be able to filter and download your [Payments Report](https://collins.uservoice.com/knowledgebase/articles/1874923-reports-payments) by 'pushed to till' status. 
 
 This will allow you to check which payments have/haven't successfully pushed to your tills. For any further questions, please contact your Collins Account Manager. 
+
 
 
