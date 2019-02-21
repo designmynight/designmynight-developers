@@ -1,8 +1,8 @@
 ## API Troubleshooting
 If you are using our API and think that something is not working correctly, we will require both the full request and full response from your web developer before we can look into it for you:  
 
-* Full Request - example [here](https://drive.google.com/file/d/0B-baIeSCNY2BcmNFZGZVVWFpbmZDdEhBbUhqMF9MaHdYVl84/view?usp=sharing)
-* Full Response - example [here](https://drive.google.com/file/d/0B-baIeSCNY2BdjJ0WFpqaEJiRE8xVDN3VWEwaE1fTkNiTDZ3/view?usp=sharing)
+* Full Request - example [here](https://docs.google.com/document/d/1CE9oWIntJthRidSuExSKQlD7hpG_uaGeAwKCmRLnPhc/edit?usp=sharing)
+* Full Response - example [here](https://docs.google.com/document/d/1amCSjbn-JLEeoyFhkZh0qDutTlIbFAS3PEsUp72AssA/edit?usp=sharing)
 
 This is so that our tech team can effectively look into the issue for you. Without the above, we will not be able to assist.
 
