@@ -39,8 +39,6 @@ You'll receive a response similar to this, containing an array of each venue in 
 }
 ```
 
-<!---
-
 ## Setting Fields
 
 The following fields will be included in the venue response. 
@@ -67,8 +65,6 @@ $ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237?f
 ```
 
 For the settings that can be set up at venue group level, you would be able to use a `GET` request to return an array of the settings for the venue group. Replace the ID in the URL with your Venue Group ID. 
-
---->
 
 ## Getting Packages
 
