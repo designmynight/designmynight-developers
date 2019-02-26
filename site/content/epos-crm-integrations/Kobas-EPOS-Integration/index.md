@@ -120,7 +120,7 @@ Without all these details, we will be unable to push the booking to your tills.
 
 ## Refunding on Collins and Kobas
 
-Currently, the integration does **not** support pushing refunds to Kobas. As such, if you [refund a payment within Collins](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer), you will also have to manually refund the payment within Kobas. 
+Currently, the integration does **not** support pushing refunds to Kobas. As such, if you [refund a payment within Collins](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer), you will also have to manually refund the payment within Kobas Cloud.
 
 ## Kobas EPOS Integration FAQS
 
