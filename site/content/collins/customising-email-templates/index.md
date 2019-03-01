@@ -54,7 +54,7 @@ Guides to help you add personalised messages to your emails within Collins:
 
 ## Adding dynamic content tags to the emails
 
-Within your Collins emails, you will be able to include dynamic content tags. The following tags are currently supported:
+Within your Collins Confirmation email, you will be able to include dynamic content tags. The following tags are currently supported:
 
 * {{first_name}}
 * {{last_name}}
@@ -76,11 +76,8 @@ We would recommend that you add the dynamic tags within Collins (as opposed to i
 
 This way you will be able to easily amend the copy in your Collins admin at any time (as opposed to having to send over updated HTML for our tech team to update - which would have to be scheduled against our tech roadmap).
 
-Guides to help you add personalised messages to your emails within Collins:
+Guide to help you: [Add personalised messages to your booking confirmation email](https://collins.uservoice.com/knowledgebase/articles/478026-booking-types-adding-text-to-the-confirmation-em)
                     
-[Automated Emails](https://collins.uservoice.com/knowledgebase/articles/1833961-emails-texts-automated-email-template-examples)
-
-[Setting Email Templates](https://collins.uservoice.com/knowledgebase/articles/478032-emails-texts-adding-a-new-email-template-messa)
 ### Other non-customisable Content
 
 Currently it's not possible to amend the following:
