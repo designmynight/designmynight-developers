@@ -56,21 +56,21 @@ Guides to help you add personalised messages to your emails within Collins:
 
 Within your Collins emails, you will be able to include dynamic content tags. The following tags are currently supported:
 
-{{first_name}}
-{{last_name}}
-{{full_name}}
-{{phone}}
-{{email}}
-{{company}}
-{{venue}}
-{{type}}
-{{area}}
-{{num_people}}
-{{date}}
-{{time}}
-{{until}}
-{{booking_ref}}
-{{min_spend}}
+* {{first_name}}
+* {{last_name}}
+* {{full_name}}
+* {{phone}}
+* {{email}}
+* {{company}}
+* {{venue}}
+* {{type}}
+* {{area}}
+* {{num_people}}
+* {{date}}
+* {{time}}
+* {{until}}
+* {{booking_ref}}
+* {{min_spend}}
 
 We would recommend that you add the dynamic tags within Collins (as opposed to in the HTML email templates).
 
