@@ -39,7 +39,7 @@ You'll receive a response similar to this, containing an array of each venue in 
 }
 ```
 
-## Getting the fields for Collins Settings
+## Getting the Collins Settings
 
 The following fields will be included in the venue response. 
 
