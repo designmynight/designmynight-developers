@@ -104,7 +104,8 @@ To set this up, we require the following details from Zonal:
 * URL eg https://fullers.txdlimited.co.uk/api_v1/booking
 * Username
 * Password
-* Mapping of our venue IDs to Zonal IDs
+* Mapping between each Collins Venue ID and Zonal ID
+* Mapping between each [Collins Marketing Preference](https://collins.uservoice.com/knowledgebase/articles/1859686-venue-group-marketing-preferences-message) and the relevant Zonal Marketing Opt-in. 
 
 
 
