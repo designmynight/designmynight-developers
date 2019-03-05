@@ -1172,6 +1172,102 @@
 }
 </code></pre>
 
+<h2 id="setting-fields">Setting Fields</h2>
+
+<p>The following fields will be included in the venue response.</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Collins Setting</th>
+<th>Example</th>
+<th>Can be set up at venue group level</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>booking_labels</td>
+<td><a href="https://collins.uservoice.com/knowledgebase/articles/478042-labels-colours-adding-editing-booking-action-l">Booking Labels</a></td>
+<td><code>[{&quot;colour&quot;: &quot;f7c6c7&quot;, &quot;id&quot;: &quot;chase_deposit&quot;, &quot;label&quot;: &quot;Chase Deposit&quot;}]</code></td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>booking_stages</td>
+<td><a href="https://collins.uservoice.com/knowledgebase/articles/1867465-diary-floorplan-booking-stages?utm_source=Collins+Subscribers+%28Feb+2017%29&amp;utm_campaign=ce30cb069f-EMAIL_CAMPAIGN_2018_07_12_09_14&amp;utm_medium=email&amp;utm_term=0_16f0ace514-ce30cb069f-61017549">Booking Stages</a></td>
+<td><code>[{&quot;colour&quot;: &quot;6633b7&quot;, &quot;id&quot;: &quot;arrived&quot;, &quot;label&quot;: &quot;Arrived&quot;}]</code></td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>customer_labels</td>
+<td><a href="https://collins.uservoice.com/knowledgebase/articles/478041-labels-colours-adding-editing-customer-labels">customer Labels</a></td>
+<td><code>[{&quot;colour&quot;: &quot;d4c5f9&quot;, &quot;id&quot;: &quot;cancelled&quot;, &quot;label&quot;: &quot;cancelled&quot;, &quot;type&quot;: &quot;no_show&quot;}]</code></td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>booking_types</td>
+<td><a href="https://collins.uservoice.com/knowledgebase/articles/477999-booking-types-adding-editing-your-booking-type">Booking Types</a></td>
+<td><code>[{ &quot;id&quot;: &quot;58d122ba566b8a3c198b45aa&quot;, &quot;name&quot;: &quot;Brunch&quot;}]</code></td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>bookable_areas</td>
+<td><a href="https://collins.uservoice.com/knowledgebase/articles/478009-tables-areas-adding-new-tables">Tables</a></td>
+<td><code>[{ &quot;id&quot;: &quot;55243ccd787279304031501d&quot;, &quot;name&quot;: &quot;1&quot;}]</code></td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>bookable_area_zones</td>
+<td><a href="https://collins.uservoice.com/knowledgebase/articles/478013">Zones</a></td>
+<td><code>[{&quot;id&quot;: &quot;55243d292b588f381e7fac23&quot;, &quot;name&quot;: &quot;Restaurant&quot;}]</code></td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>packages</td>
+<td><a href="https://collins.uservoice.com/knowledgebase/articles/893736-pre-orders-adding-editing-packages-and-pre-order">Pre-Orders Items</a></td>
+<td><code>[{&quot;id&quot;: &quot;5613f2a525020ec148a111a1&quot;, &quot;name&quot;: &quot;Bottle of White Wine&quot;, &quot;price&quot;: 0.3, &quot;type&quot;: &quot;drink&quot;}]</code></td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>preorder_menus</td>
+<td><a href="https://collins.uservoice.com/knowledgebase/articles/1175845-collins-pre-orders-how-to-setup-guide">Preorder Menus</a></td>
+<td><code>[{&quot;id&quot;: &quot;5ae18fc4dfd9f90645043348&quot;, &quot;name&quot;: &quot;Brunch Menu&quot;}]</code></td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>opening_times</td>
+<td><a href="https://collins.uservoice.com/knowledgebase/articles/822606-4-setting-editing-your-opening-times">Opening Times</a></td>
+<td><code>[{&quot;monday&quot;: {&quot;status&quot;: true, &quot;open&quot;: &quot;09:00&quot;, &quot;close&quot;: &quot;04:00&quot;, &quot;private_hire&quot;: false}]</code></td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>booking_unavailable</td>
+<td><a href="https://collins.uservoice.com/knowledgebase/articles/478006-unavailable-dates-how-to-shut-the-booking-widget">Unavailable Dates</a></td>
+<td><code>[{ &quot;id&quot;: &quot;5ab0f0f252550c03b07ca63a&quot;, &quot;unavailable_from&quot;: &quot;2018-03-31&quot;, &quot;unavailable_to&quot;: &quot;2018-03-31&quot;, &quot;unavailable_message&quot;: &quot;closed&quot;, &quot;close_admin&quot;: true}</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
+<p>You will be able to use a <code>GET</code> request to return an array of the settings for a venue. Replace the ID in the URL with your <a href="https://developers.designmynight.com/api/venues-api/#getting-venues">Venue ID</a>.</p>
+
+<p>For example if you wanted to return all the booking types for a venue, you would make the following <code>GET</code> request</p>
+
+<pre><code class="language-bash">$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237?fields=booking_types
+</code></pre>
+
+<p>For the settings that can be set up at venue group level, you would be able to use a <code>GET</code> request to return an array of the settings for the venue group. Replace the ID in the URL with your Venue Group ID.</p>
+
 <h2 id="getting-packages">Getting Packages</h2>
 
 <p>The following <code>GET</code> request will return an array of packages that have been set up for a venue/venue group. Replace the ID in the URL with your Venue ID.</p>
