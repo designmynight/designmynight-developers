@@ -160,6 +160,7 @@ Field | Required | Description
 `email` | No | `string` The guest's email address
 `dob` | No | `string` The guest's date of birth, in the format YYYY-MM-DD
 `phone` | No | `string` The guest's phone number
+`offer` | No | `string` The ID of an offer that should be associated with this booking
 `notes` | No | `string` Any additional booking notes or special requests
 `package` | No | `string` The ID of the booking package this booking has
 `newsletter_signup` | No | `boolean` If the customer has agreed to sign up to the DMN newsletter
