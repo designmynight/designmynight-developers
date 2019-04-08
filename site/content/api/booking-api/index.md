@@ -4,7 +4,7 @@ title: Booking API
 ---
 
 {{<note title="Before you begin">}}
-Refer to the [API Basics](/api-basics) section to ensure you are familiar with the essentials of how to interact with the API.
+Refer to the [API Basics](/api/api-basics) section to ensure you are familiar with the essentials of how to interact with the API.
 {{</note>}}
 
 The DesignMyNight Booking API can be used to check venue availability and create a booking, and is suitable for clients who would prefer to implement their own booking process rather than using the [Booking Widget](/booking-widget).
