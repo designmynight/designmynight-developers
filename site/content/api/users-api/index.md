@@ -8,7 +8,7 @@ Refer to the [API Basics](/api-basics) section to ensure you are familiar with t
 {{</note>}}
 
 {{<warning title="Deprecated">}}
-  The use of this endpoint for retrieving and updating _customer_ information is deprecated. Please use https://docs.collinsbookings.com/#tag/Customers instead.
+  The use of this endpoint for retrieving and updating Collins _customer_ information is deprecated. Please use https://docs.collinsbookings.com/#tag/Customers instead.
 {{</warning>}}
 
 ## Overview
