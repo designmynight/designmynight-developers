@@ -192,11 +192,6 @@ googleAnalytics = "UA-12385609-13"
 	weight = 307
 	parent = "API"
 
-[[menu.main]]
-	name   = "Event Guests API"
-	url    = "api/event-guests-api/"
-	weight = 308
-	parent = "API"
 
 [[menu.main]]
 	name   = "API FAQs"
