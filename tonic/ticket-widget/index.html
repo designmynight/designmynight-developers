@@ -1130,38 +1130,16 @@
 
 <h2 id="setting-up-the-ticket-widget">Setting up the ticket widget</h2>
 
-<p>The widget is included using javascript.  Below is a list of valid attributes for the script tag in order to customise it.  You can also use self-hosted CSS to change the look and feel of the form.</p>
+<p>The widget is included using javascript.  You can also use self-hosted CSS to change the look and feel of the form.  You can also customise the widget further with certain attributes that are listed below.</p>
 
-<table>
-<thead>
-<tr>
-<th>Attributes</th>
-<th>Possible values</th>
-<th>Default value</th>
-<th>Description</th>
-</tr>
-</thead>
+<p>An example of how your script tag should look:</p>
 
-<tbody>
-<tr>
-<td>src</td>
-<td>//partners.designmynight.com/pw?v=3&amp;r=10000</td>
-<td>The source, <code>r</code> should be unique to each ticket widget on the page</td>
-<td></td>
-</tr>
-
-<tr>
-<td>item-ids</td>
-<td>&lt;Event Id&gt; \ &lt;Event Brand Id&gt;</td>
-<td>N/A</td>
-<td>The event or event brand (list of events) for the widget</td>
-</tr>
-</tbody>
-</table>
+<pre><code class="language-html">&lt;script src=&quot;https://widgets.designmynight.com/tonic/ticket-widget.min.js?item-ids=&lt;EVENT_ID&gt;&quot;&gt;&lt;/script&gt;
+</code></pre>
 
 <h2 id="customising-the-ticket-widget">Customising the Ticket Widget</h2>
 
-<p>By adding a json source the ticket widget can be customised.  The id of the json source should match the <code>r</code> id on the ticket widget itself. See examples below.</p>
+<p>The URL for the ticket widget can take multiple parameters to allow further customisation and turning on/off features.</p>
 
 <p>The following table shows options available to the ticket widget.</p>
 
@@ -1184,6 +1162,13 @@
 </tr>
 
 <tr>
+<td>tracking-id</td>
+<td>&lt;Tracking Id&gt;</td>
+<td>N/A</td>
+<td>Tracking ids set up in the Sales Tracking menu</td>
+</tr>
+
+<tr>
 <td>theme</td>
 <td>light/inverse</td>
 <td>light</td>
@@ -1203,6 +1188,56 @@
 <td>false</td>
 <td>Show the widget as a &ldquo;Buy Now&rdquo; button which opens the widget in a popup</td>
 </tr>
+
+<tr>
+<td>checkoutMode</td>
+<td>modal/dmn/blank</td>
+<td>false</td>
+<td>How the checkout will open on your website</td>
+</tr>
+</tbody>
+</table>
+
+<p>The following table shows more customisable options available for widgets with multiple events on display</p>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Possible values</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>hideEventPhotos</td>
+<td>true/false</td>
+<td>false</td>
+<td>Shows or hides the lead photo for each event on the widget</td>
+</tr>
+
+<tr>
+<td>widgetMode</td>
+<td>default-view/list-view</td>
+<td>default-view</td>
+<td>Changes the view of the widget from the default to a more compact, list view</td>
+</tr>
+
+<tr>
+<td>listViewOpen</td>
+<td>true/false</td>
+<td>false</td>
+<td>When list-view is selected, should the ticket widget load opened or closed</td>
+</tr>
+
+<tr>
+<td>sortBy</td>
+<td>next-date/title</td>
+<td>next-date</td>
+<td>What order should events appear on the ticket widget</td>
+</tr>
 </tbody>
 </table>
 
@@ -1211,15 +1246,14 @@
 <p>The following example sample below will display a basic widget:</p>
 
 <pre><code class="language-html">&lt;!-- START DesignMyNight event widget --&gt;
-&lt;script src=&quot;//partners.designmynight.com/pw?v=3&amp;r=10000&quot; item-ids=&quot;546a14bc0df690b92489b1a7&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;https://widgets.designmynight.com/tonic/ticket-widget.min.js?item-ids=546a14bc0df690b92489b1a7&quot;&gt;&lt;/script&gt;
 &lt;!-- END DesignMyNight event widget --&gt;
 </code></pre>
 
 <p>The following example sample below will display a buy now button:</p>
 
 <pre><code class="language-html">&lt;!-- START DesignMyNight event widget --&gt;
-&lt;script src=&quot;//partners.designmynight.com/pw?v=3&amp;r=10000&quot; item-ids=&quot;546a14bc0df690b92489b1a7&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/json&quot; id=&quot;tonic-widget-config-10000&quot;&gt;{&quot;hideTicketDesc&quot;:true,&quot;theme&quot;:&quot;inverse&quot;,&quot;isModalMode&quot;:true}&lt;/script&gt;
+&lt;script src=&quot;https://widgets.designmynight.com/tonic/ticket-widget.min.js?item-ids=546a14bc0df690b92489b1a7&amp;hideTicketDesc=true&amp;theme=inverse&amp;isModalMode=true&quot;&gt;&lt;/script&gt;
 &lt;!-- END DesignMyNight event widget --&gt;
 </code></pre>
 

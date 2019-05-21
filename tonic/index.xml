@@ -19,7 +19,7 @@
       
       <guid>https://developers.designmynight.com/tonic/ticket-widget/</guid>
       <description>The ticket widget lists events, dates and tickets. If a single event is listed with a single date it will only show the tickets. If an event with multiple dates is listed then it will show the calendar first. If multiple events/event brands (item-ids) are listed then the events list will be displayed first.
-Setting up the ticket widget The widget is included using javascript. Below is a list of valid attributes for the script tag in order to customise it.</description>
+Setting up the ticket widget The widget is included using javascript. You can also use self-hosted CSS to change the look and feel of the form.</description>
     </item>
     
   </channel>
