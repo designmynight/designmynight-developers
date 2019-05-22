@@ -28,6 +28,7 @@ theme | light/inverse | light | Use light for light backgrounds and inverse for 
 hideTicketDesc | true/false | false | Hide or show the description of the tickets |
 isModalMode | true/false | false | Show the widget as a "Buy Now" button which opens the widget in a popup |
 checkoutMode | modal/dmn/blank | false | How the checkout will open on your website |
+occurrence | YYYYMMDD | empty | Force the ticket widget to open on a specific date |
 
 The following table shows more customisable options available for widgets with multiple events on display
 
