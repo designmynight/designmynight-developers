@@ -1475,6 +1475,18 @@ DMN.val('type', 'Dinner').hideInput('type');  // Set the booking type to 'Dinner
 
 <h2 id="multiple-booking-widgets">Multiple Booking Widgets</h2>
 
+<p>If you are adding the exact same booking widget script multiple times to the same webpage, it&rsquo;s worth differentiating each widget by added <code>&amp;widgetNum=X</code> to each widget (replacing X with a unique number).</p>
+
+<p>For example:</p>
+
+<p>Widget 1:</p>
+
+<p><code>&lt;script src=&quot;//partners.designmynight.com/pf/js?venue_id=5787a87595838bed3a8b4569&amp;widgetNum=1&quot; id=&quot;dmn-js&quot;&gt;&lt;/script&gt;</code></p>
+
+<p>Widget 2:</p>
+
+<p><code>&lt;script src=&quot;//partners.designmynight.com/pf/js?venue_id=5787a87595838bed3a8b4569&amp;widgetNum=2&quot; id=&quot;dmn-js&quot;&gt;&lt;/script&gt;</code></p>
+
 <p>If you have added multiple Collins booking widgets to the same page on your website and are doing a <code>DMN.val</code> (for example to <a href="https://developers.designmynight.com/collins/tracking/#custom-return-url">add a custom return URL and track each widget on Google Analytics</a>), you will need to do the following to set which specific widget should be targetted.</p>
 
 <p>Forms are accessed by their ID, but there&rsquo;s currently no way to set the ID for a particular form. Instead, you&rsquo;d need to retrieve the numerical ID from the form&rsquo;s ID attribute once it&rsquo;s been written to the page, using something like this, changing the <code>getElementById</code> part to something that identifies a container of the form you want to target:</p>
