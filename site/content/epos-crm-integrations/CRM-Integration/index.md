@@ -41,6 +41,13 @@ The Collins/Fishbowl integration is set up differently as it is a fixed connecti
 
 If you are looking to set up an integration with Fishbowl, please request your **Quick Subscribe Documentation** from Fishbowl and pass on to your Collins Account Manager. 
 
+We will need the following details:
+
+* URL: http://venue.fbmta.com/members/subscribe.aspx
+* siteGuid
+* listld
+* Storecode Mapping for each Collins venue
+
 The integration can be set up for indivudal venues or at venue group level (depending on whether all your venues are using the same Fishbowl account). 
 
 **_Please note:_** depending on our tech roadmap, it can take our tech team up to two weeks to set up this integration. 
