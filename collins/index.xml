@@ -109,5 +109,16 @@ This is the only way that we can guarantee that emails deliver correctly to you 
 The most common way of doing this is to set up an &amp;lsquo;SPF record&amp;rsquo; and DKIM for your domain (@yourvenue.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://developers.designmynight.com/collins/v2-widget-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developers.designmynight.com/collins/v2-widget-docs/</guid>
+      <description>Booking Widget Documentation Introduction The widget is applied to a page by including the &amp;lt;script&amp;gt; tag. This can be generated using the Widget Wizard within Collins, or you can manually piece the tag together.
+Attributes on the &amp;lt;script&amp;gt; tag allow you to specify options at run time, but you can also use the Javascript API to set options and control state.
+The stylesheet must be included as well as the script tag to style the widget.</description>
+    </item>
+    
   </channel>
 </rss>

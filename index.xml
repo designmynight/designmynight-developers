@@ -251,6 +251,17 @@ The most common way of doing this is to set up an &amp;lsquo;SPF record&amp;rsqu
     
     <item>
       <title></title>
+      <link>https://developers.designmynight.com/collins/v2-widget-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developers.designmynight.com/collins/v2-widget-docs/</guid>
+      <description>Booking Widget Documentation Introduction The widget is applied to a page by including the &amp;lt;script&amp;gt; tag. This can be generated using the Widget Wizard within Collins, or you can manually piece the tag together.
+Attributes on the &amp;lt;script&amp;gt; tag allow you to specify options at run time, but you can also use the Javascript API to set options and control state.
+The stylesheet must be included as well as the script tag to style the widget.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://developers.designmynight.com/epos-crm-integrations/crm-integration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -423,17 +434,6 @@ The most common way of doing this is to set up an &amp;lsquo;SPF record&amp;rsqu
 In order to test the integration of the api, ticket widget or booking widget, you can use the DesignMyNight Quality Assurance (QA) environment.
 Note: you will not receive an email as only whitelisted email address will be sent on the DesignMyNight Test Environments. If you wish to be added to the whitelist please let us know.
 Public test API’s is available at the following locations - https://api-qa.designmynight.com/v4/venues - https://api-qa.designmynight.com/v4/bookings</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://developers.designmynight.com/v2-widget-docs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://developers.designmynight.com/v2-widget-docs/</guid>
-      <description>Booking Widget Documentation Introduction The widget is applied to a page by including the &amp;lt;script&amp;gt; tag. This can be generated using the Widget Wizard within Collins, or you can manually piece the tag together.
-Attributes on the &amp;lt;script&amp;gt; tag allow you to specify options at run time, but you can also use the Javascript API to set options and control state.
-The stylesheet must be included as well as the script tag to style the widget.</description>
     </item>
     
   </channel>
