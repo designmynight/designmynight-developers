@@ -4,8 +4,12 @@ title: Users API
 ---
 
 {{<note title="Before you begin">}}
-Refer to the [API Basics](/api-basics) section to ensure you are familiar with the essentials of how to interact with the API.
+Refer to the [API Basics](/api/api-basics) section to ensure you are familiar with the essentials of how to interact with the API.
 {{</note>}}
+
+{{<warning title="Deprecated">}}
+  The use of this endpoint for retrieving and updating Collins _customer_ information is deprecated. Please use https://docs.collinsbookings.com/#tag/Customers instead.
+{{</warning>}}
 
 ## Overview
 

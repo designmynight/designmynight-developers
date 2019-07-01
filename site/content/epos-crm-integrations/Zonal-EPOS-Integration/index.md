@@ -234,9 +234,13 @@ Once the name has been been hyphenated and saved, the booking will automatically
 
 If the integration has worked correctly and you start to receive 'Invalid Mac' errors, it's likely that your system details have been updated (for example if the system is updated to have a new company name). This will invalidate the MAC calculations and is something for Zonal to look into. 
 
-6. **The remote name could not be resolved: 'nei-XXX.rtpsolutions.net** (where XXX replaced with your group name). 
+6. **'The remote name could not be resolved: 'nei-XXX.rtpsolutions.net** (where XXX replaced with your group name). 
 
 Zonal is trying to forward the API request to that URL but it can't be found. You will need to contact Zonal to resolve the issue.
+
+7. **'The request was aborted: The request was canceled'**
+
+This is an error that occurred on Zonal's end and it is unclear this end. Please contact Zonal to understand the issue and to get it resolved.
 
 ## Re-pushing '/create' error bookings
 If the integration is set up to push bookings ASAP, Collins will attempt to push bookings to your tills every time a user saves a booking if one of the following booking fields has been changed in Collins: 

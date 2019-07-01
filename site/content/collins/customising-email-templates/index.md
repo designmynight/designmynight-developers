@@ -52,6 +52,32 @@ Guides to help you add personalised messages to your emails within Collins:
 
 [Setting Email Templates](https://collins.uservoice.com/knowledgebase/articles/478032-emails-texts-adding-a-new-email-template-messa)
 
+## Adding dynamic content tags to the emails
+
+Within your Collins Confirmation email, you will be able to include dynamic content tags. The following tags are currently supported:
+
+* {{first_name}}
+* {{last_name}}
+* {{full_name}}
+* {{phone}}
+* {{email}}
+* {{company}}
+* {{venue}}
+* {{type}}
+* {{area}}
+* {{num_people}}
+* {{date}}
+* {{time}}
+* {{until}}
+* {{booking_ref}}
+* {{min_spend}}
+
+We would recommend that you add the dynamic tags within Collins (as opposed to in the HTML email templates).
+
+This way you will be able to easily amend the copy in your Collins admin at any time (as opposed to having to send over updated HTML for our tech team to update - which would have to be scheduled against our tech roadmap).
+
+Guide to help you: [Add personalised messages to your booking confirmation email](https://collins.uservoice.com/knowledgebase/articles/478026-booking-types-adding-text-to-the-confirmation-em)
+                    
 ### Other non-customisable Content
 
 Currently it's not possible to amend the following:
@@ -79,7 +105,6 @@ Currently it's not possible to amend the following:
 * You are unable to add the option to ‘view in a browser’ as we do not have that option with these transactional emails. 
 
 * You are unable to amend the format of the date showing in the booking summary in the emails eg from 9 May 2017 to display as Tuesday 9 May 2017
-
 
 ## Customising Email Templates FAQs
 
@@ -112,4 +137,6 @@ If you only wish to customise a specific type of email (eg Confirmation), we rec
 **4. We've got a booking type for Halloween. Would it be possible to add an email template specifically for this booking type (so we can make it themed!)?**
 
 Unfortunately, we are currently only able to upload HTML templates **per email type** and not by booking type. 
+
+
 

@@ -31,6 +31,8 @@ With each booking, we will also push the associated customer details to the Koba
 
 ## Payments Valid to Push to Kobas EPOS
 
+The integration does not currently support pushing any payments after the booking date has passed.
+
 * **Paid Deposits** 
 
 All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) taken using the payment link in Collins will automatically push to your Kobas EPOS. 
@@ -120,7 +122,9 @@ Without all these details, we will be unable to push the booking to your tills.
 
 ## Refunding on Collins and Kobas
 
-Currently, the integration does **not** support pushing refunds to Kobas. As such, if you [refund a payment within Collins](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer), you will also have to manually refund the payment within Kobas. 
+From June 2019, the integration now supports pushing refunds to Kobas. 
+
+Within Kobas, you will see a single value which will be the total value of payments taken in Collins (deducting any refunds issued). 
 
 ## Kobas EPOS Integration FAQS
 

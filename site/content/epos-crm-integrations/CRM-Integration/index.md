@@ -41,6 +41,13 @@ The Collins/Fishbowl integration is set up differently as it is a fixed connecti
 
 If you are looking to set up an integration with Fishbowl, please request your **Quick Subscribe Documentation** from Fishbowl and pass on to your Collins Account Manager. 
 
+We will need the following details:
+
+* URL: http://venue.fbmta.com/members/subscribe.aspx
+* siteGuid
+* listld
+* Storecode Mapping for each Collins venue
+
 The integration can be set up for indivudal venues or at venue group level (depending on whether all your venues are using the same Fishbowl account). 
 
 **_Please note:_** depending on our tech roadmap, it can take our tech team up to two weeks to set up this integration. 
@@ -104,7 +111,8 @@ To set this up, we require the following details from Zonal:
 * URL eg https://fullers.txdlimited.co.uk/api_v1/booking
 * Username
 * Password
-* Mapping of our venue IDs to Zonal IDs
+* Mapping between each Collins Venue ID and Zonal ID
+* Mapping between each [Collins Marketing Preference](https://collins.uservoice.com/knowledgebase/articles/1859686-venue-group-marketing-preferences-message) and the relevant Zonal Marketing Opt-in. 
 
 
 

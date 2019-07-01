@@ -137,4 +137,11 @@ Source|`source` value in the API|`partner_source` value|
 Own Website|`partner`|N/A
 DesignMyNight.com|`designmynight`|N/A
 [Manually added into Collins by the team](https://collins.uservoice.com/knowledgebase/articles/478053-within-a-booking-enquiry-tag-a-booking-with-a-so)|`admin`|This will take the name of the relevant source as [set up within Collins](https://collins.uservoice.com/knowledgebase/articles/478035-venue-group-adding-editing-sources).  Please note: it's not compulsory for the team to add the source for enquiries that they manually add. As such, if no specific source has been added, `partner_source` will not appear. 
- 
+
+**8. We've just made a `POST` request instead of a `GET` request by accident. It seems to have deleted the booking types set up within Collins. What happened and what can be done to retrieve the lost data?**
+
+Please note that `POST`, `PUT`, `PATCH` and `DELETE` methods will change data. If you are running these methods within a live Collins environment, you will be changing live settings and data. As such, please only use these methods if you are confident in what you are doing and accept the risks if you break anything. 
+
+If this has happened, please contact your Collins Account Manager for advice. 
+
+If you would like to be set up with a sandbox account to play around with (to test before making any requests on a live account), please contact your Collins Account Manager to set this up. 

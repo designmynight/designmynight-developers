@@ -242,6 +242,19 @@ Example of a partner with a German booking widget: [Petit Chef Berlin](https://b
 **_Please note:_** Your web developer may need to edit the size of the widget to accommodate the change in the language. Guide to help them [customise the size of the widget](http://developers.designmynight.com/collins/booking-widget/#customising-your-collins-booking-widget).    
 
 ## Multiple Booking Widgets
+
+If you are adding the exact same booking widget script multiple times to the same webpage, it's worth differentiating each widget by added `&widgetNum=X` to each widget (replacing X with a unique number).
+
+For example:
+
+Widget 1:
+
+`<script src="//partners.designmynight.com/pf/js?venue_id=5787a87595838bed3a8b4569&widgetNum=1" id="dmn-js"></script>`
+
+Widget 2:
+
+`<script src="//partners.designmynight.com/pf/js?venue_id=5787a87595838bed3a8b4569&widgetNum=2" id="dmn-js"></script>`
+
 If you have added multiple Collins booking widgets to the same page on your website and are doing a `DMN.val` (for example to [add a custom return URL and track each widget on Google Analytics](https://developers.designmynight.com/collins/tracking/#custom-return-url)), you will need to do the following to set which specific widget should be targetted. 
 
 Forms are accessed by their ID, but there's currently no way to set the ID for a particular form. Instead, you'd need to retrieve the numerical ID from the form's ID attribute once it's been written to the page, using something like this, changing the `getElementById` part to something that identifies a container of the form you want to target:
