@@ -83,3 +83,20 @@ The booking info will be passed back in the URL.
 When using the POST return method, you need to ensure that your webserver and application can accept POST requests from the designmynight.com domain, including any subdomain.
 
 **_Please note:_** the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format.
+
+## Setting the Source on Booking URLs
+
+If you would like to track bookings that have come from a specific booking url (for example if you wish to monitor bookings coming through a certain marketing newsletter), you are able to set the source of the booking url. 
+
+To do this:
+
+1) [Add the source within Collins](https://collins.uservoice.com/knowledgebase/articles/478035-venue-group-adding-editing-sources) as this will help with your [Reporting](https://collins.uservoice.com/knowledgebase/articles/1135057-reports-source-breakdown).
+
+2) Add `partner_source=XXXX` to your booking URL, where you replace XXXX with the Source.
+
+Example of what the full URL will look like:
+
+https://bookings.designmynight.com/book?venue_id=12345&source=partner&partner_source=XXXX
+
+3) Any bookings/enquiries that come from this booking url will have the associated source auto-populated against the booking in Collins. 
+
