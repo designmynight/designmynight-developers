@@ -98,5 +98,8 @@ Example of what the full URL will look like:
 
 https://bookings.designmynight.com/book?venue_id=12345&source=partner&partner_source=XXXX
 
-3) Any bookings/enquiries that come from this booking url will have the associated source auto-populated against the booking in Collins. 
+Any bookings/enquiries that come from this booking url will have the associated source auto-populated against the booking in Collins. 
 
+**Please note:** if your source is more than one word, you will need to separate each word with `%20`.
+
+For example, if your Source is **Christmas Newsletter**, you would add `partner_source=Christmas%20Newsletter` to your booking url. 
