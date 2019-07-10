@@ -1263,6 +1263,22 @@
 
 <p><strong><em>Please note:</em></strong> the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format.</p>
 
+<h2 id="setting-the-source-on-booking-urls">Setting the Source on Booking URLs</h2>
+
+<p>If you would like to track bookings that have come from a specific booking url (for example if you wish to monitor bookings coming through a certain marketing newsletter), you are able to set the source of the booking url.</p>
+
+<p>To do this:</p>
+
+<p>1) <a href="https://collins.uservoice.com/knowledgebase/articles/478035-venue-group-adding-editing-sources">Add the source within Collins</a> as this will help with your <a href="https://collins.uservoice.com/knowledgebase/articles/1135057-reports-source-breakdown">Reporting</a>.</p>
+
+<p>2) Add <code>partner_source=XXXX</code> to your booking URL, where you replace XXXX with the Source.</p>
+
+<p>Example of what the full URL will look like:</p>
+
+<p><a href="https://bookings.designmynight.com/book?venue_id=12345&amp;source=partner&amp;partner_source=XXXX">https://bookings.designmynight.com/book?venue_id=12345&amp;source=partner&amp;partner_source=XXXX</a></p>
+
+<p>3) Any bookings/enquiries that come from this booking url will have the associated source auto-populated against the booking in Collins.</p>
+
 			
 			<aside class="copyright" role="note">
 				
