@@ -8,18 +8,18 @@
   <head lang="en-gb">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <title>Offers API - DMN developer documentation</title>
+    <title> - DMN developer documentation</title>
     <meta name="generator" content="Hugo 0.22.1" />
 
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="https://developers.designmynight.com/api/offers-api/">
+    <link rel="canonical" href="https://developers.designmynight.com/epos-crm-integrations/comtrex-integration/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="https://developers.designmynight.com/api/offers-api/">
+    <meta property="og:url" content="https://developers.designmynight.com/epos-crm-integrations/comtrex-integration/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="https://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -91,7 +91,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Offers API
+        
       </div>
     </div>
 
@@ -864,14 +864,11 @@
 
 
 
-<a class="current" title="Offers API" href="https://developers.designmynight.com/api/offers-api/">
+<a  title="Offers API" href="https://developers.designmynight.com/api/offers-api/">
 	
 	Offers API
 </a>
 
-
-<ul id="scrollspy">
-</ul>
   
       
         
@@ -1166,383 +1163,14 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>Offers API </h1>
+			<h1> </h1>
 
 			
 
-<p>The DesignMyNight Offers API can be used to check which offers are eligible for a given booking.</p>
+<h2 id="overview-of-the-collins-comtrex-epos-integration">Overview of the Collins/Comtrex EPOS Integration</h2>
 
-<h2 id="overview">Overview</h2>
-
-<p>The Offers API can be accessed with a <code>GET</code> request to the <code>/venues/VENUE_ID/offers</code> endpoint. Replace with the venue ID you wish to check offers for.</p>
-
-<pre><code class="language-shell">$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/offers
-</code></pre>
-
-<h2 id="visibility">Visibility</h2>
-
-<p>Offers can optionally be defined to be <code>visible_from</code> and <code>visible_to</code> a specified date range. This endpoint will only return offers where any of the conditions below are met:</p>
-
-<ul>
-<li>The <code>visible_from</code> and <code>visible_to</code> are both set, and the time* is between these dates</li>
-<li>The <code>visible_from</code> <em>and</em> <code>visible_to</code> dates have not been specified</li>
-<li>The <code>visible_from</code> is in the past*, and the <code>visible_to</code> is not set</li>
-<li>The <code>visible_from</code> is not set, and the <code>visible_to</code> is in the future*</li>
-</ul>
-
-<p>*<small>Using the time the request was made, in London time</small></p>
-
-<h2 id="request-parameters">Request Parameters</h2>
-
-<p>You can apply parameters to the request to filter out offers which would not be eligible. For example, if an offer only applied to parties larger than 5, appending <code>num_people=2</code> would mean the response would not return that offer.</p>
-
-<p>The parameters are the same as the ones used in the <a href="/booking-api/#booking-format">Bookings API</a>.</p>
-
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>type</code></td>
-<td>The ID of the booking type as a string.</td>
-</tr>
-
-<tr>
-<td><code>num_people</code></td>
-<td>The number of guests in the booking as an integer</td>
-</tr>
-
-<tr>
-<td><code>date</code></td>
-<td>The date of the booking, in the format YYYY-MM-DD</td>
-</tr>
-
-<tr>
-<td><code>time</code></td>
-<td>The time of the booking in 24-hour format, eg 19:00</td>
-</tr>
-
-<tr>
-<td><code>duration</code></td>
-<td>The duration of the booking in hours as a decimal, eg 1.5</td>
-</tr>
-</tbody>
-</table>
-
-<p>All parameters are optional. When a request is made with no parameters, the response will contain all visible offers for the specified venue.</p>
-
-<h2 id="response-format">Response Format</h2>
-
-<p>Inside the <code>payload</code> key of the response will be an array of offers, and these offers will contain the following keys:</p>
-
-<table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>_id</code></td>
-<td><code>string</code></td>
-<td>The ID of the offer</td>
-</tr>
-
-<tr>
-<td><code>page_id</code></td>
-<td><code>string</code></td>
-<td>The ID of the venue in which the offer applies to</td>
-</tr>
-
-<tr>
-<td><code>page_status</code></td>
-<td><code>string</code></td>
-<td>The visibility status of the venue</td>
-</tr>
-
-<tr>
-<td><code>page_can_book</code></td>
-<td><code>boolean</code></td>
-<td>Whether the venue can be booked online</td>
-</tr>
-
-<tr>
-<td><code>region_id</code></td>
-<td><code>string</code></td>
-<td>The ID of the region this venue is located in</td>
-</tr>
-
-<tr>
-<td><code>title</code></td>
-<td><code>string</code></td>
-<td>The title of the offer</td>
-</tr>
-
-<tr>
-<td><code>type_of_offer</code></td>
-<td><code>array</code></td>
-<td>Currently unused, but may be used in the future</td>
-</tr>
-
-<tr>
-<td><code>type_of_venue</code></td>
-<td><code>array</code></td>
-<td>An array of objects describing the type of venue</td>
-</tr>
-
-<tr>
-<td><code>availability</code></td>
-<td><code>string</code></td>
-<td>The source where bookings will be eligible to use this offer. Possible values are <br>&bullet; <code>&quot;&quot;</code> - All bookings<br>&bullet; <code>partner</code> - Only bookings from your website<br>&bullet; <code>designmynight</code> - Only bookings from DesignMyNight</td>
-</tr>
-
-<tr>
-<td><code>description</code></td>
-<td><code>string</code></td>
-<td>A description of the offer</td>
-</tr>
-
-<tr>
-<td><code>start_date</code></td>
-<td><code>string</code></td>
-<td>When this offer is valid from, in ISO 8601 format</td>
-</tr>
-
-<tr>
-<td><code>expiry_date</code></td>
-<td><code>string</code></td>
-<td>When this offer will expire, in ISO 8601 format</td>
-</tr>
-
-<tr>
-<td><code>visible_from</code></td>
-<td><code>string</code></td>
-<td>When this offer will be visible from, in ISO 8601 format</td>
-</tr>
-
-<tr>
-<td><code>visible_to</code></td>
-<td><code>string</code></td>
-<td>When this offer will be visible until, in ISO 8601 format</td>
-</tr>
-
-<tr>
-<td><code>rules</code></td>
-<td><code>object</code></td>
-<td>An object containing rules for this offer. See <a href="#offer-rules">Offer Rules</a></td>
-</tr>
-
-<tr>
-<td><code>restrict_offer_to_types</code></td>
-<td><code>boolean</code></td>
-<td>Whether this offer only applies to specific booking types</td>
-</tr>
-
-<tr>
-<td><code>booking_types</code></td>
-<td><code>array</code> (only present if <code>restrict_offer_to_types</code> is true)</td>
-<td>An array of booking types which this offer is eligible for</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="booking-types">Booking Types</h2>
-
-<p>When a <code>type</code> parameter is not specified in the request, the API will not filter offers based on the booking type they apply to.</p>
-
-<p>Be aware that this will return offers that only apply to specific booking types. You can determine whether an offer applies to <em>all</em> booking types with the <code>restrict_offer_to_types</code> key in the response.</p>
-
-<h2 id="example-request">Example Request</h2>
-
-<p>In this example, we will be requesting offers which are:</p>
-
-<ul>
-<li>Valid for a group of 6 people</li>
-<li>Will be valid on the 26th September 2017</li>
-</ul>
-
-<pre><code class="language-shell">$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/offers?date=2017-09-26&amp;num_people=6
-</code></pre>
-
-<p>And your response will look like this:</p>
-
-<pre><code class="language-json">{
-    &quot;payload&quot;: [
-        {
-            &quot;_id&quot;: &quot;123456789&quot;,
-            &quot;page_id&quot;: &quot;552435790df6902b7256f237&quot;,
-            &quot;page_status&quot;: &quot;inactive&quot;,
-            &quot;page_can_book&quot;: false,
-            &quot;region_id&quot;: &quot;512b1ebad5d190d2978c277e&quot;,
-            &quot;title&quot;: &quot;Happy Hour!&quot;,
-            &quot;type_of_offer&quot;: [],
-            &quot;type_of_venue&quot;: [
-                {...}
-            ],
-            &quot;availability&quot;: &quot;designmynight&quot;,
-            &quot;description&quot;: &quot;Two for one cocktails from 5pm - 8pm on weekdays&quot;,
-            &quot;start_date&quot;: &quot;2016-10-03T00:00:00&quot;,
-            &quot;expiry_date&quot;: &quot;2017-09-30T00:00:00&quot;,
-            &quot;visible_from&quot;: &quot;2016-09-01T00:00:00&quot;,
-            &quot;visible_to&quot;: &quot;2017-09-30T00:00:00&quot;,
-            &quot;rules&quot;: {...},
-            &quot;restrict_offer_to_types&quot;: false
-        }
-    ],
-    &quot;status&quot;: 200,
-    &quot;requestTime&quot;: &quot;2017-09-26T10:42:37&quot;,
-    &quot;responseTime&quot;: &quot;2017-09-26T10:42:37&quot;,
-    &quot;statusText&quot;: &quot;OK&quot;,
-    &quot;url&quot;: &quot;/v4/venues/552435790df6902b7256f237/offers&quot;,
-    &quot;method&quot;: &quot;GET&quot;,
-    &quot;params&quot;: []
-}
-</code></pre>
-
-<h2 id="offer-rules">Offer Rules</h2>
-
-<p>If an offer has rules applied to it, these rules will be returned in the <code>rules</code> key.</p>
-
-<table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>min_people</code></td>
-<td><code>integer</code></td>
-<td>The minimum number of people required in a booking for this offer. <code>null</code> if the rule has not been set.</td>
-</tr>
-
-<tr>
-<td><code>max_people</code></td>
-<td><code>integer</code></td>
-<td>The maximum number of people allowed in a booking for this offer. <code>null</code> if the rule has not been set.</td>
-</tr>
-
-<tr>
-<td><code>monday</code></td>
-<td>See <a href="#day-rules">Day Rules</a></td>
-<td>Rules specific to bookings on a Monday</td>
-</tr>
-
-<tr>
-<td><code>tuesday</code></td>
-<td>See <a href="#day-rules">Day Rules</a></td>
-<td>Rules specific to bookings on a Tuesday</td>
-</tr>
-
-<tr>
-<td><code>wednesday</code></td>
-<td>See <a href="#day-rules">Day Rules</a></td>
-<td>Rules specific to bookings on a Wednesday</td>
-</tr>
-
-<tr>
-<td><code>thursday</code></td>
-<td>See <a href="#day-rules">Day Rules</a></td>
-<td>Rules specific to bookings on a Thursday</td>
-</tr>
-
-<tr>
-<td><code>friday</code></td>
-<td>See <a href="#day-rules">Day Rules</a></td>
-<td>Rules specific to bookings on a Friday</td>
-</tr>
-
-<tr>
-<td><code>saturday</code></td>
-<td>See <a href="#day-rules">Day Rules</a></td>
-<td>Rules specific to bookings on a Saturday</td>
-</tr>
-
-<tr>
-<td><code>sunday</code></td>
-<td>See <a href="#day-rules">Day Rules</a></td>
-<td>Rules specific to bookings on a Sunday</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="day-rules">Day Rules</h3>
-
-<p>Each day of the week contains an object with the following keys</p>
-
-<table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>available</code></td>
-<td><code>boolean</code></td>
-<td>Whether this offer is available on this day of the week</td>
-</tr>
-
-<tr>
-<td><code>from</code></td>
-<td><code>string</code></td>
-<td>The time this offer is valid from on this day of the week, in <code>HH:MM</code> format</td>
-</tr>
-
-<tr>
-<td><code>to</code></td>
-<td><code>string</code></td>
-<td>The time this offer is valid until on this day of the week, in <code>HH:MM</code> format*</td>
-</tr>
-</tbody>
-</table>
-
-<p>*<small>If the duration of the booking exceeds the <code>to</code> time, the offer will still be returned. The <code>to</code> time is for bookings that <em>start after</em> this time.</small></p>
-
-<h2 id="offers-in-booking-availability">Offers in booking-availability</h2>
-
-<p>The <a href="https://developers.designmynight.com/api/booking-api/#checking-availability">Booking API</a> has the functionality to get offers which are valid for the specified booking type. To enable this, append the <code>getOffers=true</code> parameter to your booking availability request.</p>
-
-<pre><code class="language-shell">$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/booking-availability?num_people=2&amp;date=2017-09-26&amp;getOffers=true
-</code></pre>
-
-<p>The response will contain an array of eligible <em>Offer IDs</em> in the <code>suggestedValues</code> fields under the following keys:</p>
-
-<ul>
-<li><code>type</code></li>
-<li><code>time</code></li>
-<li><code>duration</code></li>
-</ul>
-
-<pre><code class="language-json">{
-    &quot;time&quot;: {
-        &quot;suggestedValues&quot;: [
-            {
-                &quot;time&quot;: &quot;17:30&quot;,
-                &quot;offers&quot;: [
-                    &quot;57973d38ffe4fb53448b45d5&quot;
-                ]
-            }
-        ]
-    }
-}
-</code></pre>
-
-<p><small>Some keys omitted for brevity</small></p>
+<p>The purpose of the integration between Collins and Zonal is for Collins to be able to push the details of bookings and their
+associated deposits to the Zonal EPOS system.</p>
 
 			
 			<aside class="copyright" role="note">
@@ -1563,7 +1191,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://developers.designmynight.com/api/users-api/" title="Users API">
+      <a href="https://developers.designmynight.com/epos-crm-integrations/epos-integration/" title="">
         <span class="direction">
           Previous
         </span>
@@ -1573,7 +1201,7 @@
           </div>
           <div class="stretch">
             <div class="title">
-              Users API
+              
             </div>
           </div>
         </div>
@@ -1583,14 +1211,14 @@
 
   <div class="next">
   
-      <a href="https://developers.designmynight.com/api/venue-groups/" title="Venue Groups API">
+      <a href="https://developers.designmynight.com/epos-crm-integrations/crm-integration/" title="">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Venue Groups API
+              
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
