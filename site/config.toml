@@ -218,7 +218,7 @@ googleAnalytics = "UA-12385609-13"
 [[menu.main]]
     name   = "EPOS Integration"
     url    = "epos-crm-integrations/epos-integration"
-    identifier = "epos-crm-integrations"
+    parent = "epos-crm-integrations"
 	weight = 401
 
 [[menu.main]]
