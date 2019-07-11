@@ -6,6 +6,7 @@ We can give EPOS systems access to the Collins API. This will enable them to pul
 
 * Polaris
 * Lightspeed
+* Point One
 
 To get either of the above integrations set up, please contact your Collins Account Manager.
 
