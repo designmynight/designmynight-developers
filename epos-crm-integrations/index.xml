@@ -40,7 +40,7 @@ The following CRM systems currently access our API:
       <guid>https://developers.designmynight.com/epos-crm-integrations/epos-integration/</guid>
       <description>EPOS Systems using the Collins API We can give EPOS systems access to the Collins API. This will enable them to pull specific data from Collins for example, any pre-paid deposits.
 The following EPOS systems currently access our API:
- Polaris Lightspeed  To get either of the above integrations set up, please contact your Collins Account Manager.
+ Polaris Lightspeed Point One  To get either of the above integrations set up, please contact your Collins Account Manager.
 How to set up access to the Collins API We are able to give access to the following API endpoints:</description>
     </item>
     
