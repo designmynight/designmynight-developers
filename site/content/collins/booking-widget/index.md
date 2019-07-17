@@ -306,9 +306,12 @@ Your web developer should amend the CSS to tweak the colours used in your [Form 
 
 **4. By default, the second iFrame is a pop up. Is it possible to direct to a booking page (which is not a pop up)?**
 
-The modal styling can be customised with CSS. It will either open an iframe within a modal, or redirect to the booking page depending on available screen size. Your web developer will be able to customise the size to dictate what happens.
+The modal styling can be customised with CSS. It will either open an iframe within a modal, or redirect to the booking page depending on available screen size. Your web developer will be able to customise the size of the iframe to dictate what happens.
+
+To do this, your web developer would need to override the CSS for `.partner-form-modal` (on your website, not on the [customised stylesheet](https://developers.designmynight.com/collins/customising-2nd-iframe/) provided to Collins). 
 
 Here's an example of what the second iFrame could look like: [Alexander's](https://www.designmynight.com/book?venue_id=59157f51ff52d61204696b4c&venue_group=59157fe4ff52d613565b24aa&type=591ec9ca05b6e0052806695e&num_people=4&date=2017-8-17&time=09:00&duration=120&notes=&locale=en-GB&source=partner&stylesheet=alexanders)
+
 
 **5. I've added the widget code to my site but when I click the 'Enquire Now' button, the second iFrame is hidden behind elements of my website. This is affecting customers' ability to complete their booking/enquiry. What could be causing this?**
 
