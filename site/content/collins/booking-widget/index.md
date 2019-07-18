@@ -6,9 +6,13 @@ With the booking widget, the customer journey will take place in two parts:
 
 1. The customer selects the type of booking, date, number of guests, time and (optionally) a duration for the booking. This part of the process takes place within the form that is embedded in your site.
 
+![initial widget](https://static.designmynight.com/uploads/2019/07/V1-widget-optimised.png)
+
 2. The customer clicks to continue, and will be shown a form with the following stage(s) of the booking, including collecting their contact details and optionally taking payment or allowing pre-orders to be added to the booking. This part of the process takes place on the DesignMyNight website, either
 <br>a) **For small screens** (e.g mobile phones) - in a new tab, or
 <br>b) **For regular screens** - inside a popup on your website. In this case the customer will not be aware that they are using a different website to complete their booking
+
+![second iframe](https://static.designmynight.com/uploads/2019/07/2nd-iframe-optimised.png)
 
 ## Accessing your Collins booking widget code
 
