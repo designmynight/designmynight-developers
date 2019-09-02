@@ -216,34 +216,40 @@ googleAnalytics = "UA-12385609-13"
 	weight = 400
 
 [[menu.main]]
+    name   = "EPOS Integration"
+    url    = "epos-crm-integrations/epos-integration"
+    parent = "epos-crm-integrations"
+	weight = 401
+
+[[menu.main]]
     name   = "Zonal EPOS Integration"
     url    = "epos-crm-integrations/zonal-epos-integration/"
     parent = "epos-crm-integrations"
-	weight = 401
+	weight = 402
 
 [[menu.main]]
     name   = "IBS EPOS Integration"
     url    = "epos-crm-integrations/ibs-epos-integration/"
     parent = "epos-crm-integrations"
-	weight = 402
+	weight = 403
 	
 [[menu.main]]
     name   = "Tevalis EPOS Integration"
     url    = "epos-crm-integrations/tevalis-epos-integration/"
     parent = "epos-crm-integrations"
-	weight = 403
+	weight = 404
 
 [[menu.main]]
     name   = "Kobas EPOS Integration"
     url    = "epos-crm-integrations/kobas-epos-integration/"
     parent = "epos-crm-integrations"
-	weight = 404
+	weight = 405
 
 [[menu.main]]
     name   = "CRM Integration"
     url    = "epos-crm-integrations/crm-integration/"
     parent = "epos-crm-integrations"
-	weight = 405
+	weight = 406
 	
 
 [[menu.main]]

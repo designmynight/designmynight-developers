@@ -28,7 +28,7 @@ Here are some great examples of customised emails that our partners have created
 
 [Alexander's](https://static.designmynight.com/uploads/2017/11/Alexanders-Example-optimised.png)
 
-[Casita Andina](https://static.designmynight.com/uploads/2017/11/Andina-Example-optimised.png)
+[The Alchemist](https://static.designmynight.com/uploads/2019/08/Alchemist-Email-template.png)
 
 ## Non-customisable Content
 

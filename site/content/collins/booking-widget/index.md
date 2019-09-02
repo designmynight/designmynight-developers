@@ -6,9 +6,13 @@ With the booking widget, the customer journey will take place in two parts:
 
 1. The customer selects the type of booking, date, number of guests, time and (optionally) a duration for the booking. This part of the process takes place within the form that is embedded in your site.
 
+![initial widget](https://static.designmynight.com/uploads/2019/07/V1-widget-optimised.png)
+
 2. The customer clicks to continue, and will be shown a form with the following stage(s) of the booking, including collecting their contact details and optionally taking payment or allowing pre-orders to be added to the booking. This part of the process takes place on the DesignMyNight website, either
 <br>a) **For small screens** (e.g mobile phones) - in a new tab, or
 <br>b) **For regular screens** - inside a popup on your website. In this case the customer will not be aware that they are using a different website to complete their booking
+
+![second iframe](https://static.designmynight.com/uploads/2019/07/2nd-iframe-optimised.png)
 
 ## Accessing your Collins booking widget code
 
@@ -306,9 +310,12 @@ Your web developer should amend the CSS to tweak the colours used in your [Form 
 
 **4. By default, the second iFrame is a pop up. Is it possible to direct to a booking page (which is not a pop up)?**
 
-The modal styling can be customised with CSS. It will either open an iframe within a modal, or redirect to the booking page depending on available screen size. Your web developer will be able to customise the size to dictate what happens.
+The modal styling can be customised with CSS. It will either open an iframe within a modal, or redirect to the booking page depending on available screen size. Your web developer will be able to customise the size of the iframe to dictate what happens.
+
+To do this, your web developer would need to override the CSS for `.partner-form-modal` (on your website, not on the [customised stylesheet](https://developers.designmynight.com/collins/customising-2nd-iframe/) provided to Collins). 
 
 Here's an example of what the second iFrame could look like: [Alexander's](https://www.designmynight.com/book?venue_id=59157f51ff52d61204696b4c&venue_group=59157fe4ff52d613565b24aa&type=591ec9ca05b6e0052806695e&num_people=4&date=2017-8-17&time=09:00&duration=120&notes=&locale=en-GB&source=partner&stylesheet=alexanders)
+
 
 **5. I've added the widget code to my site but when I click the 'Enquire Now' button, the second iFrame is hidden behind elements of my website. This is affecting customers' ability to complete their booking/enquiry. What could be causing this?**
 
