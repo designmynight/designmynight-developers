@@ -152,6 +152,14 @@ Determines if the given `HTMLScriptElement` tag has been rendered into a widget 
 
 Each rendered widget is represented as a `Widget`, which contains methods for controlling its state and functionality. 
 
+### `setMinGuests (minGuests: number): Widget`
+
+Sets the minimum number of guests which the user can select from.
+
+### `setMaxGuests (maxGuests: number): Widget`
+
+Sets the maximum number of guests which the user can select from.
+
 #### `setSelectableVenuesById (venueIds: string[]): Widget`
 
 Sets the venues which a user can select from. An array of venue IDs strings must be passed in. This is an alternative to specifying the `venue` attribute on the `<script>` tag.
