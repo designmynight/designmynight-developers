@@ -129,7 +129,8 @@ The most common way of doing this is to set up an &amp;lsquo;SPF record&amp;rsqu
       <guid>https://developers.designmynight.com/collins/v2-widget-docs/</guid>
       <description>Booking Widget Documentation The booking widget is the easiest way to allow customers to book through your website. You simply add a small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.
 The customer journey will be as follows:
- The customer selects the number of guests and date.   The widget will suggest available booking types.</description>
+Stage 1: The customer selects the number of guests and date.
+Stage 2: The widget will suggest available booking types.</description>
     </item>
     
   </channel>
