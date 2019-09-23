@@ -1,5 +1,27 @@
 # Booking Widget Documentation
 
+The booking widget is the easiest way to allow customers to book through your website. You simply add a small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.
+
+The customer journey will be as follows:
+
+1. The customer selects the number of guests and date. 
+
+![initial widget](https://static.designmynight.com/uploads/2019/09/V2-widget-initial-optimised.png)
+
+2. The widget will suggest available booking types. The customer will be prompted to select a booking type.
+
+![initial widget - selecting booking types](https://static.designmynight.com/uploads/2019/09/v2-widget-2-optimised.png)
+
+3. The widget will surface times. The customer will be prompted to select a start and end time. 
+
+![initial widget - selecting times](https://static.designmynight.com/uploads/2019/09/v2-widget-3-optimised.png)
+
+4. The customer will then be directed to a splash screen to fill in their contact details and optionally taking payment or allowing pre-orders to be added to the booking. This part of the process takes place on the DesignMyNight website.
+
+![initial widget - contact details](https://static.designmynight.com/uploads/2019/09/v2-widget-URL-optimised.png)
+
+Stages 1-3 take place within the form embedded in your website. Stage 4 takes place on a new page (and is referred to as the second stage of the widget). 
+
 ## Introduction
 
 The widget is applied to a page by including the `<script>` tag. This can be generated using the *Widget Wizard* within Collins, or you can manually piece the tag together.
