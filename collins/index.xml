@@ -13,6 +13,18 @@
     
     <item>
       <title></title>
+      <link>https://developers.designmynight.com/collins/customising-second-stage-of-v2-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developers.designmynight.com/collins/customising-second-stage-of-v2-widget/</guid>
+      <description>Customising the 2nd stage of your Collins booking widget The second stage of the Collins V2 widget is the page where customers are prompted to give their contact details, optionally taking payment or allowing pre-orders to be added to the booking.
+You are able to customise this stage of the widget.
+To customise your second stage of the widget, your web developer would need to:
+ Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://developers.designmynight.com/collins/booking-url/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
