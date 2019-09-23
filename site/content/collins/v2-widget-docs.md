@@ -4,22 +4,18 @@ The booking widget is the easiest way to allow customers to book through your we
 
 The customer journey will be as follows:
 
-1. The customer selects the number of guests and date. 
+Stage 1: The customer selects the number of guests and date. 
 
 ![initial widget](https://static.designmynight.com/uploads/2019/09/V2-widget-initial-optimised.png)
 
-1. The widget will suggest available booking types. The customer will be prompted to select a booking type.
-
+Stage 2: The widget will suggest available booking types. The customer will be prompted to select a booking type.
 ![initial widget - selecting booking types](https://static.designmynight.com/uploads/2019/09/v2-widget-2-optimised.png)
 
-1. The widget will surface times. The customer will be prompted to select a start and end time. 
-
+Stage 3. The widget will surface times. The customer will be prompted to select a start and end time. 
 ![initial widget - selecting times](https://static.designmynight.com/uploads/2019/09/v2-widget-3-optimised.png)
 
-1. The customer will then be directed to a splash screen to fill in their contact details and optionally taking payment or allowing pre-orders to be added to the booking. This part of the process takes place on the DesignMyNight website.
-
+Stage 4. The customer will then be directed to a splash screen to fill in their contact details and optionally taking payment or allowing pre-orders to be added to the booking. This part of the process takes place on the DesignMyNight website.
 ![initial widget - contact details](https://static.designmynight.com/uploads/2019/09/v2-widget-URL-optimised.png)
-
 Stages 1-3 take place within the form embedded in your website. Stage 4 takes place on a new page (and is referred to as the second stage of the widget). 
 
 ## Introduction
