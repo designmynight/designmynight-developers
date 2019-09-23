@@ -65,48 +65,54 @@ googleAnalytics = "UA-12385609-13"
 	url    = "collins/booking-widget/"
 	parent = "collins"
 	weight = 210
+	
+[[menu.main]]
+	name   = "Customising 2nd Iframe"
+	url    = "collins/customising-2nd-iframe/"
+	parent = "collins"
+	weight = 215
 
 [[menu.main]]
 	name   = "Collins V2 Booking Widget"
 	url    = "collins/v2-widget-docs/"
 	parent = "collins"
-	weight = 211
-
-[[menu.main]]
-	name   = "Customising 2nd Iframe"
-	url    = "collins/customising-2nd-iframe/"
-	parent = "collins"
 	weight = 220
 
+[[menu.main]]
+	name   = "Customising Second Stage of V2 Widget"
+	url    = "collins/Customising-Second-Stage-of-V2-Widget/"
+	parent = "collins"
+	weight = 225
+	
 [[menu.main]]
 	name   = "Booking URLs"
 	url    = "collins/booking-url/"
 	parent = "collins"
-	weight = 225
+	weight = 230
 
 [[menu.main]]
 	name   = "General Enquiry Form"
 	url    = "collins/general-enquiry-form/"
 	parent = "collins"
-	weight = 230
+	weight = 240
 
 [[menu.main]]
 	name   = "Customising Email Templates"
 	url    = "collins/customising-email-templates/"
 	parent = "collins"
-	weight = 235
+	weight = 245
 
 [[menu.main]]
 	name   = "Taking Bookings from Google"
 	url    = "collins/taking-bookings-from-google/"
 	parent = "collins"
-	weight = 240
+	weight = 250
 
 [[menu.main]]
 	name   = "Tracking"
 	url    = "collins/tracking/"
 	parent = "collins"
-	weight = 245
+	weight = 260
 
 [[menu.main]]
     weight = 299
