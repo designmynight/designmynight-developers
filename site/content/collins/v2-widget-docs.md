@@ -8,15 +8,15 @@ The customer journey will be as follows:
 
 ![initial widget](https://static.designmynight.com/uploads/2019/09/V2-widget-initial-optimised.png)
 
-2. The widget will suggest available booking types. The customer will be prompted to select a booking type.
+1. The widget will suggest available booking types. The customer will be prompted to select a booking type.
 
 ![initial widget - selecting booking types](https://static.designmynight.com/uploads/2019/09/v2-widget-2-optimised.png)
 
-3. The widget will surface times. The customer will be prompted to select a start and end time. 
+1. The widget will surface times. The customer will be prompted to select a start and end time. 
 
 ![initial widget - selecting times](https://static.designmynight.com/uploads/2019/09/v2-widget-3-optimised.png)
 
-4. The customer will then be directed to a splash screen to fill in their contact details and optionally taking payment or allowing pre-orders to be added to the booking. This part of the process takes place on the DesignMyNight website.
+1. The customer will then be directed to a splash screen to fill in their contact details and optionally taking payment or allowing pre-orders to be added to the booking. This part of the process takes place on the DesignMyNight website.
 
 ![initial widget - contact details](https://static.designmynight.com/uploads/2019/09/v2-widget-URL-optimised.png)
 
