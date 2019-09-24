@@ -97,6 +97,8 @@ The following attributes can be used to customise the functionality of the widge
 
 ## Appearance Customisation
 
+Within your Collins settings, you will have a [Widget Wizard](https://collins.uservoice.com/knowledgebase/articles/1915747-collins-widget-wizard-styling-the-widget) which will allow you to easily amend the colours of your widget. If you cannot see the Widget Wizard in your admin, please contact your Collins Account Manager. 
+
 The stylesheet URL accepts parameters to customise the appearance of the widget.
 
 Parameter Name | Expected Value | Description
@@ -129,6 +131,10 @@ Parameter Name | Expected Value | Description
    venue="1234567890">
 </script>
 ```
+
+## Examples of Customised Partner Widgets
+
+You can also have a look through these [examples](https://docs.google.com/document/d/14rWWDYcjSWV1l5ttu1hp5JJ-IGBKFHuF-GIprpgWY7I/edit) of what other venues have done (to get an idea of what can be done).
 
 ## Javascript API
 
