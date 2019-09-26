@@ -1,7 +1,11 @@
 # Contact Us/General Enquiry Form
 As well as a [Collins booking widget](http://developers.designmynight.com/collins/booking-widget/), you can also create and personalise your own Contact Us/General Enquiry form which feeds into Collins as a new enquiry. 
 
-Here's an example of a partner with a customised enquiry form: [No. 4 Clifton Village](https://www.no4cliftonvillage.co.uk/contact-us/).
+Here are examples of partners with a customised enquiry form: 
+
+[No. 4 Clifton Village](https://www.no4cliftonvillage.co.uk/contact-us/)
+
+[The Lighterman](https://thelighterman.co.uk/private-hire/)
 
 **IMPORTANT:** Collins users **MUST** [create all their custom enquiry fields within Collins](https://collins.uservoice.com/knowledgebase/articles/1867342-venue-group-enquiries) before you can proceed with creating your enquiry form. 
 
