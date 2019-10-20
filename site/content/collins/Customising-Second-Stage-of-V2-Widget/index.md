@@ -16,7 +16,13 @@ You are able to customise this stage of the widget.
 
 When the booking form loads, it will also load your CSS so you can override whatever is on the book page.
 
-Example of a partner with a customised second stage: [Puttshack](https://www.puttshack.com/white-city/#/step-1)
+Examples of partners with a customised second stage: 
+
+[Puttshack](https://www.puttshack.com/white-city/#/step-1)
+
+[The Grill on the Square](https://blackhouse.uk.com/restaurants/leeds/#)
+
+[The Montague on the Gardens](https://www.montaguehotel.com/food-and-drink/afternoon-tea)
 
 ## Customising the buttons and alert messages
 
@@ -52,17 +58,13 @@ The above CSS would result in the following:
 ![Example of customised Pre-Order](https://static.designmynight.com/uploads/2019/01/pre-order-example.png)
 
 
-## Customising 2nd iFrame FAQs
+## Customising second stage of V2 widget FAQs
 
-**1. When scrolling on a different device/screen size, the 2nd iFrame isn’t fully showing?**
+**1. Will customers always be re-directed to a new page once they have seleced their Until Time?
 
-The standard 2nd iFrame will fully show on all devices and screen sizes.
+Yes. We have found that redirecting customers to a full splash screen leads to a higher conversion rate compared to pop up iframes. They are also better optimised for mobiles. 
 
-If your 2nd iFrame is not fully showing, it’s likely that you have a CSS style on your own website which is overwriting the height of the iFrame.
-
-Your web developer will have to look at the CSS that has been added to the customised 2nd iFrame. 
-
-**2. When customising our second iFrame, which fields are we able to hide?**
+**2. When customising the second stage of the widget, which fields are we able to hide?**
 
 You are able to remove only the fields that are **not** required to complete the enquiry. 
 
@@ -70,7 +72,7 @@ For example, you will be able to hide the birthday field as long as it has not b
 
 You are also able to remove both marketing permission opt-ins (for your venue and DesignMyNight.com).
 
-To be able to hide these in your custom iFrames, your web developer will have to override the styling on the page. 
+To be able to hide these, your web developer will have to override the styling on the page. 
 
 **3 We have multiple venues in our venue group. Are we able to load style sheets for each individual venue within the group?**
 
