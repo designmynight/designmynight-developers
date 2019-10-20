@@ -57,6 +57,8 @@ Yes. Add the following code underneath your existing `return_url`:
 DMN.val('return_method', 'post');
 ```
 
+Following GDPR, we have deprecated GET return URLs since they include customer's personal information in the URL, which is less safe than using a POST which does not include details in the URL. Additionally, we now require that all return URLs are hosted on a secure (HTTPS) URL. This ensures that customer data is encrypted in compliance with GDPR legislation.
+
 **2. What information should we include in the custom return URL?**
 
 All customers will automatically receive an Enquiry Received/Booking Confirmation email once they have completed their enquiry/booking (and reach your custom return URL page). As these emails will include a full summary of their enquiry/bookings (including their DMN Booking refence), it's not necessary to show these details on your return URL. We would recommend to have a generic 'Thanks for enquiry/booking' message. 
