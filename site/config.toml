@@ -85,10 +85,16 @@ googleAnalytics = "UA-12385609-13"
 	weight = 225
 	
 [[menu.main]]
+	name   = "V2 Widget: Tracking"
+	url    = "collins/v2-widget-tracking/"
+	parent = "collins"
+	weight = 230
+	
+[[menu.main]]
 	name   = "Booking URLs"
 	url    = "collins/booking-url/"
 	parent = "collins"
-	weight = 230
+	weight = 235
 
 [[menu.main]]
 	name   = "General Enquiry Form"
