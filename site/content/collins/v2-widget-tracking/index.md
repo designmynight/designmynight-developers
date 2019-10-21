@@ -1,6 +1,6 @@
 # Tracking on the V2 Collins Booking Widget
 
-There are 3 ways you can look at tracking on the V2 widget:
+There are 4 ways you can look at tracking on the V2 widget:
 
 ## Google Tracking
 
@@ -34,6 +34,10 @@ Guide to help: [Collins Widget Wizard - Custom Return URL](https://collins.userv
 ***Google Analytics Notes:** You will need to have cross-domain tracking in place. This also includes making sure that the tags that are fired from your hostname also have cross-domain tracking in place. Part of setting up cross-domain tracking is to ensure that client's and your hostnames are added to the referral exclusion list.
 
 Ideally, you also need to ensure that your Google Analytics is in a good shape overall - e.g. only use universal analytics pixels, there is no double-tagging, etc.
+
+##  Using our API _(big tech build, we do not recommend)_
+
+Use our API to build out your own checkout which you can track completely as you want then you can do whatever you want - big tech build - [developers.designmynight.com](http://developers.designmynight.com/)
 
 ## Tracking FAQs
 
