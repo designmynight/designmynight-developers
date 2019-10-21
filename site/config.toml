@@ -80,7 +80,7 @@ googleAnalytics = "UA-12385609-13"
 
 [[menu.main]]
 	name   = "Customising Second Stage of V2 Widget"
-	url    = "collins/Customising-Second-Stage-of-V2-Widget/"
+	url    = "collins/customising-second-stage-of-v2-widget/"
 	parent = "collins"
 	weight = 225
 	
