@@ -18,8 +18,6 @@ When the booking form loads, it will also load your CSS so you can override what
 
 Examples of partners with a customised second stage: 
 
-[Puttshack](https://www.puttshack.com/white-city/#/step-1)
-
 [The Grill on the Square](https://blackhouse.uk.com/restaurants/leeds/#)
 
 [The Montague on the Gardens](https://www.montaguehotel.com/food-and-drink/afternoon-tea)
