@@ -1202,28 +1202,13 @@
 
 			
 
-<h1 id="tracking">Tracking</h1>
+<h1 id="tracking-on-the-v1-collins-widget">Tracking on the V1 Collins Widget</h1>
 
-<p>There are 4 ways you can look at tracking:</p>
+<p>There are 3 ways you can look at tracking:</p>
 
 <h2 id="google-tracking">Google Tracking</h2>
 
 <p>Putting Google code on the first enquire button in the CSS (this isn&rsquo;t tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on <a href="https://collins.uservoice.com/knowledgebase/articles/863856-adding-google-analytics-tracking-code-to-the-booki">Adding Google Analytics Tracking Code to the booking widget</a>.</p>
-
-<h2 id="custom-source-for-multiple-booking-widgets">Custom Source for multiple booking widgets</h2>
-
-<p>If you have multiple bookings widgets on your website, you can track how many bookings or enquiries you are receiving from a particular booking form. To do this, your web developer will need to add the following to the widget script and in Collins, track how many bookings you&rsquo;re getting from this specific form.</p>
-
-<pre><code>&lt;script&gt;
-DMN.addCustomData('source', 'XXXXX');
-&lt;/script&gt;
-</code></pre>
-
-<p>The X&rsquo;s will be replaced with the custom source you want to display (for example, <code>Christmas</code>) within your Collins admin.</p>
-
-<p>Any bookings/enquiries made on this form will have the custom source in the &lsquo;Additional Details&rsquo; section and will be tagged with this source in your Enquiries page download.</p>
-
-<p>This is especially useful for Christmas pages or any major advert campaigns with the booking form included.</p>
 
 <h2 id="custom-return-url">Custom return URL</h2>
 
