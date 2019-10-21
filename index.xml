@@ -277,6 +277,18 @@ Stage 2: The widget will suggest available booking types.</description>
     
     <item>
       <title></title>
+      <link>https://developers.designmynight.com/collins/v2-widget-tracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developers.designmynight.com/collins/v2-widget-tracking/</guid>
+      <description>Tracking on the V2 Collins Booking Widget There are 3 ways you can look at tracking on the V2 widget:
+Google Tracking You can add Google Analytics tracking to your Collins booking widget through your Collins admin settings.
+Guide to help: Collins Widget Wizard - Google Analytics
+Setting the source for multiple booking widgets If you have multiple bookings widgets on your website, you can track how many bookings or enquiries you are receiving from a particular booking form.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://developers.designmynight.com/epos-crm-integrations/crm-integration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

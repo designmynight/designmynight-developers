@@ -14,12 +14,12 @@
     
     <meta name="description" content="Developer documentation for DesignMyNight">
     
-    <link rel="canonical" href="https://developers.designmynight.com/collins/customer-widget/">
+    <link rel="canonical" href="https://developers.designmynight.com/collins/v2-widget-tracking/">
     
     <meta name="author" content="DesignMyNight Tech Team">
     
 
-    <meta property="og:url" content="https://developers.designmynight.com/collins/customer-widget/">
+    <meta property="og:url" content="https://developers.designmynight.com/collins/v2-widget-tracking/">
     <meta property="og:title" content="DMN developer documentation">
     <meta property="og:image" content="https://developers.designmynight.com/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="DMN developer documentation">
@@ -1187,136 +1187,100 @@
 
 			
 
-<h1 id="customer-widget">Customer widget</h1>
+<h1 id="tracking-on-the-v2-collins-booking-widget">Tracking on the V2 Collins Booking Widget</h1>
 
-<p>The Collins customer widget provides an easy way for customers to add themselves to your database. The widget is easy to add to your website, and can be styled to match your site&rsquo;s design.</p>
+<p>There are 3 ways you can look at tracking on the V2 widget:</p>
 
-<p>The flow for the customer is:
-1. Customer visits your website and sees the signup form you have added
-2. Customer fills in their details
-3. We send the customer an email to confirm their details
-4. Customer clicks a link in the email to confirm
-5. Customer is taken back to your website where they are shown a message confirming their signup</p>
+<h2 id="google-tracking">Google Tracking</h2>
 
-<h2 id="embedding-the-widget">Embedding the widget</h2>
+<p>You can add Google Analytics tracking to your Collins booking widget through your Collins admin settings.</p>
 
-<p>To add the widget to your site, insert the following code where you would like the form to appear.</p>
+<p>Guide to help: <a href="https://collins.uservoice.com/knowledgebase/articles/1915753-collins-widget-wizard-google-analytics">Collins Widget Wizard - Google Analytics</a></p>
 
-<pre><code>&lt;script
-  type=&quot;text/javascript&quot;
-  src=&quot;https://widgets.designmynight.com/customer-signup/widget.min.js&quot;
-  venue=&quot;YOUR_VENUE_ID&quot;
-  venue-group=&quot;YOUR_VENUE_GROUP_ID&quot;&gt;
-&lt;/script&gt;
+<h2 id="setting-the-source-for-multiple-booking-widgets">Setting the source for multiple booking widgets</h2>
+
+<p>If you have multiple bookings widgets on your website, you can track how many bookings or enquiries you are receiving from a particular booking form. To do this, your web developer will need to add the following to the widget script and in Collins, track how many bookings you&rsquo;re getting from this specific form.</p>
+
+<p>Guide to help: <a href="https://collins.uservoice.com/knowledgebase/articles/1915744-collins-widget-wizard-custom-source">Collins Widget Wizard - Custom Source</a></p>
+
+<p>Any bookings/enquiries made on this form will automatically be assigned the respective <a href="https://collins.uservoice.com/knowledgebase/articles/478053-within-a-booking-enquiry-tag-a-booking-with-a-so">Collins Source</a>.</p>
+
+<p>These bookings will pull through on your <a href="https://collins.uservoice.com/knowledgebase/articles/1135057-reports-source-breakdown">Collins Source Breakdown Report</a> and you will be able to <a href="https://collins.uservoice.com/knowledgebase/articles/478049-enquiries-page-filtering-enquiries-bookings">filter your enquiries</a> by this source.</p>
+
+<p>This is especially useful for Christmas pages or any major advert campaigns where you are directing to a specific booking form.</p>
+
+<h2 id="custom-return-url">Custom return URL</h2>
+
+<p>You can create a custom return URL for users to be directed to when they complete their booking. You can apply your custom return URL to your Collins booking widget through your Collins admin settings.</p>
+
+<p>This way you&rsquo;d be responsible for displaying all the info to the users and having your own confirmation page not the DMN one we currently have. You will then have control to add your own Google Analytics* to track bookings.</p>
+
+<p>Guide to help: <a href="https://collins.uservoice.com/knowledgebase/articles/1915756-collins-widget-wizard-custom-return-url">Collins Widget Wizard - Custom Return URL</a></p>
+
+<p><strong><em>Please note:</em></strong> It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format. Please ensure that your webserver and application can accept POST requests from the designmynight.com domain, including any subdomains.</p>
+
+<p>*<strong>Google Analytics Notes:</strong> You will need to have cross-domain tracking in place. This also includes making sure that the tags that are fired from your hostname also have cross-domain tracking in place. Part of setting up cross-domain tracking is to ensure that client&rsquo;s and your hostnames are added to the referral exclusion list.</p>
+
+<p>Ideally, you also need to ensure that your Google Analytics is in a good shape overall - e.g. only use universal analytics pixels, there is no double-tagging, etc.</p>
+
+<h2 id="tracking-faqs">Tracking FAQs</h2>
+
+<p><strong>1. All the details captured from the user are returned in the query string within my return URL. Is is possible to stop this?</strong></p>
+
+<p>Yes. Add the following code underneath your existing <code>return_url</code>:</p>
+
+<pre><code>DMN.val('return_method', 'post');
 </code></pre>
 
-<h2 id="widget-options">Widget options</h2>
+<p>Following GDPR, we have deprecated GET return URLs since they include customer&rsquo;s personal information in the URL, which is less safe than using a POST which does not include details in the URL. Additionally, we now require that all return URLs are hosted on a secure (HTTPS) URL. This ensures that customer data is encrypted in compliance with GDPR legislation.</p>
 
-<p>The following values can be included as part of the script tag to change how the widget works. Speak to your account manager if you&rsquo;re unsure of the IDs to use for venue or venue group.</p>
+<p><strong>2. What information should we include in the custom return URL?</strong></p>
 
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Explanation</th>
-</tr>
-</thead>
+<p>All customers will automatically receive an Enquiry Received/Booking Confirmation email once they have completed their enquiry/booking (and reach your custom return URL page). As these emails will include a full summary of their enquiry/bookings (including their DMN Booking refence), it&rsquo;s not necessary to show these details on your return URL. We would recommend to have a generic &lsquo;Thanks for enquiry/booking&rsquo; message.</p>
 
-<tbody>
-<tr>
-<td><code>venue-group</code></td>
-<td>(Required) Your venue group&rsquo;s ID</td>
-</tr>
+<p>The following enquiry/booking details will be sent with the redirect to the return URL:</p>
 
-<tr>
-<td><code>venue</code></td>
-<td>If included, this venue will be added as an &lsquo;associated venue&rsquo; for the customer</td>
-</tr>
+<ul>
+<li>First Name</li>
+<li>Last Name</li>
+<li>Email</li>
+<li>Number of People</li>
+<li>Time</li>
+<li>Date</li>
+<li>Duration</li>
+<li>DOB</li>
+<li>Phone</li>
+</ul>
 
-<tr>
-<td><code>hide-phone</code></td>
-<td>Include and set to <code>true</code> to hide the &lsquo;phone&rsquo; option from the form</td>
-</tr>
+<p><strong>3. How do we get the booking reference number on our custom return URL page?</strong></p>
 
-<tr>
-<td><code>return-url</code></td>
-<td>Specify a custom URL to return the customer to when they click in the email to confirm sign up. <br> See <a href="#customising-the-confirmation-flow">Customising the confirmation flow</a> below for more details.</td>
-</tr>
+<p>It will be fed back through the url. This script will parse the url and get the booking parameters out.</p>
 
-<tr>
-<td><code>on-confirm</code></td>
-<td>Provide an optional Javascript callback to be run when a customer&rsquo;s sign up is confirmed <br> See <a href="#customising-the-confirmation-flow">Customising the confirmation flow</a> below for more details.</td>
-</tr>
-</tbody>
-</table>
+<pre><code>&lt;script&gt;
+  var queryParams = document.location.search.substr(1).split('&amp;');
+  var paramsEl = document.getElementById('all-params');
+ 
+for ( var i = 0; i &lt; queryParams.length; i++ ){
+  var currentParam = queryParams[i];
+  var paramParts = currentParam.split('=');
+ 
+  paramsEl.innerHTML += '&lt;li&gt;' + paramParts[0] + ': ' + paramParts[1];
+}
+&lt;/script&gt;
+  &lt;div id=&quot;all-params&quot;&gt;
+</code></pre>
 
-<h2 id="customising-the-appearance-of-the-form">Customising the appearance of the form</h2>
+<p><strong>4. Would it be possible to direct customers to different URLs depending on whether their booking in confirmed or comes into Collins as an enquiry?</strong></p>
 
-<p>The customer signup widget comes with some basic styling but will also pick up styles from your website. To customise the appearance of the widget further you can target the following CSS selectors.</p>
+<p>The booking info will be passed back in the URL.</p>
 
-<table>
-<thead>
-<tr>
-<th>Selector</th>
-<th>Explanation</th>
-</tr>
-</thead>
+<p>When using the POST return method, you need to ensure that your webserver and application can accept POST requests from the designmynight.com domain, including any subdomain.</p>
 
-<tbody>
-<tr>
-<td><code>.dmn-customer-widget</code></td>
-<td>The outer container for the widget</td>
-</tr>
+<p>You will need to pick the <code>status</code> out of url if using a GET return method, or <code>status</code> out of the POST body.</p>
 
-<tr>
-<td><code>.dmn-customer-widget .form-group</code></td>
-<td>Each group of inputs including a label and one or more inputs</td>
-</tr>
+<p>Enquiries will have a status of <code>in_progress</code> and a confirmed booking will have a status of <code>complete</code>.</p>
 
-<tr>
-<td><code>.dmn-customer-widget label</code></td>
-<td>Labels used for all inputs</td>
-</tr>
-
-<tr>
-<td><code>.dmn-customer-widget input[type=text]</code></td>
-<td>Text inputs for first and last name</td>
-</tr>
-
-<tr>
-<td><code>.dmn-customer-widget input[type=email]</code></td>
-<td>Email input</td>
-</tr>
-
-<tr>
-<td><code>.dmn-customer-widget input[type=phone]</code></td>
-<td>Phone input</td>
-</tr>
-
-<tr>
-<td><code>.dmn-customer-widget .dmn-customer-widget-submit button</code></td>
-<td>&lsquo;Sign up&rsquo; submit button</td>
-</tr>
-
-<tr>
-<td><code>.dmn-customer-widget .dmn-form-overlay</code></td>
-<td>The overlay used to show loading and submitted messages</td>
-</tr>
-
-<tr>
-<td><code>.dmn-customer-widget .dmn-confirmation-overlay</code></td>
-<td>The overlay used to show the &lsquo;signup confirmed&rsquo; message</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="customising-the-confirmation-flow">Customising the confirmation flow</h2>
-
-<p>By default, when a customer clicks the email link to confirm their details, they will be taken back to the page on your website where they first signed up. When the widget loads it will recognise that the customer has come from the confirmation link and will complete the sign up. The widget will display a full-screen confirmation on top of your website content (customisable with CSS as above) for a few seconds before the customer is returned to your website as normal.</p>
-
-<p>You can customise this flow in two ways: firstly you can provide a custom return URL that the customer should be taken to when confirming their details, rather than returning to the page where they originally signed up. You can do this by providing the <code>return-url</code> value as part of the widget <code>&lt;script&gt;</code> tag.</p>
-
-<p>Secondly, you can register a Javascript function that should be called when the customer confirmation has completed. You can do this by providing the name of the function as the <code>on-confirm</code> value in the widget <code>&lt;script&gt;</code> tag. The function you provide will be passed one argument, which is an object containing the customer&rsquo;s details. Your function can return <code>false</code> to prevent the default confirmation overlay from appearing.</p>
+<p>It will be up to your web developer to handle this logic on the return url to determine what information to display e.g &ldquo;Thank you for enquiry&rdquo; or &ldquo;Thank you for booking&rdquo;.</p>
 
 			
 			<aside class="copyright" role="note">
@@ -1337,7 +1301,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://developers.designmynight.com/collins/customising-2nd-iframe/" title="">
+      <a href="https://developers.designmynight.com/epos-crm-integrations/crm-integration/" title="">
         <span class="direction">
           Previous
         </span>
@@ -1357,7 +1321,7 @@
 
   <div class="next">
   
-      <a href="https://developers.designmynight.com/collins/booking-widget/" title="">
+      <a href="https://developers.designmynight.com/collins/v2-widget-docs/" title="">
         <span class="direction">
           Next
         </span>
