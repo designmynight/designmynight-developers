@@ -61,25 +61,25 @@ googleAnalytics = "UA-12385609-13"
 	weight = 205
 
 [[menu.main]]
-	name   = "Collins Booking Widget"
+	name   = "V1 Booking Widget"
 	url    = "collins/booking-widget/"
 	parent = "collins"
 	weight = 210
 	
 [[menu.main]]
-	name   = "Customising 2nd Iframe"
+	name   = "V1 Widget: Customising 2nd Iframe"
 	url    = "collins/customising-2nd-iframe/"
 	parent = "collins"
 	weight = 215
 
 [[menu.main]]
-	name   = "Collins V2 Booking Widget"
+	name   = "V2 Booking Widget"
 	url    = "collins/v2-widget-docs/"
 	parent = "collins"
 	weight = 220
 
 [[menu.main]]
-	name   = "Customising Second Stage of V2 Widget"
+	name   = "V2 Widget: Customising Second Stage"
 	url    = "collins/customising-second-stage-of-v2-widget/"
 	parent = "collins"
 	weight = 225
