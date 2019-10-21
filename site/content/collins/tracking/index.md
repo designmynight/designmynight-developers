@@ -1,26 +1,10 @@
-# Tracking 
+# Tracking on the V1 Collins Widget
 
-There are 4 ways you can look at tracking:
+There are 3 ways you can look at tracking:
 
 ## Google Tracking
 
 Putting Google code on the first enquire button in the CSS (this isn't tracking to completion but the drop off rate is about 10% on average from loading up the iframe so a quick and easy way to get a pretty accurate reading). Useful guide for developers on [Adding Google Analytics Tracking Code to the booking widget](https://collins.uservoice.com/knowledgebase/articles/863856-adding-google-analytics-tracking-code-to-the-booki). 
-
-## Custom Source for multiple booking widgets
-
-If you have multiple bookings widgets on your website, you can track how many bookings or enquiries you are receiving from a particular booking form. To do this, your web developer will need to add the following to the widget script and in Collins, track how many bookings you're getting from this specific form. 
-
-```
-<script>
-DMN.addCustomData('source', 'XXXXX');
-</script>
-```
-
-The X's will be replaced with the custom source you want to display (for example, `Christmas`) within your Collins admin. 
-
-Any bookings/enquiries made on this form will have the custom source in the 'Additional Details' section and will be tagged with this source in your Enquiries page download. 
-
-This is especially useful for Christmas pages or any major advert campaigns with the booking form included.
 
 ## Custom return URL
 
@@ -44,8 +28,6 @@ Ideally, you also need to ensure that your Google Analytics is in a good shape o
 ##  Using our API _(big tech build, we do not recommend)_
 
 Use our API to build out your own checkout which you can track completely as you want then you can do whatever you want - big tech build - [developers.designmynight.com](http://developers.designmynight.com/)
-
-
 
 ## Tracking FAQs
 
