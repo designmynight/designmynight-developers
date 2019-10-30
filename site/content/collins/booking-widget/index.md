@@ -216,6 +216,7 @@ Collins gives you the option to display your booking widget in the following add
 * French
 * German
 * Spanish
+* Chinese
 
 If you would like your booking widget to display in multiple languages , you will have to first set up the [translations in your Collins settings](https://collins.uservoice.com/knowledgebase/articles/1829417-widget-setting-up-multi-lingual-widgets-transla)  
 
@@ -232,6 +233,8 @@ French `fr-FR`
 German `de-DE`
 
 Spanish `es=ES`
+
+Chinese `zh-CN`
 
 Example: this widget will display both English and German options:
 
