@@ -7,6 +7,7 @@ We can give CRM systems access to the Collins API. This will enable them to pull
 * Airship
 * Alchemetrics
 * Acteol
+* Sprout Send (MyGuestlist)
 
 ## How to set up access to the Collins API
 
