@@ -2,7 +2,7 @@
 
 If you are unable to add the Collins booking widget, it's possible for you to include a booking URL to your website instead. 
 
-Here is an example of partners using a booking URL: [The Park Tavern](https://www.parktavernsw18.com/#reservations-section)
+Here is an example of partners using a booking URL: [LOCKES](https://www.lockes.co.uk/)
 
 You can access the booking link for your venue within your Collins settings. Here's a guide to help you [access the booking link for a specific venue](https://collins.uservoice.com/knowledgebase/articles/1893409-booking-url-generator)
 
