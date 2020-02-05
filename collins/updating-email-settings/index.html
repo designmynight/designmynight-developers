@@ -1241,7 +1241,7 @@
 
 <p><strong>Step 1) DKIM SETTINGS</strong></p>
 
-<p>a) Add a new TXT record with the name mandrill._domainkey.yourdomain.com (just replace yourdomain.com with the domain name you’re setting up). Some Domains automatically fill your Domain name for you here - GoDaddy for example, where you just need to put mandrill._domainkey. for the name of the TXT record.
+<p>a) Add a new TXT record with the name <em>mandrill._domainkey.yourdomain.com</em> (just replace <em>yourdomain.com</em> with the domain name you’re setting up). Some Domains automatically fill your Domain name for you here - GoDaddy for example, where you just need to put <em>mandrill._domainkey.</em> for the name of the TXT record.
 b) You’ll then need to set the value for the record to be either:</p>
 
 <p>With semicolons escaped:</p>
@@ -1255,15 +1255,15 @@ Some Domain hosts escape the semicolons for you whilst others require you to do 
 <p><strong>Step 2) SPF Settings</strong><br />
 If your current SPF setting is:</p>
 
-<p>If you currently have an SPF record set up already, don’t delete it, you just need to add include:spf.mandrillapp.com after v=spf1, in that record. For example, it might look like:</p>
+<p>If you currently have an SPF record set up already, don’t delete it, you just need to add <em>include:spf.mandrillapp.com</em> after <em>v=spf1</em>, in that record. For example, it might look like:</p>
 
-<p>v=spf1 include:spf.protection.outlook.com include:spf.mandrillapp.com -all</p>
+<p><em>v=spf1 include:spf.protection.outlook.com include:spf.mandrillapp.com -all</em></p>
 
 <p>If you don’t currently have an SPF record set up, you’ll need add the following as a whole new SPF record:</p>
 
-<p>v=spf1 include:spf.mandrillapp.com ?all</p>
+<p><em>v=spf1 include:spf.mandrillapp.com ?all</em></p>
 
-<p><strong>Once the SPF and DKIM settings have been updated, please email your Collins Account Manager to confirm.</strong></p>
+<p><strong><em>Once the SPF and DKIM settings have been updated, please email your Collins Account Manager to confirm.</em></strong></p>
 
 <p>We will be able to check on our side whether these have been updated correctly (and will be able to give feedback if it has been set up incorrectly).</p>
 
