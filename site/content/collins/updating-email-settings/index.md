@@ -38,7 +38,7 @@ https://www.ionos.co.uk/help/domains/configuring-txt-and-srv-records/managing-tx
 
 **Step 1) DKIM SETTINGS**
 
-a) Add a new TXT record with the name mandrill._domainkey.yourdomain.com (just replace yourdomain.com with the domain name you’re setting up). Some Domains automatically fill your Domain name for you here - GoDaddy for example, where you just need to put mandrill._domainkey. for the name of the TXT record.
+a) Add a new TXT record with the name *mandrill._domainkey.yourdomain.com* (just replace *yourdomain.com* with the domain name you’re setting up). Some Domains automatically fill your Domain name for you here - GoDaddy for example, where you just need to put *mandrill._domainkey.* for the name of the TXT record.
 b) You’ll then need to set the value for the record to be either:
 
 With semicolons escaped:
@@ -52,15 +52,15 @@ Some Domain hosts escape the semicolons for you whilst others require you to do 
 **Step 2) SPF Settings**  
 If your current SPF setting is:
 
-If you currently have an SPF record set up already, don’t delete it, you just need to add include:spf.mandrillapp.com after v=spf1, in that record. For example, it might look like:
+If you currently have an SPF record set up already, don’t delete it, you just need to add *include:spf.mandrillapp.com* after *v=spf1*, in that record. For example, it might look like:
 
-v=spf1 include:spf.protection.outlook.com include:spf.mandrillapp.com -all
+*v=spf1 include:spf.protection.outlook.com include:spf.mandrillapp.com -all*
 
 If you don’t currently have an SPF record set up, you’ll need add the following as a whole new SPF record: 
 
-v=spf1 include:spf.mandrillapp.com ?all
+*v=spf1 include:spf.mandrillapp.com ?all*
 
-**Once the SPF and DKIM settings have been updated, please email your Collins Account Manager to confirm.**
+***Once the SPF and DKIM settings have been updated, please email your Collins Account Manager to confirm.***
 
 We will be able to check on our side whether these have been updated correctly (and will be able to give feedback if it has been set up incorrectly).
 
