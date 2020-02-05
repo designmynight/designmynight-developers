@@ -1,73 +1,72 @@
 ## Updating your Email Settings
 
-If you are using our [Collins Mail](https://collins.uservoice.com/knowledgebase/articles/563052-extra-feature-collins-mail-how-to-video) bolt-on, you do **_not_** have to action the below.
+If you are not using [Collins Mail](https://collins.uservoice.com/knowledgebase/articles/563052-extra-feature-collins-mail-how-to-video) you will need to make a slight update to your email settings to say that Collins is allowed to send emails for your Domain/on your behalf.
 
-For all other clients, you need to explicitly say that Collins is allowed to send emails for your domain/on your behalf. 
+This is the only way to guarantee that emails from Collins, confirmation/cancellation emails for example, deliver correctly to/from you and your customers.
 
-This is the only way that we can guarantee that emails deliver correctly to you and customers.
+*If this is not completed, Collins will not be able to send any outbound emails for you. They will get blocked.*
 
-The most common way of doing this is to set up an 'SPF record' and DKIM for your domain (@yourvenue.com).
+To do so, all you have to do is update your Domain settings (DNS Records).
 
-This is something your web agency or digital team should be able to do for you and should take no more than 10 minutes to change.
+*It’s also important to note that you cannot use public email addresses for this. It should only be your Domain (e.g. collins@collinsbar.com - not collinsbar@hotmail.co.uk).*
+
+There’s just 2 records that need adding/Editing - Your DKIM and your SPF records. 
+
+*Different Domains have slightly different set ups, so please see the guides below on how to update email settings for the most popular hosts:*
+
+**Go-Daddy:**
+
+Adding a new DKIM: https://uk.godaddy.com/help/add-a-txt-record-19232
+
+Adding a new SPF: https://uk.godaddy.com/help/add-an-spf-record-19218 / Editing your existing SPF: https://uk.godaddy.com/help/change-an-spf-record-19219
+
+**Wix:** 
+
+Adding a new DKIM:: https://support.wix.com/en/article/adding-dns-records-in-your-wix-account
+
+Adding/Editing SPF: https://support.wix.com/en/article/adding-or-updating-spf-records-in-your-wix-account
+
+**Squarespace:**
+
+https://support.squarespace.com/hc/en-us/articles/360002101888
+
+
+**1&1 Ionos:**
+https://www.ionos.co.uk/help/domains/configuring-txt-and-srv-records/managing-txt-records/  
 
 ## How to update your Email Settings
 
-To update your email settings, you **must** complete all three steps:
+**Step 1) DKIM SETTINGS**
 
-**1. Update your SPF Settings**
+a) Add a new TXT record with the name mandrill._domainkey.yourdomain.com (just replace yourdomain.com with the domain name you’re setting up). Some Domains automatically fill your Domain name for you here - GoDaddy for example, where you just need to put mandrill._domainkey. for the name of the TXT record.
+b) You’ll then need to set the value for the record to be either:
 
-`Spf.mandrillapp.com`
-
-If your current SPF setting is:
-`v=spf1 include:spf.protection.outlook.com -all`
-
-You just need to add `include:spf.mandrillapp.com` so your TXT record should change to;
-
-`v=spf1 include:spf.protection.outlook.com include:spf.mandrillapp.com -all`
-
-If you **do not** already have an SPF record setup then you should add something similar to the following;
-
-`v=spf1 include:spf.mandrillapp.com ?all`
-
-**2. Update your DKIM Settings**
-
-a. Add a new TXT record with the name `mandrill._domainkey.yourdomain.com` (just replace yourdomain.com with the domain you're setting up).
-
-b. Set the value for the record to be one of the options listed below. There are two options because the record contains semicolons. Some DNS providers escape semicolons for you while others require you to do it when you set up the record.
-
-**With semicolons escaped:**
+With semicolons escaped:
 
 v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB\;
-
-**With semicolons unescaped:**
+With semicolons unescaped:
 
 v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB;
+Some Domain hosts escape the semicolons for you whilst others require you to do it when you set the record up.  
 
-**3. Verify your settings**
+**Step 2) SPF Settings**  
+If your current SPF setting is:
 
-Once the SPF and DKIM settings have been updated, please email your Collins Account Manager. 
+If you currently have an SPF record set up already, don’t delete it, you just need to add include:spf.mandrillapp.com after v=spf1, in that record. For example, it might look like:
+
+v=spf1 include:spf.protection.outlook.com include:spf.mandrillapp.com -all
+
+If you don’t currently have an SPF record set up, you’ll need add the following as a whole new SPF record: 
+
+v=spf1 include:spf.mandrillapp.com ?all
+
+**Once the SPF and DKIM settings have been updated, please email your Collins Account Manager to confirm.**
 
 We will be able to check on our side whether these have been updated correctly (and will be able to give feedback if it has been set up incorrectly).
 
-You will then receive an email from '**Mandrill Client Services**'. Please forward this to your Collins Account Manager. 
+You will then receive an email from ‘Mandrill Client Services’. Please forward this to your Collins Account Manager.
 
-We will then be able to complete the final step of verifying your domain. 
+We will then be able to complete the final step of verifying your domain.
 
-Once your domain has been verified, let us know which email address (of your verified domain) you would like to use to communicate with customers. We will add this to your Collins admin settings for you. 
-
-**_Important to note_:** 
-
-If this is not completed, Collins will not be able to send any outbound emails for you. They will get blocked.
-
-You cannot use public mail clients (hotmail, gmail etc..) to be your "from email address" in Collins. It should always be your domain [nick@collinsbar.com not collinsbar@gmail.com].
-
-## Updating Email Settings FAQs
-
-**1. How to update the email settings for a Wix account**
-
-Here are guides to help you update your [DKIM Settings](https://support.wix.com/en/article/adding-a-dkim-txt-record) and [SPF Settings](https://support.wix.com/en/article/adding-or-updating-spf-records-in-your-wix-account) for a Wix account. 
-
-**2. How to update the email settings for a Squarespace account**
-
-Here's a guide to help you update your [DKIM and SPF Settings](https://support.squarespace.com/hc/en-us/articles/205812348-Advanced-DNS-settings).
+Once your domain has been verified, let us know which email address (from your verified domain) you would like to use to communicate with customers. We will add this to your Collins admin settings for you and this will be your customer facing email address in Collins.
 
