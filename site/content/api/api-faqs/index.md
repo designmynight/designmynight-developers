@@ -145,3 +145,7 @@ Please note that `POST`, `PUT`, `PATCH` and `DELETE` methods will change data. I
 If this has happened, please contact your Collins Account Manager for advice. 
 
 If you would like to be set up with a sandbox account to play around with (to test before making any requests on a live account), please contact your Collins Account Manager to set this up. 
+
+**9. We are using a `POST` request to add bookings through the API. We are hitting an error in the response `No 'Access-Control-Allow-Origin' header is present on the requested resource'`. What should we do?**
+
+If you are hitting this error, you should make sure that you are adding `source: 'partner'`. 
