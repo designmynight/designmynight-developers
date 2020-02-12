@@ -149,3 +149,14 @@ If you would like to be set up with a sandbox account to play around with (to te
 **9. We are using a `POST` request to add bookings through the API. We are hitting an error in the response `No 'Access-Control-Allow-Origin' header is present on the requested resource'`. What should we do?**
 
 If you are hitting this error, you should make sure that you are adding `source: 'partner'`. 
+
+**10. We are creating our own checkout using the API. We are making requests to the `booking-availability` endpoint and we are finding that the loading speed is slow. Any advice?**
+
+For each request that you make to the `booking-availability` endpoint, you should include the `fields=`string parameter so that the API only searches for the thing you've specified.
+
+For example, if the customer selects the number of guests and date, and you want to surface the available booking types. 
+
+You should use `fields=type` for the request, so that the API request will only check which booking types are available. 
+
+Without using the `fields=` parameter, the API request will be checking all available booking types, dates, times and durations which will affect the loading speeds. 
+
