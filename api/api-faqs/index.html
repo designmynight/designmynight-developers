@@ -1387,6 +1387,16 @@
 
 <p>If you are hitting this error, you should make sure that you are adding <code>source: 'partner'</code>.</p>
 
+<p><strong>10. We are creating our own checkout using the API. We are making requests to the <code>booking-availability</code> endpoint and we are finding that the loading speed is slow. Any advice?</strong></p>
+
+<p>For each request that you make to the <code>booking-availability</code> endpoint, you should include the <code>fields=</code>string parameter so that the API only searches for the thing you&rsquo;ve specified.</p>
+
+<p>For example, if the customer selects the number of guests and date, and you want to surface the available booking types.</p>
+
+<p>You should use <code>fields=type</code> for the request, so that the API request will only check which booking types are available.</p>
+
+<p>Without using the <code>fields=</code> parameter, the API request will be checking all available booking types, dates, times and durations which will affect the loading speeds.</p>
+
 			
 			<aside class="copyright" role="note">
 				
