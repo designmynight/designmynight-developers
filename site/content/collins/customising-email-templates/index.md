@@ -12,6 +12,8 @@ You'll need to provide us with these in full HTML for us to be able to upload th
 
 We would recommend creating one general email template which can be used for all your outgoing emails from Collins.
 
+**Please note:** Resources for your email templates, such as images, will not be accepted or handled by us. Please do not send us your images along with the template. Images will need to be remotely hosted by you and then referenced in your email templates using absolute urls. We will not accept URLs in the following format `/images-for-my-email-template/header.jpg` all image URLs will need to look like, for example: `http://www.i-keep-my-images-here.com/resources/header.jpg`.
+
 It's worth noting that depending on your HTML code, the emails may look slightly different in different mail clients (Gmail, hotmail, etc). This is because there can be code in your HTML that is not supported by a specific client. It is important that you do cross email client checks with your email templates before you send them to us to upload. 
 
 **_Please note:_** depending on our tech roadmap, it can take our tech team up to two weeks to upload your customised email templates.
