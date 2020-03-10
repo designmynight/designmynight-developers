@@ -1,6 +1,6 @@
-# Overview of the Collins/IBS EPOS Integration
+# Overview of the Collins/Access EPOS Integration
 
-The purpose of the integration between Collins and IBS is to be able to push the details of bookings and their associated deposits to the IBS Epos system. 
+The purpose of the integration between Collins and Access EPOS is to be able to push the details of bookings and their associated deposits to the Access EPOS system. 
 
 We will push valid bookings to the EPOS as soon as they are created in Collins. 
 
@@ -17,11 +17,11 @@ We will push valid bookings to the EPOS as soon as they are created in Collins.
 * Reference: The Collins booking reference
 * Deposit amount: The total of all paid deposit
 
-## Payments Valid to Push to IBS EPOS
+## Payments Valid to Push to Access EPOS
 
 * **Paid Deposits** 
 
-All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) taken using the payment link in Collins will automatically push to your IBS EPOS. 
+All [manual/request payments](https://collins.uservoice.com/knowledgebase/articles/478069-collins-pay-how-to) taken using the payment link in Collins will automatically push to your Access EPOS. 
 
 * **Payments claimed by Card Authentication** 
 
@@ -41,8 +41,8 @@ This way your team has full control as to which payments get pushed to your till
 
 When you [refund a deposit](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer) or delete an 'Other' payment in Collins, this change will be pushed to Stocklink so that Collins and your tills are synced. 
 
-## Setting up the Collins/IBS Integration:
-If you would like to set up the integration to push bookings/payments to your IBS EPOS, you will need to contact your Collins Account Manager with the following details (you will be able to get these from IBS):
+## Setting up the Collins/Access EPOS Integration:
+If you would like to set up the integration to push bookings/payments to your Access EPOS, you will need to contact your Collins Account Manager with the following details (you will be able to get these from your contact at Accept EPOS):
 
 * Logon URL
 * WSDL
@@ -65,11 +65,11 @@ If you would like to set up the integration to push bookings/payments to your IB
 You will also need to specify **which bookings** you would like Collins to push to your tills:
 
 * Only bookings with deposits: If set, only bookings with deposits will be sent to the EPOS. Otherwise, we can push all bookings to your tills.
-* [Refunds](https://developers.designmynight.com/epos-crm-integrations/ibs-epos-integration/#refunding-on-collins-and-ibs): if set, refunds issued within Collins will update on Stocklink. Otherwise, refunds will not push and you will have to manually update your tills after refunding the payment within Collins. 
+* [Refunds](https://developers.designmynight.com/epos-crm-integrations/-epos-integration/#refunding-on-collins-and-ibs): if set, refunds issued within Collins will update on Stocklink. Otherwise, refunds will not push and you will have to manually update your tills after refunding the payment within Collins. 
 
-## How to push bookings/deposits that were added to Collins before the IBS integration goes live
+## How to push bookings/deposits that were added to Collins before the Access EPOS integration goes live
 
-Any bookings that are already on Collins (before the Collins/IBS integration is set up) will **not** push to the till unless a deposit is added/changed/deleted for the booking on Collins. 
+Any bookings that are already on Collins (before the Collins/Access EPOS integration is set up) will **not** push to the till unless a deposit is added/changed/deleted for the booking on Collins. 
 
 As such, if you add a new payment to any bookings already on Collins before the integration was set up, the booking will be pushed to the tills. 
 
@@ -83,7 +83,7 @@ If you wish to push a booking/deposit that was already set up on Collins before 
 
 The booking should push to your tills. 
 
-## Checking that the Collins/IBS Integration is set up correctly
+## Checking that the Collins/Access EPOS Integration is set up correctly
 Once your Collins Account Manager has been in touch that the integration has been set up, it will be your responsibility to check that the integration is working correctly (as Collins will not be able to access your till systems to test). 
 
 As such, we recommend that you create a test payment through Collins. This will both test the connection and ensure that you're confident with how it will show on your tills.
@@ -114,11 +114,11 @@ Without all these details, we will be unable to push the booking to your tills.
 
 e.g. John-Edwards **NOT** John Edwards
 
-## Refunding on Collins and IBS
+## Refunding on Collins and Access EPOS
 
 We now have the option to set up the integration so that when you [refund a deposit](https://collins.uservoice.com/knowledgebase/articles/803478-collins-pay-how-do-i-refund-a-customer) or delete an 'Other' payment in Collins, this change will be pushed to Stocklink so that Collins and your tills are synced. To enable this function, please let your Collins Account Manager know. 
 
-## IBS EPOS Integration FAQS
+## Access EPOS Integration FAQS
 **1. If we set up the integration to push all bookings, will my in progress enquiries get pushed to tills?** 
 
 There is not currently a status check in place, so Collins would push all bookings regardless of booking status.
