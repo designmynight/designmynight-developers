@@ -326,7 +326,7 @@ How to set up access to the Collins API We are able to give access to the follow
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://developers.designmynight.com/epos-crm-integrations/ibs-epos-integration/</guid>
-      <description>Overview of the Collins/IBS EPOS Integration The purpose of the integration between Collins and IBS is to be able to push the details of bookings and their associated deposits to the IBS Epos system.
+      <description>Overview of the Collins/Access EPOS Integration The purpose of the integration between Collins and Access EPOS is to be able to push the details of bookings and their associated deposits to the Access EPOS system.
 We will push valid bookings to the EPOS as soon as they are created in Collins.
 Details can be set to:
  Push all bookings or only push bookings with deposits  Bookings will be sent to the EPOS with the following details:</description>
