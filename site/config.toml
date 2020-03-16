@@ -234,7 +234,7 @@ googleAnalytics = "UA-12385609-13"
 	weight = 402
 
 [[menu.main]]
-    name   = "IBS EPOS Integration"
+    name   = "Stocklink EPOS Integration"
     url    = "epos-crm-integrations/ibs-epos-integration/"
     parent = "epos-crm-integrations"
 	weight = 403
