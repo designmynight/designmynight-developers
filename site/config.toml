@@ -250,12 +250,18 @@ googleAnalytics = "UA-12385609-13"
     url    = "epos-crm-integrations/kobas-epos-integration/"
     parent = "epos-crm-integrations"
 	weight = 405
+	
+	[[menu.main]]
+    name   = "Comtrex EPOS Integration"
+    url    = "epos-crm-integrations/comtrex-integration/"
+    parent = "epos-crm-integrations"
+	weight = 406
 
 [[menu.main]]
     name   = "CRM Integration"
     url    = "epos-crm-integrations/crm-integration/"
     parent = "epos-crm-integrations"
-	weight = 406
+	weight = 407
 	
 
 [[menu.main]]
