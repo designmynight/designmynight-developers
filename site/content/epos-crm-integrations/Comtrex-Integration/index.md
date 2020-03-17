@@ -8,14 +8,14 @@ Push bookings to the tills.
 Update the Collins booking with the relevant stages of the booking during live service
 Push actual spends from tills to Collins
 
-## Booking Stages
+**Booking Stages**
 
 We can map the booking stages between your tills and Collins so that the following happens:
-When a booking is set to seated in Collins, this will create a new booking on Comtrex  (with the matching table number and cover)
-When a walk-in or new food/drink order is added on Comtrex, this will create a walk-in on Collins. If the booking already exists on Collins, the Actual Spend of the booking will be updated.
-'Mains Away' on the tills will update the booking stage of Collins to 'Mains'
-When the bill is paid on your tills, this will mark the booking as 'left' in Collins. 
-The spends on the tills will update the Actual Spend against the booking in Collins.   
+- When a booking is set to seated in Collins, this will create a new booking on Comtrex  (with the matching table number and cover)
+- When a walk-in or new food/drink order is added on Comtrex, this will create a walk-in on Collins. If the booking already exists on Collins, the Actual Spend of the booking will be updated.
+- 'Mains Away' on the tills will update the booking stage of Collins to 'Mains'
+- When the bill is paid on your tills, this will mark the booking as 'left' in Collins. 
+- The spends on the tills will update the Actual Spend against the booking in Collins.   
 
 ## Setting up the Collins/Comtrex EPOS Integration:
 
