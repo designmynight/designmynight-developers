@@ -228,16 +228,17 @@ googleAnalytics = "UA-12385609-13"
 	weight = 401
 
 [[menu.main]]
-    name   = "Zonal EPOS Integration"
-    url    = "epos-crm-integrations/zonal-epos-integration/"
-    parent = "epos-crm-integrations"
-	weight = 402
-
-[[menu.main]]
     name   = "Access EPOS Integration"
     url    = "epos-crm-integrations/ibs-epos-integration/"
     parent = "epos-crm-integrations"
+	weight = 402
+	
+[[menu.main]]
+    name   = "Zonal EPOS Integration"
+    url    = "epos-crm-integrations/zonal-epos-integration/"
+    parent = "epos-crm-integrations"
 	weight = 403
+
 	
 [[menu.main]]
     name   = "Tevalis EPOS Integration"
