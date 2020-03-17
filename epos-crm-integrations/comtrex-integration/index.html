@@ -1201,8 +1201,64 @@
 
 <h2 id="overview-of-the-collins-comtrex-epos-integration">Overview of the Collins/Comtrex EPOS Integration</h2>
 
-<p>The purpose of the integration between Collins and Zonal is for Collins to be able to push the details of bookings and their
-associated deposits to the Zonal EPOS system.</p>
+<p>The purpose of the integration between Collins and Comtrex is to be able to synchronize the walk-ins, bookings and booking stages between Collins and your Comtrex tills.</p>
+
+<h2 id="overview-of-the-capabilities-of-the-integration">Overview of the capabilities of the integration:</h2>
+
+<p>Push bookings to the tills.
+Update the Collins booking with the relevant stages of the booking during live service
+Push actual spends from tills to Collins</p>
+
+<h2 id="booking-stages">Booking Stages</h2>
+
+<p>We can map the booking stages between your tills and Collins so that the following happens:
+When a booking is set to seated in Collins, this will create a new booking on Comtrex  (with the matching table number and cover)
+When a walk-in or new food/drink order is added on Comtrex, this will create a walk-in on Collins. If the booking already exists on Collins, the Actual Spend of the booking will be updated.
+&lsquo;Mains Away&rsquo; on the tills will update the booking stage of Collins to &lsquo;Mains&rsquo;
+When the bill is paid on your tills, this will mark the booking as &lsquo;left&rsquo; in Collins.
+The spends on the tills will update the Actual Spend against the booking in Collins.</p>
+
+<h2 id="setting-up-the-collins-comtrex-epos-integration">Setting up the Collins/Comtrex EPOS Integration:</h2>
+
+<p>If you would like to set up the integration to push bookings/payments to your Comtrex EPOS, you will need to contact your Collins Account Manager with the following details (you will be able to get these from your contact at Comtrex):</p>
+
+<ul>
+<li>The external IP address of the venue / URL of the venue&rsquo;s till system</li>
+<li>The vendor name to use in our requests, this is usually &lsquo;PatronPath&rsquo;</li>
+<li>The FireMessage ID of each desired status (these will have to be entered as the ‘External Reference ID’ for the Booking Stage in Collins, this section will need to be activated by your Collins Account Manager).</li>
+<li>The &lsquo;External Reference ID&rsquo; for a Booking Stage can be set to: &lsquo;printed&rsquo;. This will map the Booking Stage to a status flag the till sends us when the bill has been printed.</li>
+<li>Discount Item Number</li>
+</ul>
+
+<p>In order for the till to be able to send information back into Collins, your Collins Account Manager will provide you with the following information to provide to Comtrex:</p>
+
+<ul>
+<li>API credentials - bearer token and user key and user ID</li>
+<li>Venue IDs to be put into the Flyt URL request</li>
+<li>IP addresses to be given to your IT team to be whitelisted</li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p><em>My walk-ins aren’t showing in Collins</em></p>
+
+<p>Firstly, please ensure that all of your tables in Collins are named exactly the same as they are on the till. For example, if it is simply “35” on the till, but in Collins it is “Table 35”, the integration won’t work correctly.</p>
+
+<p>If the problem persists, ask Comtrex to provide you with a full request and a full response that they are making to Collins. Pass this onto your Collins Account Manager to diagnose.</p>
+
+<p><em>NONE of my bookings are pushing to the till</em></p>
+
+<p>Please ensure that all of your tables in Collins are named exactly the same as they are on the till. For example, if it is simply “35” on the till, but in Collins it is “Table 35”, the integration won’t work correctly.</p>
+
+<p>It may be that a port has not been opened by your IT team or that our IP addresses need to be whitelisted. Please double check with your IT team that this has been done.</p>
+
+<p>If the problem persists, please contact your Collins Account Manager and we can pull the logs to identify other potential problems.</p>
+
+<p><em>SOME of my bookings are pushing to the till</em></p>
+
+<p>Please ensure that all of your tables in Collins are named exactly the same as they are on the till. For example, if it is simply “35” on the till, but in Collins it is “Table 35”, the integration won’t work correctly.</p>
+
+<p>Also, please test your internet stability and strength. If there are dips in the connection, this can prevent the integration working correctly.</p>
 
 			
 			<aside class="copyright" role="note">

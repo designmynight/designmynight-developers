@@ -29,7 +29,9 @@ The following CRM systems currently access our API:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://developers.designmynight.com/epos-crm-integrations/comtrex-integration/</guid>
-      <description>Overview of the Collins/Comtrex EPOS Integration The purpose of the integration between Collins and Zonal is for Collins to be able to push the details of bookings and their associated deposits to the Zonal EPOS system.</description>
+      <description>Overview of the Collins/Comtrex EPOS Integration The purpose of the integration between Collins and Comtrex is to be able to synchronize the walk-ins, bookings and booking stages between Collins and your Comtrex tills.
+Overview of the capabilities of the integration: Push bookings to the tills. Update the Collins booking with the relevant stages of the booking during live service Push actual spends from tills to Collins
+Booking Stages We can map the booking stages between your tills and Collins so that the following happens: When a booking is set to seated in Collins, this will create a new booking on Comtrex (with the matching table number and cover) When a walk-in or new food/drink order is added on Comtrex, this will create a walk-in on Collins.</description>
     </item>
     
     <item>
