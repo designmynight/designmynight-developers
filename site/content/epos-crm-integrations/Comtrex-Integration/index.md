@@ -35,13 +35,13 @@ In order for the till to be able to send information back into Collins, your Col
 
 ## Troubleshooting
 
-_My walk-ins aren’t showing in Collins_
+**1. My walk-ins aren’t showing in Collins**
 
 Firstly, please ensure that all of your tables in Collins are named exactly the same as they are on the till. For example, if it is simply “35” on the till, but in Collins it is “Table 35”, the integration won’t work correctly. You can find out how to edit your tables and areas [here](https://collins.uservoice.com/knowledgebase/articles/478010-tables-areas-editing-table-names-and-capacities). 
 
 If the problem persists, ask Comtrex to provide you with a full request and a full response that they are making to Collins. Pass this onto your Collins Account Manager to diagnose. 
 
-_NONE of my bookings are pushing to the till_
+**2. _NONE_ of my bookings are pushing to the till**
 
 Please ensure that all of your tables in Collins are named exactly the same as they are on the till. For example, if it is simply “35” on the till, but in Collins it is “Table 35”, the integration won’t work correctly. You can find out how to edit your tables and areas [here](https://collins.uservoice.com/knowledgebase/articles/478010-tables-areas-editing-table-names-and-capacities). 
 
@@ -49,7 +49,7 @@ It may be that a port has not been opened by your IT team or that our IP address
 
 If the problem persists, please contact your Collins Account Manager and we can pull the logs to identify other potential problems.
 
-_SOME of my bookings are pushing to the till_
+**3. _SOME_ of my bookings are pushing to the till**
 
 Please ensure that all of your tables in Collins are named exactly the same as they are on the till. For example, if it is simply “35” on the till, but in Collins it is “Table 35”, the integration won’t work correctly. You can find out how to edit your tables and areas [here](https://collins.uservoice.com/knowledgebase/articles/478010-tables-areas-editing-table-names-and-capacities). 
 
