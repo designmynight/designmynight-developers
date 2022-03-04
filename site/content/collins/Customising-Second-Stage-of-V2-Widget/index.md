@@ -1,4 +1,4 @@
-## Customising the 2nd stage of your Collins booking widget
+## Customising the 2nd stage of your Collins booking widget.
 
 The second stage of the Collins V2 widget is the page where customers are prompted to give their contact details,  optionally taking payment or allowing pre-orders to be added to the booking.
 
