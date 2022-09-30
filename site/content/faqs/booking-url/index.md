@@ -120,3 +120,7 @@ To do this, you need to create the return URL on the venue site then set it by a
 The booking info will be passed back in the URL.
 
 **_Please note:_** the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format.
+
+To recieve personal details about the customer you will need to configure your custom return url to recieve POST requests and update your booking url to include return method
+
+`return_url=https://www.your-return-url.com/booking-complete&return_method=post`
