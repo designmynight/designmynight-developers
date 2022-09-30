@@ -1366,6 +1366,10 @@
 <p><code>return_url=https://www.your-return-url.com/booking-complete</code></p>
 
 <p>The booking info will be passed back in the URL.</p>
+			
+<p>To receive personal details about the customer you will need to configure your custom return url to receive POST requests and update your booking url to include return method.</p>
+
+<p><code>return_url=https://www.your-return-url.com/booking-complete&return_method=post</code></p>
 
 <p><strong><em>Please note:</em></strong> the booking details will automatically be included in the custom return URL. It will be up to your web developer to select which booking details are displayed on the custom return page. The booking details will be returned to you in our default format, if you want to reformat any details (eg the way that the date displays), this will be up to your web developer to format.</p>
 
