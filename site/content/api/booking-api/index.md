@@ -444,17 +444,17 @@ The booking will return the pre-order information formatted as below :
 
 Field | Description
 --- | --- 
-`id` | `string` the unique identifier for the booking
-`created_date` | `string` The date of the booking was created
+`id` | `string` the unique identifier for the preorder
+`created_date` | `string` The date of the preorder was created
 `name` | `string` the name of the menu ordered
-`email` | `string`  the email address associated with the booking**
-`items` | `array` the items ordered for the booking (e.g., "name", "type", "quantity", "options", "pricing")
-`total_cost` | `number`  the total cost of the booking
-`amount_paid` | `number` the amount paid for the booking
-`service_charge_percentage` | `number` the service charge percentage applied to the booking
-`service_charge_amount` | `number`  the amount of service charge applied to the booking
-`status` | `string` the status of the booking (e.g., "in_progress" / "complete")
-`source` | `string`  the source of the booking (e.g., "admin" / "customer")**
+`email` | `string`  the email address associated with the preorder
+`items` | `array` the items ordered for the preorder (e.g., "name", "type", "quantity", "options", "pricing")
+`total_cost` | `number`  the total cost of the preorder
+`amount_paid` | `number` the amount paid for the preorder
+`service_charge_percentage` | `number` the service charge percentage applied to the preorder
+`service_charge_amount` | `number`  the amount of service charge applied to the preorder
+`status` | `string` the status of the preorder (e.g., "in_progress" / "complete")
+`source` | `string`  the source of the preorder (e.g., "admin" / "customer")**
 
 
 If the pre-order is successfully added, the response will include details about the pre-order along with the booking information. Here's an example response:
