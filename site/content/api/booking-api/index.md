@@ -438,3 +438,87 @@ and the response would look like this
   "params": []
 }
 ```
+## Pre-order Information
+
+The booking will return the pre-order information formatted as below :
+
+Field | Description
+--- | --- 
+`id` | `string` the unique identifier for the preorder
+`created_date` | `string` The date of the preorder was created
+`name` | `string` the name of the menu ordered
+`email` | `string`  the email address associated with the preorder
+`items` | `array` the items ordered for the preorder (e.g., "name", "type", "quantity", "options", "pricing")
+`total_cost` | `number`  the total cost of the preorder
+`amount_paid` | `number` the amount paid for the preorder
+`service_charge_percentage` | `number` the service charge percentage applied to the preorder
+`service_charge_amount` | `number`  the amount of service charge applied to the preorder
+`status` | `string` the status of the preorder (e.g., "in_progress" / "complete")
+`source` | `string`  the source of the preorder (e.g., "admin" / "customer")**
+
+
+If the pre-order is successfully added, the response will include details about the pre-order along with the booking information. Here's an example response:
+
+```json
+{"payload": {
+  "booking": {
+    "preorders": [
+      {
+        "id": "65c9dff870e57f0008433392",
+        "created_date": "2024-02-12T09:07:44",
+        "name": "Admin",
+        "email": "example@theaccessgroup.com",
+        "items": [
+          {
+            "base_price": 0.3,
+            "options_price": 0,
+            "price": 0.3,
+            "discount_value": 0,
+            "total": 0.3,
+            "id": "5613f2a525020ec148a111a1",
+            "description": null,
+            "name": "Bottle of White Wine",
+            "plu": null,
+            "sub_type": null,
+            "surcharge": null,
+            "type": "drink",
+            "quantity": 1,
+            "options": [
+              {
+                "values": [
+                  {
+                    "label": "Hot",
+                    "diet_types": [
+                      "Vegan",
+                      "Vegetarian"
+                    ],
+                    "allergens": [
+                      "Peanuts",
+                      "Nuts",
+                      "Mustard"
+                    ],
+                    "removes_allergens": [],
+                    "selected": true
+                  }
+                ],
+                "label": "Sauces",
+                "min": 1,
+                "max": 3,
+                "description": "assortment of sauces"
+              }
+            ],
+            "options_string": "Hot"
+          }
+        ],
+        "total_cost": 0.3,
+        "amount_paid": 0,
+        "service_charge_percentage": 0,
+        "service_charge_amount": 0,
+        "status": "complete",
+        "source": "admin"
+      }]
+    }
+  }
+}
+
+```
