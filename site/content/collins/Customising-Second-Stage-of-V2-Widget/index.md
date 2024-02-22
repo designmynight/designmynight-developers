@@ -1,6 +1,6 @@
 ## Customising the 2nd stage of your Collins booking widget.
 
-The second stage of the Collins V2 widget is the page where customers are prompted to give their contact details,  optionally taking payment or allowing pre-orders to be added to the booking.
+The second stage of the Collins widget is the page where customers are prompted to give their contact details,  optionally taking payment or allowing pre-orders to be added to the booking.
 
 You are able to customise this stage of the widget. 
 
@@ -56,7 +56,7 @@ The above CSS would result in the following:
 ![Example of customised Pre-Order](https://static.designmynight.com/uploads/2019/01/pre-order-example.png)
 
 
-## Customising second stage of V2 widget FAQs
+## Customising second stage of the widget FAQs
 
 **1. Will customers always be re-directed to a new page once they have seleced their Until Time?
 

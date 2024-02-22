@@ -1,6 +1,6 @@
-# Tracking on the V2 Collins Booking Widget
+# Tracking on the Collins Booking Widget
 
-There are 4 ways you can look at tracking on the V2 widget:
+There are 4 ways you can look at tracking on the widget:
 
 ## Google Tracking
 
