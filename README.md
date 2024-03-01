@@ -49,7 +49,7 @@ Runs the assets container which will install javascript dependencies and run gul
 
 ## Deployment
 
-To deploy your changes, merge them into the master branch.
+To deploy your changes, merge them into the production branch.
 
 When changes are merged to master, Travis will run the deploy part of the .travis.yml config file. This will:
 
