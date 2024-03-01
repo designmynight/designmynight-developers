@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apis on DMN developer documentation</title>
+    <link>https://developers.designmynight.com/api/</link>
+    <description>Recent content in Apis on DMN developer documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>DesignMyNight</copyright>
+    <lastBuildDate>Thu, 02 Aug 2018 11:44:48 +0100</lastBuildDate>
+
+	<atom:link href="https://developers.designmynight.com/api/index.xml" rel="self" type="application/rss+xml" />
+
+
+    <item>
+      <title>Venues API</title>
+      <link>https://developers.designmynight.com/api/venues-api/</link>
+      <pubDate>Thu, 02 Aug 2018 11:44:48 +0100</pubDate>
+
+      <guid>https://developers.designmynight.com/api/venues-api/</guid>
+      <description>Getting Venues You can use the Venues API to grab all venues that match a criteria, for example all venues in a venue group.
+$ curl -X GET https://api.designmynight.com/v4/venues?venue_group=5524371d0df690ad7156f2ea  You&amp;rsquo;ll receive a response similar to this, containing an array of each venue in the venue group.
+{ &amp;quot;payload&amp;quot;: { &amp;quot;pages&amp;quot;: [ { &amp;quot;_id&amp;quot;: &amp;quot;552435790df6902b7256f237&amp;quot;, &amp;quot;path&amp;quot;: &amp;quot;/london/bars/angel/bar-collins&amp;quot; }, { &amp;quot;_id&amp;quot;: &amp;quot;552446f62b588fe4207fabfb&amp;quot;, &amp;quot;path&amp;quot;: &amp;quot;/bar-designmynight&amp;quot; } ] }, &amp;quot;status&amp;quot;: 200, &amp;quot;requestTime&amp;quot;: &amp;quot;2018-08-10T16:50:40&amp;quot;, &amp;quot;responseTime&amp;quot;: &amp;quot;2018-08-10T16:50:40&amp;quot;, &amp;quot;statusText&amp;quot;: &amp;quot;OK&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;/v4/venues&amp;quot;, &amp;quot;method&amp;quot;: &amp;quot;GET&amp;quot;, &amp;quot;params&amp;quot;: { &amp;quot;venue_group&amp;quot;: &amp;quot;5524371d0df690ad7156f2ea&amp;quot; } }  Getting the Collins Settings The following fields will be included in the venue response.</description>
+    </item>
+
+    <item>
+      <title>Venue Groups API</title>
+      <link>https://developers.designmynight.com/api/venue-groups/</link>
+      <pubDate>Mon, 23 Oct 2017 16:41:48 +0100</pubDate>
+
+      <guid>https://developers.designmynight.com/api/venue-groups/</guid>
+      <description>Before you begin
+Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
+ Overview The venue groups API endpoint provides Collins users with the ability to manage aspects of their account, including adding and removing users permissions.
+User management You can add, remove and edit users in your account using the users edge within the venue groups API endpoint.</description>
+    </item>
+
+    <item>
+      <title>Offers API</title>
+      <link>https://developers.designmynight.com/api/offers-api/</link>
+      <pubDate>Tue, 26 Sep 2017 10:39:00 +0100</pubDate>
+
+      <guid>https://developers.designmynight.com/api/offers-api/</guid>
+      <description>The DesignMyNight Offers API can be used to check which offers are eligible for a given booking.
+Overview The Offers API can be accessed with a GET request to the /venues/VENUE_ID/offers endpoint. Replace with the venue ID you wish to check offers for.
+$ curl -X GET https://api.designmynight.com/v4/venues/552435790df6902b7256f237/offers  Visibility Offers can optionally be defined to be visible_from and visible_to a specified date range. This endpoint will only return offers where any of the conditions below are met:</description>
+    </item>
+
+    <item>
+      <title>Users API</title>
+      <link>https://developers.designmynight.com/api/users-api/</link>
+      <pubDate>Tue, 09 May 2017 20:18:48 +0100</pubDate>
+
+      <guid>https://developers.designmynight.com/api/users-api/</guid>
+      <description>Before you begin
+Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
+ Deprecated
+The use of this endpoint for retrieving and updating Collins customer information is deprecated. Please use https://docs.collinsbookings.com/#tag/Customers instead.
+ Overview The DesignMyNight Users API can be used to retrieve user information and create users, and is suitable for clients who require user information.</description>
+    </item>
+
+    <item>
+      <title>Bookings Search API</title>
+      <link>https://developers.designmynight.com/api/bookings-search/</link>
+      <pubDate>Tue, 13 Dec 2016 10:11:48 +0100</pubDate>
+
+      <guid>https://developers.designmynight.com/api/bookings-search/</guid>
+      <description>Before you begin
+Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
+ Deprecated
+The use of this endpoint is deprecated. Please use https://docs.collinsbookings.com/#tag/Bookings instead.
+ The DesignMyNight Booking search can be used to list and search through a venue&amp;rsquo;s bookings.
+Overview Queries are carried out as GET requests to the bookings API endpoint. To start with, you can try this with no parameters:</description>
+    </item>
+
+    <item>
+      <title>API Basics</title>
+      <link>https://developers.designmynight.com/api/api-basics/</link>
+      <pubDate>Sat, 30 Apr 2016 21:38:53 +0100</pubDate>
+
+      <guid>https://developers.designmynight.com/api/api-basics/</guid>
+      <description>Before you begin
+Contact your account manager to request an API key. Your unique ID and key must be passed with every request.
+ URL The API is accessible through the domain api.designmynight.com. All requests should be made over HTTPS.
+Version All API URLs start with the version of the API that you are using. The current version of the API is v4, so all API URLs work from the base URL https://api.</description>
+    </item>
+
+    <item>
+      <title>Booking API</title>
+      <link>https://developers.designmynight.com/api/booking-api/</link>
+      <pubDate>Fri, 29 Apr 2016 20:18:48 +0100</pubDate>
+
+      <guid>https://developers.designmynight.com/api/booking-api/</guid>
+      <description>Before you begin
+Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
+ The DesignMyNight Booking API can be used to check venue availability and create a booking, and is suitable for clients who would prefer to implement their own booking process rather than using the Booking Widget.
+Overview Creating a booking through the API consists of two stages:</description>
+    </item>
+
+    <item>
+      <title>Event Guests API</title>
+      <link>https://developers.designmynight.com/api/event-guests-api/</link>
+      <pubDate>Fri, 29 Apr 2016 20:18:48 +0100</pubDate>
+
+      <guid>https://developers.designmynight.com/api/event-guests-api/</guid>
+      <description>Before you begin
+Refer to the API Basics section to ensure you are familiar with the essentials of how to interact with the API.
+ Overview The guests API endpoint provides you with all that you need to retrieve guest information for events.
+Listing guests Start by sending a GET request with the ID of the event you wish to get the information for:
+$ curl -X GET https://api.designmynight.com/v4/events/&amp;lt;event_id&amp;gt;/guests?occurrence=&amp;lt;date&amp;gt; $ curl -X GET https://api.</description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>https://developers.designmynight.com/api/api-faqs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>https://developers.designmynight.com/api/api-faqs/</guid>
+      <description>API Troubleshooting If you are using our API and think that something is not working correctly, we will require both the full request and full response from your web developer before we can look into it for you:
+ Full Request - example here Full Response - example here  This is so that our tech team can effectively look into the issue for you. Without the above, we will not be able to assist.</description>
+    </item>
+
+  </channel>
+</rss>

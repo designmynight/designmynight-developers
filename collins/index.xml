@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Collins on DMN developer documentation</title>
+    <link>https://developers.designmynight.com/collins/</link>
+    <description>Recent content in Collins on DMN developer documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>DesignMyNight</copyright>
+
+	<atom:link href="https://developers.designmynight.com/collins/index.xml" rel="self" type="application/rss+xml" />
+
+
+    <item>
+      <title></title>
+      <link>https://developers.designmynight.com/collins/customising-second-stage-of-v2-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>https://developers.designmynight.com/collins/customising-second-stage-of-v2-widget/</guid>
+      <description>Customising the 2nd stage of your Collins booking widget. The second stage of the Collins widget is the page where customers are prompted to give their contact details, optionally taking payment or allowing pre-orders to be added to the booking.
+You are able to customise this stage of the widget.
+To customise your second stage of the widget, your web developer would need to:
+ Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).</description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>https://developers.designmynight.com/collins/booking-url/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>https://developers.designmynight.com/collins/booking-url/</guid>
+      <description>Booking URL for a specific venue If you are unable to add the Collins booking widget, it&amp;rsquo;s possible for you to include a booking URL to your website instead.
+Here is an example of partners using a booking URL: LOCKES
+You can access the booking link for your venue within your Collins settings. Here&amp;rsquo;s a guide to help you access the booking link for a specific venue
+Please note that you will never be charged for covers booked through this link (the source will count as your own website).</description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>https://developers.designmynight.com/collins/customising-2nd-iframe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>https://developers.designmynight.com/collins/customising-2nd-iframe/</guid>
+      <description>Customising the 2nd iFrame of your Collins booking widget You are able to customise the 2nd iframe on your Collins V1 booking widget to better suit the feel of your website.
+To customise your 2nd iFrame, your web developer would need to:
+ Tell us a URL of a stylesheet (that has to be on an HTTPS connection for us to load it) and what you want to use it for (eg app/website).</description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>https://developers.designmynight.com/collins/customising-email-templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>https://developers.designmynight.com/collins/customising-email-templates/</guid>
+      <description>Customising your email templates You can choose to have customised email templates. As part of customising your templates, you will be able to customise your header and footers. This is a great way to add your social media handles and icons, address, etc.
+It’s worth mentioning that the booking summary and any automated copy that you have set up in Collins, will automatically fill the middle section of the email.</description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>https://developers.designmynight.com/collins/general-enquiry-form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>https://developers.designmynight.com/collins/general-enquiry-form/</guid>
+      <description>Contact Us/General Enquiry Form As well as a Collins booking widget, you can also create and personalise your own Contact Us/General Enquiry form which feeds into Collins as a new enquiry.
+Here are examples of partners with a customised enquiry form:
+No. 4 Clifton Village
+The Lighterman
+IMPORTANT: Collins users MUST create all their custom enquiry fields within Collins before you can proceed with creating your enquiry form.
+Posting to Standard Booking Fields For any standard Collins booking fields used in your form, web developers should post to these field names:</description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>https://developers.designmynight.com/collins/taking-bookings-from-google/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>https://developers.designmynight.com/collins/taking-bookings-from-google/</guid>
+      <description>Taking reservations from Google If you have access to your venue&amp;rsquo;s Google Business Account, you are able to add your Collins booking URL to your Google listing. This way customers will be able to directly make a booking from Google.
+How to set up a Reservations URL To add a reservations URL to your Google My Business listing:
+ Sign in to Google My Business Choose the listing that you want to edit.</description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>https://developers.designmynight.com/collins/updating-email-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>https://developers.designmynight.com/collins/updating-email-settings/</guid>
+      <description>Updating your Email Settings If you are not using Collins Mail you will need to make a slight update to your email settings to say that Collins is allowed to send emails for your Domain/on your behalf.
+This is the only way to guarantee that emails from Collins, confirmation/cancellation emails for example, deliver correctly to/from you and your customers.
+If this is not completed, Collins will not be able to send any outbound emails for you.</description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>https://developers.designmynight.com/collins/v2-widget-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>https://developers.designmynight.com/collins/v2-widget-docs/</guid>
+      <description>Booking Widget Documentation The booking widget is the easiest way to allow customers to book through your website. You simply add a small piece of JavaScript to your page and the booking form will display, allowing customers to select the details of the booking they wish to make.
+The customer journey will be as follows:
+Stage 1: The customer selects the number of guests and date.
+Stage 2: The widget will suggest available booking types.</description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>https://developers.designmynight.com/collins/v2-widget-tracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>https://developers.designmynight.com/collins/v2-widget-tracking/</guid>
+      <description>Tracking on the Collins Booking Widget There are 4 ways you can look at tracking on the widget:
+Google Tracking You can add Google Analytics tracking to your Collins booking widget through your Collins admin settings.
+Guide to help: Collins Widget Wizard - Google Analytics
+Setting the source for multiple booking widgets If you have multiple bookings widgets on your website, you can track how many bookings or enquiries you are receiving from a particular booking form.</description>
+    </item>
+
+  </channel>
+</rss>
