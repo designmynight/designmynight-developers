@@ -30,33 +30,6 @@ If you fix **all** the above parameters at the same time, you would effectively 
 
 Unlike with the [Collins booking widget](https://collins.uservoice.com/knowledgebase/articles/893919-widget-codes), the booking link does not currently support displaying multiple venues or fixing specific booking types on a single link.  
 
-## Displaying your Booking URL in a different language
-
-Collins gives you the option to display your booking widget in the following languages:
-
-* Dutch
-* French
-* German
-* Spanish
-
-If you would like your booking url to display in a different language, you will have to first set up the [translations in your Collins settings](https://collins.uservoice.com/knowledgebase/articles/1829417-widget-setting-up-multi-lingual-widgets-transla)  
-
-Once your Translation has been set up in Collins, you can also add an extra `locale` parameter to your booking url, setting the parameter to be the code for the language that you wish to add to your booking url.  
-
-English `en-GB`
-
-Dutch `nl-NL`
-
-French `fr-FR`
-
-German `de-DE`
-
-Example: this booking url will display in German:
-
-https://bookings.designmynight.com/book?venue_id=59d759f1cf53f24ceb4fbff0&venue_group=59ccf635f61ea13caf7de907&type=59d769e864511d794c3846d3&locale=de-DE&source=partner&fixed_type=1
-
-**Please note:** you will only be able to display your booking url in **one** language.
-
 ## Customising the 2nd iFrame of the Collins booking URL
 You are able to customise the 2nd iframe on your Collins booking URL to better suit the feel of your website. 
 
