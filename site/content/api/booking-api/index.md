@@ -137,7 +137,6 @@ Field | Description
 `email` | `string` the customer's email address
 `phone` | `string` the customer's phone number
 `dob` | (optional) `string` the customer's date of birth, in the format YYYY-MM-DD
-`newsletter_signup` | (optional) `boolean` whether the customer opted in to marketing communications
 `marketing_preferences` | (optional) `array` An array of marketing preference IDs the user has agreed to. See [Marketing Preferences](#marketing-preferences) for further details
 
 ### Submitting to the /bookings endpoint
